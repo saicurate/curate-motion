@@ -104,6 +104,75 @@
         "type": "string"
       }
     },
+    "voice": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "captions",
+            "human",
+            "tts"
+          ]
+        },
+        "captions": {
+          "type": "object",
+          "properties": {
+            "preset": {
+              "default": "brand-keyphrase",
+              "type": "string"
+            },
+            "burnIn": {
+              "default": true,
+              "type": "boolean"
+            },
+            "sidecar": {
+              "default": [
+                "srt",
+                "vtt"
+              ],
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "srt",
+                  "vtt"
+                ]
+              }
+            }
+          }
+        },
+        "tts": {
+          "type": "object",
+          "properties": {
+            "use": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          }
+        },
+        "human": {
+          "type": "object",
+          "properties": {
+            "take": {
+              "type": "string",
+              "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+            },
+            "lines": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+              }
+            }
+          }
+        }
+      }
+    },
     "createdBy": {
       "type": "object",
       "properties": {

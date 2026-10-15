@@ -23,19 +23,23 @@ export const Ground: React.FC<{ dark?: boolean; children?: React.ReactNode }> = 
   </AbsoluteFill>
 );
 
-/** A music asset, started `fromSec` into the file (use clock.fromSec), faded in and out. */
-export const Track: React.FC<{ id: string; fromSec: number; total: number; fps?: number; fadeOut?: number; volume?: number }> = ({
+/**
+ * A music asset, started `fromSec` into the file (use clock.fromSec), faded in and out.
+ * `duck` (optional) is a gain per frame, e.g. `(f) => duckGain(plan, f)` to dip under the voice.
+ */
+export const Track: React.FC<{ id: string; fromSec: number; total: number; fps?: number; fadeOut?: number; volume?: number; duck?: (frame: number) => number }> = ({
   id,
   fromSec,
   total,
   fps = 30,
   fadeOut = 24,
   volume = 0.9,
+  duck,
 }) => (
   <Audio
     src={src(id)}
     trimBefore={Math.round(fromSec * fps)}
-    volume={(f) => volume * interpolate(f, [0, 4, total - fadeOut, total], [0, 1, 1, 0], clamp)}
+    volume={(f) => volume * interpolate(f, [0, 4, total - fadeOut, total], [0, 1, 1, 0], clamp) * (duck ? duck(f) : 1)}
   />
 );
 

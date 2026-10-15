@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/voice: the voiceover (plan, generate TTS, import human takes, mark lines). See tools/voice.ts.
+exec node "$(dirname "$0")/voice.ts" "$@"

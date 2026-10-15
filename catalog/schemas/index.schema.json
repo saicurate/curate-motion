@@ -39,8 +39,10 @@
               "photo",
               "stock",
               "footage",
+              "screenshot",
               "music",
               "sfx",
+              "voice",
               "reference"
             ]
           },

@@ -25,6 +25,8 @@ renders/**
 *.m4a
 *.aac
 *.flac
+*.aiff
+*.aif
 *.jpg
 *.jpeg
 *.png

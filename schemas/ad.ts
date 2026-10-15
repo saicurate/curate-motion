@@ -2,6 +2,7 @@
 // Also the format and length presets every ad renders to. Imports only zod (see asset.ts).
 import { z } from "zod";
 import { AssetId, SEGMENT } from "./asset.ts";
+import { VoiceOverride } from "./voice.ts";
 
 /** Output frames. App Store previews: 886x1920 (6.9"/6.5" iPhone) and 1200x1600 (13" iPad), 15–30 s, 30 fps. */
 export const FORMATS = {
@@ -59,6 +60,8 @@ export const AdSpec = z
     approvedAt: z.string().optional(),
     /** Platform notes: the AI-generated label, App Store constraints, etc. */
     disclosures: z.array(z.string()).default([]),
+    /** Voiceover override for this ad (config/voice.json is the default; tools/render --voice beats both). Words: ads/<ad>/script.json. */
+    voice: VoiceOverride.optional(),
     createdBy: z.object({ type: z.enum(["agent", "human"]), name: z.string(), at: z.string() }),
     notes: z.string().optional(),
   })

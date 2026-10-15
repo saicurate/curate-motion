@@ -17,7 +17,9 @@ Reusable Remotion components. Ads import from `motion/index.ts`, never from each
 | `WhipPan` | sideways whip with motion blur |
 | `ClosetReveal` | scatter of garments slams into a grid |
 | `Piece`, `Look` | garment cutout by id; flat-lay look |
-| `Ground`, `Track`, `Star`, `Logo`, `EndCard` | stage, music by id, accents, brand |
+| `Ground`, `Track`, `Star`, `Logo`, `EndCard` | stage, music by id (`duck` dips it under a voice), accents, brand |
+| `Narration`, `narrationPlan` | the voiceover from config: plays the audio, burns in brand captions |
+| `narration-plan.ts` (`sceneOf`, `lineOf`, `phraseFrame`, `duckGain`, `toSrt`, `toVtt`) | the timeline an ad hangs its picture off; pure, shared with tools/ |
 | `useFrameBox`, `FORMATS`, `LENGTHS`, `planScenes` | layout per format, length variants |
 | `theme.ts` (`C`, `display`, easings, `useBrandFonts`) | Mist palette + Geist |
 | `assets.ts` (`asset`, `src`, `frameSrc`, `dims`) | the only way to reach media: by id |

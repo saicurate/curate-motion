@@ -44,7 +44,7 @@ def tag(a,k):
         if t.startswith(k+":"): return t.split(":",1)[1]
     return ""
 groups=[("Emma",["face","selfie","tryon"]),("Wardrobe",["garment"]),("Camera roll",["photo"]),("Everyday photos",["stock"]),
-        ("Zee",["zee"]),("App animations",["footage"]),("Music",["music"]),("Brand",["brand","font"]),("References",["reference"])]
+        ("Zee",["zee"]),("App animations",["footage"]),("App screenshots",["screenshot"]),("Music",["music"]),("Brand",["brand","font"]),("References",["reference"])]
 order={k:i for i,(g,ks) in enumerate(groups) for k in ks}
 H=['''<title>Curate Motion Library</title><style>
 :root{--g:#F5F6F6;--ink:#17181A;--t2:#6B7078;--t3:#9AA0A8;--card:#fff;--line:#E6E8EB;--ok:#3E8E63;color-scheme:light}
@@ -94,7 +94,7 @@ for g,ks in groups:
             if not src or not src.lower().endswith((".jpg",".jpeg",".png",".webp")): 
                 media='<img alt="">'; 
             else: media=f'<img src="{img(a,src)}" alt="" loading="lazy">'
-            cls="c"
+            cls="c v" if a["kind"]=="screenshot" else "c"
         H.append(f'<div class="{cls}">{media}<div class="b"><div class="t">{title}</div><div class="id">{a["id"]}</div><div class="s {st}">{st}</div></div></div>')
     H.append('</div>')
 H.append('</div>')

@@ -58,7 +58,7 @@ Every top-level folder has a README: what goes there, what doesn't, one example.
 (`catalog/schemas/asset.<kind>.schema.json`) by `tools/catalog build` so any tool can validate.
 
 Kinds: `brand`, `font`, `zee`, `face`, `selfie`, `tryon`, `garment`, `photo`, `stock`, `footage`,
-`music`, `sfx`, `reference`.
+`music`, `sfx`, `reference`, `voice` (voiceover audio; the voice an ad uses is config: decisions/0009, AGENTS.md › How to change the voice).
 
 Every asset has:
 

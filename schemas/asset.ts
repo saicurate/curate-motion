@@ -32,8 +32,10 @@ export const KINDS = [
   "photo", // a persona's camera-roll photos
   "stock", // licensed stock photos / video (Unsplash, Pexels)
   "footage", // screen recordings of the app, by moment and app build
+  "screenshot", // still screenshots of the app, by screen and state and app build
   "music", // tracks, with BPM and a beat map
   "sfx", // sound effects
+  "voice", // voiceover audio: TTS clips (one per script line) and human takes (tools/voice)
   "reference", // reference reels and breakdowns (never shipped in an ad)
 ] as const;
 export const Kind = z.enum(KINDS);
@@ -211,6 +213,37 @@ export const FootageAsset = z.object({
   /** Named points in the clip, seconds from its start: { "tap-1": 1.2, "closet-lands": 3.4 }. */
   marks: z.record(z.string(), z.number().nonnegative()).default({}),
 });
+export const ScreenshotAsset = z.object({
+  ...base,
+  kind: z.literal("screenshot"),
+  dims: Dim,
+  /** The app screen, kebab-case: wardrobe, chat, try-ons, onboarding-about… */
+  screen: z.string().regex(SEGMENT),
+  /** The state of that screen, kebab-case: top, scrolled, chip-tops, thinking… */
+  state: z.string().regex(SEGMENT),
+  app: z.object({
+    build: z.number().int().positive(),
+    version: z.string(),
+    commit: z.string().optional(),
+    env: z.enum(["prod", "staging", "local"]),
+  }),
+  account: z.string().regex(SEGMENT), // persona whose account (or assets, for a probe) is shown
+  device: z.string(),
+  cleanStatusBar: z.boolean(),
+  /** screenshot = xcrun simctl io screenshot; frame = one frame taken from a native-resolution footage clip or take. */
+  capture: z.enum(["screenshot", "frame"]),
+  /** app = her real account on her phone; probe = a lib/dev probe on a separate simulator with her real assets. */
+  origin: z.enum(["app", "probe"]),
+  /** native = the device's own pixels; appstore-6.9 = resized for App Store Connect's 6.9" set (1290×2796). */
+  variant: z.enum(["native", "appstore-6.9"]).default("native"),
+  /** For a frame: the footage asset (or take) it came from, and the second it was taken at. */
+  fromFootage: AssetId.optional(),
+  fromTake: z.string().optional(),
+  frameSec: z.number().nonnegative().optional(),
+  /** For a variant: the screenshot it was made from. */
+  variantOf: AssetId.optional(),
+  hero: z.boolean().default(false),
+});
 export const MusicAsset = z.object({
   ...base,
   kind: z.literal("music"),
@@ -230,6 +263,24 @@ export const MusicAsset = z.object({
 });
 export const SfxAsset = z.object({ ...base, kind: z.literal("sfx"), durationSec: z.number().positive() });
 export const ReferenceAsset = z.object({ ...base, kind: z.literal("reference"), notes: z.string().optional(), durationSec: z.number().positive().optional() });
+/** Voiceover audio for one ad (scope = the ad id). Made by tools/voice generate (tts) or tools/voice import (human). See schemas/voice.ts. */
+export const VoiceAsset = z.object({
+  ...base,
+  kind: z.literal("voice"),
+  durationSec: z.number().positive(),
+  ad: z.string().regex(SEGMENT),
+  origin: z.enum(["tts", "human"]),
+  /** Where each script line sits in this file, seconds. A TTS clip holds one line (0 → its length); a human take may hold many. */
+  lines: z.array(z.object({ line: z.string(), text: z.string().optional(), startSec: z.number().nonnegative(), endSec: z.number().positive() })).default([]),
+  /** TTS only: exactly what was asked for. Same text + same settings = same clip (cacheKey = sha256 of them), never generated twice. */
+  tts: z
+    .object({ provider: z.string(), model: z.string().optional(), voice: z.string(), speed: z.number(), style: z.string().optional(), format: z.string(), text: z.string(), chars: z.number().int().nonnegative(), cacheKey: Sha256 })
+    .optional(),
+  /** Human only: who spoke (first name or "hired: <service>"). */
+  speaker: z.string().optional(),
+  /** Offline preview voices (macOS say): never approved, never shipped. */
+  previewOnly: z.boolean().default(false),
+});
 
 export const KIND_SCHEMAS = {
   brand: BrandAsset,
@@ -242,9 +293,11 @@ export const KIND_SCHEMAS = {
   photo: PhotoAsset,
   stock: StockAsset,
   footage: FootageAsset,
+  screenshot: ScreenshotAsset,
   music: MusicAsset,
   sfx: SfxAsset,
   reference: ReferenceAsset,
+  voice: VoiceAsset,
 } as const;
 
 export const Asset = z
@@ -259,9 +312,11 @@ export const Asset = z
     PhotoAsset,
     StockAsset,
     FootageAsset,
+    ScreenshotAsset,
     MusicAsset,
     SfxAsset,
     ReferenceAsset,
+    VoiceAsset,
   ])
   .superRefine((a, ctx) => {
     const p = parseId(a.id);
@@ -269,7 +324,8 @@ export const Asset = z
     if (a.status === "approved" && (!a.approvedBy || !a.approvedAt)) {
       ctx.addIssue({ code: "custom", message: "approved assets need approvedBy and approvedAt", path: ["status"] });
     }
-    if (!a.licence.commercial && a.kind !== "reference") {
+    if (a.kind === "voice" && a.previewOnly && a.status === "approved") ctx.addIssue({ code: "custom", message: "preview-only voices can never be approved (not for release)", path: ["status"] });
+    if (!a.licence.commercial && a.kind !== "reference" && !(a.kind === "voice" && a.previewOnly)) {
       ctx.addIssue({ code: "custom", message: "only references may have a non-commercial licence (they never ship)", path: ["licence", "commercial"] });
     }
     if (!a.aiGenerated && a.source.type === "generated") {

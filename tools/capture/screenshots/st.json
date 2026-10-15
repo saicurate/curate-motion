@@ -1,0 +1,683 @@
+{
+ "phase": "Done: 119 screens (96 real, 23 probe), 24 App Store variants, all draft in the library",
+ "total": 119,
+ "sections": [
+  {
+   "title": "Front door and sign-up",
+   "items": [
+    {
+     "name": "splash",
+     "path": "../footage/_screens/splash.jpg",
+     "label": "Cold launch: the Curate mark"
+    },
+    {
+     "name": "front-door",
+     "path": "../footage/_screens/front-door.jpg",
+     "label": "Front door: Try it. Style it. Wear it. \u00b7 hero"
+    },
+    {
+     "name": "front-door-sign-in",
+     "path": "../footage/_screens/front-door-sign-in.jpg",
+     "label": "Front door: Sign in, with Apple, Google or email"
+    },
+    {
+     "name": "email-signup",
+     "path": "../footage/_screens/email-signup.jpg",
+     "label": "Create your account"
+    }
+   ]
+  },
+  {
+   "title": "Onboarding",
+   "items": [
+    {
+     "name": "ob-about",
+     "path": "../footage/_screens/ob-about.jpg",
+     "label": "01 Nice to meet you: name and birthday"
+    },
+    {
+     "name": "ob-username",
+     "path": "../footage/_screens/ob-username.jpg",
+     "label": "02 Pick your username"
+    },
+    {
+     "name": "ob-pairs",
+     "path": "../footage/_screens/ob-pairs.jpg",
+     "label": "03 Tell us about your style: this or that \u00b7 hero"
+    },
+    {
+     "name": "ob-pairs-ranked",
+     "path": "../footage/_screens/ob-pairs-ranked.jpg",
+     "label": "03 Three styles won a round"
+    },
+    {
+     "name": "ob-mirror-reading",
+     "path": "../footage/_screens/ob-mirror-reading.jpg",
+     "label": "05 Mirror: reading her skin, hair and eyes \u00b7 hero"
+    },
+    {
+     "name": "ob-mirror-payoff",
+     "path": "../footage/_screens/ob-mirror-payoff.jpg",
+     "label": "05 Mirror: Deep Autumn"
+    },
+    {
+     "name": "ob-body",
+     "path": "../footage/_screens/ob-body.jpg",
+     "label": "06 Your body: the 3D body"
+    },
+    {
+     "name": "ob-body-tapes",
+     "path": "../footage/_screens/ob-body-tapes.jpg",
+     "label": "06 Your body: the bust tape lit"
+    }
+   ]
+  },
+  {
+   "title": "Finding her clothes",
+   "items": [
+    {
+     "name": "empty-wardrobe-zee",
+     "path": "../footage/_screens/empty-wardrobe-zee.jpg",
+     "label": "Empty Wardrobe: Hi, I'm Zee. Let's find your clothes."
+    },
+    {
+     "name": "zee-asks-on-it",
+     "path": "../footage/_screens/zee-asks-on-it.jpg",
+     "label": "Empty Wardrobe: Look in my photos, On it. \u00b7 probe"
+    },
+    {
+     "name": "privacy-shield",
+     "path": "../footage/_screens/privacy-shield.jpg",
+     "label": "Privacy shield: Your photos stay yours \u00b7 hero"
+    },
+    {
+     "name": "selfie-step",
+     "path": "../footage/_screens/selfie-step.jpg",
+     "label": "Selfie step: Your turn, Zee on the ring \u00b7 probe"
+    },
+    {
+     "name": "selfie-hint-circle",
+     "path": "../footage/_screens/selfie-hint-circle.jpg",
+     "label": "Selfie camera hint: Into the circle \u00b7 probe"
+    },
+    {
+     "name": "selfie-hint-light",
+     "path": "../footage/_screens/selfie-hint-light.jpg",
+     "label": "Selfie camera hint: More light \u00b7 probe"
+    },
+    {
+     "name": "selfie-hint-perfect",
+     "path": "../footage/_screens/selfie-hint-perfect.jpg",
+     "label": "Selfie camera hint: Perfect \u00b7 probe"
+    },
+    {
+     "name": "selfie-thats-you",
+     "path": "../footage/_screens/selfie-thats-you.jpg",
+     "label": "Selfie: That's you! \u00b7 probe \u00b7 hero"
+    },
+    {
+     "name": "selfie-there-you-are",
+     "path": "../footage/_screens/selfie-there-you-are.jpg",
+     "label": "Selfie: There you are \u00b7 probe"
+    },
+    {
+     "name": "photos-permission",
+     "path": "../footage/_screens/photos-permission.jpg",
+     "label": "Apple's Photos access prompt"
+    },
+    {
+     "name": "photos-off-two-taps",
+     "path": "../footage/_screens/photos-off-two-taps.jpg",
+     "label": "Photos off: Two taps \u00b7 probe \u00b7 hero"
+    },
+    {
+     "name": "photos-off-yay",
+     "path": "../footage/_screens/photos-off-yay.jpg",
+     "label": "Photos off: Yay! Let's find your clothes \u00b7 probe"
+    },
+    {
+     "name": "scan-start",
+     "path": "../footage/_screens/scan-start.jpg",
+     "label": "Scan: Getting your photos ready"
+    },
+    {
+     "name": "scan-roll",
+     "path": "../footage/_screens/scan-roll.jpg",
+     "label": "Scan: Looking for you, Zee's magnifier mid-roll \u00b7 hero"
+    },
+    {
+     "name": "scan-found",
+     "path": "../footage/_screens/scan-found.jpg",
+     "label": "Scan: Found 30 photos of you"
+    }
+   ]
+  },
+  {
+   "title": "Her pieces arrive",
+   "items": [
+    {
+     "name": "pieces-up-big",
+     "path": "../footage/_screens/pieces-up-big.jpg",
+     "label": "Your pieces: her photo up big \u00b7 hero"
+    },
+    {
+     "name": "pieces-style-fact",
+     "path": "../footage/_screens/pieces-style-fact.jpg",
+     "label": "Your pieces: a style line about her"
+    },
+    {
+     "name": "pieces-first-piece",
+     "path": "../footage/_screens/pieces-first-piece.jpg",
+     "label": "Your pieces: the first piece, Ballet Flats"
+    },
+    {
+     "name": "pieces-arriving",
+     "path": "../footage/_screens/pieces-arriving.jpg",
+     "label": "Your pieces: 40 so far, pieces tucking into the row \u00b7 hero"
+    },
+    {
+     "name": "tell-me-notification",
+     "path": "../footage/_screens/tell-me-notification.jpg",
+     "label": "Tell me when it's ready: Apple's notification prompt \u00b7 probe"
+    },
+    {
+     "name": "wardrobe-ready-cheer",
+     "path": "../footage/_screens/wardrobe-ready-cheer.jpg",
+     "label": "Your wardrobe is ready: Zee cheers \u00b7 hero"
+    },
+    {
+     "name": "import-review",
+     "path": "../footage/_screens/import-review.jpg",
+     "label": "Review: 41 pieces from your photos \u00b7 hero"
+    },
+    {
+     "name": "import-review-undo",
+     "path": "../footage/_screens/import-review-undo.jpg",
+     "label": "Review: Hoodie removed, Undo"
+    },
+    {
+     "name": "wardrobe-new-pieces",
+     "path": "../footage/_screens/wardrobe-new-pieces.jpg",
+     "label": "Wardrobe: New \u00b7 40"
+    },
+    {
+     "name": "at-work-pill",
+     "path": "../footage/_screens/at-work-pill.jpg",
+     "label": "Wardrobe: Curate at work pill"
+    },
+    {
+     "name": "at-work-pill-longer",
+     "path": "../footage/_screens/at-work-pill-longer.jpg",
+     "label": "Wardrobe: Curate at work, pieces taking longer"
+    },
+    {
+     "name": "ready-pill",
+     "path": "../footage/_screens/ready-pill.jpg",
+     "label": "Wardrobe: Your wardrobe is ready pill \u00b7 probe"
+    }
+   ]
+  },
+  {
+   "title": "Wardrobe",
+   "items": [
+    {
+     "name": "wardrobe-top",
+     "path": "../footage/_screens/wardrobe-top.jpg",
+     "label": "Wardrobe tab: This week, ask card, her pieces \u00b7 hero"
+    },
+    {
+     "name": "wardrobe-scrolled-1",
+     "path": "../footage/_screens/wardrobe-scrolled-1.jpg",
+     "label": "Wardrobe tab: scrolled to her pieces"
+    },
+    {
+     "name": "wardrobe-scrolled-2",
+     "path": "../footage/_screens/wardrobe-scrolled-2.jpg",
+     "label": "Wardrobe tab: chips pinned, grid"
+    },
+    {
+     "name": "wardrobe-scrolled-3",
+     "path": "../footage/_screens/wardrobe-scrolled-3.jpg",
+     "label": "Wardrobe tab: further down the grid"
+    },
+    {
+     "name": "wardrobe-chip-tops",
+     "path": "../footage/_screens/wardrobe-chip-tops.jpg",
+     "label": "Wardrobe filter: Tops"
+    },
+    {
+     "name": "wardrobe-chip-bottoms",
+     "path": "../footage/_screens/wardrobe-chip-bottoms.jpg",
+     "label": "Wardrobe filter: Bottoms"
+    },
+    {
+     "name": "wardrobe-chip-dresses",
+     "path": "../footage/_screens/wardrobe-chip-dresses.jpg",
+     "label": "Wardrobe filter: Dresses"
+    },
+    {
+     "name": "wardrobe-chip-shoes",
+     "path": "../footage/_screens/wardrobe-chip-shoes.jpg",
+     "label": "Wardrobe filter: Shoes"
+    },
+    {
+     "name": "wardrobe-chip-outerwear",
+     "path": "../footage/_screens/wardrobe-chip-outerwear.jpg",
+     "label": "Wardrobe filter: Outerwear"
+    },
+    {
+     "name": "wardrobe-chip-accessories",
+     "path": "../footage/_screens/wardrobe-chip-accessories.jpg",
+     "label": "Wardrobe filter: Accessories"
+    },
+    {
+     "name": "wardrobe-chip-bags",
+     "path": "../footage/_screens/wardrobe-chip-bags.jpg",
+     "label": "Wardrobe filter: Bags"
+    },
+    {
+     "name": "calendar",
+     "path": "../footage/_screens/calendar.jpg",
+     "label": "Calendar: October"
+    },
+    {
+     "name": "notifications",
+     "path": "../footage/_screens/notifications.jpg",
+     "label": "Notifications: People, all caught up"
+    },
+    {
+     "name": "notifications-tryons",
+     "path": "../footage/_screens/notifications-tryons.jpg",
+     "label": "Notifications: Your try-on is ready"
+    },
+    {
+     "name": "create-outfit",
+     "path": "../footage/_screens/create-outfit.jpg",
+     "label": "Create outfit: What are we dressing for?"
+    }
+   ]
+  },
+  {
+   "title": "Pieces",
+   "items": [
+    {
+     "name": "piece-detail",
+     "path": "../footage/_screens/piece-detail.jpg",
+     "label": "Piece: Beige Satin Slip Midi Dress \u00b7 hero"
+    },
+    {
+     "name": "piece-edit",
+     "path": "../footage/_screens/piece-edit.jpg",
+     "label": "Piece: Edit details"
+    },
+    {
+     "name": "add-item",
+     "path": "../footage/_screens/add-item.jpg",
+     "label": "Add item: pick photos of you"
+    },
+    {
+     "name": "extraction-wait",
+     "path": "../footage/_screens/extraction-wait.jpg",
+     "label": "Add item: Looking at your photo"
+    },
+    {
+     "name": "extraction-found",
+     "path": "../footage/_screens/extraction-found.jpg",
+     "label": "Add item: Found 1 piece, Navy Blue Baseball Cap"
+    },
+    {
+     "name": "duplicate-review",
+     "path": "../footage/_screens/duplicate-review.jpg",
+     "label": "Same piece? Duplicate review"
+    },
+    {
+     "name": "duplicate-review-pick",
+     "path": "../footage/_screens/duplicate-review-pick.jpg",
+     "label": "Same piece? Picked the one to keep"
+    }
+   ]
+  },
+  {
+   "title": "Chat with Zee",
+   "items": [
+    {
+     "name": "chat-empty-b",
+     "path": "../footage/_screens/chat-empty-b.jpg",
+     "label": "Chat: Evening, Emma, with Zee and starters \u00b7 hero"
+    },
+    {
+     "name": "composer-typing",
+     "path": "../footage/_screens/composer-typing.jpg",
+     "label": "Chat: typing What should I wear tonight?"
+    },
+    {
+     "name": "question-card",
+     "path": "../footage/_screens/question-card.jpg",
+     "label": "Question card: What's tonight? \u00b7 hero"
+    },
+    {
+     "name": "location-ask",
+     "path": "../footage/_screens/location-ask.jpg",
+     "label": "Location ask: I can't see your sky"
+    },
+    {
+     "name": "location-sky",
+     "path": "../footage/_screens/location-sky.jpg",
+     "label": "There's your sky, then Zee puts a look together \u00b7 hero"
+    },
+    {
+     "name": "zee-thinking",
+     "path": "../footage/_screens/zee-thinking.jpg",
+     "label": "Zee thinking: Going through your 49 pieces \u00b7 hero"
+    },
+    {
+     "name": "zee-thinking-b",
+     "path": "../footage/_screens/zee-thinking-b.jpg",
+     "label": "Zee thinking: Checking New York tonight"
+    },
+    {
+     "name": "look-card-landing",
+     "path": "../footage/_screens/look-card-landing.jpg",
+     "label": "Look card landing, with her request answered"
+    },
+    {
+     "name": "tonight-0",
+     "path": "../footage/_screens/tonight-0.jpg",
+     "label": "Look card: Date night, Me too. \u00b7 hero"
+    },
+    {
+     "name": "tonight-up3",
+     "path": "../footage/_screens/tonight-up3.jpg",
+     "label": "Thread: question answered, sky, the reply"
+    },
+    {
+     "name": "tonight-up1",
+     "path": "../footage/_screens/tonight-up1.jpg",
+     "label": "Thread: the reply and the look"
+    },
+    {
+     "name": "multiple-looks-2",
+     "path": "../footage/_screens/multiple-looks-2.jpg",
+     "label": "Multiple looks: look 3 of 3, wool coat and mini dress \u00b7 hero"
+    },
+    {
+     "name": "multiple-looks-3",
+     "path": "../footage/_screens/multiple-looks-3.jpg",
+     "label": "Multiple looks: look 2 of 3, leather jacket"
+    },
+    {
+     "name": "work-up4",
+     "path": "../footage/_screens/work-up4.jpg",
+     "label": "Work look: drizzly tomorrow"
+    },
+    {
+     "name": "dates-card",
+     "path": "../footage/_screens/dates-card.jpg",
+     "label": "Dates card: pick your Miami dates"
+    },
+    {
+     "name": "dates-card-picked",
+     "path": "../footage/_screens/dates-card-picked.jpg",
+     "label": "Dates card: Fri 23 to Sun 25 picked"
+    },
+    {
+     "name": "work-up1",
+     "path": "../footage/_screens/work-up1.jpg",
+     "label": "Trip: Miami dates answered, Day 1"
+    },
+    {
+     "name": "work-0",
+     "path": "../footage/_screens/work-0.jpg",
+     "label": "Trip look: For your Miami trip"
+    },
+    {
+     "name": "adjust",
+     "path": "../footage/_screens/adjust.jpg",
+     "label": "Adjust: Styling priorities \u00b7 hero"
+    },
+    {
+     "name": "style-notes",
+     "path": "../footage/_screens/style-notes.jpg",
+     "label": "Style notes: How to wear it \u00b7 hero"
+    },
+    {
+     "name": "style-notes-scrolled",
+     "path": "../footage/_screens/style-notes-scrolled.jpg",
+     "label": "Style notes: Shoulder drape"
+    },
+    {
+     "name": "chat-drawer",
+     "path": "../footage/_screens/chat-drawer.jpg",
+     "label": "Chat drawer: her chats"
+    },
+    {
+     "name": "chat-drawer-search",
+     "path": "../footage/_screens/chat-drawer-search.jpg",
+     "label": "Chat drawer: search"
+    },
+    {
+     "name": "zee-remembers",
+     "path": "../footage/_screens/zee-remembers.jpg",
+     "label": "What Curate knows: her notebook"
+    },
+    {
+     "name": "saved-outfits",
+     "path": "../footage/_screens/saved-outfits.jpg",
+     "label": "Your outfits: Saved"
+    },
+    {
+     "name": "outfits-recent",
+     "path": "../footage/_screens/outfits-recent.jpg",
+     "label": "Your outfits: Recent"
+    },
+    {
+     "name": "outfits-planned",
+     "path": "../footage/_screens/outfits-planned.jpg",
+     "label": "Your outfits: Planned"
+    },
+    {
+     "name": "outfits-tried",
+     "path": "../footage/_screens/outfits-tried.jpg",
+     "label": "Your outfits: Tried on"
+    }
+   ]
+  },
+  {
+   "title": "Try-ons",
+   "items": [
+    {
+     "name": "tryon-start",
+     "path": "../footage/_screens/tryon-start.jpg",
+     "label": "Try-ons: Start with a photo of you"
+    },
+    {
+     "name": "tryons",
+     "path": "../footage/_screens/tryons.jpg",
+     "label": "Try-ons tab: her photo, add up to 4 items"
+    },
+    {
+     "name": "tryon-add-item",
+     "path": "../footage/_screens/tryon-add-item.jpg",
+     "label": "Try-ons: Add an item"
+    },
+    {
+     "name": "tryon-item-placed",
+     "path": "../footage/_screens/tryon-item-placed.jpg",
+     "label": "Try-ons: the slip dress in its spot"
+    },
+    {
+     "name": "tryon-curtain",
+     "path": "../footage/_screens/tryon-curtain.jpg",
+     "label": "Try-ons: the curtain, Trying on \u00b7 hero"
+    },
+    {
+     "name": "tryon-reveal",
+     "path": "../footage/_screens/tryon-reveal.jpg",
+     "label": "Try-ons: the reveal"
+    },
+    {
+     "name": "tryon-result-dress",
+     "path": "../footage/_screens/tryon-result-dress.jpg",
+     "label": "Try-on result: the slip dress on her \u00b7 hero"
+    },
+    {
+     "name": "tryon-result-tee",
+     "path": "../footage/_screens/tryon-result-tee.jpg",
+     "label": "Try-on result: tee and trousers"
+    },
+    {
+     "name": "tryons-history",
+     "path": "../footage/_screens/tryons-history.jpg",
+     "label": "Your try-ons"
+    }
+   ]
+  },
+  {
+   "title": "Profile and Settings",
+   "items": [
+    {
+     "name": "profile",
+     "path": "../footage/_screens/profile.jpg",
+     "label": "Profile: Emma Russo, her try-ons \u00b7 hero"
+    },
+    {
+     "name": "profile-gallery",
+     "path": "../footage/_screens/profile-gallery.jpg",
+     "label": "Profile: Gallery"
+    },
+    {
+     "name": "profile-edit",
+     "path": "../footage/_screens/profile-edit.jpg",
+     "label": "Edit profile"
+    },
+    {
+     "name": "settings",
+     "path": "../footage/_screens/settings.jpg",
+     "label": "Settings"
+    },
+    {
+     "name": "settings-scrolled",
+     "path": "../footage/_screens/settings-scrolled.jpg",
+     "label": "Settings: photos, preferences, help"
+    },
+    {
+     "name": "settings-skin-tone",
+     "path": "../footage/_screens/settings-skin-tone.jpg",
+     "label": "Settings: Your shade profile"
+    },
+    {
+     "name": "settings-body-measurements",
+     "path": "../footage/_screens/settings-body-measurements.jpg",
+     "label": "Settings: Your body"
+    },
+    {
+     "name": "settings-notifications",
+     "path": "../footage/_screens/settings-notifications.jpg",
+     "label": "Settings: Notifications"
+    },
+    {
+     "name": "settings-appearance",
+     "path": "../footage/_screens/settings-appearance.jpg",
+     "label": "Settings: Appearance"
+    },
+    {
+     "name": "required-update",
+     "path": "../footage/_screens/required-update.jpg",
+     "label": "Time to update Curate (blocking update) \u00b7 probe"
+    }
+   ]
+  },
+  {
+   "title": "Zee's moments",
+   "items": [
+    {
+     "name": "zee-a1-refine",
+     "path": "../footage/_screens/zee-a1-refine.jpg",
+     "label": "Zee a1: Make it dressier, Zee listens \u00b7 probe"
+    },
+    {
+     "name": "zee-a2-look-changed",
+     "path": "../footage/_screens/zee-a2-look-changed.jpg",
+     "label": "Zee a2: the look changed \u00b7 probe"
+    },
+    {
+     "name": "zee-a3-loved",
+     "path": "../footage/_screens/zee-a3-loved.jpg",
+     "label": "Zee a3: Love it, Me too. \u00b7 probe"
+    },
+    {
+     "name": "zee-a4-typing",
+     "path": "../footage/_screens/zee-a4-typing.jpg",
+     "label": "Zee a4: listening while she types \u00b7 probe"
+    },
+    {
+     "name": "zee-b5-night",
+     "path": "../footage/_screens/zee-b5-night.jpg",
+     "label": "Zee b5: Up late, Emma? \u00b7 probe"
+    },
+    {
+     "name": "zee-b6-morning",
+     "path": "../footage/_screens/zee-b6-morning.jpg",
+     "label": "Zee b6: Morning, Emma \u00b7 probe"
+    },
+    {
+     "name": "zee-b7-pet",
+     "path": "../footage/_screens/zee-b7-pet.jpg",
+     "label": "Zee b7: three taps, Zee purrs \u00b7 probe"
+    },
+    {
+     "name": "zee-b8-saved",
+     "path": "../footage/_screens/zee-b8-saved.jpg",
+     "label": "Zee b8: Kept in Saved outfits \u00b7 probe"
+    },
+    {
+     "name": "zee-b9-idea",
+     "path": "../footage/_screens/zee-b9-idea.jpg",
+     "label": "Zee b9: an idea for Friday \u00b7 probe"
+    },
+    {
+     "name": "zee-b10-long-wait",
+     "path": "../footage/_screens/zee-b10-long-wait.jpg",
+     "label": "Zee b10: Still looking\u2026 \u00b7 probe"
+    },
+    {
+     "name": "zee-b13-welcome-back",
+     "path": "../footage/_screens/zee-b13-welcome-back.jpg",
+     "label": "Zee b13: Welcome back, Emma \u00b7 probe"
+    }
+   ]
+  }
+ ],
+ "log": [
+  {
+   "t": "2026-10-15T22:28:43Z",
+   "text": "Done: 119 screens (96 real, 23 probe), 24 App Store variants, all draft in the library"
+  },
+  {
+   "t": "2026-10-15T22:28:42Z",
+   "text": "Phone page published: https://claude.ai/artifact/PS1pGFyo65A2Zv98X5xrDC"
+  },
+  {
+   "t": "2026-10-15T22:27:28Z",
+   "text": "Catalogued; building the phone page"
+  },
+  {
+   "t": "2026-10-15T22:27:28Z",
+   "text": "143 screenshots registered (119 screens, 96 real + 23 probe, and 24 App Store 1290x2796 variants), catalog built and validated, pushed to S3"
+  },
+  {
+   "t": "2026-10-15T22:13:51Z",
+   "text": "Registering 143 screenshots in the catalog (119 screens + 24 App Store variants)"
+  },
+  {
+   "t": "2026-10-15T22:00:56Z",
+   "text": "Live pass on Emma's phone done: Wardrobe (top, scrolls, 8 chips), piece detail/edit, Add item, calendar, notifications, chat (empty, two real look threads, Adjust, Style notes, drawer, notebook), Try-ons, Profile, Settings"
+  },
+  {
+   "t": "2026-10-15T21:42:05Z",
+   "text": "Screenshot kind added to the schema; capturing Emma's Wardrobe tab live"
+  }
+ ],
+ "done": 119,
+ "updated": "2026-10-15T22:28:43Z"
+}

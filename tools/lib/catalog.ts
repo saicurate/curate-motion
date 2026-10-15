@@ -7,6 +7,7 @@ import { z } from "zod";
 import { Asset, CatalogIndex, KIND_SCHEMAS, KINDS, Manifest, parseId, SEGMENT, type FileRef } from "../../schemas/asset.ts";
 import { AdSpec } from "../../schemas/ad.ts";
 import { AccountState, PersonaAccount } from "../../schemas/account.ts";
+import { Script, VoiceConfig } from "../../schemas/voice.ts";
 import { aws, BUCKET, CATALOG, findAccounts, findAds, findManifests, INDEX_PATH, LIB, probe, readJson, ROOT, s3KeyFor, sha256File, today, treeSha, writeJson } from "./core.ts";
 import { deleteRemote, pushEntries, remoteSha, type Entry } from "./s3sync.ts";
 
@@ -42,10 +43,14 @@ export const home = (kind: string, scope: string, name: string, rec: Rec = {}): 
       const moment = String(rec.moment ?? name.replace(/-b\d+$/, ""));
       return { dir: `footage/${moment}`, manifest: `footage/${moment}/manifest.json`, about: `App footage of the ${moment} moment, by persona and build.` };
     }
+    case "screenshot":
+      return { dir: `screenshots/${scope}`, manifest: `screenshots/${scope}/manifest.json`, about: `${scope}: still screenshots of the app, by screen, state and build.` };
     case "music":
       return { dir: `music/${scope}`, manifest: "music/manifest.json", about: "Music, with tempo, first beat and named sections." };
     case "sfx":
       return { dir: `music/sfx/${scope}`, manifest: "music/manifest.json", about: "Music, with tempo, first beat and named sections." };
+    case "voice":
+      return { dir: `voice/${scope}`, manifest: "voice/manifest.json", about: "Voiceover audio, by ad: TTS clips (one per script line) and human takes. Made by tools/voice." };
     case "reference":
       return { dir: `references/${name}`, manifest: "references/manifest.json", about: "Reference reels and breakdowns. Study only: never shipped in an ad." };
     default:
@@ -83,6 +88,16 @@ export const KIND_FIELDS: Record<string, { key: string; label: string; options?:
     { key: "moment", label: "Moment (kebab-case)", required: true },
     { key: "app.build", label: "App build", type: "number", required: true },
     { key: "app.version", label: "App version", required: true },
+    { key: "device", label: "Device" },
+  ],
+  screenshot: [
+    { key: "screen", label: "Screen (kebab-case)", required: true },
+    { key: "state", label: "State (kebab-case)", required: true },
+    { key: "app.build", label: "App build", type: "number", required: true },
+    { key: "app.version", label: "App version", required: true },
+    { key: "capture", label: "Capture", options: ["screenshot", "frame"], required: true },
+    { key: "origin", label: "Origin", options: ["app", "probe"], required: true },
+    { key: "variant", label: "Variant", options: ["native", "appstore-6.9"] },
     { key: "device", label: "Device" },
   ],
   stock: [{ key: "shows", label: "What it shows", required: true }],
@@ -131,6 +146,13 @@ export const flatTags = (a: A): string[] => {
     t.add(`moment:${x.moment}`);
     t.add(`build:${(x.app as { build: number }).build}`);
   }
+  if (a.kind === "screenshot") {
+    t.add(`screen:${x.screen}`);
+    t.add(`state:${x.state}`);
+    t.add(`build:${(x.app as { build: number }).build}`);
+    t.add(`source:${x.origin}`);
+    t.add(`size:${(x.dims as { w: number; h: number }).w}x${(x.dims as { w: number; h: number }).h}`);
+  }
   return [...t].sort();
 };
 
@@ -166,6 +188,8 @@ export const writeSchemas = () => {
   emit("ad", AdSpec);
   emit("account", PersonaAccount);
   emit("account-state", AccountState);
+  emit("voice-config", VoiceConfig);
+  emit("script", Script);
 };
 
 const sameIndex = (a: Index | null, b: Index) => !!a && JSON.stringify({ ...a, generatedAt: "" }) === JSON.stringify({ ...b, generatedAt: "" });
@@ -276,6 +300,19 @@ export const validate = (o: { sha?: string; immutableAgainst?: string; checkInde
       const s = AccountState.safeParse(readJson(sp));
       if (!s.success) for (const i of s.error.issues) errors.push(`${relative(ROOT, sp)}: ${i.path.join(".")}: ${i.message}`);
     }
+  }
+  // the voiceover config and every ad's script (schemas/voice.ts)
+  const vcPath = join(ROOT, "config", "voice.json");
+  if (existsSync(vcPath)) {
+    const r = VoiceConfig.safeParse(readJson(vcPath));
+    if (!r.success) for (const i of r.error.issues) errors.push(`config/voice.json: ${i.path.join(".")}: ${i.message}`);
+  }
+  for (const p of findAds()) {
+    const sp = join(ROOT, dirname(p), "script.json");
+    if (!existsSync(sp)) continue;
+    const r = Script.safeParse(readJson(sp));
+    if (!r.success) for (const i of r.error.issues) errors.push(`${dirname(p)}/script.json: ${i.path.join(".")}: ${i.message}`);
+    else if (`ads/${r.data.ad}/ad.json` !== p) errors.push(`${dirname(p)}/script.json: ad "${r.data.ad}" must match its folder`);
   }
   if (o.immutableAgainst) {
     for (const { manifest, data } of ok) {
@@ -479,6 +516,7 @@ export const addAsset = (inp: AddInput) => {
   if (facts.fps && inp.kind === "footage") rec.fps = facts.fps;
   if (inp.kind === "music") rec.beatGrid = fields.bpm ? "estimated" : "unknown";
   if (inp.kind === "footage") Object.assign(rec, { device: "unknown", cleanStatusBar: false, app: { env: "prod" } });
+  if (inp.kind === "screenshot") Object.assign(rec, { device: "unknown", cleanStatusBar: false, account: scope, app: { env: "prod" } });
   if (inp.kind === "zee") rec.pack ??= "unknown";
   for (const [k, v] of Object.entries(fields)) {
     if (k === "app" && typeof v === "object") rec.app = { ...(rec.app as Rec), ...(v as Rec) };

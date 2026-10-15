@@ -1,0 +1,172 @@
+{
+  "$schema": "../catalog/schemas/voice-config.schema.json",
+  "mode": "captions",
+  "captions": {
+    "preset": "brand-keyphrase",
+    "burnIn": true,
+    "sidecar": ["srt", "vtt"]
+  },
+  "captionPresets": {
+    "brand-keyphrase": {
+      "font": "Geist",
+      "bodyWeight": 400,
+      "keyWeight": 500,
+      "bodyColour": "winterGrey",
+      "keyColour": "ink",
+      "plate": "card",
+      "size": 4.3,
+      "maxWidth": 84,
+      "position": "lower"
+    },
+    "brand-keyphrase-bare": {
+      "font": "Geist",
+      "bodyWeight": 400,
+      "keyWeight": 500,
+      "bodyColour": "winterGrey",
+      "keyColour": "ink",
+      "plate": "none",
+      "size": 4.6,
+      "maxWidth": 84,
+      "position": "lower"
+    }
+  },
+  "timing": {
+    "gapSec": 0.3,
+    "tailSec": 0.6,
+    "duckDb": -14
+  },
+  "tts": {
+    "use": "say-preview",
+    "spendCapUsd": 2,
+    "profiles": {
+      "openai-marin": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "marin",
+        "speed": 1,
+        "style": "A warm, calm American woman in her late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "OpenAI's recommended voice for quality. Paid: needs the founder's OK and a spendCapUsd above the estimate."
+      },
+      "openai-cedar": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "cedar",
+        "speed": 1,
+        "style": "A warm, calm American man in his late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "The male alternative to openai-marin. Paid."
+      },
+      "openai-coral": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "speed": 1,
+        "style": "A warm, calm American woman in her late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "Warm, friendly, upbeat woman. Paid."
+      },
+      "openai-sage": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "speed": 1,
+        "style": "A warm, calm American woman in her late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "Calm, measured, gentle woman. Paid."
+      },
+      "openai-nova": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "speed": 1,
+        "style": "A warm, calm American woman in her late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "Bright, youthful, clear woman. Paid."
+      },
+      "openai-shimmer": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "speed": 1,
+        "style": "A warm, calm American woman in her late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "Soft, light, airy woman. Paid."
+      },
+      "openai-ash": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "ash",
+        "speed": 1,
+        "style": "A warm, calm American man in his late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "Clear, steady, friendly man. Paid."
+      },
+      "openai-ballad": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "ballad",
+        "speed": 1,
+        "style": "A warm, calm American man in his late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "Soft, expressive, storytelling man (a slight British lilt). Paid."
+      },
+      "openai-verse": {
+        "provider": "openai",
+        "model": "gpt-4o-mini-tts",
+        "voice": "verse",
+        "speed": 1,
+        "style": "A warm, calm American man in his late twenties, talking to a friend. Unhurried, smiling, clear. Never salesy, never announcer-like.",
+        "format": "mp3",
+        "note": "Expressive, versatile, lively man. Paid."
+      },
+      "eleven-sarah": {
+        "provider": "elevenlabs",
+        "model": "eleven_multilingual_v2",
+        "voice": "EXAVITQu4vr4xnSDxMaL",
+        "name": "Sarah",
+        "speed": 1,
+        "format": "mp3",
+        "note": "Young American woman: warm, reassuring, confident (ElevenLabs default library). Paid; commercial use needs a paid ElevenLabs plan (Starter or above)."
+      },
+      "eleven-jessica": {
+        "provider": "elevenlabs",
+        "model": "eleven_multilingual_v2",
+        "voice": "cgSgspJ2msm6clMCkdW9",
+        "name": "Jessica",
+        "speed": 1,
+        "format": "mp3",
+        "note": "Young American woman: playful, bright, warm, conversational (ElevenLabs default library). Paid; commercial use needs a paid ElevenLabs plan (Starter or above)."
+      },
+      "eleven-will": {
+        "provider": "elevenlabs",
+        "model": "eleven_multilingual_v2",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "name": "Will",
+        "speed": 1,
+        "format": "mp3",
+        "note": "Young American man: relaxed, optimistic, conversational (ElevenLabs default library). Paid; commercial use needs a paid ElevenLabs plan (Starter or above)."
+      },
+      "eleven-chris": {
+        "provider": "elevenlabs",
+        "model": "eleven_multilingual_v2",
+        "voice": "iP95p4xoKVk53GoZ742B",
+        "name": "Chris",
+        "speed": 1,
+        "format": "mp3",
+        "note": "American man: charming, natural, down-to-earth (ElevenLabs default library; labelled middle-aged, sounds young). Paid; commercial use needs a paid ElevenLabs plan (Starter or above)."
+      },
+      "say-preview": {
+        "provider": "say",
+        "voice": "Samantha",
+        "speed": 1,
+        "format": "m4a",
+        "previewOnly": true,
+        "note": "macOS `say`, free and offline. PREVIEW ONLY, NOT FOR RELEASE: Apple's licence doesn't cover commercial use of the system voices."
+      }
+    }
+  },
+  "human": {
+    "lines": {}
+  }
+}

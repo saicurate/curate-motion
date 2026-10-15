@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "captions",
+        "human",
+        "tts"
+      ]
+    },
+    "captions": {
+      "default": {
+        "preset": "brand-keyphrase",
+        "burnIn": true,
+        "sidecar": [
+          "srt",
+          "vtt"
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "preset": {
+          "default": "brand-keyphrase",
+          "type": "string"
+        },
+        "burnIn": {
+          "default": true,
+          "type": "boolean"
+        },
+        "sidecar": {
+          "default": [
+            "srt",
+            "vtt"
+          ],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "srt",
+              "vtt"
+            ]
+          }
+        }
+      }
+    },
+    "captionPresets": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "font": {
+            "default": "Geist",
+            "type": "string",
+            "const": "Geist"
+          },
+          "bodyWeight": {
+            "default": 400,
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "keyWeight": {
+            "default": 500,
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "bodyColour": {
+            "default": "winterGrey",
+            "type": "string",
+            "enum": [
+              "ink",
+              "strong",
+              "winterGrey",
+              "t2",
+              "t3",
+              "card",
+              "ground"
+            ]
+          },
+          "keyColour": {
+            "default": "ink",
+            "type": "string",
+            "enum": [
+              "ink",
+              "strong",
+              "winterGrey",
+              "t2",
+              "t3",
+              "card",
+              "ground"
+            ]
+          },
+          "plate": {
+            "default": "card",
+            "type": "string",
+            "enum": [
+              "card",
+              "none"
+            ]
+          },
+          "size": {
+            "default": 4.3,
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "maxWidth": {
+            "default": 84,
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 100
+          },
+          "position": {
+            "default": "lower",
+            "type": "string",
+            "enum": [
+              "lower",
+              "upper"
+            ]
+          }
+        }
+      }
+    },
+    "timing": {
+      "default": {
+        "gapSec": 0.3,
+        "tailSec": 0.6,
+        "duckDb": -14
+      },
+      "type": "object",
+      "properties": {
+        "gapSec": {
+          "default": 0.3,
+          "type": "number",
+          "minimum": 0
+        },
+        "tailSec": {
+          "default": 0.6,
+          "type": "number",
+          "minimum": 0
+        },
+        "duckDb": {
+          "default": -14,
+          "type": "number",
+          "maximum": 0
+        }
+      }
+    },
+    "tts": {
+      "type": "object",
+      "properties": {
+        "use": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "spendCapUsd": {
+          "default": 0,
+          "type": "number",
+          "minimum": 0
+        },
+        "profiles": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "provider": {
+                "type": "string",
+                "enum": [
+                  "openai",
+                  "elevenlabs",
+                  "say"
+                ]
+              },
+              "model": {
+                "type": "string"
+              },
+              "voice": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string"
+              },
+              "speed": {
+                "default": 1,
+                "type": "number",
+                "minimum": 0.5,
+                "maximum": 2
+              },
+              "style": {
+                "type": "string"
+              },
+              "format": {
+                "default": "mp3",
+                "type": "string",
+                "enum": [
+                  "mp3",
+                  "m4a",
+                  "wav"
+                ]
+              },
+              "previewOnly": {
+                "default": false,
+                "type": "boolean"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "provider",
+              "voice"
+            ]
+          }
+        }
+      },
+      "required": [
+        "use",
+        "profiles"
+      ]
+    },
+    "human": {
+      "default": {
+        "lines": {}
+      },
+      "type": "object",
+      "properties": {
+        "take": {
+          "type": "string",
+          "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+        },
+        "lines": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "captionPresets",
+    "tts"
+  ]
+}

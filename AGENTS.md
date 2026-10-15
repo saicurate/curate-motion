@@ -23,9 +23,10 @@ library, never regenerated.**
 
 | Folder | What goes there |
 |---|---|
-| `library/` | Media (gitignored, synced with S3) + one `manifest.json` per folder (tracked). `brand/`, `zee/`, `people/<persona>/`, `wardrobe/<persona>/`, `camera-roll/<persona>/`, `stock/`, `footage/<moment>/`, `music/`, `references/` |
+| `library/` | Media (gitignored, synced with S3) + one `manifest.json` per folder (tracked). `brand/`, `zee/`, `people/<persona>/`, `wardrobe/<persona>/`, `camera-roll/<persona>/`, `stock/`, `footage/<moment>/`, `screenshots/<persona>/`, `music/`, `references/` |
 | `catalog/` | `index.json`: every asset in one machine-readable file (generated). `schemas/`: a JSON Schema per asset kind (generated) |
 | `schemas/` | The zod source of truth for assets, ads and persona accounts |
+| `config/` | Project-wide settings as data: `voice.json` (the voiceover's mode and every mode's settings) |
 | `motion/` | Reusable Remotion components (PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…) |
 | `ads/` | One folder per ad: `ad.json` (the ad in data), `README.md`, `index.tsx` |
 | `renders/` | Rendered videos by ad / channel / length (gitignored, synced to S3) |
@@ -66,7 +67,7 @@ Tags are `key:value`: `kind:`, `status:`, `scope:`, `persona:`, `moment:`, `mood
 
 ```
 id    = <kind>.<scope>.<name>.v<N>
-kind  = brand | font | zee | face | selfie | tryon | garment | photo | stock | footage | music | sfx | reference
+kind  = brand | font | zee | face | selfie | tryon | garment | photo | stock | footage | screenshot | music | sfx | voice | reference
 scope = the persona (emma), Zee's emotion (excited), the source (mixkit, unsplash, curate), or a group
 name  = kebab-case, most general word first:  jeans-straight-light-wash, coat-trench-khaki
 vN    = version, from v1; never reused, never edited once approved
@@ -74,7 +75,7 @@ vN    = version, from v1; never reused, never edited once approved
 
 Examples: `garment.emma.jeans-straight-light-wash.v1`, `zee.excited.loop.v1`,
 `music.mixkit.cat-walk-arulo.v1`, `face.emma.b.v1`, `footage.emma.two-taps-closet-b262.v1`,
-`stock.unsplash.coffee-in-hand.v1`, `brand.curate.logo-splash.v1`, `font.geist.medium.v1`.
+`screenshot.emma.wardrobe-top.v1`, `stock.unsplash.coffee-in-hand.v1`, `brand.curate.logo-splash.v1`, `font.geist.medium.v1`.
 
 File names follow the id: `library/<folder>/<name>.v<N>.<ext>` (e.g.
 `library/wardrobe/emma/jeans-straight-light-wash.v1.jpg`, cutout in `cutouts/`, thumb in `thumbs/`).
@@ -118,6 +119,7 @@ Agents never mark their own work approved.
 tools/sync pull --ad <ad-id>                             # make sure the ad's media is here
 tools/render <ad-id> --format 9x16 --length 15 --draft   # half-size, quick
 tools/render <ad-id>                                     # every format × length in ad.json
+tools/render <ad-id> --voice tts --tts say-preview       # this render only: another voice (see "How to change the voice")
 tools/render queue                                       # status of the render queue
 tools/sync renders push                                  # upload finished renders to S3
 ```
@@ -163,12 +165,75 @@ Licence presets: `ai-owned` (our generated images), `curate` (our own footage, Z
 `unsplash`, `pexels`, `mixkit`, `ofl` (fonts), `reference` (study only, never shipped). Or pass a
 full licence as JSON. **No licence, no asset.** Kind-specific fields go in `--set` (garment:
 `category`, `name`; zee: `emotion`, `part`, `pack`; footage: `moment`, `app.build`, `app.version`;
-stock: `shows`; try-on: `wearing`). App footage is easiest through `tools/capture.sh`, which
+stock: `shows`; try-on: `wearing`; screenshot: `screen`, `state`, `app.build`, `app.version`,
+`capture` (screenshot | frame), `origin` (app | probe), `variant` (native | appstore-6.9)). App footage is easiest through `tools/capture.sh`, which
 records and adds it in one go. Then commit the changed manifest(s) and `catalog/index.json`.
 
 Removal rules: **retire is the default** and is always safe. Approved assets are never hard-deleted.
 `--force` deletes a draft's entry, its local files and its S3 objects (S3 keeps the bytes 90 days
 as old versions). An asset an ad lists can't be deleted until the ad stops listing it.
+
+## How to change the voice
+
+The voiceover is **config, not code** ([decisions/0009](decisions/0009-voice-as-config.md)). An ad's
+words live in `ads/<ad>/script.json` (line id, text, scene, start/end hints, key phrases); which
+voice says them is ONE edit. Precedence: `tools/render --voice` > `ads/<ad>/ad.json › voice` >
+`config/voice.json`. Captions are always there too: burned in, and as `.srt` + `.vtt` next to every mp4.
+
+**The founder's way: the Voice panel.** `tools/library-ui`, open http://127.0.0.1:4317, section
+"Voiceover". The default (Captions only / Human recording / AI voice, which AI voice, Burn in
+captions), each ad's own choice or "Use the default", and per ad: Preview cost (a dry run), Play
+sample (clips already made), Preview with Mac voice (free, not for release) and Generate (paid:
+only after Preview cost, a confirmation, and a spending limit that allows it; the limit is shown
+and only the founder raises it there). Save validates and writes the files, then says what the next
+render uses. `tools/library-ui --lan` also serves it to their phone on the same Wi-Fi (off by
+default; the link with the per-run key is on the Mac's page, never printed).
+
+**Agents: one line.** It sets exactly the fields the panel does, validated, formatting kept:
+
+```bash
+tools/voice use tts --profile openai-marin              # every ad: the AI voice Marin (config/voice.json)
+tools/voice use captions                                # every ad: no voice, captions only
+tools/voice use human --burn-in off                     # every ad: the recording; captions as .srt/.vtt only
+tools/voice use tts --profile say-preview --ad explainer   # one ad (ads/explainer/ad.json › voice)
+tools/voice use default --ad explainer                  # that ad follows the default again
+tools/voice use                                         # what every ad's next render uses
+```
+
+`tools/voice use` never changes `tts.spendCapUsd` (the founder's call, in the panel). Add
+`--dry-run` to validate without writing.
+
+| To get | Or edit exactly this |
+|---|---|
+| no voice, captions only (every ad) | `config/voice.json`: `"mode": "captions"` |
+| the AI voice (every ad) | `config/voice.json`: `"mode": "tts"` |
+| a different AI voice | `config/voice.json`: `"use": "openai-marin"` (inside `"tts"`; a key of `tts.profiles`) |
+| the human recording (every ad) | `config/voice.json`: `"mode": "human"` |
+| one ad only | `ads/<ad>/ad.json`: `"voice": { "mode": "tts" }` |
+| one render only | `tools/render <ad> --voice tts` (add `--tts say-preview` for another profile) |
+| captions not burned in (sidecar only) | `config/voice.json`: `"burnIn": false` (inside `"captions"`; ignored in captions mode) |
+
+Then make the audio the mode needs (the render refuses a voiced cut with missing lines):
+
+```bash
+tools/voice plan explainer --voice tts          # the resolved voice, every line's time, what's missing
+tools/voice generate explainer                  # DRY RUN (the default): characters + estimated cost, nothing spent
+tools/voice generate explainer --yes            # make the clips (cached: the same text + voice is never made twice)
+tools/voice import explainer ~/take-1.wav --auto --speaker Sai --release <signed-release>   # a human take, lines marked from its pauses
+tools/voice import explainer ~/l03.wav --line l03                                            # or one file per line
+tools/voice mark voice.explainer.take.v1 --marks "l01=0.40-3.52,l02=3.90-7.10"               # fix marks by hand
+tools/voice providers                           # adapters, prices, licences, whether their key exists (name only)
+```
+
+- **Paid TTS needs the founder's OK.** `generate --yes` refuses any cost unless `tts.spendCapUsd` in
+  `config/voice.json` covers everything spent so far plus the estimate; it is `0` until the founder
+  raises it. Keys come from SSM by name (`/curate/openai-api-key`); never print them.
+- **`say-preview` (macOS `say`) is free, offline and PREVIEW ONLY**: its clips are `previewOnly`,
+  can never be approved, carry a "Preview voice · not for release" label on screen, and an
+  approved/live ad refuses them.
+- An AI voice needs the AI disclosure (OpenAI's terms): list it in `ad.json › disclosures`.
+- In an ad, build the plan with `narrationPlan()` and hang the picture off `sceneOf` / `lineOf` /
+  `phraseFrame`, then put `<Narration plan={plan}/>` on top (see `ads/explainer/index.tsx`).
 
 ## How to change Emma's wardrobe in the app
 

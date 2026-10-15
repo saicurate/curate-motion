@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "ad": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "language": {
+      "default": "en-US",
+      "type": "string"
+    },
+    "scenes": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "startHint": {
+            "type": "number",
+            "minimum": 0
+          },
+          "endHint": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "picture": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "title",
+          "startHint",
+          "endHint"
+        ]
+      }
+    },
+    "lines": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^l\\d{2,3}$"
+          },
+          "scene": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "spoken": {
+            "type": "string"
+          },
+          "startHint": {
+            "type": "number",
+            "minimum": 0
+          },
+          "endHint": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "keyPhrases": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "scene",
+          "text",
+          "startHint",
+          "endHint"
+        ]
+      }
+    },
+    "cuts": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        }
+      }
+    }
+  },
+  "required": [
+    "ad",
+    "title",
+    "scenes",
+    "lines"
+  ]
+}

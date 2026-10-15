@@ -28,7 +28,8 @@ const selected = (): Entry[] => {
   if (typeof args.kind === "string") es = es.filter((e) => e.kind === args.kind);
   if (typeof args.ad === "string") {
     const ad = readJson<{ assets: string[] }>(join(ROOT, "ads", args.ad, "ad.json"));
-    es = es.filter((e) => ad.assets.includes(e.id));
+    // the ad's assets, plus its voiceover clips and takes (voice.<ad>.*), which ad.json doesn't list
+    es = es.filter((e) => ad.assets.includes(e.id) || (e.kind === "voice" && e.id.startsWith(`voice.${args.ad}.`)));
   }
   return es;
 };

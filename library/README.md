@@ -14,6 +14,7 @@ Every asset, made once and reused. **Media files are gitignored** and live in th
 | `stock/<source>/` | Unsplash / Pexels with licence | `stock.unsplash.coffee-in-hand.v1` |
 | `footage/<moment>/` | app recordings `<persona>-b<build>.vN.mp4` | `footage.emma.two-taps-closet-b262.v1` |
 | `music/<source>/` | tracks with bpm + beat map | `music.mixkit.cat-walk-arulo.v1` |
+| `voice/<ad>/` | voiceover audio: TTS clips (one per script line) and human takes, made by `tools/voice` | `voice.explainer.l01-say-preview.v1` |
 | `references/<name>/` | reels we study, never shipped | `reference.creator.pop-off-reel.v1` |
 
 - **Goes here:** anything an ad might show or play, with a licence.
