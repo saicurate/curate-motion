@@ -7,9 +7,30 @@
   "email": "emma.nyc@test123.com",
   "signIn": "email-password",
   "username": "emma.nyc",
-  "secret": { "store": "aws-ssm", "name": "/curate/marketing/emma-password", "region": "us-east-1" },
-  "flags": { "testAccount": true, "excludeFromAnalytics": true, "origin": "ORGANIC" },
-  "devices": [{ "id": "3AE51A7B-72BD-47C2-A4B9-B3FA40CD06C6", "kind": "simulator", "name": "marketing simulator (tools/sim-udid.txt)" }],
-  "status": "planned",
-  "notes": "The dedicated marketing account (founder, 2026-10-15). Plan: marketing/videos/assets/ACCOUNT-PLAN.md (email from that plan; fallback emma.astoria@test123.com; test123.com bypasses the email OTP). Origin left ORGANIC so push footage works (SEED blocks notifications). When created: set uid and createdAt, status active; the password goes to SSM only: aws ssm put-parameter --type SecureString --name /curate/marketing/emma-password. What is in the account is recorded in account-state.json next to this file."
+  "secret": {
+    "store": "aws-ssm",
+    "name": "/curate/marketing/emma-password",
+    "region": "us-east-1"
+  },
+  "flags": {
+    "testAccount": true,
+    "excludeFromAnalytics": true,
+    "origin": "ORGANIC"
+  },
+  "devices": [
+    {
+      "id": "B0202502-C8FB-4DAA-8E29-EAE4866B0C14",
+      "kind": "simulator",
+      "name": "Emma Marketing 17PM (iPhone 17 Pro Max, iOS 26.5), Emma signed in, debug build of 1.5.0 (262)"
+    },
+    {
+      "id": "3AE51A7B-72BD-47C2-A4B9-B3FA40CD06C6",
+      "kind": "simulator",
+      "name": "marketing simulator (tools/sim-udid.txt)"
+    }
+  ],
+  "status": "active",
+  "notes": "The dedicated marketing account (founder, 2026-10-15). Plan: marketing/videos/assets/ACCOUNT-PLAN.md (email from that plan; fallback emma.astoria@test123.com; test123.com bypasses the email OTP). Origin left ORGANIC so push footage works (SEED blocks notifications). Created 2026-10-15 by the account agent: signed up with email + password in the real app (build 262 code, debug, on the simulator), OTP bypassed by test123.com, onboarding done (Emma Russo, Woman, 1999-03-14, @emma.nyc, Minimalist/Workwear/Classic, $50-150, skin tone by selfie, 5'6\", 135 lb, bust 35, waist 28, hips 38, inseam 30). Origin ORGANIC (not SEED). Password only in SSM. Wardrobe: account-state.json next to this file.",
+  "uid": "IRUp7V2A7WWbXqJlrfTju8NuGHK2",
+  "createdAt": "2026-10-15T18:17:34Z"
 }

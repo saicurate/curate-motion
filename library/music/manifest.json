@@ -1,0 +1,527 @@
+{
+  "$schema": "../../catalog/schemas/manifest.schema.json",
+  "about": "Music, with tempo, first beat and named sections so ads cut on the beat. Mixkit Stock Music Free License unless noted.",
+  "assets": [
+    {
+      "id": "music.mixkit.better-times-are-coming-alejandro-magana.v1",
+      "title": "Better Times are Coming — Alejandro Magaña (Mixkit)",
+      "description": "Beat grid: c5; c9 used 120.25 bpm.",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/better-times-are-coming-alejandro-magana.v1.mp3",
+          "sha256": "9606a32daac982a5cc42ab4f333ca427ee394f9242a433617007952f4b20ea10",
+          "bytes": 3202473,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "upbeat",
+          "synth"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Alejandro Magaña",
+        "url": "https://mixkit.co/free-stock-music/tag/fashion/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 100.075,
+      "bpm": 120,
+      "offsetSec": 0.104,
+      "beatGrid": "estimated",
+      "beatsPerBar": 4,
+      "sections": {
+        "breakdown": 24,
+        "back": 38
+      },
+      "vibe": "Upbeat synth pop, about 120 bpm, bright. Breaks down at 0:24 and comes back at 0:38."
+    },
+    {
+      "id": "music.mixkit.cant-get-you-off-my-mind-michael-ramir-c.v1",
+      "title": "Can't Get You Off My Mind — Michael Ramir C. (Mixkit)",
+      "description": "Beat grid: c4 (150 bpm, drop 25.58 s); c7 used 149.75 bpm with the drop at 25.38 s: verify by ear.",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/cant-get-you-off-my-mind-michael-ramir-c.v1.mp3",
+          "sha256": "87c8c70182d35d6bfff2bddecd85eaff8ef7597d3adba5767b0365c7b0c2927c",
+          "bytes": 2903188,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "future",
+          "bass",
+          "with"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Michael Ramir C.",
+        "url": "https://mixkit.co/free-stock-music/tag/fashion/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 90.648,
+      "bpm": 150,
+      "offsetSec": 0.381,
+      "beatGrid": "estimated",
+      "beatsPerBar": 4,
+      "sections": {
+        "drop": 25.58
+      },
+      "vibe": "Future bass pop with a big drop at 0:24. A TikTok-style hook."
+    },
+    {
+      "id": "music.mixkit.cat-walk-arulo.v1",
+      "title": "Cat Walk — Arulo (Mixkit)",
+      "description": "Beat grid: c1 and c14 both land the drop at 29.5 s.",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/cat-walk-arulo.v1.mp3",
+          "sha256": "e241cba000ce12e52cadd4c9956274e391ef1f66d1e48a5dd40bfc21645aa489",
+          "bytes": 3969820,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "fashion",
+          "house"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Arulo",
+        "url": "https://mixkit.co/free-stock-music/tag/fashion/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 123.99,
+      "bpm": 130,
+      "offsetSec": 0.423,
+      "beatGrid": "estimated",
+      "beatsPerBar": 4,
+      "sections": {
+        "drop": 29.5
+      },
+      "vibe": "Fashion house, about 130 bpm; the beat drops at 0:30. Runway energy. Best for 'Two taps to a closet' and the photos cut."
+    },
+    {
+      "id": "music.mixkit.deep-urban-eugenio-mininni.v1",
+      "title": "Deep Urban — Eugenio Mininni (Mixkit)",
+      "description": "Beat grid: c12.",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/deep-urban-eugenio-mininni.v1.mp3",
+          "sha256": "ac7e28f0cdd6c607df199c759f34ca66cfebd881ea61c26473fb4cecebe64fa8",
+          "bytes": 9240540,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "deep",
+          "house"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Eugenio Mininni",
+        "url": "https://mixkit.co/free-stock-music/tag/fashion/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 288.692,
+      "bpm": 123.75,
+      "offsetSec": 0.185,
+      "beatGrid": "estimated",
+      "beatsPerBar": 4,
+      "sections": {},
+      "vibe": "Deep house, about 124 bpm, steady and premium. Good under the App Store preview and the website."
+    },
+    {
+      "id": "music.mixkit.drawing-the-sky-eugenio-mininni.v1",
+      "title": "Drawing the Sky — Eugenio Mininni (Mixkit)",
+      "description": "Beat grid: ExOpen lands on the swell.",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/drawing-the-sky-eugenio-mininni.v1.mp3",
+          "sha256": "2057e6513605a3da566dfb72fb3335e7e704e346e882ecfafce42b4a53e6ad8e",
+          "bytes": 6611577,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "cinematic",
+          "orchestral"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Eugenio Mininni",
+        "url": "https://mixkit.co/free-stock-music/tag/cinematic/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 206.538,
+      "bpm": 100,
+      "offsetSec": 0.4,
+      "beatGrid": "estimated",
+      "beatsPerBar": 4,
+      "sections": {
+        "swell": 14.8
+      },
+      "vibe": "Cinematic orchestral pop, about 100 bpm; swells at 0:14. For a hero or website film."
+    },
+    {
+      "id": "music.mixkit.gummies-michael-ramir-c.v1",
+      "title": "Gummies — Michael Ramir C. (Mixkit)",
+      "description": "Beat grid: c2 cuts on a 120 bpm grid from 0.25 s.",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/gummies-michael-ramir-c.v1.mp3",
+          "sha256": "28a4219e2b0c7308b4fcd910d3bb2c00b4f0a9535308ca5cdf68d262dc5f8d77",
+          "bytes": 3188236,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "cute"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Michael Ramir C.",
+        "url": "https://mixkit.co/free-stock-music/tag/playful/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 99.564,
+      "bpm": 120,
+      "offsetSec": 0.25,
+      "beatGrid": "estimated",
+      "beatsPerBar": 4,
+      "sections": {},
+      "vibe": "Cute, playful synth pop, about 120 bpm. Made for Zee."
+    },
+    {
+      "id": "music.mixkit.lo-fi-01-lily-j.v1",
+      "title": "Lo-Fi 01 — Lily J (Mixkit)",
+      "description": "Beat grid: c3, half-time feel.",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/lo-fi-01-lily-j.v1.mp3",
+          "sha256": "7abbeca8d4573eaefbd4f8f28fa9c093890acab1e252c1a4569e7172fdb4cc53",
+          "bytes": 4095999,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "chill",
+          "lo-fi",
+          "beat"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Lily J",
+        "url": "https://mixkit.co/free-stock-music/tag/chill/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 102.4,
+      "bpm": 75,
+      "offsetSec": 0.025,
+      "beatGrid": "estimated",
+      "beatsPerBar": 4,
+      "sections": {},
+      "vibe": "Chill lo-fi beat, about 75 bpm (half-time). For 'What do I wear today?' morning moments."
+    },
+    {
+      "id": "music.mixkit.sleepy-cat-alejandro-magana.v1",
+      "title": "Sleepy Cat — Alejandro Magaña (Mixkit)",
+      "files": [
+        {
+          "role": "original",
+          "path": "music/mixkit/sleepy-cat-alejandro-magana.v1.mp3",
+          "sha256": "fc15a57f37b711f746e523bc89ee7311e2081cd4b25a6a89db0da33c3c42f64c",
+          "bytes": 3813190,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "chill",
+          "downtempo",
+          "with"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Alejandro Magaña",
+        "url": "https://mixkit.co/free-stock-music/tag/chill/",
+        "from": []
+      },
+      "licence": {
+        "name": "Mixkit Stock Music Free License",
+        "url": "https://mixkit.co/license/#musicFree",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "tv-radio-broadcast",
+          "cd-dvd",
+          "video-games",
+          "music-only-remix",
+          "content-id-registration"
+        ],
+        "proof": "library/music/licences-legacy.json (text as checked)",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "music",
+      "durationSec": 119.16,
+      "offsetSec": 0,
+      "beatGrid": "unknown",
+      "beatsPerBar": 4,
+      "sections": {},
+      "vibe": "Chill downtempo with a cosy, cat-named groove. Soft Zee moments."
+    }
+  ]
+}

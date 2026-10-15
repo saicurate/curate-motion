@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curate Videos</title>
+<style>
+:root{--ground:#F5F6F6;--card:#FFFFFF;--ink:#17181A;--t2:#6B7078;--t3:#9AA0A8;--line:#E6E8EB;--accent:#17181A;--ok:#3E8E63;--run:#B07A1E;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--ground:#111214;--card:#1A1B1E;--ink:#EDEEF0;--t2:#A3A8B0;--t3:#7A7F87;--line:#2A2C30;--accent:#EDEEF0;--ok:#6CC08F;--run:#E0B055;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:-apple-system,"SF Pro Text",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 60px;padding-inline:20px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px}
+h1{font-size:26px;font-weight:650;margin:0;letter-spacing:-.01em}
+.live{font-size:13px;color:var(--t2);display:flex;align-items:center;gap:7px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.phase{margin:14px 0 6px;font-size:16px}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .6s ease}
+h2{font-size:17px;font-weight:650;margin:34px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:15px;margin:0;font-weight:650;text-wrap:balance}
+.idea{font-size:13px;color:var(--t2);margin:0;line-height:1.4}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:99px;border:1px solid var(--line);color:var(--t2)}
+.pill.running{color:var(--run);border-color:currentColor}.pill.done{color:var(--ok);border-color:currentColor}
+ul.steps{margin:0;padding:0;list-style:none;font-size:13px;display:flex;flex-direction:column;gap:5px}
+ul.steps li{display:flex;gap:8px;color:var(--t2)}ul.steps li.d{color:var(--ink)}
+ul.steps li::before{content:"○";color:var(--t3)}ul.steps li.d::before{content:"●";color:var(--ok)}ul.steps li.r::before{content:"◐";color:var(--run)}
+video,img.media{width:100%;border-radius:12px;background:#000;display:block;max-height:480px;object-fit:contain}
+.files{display:flex;flex-direction:column;gap:8px}
+.cap{font-size:12px;color:var(--t3)}
+.log{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px 16px;max-height:460px;overflow:auto}
+.log div{display:flex;gap:14px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.4}
+.log div:last-child{border-bottom:0}
+.log time{color:var(--t3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.music{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.music .card{gap:6px}.music a{color:var(--ink)}
+audio{width:100%}
+.empty{color:var(--t3);font-size:13.5px}
+.aset{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}
+.aset h3{font-size:15px;margin:0 0 4px;font-weight:650}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-top:10px}
+.thumbs figure{margin:0}.thumbs img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:var(--line);display:block}
+.thumbs figcaption{font-size:11.5px;color:var(--t2);margin-top:4px;line-height:1.3}
+.spend{font-size:13px;color:var(--t2);margin:0 0 12px;font-variant-numeric:tabular-nums}
+.sb{font-size:13px;line-height:1.45;color:var(--t2);margin:0}.sb b{color:var(--ink);font-weight:600}
+details.sb summary{cursor:pointer;color:var(--ink);font-weight:600}details.sb ol{margin:6px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.words{display:flex;flex-wrap:wrap;gap:6px}.words span{font-size:12.5px;padding:3px 10px;border-radius:99px;background:var(--ground);border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Curate marketing videos</h1>
+    <div class="live"><span class="dot"></span><span id="upd">Live</span></div>
+  </header>
+  <div class="phase" id="phase">Loading…</div>
+  <div class="bar"><i id="overall" style="width:0%"></i></div>
+
+  <h2>Assets: the marketing account</h2>
+  <div id="assets"><p class="empty">The account, her wardrobe and her photos will show up here.</p></div>
+
+  <h2>Concepts</h2>
+  <div class="grid" id="concepts"></div>
+
+  <h2>Music to explore</h2>
+  <div class="music" id="music"><p class="empty">Tracks will show up here.</p></div>
+
+  <h2>Every step, newest first</h2>
+  <div class="log" id="log"></div>
+</div>
+<script>
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const when=t=>{try{return new Date(t).toLocaleTimeString([], {hour:"2-digit",minute:"2-digit",second:"2-digit"})}catch(e){return t}};
+let seen="";
+function render(){
+  const d=window.CURATE_VIDEOS; if(!d) return;
+  const sig=JSON.stringify(d); if(sig===seen) return; seen=sig;
+  document.getElementById("phase").textContent=d.phase||"";
+  document.getElementById("overall").style.width=(d.overall||0)+"%";
+  document.getElementById("upd").textContent="Live · updated "+when(d.updated);
+  document.getElementById("concepts").innerHTML=(d.concepts||[]).map(c=>{
+    const steps=(c.steps||[]).map(s=>`<li class="${s.done?"d":s.running?"r":""}">${esc(s.text)}</li>`).join("");
+    const files=(c.files||[]).map(f=>/\.(mp4|mov|webm)$/i.test(f.path)
+      ?`<div><video src="${esc(f.path)}" controls muted playsinline loop preload="metadata"></video><div class="cap">${esc(f.label||"")}</div></div>`
+      :`<div><img class="media" src="${esc(f.path)}" alt=""><div class="cap">${esc(f.label||"")}</div></div>`).join("");
+    return `<div class="card"><div><span class="pill ${esc(c.status)}">${esc(c.status)}</span></div>
+      <h3>${esc(c.title)}</h3><p class="idea">${esc(c.idea)}</p>
+      ${c.hook?`<p class="sb"><b>Hook</b> ${esc(c.hook)}</p>`:""}
+      ${(c.words||[]).length?`<div class="words">${c.words.map(w=>`<span>${esc(w)}</span>`).join("")}</div>`:""}
+      ${(c.storyboard||[]).length?`<details class="sb"><summary>Storyboard</summary><ol>${c.storyboard.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></details>`:""}
+      ${c.music?`<p class="sb"><b>Music</b> ${esc(c.music)}</p>`:""}
+      ${c.channels?`<p class="sb"><b>Where</b> ${esc(c.channels)}</p>`:""}
+      ${c.footage?`<p class="sb"><b>Footage needed</b> ${esc(c.footage)}</p>`:""}
+      <div class="bar"><i style="width:${c.progress||0}%"></i></div>
+      ${steps?`<ul class="steps">${steps}</ul>`:""}${files?`<div class="files">${files}</div>`:""}</div>`;
+  }).join("");
+  const m=d.music||[];
+  document.getElementById("music").innerHTML=m.length?m.map(t=>`<div class="card"><h3>${esc(t.title)}</h3>
+    <p class="idea">${esc(t.vibe||"")}${t.license?" · "+esc(t.license):""}</p>
+    ${t.file?`<audio controls preload="none" src="${esc(t.file)}"></audio>`:""}
+    ${t.url?`<a href="${esc(t.url)}" target="_blank" rel="noopener">Listen at the source</a>`:""}</div>`).join("")
+    :`<p class="empty">Tracks will show up here.</p>`;
+  const a=window.CURATE_ASSETS;
+  if(a){
+    document.getElementById("assets").innerHTML=`<p class="spend">${esc(a.phase||"")}${a.spend!=null?` · AI spend so far $${Number(a.spend).toFixed(2)} of $${Number(a.cap||20).toFixed(0)}`:""}</p>`+
+    (a.sections||[]).map(x=>`<div class="aset"><h3>${esc(x.title)}</h3>${x.note?`<p class="idea">${esc(x.note)}</p>`:""}
+      <div class="thumbs">${(x.items||[]).map(i=>`<figure><img src="${esc(i.path)}" alt="" loading="lazy"><figcaption>${esc(i.label||"")}</figcaption></figure>`).join("")}</div></div>`).join("");
+  }
+  const logs=[...(d.log||[]),...((a&&a.log)||[])].sort((x,y)=>String(x.t).localeCompare(String(y.t)));
+  document.getElementById("log").innerHTML=logs.slice().reverse().map(l=>`<div><time>${esc(when(l.t))}</time><span>${esc(l.text)}</span></div>`).join("");
+}
+function load(name){
+  const s=document.createElement("script");
+  s.src=name+"?t="+Date.now();
+  s.onload=()=>{render();s.remove()};
+  s.onerror=()=>s.remove();
+  document.body.appendChild(s);
+}
+function reload(){load("status.js");load("assets.js")}
+reload(); setInterval(reload,3000);
+</script>
+</body>
+</html>

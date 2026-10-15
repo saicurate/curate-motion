@@ -1,0 +1,303 @@
+{
+  "$schema": "../../catalog/schemas/manifest.schema.json",
+  "about": "Curate's own brand marks and typefaces (from curate-app).",
+  "assets": [
+    {
+      "id": "brand.curate.logo-splash.v1",
+      "title": "Curate logo (splash lockup)",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/curate/logo-splash.v1.png",
+          "sha256": "062ca99db48f39b8767803f4d2aa75348a502d188f8a8335f6e00280436a4706",
+          "bytes": 65501,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "original",
+        "url": "curate-app/assets",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "brand",
+      "dims": {
+        "w": 670,
+        "h": 742
+      }
+    },
+    {
+      "id": "brand.curate.logo-mark.v1",
+      "title": "Curate mark",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/curate/logo-mark.v1.png",
+          "sha256": "41ff0e216e3c67b061d1cb4b667e732b174103a43be7e56b91c3e2bd67987cf4",
+          "bytes": 14644,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "original",
+        "url": "curate-app/assets",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "brand",
+      "dims": {
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "brand.curate.splash-mark.v1",
+      "title": "Curate splash mark",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/curate/splash-mark.v1.png",
+          "sha256": "dabf3ebdeb2f5afd665dd7271edf6038b99488777992c2d7557554b1e40008a6",
+          "bytes": 42796,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "original",
+        "url": "curate-app/assets",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "brand",
+      "dims": {
+        "w": 1152,
+        "h": 1152
+      }
+    },
+    {
+      "id": "font.geist.regular.v1",
+      "title": "Geist Regular",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/fonts/geist-regular.v1.ttf",
+          "sha256": "5c8968eafb98a4c4f47033daf29e38e284a6f2a82eb017d171ab040fe7c4b615",
+          "bytes": 126048,
+          "mime": "font/ttf"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Vercel",
+        "url": "https://github.com/vercel/geist-font",
+        "from": []
+      },
+      "licence": {
+        "name": "SIL Open Font License 1.1",
+        "url": "https://github.com/vercel/geist-font/blob/main/LICENSE.TXT",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "do-not-sell-the-font-alone"
+        ],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "font",
+      "family": "Geist",
+      "weight": 400,
+      "style": "normal"
+    },
+    {
+      "id": "font.geist.medium.v1",
+      "title": "Geist Medium",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/fonts/geist-medium.v1.ttf",
+          "sha256": "0090e004725f6f64b841715b4167920580f883fcf9b67fc6d744089103fec101",
+          "bytes": 127660,
+          "mime": "font/ttf"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Vercel",
+        "url": "https://github.com/vercel/geist-font",
+        "from": []
+      },
+      "licence": {
+        "name": "SIL Open Font License 1.1",
+        "url": "https://github.com/vercel/geist-font/blob/main/LICENSE.TXT",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "do-not-sell-the-font-alone"
+        ],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "font",
+      "family": "Geist",
+      "weight": 500,
+      "style": "normal"
+    },
+    {
+      "id": "font.geist.semibold.v1",
+      "title": "Geist SemiBold",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/fonts/geist-semibold.v1.ttf",
+          "sha256": "612ec98df33935354f39e81e54101656961ab6e5549f64b63eb57868ba7bab8d",
+          "bytes": 127872,
+          "mime": "font/ttf"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Vercel",
+        "url": "https://github.com/vercel/geist-font",
+        "from": []
+      },
+      "licence": {
+        "name": "SIL Open Font License 1.1",
+        "url": "https://github.com/vercel/geist-font/blob/main/LICENSE.TXT",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "do-not-sell-the-font-alone"
+        ],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "font",
+      "family": "Geist",
+      "weight": 600,
+      "style": "normal"
+    }
+  ]
+}

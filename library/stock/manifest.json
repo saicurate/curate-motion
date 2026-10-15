@@ -1,0 +1,2484 @@
+{
+  "$schema": "../../catalog/schemas/manifest.schema.json",
+  "about": "Licensed stock (Unsplash License only, no Unsplash+; Pexels License). No identifiable faces, no logos. Fills camera rolls and b-roll.",
+  "assets": [
+    {
+      "id": "stock.unsplash.dog-golden-retriever-1.v1",
+      "title": "golden retriever puppy",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/dog-golden-retriever-1.v1.jpg",
+          "sha256": "71a4482a138e02394f8f24b80b1274c5c043c371f7cea8e897736cc084077e1f",
+          "bytes": 519012,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "dog"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Richard Brutyo",
+        "url": "https://unsplash.com/photos/Sg3XwuEpybU",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Richard Brutyo on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/Sg3XwuEpybU",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2565
+      },
+      "shows": "golden retriever puppy",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.dog-golden-retriever-2.v1",
+      "title": "golden retriever",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/dog-golden-retriever-2.v1.jpg",
+          "sha256": "557db3f6afb404409ac3610bc725aab1d4c3f516913ef9e3f7dbef84393097a2",
+          "bytes": 441687,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "dog"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Oscar Sutton",
+        "url": "https://unsplash.com/photos/yihlaRCCvd4",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Oscar Sutton on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/yihlaRCCvd4",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2397
+      },
+      "shows": "golden retriever",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.dog-4.v1",
+      "title": "dog",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/dog-4.v1.jpg",
+          "sha256": "7a6fd2aa866e7b74b2ec0b83f29c85febd67420939ece1ba90196df691778c85",
+          "bytes": 304822,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "dog"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Caleb Fisher",
+        "url": "https://unsplash.com/photos/pgUbpDLJh3E",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Caleb Fisher on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/pgUbpDLJh3E",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "dog",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.dog-5.v1",
+      "title": "dog",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/dog-5.v1.jpg",
+          "sha256": "55b91a63daaf586d0140786163357971a4a1b4458a5be02f888bd36f1177dc8b",
+          "bytes": 212549,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "dog"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Justin Aikin",
+        "url": "https://unsplash.com/photos/KFJuCzJiQYU",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Justin Aikin on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/KFJuCzJiQYU",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "dog",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-brooklyn-bridge.v1",
+      "title": "Brooklyn Bridge panorama",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-brooklyn-bridge.v1.jpg",
+          "sha256": "5de5b81c62b80fd03b9c29828510187a62e2bd073e46d7f664a4ad116882f311",
+          "bytes": 336875,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Luca Bravo",
+        "url": "https://unsplash.com/photos/_QdFx92MO2U",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Luca Bravo on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/_QdFx92MO2U",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "Brooklyn Bridge panorama",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-empire-state-night.v1",
+      "title": "Empire State Building at night",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-empire-state-night.v1.jpg",
+          "sha256": "7e7a0cd6f211bd10490724b7d7ce8aebe47efb0d8016b34dddb638c66458884f",
+          "bytes": 559736,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Timo Wagner",
+        "url": "https://unsplash.com/photos/fT6-YkB0nfg",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Timo Wagner on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/fT6-YkB0nfg",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2399
+      },
+      "shows": "Empire State Building at night",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-skyline-hoboken.v1",
+      "title": "skyline from Hoboken at golden hour",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-skyline-hoboken.v1.jpg",
+          "sha256": "e960076a4aaf2bbccdac87e954d3e1053d7511bb850814964e3ba283a0bd1696",
+          "bytes": 278753,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Mike Chavarri",
+        "url": "https://unsplash.com/photos/kZokA2VTKn4",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Mike Chavarri on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/kZokA2VTKn4",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "skyline from Hoboken at golden hour",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-williamsburg-bridge.v1",
+      "title": "Williamsburg Bridge at night",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-williamsburg-bridge.v1.jpg",
+          "sha256": "be59ff82095c45a2ebbc54654ce50145477eb59a2fb3cfcf4f7a8aa8c6d69af6",
+          "bytes": 380851,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Matteo Catanese",
+        "url": "https://unsplash.com/photos/dVCGpKZB_E8",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Matteo Catanese on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/dVCGpKZB_E8",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "Williamsburg Bridge at night",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-manhattan-bridge-dumbo.v1",
+      "title": "Manhattan Bridge from DUMBO",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-manhattan-bridge-dumbo.v1.jpg",
+          "sha256": "b580f3b483e9b4b5137835b7263d4548d65e7141ebce3bbcbdc88999f6099570",
+          "bytes": 391604,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Redd Francisco",
+        "url": "https://unsplash.com/photos/wOj5odhDOZ0",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Redd Francisco on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/wOj5odhDOZ0",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "shows": "Manhattan Bridge from DUMBO",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-central-park.v1",
+      "title": "Central Park",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-central-park.v1.jpg",
+          "sha256": "0e2a8bbbfd084ed5f288165614426d6042e28734c3260ff01488fd3a3189ff05",
+          "bytes": 445164,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Jermaine Ee",
+        "url": "https://unsplash.com/photos/A2CChTZvzTE",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Jermaine Ee on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/A2CChTZvzTE",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "Central Park",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-taxi-street.v1",
+      "title": "yellow cab on a street",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-taxi-street.v1.jpg",
+          "sha256": "3a19775dd01e3bf73f88f6d309a9857d305ba5b978526515ee01176f3c9b79ae",
+          "bytes": 1146367,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Robert Bye",
+        "url": "https://unsplash.com/photos/WTPp4wgourk",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Robert Bye on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/WTPp4wgourk",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2404
+      },
+      "shows": "yellow cab on a street",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.nyc-skyline-east-river.v1",
+      "title": "Manhattan skyline and Brooklyn Bridge",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/nyc-skyline-east-river.v1.jpg",
+          "sha256": "d04b9c26253ed6147a51aa30d96b4ae0e8a468613839f3a43eefc84ef44e5366",
+          "bytes": 359396,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "nyc"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Patrick Tomasso",
+        "url": "https://unsplash.com/photos/SVVTZtTGyaU",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Patrick Tomasso on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/SVVTZtTGyaU",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1066
+      },
+      "shows": "Manhattan skyline and Brooklyn Bridge",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.sunset-sea-clouds.v1",
+      "title": "sea at golden hour",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/sunset-sea-clouds.v1.jpg",
+          "sha256": "b63eca45b7b12d00e024243c3edf0ce76bbd0e3af3f992a753fd695f81e07d21",
+          "bytes": 257009,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "sunset"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Sebastien Gabriel",
+        "url": "https://unsplash.com/photos/-IMlv9Jlb24",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Sebastien Gabriel on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/-IMlv9Jlb24",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "sea at golden hour",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.sunset-wave.v1",
+      "title": "wave at golden hour",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/sunset-wave.v1.jpg",
+          "sha256": "1a985a393c96b593605fcc8ace9ec2ad16a0a4a3e1c5ba36db931d876d27aaef",
+          "bytes": 511987,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "sunset"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Rachel Cook",
+        "url": "https://unsplash.com/photos/mOcdke2ZQoE",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Rachel Cook on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/mOcdke2ZQoE",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2390
+      },
+      "shows": "wave at golden hour",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.sunset-trees-lake.v1",
+      "title": "trees by a lake at sunset",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/sunset-trees-lake.v1.jpg",
+          "sha256": "7e568b77c325197758f96924d4f2d32b636da8359d56c7f719bd62e5dea2f582",
+          "bytes": 236925,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "sunset"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Dave Hoefler",
+        "url": "https://unsplash.com/photos/lsoogGC_5dg",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Dave Hoefler on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/lsoogGC_5dg",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2240
+      },
+      "shows": "trees by a lake at sunset",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.sunset-shoreline.v1",
+      "title": "shoreline at golden hour",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/sunset-shoreline.v1.jpg",
+          "sha256": "67b7757b0f036dd92fff0d184f4862c46298db37744a8189d14d5f1c7ca2e336",
+          "bytes": 196133,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "sunset"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "frank mckenna",
+        "url": "https://unsplash.com/photos/4V8JxijgZ_c",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by frank mckenna on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/4V8JxijgZ_c",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1065
+      },
+      "shows": "shoreline at golden hour",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.coffee-heart-latte.v1",
+      "title": "heart latte art",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/coffee-heart-latte.v1.jpg",
+          "sha256": "0415dfff11ba94f57d1fc8062e1424cdeaa6d8b66d04b0adce0da795ebfb5b83",
+          "bytes": 996602,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "coffee"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Nathan Dumlao",
+        "url": "https://unsplash.com/photos/XOhI_kW_TaM",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Nathan Dumlao on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/XOhI_kW_TaM",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "heart latte art",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.coffee-mug.v1",
+      "title": "coffee in a white mug",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/coffee-mug.v1.jpg",
+          "sha256": "0e657f2e852196c5e63048d9ca3f9d4d37f55e95534ae66d1405a210cc790b35",
+          "bytes": 220997,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "coffee"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Lex Sirikiat",
+        "url": "https://unsplash.com/photos/1tEkissU8dY",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Lex Sirikiat on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/1tEkissU8dY",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "coffee in a white mug",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.coffee-in-hand.v1",
+      "title": "hand holding a cappuccino",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/coffee-in-hand.v1.jpg",
+          "sha256": "a26b5c95b6ac260c0ac220179989d703387f2320cdd8fd1a674a585be2cd0aac",
+          "bytes": 349011,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "coffee"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "BENCE BOROS",
+        "url": "https://unsplash.com/photos/TMkrYpWW7kc",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by BENCE BOROS on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/TMkrYpWW7kc",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "hand holding a cappuccino",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.coffee-mug-hand.v1",
+      "title": "hand holding a mug",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/coffee-mug-hand.v1.jpg",
+          "sha256": "ffad08f7c65ea50a89f9828a231e918f2a153bca7d76bc4e9977f295c64b0ee8",
+          "bytes": 326015,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "coffee"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "No Revisions",
+        "url": "https://unsplash.com/photos/Vn_j28AxFL0",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by No Revisions on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/Vn_j28AxFL0",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2000
+      },
+      "shows": "hand holding a mug",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.pizza-pepperoni.v1",
+      "title": "pepperoni pizza",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/pizza-pepperoni.v1.jpg",
+          "sha256": "4ba885031a98240da47a6233b788b6401426a42f4348a81083101369d6ff86fb",
+          "bytes": 526447,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "pizza"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Peter Bravo de los Rios",
+        "url": "https://unsplash.com/photos/OklpRh8-Sns",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Peter Bravo de los Rios on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/OklpRh8-Sns",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "pepperoni pizza",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.pizza-slice-hand.v1",
+      "title": "hand holding a slice",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/pizza-slice-hand.v1.jpg",
+          "sha256": "3e9478475fb3cf24edbc42cfd13326b3bfaf8c0b5817f380be7999a1bed30a51",
+          "bytes": 904784,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "pizza"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Klara Kulikova",
+        "url": "https://unsplash.com/photos/jvWZYnxBDlQ",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Klara Kulikova on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/jvWZYnxBDlQ",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "hand holding a slice",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.pizza-picking-slice.v1",
+      "title": "picking up a slice",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/pizza-picking-slice.v1.jpg",
+          "sha256": "aaffa99688a693b50a4b95ad0ae6155a73e4e830d114665b7b3dc13903a1b56e",
+          "bytes": 189252,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "pizza"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Brenna Huff",
+        "url": "https://unsplash.com/photos/22Vt7JIf7ZI",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Brenna Huff on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/22Vt7JIf7ZI",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "picking up a slice",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.brunch-waffles.v1",
+      "title": "brunch spread with waffles",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/brunch-waffles.v1.jpg",
+          "sha256": "5d07e1bb3be3d1228a1bc5ab43bc045a75bf0f941f9fe66f1b5ba35ce8e12887",
+          "bytes": 495402,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "brunch"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Rachel Park",
+        "url": "https://unsplash.com/photos/hrlvr2ZlUNk",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Rachel Park on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/hrlvr2ZlUNk",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "brunch spread with waffles",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.brunch-blueberry-toast.v1",
+      "title": "toast with blueberries",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/brunch-blueberry-toast.v1.jpg",
+          "sha256": "0a852d0db15887d9764c4ed0ab92207702e88a085aac7b9d1278b4d3547bca0e",
+          "bytes": 519717,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "brunch"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Joseph Gonzalez",
+        "url": "https://unsplash.com/photos/zcUgjyqEwe8",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Joseph Gonzalez on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/zcUgjyqEwe8",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2069
+      },
+      "shows": "toast with blueberries",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.brunch-egg-toast.v1",
+      "title": "egg on toast",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/brunch-egg-toast.v1.jpg",
+          "sha256": "582c4f8939877f403656fb80def01f2fdd07affa74c7b1cec0e4e7c1a6b05bf5",
+          "bytes": 475345,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "brunch"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Ben Kolde",
+        "url": "https://unsplash.com/photos/FFqNATH27EM",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Ben Kolde on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/FFqNATH27EM",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1600
+      },
+      "shows": "egg on toast",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.hands-cheers-glasses.v1",
+      "title": "two hands clinking glasses",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/hands-cheers-glasses.v1.jpg",
+          "sha256": "91ea842f3240fda79222d2f28afc4c54806b7870d36ceeecf1ec715dead9243e",
+          "bytes": 523787,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "hands"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Cherrydeck",
+        "url": "https://unsplash.com/photos/wSLRa9MnFCg",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Cherrydeck on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/wSLRa9MnFCg",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "two hands clinking glasses",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.hands-mugs.v1",
+      "title": "friends' hands holding mugs",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/hands-mugs.v1.jpg",
+          "sha256": "bd360844189ea0f4854e63df347297b527bcbad9bfc4cbd4f2ff09c9d57d6284",
+          "bytes": 101691,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "hands"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Nani Williams",
+        "url": "https://unsplash.com/photos/6PpLqUlCA0s",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Nani Williams on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/6PpLqUlCA0s",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "friends' hands holding mugs",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.autumn-orange-tree.v1",
+      "title": "orange autumn tree",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/autumn-orange-tree.v1.jpg",
+          "sha256": "53e60c596b064ce430585be2ec52e897cda7a7f901ab3297d5d1750f901f3796",
+          "bytes": 279201,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "autumn"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Lyndon Li",
+        "url": "https://unsplash.com/photos/zrT1tjnxJKQ",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Lyndon Li on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/zrT1tjnxJKQ",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "orange autumn tree",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.autumn-park-benches.v1",
+      "title": "park benches in fall",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/autumn-park-benches.v1.jpg",
+          "sha256": "6975dd932bc217c310233adc31a7c8935e709b90facc6a6229d8c8d8b7d6d0a4",
+          "bytes": 1601626,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "autumn"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Daniel J. Schwarz",
+        "url": "https://unsplash.com/photos/X614H7CvOAA",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Daniel J. Schwarz on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/X614H7CvOAA",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "park benches in fall",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.autumn-bench.v1",
+      "title": "bench under yellow leaves",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/autumn-bench.v1.jpg",
+          "sha256": "53c8f8d90a3fdca5e2ca4cf1d9b4b3c9c169911b327675b1e0a560cfbaa61f00",
+          "bytes": 1631708,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "autumn"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Rufinochka",
+        "url": "https://unsplash.com/photos/KXYRpHllhbI",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Rufinochka on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/KXYRpHllhbI",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2842
+      },
+      "shows": "bench under yellow leaves",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.flowers-rose-bouquet.v1",
+      "title": "pink and white roses",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/flowers-rose-bouquet.v1.jpg",
+          "sha256": "7fc4a939240b85d0e9b3b6a0071d3b55beb155f1fb33afa8b2580d3758609eec",
+          "bytes": 412449,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "flowers"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "jessie daniella",
+        "url": "https://unsplash.com/photos/QLuleNy8LMM",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by jessie daniella on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/QLuleNy8LMM",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2133
+      },
+      "shows": "pink and white roses",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.flowers-vase.v1",
+      "title": "flowers in a glass vase",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/flowers-vase.v1.jpg",
+          "sha256": "8cefe4a45a7c589a5be41651c9a1ab0ac1ff146c54f515fe7cf47def54c0b8a7",
+          "bytes": 453466,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "flowers"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Angelina Jollivet",
+        "url": "https://unsplash.com/photos/mNEpmNiFdXs",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Angelina Jollivet on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/mNEpmNiFdXs",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "flowers in a glass vase",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.flowers-market.v1",
+      "title": "flower market buckets",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/flowers-market.v1.jpg",
+          "sha256": "953df15b51e33d38a7031473bb54aadc938e8ccc993fe9b39538160ac99274ce",
+          "bytes": 1073774,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "flowers"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Salah Darwish",
+        "url": "https://unsplash.com/photos/0tSdTCEadTE",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Salah Darwish on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/0tSdTCEadTE",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2844
+      },
+      "shows": "flower market buckets",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.beach-seashore.v1",
+      "title": "seashore",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/beach-seashore.v1.jpg",
+          "sha256": "f0ada27e7d1d55346d1be44796498c2ea4d0b361bcea58ad6e85a1b0a07ce6bc",
+          "bytes": 359057,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "beach"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Clem Onojeghuo",
+        "url": "https://unsplash.com/photos/L_hK813fu9k",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Clem Onojeghuo on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/L_hK813fu9k",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1160
+      },
+      "shows": "seashore",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.beach-waves.v1",
+      "title": "waves on the shore",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/beach-waves.v1.jpg",
+          "sha256": "6d8463060a61a85a89c520e0e5a7dc80cd194faa7ead22ec80bfecefaea1021b",
+          "bytes": 619875,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "beach"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Meritt Thomas",
+        "url": "https://unsplash.com/photos/0ngILQtGZvs",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Meritt Thomas on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/0ngILQtGZvs",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2399
+      },
+      "shows": "waves on the shore",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.beach-empty-highrise.v1",
+      "title": "empty beach by high-rises",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/beach-empty-highrise.v1.jpg",
+          "sha256": "fbb359ba15d160ac8e31d66f200895ee75f7d9fced3df36281d128e0df5b28bb",
+          "bytes": 191648,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "beach"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "frank mckenna",
+        "url": "https://unsplash.com/photos/pXFETxj7lzg",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by frank mckenna on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/pXFETxj7lzg",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1143
+      },
+      "shows": "empty beach by high-rises",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.street-plants-brownstone.v1",
+      "title": "plants by a brownstone street",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/street-plants-brownstone.v1.jpg",
+          "sha256": "2a3150d60b0939a05d127542fbfa2ed0ea418d911ae1cb7376574639fa3a3771",
+          "bytes": 440773,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "street"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Josh Wilburne",
+        "url": "https://unsplash.com/photos/rdJXlCdRVaQ",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Josh Wilburne on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/rdJXlCdRVaQ",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 1067
+      },
+      "shows": "plants by a brownstone street",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.street-sunset-skyline.v1",
+      "title": "skyline down a tree-lined street at sunset",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/street-sunset-skyline.v1.jpg",
+          "sha256": "504dfd5e4349e9c733522cafeeb598797d7e19809e5f9703ce8bdd74dc2ab296",
+          "bytes": 599739,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "street"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Julian Ostarek",
+        "url": "https://unsplash.com/photos/N3LaQcbarCc",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Julian Ostarek on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/N3LaQcbarCc",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2845
+      },
+      "shows": "skyline down a tree-lined street at sunset",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.food-bagels-cream-cheese.v1",
+      "title": "bagels with cream cheese",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/food-bagels-cream-cheese.v1.jpg",
+          "sha256": "f5c661035be5280435acc1f7a7121922261d17cc5dcad98349adaf1b540eb8d0",
+          "bytes": 505801,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "food"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Fernanda Martinez",
+        "url": "https://unsplash.com/photos/UL-wDcEllAY",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Fernanda Martinez on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/UL-wDcEllAY",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "bagels with cream cheese",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.plant-table-window.v1",
+      "title": "table with a plant by a window",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/plant-table-window.v1.jpg",
+          "sha256": "05bde139dc6e8761c3ee498bfed634947c63cd0c2e6e141fdc0e687cdce63fd6",
+          "bytes": 419252,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "plant"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Annie Spratt",
+        "url": "https://unsplash.com/photos/1wCWsR-v5Ko",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Annie Spratt on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/1wCWsR-v5Ko",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2400
+      },
+      "shows": "table with a plant by a window",
+      "media": "image"
+    },
+    {
+      "id": "stock.unsplash.food-donut-box.v1",
+      "title": "box of doughnuts",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/unsplash/food-donut-box.v1.jpg",
+          "sha256": "c46eefcc2053f46e71270c0595f19d9b4ae3dfa64c6efee8ab066c6ee9ba69c2",
+          "bytes": 505972,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "food"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Mae Mu",
+        "url": "https://unsplash.com/photos/8GzmzEyLNyc",
+        "from": []
+      },
+      "licence": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "attribution": "Photo by Mae Mu on Unsplash",
+        "restrictions": [
+          "no-unsplash-plus",
+          "not-a-similar-competing-service"
+        ],
+        "proof": "https://unsplash.com/photos/8GzmzEyLNyc",
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1600,
+        "h": 2000
+      },
+      "shows": "box of doughnuts",
+      "media": "image"
+    }
+  ]
+}

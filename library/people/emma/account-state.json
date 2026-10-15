@@ -1,0 +1,803 @@
+{
+  "$schema": "../../../catalog/schemas/account-state.schema.json",
+  "persona": "emma",
+  "uid": "IRUp7V2A7WWbXqJlrfTju8NuGHK2",
+  "env": "prod",
+  "updatedAt": "2026-10-15T18:45:00Z",
+  "updatedBy": "account agent (Claude), 2026-10-15",
+  "wardrobe": [
+    {
+      "libraryId": "garment.emma.blazer-black.v1",
+      "photoId": "photo.emma.r01-coffee-shop.v1",
+      "appItemIds": [
+        "66c528596e6dff4f79e8240d"
+      ],
+      "appNames": [
+        "Black Blazer"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r01-coffee-shop.v1; library garment file assets/garments/black-blazer-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.tee-white.v1",
+      "photoId": "photo.emma.r01-coffee-shop.v1",
+      "appItemIds": [
+        "72f975c9ed99403b5f330a9e"
+      ],
+      "appNames": [
+        "White T-shirt"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r01-coffee-shop.v1; library garment file assets/garments/white-tee-v2.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.jeans-straight-light-wash.v1",
+      "photoId": "photo.emma.r19-fall-game-day.v1",
+      "appItemIds": [
+        "f07b2378a31f77456736a1a4"
+      ],
+      "appNames": [
+        "Blue Jeans"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r19-fall-game-day.v1; library garment file assets/garments/light-wash-straight-jeans-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.coat-trench-khaki.v1",
+      "photoId": "photo.emma.r02-subway-platform.v1",
+      "appItemIds": [
+        "c11575fc314edd10ed18b461"
+      ],
+      "appNames": [
+        "Beige Trench Coat"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r02-subway-platform.v1; library garment file assets/garments/khaki-trench-coat-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.trousers-black.v1",
+      "photoId": "photo.emma.r05-office.v1",
+      "appItemIds": [
+        "639cb4cbd53fb05eb501cd1f"
+      ],
+      "appNames": [
+        "Black Trousers"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r05-office.v1; library garment file assets/garments/black-trousers-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sweatshirt-crewneck-grey.v1",
+      "photoId": "photo.emma.r03-brooklyn-street.v1",
+      "appItemIds": [
+        "abc4180872712f057d2b9dae"
+      ],
+      "appNames": [
+        "Grey Sweatshirt"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r03-brooklyn-street.v1; library garment file assets/garments/grey-crewneck-sweatshirt-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sneakers-leather-white.v1",
+      "photoId": "photo.emma.r03-brooklyn-street.v1",
+      "appItemIds": [
+        "69757b5eac62b4a41aa0a99c"
+      ],
+      "appNames": [
+        "White Sneakers"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r03-brooklyn-street.v1; library garment file assets/garments/white-leather-sneakers-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sweater-cable-knit-cream.v1",
+      "photoId": "photo.emma.r28-couch-cozy.v1",
+      "appItemIds": [
+        "0835aab41a0c42c444ff708f"
+      ],
+      "appNames": [
+        "Beige Cable Knit Sweater"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:20Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r28-couch-cozy.v1; library garment file assets/garments/cream-cable-knit-sweater-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.jeans-straight-dark-wash.v1",
+      "photoId": "photo.emma.r16-bookstore.v1",
+      "appItemIds": [
+        "b72a0c160fdac5ae04a62e68"
+      ],
+      "appNames": [
+        "Blue Jeans"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r16-bookstore.v1; library garment file assets/garments/dark-wash-straight-jeans-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.shirt-oxford-blue.v1",
+      "photoId": "photo.emma.r25-cafe-laptop.v1",
+      "appItemIds": [
+        "38712360109a794cb5a6fcf0"
+      ],
+      "appNames": [
+        "Blue Button-down shirt"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r25-cafe-laptop.v1; library garment file assets/garments/blue-oxford-shirt-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.tee-long-sleeve-striped.v1",
+      "photoId": "photo.emma.r06-farmers-market.v1",
+      "appItemIds": [
+        "c5c1c0bab1dbdf5625d5a5fa"
+      ],
+      "appNames": [
+        "White Striped Long Sleeve T-shirt"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r06-farmers-market.v1; library garment file assets/garments/striped-long-sleeve-tee-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.jacket-leather-black.v1",
+      "photoId": "photo.emma.r07-rooftop-golden-hour.v1",
+      "appItemIds": [
+        "b98bdc2b8f163cacfe28b68f"
+      ],
+      "appNames": [
+        "Black Leather Biker Jacket"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r07-rooftop-golden-hour.v1; library garment file assets/garments/black-leather-jacket-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.shirt-linen-white.v1",
+      "photoId": "photo.emma.r08-beach-day.v1",
+      "appItemIds": [
+        "b23d0e5e95784d76e2075ae8"
+      ],
+      "appNames": [
+        "White Button-down Shirt"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r08-beach-day.v1; library garment file assets/garments/white-linen-shirt-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.tank-ribbed-black.v1",
+      "photoId": "photo.emma.r08-beach-day.v1",
+      "appItemIds": [
+        "7559e723948d8a32593a780c"
+      ],
+      "appNames": [
+        "Black Tank Top"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r08-beach-day.v1; library garment file assets/garments/black-ribbed-tank-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.shorts-denim-cutoff.v1",
+      "photoId": "photo.emma.r08-beach-day.v1",
+      "appItemIds": [
+        "24b86bdd84a5c6ec656189bd"
+      ],
+      "appNames": [
+        "Blue Denim Shorts"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r08-beach-day.v1; library garment file assets/garments/denim-cutoff-shorts-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sandals-tan.v1",
+      "photoId": "photo.emma.r08-beach-day.v1",
+      "appItemIds": [
+        "abd4e799db8603c826f8817c"
+      ],
+      "appNames": [
+        "Brown Slide Sandals"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r08-beach-day.v1; library garment file assets/garments/tan-sandals-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.jacket-denim.v1",
+      "photoId": "photo.emma.r26-ferry.v1",
+      "appItemIds": [
+        "aac8d06b3a58614b76caa582"
+      ],
+      "appNames": [
+        "Blue Denim Jacket"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r26-ferry.v1; library garment file assets/garments/denim-jacket-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.dress-little-black.v1",
+      "photoId": "photo.emma.r10-night-out.v1",
+      "appItemIds": [
+        "f7c11fd5eb20a0bc2ae4e467"
+      ],
+      "appNames": [
+        "Black Mini Dress"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r10-night-out.v1; library garment file assets/garments/little-black-dress-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.heels-black.v1",
+      "photoId": "photo.emma.r10-night-out.v1",
+      "appItemIds": [
+        "cd0cc822f4b3a280c6fb2f5b"
+      ],
+      "appNames": [
+        "Black Pointed Toe Pumps"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r10-night-out.v1; library garment file assets/garments/black-heels-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.turtleneck-black.v1",
+      "photoId": "photo.emma.r11-mirror-selfie-work.v1",
+      "appItemIds": [
+        "c507bb04172114d8a3c05e2f"
+      ],
+      "appNames": [
+        "Black Turtleneck Sweater"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r11-mirror-selfie-work.v1; library garment file assets/garments/black-turtleneck-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.skirt-midi-satin-camel.v1",
+      "photoId": "photo.emma.r21-museum-steps.v1",
+      "appItemIds": [
+        "c2ddbee6ed062abaac932c02"
+      ],
+      "appNames": [
+        "Brown Midi Skirt"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r21-museum-steps.v1; library garment file assets/garments/camel-satin-midi-skirt-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.boots-ankle-black.v1",
+      "photoId": "photo.emma.r12-dumbo-walk.v1",
+      "appItemIds": [
+        "127140856e679f9ff0ffa16e"
+      ],
+      "appNames": [
+        "Black Ankle Boots"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r12-dumbo-walk.v1; library garment file assets/garments/black-ankle-boots-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.coat-wool-camel.v1",
+      "photoId": "photo.emma.r12-dumbo-walk.v1",
+      "appItemIds": [
+        "61c1d7be964dbfd4980d0a54"
+      ],
+      "appNames": [
+        "Tan Wool Coat"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r12-dumbo-walk.v1; library garment file assets/garments/camel-wool-coat-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.jacket-puffer-black.v1",
+      "photoId": "photo.emma.r13-winter-street.v1",
+      "appItemIds": [
+        "6ddeffb22faaf5597ab7a0eb"
+      ],
+      "appNames": [
+        "Black Puffer Jacket"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r13-winter-street.v1; library garment file assets/garments/black-puffer-jacket-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sneakers-retro-runner-grey-navy.v1",
+      "photoId": "photo.emma.r15-hudson-run.v1",
+      "appItemIds": [
+        "3634a59a66a887acaf1631a3"
+      ],
+      "appNames": [
+        "Grey Sneakers"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r15-hudson-run.v1; library garment file assets/garments/retro-runners-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.hoodie-navy.v1",
+      "photoId": "photo.emma.r14-sunday-errands.v1",
+      "appItemIds": [
+        "18371a3b118d77de16d2af0d"
+      ],
+      "appNames": [
+        "Blue Hoodie"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r14-sunday-errands.v1; library garment file assets/garments/navy-hoodie-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sweatpants-grey.v1",
+      "photoId": "photo.emma.r28-couch-cozy.v1",
+      "appItemIds": [
+        "cb2ecb229b2a0d7167a22008"
+      ],
+      "appNames": [
+        "Grey Sweatpants"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r28-couch-cozy.v1; library garment file assets/garments/grey-sweatpants-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.tank-running-grey.v1",
+      "photoId": "photo.emma.r15-hudson-run.v1",
+      "appItemIds": [
+        "ede78a9cffd096b658a29b80"
+      ],
+      "appNames": [
+        "Grey Tank Top"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r15-hudson-run.v1; library garment file assets/garments/grey-running-tank-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.leggings-sage.v1",
+      "photoId": "photo.emma.r15-hudson-run.v1",
+      "appItemIds": [
+        "5b8b7e50c4aa2f9d98ca4f10"
+      ],
+      "appNames": [
+        "Green Leggings"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r15-hudson-run.v1; library garment file assets/garments/sage-leggings-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.cardigan-oatmeal.v1",
+      "photoId": "photo.emma.r16-bookstore.v1",
+      "appItemIds": [
+        "1390b5348b55b16e9e8a54ff"
+      ],
+      "appNames": [
+        "Beige Cardigan"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r16-bookstore.v1; library garment file assets/garments/oatmeal-cardigan-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.shirt-flannel-plaid.v1",
+      "photoId": "photo.emma.r17-brunch.v1",
+      "appItemIds": [
+        "5e0f201ce4a24f4cfe9844f1"
+      ],
+      "appNames": [
+        "Green Plaid Flannel Shirt"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r17-brunch.v1; library garment file assets/garments/plaid-flannel-shirt-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.loafers-black.v1",
+      "photoId": "photo.emma.r18-office-lobby.v1",
+      "appItemIds": [
+        "d51be5de7981117fe7b1b590"
+      ],
+      "appNames": [
+        "Black Loafers"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r18-office-lobby.v1; library garment file assets/garments/black-loafers-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.jacket-varsity-navy-cream.v1",
+      "photoId": "photo.emma.r19-fall-game-day.v1",
+      "appItemIds": [
+        "30991379f4ba9fde1000c74d"
+      ],
+      "appNames": [
+        "Blue Varsity Jacket"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r19-fall-game-day.v1; library garment file assets/garments/varsity-jacket-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.camisole-satin-black.v1",
+      "photoId": "photo.emma.r24-dinner.v1",
+      "appItemIds": [
+        "31c02fa574db33a836200598"
+      ],
+      "appNames": [
+        "Black Cami Top"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r24-dinner.v1; library garment file assets/garments/black-satin-camisole-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.boots-cowboy-tan.v1",
+      "photoId": "photo.emma.r20-country-night.v1",
+      "appItemIds": [
+        "53c478ccbf53b41f25e417ee"
+      ],
+      "appNames": [
+        "Brown Cowboy Boots"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r20-country-night.v1; library garment file assets/garments/tan-cowboy-boots-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sweater-crewneck-navy.v1",
+      "photoId": "photo.emma.r21-museum-steps.v1",
+      "appItemIds": [
+        "07c01b7d113e707998639d7c"
+      ],
+      "appNames": [
+        "Navy Crew Neck Sweater"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r21-museum-steps.v1; library garment file assets/garments/navy-crewneck-sweater-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.sports-bra-sage.v1",
+      "photoId": "photo.emma.r29-gym-mirror.v1",
+      "appItemIds": [
+        "2918f242251fb9c845d579dd"
+      ],
+      "appNames": [
+        "Green Sports Bra"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r29-gym-mirror.v1; library garment file assets/garments/sage-sports-bra-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.bag-tote-leather-black.v1",
+      "photoId": "photo.emma.r30-walk-to-work.v1",
+      "appItemIds": [
+        "ffa1bc5b2fd7f9f68740582b"
+      ],
+      "appNames": [
+        "Black Tote Bag"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r30-walk-to-work.v1; library garment file assets/garments/black-leather-tote-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.flats-ballet-black.v1",
+      "photoId": "photo.emma.r30-walk-to-work.v1",
+      "appItemIds": [
+        "6bc69f0a729b107017d21a90"
+      ],
+      "appNames": [
+        "Black Ballet Flats"
+      ],
+      "via": "gallery-scan",
+      "status": "synced",
+      "at": "2026-10-15T18:31:21Z",
+      "note": "Found by the in-app photo scan (import 6ad11aeae5cae85798172dd5) in photo.emma.r30-walk-to-work.v1; library garment file assets/garments/black-ballet-flats-v1.jpg. App sourcePhotoId is the import's own photo id; photoId here is the camera-roll photo it came from."
+    },
+    {
+      "libraryId": "garment.emma.tee-black.v1",
+      "sha256": "cdd88e366baf8c73ccb6681a618d259a450e05f3c7e4000c5e9810232b90adbb",
+      "photoId": "cm:garment.emma.tee-black.v1",
+      "appItemIds": [
+        "d3d8c3e7-4cf7-3f3c-bbba-ebe6962c6ea3"
+      ],
+      "appNames": [
+        "Black Crew Neck T-Shirt"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:33:08Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/black-tee-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.bag-crossbody-tan.v1",
+      "sha256": "7e88f03fae724d6455606b75f6ce4d1c8052fb6ca7615a45be47fbfb54a89209",
+      "photoId": "cm:garment.emma.bag-crossbody-tan.v1",
+      "appItemIds": [
+        "a007bdd2-0ffe-3841-9850-5606ad688931"
+      ],
+      "appNames": [
+        "Tan Leather Crossbody Bag"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:33:32Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/tan-crossbody-bag-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.bag-mini-black.v1",
+      "sha256": "db934ed6c4dff837194d92ebf231165e6198fc3cdd3a847aac76c4c82d18d489",
+      "photoId": "cm:garment.emma.bag-mini-black.v1",
+      "appItemIds": [
+        "0dd70fb3-44bf-3c64-b939-d04f8f34c118"
+      ],
+      "appNames": [
+        "Black leather shoulder bag"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:33:37Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/black-mini-bag-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.cap-baseball-navy.v1",
+      "sha256": "9c2eac79b7963eeee962f044030fd40cc90a7f964e9e2858ff30073f8d37cc48",
+      "photoId": "cm:garment.emma.cap-baseball-navy.v1",
+      "appItemIds": [
+        "0279b0c6-763d-34af-9eed-8731da6e4f14"
+      ],
+      "appNames": [
+        "Navy baseball cap"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:33:45Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/navy-baseball-cap-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.beanie-cream.v1",
+      "sha256": "d9a8aacdee52e547103400e703abc4f911a11865da69dd2fc19cbb6f54f10c78",
+      "photoId": "cm:garment.emma.beanie-cream.v1",
+      "appItemIds": [
+        "1ba09fe8-bd78-33b3-8da4-8b19116d5671"
+      ],
+      "appNames": [
+        "Beige Ribbed Knit Beanie"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:33:50Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/cream-beanie-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.scarf-plaid-camel.v1",
+      "sha256": "2608bf380166e2546fbedcccfcaf49e8f401340a1e7f5dad8604ee493476be1b",
+      "photoId": "cm:garment.emma.scarf-plaid-camel.v1",
+      "appItemIds": [
+        "05a71c32-333d-385b-ae40-0bfef34491a6"
+      ],
+      "appNames": [
+        "Brown Checkered Fringed Scarf"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:33:56Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/camel-plaid-scarf-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.sunglasses-black.v1",
+      "sha256": "7afa88d938c4a24d1f2d8dcd5a644be04ed6e25a09b35f59f0e51735c96a8b2e",
+      "photoId": "cm:garment.emma.sunglasses-black.v1",
+      "appItemIds": [
+        "4b82ffaa-6bb5-320e-88fd-5f0628934d74"
+      ],
+      "appNames": [
+        "Black Wayfarer Sunglasses"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:33:59Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/black-sunglasses-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.belt-leather-brown.v1",
+      "sha256": "74f8114e49070eeddafbcf76d3e237701121e1c46f71bc0e05c3f261529833ae",
+      "photoId": "cm:garment.emma.belt-leather-brown.v1",
+      "appItemIds": [
+        "172ee2b3-a4c3-39db-96ad-60fbebc717ef"
+      ],
+      "appNames": [
+        "Brown Leather Belt"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:34:07Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/brown-leather-belt-v1.jpg."
+    },
+    {
+      "libraryId": "garment.emma.earrings-hoops-gold.v1",
+      "sha256": "2821394f56bdbefa5458dd018eef7b1e7098b875da509e3ca7b098f0a5e041cf",
+      "photoId": "cm:garment.emma.earrings-hoops-gold.v1",
+      "appItemIds": [],
+      "appNames": [],
+      "via": "api-add-photo",
+      "status": "failed",
+      "at": "2026-10-15T18:33:57Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/gold-hoops-v1.jpg. Failed: \"We couldn't find any clothes in this photo.\" (jewellery is not read as clothing). Not retried."
+    },
+    {
+      "libraryId": "garment.emma.necklace-pendant-gold.v1",
+      "sha256": "f2ec2b08f0d2531f28c841335dbb0c3d198e2fffd7d94757ecae810d757764ec",
+      "photoId": "cm:garment.emma.necklace-pendant-gold.v1",
+      "appItemIds": [],
+      "appNames": [],
+      "via": "api-add-photo",
+      "status": "failed",
+      "at": "2026-10-15T18:34:03Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/gold-pendant-necklace-v1.jpg. Failed: \"We couldn't find any clothes in this photo.\" (jewellery is not read as clothing). Not retried."
+    },
+    {
+      "libraryId": "garment.emma.dress-slip-champagne.v1",
+      "sha256": "6220484a12f23e0289372e3c27bc84fb976916a638abfe6dba061d89ba045d8f",
+      "photoId": "cm:garment.emma.dress-slip-champagne.v1",
+      "appItemIds": [
+        "654cdb26-a114-3278-a4aa-74d7b3865a93"
+      ],
+      "appNames": [
+        "Beige Satin Slip Midi Dress"
+      ],
+      "via": "api-add-photo",
+      "status": "synced",
+      "at": "2026-10-15T18:34:22Z",
+      "note": "POST /api/v1/wardrobe/add-photo as Emma with assets/garments/champagne-slip-dress-v1.jpg."
+    }
+  ],
+  "unmanaged": [
+    {
+      "appItemId": "4b2148990ccf6c2036421171",
+      "appName": "Beige Camisole Top",
+      "note": "From the gallery scan of photo.emma.r07-rooftop-golden-hour.v1: the scan drew her champagne slip dress (garment.emma.dress-slip-champagne.v1) as a camisole top, cropped at the waist. The dress itself was added separately by add-photo."
+    }
+  ],
+  "cameraRoll": [
+    {
+      "device": "B0202502-C8FB-4DAA-8E29-EAE4866B0C14",
+      "libraryIds": [
+        "stock.unsplash.coffee-mug.v1",
+        "photo.emma.r01-coffee-shop.v1",
+        "stock.unsplash.nyc-taxi-street.v1",
+        "photo.emma.r02-subway-platform.v1",
+        "photo.emma.r03-brooklyn-street.v1",
+        "stock.unsplash.street-plants-brownstone.v1",
+        "stock.unsplash.autumn-orange-tree.v1",
+        "photo.emma.r04-park-autumn.v1",
+        "stock.unsplash.autumn-park-benches.v1",
+        "photo.emma.r05-office.v1",
+        "stock.unsplash.coffee-in-hand.v1",
+        "stock.unsplash.flowers-market.v1",
+        "photo.emma.r06-farmers-market.v1",
+        "stock.unsplash.flowers-rose-bouquet.v1",
+        "photo.emma.r07-rooftop-golden-hour.v1",
+        "stock.unsplash.street-sunset-skyline.v1",
+        "stock.unsplash.beach-waves.v1",
+        "photo.emma.r08-beach-day.v1",
+        "stock.unsplash.beach-seashore.v1",
+        "stock.unsplash.sunset-shoreline.v1",
+        "photo.emma.r09-mirror-selfie-weekend.v1",
+        "stock.unsplash.dog-golden-retriever-1.v1",
+        "photo.emma.r10-night-out.v1",
+        "stock.unsplash.nyc-empire-state-night.v1",
+        "photo.emma.r11-mirror-selfie-work.v1",
+        "stock.unsplash.coffee-heart-latte.v1",
+        "photo.emma.r12-dumbo-walk.v1",
+        "stock.unsplash.nyc-manhattan-bridge-dumbo.v1",
+        "stock.unsplash.nyc-brooklyn-bridge.v1",
+        "photo.emma.r13-winter-street.v1",
+        "stock.unsplash.hands-mugs.v1",
+        "photo.emma.r14-sunday-errands.v1",
+        "stock.unsplash.food-bagels-cream-cheese.v1",
+        "photo.emma.r15-hudson-run.v1",
+        "stock.unsplash.nyc-skyline-hoboken.v1",
+        "photo.emma.r16-bookstore.v1",
+        "stock.unsplash.plant-table-window.v1",
+        "photo.emma.r17-brunch.v1",
+        "stock.unsplash.brunch-egg-toast.v1",
+        "stock.unsplash.brunch-waffles.v1",
+        "photo.emma.r18-office-lobby.v1",
+        "stock.unsplash.coffee-mug-hand.v1",
+        "photo.emma.r19-fall-game-day.v1",
+        "stock.unsplash.autumn-bench.v1",
+        "stock.unsplash.dog-golden-retriever-2.v1",
+        "photo.emma.r20-country-night.v1",
+        "stock.unsplash.hands-cheers-glasses.v1",
+        "photo.emma.r21-museum-steps.v1",
+        "stock.unsplash.nyc-central-park.v1",
+        "photo.emma.r22-stoop.v1",
+        "stock.unsplash.dog-4.v1",
+        "photo.emma.r23-rainy-day.v1",
+        "stock.unsplash.food-donut-box.v1",
+        "photo.emma.r24-dinner.v1",
+        "stock.unsplash.flowers-vase.v1",
+        "photo.emma.r25-cafe-laptop.v1",
+        "stock.unsplash.brunch-blueberry-toast.v1",
+        "photo.emma.r26-ferry.v1",
+        "stock.unsplash.nyc-skyline-east-river.v1",
+        "stock.unsplash.sunset-sea-clouds.v1",
+        "photo.emma.r27-chelsea-market.v1",
+        "stock.unsplash.pizza-slice-hand.v1",
+        "stock.unsplash.pizza-picking-slice.v1",
+        "photo.emma.r28-couch-cozy.v1",
+        "stock.unsplash.pizza-pepperoni.v1",
+        "stock.unsplash.dog-5.v1",
+        "photo.emma.r29-gym-mirror.v1",
+        "stock.unsplash.sunset-trees-lake.v1",
+        "stock.unsplash.nyc-williamsburg-bridge.v1",
+        "photo.emma.r30-walk-to-work.v1",
+        "stock.unsplash.sunset-wave.v1",
+        "stock.unsplash.beach-empty-highrise.v1",
+        "selfie.emma.selfie.v1"
+      ],
+      "loadedAt": "2026-10-15T18:10:00Z",
+      "method": "simctl-addmedia"
+    }
+  ],
+  "spendUsd": 1.75
+}

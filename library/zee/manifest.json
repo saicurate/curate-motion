@@ -1,0 +1,2874 @@
+{
+  "$schema": "../../catalog/schemas/manifest.schema.json",
+  "about": "Zee, Curate's black plush kitten: 720 px frame sequences from the zee-sharp-v1 pack (Blender renders), one asset per emotion part.",
+  "assets": [
+    {
+      "id": "zee.cheer.intro.v1",
+      "title": "Zee cheer, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/intro.v1.webp",
+          "sha256": "ed98db119999261ab11a6ab528cfaec7f1740c897ed45e4d366f0992ccfcabe7",
+          "bytes": 189186,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "cheer"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "cheer",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/cheer/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 15,
+        "fps": 30,
+        "treeSha256": "c0a159bb30f1ee28b9e7c31a766b32ac1d5f2fe9f9c060b3612247ea576930e1",
+        "bytes": 454880
+      }
+    },
+    {
+      "id": "zee.cheer.loop.v1",
+      "title": "Zee cheer, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/loop.v1.webp",
+          "sha256": "6550138a53453e57a0a558fe710cbc594ff884b272eee459ce0572f3cfca7d0e",
+          "bytes": 954732,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "cheer"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "cheer",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/cheer/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 86,
+        "fps": 30,
+        "treeSha256": "a58356a729e03489cedb6cd1fbebfb2572464800821ab49a47c40408882ad8d3",
+        "bytes": 2278824
+      }
+    },
+    {
+      "id": "zee.cheer.outro.v1",
+      "title": "Zee cheer, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/outro.v1.webp",
+          "sha256": "f62d556264e1a87af8eb1242c8d6a2d616d5455477da6593d9928245c1116b25",
+          "bytes": 227338,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "cheer"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "cheer",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/cheer/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 18,
+        "fps": 30,
+        "treeSha256": "97acb323119a688e339273ba2e1f29f2d621439e0228b8320675cf81ce04b094",
+        "bytes": 543744
+      }
+    },
+    {
+      "id": "zee.cheer.still.v1",
+      "title": "Zee cheer, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/still.v1.png",
+          "sha256": "8cf35c2ab486ccd43abfd1b6e50eb794085e6293ed561dd2594137841be1f57d",
+          "bytes": 66791,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "cheer"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "cheer",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.curious.intro.v1",
+      "title": "Zee curious, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/intro.v1.webp",
+          "sha256": "8e523571266f5beb466751ea6b813b6f8543066e8aef2d2664115aa9a24698ad",
+          "bytes": 211984,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "curious"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "curious",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/curious/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 15,
+        "fps": 30,
+        "treeSha256": "e84c253c1444a9db8d6db9f56794b9fa61c8645e6da0af1ef460176f8ce21720",
+        "bytes": 513530
+      }
+    },
+    {
+      "id": "zee.curious.loop.v1",
+      "title": "Zee curious, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/loop.v1.webp",
+          "sha256": "4e235527140caeaea8ec0488a62e28a54a301187935e101fb3f922ee7a7a3fc9",
+          "bytes": 882684,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "curious"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "curious",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/curious/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 64,
+        "fps": 30,
+        "treeSha256": "02baa1a255fda768ff86e741182490b3f172a59ed4c8a2ddf9b3ec8563fdde17",
+        "bytes": 2141056
+      }
+    },
+    {
+      "id": "zee.curious.outro.v1",
+      "title": "Zee curious, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/outro.v1.webp",
+          "sha256": "60c962368698e79868298c757cb422752cd32e672ad4ecfad39531c83dd9e8cc",
+          "bytes": 223882,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "curious"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "curious",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/curious/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 16,
+        "fps": 30,
+        "treeSha256": "0ee1d49ba5beb650c527d5a5a8b1d3aa0a5dfece04a8eed855a597d02ed8a8bb",
+        "bytes": 540724
+      }
+    },
+    {
+      "id": "zee.curious.still.v1",
+      "title": "Zee curious, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/still.v1.png",
+          "sha256": "23941f781d7eccf995fdc8785a9c57444d42e8859d69aca4ab19caec1b502a05",
+          "bytes": 74108,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "curious"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "curious",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.excited.intro.v1",
+      "title": "Zee excited, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/intro.v1.webp",
+          "sha256": "fc55a33a70a80ef6235e4684eb5c9e7b8bf368e62722a38f47a853ecbad0f399",
+          "bytes": 169638,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "excited"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "excited",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/excited/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 13,
+        "fps": 30,
+        "treeSha256": "1a7c1d0d335ec71cf90b8ea5fdba6f37d4fdd5a772dd8f4e3ac562c0a9e5bcff",
+        "bytes": 407604
+      }
+    },
+    {
+      "id": "zee.excited.loop.v1",
+      "title": "Zee excited, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/loop.v1.webp",
+          "sha256": "2d063e9544182b87e4c4ae2e58c04b50282c960a64f99ca458c8344ab5118c19",
+          "bytes": 926454,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "excited"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "excited",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/excited/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 77,
+        "fps": 30,
+        "treeSha256": "c23a62c7a17d8adb0ed6eacb8b84f08cb3f6560e80d7cbe6eff58f75542721d8",
+        "bytes": 2226250
+      }
+    },
+    {
+      "id": "zee.excited.outro.v1",
+      "title": "Zee excited, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/outro.v1.webp",
+          "sha256": "c05b52a0c1a1b75b74932cf2de23504f4227bd12656e2a944a202e46cf751318",
+          "bytes": 207492,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "excited"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "excited",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/excited/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 16,
+        "fps": 30,
+        "treeSha256": "bc307f5e648943f802cd512077e5d8eefba3a975e360c970eb092117433449b2",
+        "bytes": 498300
+      }
+    },
+    {
+      "id": "zee.excited.still.v1",
+      "title": "Zee excited, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/still.v1.png",
+          "sha256": "a9b438bc244fd64e5d006848b4f2159b2493e7e575ca47924ce850ba475dc167",
+          "bytes": 68107,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "excited"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "excited",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.focused.intro.v1",
+      "title": "Zee focused, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/intro.v1.webp",
+          "sha256": "2154758cbf5dbc6ddddf25fa40b926246659c157951cb293b359185c2058f731",
+          "bytes": 233010,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "focused"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "focused",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/focused/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 17,
+        "fps": 30,
+        "treeSha256": "6d716b59ebbf86c459a73f6d55f8e6c7bf327ef9022a19bb23e711854959a79c",
+        "bytes": 558248
+      }
+    },
+    {
+      "id": "zee.focused.loop.v1",
+      "title": "Zee focused, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/loop.v1.webp",
+          "sha256": "7c0ce2c7ee632f5bc92c0f1695e568ca6f2e01b94b8f65dcc80885818c0966e1",
+          "bytes": 1140944,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "focused"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "focused",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/focused/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 86,
+        "fps": 30,
+        "treeSha256": "2ef2873fc49bd06e2a2db3b8d31e54a46fa09003e69588f68338779e37c5dc39",
+        "bytes": 2726476
+      }
+    },
+    {
+      "id": "zee.focused.outro.v1",
+      "title": "Zee focused, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/outro.v1.webp",
+          "sha256": "c80c970f75e212a82a5ebbea73b89004189364de699718b8f909b140d46a58fc",
+          "bytes": 246268,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "focused"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "focused",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/focused/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 18,
+        "fps": 30,
+        "treeSha256": "4188c438b2f6d6e178ee8a300ab2e0e008e0a94a1d3a0e0954a913217dae2ae5",
+        "bytes": 589390
+      }
+    },
+    {
+      "id": "zee.focused.still.v1",
+      "title": "Zee focused, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/still.v1.png",
+          "sha256": "4f206d0db05ad25205b076c38fe156f7cd85ece3d70d6a1a334b732b897a8b7f",
+          "bytes": 74247,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "focused"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "focused",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.happy.intro.v1",
+      "title": "Zee happy, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/intro.v1.webp",
+          "sha256": "7fa0e1c828518ba9c03021cd09019ed1f6ad0e893e7c987f9993889eaab0d78c",
+          "bytes": 224388,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "happy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "happy",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/happy/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 17,
+        "fps": 30,
+        "treeSha256": "71f103ccef205ee1a85fc12a5a920741bd7703ff1fb269586c5ccb976f73018b",
+        "bytes": 540326
+      }
+    },
+    {
+      "id": "zee.happy.loop.v1",
+      "title": "Zee happy, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/loop.v1.webp",
+          "sha256": "59cbbe60a3ef3fed5fed24c689d93b07bf27e09d1f497e79e95603b7882b9f0f",
+          "bytes": 1304950,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "happy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "happy",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/happy/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 103,
+        "fps": 30,
+        "treeSha256": "411dbaf44874db419f1842fb5a2231f3a6e70ba57fc4154b41bc4919cf34082f",
+        "bytes": 3157816
+      }
+    },
+    {
+      "id": "zee.happy.outro.v1",
+      "title": "Zee happy, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/outro.v1.webp",
+          "sha256": "4fefd5aefde79d89021d8a64d245abe8bb0d2bc976ce5b8153e817eae92df783",
+          "bytes": 235890,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "happy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "happy",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/happy/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 18,
+        "fps": 30,
+        "treeSha256": "35df40004ac451dcfcb71cb2167d9211f97314f7783642853d33f18a25596fed",
+        "bytes": 571446
+      }
+    },
+    {
+      "id": "zee.happy.still.v1",
+      "title": "Zee happy, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/still.v1.png",
+          "sha256": "4d02177a712d30cf1f978b0f053f8ad167c6c5faa3e9c789ec2f3d1e6e257498",
+          "bytes": 70811,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "happy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "happy",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.hello.intro.v1",
+      "title": "Zee hello, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/intro.v1.webp",
+          "sha256": "cb39ceed6faeb23f016b58ee498c817ce6d171b215873c6533572db295a0e035",
+          "bytes": 227754,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "hello"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "hello",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/hello/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 17,
+        "fps": 30,
+        "treeSha256": "445fbd74e5799808c36377b3f436fef11ed2c25d44139d13738f905d76eae647",
+        "bytes": 545232
+      }
+    },
+    {
+      "id": "zee.hello.loop.v1",
+      "title": "Zee hello, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/loop.v1.webp",
+          "sha256": "455fa9273956e5221274323270c6312d06f6fcce3694cf7f29e8cfc3eb221351",
+          "bytes": 1025384,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "hello"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "hello",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/hello/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 86,
+        "fps": 30,
+        "treeSha256": "c3832eb95cbd76d4d8c38d66d71e641be65ae806670acc93b941570722d69f6e",
+        "bytes": 2460778
+      }
+    },
+    {
+      "id": "zee.hello.outro.v1",
+      "title": "Zee hello, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/outro.v1.webp",
+          "sha256": "a3ac1bfbd175d568f672ee3eb88edf28a00012283d2b4c79dab0702ea651e202",
+          "bytes": 211580,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "hello"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "hello",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/hello/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 16,
+        "fps": 30,
+        "treeSha256": "498b6e0a00ce551912c68edf3020c929d299889efbbdb19780769539c0cff640",
+        "bytes": 507294
+      }
+    },
+    {
+      "id": "zee.hello.still.v1",
+      "title": "Zee hello, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/still.v1.png",
+          "sha256": "056efdaf56f3182bbb1c5b79d8eb05739d00bb8552f7e3b64b3c0b724f4bc654",
+          "bytes": 71721,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "hello"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "hello",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.idea.intro.v1",
+      "title": "Zee idea, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/intro.v1.webp",
+          "sha256": "3340b4fdd66fe18180d5bca157593d5993ffcd6f92dd0eadf57445870ab398c5",
+          "bytes": 248390,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idea"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idea",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/idea/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 19,
+        "fps": 30,
+        "treeSha256": "d0473cee743c935ef8f8431417d1c86f35450f4cc44b3a82598be2dfaef37231",
+        "bytes": 594374
+      }
+    },
+    {
+      "id": "zee.idea.loop.v1",
+      "title": "Zee idea, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/loop.v1.webp",
+          "sha256": "e023b3c3170127aa1c80c14ed182b8ed4ea66939e7f76aaed7e07783bfcf7ece",
+          "bytes": 1048790,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idea"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idea",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/idea/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 86,
+        "fps": 30,
+        "treeSha256": "b3f4a8ac45f6264c4a6e4d2cbbfd9a84d887362a0d154665cf6353613e16b277",
+        "bytes": 2535972
+      }
+    },
+    {
+      "id": "zee.idea.outro.v1",
+      "title": "Zee idea, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/outro.v1.webp",
+          "sha256": "06363da7eb90afdcfc610e7d9508d9d41bd5c2acfc0b336993f84ccff10e34b1",
+          "bytes": 208716,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idea"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idea",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/idea/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 16,
+        "fps": 30,
+        "treeSha256": "c034789ce0dd6f88a1cce0c8284a774c680cf3b150291390489c41ef88f49d20",
+        "bytes": 502370
+      }
+    },
+    {
+      "id": "zee.idea.still.v1",
+      "title": "Zee idea, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/still.v1.png",
+          "sha256": "baf3b83d5452c208021096e9527a6235e6ab69071d540204208e5819ffc0d577",
+          "bytes": 69957,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idea"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idea",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.idle.intro.v1",
+      "title": "Zee idle, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/intro.v1.webp",
+          "sha256": "daf4a57c9f7408c3d806ed8a29cf2b2fd156e7137ede1c84fbfcc075fb5bb6c0",
+          "bytes": 238040,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idle"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idle",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/idle/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 17,
+        "fps": 30,
+        "treeSha256": "de50d7494e2406f6d1a531de26e97a81493bfcf6dc96886fbec671ad068117d6",
+        "bytes": 570830
+      }
+    },
+    {
+      "id": "zee.idle.loop.v1",
+      "title": "Zee idle, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/loop.v1.webp",
+          "sha256": "076fc72e08421689aaa4853fad6dedd2badb9e15b9d4c09aaa365eb4b0e426b0",
+          "bytes": 1204142,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idle"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idle",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/idle/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 86,
+        "fps": 30,
+        "treeSha256": "1d5e67e8650315e17ee23d2ddd6c9d9d4e5e7444faf067019a9d29510160d693",
+        "bytes": 2909032
+      }
+    },
+    {
+      "id": "zee.idle.outro.v1",
+      "title": "Zee idle, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/outro.v1.webp",
+          "sha256": "0c73e2f5c282f71b96e81145421e68bdd184cfd83fe87c1942a46af38501dc88",
+          "bytes": 251908,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idle"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idle",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/idle/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 18,
+        "fps": 30,
+        "treeSha256": "07cc141ad14e21eb45c80d3d56433c41d7590338000c559f3c25a205903ecd71",
+        "bytes": 601362
+      }
+    },
+    {
+      "id": "zee.idle.still.v1",
+      "title": "Zee idle, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/still.v1.png",
+          "sha256": "cfe6f5f81f228384f0fea05e00a869ea224ab9d120c1746c1986f47aae4ccb3a",
+          "bytes": 73014,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "idle"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "idle",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.listening.intro.v1",
+      "title": "Zee listening, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/intro.v1.webp",
+          "sha256": "beee6c8e69bd519005f28187a259db186565898ee2e6bd6ee481dd68183f1241",
+          "bytes": 237180,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "listening"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "listening",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/listening/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 17,
+        "fps": 30,
+        "treeSha256": "ac8fa9d94d7ce859899d3c729b0849bc9444c2289c2cbbe84e6364c847317db4",
+        "bytes": 569870
+      }
+    },
+    {
+      "id": "zee.listening.loop.v1",
+      "title": "Zee listening, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/loop.v1.webp",
+          "sha256": "609b66826f75486af3a69b375392de55d37c22ae7406f6567613a484541a5016",
+          "bytes": 882224,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "listening"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "listening",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/listening/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 64,
+        "fps": 30,
+        "treeSha256": "f616908bd9e8c277a8ea43bc79c28e7935f27976a21923660f963a36f9756e1b",
+        "bytes": 2126154
+      }
+    },
+    {
+      "id": "zee.listening.outro.v1",
+      "title": "Zee listening, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/outro.v1.webp",
+          "sha256": "d60865b60e36d570e10dcfb4eada99f34815a517078dbca383ef1bc63d1221b7",
+          "bytes": 250628,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "listening"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "listening",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/listening/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 18,
+        "fps": 30,
+        "treeSha256": "9a27c31f380b83aefcd8c05d5faf280dc9307e94da33915a60c94b6c965ea467",
+        "bytes": 603738
+      }
+    },
+    {
+      "id": "zee.listening.still.v1",
+      "title": "Zee listening, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/still.v1.png",
+          "sha256": "c1131135b03007035fdce2c0cfa762e9a226119b2dea9eb1546c75f05607a460",
+          "bytes": 75372,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "listening"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "listening",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.love.intro.v1",
+      "title": "Zee love, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/intro.v1.webp",
+          "sha256": "45b951c829e5d849d36423753c10623b090ef11c57e78092406b16adc4411cc1",
+          "bytes": 254774,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "love"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "love",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/love/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 19,
+        "fps": 30,
+        "treeSha256": "5a175a17dee5b5119f181e9e318feb9b7bd593cf31be7f7b10316df7a06c6fde",
+        "bytes": 618144
+      }
+    },
+    {
+      "id": "zee.love.loop.v1",
+      "title": "Zee love, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/loop.v1.webp",
+          "sha256": "2dfd2da12dc1f7709cce82d346939514c8ae32e320f5299d32f3326e5d90379c",
+          "bytes": 850642,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "love"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "love",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/love/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 64,
+        "fps": 30,
+        "treeSha256": "ea1a7b6803641958a27be0dd4f7b50b34cafd3b8b68aaf21d65c494accd0ea23",
+        "bytes": 2065976
+      }
+    },
+    {
+      "id": "zee.love.outro.v1",
+      "title": "Zee love, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/outro.v1.webp",
+          "sha256": "6b49fa730f044876779a9da804ca4ccd42c7448624e4947eee0486873af93bef",
+          "bytes": 270906,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "love"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "love",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/love/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 20,
+        "fps": 30,
+        "treeSha256": "9ad2a77e283fe6d7d6797c30235bfd350dda03f3fd5325d6cc8e42980e8bec1c",
+        "bytes": 659618
+      }
+    },
+    {
+      "id": "zee.love.still.v1",
+      "title": "Zee love, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/still.v1.png",
+          "sha256": "ceb88d9a75ea722b8b2ed5c46072fc768bb6efc99ca0dfd1e0fedf4532a2c060",
+          "bytes": 70748,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "love"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "love",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.sleepy.intro.v1",
+      "title": "Zee sleepy, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/intro.v1.webp",
+          "sha256": "72496e7db476df1c7f854dec8a20d49d02c62f6d896dc322615aa92f8ea0c9af",
+          "bytes": 277884,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "sleepy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "sleepy",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/sleepy/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 21,
+        "fps": 30,
+        "treeSha256": "556e465e79e14ef9f15fa21f73ed9d8368c716f9eb61c9d8e0b0cccbcb4324fc",
+        "bytes": 665408
+      }
+    },
+    {
+      "id": "zee.sleepy.loop.v1",
+      "title": "Zee sleepy, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/loop.v1.webp",
+          "sha256": "56627989a3485e65b20ad1393f6356ff2c55a96bf961c4305a76089f9eaef42a",
+          "bytes": 1073634,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "sleepy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "sleepy",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/sleepy/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 86,
+        "fps": 30,
+        "treeSha256": "ccc1b1716417075db8a2b8af325ef55f36a8cb213dd3902de8472a5292b6d944",
+        "bytes": 2572690
+      }
+    },
+    {
+      "id": "zee.sleepy.outro.v1",
+      "title": "Zee sleepy, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/outro.v1.webp",
+          "sha256": "6d88f893e80c9fb2fd0fd6442cf9a13ce4c95b286ed67418a989e0d1f88b2f77",
+          "bytes": 291336,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "sleepy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "sleepy",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/sleepy/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 22,
+        "fps": 30,
+        "treeSha256": "f2d888b9d344cdbf1a03b6ed267b2cb8db4a4b01a302eb97f37bc555e6182097",
+        "bytes": 698876
+      }
+    },
+    {
+      "id": "zee.sleepy.still.v1",
+      "title": "Zee sleepy, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/still.v1.png",
+          "sha256": "a4b964683c905bbaec604d0c9e35bf9b36184c500d2bf30f6b7596e1f18b55cd",
+          "bytes": 70428,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "sleepy"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "sleepy",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    },
+    {
+      "id": "zee.thinking.intro.v1",
+      "title": "Zee thinking, intro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/intro.v1.webp",
+          "sha256": "a1b29216718822c38ab208e6353cfb9a25058b2fc607eb247d812facfb62bb8b",
+          "bytes": 243984,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "thinking"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "thinking",
+      "part": "intro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/thinking/intro.v1",
+        "pattern": "%04d.webp",
+        "count": 17,
+        "fps": 30,
+        "treeSha256": "821723381f1d3cc917319c29e0755113e121a3c92fcc5f82b2271912e851919e",
+        "bytes": 584756
+      }
+    },
+    {
+      "id": "zee.thinking.loop.v1",
+      "title": "Zee thinking, loop",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/loop.v1.webp",
+          "sha256": "2bf41b9478dd9daec8fb9ba07791d852f51fd2be9561b987463e13b56e59a7f2",
+          "bytes": 908630,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "thinking"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "thinking",
+      "part": "loop",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/thinking/loop.v1",
+        "pattern": "%04d.webp",
+        "count": 64,
+        "fps": 30,
+        "treeSha256": "8b39d0ce1a3dd362f0088e098d14cff23fecbf4cd5cf2293c529caa67a454f13",
+        "bytes": 2157296
+      }
+    },
+    {
+      "id": "zee.thinking.outro.v1",
+      "title": "Zee thinking, outro",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/outro.v1.webp",
+          "sha256": "49673c74e9d4d091a70968384cc780cd0e8e642e92df6dc8f8110ceb2aa63df0",
+          "bytes": 259376,
+          "mime": "image/webp"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "thinking"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "url": "research/zee-pack/zee-v2/sharp/frames-720-f18cL-v2",
+        "from": [],
+        "tool": "Blender; frames converted by marketing/videos/tools/zee_frames.py"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "thinking",
+      "part": "outro",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 720,
+        "h": 720
+      },
+      "frames": {
+        "dir": "zee/thinking/outro.v1",
+        "pattern": "%04d.webp",
+        "count": 18,
+        "fps": 30,
+        "treeSha256": "b024825a3e827147ca3edd763750e54b8932a6dcc96ef12bcf4f1a5b2d4da958",
+        "bytes": 617892
+      }
+    },
+    {
+      "id": "zee.thinking.still.v1",
+      "title": "Zee thinking, still",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/still.v1.png",
+          "sha256": "295a93b3108788be59b1231283c0fe5ef6590a0b3bb28d85bcd8d1e9666c480a",
+          "bytes": 74132,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [
+          "thinking"
+        ],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "rendered",
+        "from": [],
+        "tool": "Blender"
+      },
+      "licence": {
+        "name": "Curate original (Curate's character)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "zee",
+      "emotion": "thinking",
+      "part": "still",
+      "pack": "zee-sharp-v1",
+      "dims": {
+        "w": 384,
+        "h": 384
+      }
+    }
+  ]
+}

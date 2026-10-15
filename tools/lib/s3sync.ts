@@ -1,10 +1,21 @@
 // S3 transfer by manifest, shared by tools/sync, tools/catalog (add/replace push) and tools/library-ui.
 // library/<path> <-> s3://BUCKET/library/<path>. Objects carry x-amz-meta-sha256 + an S3 SHA256 checksum.
-import { existsSync, mkdirSync, renameSync, rmSync } from "node:fs";
+import { existsSync, mkdirSync, renameSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { aws, BUCKET, INDEX_PATH, LIB, readJson, s3KeyFor, sha256File, treeSha } from "./core.ts";
 
 export type FileE = { role: string; path: string; sha256: string; bytes: number; s3Key?: string };
+// The aws cli wants a real file for an empty body; /dev/null fails with "Blob values must be a path to a file".
+let emptyBody: string | undefined;
+function EMPTY_BODY(): string {
+  if (!emptyBody) {
+    emptyBody = join(tmpdir(), "curate-motion-empty-marker");
+    writeFileSync(emptyBody, "");
+  }
+  return emptyBody;
+}
+
 export type Entry = { id: string; kind: string; status: string; files: FileE[]; asset: { frames?: { dir: string; count: number; treeSha256: string } } };
 
 export const TREE = "_tree.sha256"; // marker object holding a frame folder's treeSha256
@@ -55,7 +66,7 @@ export const pushEntries = (es: Entry[], o: { dry?: boolean; quiet?: boolean } =
       log(!!o.quiet, `${o.dry ? "would push" : "push"}  ${e.id}  ${fr.dir} (${fr.count} frames)`);
       if (o.dry) continue;
       aws(["s3", "sync", d, `s3://${BUCKET}/${s3KeyFor(fr.dir)}`, "--metadata", `asset-id=${e.id}`, "--only-show-errors"]);
-      aws(["s3api", "put-object", "--bucket", BUCKET, "--key", marker, "--body", "/dev/null", "--metadata", `sha256=${fr.treeSha256}`, "--output", "text", "--query", "ETag"]);
+      aws(["s3api", "put-object", "--bucket", BUCKET, "--key", marker, "--body", EMPTY_BODY(), "--metadata", `sha256=${fr.treeSha256}`, "--output", "text", "--query", "ETag"]);
       sent++;
     }
   }

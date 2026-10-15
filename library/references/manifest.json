@@ -1,0 +1,151 @@
+{
+  "$schema": "../../catalog/schemas/manifest.schema.json",
+  "about": "Reference reels and breakdowns. Study only: NEVER shipped in an ad (not our licence).",
+  "assets": [
+    {
+      "id": "reference.creator.pop-off-reel.v1",
+      "title": "Creator reel 'how to: Pop Off' (sent by the founder on WhatsApp)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/pop-off-reel/source.v1.mp4",
+          "sha256": "2b84763c760cf405c487a4b98b361667a7192243d2db611fa62823db0ea5255d",
+          "bytes": 5366558,
+          "mime": "video/mp4"
+        },
+        {
+          "role": "frame",
+          "path": "references/pop-off-reel/audio-wave-spectrogram.v1.jpg",
+          "sha256": "0f3d94954db6c7349dd8e988c1473a70640a51d9e1ce6b5794b86c86fc2d1ad6",
+          "bytes": 306903,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "frame",
+          "path": "references/pop-off-reel/hook-10fps.v1.jpg",
+          "sha256": "acf9403960cff21d6c64cb852a39f4081b6084e6d7e7d22e376f22b941255d70",
+          "bytes": 507040,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "frame",
+          "path": "references/pop-off-reel/sheet-1.v1.jpg",
+          "sha256": "5551f52a3711b3b4e79f0725f11258f1a1ccc47c2cf5b793d1eb511fdea1f825",
+          "bytes": 489232,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "frame",
+          "path": "references/pop-off-reel/sheet-2.v1.jpg",
+          "sha256": "317e369b8875cb8bfdca33d1be05b77fdf2b6a13e5076d73a379067c5b527eaa",
+          "bytes": 458045,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "frame",
+          "path": "references/pop-off-reel/sheet-3.v1.jpg",
+          "sha256": "8d13d6bdc459cc73f67ffda8c275ca23b37536c892b3389111db763e417f5e1c",
+          "bytes": 428599,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "frame",
+          "path": "references/pop-off-reel/sheet-4.v1.jpg",
+          "sha256": "7d1b4ea431f2367a883d2c2b78e79eee4ef551e023b67e3936ff206ae835a894",
+          "bytes": 454252,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "frame",
+          "path": "references/pop-off-reel/shot2-10fps.v1.jpg",
+          "sha256": "b27fe08bfcfe233a09e419c892917db5240033743d87d4d1e08a44e0c98f7f11",
+          "bytes": 414241,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "reference"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "url": "marketing/videos/references/whatsapp-2026-10-15-102224",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference",
+      "notes": "Effects we took from it: type-on words behind the subject, flash then tilted print, scan dots + outline trace, hand-drawn ellipse, stroke round the frame."
+    },
+    {
+      "id": "reference.app.scan-real-probe.v1",
+      "title": "Real photo-scan probe recording (not for cuts)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/scan-real-probe/scan-real.v1.mp4",
+          "sha256": "f6a810759eda4568e1fd12e61064df3f4f57c6952f631943a8b8401ccecea20e",
+          "bytes": 86213086,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "photo-scan",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "captured",
+        "from": [],
+        "tool": "marketing/videos/tools/capture.sh"
+      },
+      "licence": {
+        "name": "Curate original (internal reference)",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "import-legacy",
+        "note": "migrated from marketing/videos",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference",
+      "notes": "Probe output kept to check timing against the real app; marked not-for-cuts at the source.",
+      "durationSec": 27.673
+    }
+  ]
+}
