@@ -1,0 +1,256 @@
+Founded              2025
+
+Industry      Fashion Tech
+
+Category   Brand Guidelines
+This brandbook has been created to help you understand
+the identity, vision, and principles that shape Curate. We
+believe in thoughtful design, refined experiences, and
+purposeful creativity. Every detail reflects the way Curate
+communicates, creates, and connects.
+
+
+
+
+Brand guidelines   Introduction                               02
+A roadmap to all sections of Curate’s brand guidelines including
+mission, visual identity, logo usage, colors, typography, and more
+
+
+
+
+Table of content                                          Verbal Identity
+                                                          //05 Brand Story
+                                                                                   Typography
+                                                                                   //13 Primary Typeface
+                                                                                                           Brand Assets
+                                                                                                           //17 Business Cards & Stationery
+                                                          //06 Tone of voice                               //18 Social Media
+                                                          //07 Mission & Vision    Color                   //19 Favicon & Icon
+
+                                                                                   //15 Color System
+                                                          Logo                                             Brand in Action
+                                                          //09 Primary Logo mark                           //21 - 23 Advertising & Campaigns
+                                                          //10 Primary Full Logo
+                                                          //11   Incorrect Usage
+
+
+
+
+Brand guidelines   Table of content                                                                                                       03
+05         Our Story
+
+06     Tone of voice
+
+07   Mission & Vision
+Brand Mission                  Curate was born out of frustration. After ordering multiple pants
+                               online that didn’t fit, we realized how broken the online
+                               shopping experience truly is.  
+
+                               What started as a casual conversation soon turned into a
+                               shared mission to solve this problem at scale. Five months ago,
+                               we began building Curate with features like virtual try-on and
+                               smart size guidance.  
+
+                               Today, Curate is a fully functional product that removes the
+                               guesswork from online shopping and helps customers shop
+                               with confidence.
+
+
+
+
+Brand guidelines   Our Story                                                                  05
+Tone of voice                      Curate communicates with clarity, confidence, and simplicity. Our
+                                   tone is modern, approachable, and human, making advanced
+                                   technology feel effortless and easy to understand.  
+
+                                   We avoid unnecessary complexity and focus on helping users
+                                   make smarter shopping decisions with confidence.  
+
+                                   Every interaction is designed to feel intuitive, helpful, and refined
+                                   while reflecting the future of personalized online shopping.
+
+
+
+
+Brand guidelines   Tone of voice                                                                       06
+Mission                               Our mission is to expand Curate into a complete shopping
+                                      ecosystem. With our extension and Shopify plugin already live and
+                                      backed by $100K in funding, we are focused on building iOS and
+                                      Android apps, enabling users to create avatars with body
+                                      measurements, manage digital closets, and receive personalized
+                                      styling. At the same time, we aim to integrate Curate across e-
+                                      commerce platforms, helping businesses enhance customer
+                                      experience and drive better outcomes.
+
+
+
+
+Vision                                Our vision is to transform online retail into a truly personalized
+                                      experience. We aim to build a dynamic ecosystem where users’
+                                      body measurements, wardrobe, and style preferences power
+                                      smarter recommendations. By helping customers find what fits
+                                      and brands reduce returns while increasing revenue, Curate
+                                      aspires to redefine how people discover and shop for clothing
+                                      online.
+
+
+
+
+Brand guidelines   Mission & Vision                                                                        07
+09   Primary Logo mark
+
+10    Primary Full logo
+
+11    Incorrect Usages
+Always maintain the defined protective field to ensure clarity,
+consistency, and visual balance.
+
+
+
+
+                                                                       1x
+
+
+
+
+                                                                  1x        1x
+
+
+
+
+                                                                       1x
+
+
+
+
+Brand guidelines   Primary Logo mark                                             09
+Always maintain the defined protective field to ensure clarity,
+consistency, and visual balance.
+
+
+
+
+                                                                  1x
+
+
+
+
+                                                 1x                    1x
+
+
+
+
+                                                                  1x
+
+
+
+
+Brand guidelines   Primary Full logo                                        10
+Avoid any modifications that compromise the clarity, balance, or
+visibility of the logo.
+
+
+
+
+Brand guidelines   Incorrect Usages                                11
+13   Primary Typeface
+Geist
+Geist is our primary typeface for digital and print communications. With its
+clarity, versatility, and modern minimalism, ensuring readability and a
+seamless user experience.
+
+
+
+
+                                                                               Weight      Overview
+
+                                                                               Light       ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                                               Regular     ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                                               Medium
+                                                                                           1 2 3 4 5 6 7 8 9 10
+                                                                               Semi-bold
+                                                                               Bold        !@#$%^&*()-_+=~?/\|:;"'<>[]{}
+
+
+Brand guidelines   Primary Typeface                                                                                        13
+15   Color system
+  Primary Black                    Strong Grey    Pale Silver   Angora White   Primary White
+
+
+                                   Hex: 383838
+
+
+                                   Winter Gray
+
+
+                                   Hex: 656565
+
+
+                                   Fashion Gray
+                                                                Hex: F6F6F6
+
+
+                                                                Pale White
+                                   Hex: 8B8B8B
+
+
+                                   Cute Grey
+
+
+                                   Hex: B3B3B3
+
+                                  Gainsboro
+
+
+
+  Hex: 181818                     Hex: DDDDDD     Hex: EBEBEB   Hex: FCFBFC    Hex: FFFFFF
+
+
+Brand guidelines   Color system                                                                15
+17   Business Cards & Stationery
+
+
+18           Social Media Usage
+
+
+19                Favicon & Icon
+Brand guidelines   Business Cards & Stationery   17
+                         Try it. Before you buy it.
+                         Instantly preview outfits on yourself with AI-
+                                                                                    Try it on                   Try it. Before you buy it.
+                              powered virtual try-on technology.
+                                                                                                                Instantly preview outfits on yourself with AI-
+                                                                                                                powered virtual try-on technology.
+
+
+
+
+                                                                                                                                                                          Following
+
+
+                                                                                                               Curate
+                                                                                                               @curatefashion
+                                                                                                               Virtual try-on technology for modern fashion shopping. 
+                                                                                                               See outfits on yourself instantly before you buy online.
+                                                                                                               55 Following 2,884 Followers
+                     Send message                                         Send message          Send message
+
+
+
+
+Brand guidelines   Social Media                                                                                                                                                       18
+                                       Curate - Virtual Try-On
+
+                                    www.curatefashions.com
+
+
+
+
+Brand guidelines   Favicon & Icon                                19
+21-23   Advertisement & Campaigns
+Brand guidelines   Advertisement & Campaigns   21
+Brand guidelines   Advertisement & Campaigns   22
+Brand guidelines   Advertisement & Campaigns   23
+Thank you
+

@@ -45,7 +45,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "cheer",
@@ -62,7 +62,9 @@
         "fps": 30,
         "treeSha256": "c0a159bb30f1ee28b9e7c31a766b32ac1d5f2fe9f9c060b3612247ea576930e1",
         "bytes": 454880
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.cheer.loop.v1",
@@ -107,7 +109,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "cheer",
@@ -124,7 +126,9 @@
         "fps": 30,
         "treeSha256": "a58356a729e03489cedb6cd1fbebfb2572464800821ab49a47c40408882ad8d3",
         "bytes": 2278824
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.cheer.outro.v1",
@@ -169,7 +173,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "cheer",
@@ -186,7 +190,9 @@
         "fps": 30,
         "treeSha256": "97acb323119a688e339273ba2e1f29f2d621439e0228b8320675cf81ce04b094",
         "bytes": 543744
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.cheer.still.v1",
@@ -230,7 +236,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "cheer",
@@ -239,7 +245,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.curious.intro.v1",
@@ -284,7 +292,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "curious",
@@ -301,7 +309,9 @@
         "fps": 30,
         "treeSha256": "e84c253c1444a9db8d6db9f56794b9fa61c8645e6da0af1ef460176f8ce21720",
         "bytes": 513530
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.curious.loop.v1",
@@ -346,7 +356,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "curious",
@@ -363,7 +373,9 @@
         "fps": 30,
         "treeSha256": "02baa1a255fda768ff86e741182490b3f172a59ed4c8a2ddf9b3ec8563fdde17",
         "bytes": 2141056
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.curious.outro.v1",
@@ -408,7 +420,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "curious",
@@ -425,7 +437,9 @@
         "fps": 30,
         "treeSha256": "0ee1d49ba5beb650c527d5a5a8b1d3aa0a5dfece04a8eed855a597d02ed8a8bb",
         "bytes": 540724
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.curious.still.v1",
@@ -469,7 +483,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "curious",
@@ -478,7 +492,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.excited.intro.v1",
@@ -523,7 +539,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "excited",
@@ -540,7 +556,9 @@
         "fps": 30,
         "treeSha256": "1a7c1d0d335ec71cf90b8ea5fdba6f37d4fdd5a772dd8f4e3ac562c0a9e5bcff",
         "bytes": 407604
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.excited.loop.v1",
@@ -585,7 +603,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "excited",
@@ -602,7 +620,9 @@
         "fps": 30,
         "treeSha256": "c23a62c7a17d8adb0ed6eacb8b84f08cb3f6560e80d7cbe6eff58f75542721d8",
         "bytes": 2226250
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.excited.outro.v1",
@@ -647,7 +667,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "excited",
@@ -664,7 +684,9 @@
         "fps": 30,
         "treeSha256": "bc307f5e648943f802cd512077e5d8eefba3a975e360c970eb092117433449b2",
         "bytes": 498300
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.excited.still.v1",
@@ -708,7 +730,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "excited",
@@ -717,7 +739,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.focused.intro.v1",
@@ -762,7 +786,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "focused",
@@ -779,7 +803,9 @@
         "fps": 30,
         "treeSha256": "6d716b59ebbf86c459a73f6d55f8e6c7bf327ef9022a19bb23e711854959a79c",
         "bytes": 558248
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.focused.loop.v1",
@@ -824,7 +850,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "focused",
@@ -841,7 +867,9 @@
         "fps": 30,
         "treeSha256": "2ef2873fc49bd06e2a2db3b8d31e54a46fa09003e69588f68338779e37c5dc39",
         "bytes": 2726476
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.focused.outro.v1",
@@ -886,7 +914,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "focused",
@@ -903,7 +931,9 @@
         "fps": 30,
         "treeSha256": "4188c438b2f6d6e178ee8a300ab2e0e008e0a94a1d3a0e0954a913217dae2ae5",
         "bytes": 589390
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.focused.still.v1",
@@ -947,7 +977,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "focused",
@@ -956,7 +986,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.happy.intro.v1",
@@ -1001,7 +1033,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "happy",
@@ -1018,7 +1050,9 @@
         "fps": 30,
         "treeSha256": "71f103ccef205ee1a85fc12a5a920741bd7703ff1fb269586c5ccb976f73018b",
         "bytes": 540326
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.happy.loop.v1",
@@ -1063,7 +1097,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "happy",
@@ -1080,7 +1114,9 @@
         "fps": 30,
         "treeSha256": "411dbaf44874db419f1842fb5a2231f3a6e70ba57fc4154b41bc4919cf34082f",
         "bytes": 3157816
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.happy.outro.v1",
@@ -1125,7 +1161,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "happy",
@@ -1142,7 +1178,9 @@
         "fps": 30,
         "treeSha256": "35df40004ac451dcfcb71cb2167d9211f97314f7783642853d33f18a25596fed",
         "bytes": 571446
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.happy.still.v1",
@@ -1186,7 +1224,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "happy",
@@ -1195,7 +1233,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.hello.intro.v1",
@@ -1240,7 +1280,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "hello",
@@ -1257,7 +1297,9 @@
         "fps": 30,
         "treeSha256": "445fbd74e5799808c36377b3f436fef11ed2c25d44139d13738f905d76eae647",
         "bytes": 545232
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.hello.loop.v1",
@@ -1302,7 +1344,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "hello",
@@ -1319,7 +1361,9 @@
         "fps": 30,
         "treeSha256": "c3832eb95cbd76d4d8c38d66d71e641be65ae806670acc93b941570722d69f6e",
         "bytes": 2460778
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.hello.outro.v1",
@@ -1364,7 +1408,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "hello",
@@ -1381,7 +1425,9 @@
         "fps": 30,
         "treeSha256": "498b6e0a00ce551912c68edf3020c929d299889efbbdb19780769539c0cff640",
         "bytes": 507294
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.hello.still.v1",
@@ -1425,7 +1471,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "hello",
@@ -1434,7 +1480,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idea.intro.v1",
@@ -1479,7 +1527,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idea",
@@ -1496,7 +1544,9 @@
         "fps": 30,
         "treeSha256": "d0473cee743c935ef8f8431417d1c86f35450f4cc44b3a82598be2dfaef37231",
         "bytes": 594374
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idea.loop.v1",
@@ -1541,7 +1591,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idea",
@@ -1558,7 +1608,9 @@
         "fps": 30,
         "treeSha256": "b3f4a8ac45f6264c4a6e4d2cbbfd9a84d887362a0d154665cf6353613e16b277",
         "bytes": 2535972
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idea.outro.v1",
@@ -1603,7 +1655,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idea",
@@ -1620,7 +1672,9 @@
         "fps": 30,
         "treeSha256": "c034789ce0dd6f88a1cce0c8284a774c680cf3b150291390489c41ef88f49d20",
         "bytes": 502370
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idea.still.v1",
@@ -1664,7 +1718,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idea",
@@ -1673,7 +1727,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idle.intro.v1",
@@ -1718,7 +1774,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idle",
@@ -1735,7 +1791,9 @@
         "fps": 30,
         "treeSha256": "de50d7494e2406f6d1a531de26e97a81493bfcf6dc96886fbec671ad068117d6",
         "bytes": 570830
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idle.loop.v1",
@@ -1780,7 +1838,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idle",
@@ -1797,7 +1855,9 @@
         "fps": 30,
         "treeSha256": "1d5e67e8650315e17ee23d2ddd6c9d9d4e5e7444faf067019a9d29510160d693",
         "bytes": 2909032
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idle.outro.v1",
@@ -1842,7 +1902,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idle",
@@ -1859,7 +1919,9 @@
         "fps": 30,
         "treeSha256": "07cc141ad14e21eb45c80d3d56433c41d7590338000c559f3c25a205903ecd71",
         "bytes": 601362
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.idle.still.v1",
@@ -1903,7 +1965,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "idle",
@@ -1912,7 +1974,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.listening.intro.v1",
@@ -1957,7 +2021,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "listening",
@@ -1974,7 +2038,9 @@
         "fps": 30,
         "treeSha256": "ac8fa9d94d7ce859899d3c729b0849bc9444c2289c2cbbe84e6364c847317db4",
         "bytes": 569870
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.listening.loop.v1",
@@ -2019,7 +2085,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "listening",
@@ -2036,7 +2102,9 @@
         "fps": 30,
         "treeSha256": "f616908bd9e8c277a8ea43bc79c28e7935f27976a21923660f963a36f9756e1b",
         "bytes": 2126154
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.listening.outro.v1",
@@ -2081,7 +2149,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "listening",
@@ -2098,7 +2166,9 @@
         "fps": 30,
         "treeSha256": "9a27c31f380b83aefcd8c05d5faf280dc9307e94da33915a60c94b6c965ea467",
         "bytes": 603738
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.listening.still.v1",
@@ -2142,7 +2212,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "listening",
@@ -2151,7 +2221,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.love.intro.v1",
@@ -2196,7 +2268,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "love",
@@ -2213,7 +2285,9 @@
         "fps": 30,
         "treeSha256": "5a175a17dee5b5119f181e9e318feb9b7bd593cf31be7f7b10316df7a06c6fde",
         "bytes": 618144
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.love.loop.v1",
@@ -2258,7 +2332,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "love",
@@ -2275,7 +2349,9 @@
         "fps": 30,
         "treeSha256": "ea1a7b6803641958a27be0dd4f7b50b34cafd3b8b68aaf21d65c494accd0ea23",
         "bytes": 2065976
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.love.outro.v1",
@@ -2320,7 +2396,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "love",
@@ -2337,7 +2413,9 @@
         "fps": 30,
         "treeSha256": "9ad2a77e283fe6d7d6797c30235bfd350dda03f3fd5325d6cc8e42980e8bec1c",
         "bytes": 659618
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.love.still.v1",
@@ -2381,7 +2459,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "love",
@@ -2390,7 +2468,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.sleepy.intro.v1",
@@ -2435,7 +2515,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "sleepy",
@@ -2452,7 +2532,9 @@
         "fps": 30,
         "treeSha256": "556e465e79e14ef9f15fa21f73ed9d8368c716f9eb61c9d8e0b0cccbcb4324fc",
         "bytes": 665408
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.sleepy.loop.v1",
@@ -2497,7 +2579,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "sleepy",
@@ -2514,7 +2596,9 @@
         "fps": 30,
         "treeSha256": "ccc1b1716417075db8a2b8af325ef55f36a8cb213dd3902de8472a5292b6d944",
         "bytes": 2572690
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.sleepy.outro.v1",
@@ -2559,7 +2643,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "sleepy",
@@ -2576,7 +2660,9 @@
         "fps": 30,
         "treeSha256": "f2d888b9d344cdbf1a03b6ed267b2cb8db4a4b01a302eb97f37bc555e6182097",
         "bytes": 698876
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.sleepy.still.v1",
@@ -2620,7 +2706,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "sleepy",
@@ -2629,7 +2715,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.thinking.intro.v1",
@@ -2674,7 +2762,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "thinking",
@@ -2691,7 +2779,9 @@
         "fps": 30,
         "treeSha256": "821723381f1d3cc917319c29e0755113e121a3c92fcc5f82b2271912e851919e",
         "bytes": 584756
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.thinking.loop.v1",
@@ -2736,7 +2826,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "thinking",
@@ -2753,7 +2843,9 @@
         "fps": 30,
         "treeSha256": "8b39d0ce1a3dd362f0088e098d14cff23fecbf4cd5cf2293c529caa67a454f13",
         "bytes": 2157296
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.thinking.outro.v1",
@@ -2798,7 +2890,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "thinking",
@@ -2815,7 +2907,9 @@
         "fps": 30,
         "treeSha256": "b024825a3e827147ca3edd763750e54b8932a6dcc96ef12bcf4f1a5b2d4da958",
         "bytes": 617892
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "zee.thinking.still.v1",
@@ -2859,7 +2953,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "zee",
       "emotion": "thinking",
@@ -2868,7 +2962,9 @@
       "dims": {
         "w": 384,
         "h": 384
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

@@ -197,6 +197,7 @@ what the app actually holds, mapped to library ids. Never put a password in eith
 - **Licences are tracked and required** for every asset.
 - **No shopping and no prices** in ads (the Shop is hidden in the app).
 - **Never show the pipeline**: no model names, steps, progress of AI internals on screen.
+- **Brand:** read [`library/brand/BRAND.md`](library/brand/BRAND.md) before making anything: monochrome ramp, Geist only, logo rules, voice. The full brand book is `brand.curate.brand-guideline-2026.v1` (PDF in S3); its text is in `library/brand/brand-guideline-2026.txt`.
 - **No logos** of other brands (garments are logo-free; stock is checked for logos).
 - **FTC**: personas never vouch for products ("worth it", "true to size", "I love this brand").
 - **AI-generated label** wherever a platform requires it; `aiGenerated` on each asset tells you.

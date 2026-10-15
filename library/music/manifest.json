@@ -55,7 +55,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 100.075,
@@ -67,7 +67,9 @@
         "breakdown": 24,
         "back": 38
       },
-      "vibe": "Upbeat synth pop, about 120 bpm, bright. Breaks down at 0:24 and comes back at 0:38."
+      "vibe": "Upbeat synth pop, about 120 bpm, bright. Breaks down at 0:24 and comes back at 0:38.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "music.mixkit.cant-get-you-off-my-mind-michael-ramir-c.v1",
@@ -123,7 +125,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 90.648,
@@ -134,7 +136,9 @@
       "sections": {
         "drop": 25.58
       },
-      "vibe": "Future bass pop with a big drop at 0:24. A TikTok-style hook."
+      "vibe": "Future bass pop with a big drop at 0:24. A TikTok-style hook.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "music.mixkit.cat-walk-arulo.v1",
@@ -189,7 +193,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 123.99,
@@ -200,7 +204,9 @@
       "sections": {
         "drop": 29.5
       },
-      "vibe": "Fashion house, about 130 bpm; the beat drops at 0:30. Runway energy. Best for 'Two taps to a closet' and the photos cut."
+      "vibe": "Fashion house, about 130 bpm; the beat drops at 0:30. Runway energy. Best for 'Two taps to a closet' and the photos cut.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "music.mixkit.deep-urban-eugenio-mininni.v1",
@@ -255,7 +261,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 288.692,
@@ -264,7 +270,9 @@
       "beatGrid": "estimated",
       "beatsPerBar": 4,
       "sections": {},
-      "vibe": "Deep house, about 124 bpm, steady and premium. Good under the App Store preview and the website."
+      "vibe": "Deep house, about 124 bpm, steady and premium. Good under the App Store preview and the website.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "music.mixkit.drawing-the-sky-eugenio-mininni.v1",
@@ -319,7 +327,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 206.538,
@@ -330,7 +338,9 @@
       "sections": {
         "swell": 14.8
       },
-      "vibe": "Cinematic orchestral pop, about 100 bpm; swells at 0:14. For a hero or website film."
+      "vibe": "Cinematic orchestral pop, about 100 bpm; swells at 0:14. For a hero or website film.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "music.mixkit.gummies-michael-ramir-c.v1",
@@ -384,7 +394,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 99.564,
@@ -393,7 +403,9 @@
       "beatGrid": "estimated",
       "beatsPerBar": 4,
       "sections": {},
-      "vibe": "Cute, playful synth pop, about 120 bpm. Made for Zee."
+      "vibe": "Cute, playful synth pop, about 120 bpm. Made for Zee.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "music.mixkit.lo-fi-01-lily-j.v1",
@@ -449,7 +461,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 102.4,
@@ -458,7 +470,9 @@
       "beatGrid": "estimated",
       "beatsPerBar": 4,
       "sections": {},
-      "vibe": "Chill lo-fi beat, about 75 bpm (half-time). For 'What do I wear today?' morning moments."
+      "vibe": "Chill lo-fi beat, about 75 bpm (half-time). For 'What do I wear today?' morning moments.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "music.mixkit.sleepy-cat-alejandro-magana.v1",
@@ -513,7 +527,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "music",
       "durationSec": 119.16,
@@ -521,7 +535,9 @@
       "beatGrid": "unknown",
       "beatsPerBar": 4,
       "sections": {},
-      "vibe": "Chill downtempo with a cosy, cat-named groove. Soft Zee moments."
+      "vibe": "Chill downtempo with a cosy, cat-named groove. Soft Zee moments.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

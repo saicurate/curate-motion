@@ -49,7 +49,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -62,7 +62,9 @@
         "garment.emma.blazer-black.v1",
         "garment.emma.earrings-hoops-gold.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r02-subway-platform.v1",
@@ -111,7 +113,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -125,7 +127,9 @@
         "garment.emma.loafers-black.v1",
         "garment.emma.bag-tote-leather-black.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r03-brooklyn-street.v1",
@@ -174,7 +178,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -188,7 +192,9 @@
         "garment.emma.sneakers-leather-white.v1",
         "garment.emma.cap-baseball-navy.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r04-park-autumn.v1",
@@ -237,7 +243,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -250,7 +256,9 @@
         "garment.emma.scarf-plaid-camel.v1",
         "garment.emma.jeans-straight-dark-wash.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r05-office.v1",
@@ -299,7 +307,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -312,7 +320,9 @@
         "garment.emma.trousers-black.v1",
         "garment.emma.necklace-pendant-gold.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r06-farmers-market.v1",
@@ -361,7 +371,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -375,7 +385,9 @@
         "garment.emma.bag-crossbody-tan.v1",
         "garment.emma.sneakers-leather-white.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r07-rooftop-golden-hour.v1",
@@ -424,7 +436,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -437,7 +449,9 @@
         "garment.emma.jacket-leather-black.v1",
         "garment.emma.earrings-hoops-gold.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r08-beach-day.v1",
@@ -486,7 +500,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -500,7 +514,9 @@
         "garment.emma.shorts-denim-cutoff.v1",
         "garment.emma.sandals-tan.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r09-mirror-selfie-weekend.v1",
@@ -549,7 +565,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -563,7 +579,9 @@
         "garment.emma.jeans-straight-dark-wash.v1",
         "garment.emma.sneakers-leather-white.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r10-night-out.v1",
@@ -612,7 +630,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -626,7 +644,9 @@
         "garment.emma.bag-mini-black.v1",
         "garment.emma.earrings-hoops-gold.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r11-mirror-selfie-work.v1",
@@ -675,7 +695,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -688,7 +708,9 @@
         "garment.emma.skirt-midi-satin-camel.v1",
         "garment.emma.boots-ankle-black.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r12-dumbo-walk.v1",
@@ -737,7 +759,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -751,7 +773,9 @@
         "garment.emma.jeans-straight-dark-wash.v1",
         "garment.emma.boots-ankle-black.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r13-winter-street.v1",
@@ -800,7 +824,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -814,7 +838,9 @@
         "garment.emma.jeans-straight-light-wash.v1",
         "garment.emma.sneakers-retro-runner-grey-navy.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r14-sunday-errands.v1",
@@ -863,7 +889,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -877,7 +903,9 @@
         "garment.emma.sneakers-retro-runner-grey-navy.v1",
         "garment.emma.cap-baseball-navy.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r15-hudson-run.v1",
@@ -926,7 +954,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -939,7 +967,9 @@
         "garment.emma.tank-running-grey.v1",
         "garment.emma.sneakers-retro-runner-grey-navy.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r16-bookstore.v1",
@@ -988,7 +1018,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1001,7 +1031,9 @@
         "garment.emma.tee-white.v1",
         "garment.emma.jeans-straight-dark-wash.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r17-brunch.v1",
@@ -1050,7 +1082,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1063,7 +1095,9 @@
         "garment.emma.tee-white.v1",
         "garment.emma.jeans-straight-light-wash.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r18-office-lobby.v1",
@@ -1112,7 +1146,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1126,7 +1160,9 @@
         "garment.emma.trousers-black.v1",
         "garment.emma.loafers-black.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r19-fall-game-day.v1",
@@ -1175,7 +1211,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1189,7 +1225,9 @@
         "garment.emma.jeans-straight-light-wash.v1",
         "garment.emma.sneakers-leather-white.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r20-country-night.v1",
@@ -1238,7 +1276,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1251,7 +1289,9 @@
         "garment.emma.jeans-straight-light-wash.v1",
         "garment.emma.boots-cowboy-tan.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r21-museum-steps.v1",
@@ -1300,7 +1340,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1313,7 +1353,9 @@
         "garment.emma.skirt-midi-satin-camel.v1",
         "garment.emma.loafers-black.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r22-stoop.v1",
@@ -1362,7 +1404,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1375,7 +1417,9 @@
         "garment.emma.jeans-straight-light-wash.v1",
         "garment.emma.sneakers-leather-white.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r23-rainy-day.v1",
@@ -1424,7 +1468,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1437,7 +1481,9 @@
         "garment.emma.jeans-straight-dark-wash.v1",
         "garment.emma.boots-ankle-black.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r24-dinner.v1",
@@ -1486,7 +1532,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1499,7 +1545,9 @@
         "garment.emma.necklace-pendant-gold.v1",
         "garment.emma.earrings-hoops-gold.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r25-cafe-laptop.v1",
@@ -1548,7 +1596,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1561,7 +1609,9 @@
         "garment.emma.earrings-hoops-gold.v1",
         "garment.emma.bag-tote-leather-black.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r26-ferry.v1",
@@ -1610,7 +1660,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1623,7 +1673,9 @@
         "garment.emma.tee-long-sleeve-striped.v1",
         "garment.emma.sunglasses-black.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r27-chelsea-market.v1",
@@ -1672,7 +1724,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1686,7 +1738,9 @@
         "garment.emma.jeans-straight-dark-wash.v1",
         "garment.emma.sneakers-leather-white.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r28-couch-cozy.v1",
@@ -1735,7 +1789,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1747,7 +1801,9 @@
         "garment.emma.sweater-cable-knit-cream.v1",
         "garment.emma.sweatpants-grey.v1"
       ],
-      "framing": "half"
+      "framing": "half",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r29-gym-mirror.v1",
@@ -1796,7 +1852,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1809,7 +1865,9 @@
         "garment.emma.leggings-sage.v1",
         "garment.emma.sneakers-leather-white.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "photo.emma.r30-walk-to-work.v1",
@@ -1858,7 +1916,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "photo",
       "dims": {
@@ -1872,7 +1930,9 @@
         "garment.emma.flats-ballet-black.v1",
         "garment.emma.bag-tote-leather-black.v1"
       ],
-      "framing": "full"
+      "framing": "full",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

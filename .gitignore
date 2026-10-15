@@ -58,3 +58,5 @@ tracker/data/
 *secret*
 !**/secret-names.md
 !library/footage/INVENTORY.md
+!library/brand/BRAND.md
+!library/brand/brand-guideline-2026.txt

@@ -95,10 +95,12 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "reference",
-      "notes": "Effects we took from it: type-on words behind the subject, flash then tilted print, scan dots + outline trace, hand-drawn ellipse, stroke round the frame."
+      "notes": "Effects we took from it: type-on words behind the subject, flash then tilted print, scan dots + outline trace, hand-drawn ellipse, stroke round the frame.",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "reference.app.scan-real-probe.v1",
@@ -141,11 +143,13 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "reference",
       "notes": "Probe output kept to check timing against the real app; marked not-for-cuts at the source.",
-      "durationSec": 27.673
+      "durationSec": 27.673,
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

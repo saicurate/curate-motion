@@ -51,7 +51,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -59,7 +59,9 @@
         "h": 2565
       },
       "shows": "golden retriever puppy",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.dog-golden-retriever-2.v1",
@@ -110,7 +112,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -118,7 +120,9 @@
         "h": 2397
       },
       "shows": "golden retriever",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.dog-4.v1",
@@ -169,7 +173,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -177,7 +181,9 @@
         "h": 1067
       },
       "shows": "dog",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.dog-5.v1",
@@ -228,7 +234,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -236,7 +242,9 @@
         "h": 1067
       },
       "shows": "dog",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-brooklyn-bridge.v1",
@@ -287,7 +295,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -295,7 +303,9 @@
         "h": 1067
       },
       "shows": "Brooklyn Bridge panorama",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-empire-state-night.v1",
@@ -346,7 +356,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -354,7 +364,9 @@
         "h": 2399
       },
       "shows": "Empire State Building at night",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-skyline-hoboken.v1",
@@ -405,7 +417,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -413,7 +425,9 @@
         "h": 1067
       },
       "shows": "skyline from Hoboken at golden hour",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-williamsburg-bridge.v1",
@@ -464,7 +478,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -472,7 +486,9 @@
         "h": 1067
       },
       "shows": "Williamsburg Bridge at night",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-manhattan-bridge-dumbo.v1",
@@ -523,7 +539,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -531,7 +547,9 @@
         "h": 900
       },
       "shows": "Manhattan Bridge from DUMBO",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-central-park.v1",
@@ -582,7 +600,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -590,7 +608,9 @@
         "h": 1067
       },
       "shows": "Central Park",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-taxi-street.v1",
@@ -641,7 +661,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -649,7 +669,9 @@
         "h": 2404
       },
       "shows": "yellow cab on a street",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.nyc-skyline-east-river.v1",
@@ -700,7 +722,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -708,7 +730,9 @@
         "h": 1066
       },
       "shows": "Manhattan skyline and Brooklyn Bridge",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.sunset-sea-clouds.v1",
@@ -759,7 +783,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -767,7 +791,9 @@
         "h": 1067
       },
       "shows": "sea at golden hour",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.sunset-wave.v1",
@@ -818,7 +844,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -826,7 +852,9 @@
         "h": 2390
       },
       "shows": "wave at golden hour",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.sunset-trees-lake.v1",
@@ -877,7 +905,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -885,7 +913,9 @@
         "h": 2240
       },
       "shows": "trees by a lake at sunset",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.sunset-shoreline.v1",
@@ -936,7 +966,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -944,7 +974,9 @@
         "h": 1065
       },
       "shows": "shoreline at golden hour",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.coffee-heart-latte.v1",
@@ -995,7 +1027,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1003,7 +1035,9 @@
         "h": 2400
       },
       "shows": "heart latte art",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.coffee-mug.v1",
@@ -1054,7 +1088,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1062,7 +1096,9 @@
         "h": 1067
       },
       "shows": "coffee in a white mug",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.coffee-in-hand.v1",
@@ -1113,7 +1149,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1121,7 +1157,9 @@
         "h": 2400
       },
       "shows": "hand holding a cappuccino",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.coffee-mug-hand.v1",
@@ -1172,7 +1210,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1180,7 +1218,9 @@
         "h": 2000
       },
       "shows": "hand holding a mug",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.pizza-pepperoni.v1",
@@ -1231,7 +1271,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1239,7 +1279,9 @@
         "h": 2400
       },
       "shows": "pepperoni pizza",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.pizza-slice-hand.v1",
@@ -1290,7 +1332,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1298,7 +1340,9 @@
         "h": 2400
       },
       "shows": "hand holding a slice",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.pizza-picking-slice.v1",
@@ -1349,7 +1393,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1357,7 +1401,9 @@
         "h": 1067
       },
       "shows": "picking up a slice",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.brunch-waffles.v1",
@@ -1408,7 +1454,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1416,7 +1462,9 @@
         "h": 1067
       },
       "shows": "brunch spread with waffles",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.brunch-blueberry-toast.v1",
@@ -1467,7 +1515,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1475,7 +1523,9 @@
         "h": 2069
       },
       "shows": "toast with blueberries",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.brunch-egg-toast.v1",
@@ -1526,7 +1576,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1534,7 +1584,9 @@
         "h": 1600
       },
       "shows": "egg on toast",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.hands-cheers-glasses.v1",
@@ -1585,7 +1637,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1593,7 +1645,9 @@
         "h": 2400
       },
       "shows": "two hands clinking glasses",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.hands-mugs.v1",
@@ -1644,7 +1698,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1652,7 +1706,9 @@
         "h": 1067
       },
       "shows": "friends' hands holding mugs",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.autumn-orange-tree.v1",
@@ -1703,7 +1759,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1711,7 +1767,9 @@
         "h": 1067
       },
       "shows": "orange autumn tree",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.autumn-park-benches.v1",
@@ -1762,7 +1820,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1770,7 +1828,9 @@
         "h": 2400
       },
       "shows": "park benches in fall",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.autumn-bench.v1",
@@ -1821,7 +1881,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1829,7 +1889,9 @@
         "h": 2842
       },
       "shows": "bench under yellow leaves",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.flowers-rose-bouquet.v1",
@@ -1880,7 +1942,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1888,7 +1950,9 @@
         "h": 2133
       },
       "shows": "pink and white roses",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.flowers-vase.v1",
@@ -1939,7 +2003,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -1947,7 +2011,9 @@
         "h": 2400
       },
       "shows": "flowers in a glass vase",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.flowers-market.v1",
@@ -1998,7 +2064,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2006,7 +2072,9 @@
         "h": 2844
       },
       "shows": "flower market buckets",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.beach-seashore.v1",
@@ -2057,7 +2125,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2065,7 +2133,9 @@
         "h": 1160
       },
       "shows": "seashore",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.beach-waves.v1",
@@ -2116,7 +2186,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2124,7 +2194,9 @@
         "h": 2399
       },
       "shows": "waves on the shore",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.beach-empty-highrise.v1",
@@ -2175,7 +2247,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2183,7 +2255,9 @@
         "h": 1143
       },
       "shows": "empty beach by high-rises",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.street-plants-brownstone.v1",
@@ -2234,7 +2308,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2242,7 +2316,9 @@
         "h": 1067
       },
       "shows": "plants by a brownstone street",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.street-sunset-skyline.v1",
@@ -2293,7 +2369,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2301,7 +2377,9 @@
         "h": 2845
       },
       "shows": "skyline down a tree-lined street at sunset",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.food-bagels-cream-cheese.v1",
@@ -2352,7 +2430,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2360,7 +2438,9 @@
         "h": 2400
       },
       "shows": "bagels with cream cheese",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.plant-table-window.v1",
@@ -2411,7 +2491,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2419,7 +2499,9 @@
         "h": 2400
       },
       "shows": "table with a plant by a window",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "stock.unsplash.food-donut-box.v1",
@@ -2470,7 +2552,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "stock",
       "dims": {
@@ -2478,7 +2560,9 @@
         "h": 2000
       },
       "shows": "box of doughnuts",
-      "media": "image"
+      "media": "image",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

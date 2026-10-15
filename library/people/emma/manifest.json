@@ -221,7 +221,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "selfie",
       "dims": {
@@ -230,7 +230,9 @@
       },
       "wearing": [
         "garment.emma.tee-black.v1"
-      ]
+      ],
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "tryon.emma.tryon-base-1.v1",
@@ -279,7 +281,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "tryon",
       "dims": {
@@ -290,7 +292,9 @@
         "garment.emma.tee-white.v1",
         "garment.emma.jeans-straight-light-wash.v1",
         "garment.emma.sneakers-leather-white.v1"
-      ]
+      ],
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "tryon.emma.tryon-base-2.v1",
@@ -339,7 +343,7 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "tryon",
       "dims": {
@@ -350,7 +354,9 @@
         "garment.emma.tee-black.v1",
         "garment.emma.jeans-straight-dark-wash.v1",
         "garment.emma.sneakers-leather-white.v1"
-      ]
+      ],
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

@@ -47,7 +47,7 @@
         "name": "claude-code-capture-agent",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "footage",
       "dims": {
@@ -66,7 +66,9 @@
       "account": "emma",
       "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
       "cleanStatusBar": true,
-      "marks": {}
+      "marks": {},
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "footage.emma.selfie-hand-back.v2",
@@ -113,7 +115,7 @@
         "name": "claude-code-capture-agent",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "footage",
       "dims": {
@@ -132,7 +134,9 @@
       "account": "emma",
       "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
       "cleanStatusBar": true,
-      "marks": {}
+      "marks": {},
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

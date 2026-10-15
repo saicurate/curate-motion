@@ -65,7 +65,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -77,7 +77,9 @@
       "cutoutDims": {
         "w": 308,
         "h": 824
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.jeans-straight-dark-wash.v1",
@@ -142,7 +144,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -154,7 +156,9 @@
       "cutoutDims": {
         "w": 338,
         "h": 837
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.jacket-denim.v1",
@@ -219,7 +223,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -231,7 +235,9 @@
       "cutoutDims": {
         "w": 577,
         "h": 744
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.tee-white.v1",
@@ -296,7 +302,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -308,7 +314,9 @@
       "cutoutDims": {
         "w": 588,
         "h": 664
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.tee-black.v1",
@@ -373,7 +381,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -385,7 +393,9 @@
       "cutoutDims": {
         "w": 587,
         "h": 652
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sweatshirt-crewneck-grey.v1",
@@ -450,7 +460,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -462,7 +472,9 @@
       "cutoutDims": {
         "w": 614,
         "h": 709
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.hoodie-navy.v1",
@@ -527,7 +539,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -539,7 +551,9 @@
       "cutoutDims": {
         "w": 593,
         "h": 751
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.shirt-flannel-plaid.v1",
@@ -604,7 +618,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -616,7 +630,9 @@
       "cutoutDims": {
         "w": 524,
         "h": 639
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.shirt-oxford-blue.v1",
@@ -681,7 +697,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -693,7 +709,9 @@
       "cutoutDims": {
         "w": 536,
         "h": 722
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.tee-long-sleeve-striped.v1",
@@ -758,7 +776,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -770,7 +788,9 @@
       "cutoutDims": {
         "w": 580,
         "h": 658
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.cardigan-oatmeal.v1",
@@ -835,7 +855,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -847,7 +867,9 @@
       "cutoutDims": {
         "w": 587,
         "h": 704
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sweater-cable-knit-cream.v1",
@@ -912,7 +934,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -924,7 +946,9 @@
       "cutoutDims": {
         "w": 564,
         "h": 619
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.blazer-black.v1",
@@ -989,7 +1013,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1001,7 +1025,9 @@
       "cutoutDims": {
         "w": 504,
         "h": 705
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.trousers-black.v1",
@@ -1066,7 +1092,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1078,7 +1104,9 @@
       "cutoutDims": {
         "w": 278,
         "h": 785
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.skirt-midi-satin-camel.v1",
@@ -1143,7 +1171,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1155,7 +1183,9 @@
       "cutoutDims": {
         "w": 413,
         "h": 762
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.coat-trench-khaki.v1",
@@ -1220,7 +1250,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1232,7 +1262,9 @@
       "cutoutDims": {
         "w": 421,
         "h": 778
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.jacket-puffer-black.v1",
@@ -1297,7 +1329,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1309,7 +1341,9 @@
       "cutoutDims": {
         "w": 501,
         "h": 669
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.coat-wool-camel.v1",
@@ -1374,7 +1408,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1386,7 +1420,9 @@
       "cutoutDims": {
         "w": 383,
         "h": 776
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.jacket-varsity-navy-cream.v1",
@@ -1451,7 +1487,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1463,7 +1499,9 @@
       "cutoutDims": {
         "w": 544,
         "h": 689
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.jacket-leather-black.v1",
@@ -1528,7 +1566,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1540,7 +1578,9 @@
       "cutoutDims": {
         "w": 574,
         "h": 766
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.dress-little-black.v1",
@@ -1605,7 +1645,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1617,7 +1657,9 @@
       "cutoutDims": {
         "w": 314,
         "h": 743
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.dress-slip-champagne.v1",
@@ -1682,7 +1724,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1694,7 +1736,9 @@
       "cutoutDims": {
         "w": 260,
         "h": 725
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.camisole-satin-black.v1",
@@ -1759,7 +1803,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1771,7 +1815,9 @@
       "cutoutDims": {
         "w": 391,
         "h": 646
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.leggings-sage.v1",
@@ -1836,7 +1882,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1848,7 +1894,9 @@
       "cutoutDims": {
         "w": 301,
         "h": 829
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sports-bra-sage.v1",
@@ -1913,7 +1961,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -1925,7 +1973,9 @@
       "cutoutDims": {
         "w": 504,
         "h": 536
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.tank-running-grey.v1",
@@ -1990,7 +2040,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2002,7 +2052,9 @@
       "cutoutDims": {
         "w": 464,
         "h": 798
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.tank-ribbed-black.v1",
@@ -2067,7 +2119,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2079,7 +2131,9 @@
       "cutoutDims": {
         "w": 458,
         "h": 835
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.shirt-linen-white.v1",
@@ -2144,7 +2198,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2156,7 +2210,9 @@
       "cutoutDims": {
         "w": 531,
         "h": 709
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.shorts-denim-cutoff.v1",
@@ -2221,7 +2277,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2233,7 +2289,9 @@
       "cutoutDims": {
         "w": 537,
         "h": 466
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sweatpants-grey.v1",
@@ -2298,7 +2356,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2310,7 +2368,9 @@
       "cutoutDims": {
         "w": 304,
         "h": 803
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.turtleneck-black.v1",
@@ -2375,7 +2435,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2387,7 +2447,9 @@
       "cutoutDims": {
         "w": 501,
         "h": 713
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sweater-crewneck-navy.v1",
@@ -2452,7 +2514,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2464,7 +2526,9 @@
       "cutoutDims": {
         "w": 493,
         "h": 601
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sneakers-leather-white.v1",
@@ -2529,7 +2593,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2541,7 +2605,9 @@
       "cutoutDims": {
         "w": 581,
         "h": 368
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sneakers-retro-runner-grey-navy.v1",
@@ -2606,7 +2672,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2618,7 +2684,9 @@
       "cutoutDims": {
         "w": 571,
         "h": 342
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.loafers-black.v1",
@@ -2683,7 +2751,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2695,7 +2763,9 @@
       "cutoutDims": {
         "w": 581,
         "h": 338
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.boots-ankle-black.v1",
@@ -2760,7 +2830,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2772,7 +2842,9 @@
       "cutoutDims": {
         "w": 552,
         "h": 450
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.boots-cowboy-tan.v1",
@@ -2837,7 +2909,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2849,7 +2921,9 @@
       "cutoutDims": {
         "w": 401,
         "h": 422
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.heels-black.v1",
@@ -2914,7 +2988,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -2926,7 +3000,9 @@
       "cutoutDims": {
         "w": 578,
         "h": 412
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sandals-tan.v1",
@@ -2991,7 +3067,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3003,7 +3079,9 @@
       "cutoutDims": {
         "w": 598,
         "h": 338
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.flats-ballet-black.v1",
@@ -3068,7 +3146,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3080,7 +3158,9 @@
       "cutoutDims": {
         "w": 570,
         "h": 360
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.bag-tote-leather-black.v1",
@@ -3145,7 +3225,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3157,7 +3237,9 @@
       "cutoutDims": {
         "w": 448,
         "h": 742
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.bag-crossbody-tan.v1",
@@ -3222,7 +3304,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3234,7 +3316,9 @@
       "cutoutDims": {
         "w": 521,
         "h": 381
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.bag-mini-black.v1",
@@ -3299,7 +3383,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3311,7 +3395,9 @@
       "cutoutDims": {
         "w": 350,
         "h": 624
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.cap-baseball-navy.v1",
@@ -3376,7 +3462,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3388,7 +3474,9 @@
       "cutoutDims": {
         "w": 490,
         "h": 376
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.beanie-cream.v1",
@@ -3453,7 +3541,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3465,7 +3553,9 @@
       "cutoutDims": {
         "w": 544,
         "h": 517
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.scarf-plaid-camel.v1",
@@ -3530,7 +3620,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3542,7 +3632,9 @@
       "cutoutDims": {
         "w": 485,
         "h": 619
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.sunglasses-black.v1",
@@ -3607,7 +3699,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3619,7 +3711,9 @@
       "cutoutDims": {
         "w": 504,
         "h": 260
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.belt-leather-brown.v1",
@@ -3684,7 +3778,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3696,7 +3790,9 @@
       "cutoutDims": {
         "w": 464,
         "h": 472
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.earrings-hoops-gold.v1",
@@ -3761,7 +3857,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3773,7 +3869,9 @@
       "cutoutDims": {
         "w": 358,
         "h": 183
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "garment.emma.necklace-pendant-gold.v1",
@@ -3838,7 +3936,7 @@
         "note": "made by the assets agent 2026-10-15; migrated",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": true,
       "kind": "garment",
       "dims": {
@@ -3850,7 +3948,9 @@
       "cutoutDims": {
         "w": 322,
         "h": 588
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }

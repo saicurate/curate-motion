@@ -42,13 +42,15 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "brand",
       "dims": {
         "w": 670,
         "h": 742
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "brand.curate.logo-mark.v1",
@@ -90,13 +92,15 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "brand",
       "dims": {
         "w": 256,
         "h": 256
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "brand.curate.splash-mark.v1",
@@ -138,13 +142,15 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "brand",
       "dims": {
         "w": 1152,
         "h": 1152
-      }
+      },
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "font.geist.regular.v1",
@@ -190,12 +196,14 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "font",
       "family": "Geist",
       "weight": 400,
-      "style": "normal"
+      "style": "normal",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "font.geist.medium.v1",
@@ -241,12 +249,14 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "font",
       "family": "Geist",
       "weight": 500,
-      "style": "normal"
+      "style": "normal",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     },
     {
       "id": "font.geist.semibold.v1",
@@ -292,12 +302,61 @@
         "note": "migrated from marketing/videos",
         "at": "2026-10-15"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "font",
       "family": "Geist",
       "weight": 600,
-      "style": "normal"
+      "style": "normal",
+      "approvedBy": "founder (said: approve everything, 2026-10-15)",
+      "approvedAt": "2026-10-15"
+    },
+    {
+      "id": "brand.curate.brand-guideline-2026.v1",
+      "title": "brand guideline 2026",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/curate/brand-guideline-2026.v1.pdf",
+          "sha256": "d87f33f9e61099f1dcf3541782324c3055eda5d08386e59cee7efcab37beffd9",
+          "bytes": 22659791,
+          "mime": "application/pdf"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "doc:brand-book",
+          "pages:24"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "unknown-agent",
+        "at": "2026-10-15"
+      },
+      "status": "approved",
+      "aiGenerated": false,
+      "kind": "brand",
+      "approvedBy": "founder (said: upload our brand guidelines, 2026-10-15)",
+      "approvedAt": "2026-10-15"
     }
   ]
 }
