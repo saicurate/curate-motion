@@ -5,6 +5,7 @@ images, footage, music) is made **once**, catalogued, and reused; every new ad i
 from the library instead of regenerated.
 
 Written 2026-10-15. Agents: start with [AGENTS.md](AGENTS.md); this file is the why and the how.
+Phone view (private): https://claude.ai/artifact/BLQX6mPznbEiKrqeTYhooa
 
 ```
   ┌──────────── GitHub (private) saicurate/curate-motion ─────────────┐
