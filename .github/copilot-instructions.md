@@ -6,3 +6,6 @@ Short version: assets are referenced by id (`<kind>.<scope>.<name>.v<N>`) throug
 never by path; find them with `tools/catalog search`; media lives in S3 (`tools/sync`), never in git;
 never edit an approved asset (make a new version); licences are required; no prices, no other
 brands' logos, never show the AI pipeline, personas never vouch for products.
+
+Before writing any image, video or voice prompt, run `tools/prompts search`; after using one, log it
+with its outcome (`tools/prompts add | use | rate`). Inspo (`inspo/`, `reference` assets) is never shipped.

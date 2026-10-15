@@ -49,3 +49,12 @@ Check this when the team grows.
 - Geist only; titles Medium (500), never bold.
 - Cuts land on the beat (BeatClock), never on hand-typed frames.
 - Every format respects the platform safe areas (`useFrameBox().safe`).
+
+## 9. Inspo is never shipped
+- The inspo board (`inspo/`) and its media (`reference` assets in `library/references/`, licence
+  "Third-party content, reference only", restriction `never-ship`) are for study only: other people's
+  work, kept so we can learn from it.
+- No reference asset may appear in an ad. `tools/catalog validate` fails an `ad.json` that lists one, and
+  `tools/render` refuses to stage one. Borrow the technique (the transition, the pacing, the type idea),
+  never the footage, the audio, the people or the brand.
+- Prompts (`prompts/`) never hold a secret: keys live in AWS SSM; write only the parameter NAME.

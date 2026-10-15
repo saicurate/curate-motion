@@ -47,6 +47,8 @@ curate-motion/
 ├── renders/             outputs by ad / channel / length (gitignored, synced to S3 renders/)
 ├── tools/               catalog, sync, render, persona, library-ui, capture.sh, migrate/
 ├── tracker/             the library page (browser + render queue + add/retire)
+├── prompts/<area>/      the prompt library: one .md per prompt (front matter + the text), ids prompt.<area>.<name>.vN
+├── inspo/               the inspo board: one .md per inspiration, ids inspo.<source>.<name>.vN (media = reference assets)
 └── infra/s3/            the bucket's settings as files + setup.sh
 ```
 
@@ -367,3 +369,22 @@ apply + build + validate + two renders of `meet-zee` passed on a scratch copy.
     `ad.json` and README, replacing raw paths with asset ids.
 12. **Only when the founder confirms**, leave a `MOVED.md` in `marketing/videos/` pointing here.
     Don't delete the folder.
+
+## 11. Prompts and inspo
+
+Added 2026-10-15 ([decisions/0010](decisions/0010-prompts-and-inspo.md)). Two text boards next to the
+media library, both Markdown with YAML front matter, validated by zod, indexed into `catalog/`:
+
+- **`prompts/<area>/<name>.v<N>.md`** (`schemas/prompt.ts`): every prompt with author, target,
+  inputs, outputs, outcome, rating, why, parents (hybrids), usedAt. The body is the prompt text.
+  `tools/prompts` (search, show, add, rate, use, link, revise, remix), `catalog/prompts.json`.
+  Assets point back with `source.promptId`; validate checks the link from both sides, parents
+  (no cycles), that a used prompt's text never changes, and that no file holds a secret.
+- **`inspo/<id>.md`** (`schemas/inspo.ts`): what we love, techniques, use-for, status. Media is a
+  `reference` asset (S3, never shipped; validate and render refuse references in ads).
+  `tools/inspo` (add, search, show, edit, breakdown, archive), `catalog/inspo.json`. `breakdown` uses
+  ffprobe/ffmpeg only: facts, hard cuts, shot lengths, loudness, a contact sheet, colours.
+- Code: `tools/lib/boards.ts` (load, write, index, validate; no catalog import), `prompts.ts` and
+  `inspo.ts` (the commands), `frontmatter.ts` (a YAML subset, no dependency), `leakscan.ts` (secret
+  scan that never prints a value), `boards-api.ts` (the library page's Prompts and Inspo tabs,
+  `tools/library-ui-tabs.js`).

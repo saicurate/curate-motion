@@ -14,7 +14,7 @@ while IFS= read -r f; do
 done < <(git diff --cached --name-only --diff-filter=ACMR)
 
 # secret patterns in the staged diff (added lines only)
-PATTERNS='AKIA[0-9A-Z]{16}|ASIA[0-9A-Z]{16}|aws_secret_access_key|-----BEGIN [A-Z ]*PRIVATE KEY-----|"private_key"[[:space:]]*:|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|xox[abp]-[A-Za-z0-9-]{10,}|sk-[A-Za-z0-9_-]{32,}|AIza[0-9A-Za-z_-]{35}|"password"[[:space:]]*:[[:space:]]*"[^"]+"'
+PATTERNS='AKIA[0-9A-Z]{16}|ASIA[0-9A-Z]{16}|aws_secret_access_key|-----BEGIN [A-Z ]*PRIVATE KEY-----|"private_key"[[:space:]]*:|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|xox[abp]-[A-Za-z0-9-]{10,}|sk-[A-Za-z0-9_-]{32,}|sk_[A-Za-z0-9]{32,}|AIza[0-9A-Za-z_-]{35}|"password"[[:space:]]*:[[:space:]]*"[^"]+"'
 # scan each staged text file; print only the FILE NAME, never the matching text
 while IFS= read -r f; do
   [ -z "$f" ] && continue

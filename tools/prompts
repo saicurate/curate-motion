@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/prompts: the prompt library CLI (search, show, add, rate, use, link, revise, remix). See tools/prompts.ts.
+exec node "$(dirname "$0")/prompts.ts" "$@"

@@ -42,7 +42,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file light-wash-straight-jeans-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-jeans-straight-light-wash.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -121,7 +122,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file dark-wash-straight-jeans-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-jeans-straight-dark-wash.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -200,7 +202,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file denim-jacket-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-jacket-denim.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -279,7 +282,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file white-tee-v2.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-tee-white.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -358,7 +362,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-tee-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-tee-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -437,7 +442,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file grey-crewneck-sweatshirt-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sweatshirt-crewneck-grey.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -516,7 +522,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file navy-hoodie-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-hoodie-navy.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -595,7 +602,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file plaid-flannel-shirt-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-shirt-flannel-plaid.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -674,7 +682,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file blue-oxford-shirt-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-shirt-oxford-blue.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -753,7 +762,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file striped-long-sleeve-tee-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-tee-long-sleeve-striped.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -832,7 +842,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file oatmeal-cardigan-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-cardigan-oatmeal.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -911,7 +922,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file cream-cable-knit-sweater-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sweater-cable-knit-cream.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -990,7 +1002,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-blazer-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-blazer-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1069,7 +1082,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-trousers-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-trousers-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1148,7 +1162,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file camel-satin-midi-skirt-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-skirt-midi-satin-camel.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1227,7 +1242,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file khaki-trench-coat-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-coat-trench-khaki.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1306,7 +1322,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-puffer-jacket-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-jacket-puffer-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1385,7 +1402,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file camel-wool-coat-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-coat-wool-camel.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1464,7 +1482,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file varsity-jacket-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-jacket-varsity-navy-cream.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1543,7 +1562,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-leather-jacket-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-jacket-leather-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1622,7 +1642,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file little-black-dress-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-dress-little-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1701,7 +1722,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file champagne-slip-dress-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-dress-slip-champagne.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1780,7 +1802,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-satin-camisole-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-camisole-satin-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1859,7 +1882,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file sage-leggings-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-leggings-sage.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1938,7 +1962,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file sage-sports-bra-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sports-bra-sage.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2017,7 +2042,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file grey-running-tank-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-tank-running-grey.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2096,7 +2122,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-ribbed-tank-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-tank-ribbed-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2175,7 +2202,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file white-linen-shirt-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-shirt-linen-white.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2254,7 +2282,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file denim-cutoff-shorts-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-shorts-denim-cutoff.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2333,7 +2362,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file grey-sweatpants-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sweatpants-grey.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2412,7 +2442,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-turtleneck-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-turtleneck-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2491,7 +2522,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file navy-crewneck-sweater-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sweater-crewneck-navy.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2570,7 +2602,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file white-leather-sneakers-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sneakers-leather-white.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2649,7 +2682,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file retro-runners-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sneakers-retro-runner-grey-navy.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2728,7 +2762,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-loafers-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-loafers-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2807,7 +2842,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-ankle-boots-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-boots-ankle-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2886,7 +2922,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file tan-cowboy-boots-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-boots-cowboy-tan.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -2965,7 +3002,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-heels-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-heels-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3044,7 +3082,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file tan-sandals-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sandals-tan.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3123,7 +3162,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-ballet-flats-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-flats-ballet-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3202,7 +3242,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-leather-tote-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-bag-tote-leather-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3281,7 +3322,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file tan-crossbody-bag-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-bag-crossbody-tan.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3360,7 +3402,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-mini-bag-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-bag-mini-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3439,7 +3482,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file navy-baseball-cap-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-cap-baseball-navy.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3518,7 +3562,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file cream-beanie-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-beanie-cream.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3597,7 +3642,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file camel-plaid-scarf-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-scarf-plaid-camel.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3676,7 +3722,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file black-sunglasses-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-sunglasses-black.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3755,7 +3802,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file brown-leather-belt-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-belt-leather-brown.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3834,7 +3882,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file gold-hoops-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-earrings-hoops-gold.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -3913,7 +3962,8 @@
         "model": "gemini-nano-banana-2.1",
         "prompt": "legacy file gold-pendant-necklace-v1.jpg",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/garments.py"
+        "tool": "marketing/videos/assets/_tools/garments.py",
+        "promptId": "prompt.image-gen.garment-necklace-pendant-gold.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",

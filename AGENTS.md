@@ -24,13 +24,15 @@ library, never regenerated.**
 | Folder | What goes there |
 |---|---|
 | `library/` | Media (gitignored, synced with S3) + one `manifest.json` per folder (tracked). `brand/`, `zee/`, `people/<persona>/`, `wardrobe/<persona>/`, `camera-roll/<persona>/`, `stock/`, `footage/<moment>/`, `screenshots/<persona>/`, `music/`, `references/` |
-| `catalog/` | `index.json`: every asset in one machine-readable file (generated). `schemas/`: a JSON Schema per asset kind (generated) |
-| `schemas/` | The zod source of truth for assets, ads and persona accounts |
+| `catalog/` | `index.json`: every asset in one machine-readable file (generated). `prompts.json` and `inspo.json`: every prompt and inspo entry (generated). `schemas/`: a JSON Schema per asset kind, prompt and inspo (generated) |
+| `prompts/` | The prompt library: one Markdown file per prompt that worked (or didn't), the founder's and the agents', `prompts/<area>/<name>.v<N>.md` (see "Prompts: find, use, rate, remix") |
+| `inspo/` | The inspo board: one Markdown file per inspiration, `inspo/<id>.md`; its media is a `reference` asset in `library/references/` (see "Inspo: add and reference") |
+| `schemas/` | The zod source of truth for assets, ads, persona accounts, the voice config, prompts and inspo |
 | `config/` | Project-wide settings as data: `voice.json` (the voiceover's mode and every mode's settings) |
 | `motion/` | Reusable Remotion components (PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…) |
 | `ads/` | One folder per ad: `ad.json` (the ad in data), `README.md`, `index.tsx` |
 | `renders/` | Rendered videos by ad / channel / length (gitignored, synced to S3) |
-| `tools/` | `catalog`, `sync`, `render`, `persona`, `library-ui`, `capture.sh`, `migrate/` |
+| `tools/` | `catalog`, `prompts`, `inspo`, `sync`, `render`, `voice`, `persona`, `library-ui`, `capture.sh`, `migrate/` |
 | `tracker/` | The library page: browse, add, retire, render queue (`tools/library-ui`, or open `tracker/index.html` read-only) |
 | `decisions/` | One short file per decision, numbered. Read them to learn why things are this way |
 | `infra/` | The S3 bucket's settings as files, and `setup.sh` to re-apply them |
@@ -81,6 +83,8 @@ File names follow the id: `library/<folder>/<name>.v<N>.<ext>` (e.g.
 `library/wardrobe/emma/jeans-straight-light-wash.v1.jpg`, cutout in `cutouts/`, thumb in `thumbs/`).
 Frame sequences are folders: `library/zee/excited/loop.v1/0001.webp …`. Lowercase, kebab-case,
 no spaces. Ad ids are kebab-case too (`meet-zee`); compositions are `<ad>--<format>--<length>s`.
+Prompts and inspo entries use the same shape: `prompt.<area>.<name>.v<N>` (file
+`prompts/<area>/<name>.v<N>.md`) and `inspo.<source>.<name>.v<N>` (file `inspo/<id>.md`).
 
 ## Status: what is safe to use
 
@@ -99,6 +103,8 @@ Agents never mark their own work approved.
 ## Make a new ad, step by step
 
 1. **Brief.** Write one paragraph: who it's for, the single idea, the hook, channels, lengths.
+   Look at the inspo first (`tools/inspo search --use-for <concept-or-ad>`) and at the briefs that
+   worked before (`tools/prompts search --area motion-brief --outcome worked`).
 2. **Find the assets** with `tools/catalog search`. Use what exists. If something is truly missing,
    see "How to add or remove an asset" (and ask before any paid generation).
 3. **Copy the template:** `cp -R ads/_template ads/<ad-id>` (kebab-case id).
@@ -226,14 +232,102 @@ tools/voice providers                           # adapters, prices, licences, wh
 ```
 
 - **Paid TTS needs the founder's OK.** `generate --yes` refuses any cost unless `tts.spendCapUsd` in
-  `config/voice.json` covers everything spent so far plus the estimate; it is `0` until the founder
-  raises it. Keys come from SSM by name (`/curate/openai-api-key`); never print them.
+  `config/voice.json` covers everything spent so far plus the estimate (the founder set it to $2 on
+  2026-10-15). Keys come from SSM by name (`/curate/openai-api-key`, `/curate/elevenlabs-api-key`);
+  never print them. A missing key shows as "key not set up" in `tools/voice providers`.
+- **Providers:** `openai` (gpt-4o-mini-tts; profiles `openai-<voice>`, e.g. marin, cedar, coral),
+  `elevenlabs` (profiles `eleven-<name>`; `voice` is an ElevenLabs voice id, `name` its display name,
+  `model` eleven_multilingual_v2 or eleven_v4) and `say` (preview only). ElevenLabs bills the
+  account's Starter plan (40,000 credits a month, 1 credit a character; Flash/Turbo 0.5); the spend log
+  prices a credit at $6 / 40,000. Commercial use needs that paid plan: the adapter refuses a Free-plan key.
+- **Adding or replacing the ElevenLabs key:** elevenlabs.io › Developers › API keys › Create key (Text to
+  Speech access; "User: read" lets the adapter check the plan), then
+  `aws ssm put-parameter --region us-east-1 --name /curate/elevenlabs-api-key --type SecureString --overwrite --value "$(pbpaste)"`
+  (copy the key first; it never lands in shell history). Check with `tools/voice providers`.
 - **`say-preview` (macOS `say`) is free, offline and PREVIEW ONLY**: its clips are `previewOnly`,
   can never be approved, carry a "Preview voice · not for release" label on screen, and an
   approved/live ad refuses them.
-- An AI voice needs the AI disclosure (OpenAI's terms): list it in `ad.json › disclosures`.
+- An AI voice needs the AI disclosure (OpenAI's terms; ElevenLabs' too): list it in `ad.json › disclosures`.
 - In an ad, build the plan with `narrationPlan()` and hang the picture off `sceneOf` / `lineOf` /
   `phraseFrame`, then put `<Narration plan={plan}/>` on top (see `ads/explainer/index.tsx`).
+
+## Prompts: find, use, rate, remix
+
+Every prompt we have used lives in `prompts/`: image, video and voice prompts, on-screen words,
+video briefs, the founder's own asks and the briefs agents were given. One Markdown file each,
+`prompts/<area>/<name>.v<N>.md`: YAML front matter (`schemas/prompt.ts`) and **the prompt text as the
+body**. Each records who wrote the words (`founder`, `agent:<name>`, `other`), what it was for
+(`target`), what went in (`inputs`, asset ids) and came out (`outputs`, asset ids), the `outcome`
+(`worked | didn't | mixed | untested`), a 1–5 `rating`, `why`, and `parents` (what a hybrid was
+mixed from). Ids: `prompt.<area>.<name>.v<N>`; areas: `image-gen video-gen voice music copy
+motion-brief agent-brief research other`.
+
+**Two rules for every agent:**
+1. **Before you write a new image, video or voice prompt, you MUST run `tools/prompts search`** for
+   that area and subject, and start from what worked (or remix it). Read the `why` of the ones that
+   didn't, so you don't repeat them.
+2. **After you use a prompt, you MUST log it with its outcome:** a new one with `tools/prompts add …
+   --outcome …`, an existing one with `tools/prompts use <id>` and `tools/prompts rate <id> …`, and
+   link what it made (`--output <asset-id>`, or `tools/catalog add … --source-prompt-id <id>`).
+
+```bash
+tools/prompts search --area image-gen --outcome worked --text "ghost mannequin"   # start here
+tools/prompts search --area image-gen --outcome didnt                            # what to avoid, with why
+tools/prompts search --author founder                                            # the founder's own words
+tools/prompts show prompt.image-gen.garment-product-shot.v1                      # meta + text
+tools/prompts show prompt.image-gen.garment-product-shot.v1 --text-only | pbcopy # just the text
+pbpaste | tools/prompts add - --title "…" --area image-gen --target "Nano Banana Pro" --author agent:<you> \
+  --inputs face.emma.b.v1 --outcome worked --rating 4 --why "…" --tags persona:emma   # or: add <file.md>
+tools/prompts use  <id> --output photo.emma.r31-gallery.v1 --cost-usd 0.14       # log a use + what it made
+tools/prompts rate <id> 2 --outcome didnt --why "the sign had readable words"   # didn't / mixed need a why
+tools/prompts revise <id> new-text.md                                            # changed text = vN+1 (parents: <id>)
+tools/prompts remix <id-a> <id-b> --title "…" --author agent:<you>              # hybrid: parents set, texts stacked to edit
+tools/prompts link <id> <asset-id…>                                              # prompt.outputs + the asset's source.promptId
+tools/prompts validate                                                           # the prompts/inspo part of tools/catalog validate
+```
+
+- **The founder's way:** `tools/library-ui`, tab **Prompts**: search, filter by outcome and rating,
+  View, Copy text, Rate (stars, worked/didn't, why), "I used it", tick 2+ and **Remix with…** (opens
+  the merged draft to edit and save), **New prompt**.
+- **The text of a prompt that was used or rated never changes** (CI checks it): `revise` makes vN+1.
+  Its metadata (rating, outcome, why, usedAt, outputs, tags) can change any time.
+- A remix draft keeps `<!-- remix: … -->` markers until someone merges the parts; validate warns.
+- `catalog/prompts.json` (generated by `tools/catalog build`) holds every prompt with its text, for
+  agents that prefer one file. Never hand-edit it.
+- **Never paste a key into a prompt.** `tools/prompts add`, the page and `validate` refuse anything
+  that looks like a secret (and never print it). Write the SSM parameter NAME instead.
+- Seed ratings (2026-10-15): 5 = the founder picked it, 4 = used as the first take (or the fix that
+  worked), 3 = good but not chosen / partly worked, 2 = remade because of it. Founder asks are unrated
+  until they rate them.
+
+## Inspo: add and reference
+
+`inspo/` is the board of things we love and want to refer back to: reels, ads, videos, images,
+links, competitors' app screens, typefaces, colour ideas. One Markdown file per entry,
+`inspo/<id>.md` (`schemas/inspo.ts`), id `inspo.<source>.<name>.v<N>`: what we love (`love`),
+`techniques` (`transitions`, `pacing`, `type`, `colour`), `useFor` (`concept:c14`, `ad:pop-out`),
+tags, `status` (active / archived), and the notes as the body. **Its media goes into the library as
+kind `reference`** (S3, licence "Third-party content, reference only", `never-ship`), with the
+same id grammar (`reference.<source>.<name>.v<N>`).
+
+```bash
+tools/inspo search --use-for c14                      # what feeds a concept or an ad (also --technique whip-pan, --text, --tag)
+tools/inspo show inspo.creator.pop-off-reel.v1
+tools/inspo add ~/Downloads/reel.mp4 --title "…" --source creator --love "…" --love "…" --tags transition \
+  --transition match-cut --use-for ad:pop-out --url https://… --from "the founder, on WhatsApp" --by <you>
+tools/inspo add https://… --title "…" --love "…"      # a link only (no media)
+tools/inspo breakdown <id>                            # free and local (ffprobe/ffmpeg): length, frame, audio + LUFS, every hard cut,
+                                                      # shot lengths, a 24-tile contact sheet (a derived reference asset), colours
+tools/inspo edit <id> --transition whip-pan --pacing "…" --add-love "…"
+tools/inspo archive <id>                              # (--undo to bring it back)
+```
+
+- **The founder's way:** `tools/library-ui`, tab **Inspo**: drag and drop a file or paste a link,
+  add "what I love" and tags, a grid of thumbnails, open an entry for its breakdown, Archive.
+- **Inspo is never shipped.** `tools/catalog validate` fails an ad that lists a `reference` asset and
+  `tools/render` refuses to stage one (RULES.md › 9). Borrow the technique, never the footage.
+- Read the inspo for an ad before you storyboard it, and say in the ad's README which entries it
+  draws on.
 
 ## How to change Emma's wardrobe in the app
 
@@ -267,6 +361,7 @@ what the app actually holds, mapped to library ids. Never put a password in eith
 - **FTC**: personas never vouch for products ("worth it", "true to size", "I love this brand").
 - **AI-generated label** wherever a platform requires it; `aiGenerated` on each asset tells you.
 - **Remotion licence**: free for teams of 3 or fewer; above that a company licence is needed.
+- **Inspo is never shipped**: `reference` assets (the inspo board's media) never go in an ad.
 
 ## What NOT to do
 
@@ -280,7 +375,10 @@ what the app actually holds, mapped to library ids. Never put a password in eith
 - **Never reference media by raw path** in an ad; always by asset id.
 - **Never mark your own work approved.** Approvals come from the founder.
 - **Never print a secret** (passwords, keys, tokens) in logs, commits or messages.
-- **Never hand-edit `catalog/index.json` or `catalog/schemas/`**; run `tools/catalog build`.
+- **Never hand-edit `catalog/index.json`, `catalog/prompts.json`, `catalog/inspo.json` or `catalog/schemas/`**; run `tools/catalog build`.
+- **Never write a new image, video or voice prompt without `tools/prompts search` first, and never
+  use one without logging it** (`tools/prompts add` / `use` / `rate`, with the outcome).
+- **Never put a `reference` (inspo) asset in an ad**, and never paste a key into a prompt or inspo file.
 - Don't move or delete anything in `../marketing/videos/` (the legacy folder) until the migration
   in ARCHITECTURE.md has been run and checked.
 

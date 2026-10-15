@@ -107,6 +107,8 @@ export const Source = z.object({
   model: z.string().optional(),
   /** Prompt file or short prompt note (generated assets). */
   prompt: z.string().optional(),
+  /** The prompt in prompts/ that made it (prompt.<area>.<name>.v<N>); that prompt lists this asset in its outputs (tools/catalog validate checks both). */
+  promptId: z.string().regex(/^prompt\.[a-z0-9-]+\.[a-z0-9]+(?:-[a-z0-9]+)*\.v[1-9][0-9]*$/, "promptId is a prompt id: prompt.<area>.<name>.v<N>").optional(),
   author: z.string().optional(),
   url: z.string().optional(),
   /** For derived assets: the asset id(s) it was made from. */

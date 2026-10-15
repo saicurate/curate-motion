@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^prompt\\.(image-gen|video-gen|voice|music|copy|motion-brief|agent-brief|research|other)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "author": {
+      "type": "string",
+      "pattern": "^(founder|agent:[a-z0-9][a-z0-9._-]*|other(:[^\\n]{1,60})?)$"
+    },
+    "area": {
+      "type": "string",
+      "enum": [
+        "image-gen",
+        "video-gen",
+        "voice",
+        "music",
+        "copy",
+        "motion-brief",
+        "agent-brief",
+        "research",
+        "other"
+      ]
+    },
+    "target": {
+      "type": "string",
+      "minLength": 2
+    },
+    "inputs": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "outcome": {
+      "type": "string",
+      "enum": [
+        "worked",
+        "didn't",
+        "mixed",
+        "untested"
+      ]
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "outputs": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+      }
+    },
+    "why": {
+      "type": "string"
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9:._-]*$"
+      }
+    },
+    "parents": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^prompt\\.(image-gen|video-gen|voice|music|copy|motion-brief|agent-brief|research|other)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(T[\\d:.]+Z)?$"
+    },
+    "usedAt": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}(T[\\d:.]+Z)?$"
+      }
+    },
+    "template": {
+      "default": false,
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "costUsd": {
+      "type": "number",
+      "minimum": 0
+    },
+    "addedBy": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "author",
+    "area",
+    "target",
+    "outcome",
+    "createdAt"
+  ],
+  "additionalProperties": false
+}

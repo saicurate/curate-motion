@@ -9,7 +9,8 @@
 // Add / change / remove
 //   tools/catalog add <file> --kind <kind> --licence <preset> [--scope emma] [--name jeans-straight-light-wash]
 //        [--title "…"] [--tags persona=emma,colour=black] [--set key=value …] [--extra cutout:<file> --extra thumb:<file>]
-//        [--frames <dir>] [--source-model … --source-author … --source-url …] [--cost-usd 0.06] [--by <agent>] [--no-push]
+//        [--frames <dir>] [--source-model … --source-author … --source-url …] [--source-prompt-id prompt.<area>.<name>.vN]
+//        [--cost-usd 0.06] [--by <agent>] [--no-push]      (--source-prompt-id also adds the asset to that prompt's outputs)
 //        licence presets: ai-owned, curate, unsplash, pexels, mixkit, ofl, reference
 //   tools/catalog replace <id> <file> [--extra cutout:<file>] [--by …]   new version vN+1 (supersedes <id>)
 //   tools/catalog tag     <id> [--add colour=navy …] [--remove mood=calm …]
@@ -22,6 +23,8 @@
 import { execFileSync } from "node:child_process";
 import { join } from "node:path";
 import { list, parseArgs, ROOT } from "./lib/core.ts";
+import { linkOutputs } from "./lib/prompts.ts";
+import { findPrompt } from "./lib/boards.ts";
 import { addAsset, approveAsset, loadIndex, rebuild, removeAsset, replaceAsset, retireAsset, search, tagAsset, validate, type IndexEntry } from "./lib/catalog.ts";
 
 const args = parseArgs(process.argv.slice(2));
@@ -54,7 +57,8 @@ try {
     case "add": {
       const file = args._[1] ?? (args.file as string);
       if (!file || typeof args.kind !== "string" || !args.licence) throw new Error("usage: tools/catalog add <file> --kind <kind> --licence <preset> [--scope …] [--name …] [--tags …] [--set k=v]");
-      out(
+      if (typeof args["source-prompt-id"] === "string") findPrompt(args["source-prompt-id"]); // fail before copying anything
+      const added = (
         addAsset({
           file,
           kind: args.kind,
@@ -67,15 +71,18 @@ try {
           fields: sets(),
           extras: extras(),
           frames: args.frames as string | undefined,
-          source: Object.fromEntries(["model", "author", "url", "tool", "prompt"].filter((k) => typeof args[`source-${k}`] === "string").map((k) => [k, args[`source-${k}`]])),
+          source: { ...Object.fromEntries(["model", "author", "url", "tool", "prompt"].filter((k) => typeof args[`source-${k}`] === "string").map((k) => [k, args[`source-${k}`]])), ...(typeof args["source-prompt-id"] === "string" ? { promptId: args["source-prompt-id"] } : {}) },
           costUsd: args["cost-usd"] !== undefined ? Number(args["cost-usd"]) : undefined,
           costCalls: args["cost-calls"] !== undefined ? Number(args["cost-calls"]) : undefined,
           aiGenerated: args.ai === undefined ? undefined : String(args.ai) === "true",
           by,
           byType,
           push: !args["no-push"],
-        }),
+        })
       );
+      // the prompt that made it lists it as an output (two-way link; tools/catalog validate checks it)
+      if (typeof args["source-prompt-id"] === "string") linkOutputs(args["source-prompt-id"], [added.id]);
+      out(added);
       break;
     }
     case "replace":
@@ -109,7 +116,7 @@ try {
       break;
     }
     default:
-      console.log(execFileSync("sed", ["-n", "2,25p", join(ROOT, "tools", "catalog.ts")], { encoding: "utf8" }).replace(/^\/\/ ?/gm, ""));
+      console.log(execFileSync("sed", ["-n", "2,26p", join(ROOT, "tools", "catalog.ts")], { encoding: "utf8" }).replace(/^\/\/ ?/gm, ""));
   }
 } catch (e) {
   console.log(`ERROR ${(e as Error).message}`);

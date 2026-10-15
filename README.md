@@ -24,6 +24,8 @@ tools/library-ui                # the founder's page: http://127.0.0.1:4317 (bro
 tools/catalog search --kind garment --tag colour:black
 tools/catalog add <file> --kind photo --licence ai-owned --tags persona=emma
 tools/catalog retire <id>       # or: remove <id> --force (drafts only)
+tools/prompts search --area image-gen --outcome worked   # the prompt library: what worked, before you write a new one
+tools/inspo search --use-for c14                         # the inspo board (study only, never shipped)
 tools/persona sync emma --dry-run   # what Emma's real account would gain / lose
 ```
 

@@ -10,6 +10,9 @@ import { AccountState, PersonaAccount } from "../../schemas/account.ts";
 import { Script, VoiceConfig } from "../../schemas/voice.ts";
 import { aws, BUCKET, CATALOG, findAccounts, findAds, findManifests, INDEX_PATH, LIB, probe, readJson, ROOT, s3KeyFor, sha256File, today, treeSha, writeJson } from "./core.ts";
 import { deleteRemote, pushEntries, remoteSha, type Entry } from "./s3sync.ts";
+import { InspoIndex, InspoMeta } from "../../schemas/inspo.ts";
+import { PromptIndex, PromptMeta } from "../../schemas/prompt.ts";
+import { loadPrompts, validateBoards, writeBoardIndexes, writePromptFile } from "./boards.ts";
 
 type A = z.infer<typeof Asset>;
 type Rec = Record<string, unknown>;
@@ -190,6 +193,10 @@ export const writeSchemas = () => {
   emit("account-state", AccountState);
   emit("voice-config", VoiceConfig);
   emit("script", Script);
+  emit("prompt", PromptMeta);
+  emit("prompt-index", PromptIndex);
+  emit("inspo", InspoMeta);
+  emit("inspo-index", InspoIndex);
 };
 
 const sameIndex = (a: Index | null, b: Index) => !!a && JSON.stringify({ ...a, generatedAt: "" }) === JSON.stringify({ ...b, generatedAt: "" });
@@ -208,6 +215,7 @@ export const rebuild = () => {
   const { ok, errors } = loadManifests();
   if (errors.length) throw new Error(errors.join("\n"));
   const changed = writeIndex(buildIndex(ok));
+  writeBoardIndexes(); // catalog/prompts.json + catalog/inspo.json (tools/lib/boards.ts)
   writeSchemas();
   return { changed, count: ok.reduce((s, l) => s + l.data.assets.length, 0) };
 };
@@ -289,6 +297,7 @@ export const validate = (o: { sha?: string; immutableAgainst?: string; checkInde
         continue;
       }
       if (a.status === "retired") errors.push(`${p}: uses retired asset ${id}`);
+      if (a.kind === "reference") errors.push(`${p}: lists reference ${id}: references (inspo) are study only and never shipped in an ad (RULES.md › 9)`);
       if ((r.data.status === "approved" || r.data.status === "live") && a.status !== "approved") errors.push(`${p}: ${r.data.status} ad uses ${a.status} asset ${id}`);
     }
   }
@@ -332,7 +341,11 @@ export const validate = (o: { sha?: string; immutableAgainst?: string; checkInde
     }
   }
   if (o.checkIndex && !sameIndex(existsSync(INDEX_PATH) ? readJson<Index>(INDEX_PATH) : null, buildIndex(ok))) errors.push("catalog/index.json is stale: run tools/catalog build and commit it");
-  return { errors, warnings, checked, assets: seen.size, manifests: ok.length, ads: findAds().length };
+  // the prompt library and the inspo board (prompts/, inspo/): schema, links both ways, no secrets, indexes fresh
+  const b = validateBoards(seen as unknown as Map<string, { id: string; kind: string; source?: { promptId?: string } }>, { checkIndex: o.checkIndex, immutableAgainst: o.immutableAgainst });
+  errors.push(...b.errors);
+  warnings.push(...b.warnings);
+  return { errors, warnings, checked, assets: seen.size, manifests: ok.length, ads: findAds().length, prompts: b.prompts, inspo: b.inspo };
 };
 
 // ---------------------------------------------------------------- write helpers
@@ -628,6 +641,8 @@ export const removeAsset = (id: string, o: { force?: boolean } = {}) => {
   const fr = a.frames as { dir: string } | undefined;
   if (fr) rmSync(join(LIB, fr.dir), { recursive: true, force: true });
   if (entry) deleteRemote(entry);
+  // a deleted draft is no longer any prompt's output
+  for (const p of loadPrompts().ok) if (p.meta.outputs.includes(id)) writePromptFile({ ...p.meta, outputs: p.meta.outputs.filter((x) => x !== id) }, p.body);
   rebuild();
   return { id, status: "deleted" };
 };
@@ -654,4 +669,26 @@ export const approveAsset = (id: string, by: string) => {
   }
   rebuild();
   return { id, status: "approved", by };
+};
+
+/**
+ * Point assets at the prompt that made them (source.promptId), or clear it (null). Metadata only:
+ * allowed on any status, files never change. One rebuild for the whole batch. The prompt side
+ * (its outputs) is written by tools/lib/prompts.ts › linkOutputs, which calls this.
+ */
+export const setSourcePrompts = (pairs: [assetId: string, promptId: string | null][]) => {
+  const touched = new Map<string, M>();
+  for (const [id, promptId] of pairs) {
+    const { mpath, m, i } = findAsset(id);
+    const mm = touched.get(mpath) ?? m;
+    touched.set(mpath, mm);
+    const a = mm.assets[i];
+    const src = { ...(a.source as Rec) };
+    if (promptId) src.promptId = promptId;
+    else delete src.promptId;
+    a.source = src;
+  }
+  for (const [mpath, m] of touched) saveManifest(mpath, m);
+  if (touched.size) rebuild();
+  return { assets: pairs.length, manifests: touched.size };
 };

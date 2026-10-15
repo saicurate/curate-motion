@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/inspo: the inspo board CLI (add, search, show, archive, breakdown). See tools/inspo.ts.
+exec node "$(dirname "$0")/inspo.ts" "$@"

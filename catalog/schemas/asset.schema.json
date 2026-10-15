@@ -131,6 +131,10 @@
             "prompt": {
               "type": "string"
             },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
+            },
             "author": {
               "type": "string"
             },
@@ -435,6 +439,10 @@
             "prompt": {
               "type": "string"
             },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
+            },
             "author": {
               "type": "string"
             },
@@ -737,6 +745,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -1113,6 +1125,10 @@
             "prompt": {
               "type": "string"
             },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
+            },
             "author": {
               "type": "string"
             },
@@ -1421,6 +1437,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -1734,6 +1754,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -2052,6 +2076,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -2396,6 +2424,10 @@
             "prompt": {
               "type": "string"
             },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
+            },
             "author": {
               "type": "string"
             },
@@ -2714,6 +2746,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -3035,6 +3071,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -3409,6 +3449,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -3811,6 +3855,10 @@
             "prompt": {
               "type": "string"
             },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
+            },
             "author": {
               "type": "string"
             },
@@ -4146,6 +4194,10 @@
             "prompt": {
               "type": "string"
             },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
+            },
             "author": {
               "type": "string"
             },
@@ -4435,6 +4487,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"
@@ -4727,6 +4783,10 @@
             },
             "prompt": {
               "type": "string"
+            },
+            "promptId": {
+              "type": "string",
+              "pattern": "^prompt\\.[a-z0-9-]+\\.[a-z0-9]+(?:-[a-z0-9]+)*\\.v[1-9][0-9]*$"
             },
             "author": {
               "type": "string"

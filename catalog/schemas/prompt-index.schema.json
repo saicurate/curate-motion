@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "about": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "area": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "outcome": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "author": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "type": "number"
+          }
+        }
+      },
+      "required": [
+        "area",
+        "outcome",
+        "author"
+      ]
+    },
+    "prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^prompt\\.(image-gen|video-gen|voice|music|copy|motion-brief|agent-brief|research|other)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "area": {
+            "type": "string",
+            "enum": [
+              "image-gen",
+              "video-gen",
+              "voice",
+              "music",
+              "copy",
+              "motion-brief",
+              "agent-brief",
+              "research",
+              "other"
+            ]
+          },
+          "target": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": "string",
+            "enum": [
+              "worked",
+              "didn't",
+              "mixed",
+              "untested"
+            ]
+          },
+          "rating": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "parents": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "why": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "template": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "useCount": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "lastUsedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "costUsd": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "author",
+          "area",
+          "target",
+          "outcome",
+          "rating",
+          "tags",
+          "inputs",
+          "outputs",
+          "parents",
+          "children",
+          "why",
+          "template",
+          "createdAt",
+          "useCount",
+          "lastUsedAt",
+          "costUsd",
+          "source",
+          "path",
+          "body"
+        ]
+      }
+    }
+  },
+  "required": [
+    "about",
+    "count",
+    "counts",
+    "prompts"
+  ]
+}

@@ -150,6 +150,57 @@
       "durationSec": 27.673,
       "approvedBy": "founder (said: approve everything, 2026-10-15)",
       "approvedAt": "2026-10-15"
+    },
+    {
+      "id": "reference.app.scan-real-probe-sheet.v1",
+      "title": "Real photo-scan roll from the app (probe recording): the true timing: contact sheet",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/scan-real-probe-sheet/scan-real-probe-sheet.v1.jpg",
+          "sha256": "3686b0dcdd04d8298913bc07821672f6929c885f11cc0030449d56d914f4af64",
+          "bytes": 978666,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "inspo",
+          "contact-sheet"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "from": [
+          "reference.app.scan-real-probe.v1"
+        ],
+        "tool": "tools/inspo breakdown (ffmpeg)"
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference",
+      "notes": "24 tiles, one every 1.15 s, left to right, top to bottom (tools/inspo breakdown)."
     }
   ]
 }

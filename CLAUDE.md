@@ -8,3 +8,5 @@ Claude Code specifics:
 - Use the Remotion skills (`remotion:remotion-best-practices` and friends) for Remotion API questions.
 - Query assets with `tools/catalog search …` (Bash) instead of globbing `library/`.
 - No paid model calls (image, video or audio generation) without the founder's explicit OK.
+- Prompts: `tools/prompts search` before writing an image/video/voice prompt; log every prompt you use
+  with its outcome (`tools/prompts add | use | rate`). Inspo is `tools/inspo`; never put a reference in an ad.

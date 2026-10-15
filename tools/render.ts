@@ -3,6 +3,7 @@
 //
 //   tools/render <ad-id> [--format 9x16 …] [--length 15 …] [--channel tiktok] [--draft] [--queue-only]
 //                        [--voice captions|human|tts] [--tts <profile>]   per-render voice override (config/voice.json is the default)
+//                        [--props '<json>'] [--name <variant>]          extra composition props (e.g. '{"bumper":"tryons"}'), named in the file: <ad>-<variant>_…
 //   tools/render run          render everything queued
 //   tools/render queue        print the queue
 //
@@ -39,6 +40,10 @@ type Job = {
   /** Per-render voice override (--voice / --tts), and what the voice resolved to. */
   voiceOverride?: { mode?: "captions" | "human" | "tts"; tts?: { use?: string } };
   voice?: string;
+  /** Extra composition props (--props '<json>'), e.g. a bumper variant; merged into the render's props. */
+  props?: Record<string, unknown>;
+  /** Variant name (--name), added to the file name: <ad>-<name>_<channel>_… */
+  name?: string;
 };
 
 const QUEUE = join(ROOT, "renders", "queue.json");
@@ -52,15 +57,16 @@ const saveQueue = (jobs: Job[]) => {
   writeFileSync(join(ROOT, "tracker", "data", "queue.js"), `window.CURATE_QUEUE = ${JSON.stringify({ updated: now(), jobs })};\n`);
 };
 
-const nextVersion = (ad: string, channel: string, format: FormatId, length: number, taken: Set<string>) => {
+const nextVersion = (ad: string, channel: string, format: FormatId, length: number, taken: Set<string>, name?: string) => {
   for (let v = 1; ; v++) {
-    const p = renderPath(ad, channel, format, length, v);
+    let p = renderPath(ad, channel, format, length, v);
+    if (name) p = p.replace(`/${ad}_${channel}_`, `/${ad}-${name}_${channel}_`);
     if (!existsSync(join(ROOT, p)) && !taken.has(p)) return p;
   }
 };
 
 const stage = (ad: string, ids: string[]) => {
-  const idx = readJson<{ assets: { id: string; files: { path: string }[]; asset: { frames?: { dir: string } } }[] }>(INDEX_PATH).assets;
+  const idx = readJson<{ assets: { id: string; kind: string; files: { path: string }[]; asset: { frames?: { dir: string }; licence?: { restrictions?: string[] } } }[] }>(INDEX_PATH).assets;
   const dir = join(ROOT, ".stage", ad);
   rmSync(dir, { recursive: true, force: true });
   const missing: string[] = [];
@@ -78,6 +84,8 @@ const stage = (ad: string, ids: string[]) => {
   for (const id of ids) {
     const e = idx.find((a) => a.id === id);
     if (!e) throw new Error(`${ad}: asset ${id} is not in the catalog`);
+    // references (the inspo board's media) are study only: never in a render (RULES.md › 9)
+    if (e.kind === "reference" || e.asset.licence?.restrictions?.includes("never-ship")) throw new Error(`${ad}: ${id} is a reference (inspo, study only) and is never shipped in an ad (RULES.md › 9). Remove it from ads/${ad}/ad.json › assets.`);
     for (const f of e.files) put(f.path);
     const fr = e.asset.frames;
     if (fr && existsSync(join(LIB, fr.dir))) for (const n of readdirSync(join(LIB, fr.dir))) put(`${fr.dir.replace(/\/$/, "")}/${n}`);
@@ -115,10 +123,13 @@ const enqueue = (adId: string) => {
       if (!spec.lengths.includes(length)) throw new Error(`${adId} does not list length ${length} in ad.json`);
       if (format.startsWith("appstore") && (length < 15 || length > 30)) continue; // App Store: 15–30 s only
       const channel = typeof args.channel === "string" ? args.channel : (spec.channels.find((c) => CHANNEL_FORMAT[c] === format) ?? "master");
-      const out = nextVersion(adId, channel, format, length, taken);
+      const name = typeof args.name === "string" ? args.name : undefined;
+      if (name && !/^[a-z0-9-]+$/.test(name)) throw new Error("--name must be kebab-case");
+      const extra = typeof args.props === "string" ? (JSON.parse(args.props) as Record<string, unknown>) : undefined;
+      const out = nextVersion(adId, channel, format, length, taken, name);
       taken.add(out);
       const vo = voiceOverride();
-      jobs.push({ id: `${adId}-${format}-${length}-${Date.now().toString(36)}`, ad: adId, composition: compositionId(adId, format, length), format, length, channel, out, draft: !!args.draft, status: "queued", queuedAt: now(), by: String(args.by ?? "agent"), ...(Object.keys(vo).length ? { voiceOverride: vo } : {}) });
+      jobs.push({ id: `${adId}-${format}-${length}-${Date.now().toString(36)}`, ad: adId, composition: compositionId(adId, format, length), format, length, channel, out, draft: !!args.draft, status: "queued", queuedAt: now(), by: String(args.by ?? "agent"), ...(Object.keys(vo).length ? { voiceOverride: vo } : {}), ...(extra ? { props: extra } : {}), ...(name ? { name } : {}) });
       console.log(`queued  ${out}`);
     }
   }
@@ -140,10 +151,10 @@ const run = () => {
       mkdirSync(dirname(join(ROOT, j.out)), { recursive: true });
       const q = j.draft ? ["--crf=30", "--scale=0.5"] : ["--crf=18"];
       const props: string[] = [];
-      if (j.voiceOverride) {
+      if (j.voiceOverride || j.props) {
         const pf = join(ROOT, ".cache", "render-props", `${j.id}.json`);
         mkdirSync(dirname(pf), { recursive: true });
-        writeFileSync(pf, JSON.stringify({ voice: j.voiceOverride }));
+        writeFileSync(pf, JSON.stringify({ ...(j.props ?? {}), ...(j.voiceOverride ? { voice: j.voiceOverride } : {}) }));
         props.push(`--props=${pf}`);
       }
       const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", "--concurrency=3", ...q, ...props], { cwd: ROOT, stdio: "inherit" });

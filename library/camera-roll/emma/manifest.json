@@ -26,7 +26,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r01-coffee-shop.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -90,7 +91,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r02-subway-platform.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -155,7 +157,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r03-brooklyn-street.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -220,7 +223,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r04-park-autumn.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -284,7 +288,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r05-office.v3"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -348,7 +353,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r06-farmers-market.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -413,7 +419,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r07-rooftop-golden-hour.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -477,7 +484,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r08-beach-day.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -542,7 +550,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r09-mirror-selfie-weekend.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -607,7 +616,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r10-night-out.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -672,7 +682,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r11-mirror-selfie-work.v2"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -736,7 +747,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r12-dumbo-walk.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -801,7 +813,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r13-winter-street.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -866,7 +879,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r14-sunday-errands.v2"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -931,7 +945,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r15-hudson-run.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -995,7 +1010,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r16-bookstore.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1059,7 +1075,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r17-brunch.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1123,7 +1140,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r18-office-lobby.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1188,7 +1206,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r19-fall-game-day.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1253,7 +1272,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r20-country-night.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1317,7 +1337,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r21-museum-steps.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1381,7 +1402,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r22-stoop.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1445,7 +1467,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r23-rainy-day.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1509,7 +1532,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r24-dinner.v2"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1573,7 +1597,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r25-cafe-laptop.v2"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1637,7 +1662,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r26-ferry.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1701,7 +1727,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r27-chelsea-market.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1766,7 +1793,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r28-couch-cozy.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1829,7 +1857,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r29-gym-mirror.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -1893,7 +1922,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.camera-roll-r30-walk-to-work.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",

@@ -156,6 +156,24 @@
         "format": "mp3",
         "note": "American man: charming, natural, down-to-earth (ElevenLabs default library; labelled middle-aged, sounds young). Paid; commercial use needs a paid ElevenLabs plan (Starter or above)."
       },
+      "eleven-jessica-v4": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "cgSgspJ2msm6clMCkdW9",
+        "name": "Jessica (v4)",
+        "speed": 1,
+        "format": "mp3",
+        "note": "Jessica on Eleven v4, ElevenLabs' newest, most emotive model. Paid; commercial use needs a paid ElevenLabs plan (Starter or above)."
+      },
+      "eleven-will-v4": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "name": "Will (v4)",
+        "speed": 1,
+        "format": "mp3",
+        "note": "Will on Eleven v4, ElevenLabs' newest, most emotive model. Paid; commercial use needs a paid ElevenLabs plan (Starter or above)."
+      },
       "say-preview": {
         "provider": "say",
         "voice": "Samantha",

@@ -25,10 +25,10 @@ jobs:
         run: |
           bad=$(git ls-files | grep -iE '\.(mp4|mov|m4v|webm|mp3|wav|m4a|aac|flac|jpe?g|png|webp|gif|heic|psd|blend|ttf|otf|woff2?|zip)$' || true)
           if [ -n "$bad" ]; then echo "Media committed to git (move to S3):"; echo "$bad"; exit 1; fi
-          if git grep -nE 'AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|ghp_[A-Za-z0-9]{30,}|sk-[A-Za-z0-9_-]{32,}' -- ':!.githooks' ':!.github' > /dev/null; then echo "A secret-looking string is committed."; exit 1; fi
+          if git grep -nE 'AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|ghp_[A-Za-z0-9]{30,}|sk-[A-Za-z0-9_-]{32,}|sk_[A-Za-z0-9]{32,}|AIza[0-9A-Za-z_-]{35}' -- ':!.githooks' ':!.github' > /dev/null; then echo "A secret-looking string is committed."; exit 1; fi
       - name: Typecheck
         run: npx tsc --noEmit
-      - name: Catalog (schemas, licences, ids, ads, index fresh, approved assets unchanged)
+      - name: Catalog (schemas, licences, ids, ads, index fresh, approved assets unchanged, prompts + inspo links and secrets)
         run: |
           ref=""; git rev-parse -q --verify HEAD~1 >/dev/null && ref="--immutable-against HEAD~1"
           node tools/catalog.ts validate --sha none --check-index $ref

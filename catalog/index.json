@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T22:30:17.980Z",
+  "generatedAt": "2026-10-15T23:04:09.613Z",
   "bucket": "curate-motion-library-276451918677",
   "counts": {
     "brand": 4,
@@ -9,12 +9,12 @@
     "garment": 50,
     "music": 8,
     "photo": 30,
-    "reference": 2,
+    "reference": 3,
     "screenshot": 143,
     "selfie": 1,
     "stock": 42,
     "tryon": 2,
-    "voice": 85,
+    "voice": 112,
     "zee": 48
   },
   "assets": [
@@ -366,6 +366,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.face-emma-a.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/portraits.py"
         },
@@ -449,6 +450,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.face-emma-b.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/portraits.py"
         },
@@ -535,6 +537,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.face-emma-c.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/portraits.py"
         },
@@ -14910,6 +14913,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file tan-crossbody-bag-v1.jpg",
+          "promptId": "prompt.image-gen.garment-bag-crossbody-tan.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15034,6 +15038,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-mini-bag-v1.jpg",
+          "promptId": "prompt.image-gen.garment-bag-mini-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15158,6 +15163,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-leather-tote-v1.jpg",
+          "promptId": "prompt.image-gen.garment-bag-tote-leather-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15282,6 +15288,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file cream-beanie-v1.jpg",
+          "promptId": "prompt.image-gen.garment-beanie-cream.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15406,6 +15413,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file brown-leather-belt-v1.jpg",
+          "promptId": "prompt.image-gen.garment-belt-leather-brown.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15530,6 +15538,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-blazer-v1.jpg",
+          "promptId": "prompt.image-gen.garment-blazer-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15654,6 +15663,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-ankle-boots-v1.jpg",
+          "promptId": "prompt.image-gen.garment-boots-ankle-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15778,6 +15788,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file tan-cowboy-boots-v1.jpg",
+          "promptId": "prompt.image-gen.garment-boots-cowboy-tan.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -15902,6 +15913,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-satin-camisole-v1.jpg",
+          "promptId": "prompt.image-gen.garment-camisole-satin-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16026,6 +16038,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file navy-baseball-cap-v1.jpg",
+          "promptId": "prompt.image-gen.garment-cap-baseball-navy.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16150,6 +16163,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file oatmeal-cardigan-v1.jpg",
+          "promptId": "prompt.image-gen.garment-cardigan-oatmeal.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16274,6 +16288,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file khaki-trench-coat-v1.jpg",
+          "promptId": "prompt.image-gen.garment-coat-trench-khaki.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16398,6 +16413,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file camel-wool-coat-v1.jpg",
+          "promptId": "prompt.image-gen.garment-coat-wool-camel.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16522,6 +16538,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file little-black-dress-v1.jpg",
+          "promptId": "prompt.image-gen.garment-dress-little-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16646,6 +16663,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file champagne-slip-dress-v1.jpg",
+          "promptId": "prompt.image-gen.garment-dress-slip-champagne.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16770,6 +16788,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file gold-hoops-v1.jpg",
+          "promptId": "prompt.image-gen.garment-earrings-hoops-gold.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -16894,6 +16913,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-ballet-flats-v1.jpg",
+          "promptId": "prompt.image-gen.garment-flats-ballet-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17018,6 +17038,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-heels-v1.jpg",
+          "promptId": "prompt.image-gen.garment-heels-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17142,6 +17163,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file navy-hoodie-v1.jpg",
+          "promptId": "prompt.image-gen.garment-hoodie-navy.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17266,6 +17288,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file denim-jacket-v1.jpg",
+          "promptId": "prompt.image-gen.garment-jacket-denim.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17390,6 +17413,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-leather-jacket-v1.jpg",
+          "promptId": "prompt.image-gen.garment-jacket-leather-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17514,6 +17538,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-puffer-jacket-v1.jpg",
+          "promptId": "prompt.image-gen.garment-jacket-puffer-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17638,6 +17663,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file varsity-jacket-v1.jpg",
+          "promptId": "prompt.image-gen.garment-jacket-varsity-navy-cream.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17762,6 +17788,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file dark-wash-straight-jeans-v1.jpg",
+          "promptId": "prompt.image-gen.garment-jeans-straight-dark-wash.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -17886,6 +17913,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file light-wash-straight-jeans-v1.jpg",
+          "promptId": "prompt.image-gen.garment-jeans-straight-light-wash.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18010,6 +18038,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file sage-leggings-v1.jpg",
+          "promptId": "prompt.image-gen.garment-leggings-sage.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18134,6 +18163,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-loafers-v1.jpg",
+          "promptId": "prompt.image-gen.garment-loafers-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18258,6 +18288,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file gold-pendant-necklace-v1.jpg",
+          "promptId": "prompt.image-gen.garment-necklace-pendant-gold.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18382,6 +18413,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file tan-sandals-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sandals-tan.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18506,6 +18538,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file camel-plaid-scarf-v1.jpg",
+          "promptId": "prompt.image-gen.garment-scarf-plaid-camel.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18630,6 +18663,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file plaid-flannel-shirt-v1.jpg",
+          "promptId": "prompt.image-gen.garment-shirt-flannel-plaid.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18754,6 +18788,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file white-linen-shirt-v1.jpg",
+          "promptId": "prompt.image-gen.garment-shirt-linen-white.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -18878,6 +18913,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file blue-oxford-shirt-v1.jpg",
+          "promptId": "prompt.image-gen.garment-shirt-oxford-blue.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19002,6 +19038,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file denim-cutoff-shorts-v1.jpg",
+          "promptId": "prompt.image-gen.garment-shorts-denim-cutoff.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19126,6 +19163,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file camel-satin-midi-skirt-v1.jpg",
+          "promptId": "prompt.image-gen.garment-skirt-midi-satin-camel.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19250,6 +19288,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file white-leather-sneakers-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sneakers-leather-white.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19374,6 +19413,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file retro-runners-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sneakers-retro-runner-grey-navy.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19498,6 +19538,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file sage-sports-bra-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sports-bra-sage.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19622,6 +19663,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-sunglasses-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sunglasses-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19746,6 +19788,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file cream-cable-knit-sweater-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sweater-cable-knit-cream.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19870,6 +19913,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file navy-crewneck-sweater-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sweater-crewneck-navy.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -19994,6 +20038,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file grey-sweatpants-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sweatpants-grey.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20118,6 +20163,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file grey-crewneck-sweatshirt-v1.jpg",
+          "promptId": "prompt.image-gen.garment-sweatshirt-crewneck-grey.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20242,6 +20288,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-ribbed-tank-v1.jpg",
+          "promptId": "prompt.image-gen.garment-tank-ribbed-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20366,6 +20413,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file grey-running-tank-v1.jpg",
+          "promptId": "prompt.image-gen.garment-tank-running-grey.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20490,6 +20538,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-tee-v1.jpg",
+          "promptId": "prompt.image-gen.garment-tee-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20614,6 +20663,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file striped-long-sleeve-tee-v1.jpg",
+          "promptId": "prompt.image-gen.garment-tee-long-sleeve-striped.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20738,6 +20788,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file white-tee-v2.jpg",
+          "promptId": "prompt.image-gen.garment-tee-white.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20862,6 +20913,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-trousers-v1.jpg",
+          "promptId": "prompt.image-gen.garment-trousers-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -20986,6 +21038,7 @@
           "type": "generated",
           "model": "gemini-nano-banana-2.1",
           "prompt": "legacy file black-turtleneck-v1.jpg",
+          "promptId": "prompt.image-gen.garment-turtleneck-black.v1",
           "from": [],
           "tool": "marketing/videos/assets/_tools/garments.py"
         },
@@ -21837,6 +21890,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r01-coffee-shop.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -21928,6 +21982,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r02-subway-platform.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22020,6 +22075,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r03-brooklyn-street.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22112,6 +22168,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r04-park-autumn.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22203,6 +22260,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r05-office.v3",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22294,6 +22352,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r06-farmers-market.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22386,6 +22445,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r07-rooftop-golden-hour.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22477,6 +22537,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r08-beach-day.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22569,6 +22630,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r09-mirror-selfie-weekend.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22661,6 +22723,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r10-night-out.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22753,6 +22816,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r11-mirror-selfie-work.v2",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22844,6 +22908,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r12-dumbo-walk.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -22936,6 +23001,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r13-winter-street.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23028,6 +23094,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r14-sunday-errands.v2",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23120,6 +23187,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r15-hudson-run.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23211,6 +23279,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r16-bookstore.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23302,6 +23371,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r17-brunch.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23393,6 +23463,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r18-office-lobby.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23485,6 +23556,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r19-fall-game-day.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23577,6 +23649,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r20-country-night.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23668,6 +23741,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r21-museum-steps.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23759,6 +23833,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r22-stoop.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23850,6 +23925,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r23-rainy-day.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -23941,6 +24017,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r24-dinner.v2",
           "from": [
             "face.emma.b.v1"
           ]
@@ -24032,6 +24109,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r25-cafe-laptop.v2",
           "from": [
             "face.emma.b.v1"
           ]
@@ -24123,6 +24201,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r26-ferry.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -24214,6 +24293,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r27-chelsea-market.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -24306,6 +24386,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r28-couch-cozy.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -24396,6 +24477,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r29-gym-mirror.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -24487,6 +24569,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.camera-roll-r30-walk-to-work.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -24529,6 +24612,84 @@
           "garment.emma.bag-tote-leather-black.v1"
         ],
         "framing": "full"
+      }
+    },
+    {
+      "id": "reference.app.scan-real-probe-sheet.v1",
+      "kind": "reference",
+      "title": "Real photo-scan roll from the app (probe recording): the true timing: contact sheet",
+      "status": "draft",
+      "manifest": "library/references/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/scan-real-probe-sheet/scan-real-probe-sheet.v1.jpg",
+          "sha256": "3686b0dcdd04d8298913bc07821672f6929c885f11cc0030449d56d914f4af64",
+          "bytes": 978666,
+          "mime": "image/jpeg",
+          "s3Key": "library/references/scan-real-probe-sheet/scan-real-probe-sheet.v1.jpg"
+        }
+      ],
+      "tags": [
+        "contact-sheet",
+        "inspo",
+        "kind:reference",
+        "licence:Third-party content, reference only",
+        "scope:app",
+        "status:draft"
+      ],
+      "licence": "Third-party content, reference only",
+      "aiGenerated": false,
+      "asset": {
+        "id": "reference.app.scan-real-probe-sheet.v1",
+        "title": "Real photo-scan roll from the app (probe recording): the true timing: contact sheet",
+        "files": [
+          {
+            "role": "original",
+            "path": "references/scan-real-probe-sheet/scan-real-probe-sheet.v1.jpg",
+            "sha256": "3686b0dcdd04d8298913bc07821672f6929c885f11cc0030449d56d914f4af64",
+            "bytes": 978666,
+            "mime": "image/jpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "inspo",
+            "contact-sheet"
+          ]
+        },
+        "source": {
+          "type": "derived",
+          "from": [
+            "reference.app.scan-real-probe.v1"
+          ],
+          "tool": "tools/inspo breakdown (ffmpeg)"
+        },
+        "licence": {
+          "name": "Third-party content, reference only",
+          "commercial": false,
+          "attributionRequired": false,
+          "restrictions": [
+            "never-ship"
+          ],
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "reference",
+        "notes": "24 tiles, one every 1.15 s, left to right, top to bottom (tools/inspo breakdown)."
       }
     },
     {
@@ -39855,6 +40016,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.selfie-emma-front-camera.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -43596,6 +43758,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.tryon-base-emma-1.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -43685,6 +43848,7 @@
         "source": {
           "type": "generated",
           "model": "gemini-3-pro-image",
+          "promptId": "prompt.image-gen.tryon-base-emma-2.v1",
           "from": [
             "face.emma.b.v1"
           ]
@@ -43724,6 +43888,226 @@
           "garment.emma.jeans-straight-dark-wash.v1",
           "garment.emma.sneakers-leather-white.v1"
         ]
+      }
+    },
+    {
+      "id": "voice.explainer.l01-eleven-chris.v1",
+      "kind": "voice",
+      "title": "explainer l01 · eleven-chris",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l01-eleven-chris.v1.mp3",
+          "sha256": "9e94039f053983a552ab7b193d89f382c462576bfcd290dafa50655b77f65b4b",
+          "bytes": 32225,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l01-eleven-chris.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l01",
+        "profile:eleven-chris",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l01-eleven-chris.v1",
+        "title": "explainer l01 · eleven-chris",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l01-eleven-chris.v1.mp3",
+            "sha256": "9e94039f053983a552ab7b193d89f382c462576bfcd290dafa50655b77f65b4b",
+            "bytes": 32225,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l01",
+            "profile:eleven-chris",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:iP95p4xoKVk53GoZ742B",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.0054,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 1.95,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l01",
+            "text": "You've got a closet full of clothes.",
+            "startSec": 0,
+            "endSec": 1.95
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "iP95p4xoKVk53GoZ742B",
+          "speed": 1,
+          "format": "mp3",
+          "text": "You've got a closet full of clothes.",
+          "chars": 36,
+          "cacheKey": "10b97423dc517531f22d64ffc12f2981e4f4fe749a8662810ad2a33a5e6d16f9"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l01-eleven-jessica-v4.v1",
+      "kind": "voice",
+      "title": "explainer l01 · eleven-jessica-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l01-eleven-jessica-v4.v1.mp3",
+          "sha256": "2cb9713f68b8c5f6b3cd4f1f4733872cc2f8c7c1239341f494659643718c8d9c",
+          "bytes": 41838,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l01-eleven-jessica-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l01",
+        "profile:eleven-jessica-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l01-eleven-jessica-v4.v1",
+        "title": "explainer l01 · eleven-jessica-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l01-eleven-jessica-v4.v1.mp3",
+            "sha256": "2cb9713f68b8c5f6b3cd4f1f4733872cc2f8c7c1239341f494659643718c8d9c",
+            "bytes": 41838,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l01",
+            "profile:eleven-jessica-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:cgSgspJ2msm6clMCkdW9",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.0054,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.56,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l01",
+            "text": "You've got a closet full of clothes.",
+            "startSec": 0,
+            "endSec": 2.56
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "cgSgspJ2msm6clMCkdW9",
+          "speed": 1,
+          "format": "mp3",
+          "text": "You've got a closet full of clothes.",
+          "chars": 36,
+          "cacheKey": "02b73f428ef05074b3bd8b1097e04fef8a7e987ac120536697edf309e704842e"
+        },
+        "previewOnly": false
       }
     },
     {
@@ -43942,6 +44326,116 @@
           "text": "You've got a closet full of clothes.",
           "chars": 36,
           "cacheKey": "ed1705f063668cd1ed1227015805feae8d4d2663247991c5c40139815debaaad"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l01-eleven-will-v4.v1",
+      "kind": "voice",
+      "title": "explainer l01 · eleven-will-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l01-eleven-will-v4.v1.mp3",
+          "sha256": "c6bb7ee27b22f1c44d168ce976996a041413370b31a018288938815f83811fdd",
+          "bytes": 39331,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l01-eleven-will-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l01",
+        "profile:eleven-will-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l01-eleven-will-v4.v1",
+        "title": "explainer l01 · eleven-will-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l01-eleven-will-v4.v1.mp3",
+            "sha256": "c6bb7ee27b22f1c44d168ce976996a041413370b31a018288938815f83811fdd",
+            "bytes": 39331,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l01",
+            "profile:eleven-will-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.0054,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.4,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l01",
+            "text": "You've got a closet full of clothes.",
+            "startSec": 0,
+            "endSec": 2.4
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "You've got a closet full of clothes.",
+          "chars": 36,
+          "cacheKey": "bc639ae7d2627395f30ff94256918d88654e1531312b7ba4989ad5d50d41b75e"
         },
         "previewOnly": false
       }
@@ -45146,6 +45640,226 @@
       }
     },
     {
+      "id": "voice.explainer.l02-eleven-chris.v1",
+      "kind": "voice",
+      "title": "explainer l02 · eleven-chris",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l02-eleven-chris.v1.mp3",
+          "sha256": "b890a41484aed02eea6e52e24a9467cc6c5d264d6d93b03edca7614c6a3d440e",
+          "bytes": 51034,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l02-eleven-chris.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l02",
+        "profile:eleven-chris",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l02-eleven-chris.v1",
+        "title": "explainer l02 · eleven-chris",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l02-eleven-chris.v1.mp3",
+            "sha256": "b890a41484aed02eea6e52e24a9467cc6c5d264d6d93b03edca7614c6a3d440e",
+            "bytes": 51034,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l02",
+            "profile:eleven-chris",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:iP95p4xoKVk53GoZ742B",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00975,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 3.111,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l02",
+            "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+            "startSec": 0,
+            "endSec": 3.111
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "iP95p4xoKVk53GoZ742B",
+          "speed": 1,
+          "format": "mp3",
+          "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+          "chars": 65,
+          "cacheKey": "30ee0ffea80bbe2c48dd040241b64b592ed7e04eefa62b883dd3aed3a679ae5d"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l02-eleven-jessica-v4.v1",
+      "kind": "voice",
+      "title": "explainer l02 · eleven-jessica-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l02-eleven-jessica-v4.v1.mp3",
+          "sha256": "16501ba0f129a0efa1088553ef8177042e737aedce0e3d8d334fdf8bfee9d09e",
+          "bytes": 81545,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l02-eleven-jessica-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l02",
+        "profile:eleven-jessica-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l02-eleven-jessica-v4.v1",
+        "title": "explainer l02 · eleven-jessica-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l02-eleven-jessica-v4.v1.mp3",
+            "sha256": "16501ba0f129a0efa1088553ef8177042e737aedce0e3d8d334fdf8bfee9d09e",
+            "bytes": 81545,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l02",
+            "profile:eleven-jessica-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:cgSgspJ2msm6clMCkdW9",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00975,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 5.04,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l02",
+            "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+            "startSec": 0,
+            "endSec": 5.04
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "cgSgspJ2msm6clMCkdW9",
+          "speed": 1,
+          "format": "mp3",
+          "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+          "chars": 65,
+          "cacheKey": "c743ab67633e71d94beb5464edbfe4bc78de398302030f41048781e1fffecbb1"
+        },
+        "previewOnly": false
+      }
+    },
+    {
       "id": "voice.explainer.l02-eleven-jessica.v1",
       "kind": "voice",
       "title": "explainer l02 · eleven-jessica",
@@ -45361,6 +46075,226 @@
           "text": "And somehow, every morning, it's the same thing: nothing to wear.",
           "chars": 65,
           "cacheKey": "74781e69fd42c3f5e5474c3a2dde16c83e083c64df3157046dece4017a517aca"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l02-eleven-will-v4.v1",
+      "kind": "voice",
+      "title": "explainer l02 · eleven-will-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l02-eleven-will-v4.v1.mp3",
+          "sha256": "5b7d71da1569e2643a9ff65f026fad41e8eacd17cf24ff2fcdf65dec66493489",
+          "bytes": 80291,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l02-eleven-will-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l02",
+        "profile:eleven-will-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l02-eleven-will-v4.v1",
+        "title": "explainer l02 · eleven-will-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l02-eleven-will-v4.v1.mp3",
+            "sha256": "5b7d71da1569e2643a9ff65f026fad41e8eacd17cf24ff2fcdf65dec66493489",
+            "bytes": 80291,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l02",
+            "profile:eleven-will-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00975,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 4.96,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l02",
+            "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+            "startSec": 0,
+            "endSec": 4.96
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+          "chars": 65,
+          "cacheKey": "99589319c360d393e4f69a613c6389cb5453f5d9b6cd0d756c821534aa630bc0"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l02-eleven-will.v1",
+      "kind": "voice",
+      "title": "explainer l02 · eleven-will",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l02-eleven-will.v1.mp3",
+          "sha256": "8b5d4d64b7351bd480137ec9a3d475c97714d4d04a5d066072577ddb81fb0c85",
+          "bytes": 64826,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l02-eleven-will.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l02",
+        "profile:eleven-will",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l02-eleven-will.v1",
+        "title": "explainer l02 · eleven-will",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l02-eleven-will.v1.mp3",
+            "sha256": "8b5d4d64b7351bd480137ec9a3d475c97714d4d04a5d066072577ddb81fb0c85",
+            "bytes": 64826,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l02",
+            "profile:eleven-will",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00975,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 3.994,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l02",
+            "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+            "startSec": 0,
+            "endSec": 3.994
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "And somehow, every morning, it's the same thing: nothing to wear.",
+          "chars": 65,
+          "cacheKey": "ffaaeab7c5dda58a8ec2e059e463eb536ca6b06c1718b31c28d6de4255e259c9"
         },
         "previewOnly": false
       }
@@ -46455,6 +47389,226 @@
       }
     },
     {
+      "id": "voice.explainer.l03-eleven-chris.v1",
+      "kind": "voice",
+      "title": "explainer l03 · eleven-chris",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l03-eleven-chris.v1.mp3",
+          "sha256": "d57ba4ced2911efb7cc0e46d7b0f704182694b2091b0e81b02b41c5977851f47",
+          "bytes": 27628,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l03-eleven-chris.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l03",
+        "profile:eleven-chris",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l03-eleven-chris.v1",
+        "title": "explainer l03 · eleven-chris",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l03-eleven-chris.v1.mp3",
+            "sha256": "d57ba4ced2911efb7cc0e46d7b0f704182694b2091b0e81b02b41c5977851f47",
+            "bytes": 27628,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l03",
+            "profile:eleven-chris",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:iP95p4xoKVk53GoZ742B",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00435,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 1.672,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l03",
+            "text": "Meet Zee. She's your stylist.",
+            "startSec": 0,
+            "endSec": 1.672
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "iP95p4xoKVk53GoZ742B",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Meet Zee. She's your stylist.",
+          "chars": 29,
+          "cacheKey": "569c8fafec5c7a92104cc5ff7a08993e5294384523227ba9f371df83e98ae649"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l03-eleven-jessica-v4.v1",
+      "kind": "voice",
+      "title": "explainer l03 · eleven-jessica-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l03-eleven-jessica-v4.v1.mp3",
+          "sha256": "8b129d4bce31af70acb07c3b12937d097d3afe0a82cc99fc553494eb3613d382",
+          "bytes": 38077,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l03-eleven-jessica-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l03",
+        "profile:eleven-jessica-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l03-eleven-jessica-v4.v1",
+        "title": "explainer l03 · eleven-jessica-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l03-eleven-jessica-v4.v1.mp3",
+            "sha256": "8b129d4bce31af70acb07c3b12937d097d3afe0a82cc99fc553494eb3613d382",
+            "bytes": 38077,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l03",
+            "profile:eleven-jessica-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:cgSgspJ2msm6clMCkdW9",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00435,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.32,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l03",
+            "text": "Meet Zee. She's your stylist.",
+            "startSec": 0,
+            "endSec": 2.32
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "cgSgspJ2msm6clMCkdW9",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Meet Zee. She's your stylist.",
+          "chars": 29,
+          "cacheKey": "39d0d1c6259b24d5daa3503fa4169a6c0419d11bd942a4d1be44d60c5388d9fa"
+        },
+        "previewOnly": false
+      }
+    },
+    {
       "id": "voice.explainer.l03-eleven-jessica.v1",
       "kind": "voice",
       "title": "explainer l03 · eleven-jessica",
@@ -46670,6 +47824,226 @@
           "text": "Meet Zee. She's your stylist.",
           "chars": 29,
           "cacheKey": "fb4f00585eb4b59d96d7b707d6a1142ed29e02f2ccbbba32e849547b2bae7ca6"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l03-eleven-will-v4.v1",
+      "kind": "voice",
+      "title": "explainer l03 · eleven-will-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l03-eleven-will-v4.v1.mp3",
+          "sha256": "ef97bc14e1a49e84b11bae3522fec5dfb461ec66460018662d059b00221268cb",
+          "bytes": 36823,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l03-eleven-will-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l03",
+        "profile:eleven-will-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l03-eleven-will-v4.v1",
+        "title": "explainer l03 · eleven-will-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l03-eleven-will-v4.v1.mp3",
+            "sha256": "ef97bc14e1a49e84b11bae3522fec5dfb461ec66460018662d059b00221268cb",
+            "bytes": 36823,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l03",
+            "profile:eleven-will-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00435,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.24,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l03",
+            "text": "Meet Zee. She's your stylist.",
+            "startSec": 0,
+            "endSec": 2.24
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Meet Zee. She's your stylist.",
+          "chars": 29,
+          "cacheKey": "544b1b96ee2ce4782e928a57486b6fb1938d8d42f3b0baa97701cd33d52e398c"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l03-eleven-will.v1",
+      "kind": "voice",
+      "title": "explainer l03 · eleven-will",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l03-eleven-will.v1.mp3",
+          "sha256": "def1f7cc21af15fc9c2904002acd7b3a5e522c2b47376a201767250d66d2228a",
+          "bytes": 32225,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l03-eleven-will.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l03",
+        "profile:eleven-will",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l03-eleven-will.v1",
+        "title": "explainer l03 · eleven-will",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l03-eleven-will.v1.mp3",
+            "sha256": "def1f7cc21af15fc9c2904002acd7b3a5e522c2b47376a201767250d66d2228a",
+            "bytes": 32225,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l03",
+            "profile:eleven-will",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00435,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 1.95,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l03",
+            "text": "Meet Zee. She's your stylist.",
+            "startSec": 0,
+            "endSec": 1.95
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Meet Zee. She's your stylist.",
+          "chars": 29,
+          "cacheKey": "b4fdc08ab19e21b295d474ceedd71de34110f6c3a2348f585769f51e3907e0ab"
         },
         "previewOnly": false
       }
@@ -47764,6 +49138,226 @@
       }
     },
     {
+      "id": "voice.explainer.l04-eleven-chris.v1",
+      "kind": "voice",
+      "title": "explainer l04 · eleven-chris",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l04-eleven-chris.v1.mp3",
+          "sha256": "3b03499e39e56ef92d5f32ecf390685fa6988744ea939dc8e7dc34352dba925a",
+          "bytes": 63572,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l04-eleven-chris.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l04",
+        "profile:eleven-chris",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l04-eleven-chris.v1",
+        "title": "explainer l04 · eleven-chris",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l04-eleven-chris.v1.mp3",
+            "sha256": "3b03499e39e56ef92d5f32ecf390685fa6988744ea939dc8e7dc34352dba925a",
+            "bytes": 63572,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l04",
+            "profile:eleven-chris",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:iP95p4xoKVk53GoZ742B",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.01065,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 3.901,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l04",
+            "text": "She lives in Curate, she learns your closet, and she's always up early.",
+            "startSec": 0,
+            "endSec": 3.901
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "iP95p4xoKVk53GoZ742B",
+          "speed": 1,
+          "format": "mp3",
+          "text": "She lives in Curate, she learns your closet, and she's always up early.",
+          "chars": 71,
+          "cacheKey": "acb78227fc2d83f6adac504b9283a0e7152a7b26df5c8769c0246f55c7d03bbe"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l04-eleven-jessica-v4.v1",
+      "kind": "voice",
+      "title": "explainer l04 · eleven-jessica-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l04-eleven-jessica-v4.v1.mp3",
+          "sha256": "d3218de18c5dafc9b0fe42a8708ea8548becf53b1df185cd312eed5dc046bb94",
+          "bytes": 72767,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l04-eleven-jessica-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l04",
+        "profile:eleven-jessica-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l04-eleven-jessica-v4.v1",
+        "title": "explainer l04 · eleven-jessica-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l04-eleven-jessica-v4.v1.mp3",
+            "sha256": "d3218de18c5dafc9b0fe42a8708ea8548becf53b1df185cd312eed5dc046bb94",
+            "bytes": 72767,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l04",
+            "profile:eleven-jessica-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:cgSgspJ2msm6clMCkdW9",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.01065,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 4.48,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l04",
+            "text": "She lives in Curate, she learns your closet, and she's always up early.",
+            "startSec": 0,
+            "endSec": 4.48
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "cgSgspJ2msm6clMCkdW9",
+          "speed": 1,
+          "format": "mp3",
+          "text": "She lives in Curate, she learns your closet, and she's always up early.",
+          "chars": 71,
+          "cacheKey": "5ee9177be33692a5f0e5349fe72b34d0736d7a4c3c6cda6fc33169eae94b311a"
+        },
+        "previewOnly": false
+      }
+    },
+    {
       "id": "voice.explainer.l04-eleven-jessica.v1",
       "kind": "voice",
       "title": "explainer l04 · eleven-jessica",
@@ -47979,6 +49573,226 @@
           "text": "She lives in Curate, she learns your closet, and she's always up early.",
           "chars": 71,
           "cacheKey": "bee0d7694e3eeeadc23326677b222b748cffa7402b79a1a81924e5b08a037f39"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l04-eleven-will-v4.v1",
+      "kind": "voice",
+      "title": "explainer l04 · eleven-will-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l04-eleven-will-v4.v1.mp3",
+          "sha256": "5a3e325a8e4c01c31af657e05a7b37645ba063fe6b4f708f663f14bfa628b3f8",
+          "bytes": 76529,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l04-eleven-will-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l04",
+        "profile:eleven-will-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l04-eleven-will-v4.v1",
+        "title": "explainer l04 · eleven-will-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l04-eleven-will-v4.v1.mp3",
+            "sha256": "5a3e325a8e4c01c31af657e05a7b37645ba063fe6b4f708f663f14bfa628b3f8",
+            "bytes": 76529,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l04",
+            "profile:eleven-will-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.01065,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 4.72,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l04",
+            "text": "She lives in Curate, she learns your closet, and she's always up early.",
+            "startSec": 0,
+            "endSec": 4.72
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "She lives in Curate, she learns your closet, and she's always up early.",
+          "chars": 71,
+          "cacheKey": "3a55a44bf9a7c43fbf81662ec5fd601fb451b9d3d468bf46d67d3365cb9137fd"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l04-eleven-will.v1",
+      "kind": "voice",
+      "title": "explainer l04 · eleven-will",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l04-eleven-will.v1.mp3",
+          "sha256": "0a70d0a68e3983b87e962b72252da92d75e2b0e6e20debb35d53745b18c2e70f",
+          "bytes": 58139,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l04-eleven-will.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l04",
+        "profile:eleven-will",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l04-eleven-will.v1",
+        "title": "explainer l04 · eleven-will",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l04-eleven-will.v1.mp3",
+            "sha256": "0a70d0a68e3983b87e962b72252da92d75e2b0e6e20debb35d53745b18c2e70f",
+            "bytes": 58139,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l04",
+            "profile:eleven-will",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.01065,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 3.576,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l04",
+            "text": "She lives in Curate, she learns your closet, and she's always up early.",
+            "startSec": 0,
+            "endSec": 3.576
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "She lives in Curate, she learns your closet, and she's always up early.",
+          "chars": 71,
+          "cacheKey": "b5fdf9ac62f45313bc9417f1d0dae73fc0410af6568d6f2070846e7f59e5ba7a"
         },
         "previewOnly": false
       }
@@ -49073,6 +50887,226 @@
       }
     },
     {
+      "id": "voice.explainer.l05-eleven-chris.v1",
+      "kind": "voice",
+      "title": "explainer l05 · eleven-chris",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l05-eleven-chris.v1.mp3",
+          "sha256": "c53593376a20ea97f213414d46b680d63d230740f9cd894724d7adfffc855f37",
+          "bytes": 33897,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l05-eleven-chris.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l05",
+        "profile:eleven-chris",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l05-eleven-chris.v1",
+        "title": "explainer l05 · eleven-chris",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l05-eleven-chris.v1.mp3",
+            "sha256": "c53593376a20ea97f213414d46b680d63d230740f9cd894724d7adfffc855f37",
+            "bytes": 33897,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l05",
+            "profile:eleven-chris",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:iP95p4xoKVk53GoZ742B",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00555,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.043,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l05",
+            "text": "First, Zee needs to see what you own.",
+            "startSec": 0,
+            "endSec": 2.043
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "iP95p4xoKVk53GoZ742B",
+          "speed": 1,
+          "format": "mp3",
+          "text": "First, Zee needs to see what you own.",
+          "chars": 37,
+          "cacheKey": "12940ec0cf89130515fc79f2f5b0b71d487a11e348ea3e024d775a8e373016bb"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l05-eleven-jessica-v4.v1",
+      "kind": "voice",
+      "title": "explainer l05 · eleven-jessica-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l05-eleven-jessica-v4.v1.mp3",
+          "sha256": "7da407b9b6e330a9764fc34ffe7ddeb1ffd625328bd367353078f0e36c14b4d8",
+          "bytes": 44764,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l05-eleven-jessica-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l05",
+        "profile:eleven-jessica-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l05-eleven-jessica-v4.v1",
+        "title": "explainer l05 · eleven-jessica-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l05-eleven-jessica-v4.v1.mp3",
+            "sha256": "7da407b9b6e330a9764fc34ffe7ddeb1ffd625328bd367353078f0e36c14b4d8",
+            "bytes": 44764,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l05",
+            "profile:eleven-jessica-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:cgSgspJ2msm6clMCkdW9",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00555,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.72,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l05",
+            "text": "First, Zee needs to see what you own.",
+            "startSec": 0,
+            "endSec": 2.72
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "cgSgspJ2msm6clMCkdW9",
+          "speed": 1,
+          "format": "mp3",
+          "text": "First, Zee needs to see what you own.",
+          "chars": 37,
+          "cacheKey": "56f7a98bee3ed6e83676daca47d75df58d40afaec56180af09a58011b19cbdef"
+        },
+        "previewOnly": false
+      }
+    },
+    {
       "id": "voice.explainer.l05-eleven-jessica.v1",
       "kind": "voice",
       "title": "explainer l05 · eleven-jessica",
@@ -49288,6 +51322,226 @@
           "text": "First, Zee needs to see what you own.",
           "chars": 37,
           "cacheKey": "0feb3686d0d9916b09a01915ee77eaf0d4d2139d04a6f764bdbd6b9c9f6e8281"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l05-eleven-will-v4.v1",
+      "kind": "voice",
+      "title": "explainer l05 · eleven-will-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l05-eleven-will-v4.v1.mp3",
+          "sha256": "c9fe4dbe7d22c17a4ee6d452655096a96b354c256d9424ecc05682482a97d2cc",
+          "bytes": 46018,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l05-eleven-will-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l05",
+        "profile:eleven-will-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l05-eleven-will-v4.v1",
+        "title": "explainer l05 · eleven-will-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l05-eleven-will-v4.v1.mp3",
+            "sha256": "c9fe4dbe7d22c17a4ee6d452655096a96b354c256d9424ecc05682482a97d2cc",
+            "bytes": 46018,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l05",
+            "profile:eleven-will-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00555,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.8,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l05",
+            "text": "First, Zee needs to see what you own.",
+            "startSec": 0,
+            "endSec": 2.8
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "First, Zee needs to see what you own.",
+          "chars": 37,
+          "cacheKey": "2824c5eb683564392122900d35d578bed7dbfdd18c4d7873751eeb265dd0ed6b"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l05-eleven-will.v1",
+      "kind": "voice",
+      "title": "explainer l05 · eleven-will",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l05-eleven-will.v1.mp3",
+          "sha256": "6ea3c738dfe736ef19222c15697e1c52516e854cd6dff8dbd2bd27faf36d123d",
+          "bytes": 36823,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l05-eleven-will.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l05",
+        "profile:eleven-will",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l05-eleven-will.v1",
+        "title": "explainer l05 · eleven-will",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l05-eleven-will.v1.mp3",
+            "sha256": "6ea3c738dfe736ef19222c15697e1c52516e854cd6dff8dbd2bd27faf36d123d",
+            "bytes": 36823,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l05",
+            "profile:eleven-will",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00555,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.229,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l05",
+            "text": "First, Zee needs to see what you own.",
+            "startSec": 0,
+            "endSec": 2.229
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "First, Zee needs to see what you own.",
+          "chars": 37,
+          "cacheKey": "9569f041525fe55b113d91deb136a63075c1198ffca89136dd7613f68b35f4db"
         },
         "previewOnly": false
       }
@@ -50382,6 +52636,226 @@
       }
     },
     {
+      "id": "voice.explainer.l06-eleven-chris.v1",
+      "kind": "voice",
+      "title": "explainer l06 · eleven-chris",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l06-eleven-chris.v1.mp3",
+          "sha256": "4c1041b89b70581ba0b2953b2235988e654ff326cca81c9553efca9143671ba8",
+          "bytes": 23448,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l06-eleven-chris.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l06",
+        "profile:eleven-chris",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l06-eleven-chris.v1",
+        "title": "explainer l06 · eleven-chris",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l06-eleven-chris.v1.mp3",
+            "sha256": "4c1041b89b70581ba0b2953b2235988e654ff326cca81c9553efca9143671ba8",
+            "bytes": 23448,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l06",
+            "profile:eleven-chris",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:iP95p4xoKVk53GoZ742B",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00405,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 1.393,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l06",
+            "text": "No photo shoots, no typing.",
+            "startSec": 0,
+            "endSec": 1.393
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "iP95p4xoKVk53GoZ742B",
+          "speed": 1,
+          "format": "mp3",
+          "text": "No photo shoots, no typing.",
+          "chars": 27,
+          "cacheKey": "310f31340bd1247a1f63abcfb42c8ae47f5915ddbf3fa0881634d55be54af232"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l06-eleven-jessica-v4.v1",
+      "kind": "voice",
+      "title": "explainer l06 · eleven-jessica-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l06-eleven-jessica-v4.v1.mp3",
+          "sha256": "5faaea5ee2812b29c4d7ebce3f2f28f4a69671ded8b87e364f44a781e9a0c5cb",
+          "bytes": 39331,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l06-eleven-jessica-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l06",
+        "profile:eleven-jessica-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l06-eleven-jessica-v4.v1",
+        "title": "explainer l06 · eleven-jessica-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l06-eleven-jessica-v4.v1.mp3",
+            "sha256": "5faaea5ee2812b29c4d7ebce3f2f28f4a69671ded8b87e364f44a781e9a0c5cb",
+            "bytes": 39331,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l06",
+            "profile:eleven-jessica-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:cgSgspJ2msm6clMCkdW9",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00405,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.4,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l06",
+            "text": "No photo shoots, no typing.",
+            "startSec": 0,
+            "endSec": 2.4
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "cgSgspJ2msm6clMCkdW9",
+          "speed": 1,
+          "format": "mp3",
+          "text": "No photo shoots, no typing.",
+          "chars": 27,
+          "cacheKey": "c42c11777e544c1016361c4407a277e1804e534092fa9ee1be5cd4df68906ae9"
+        },
+        "previewOnly": false
+      }
+    },
+    {
       "id": "voice.explainer.l06-eleven-jessica.v1",
       "kind": "voice",
       "title": "explainer l06 · eleven-jessica",
@@ -50597,6 +53071,226 @@
           "text": "No photo shoots, no typing.",
           "chars": 27,
           "cacheKey": "c4b0c6a1a11eb405ca91e621fea45685040585c203a322ed7e3525bb83f497dc"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l06-eleven-will-v4.v1",
+      "kind": "voice",
+      "title": "explainer l06 · eleven-will-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l06-eleven-will-v4.v1.mp3",
+          "sha256": "f87ac53c8fe98353236043e3597ed34f1e67b532ff4c10bb04944267430dfb03",
+          "bytes": 36823,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l06-eleven-will-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l06",
+        "profile:eleven-will-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l06-eleven-will-v4.v1",
+        "title": "explainer l06 · eleven-will-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l06-eleven-will-v4.v1.mp3",
+            "sha256": "f87ac53c8fe98353236043e3597ed34f1e67b532ff4c10bb04944267430dfb03",
+            "bytes": 36823,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l06",
+            "profile:eleven-will-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00405,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.24,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l06",
+            "text": "No photo shoots, no typing.",
+            "startSec": 0,
+            "endSec": 2.24
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "No photo shoots, no typing.",
+          "chars": 27,
+          "cacheKey": "bdda705826708a4ccf2ead409e0e4dd901496f6a309b742c318a457079b32740"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l06-eleven-will.v1",
+      "kind": "voice",
+      "title": "explainer l06 · eleven-will",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l06-eleven-will.v1.mp3",
+          "sha256": "340d13bd20bed8fccc8af6a2bcbbed72efd995d78cb8ef56f61119c2c5a2927c",
+          "bytes": 31390,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l06-eleven-will.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l06",
+        "profile:eleven-will",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l06-eleven-will.v1",
+        "title": "explainer l06 · eleven-will",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l06-eleven-will.v1.mp3",
+            "sha256": "340d13bd20bed8fccc8af6a2bcbbed72efd995d78cb8ef56f61119c2c5a2927c",
+            "bytes": 31390,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l06",
+            "profile:eleven-will",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00405,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 1.904,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l06",
+            "text": "No photo shoots, no typing.",
+            "startSec": 0,
+            "endSec": 1.904
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "No photo shoots, no typing.",
+          "chars": 27,
+          "cacheKey": "d80a00c8f9f027552e75f1f9765429bef1b12b296161ff34fa7dc39c261b6ba7"
         },
         "previewOnly": false
       }
@@ -51691,6 +54385,226 @@
       }
     },
     {
+      "id": "voice.explainer.l07-eleven-chris.v1",
+      "kind": "voice",
+      "title": "explainer l07 · eleven-chris",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l07-eleven-chris.v1.mp3",
+          "sha256": "2c296542ac58f2d3a128d30c1d86836821ef6071e63cf9b494909074732ddcca",
+          "bytes": 42674,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l07-eleven-chris.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l07",
+        "profile:eleven-chris",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l07-eleven-chris.v1",
+        "title": "explainer l07 · eleven-chris",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l07-eleven-chris.v1.mp3",
+            "sha256": "2c296542ac58f2d3a128d30c1d86836821ef6071e63cf9b494909074732ddcca",
+            "bytes": 42674,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l07",
+            "profile:eleven-chris",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:iP95p4xoKVk53GoZ742B",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00945,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 2.601,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l07",
+            "text": "Your clothes are already in your photos, because you wear them.",
+            "startSec": 0,
+            "endSec": 2.601
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "iP95p4xoKVk53GoZ742B",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Your clothes are already in your photos, because you wear them.",
+          "chars": 63,
+          "cacheKey": "13eaf0bbda3269a6a3053734fb9cd9eff5ce7d5ca4042467df75db7ae465268a"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l07-eleven-jessica-v4.v1",
+      "kind": "voice",
+      "title": "explainer l07 · eleven-jessica-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l07-eleven-jessica-v4.v1.mp3",
+          "sha256": "76b99e5f8b32bc4908c9b1d9d40e4d08f01eee9d1ff20cda64dff6ee9e5270aa",
+          "bytes": 59811,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l07-eleven-jessica-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l07",
+        "profile:eleven-jessica-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l07-eleven-jessica-v4.v1",
+        "title": "explainer l07 · eleven-jessica-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l07-eleven-jessica-v4.v1.mp3",
+            "sha256": "76b99e5f8b32bc4908c9b1d9d40e4d08f01eee9d1ff20cda64dff6ee9e5270aa",
+            "bytes": 59811,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l07",
+            "profile:eleven-jessica-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:cgSgspJ2msm6clMCkdW9",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00945,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 3.68,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l07",
+            "text": "Your clothes are already in your photos, because you wear them.",
+            "startSec": 0,
+            "endSec": 3.68
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "cgSgspJ2msm6clMCkdW9",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Your clothes are already in your photos, because you wear them.",
+          "chars": 63,
+          "cacheKey": "bc5c155e69cb4fec3c84430c66503195d4c6d83224b4c47ffaf9c634fc90e187"
+        },
+        "previewOnly": false
+      }
+    },
+    {
       "id": "voice.explainer.l07-eleven-jessica.v1",
       "kind": "voice",
       "title": "explainer l07 · eleven-jessica",
@@ -51906,6 +54820,226 @@
           "text": "Your clothes are already in your photos, because you wear them.",
           "chars": 63,
           "cacheKey": "318db12f8eda8be270c5e917686afd5e5533740b95e6959aa3e0eccbd90f3129"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l07-eleven-will-v4.v1",
+      "kind": "voice",
+      "title": "explainer l07 · eleven-will-v4",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l07-eleven-will-v4.v1.mp3",
+          "sha256": "8a38182bb767a6b5860589c1375b828d1e72e9cd6bf3905b3508f75cff3010bd",
+          "bytes": 59811,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l07-eleven-will-v4.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l07",
+        "profile:eleven-will-v4",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l07-eleven-will-v4.v1",
+        "title": "explainer l07 · eleven-will-v4",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l07-eleven-will-v4.v1.mp3",
+            "sha256": "8a38182bb767a6b5860589c1375b828d1e72e9cd6bf3905b3508f75cff3010bd",
+            "bytes": 59811,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l07",
+            "profile:eleven-will-v4",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00945,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 3.68,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l07",
+            "text": "Your clothes are already in your photos, because you wear them.",
+            "startSec": 0,
+            "endSec": 3.68
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_v4",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Your clothes are already in your photos, because you wear them.",
+          "chars": 63,
+          "cacheKey": "46a6caef4fdb814ea8c8bcdc069398a0949ef6dc657fea19f79dc3e55dccd228"
+        },
+        "previewOnly": false
+      }
+    },
+    {
+      "id": "voice.explainer.l07-eleven-will.v1",
+      "kind": "voice",
+      "title": "explainer l07 · eleven-will",
+      "status": "draft",
+      "manifest": "library/voice/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/explainer/l07-eleven-will.v1.mp3",
+          "sha256": "ad2a870185420d1fc0aecd1b6c4a85218b587a08cb7720b30c15fbe6a34982a7",
+          "bytes": 53123,
+          "mime": "audio/mpeg",
+          "s3Key": "library/voice/explainer/l07-eleven-will.v1.mp3"
+        }
+      ],
+      "tags": [
+        "ad:explainer",
+        "ai-generated",
+        "kind:voice",
+        "licence:ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "line:l07",
+        "profile:eleven-will",
+        "provider:elevenlabs",
+        "scope:explainer",
+        "status:draft"
+      ],
+      "licence": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+      "aiGenerated": true,
+      "asset": {
+        "id": "voice.explainer.l07-eleven-will.v1",
+        "title": "explainer l07 · eleven-will",
+        "files": [
+          {
+            "role": "original",
+            "path": "voice/explainer/l07-eleven-will.v1.mp3",
+            "sha256": "ad2a870185420d1fc0aecd1b6c4a85218b587a08cb7720b30c15fbe6a34982a7",
+            "bytes": 53123,
+            "mime": "audio/mpeg"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": [
+            "ad:explainer",
+            "line:l07",
+            "profile:eleven-will",
+            "provider:elevenlabs"
+          ]
+        },
+        "source": {
+          "type": "generated",
+          "model": "elevenlabs/eleven_multilingual_v2:bIHbv24MWmeRgasZH58o",
+          "from": [],
+          "tool": "tools/voice generate"
+        },
+        "licence": {
+          "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+          "url": "https://elevenlabs.io/terms-of-use",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [
+            "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+            "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+            "keep-the-paid-plan-active-when-generating-clips-that-ship",
+            "disclose-ai-generated-voice-to-listeners",
+            "elevenlabs-prohibited-use-policy",
+            "no-impersonation-of-real-people"
+          ],
+          "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+          "checkedAt": "2026-10-15"
+        },
+        "cost": {
+          "usd": 0.00945,
+          "calls": 1
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code",
+          "at": "2026-10-15"
+        },
+        "status": "draft",
+        "aiGenerated": true,
+        "kind": "voice",
+        "durationSec": 3.251,
+        "ad": "explainer",
+        "origin": "tts",
+        "lines": [
+          {
+            "line": "l07",
+            "text": "Your clothes are already in your photos, because you wear them.",
+            "startSec": 0,
+            "endSec": 3.251
+          }
+        ],
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_multilingual_v2",
+          "voice": "bIHbv24MWmeRgasZH58o",
+          "speed": 1,
+          "format": "mp3",
+          "text": "Your clothes are already in your photos, because you wear them.",
+          "chars": 63,
+          "cacheKey": "4b01c9bb13a8e4763ecc2970a0dce6699d97ac6d89808e7492151b9c13f487cf"
         },
         "previewOnly": false
       }

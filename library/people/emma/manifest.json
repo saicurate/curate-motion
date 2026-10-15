@@ -26,7 +26,8 @@
         "type": "generated",
         "model": "gemini-3-pro-image",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/portraits.py"
+        "tool": "marketing/videos/assets/_tools/portraits.py",
+        "promptId": "prompt.image-gen.face-emma-a.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -82,7 +83,8 @@
         "type": "generated",
         "model": "gemini-3-pro-image",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/portraits.py"
+        "tool": "marketing/videos/assets/_tools/portraits.py",
+        "promptId": "prompt.image-gen.face-emma-b.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -141,7 +143,8 @@
         "type": "generated",
         "model": "gemini-3-pro-image",
         "from": [],
-        "tool": "marketing/videos/assets/_tools/portraits.py"
+        "tool": "marketing/videos/assets/_tools/portraits.py",
+        "promptId": "prompt.image-gen.face-emma-c.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -198,7 +201,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.selfie-emma-front-camera.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -258,7 +262,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.tryon-base-emma-1.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",
@@ -320,7 +325,8 @@
         "model": "gemini-3-pro-image",
         "from": [
           "face.emma.b.v1"
-        ]
+        ],
+        "promptId": "prompt.image-gen.tryon-base-emma-2.v1"
       },
       "licence": {
         "name": "AI-generated, Curate-owned output",

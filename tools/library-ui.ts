@@ -14,6 +14,9 @@
 // voice" makes free say-preview clips; "Generate" (paid) needs a confirmation AND
 // config/voice.json › tts.spendCapUsd above spent + estimate, which tools/lib/voice.ts checks again.
 //
+// The Prompts and Inspo tabs (tools/library-ui-tabs.js) read and write prompts/ and inspo/ through
+// /api/prompts/* and /api/inspo/* (tools/lib/boards-api.ts → the same code as tools/prompts and tools/inspo).
+//
 // Localhost only: it binds 127.0.0.1, checks the Host header, and every write needs the per-run
 // token baked into the page, so another website can't drive it. It calls the SAME code as
 // tools/catalog (tools/lib/catalog.ts), so every change is validated and lands in the manifests,
@@ -31,6 +34,7 @@ import { addAsset, approveAsset, KIND_FIELDS, LICENCES, removeAsset, replaceAsse
 import { KINDS } from "../schemas/asset.ts";
 import { applyVoiceChange, partOf, readVoiceState, type VoiceChange } from "./lib/voice-settings.ts";
 import { loadConfig, planFor, PROVIDERS } from "./lib/voice.ts";
+import { boardsGet, boardsPost, inspoUpload } from "./lib/boards-api.ts";
 import type { VoiceMode } from "../schemas/voice.ts";
 
 const args = parseArgs(process.argv.slice(2));
@@ -157,7 +161,7 @@ const server = createServer(async (req, res) => {
 
     if (req.method === "GET") {
       if (u.pathname === "/" || u.pathname === "/index.html") {
-        const html = readFileSync(join(ROOT, "tracker", "index.html"), "utf8").replace("<!--UI-TOKEN-->", `<meta name="ui-token" content="${TOKEN}"><script src="/ui/voice.js" defer></script>`);
+        const html = readFileSync(join(ROOT, "tracker", "index.html"), "utf8").replace("<!--UI-TOKEN-->", `<meta name="ui-token" content="${TOKEN}"><script src="/ui/voice.js" defer></script><script src="/ui/tabs.js" defer></script>`);
         return send(res, 200, html, "text/html; charset=utf-8");
       }
       if (u.pathname === "/data/catalog.json") return send(res, 200, existsSync(INDEX_PATH) ? readFileSync(INDEX_PATH) : "{}");
@@ -169,6 +173,8 @@ const server = createServer(async (req, res) => {
         return send(res, 200, { people });
       }
       if (u.pathname === "/ui/voice.js") return staticFile(res, join(ROOT, "tools"), "library-ui-voice.js");
+      if (u.pathname === "/ui/tabs.js") return staticFile(res, join(ROOT, "tools"), "library-ui-tabs.js");
+      if (u.pathname === "/api/prompts" || u.pathname === "/api/inspo") return send(res, 200, boardsGet(u.pathname));
       if (u.pathname === "/api/voice/state") {
         const port = (server.address() as { port: number }).port;
         return send(res, 200, { ...readVoiceState(), push: PUSH, lan: LAN, busy: voiceBusy, ...(LAN && local ? { phoneLinks: lanIps().map((ip) => `http://${ip}:${port}/?k=${TOKEN}`) } : {}) });
@@ -183,6 +189,14 @@ const server = createServer(async (req, res) => {
     if (req.headers["x-ui-token"] !== TOKEN) return send(res, 403, { error: "bad token: reload the page" });
     const by = q.by || "founder";
 
+    if (u.pathname === "/api/inspo/add-file") {
+      const t = tempFile(await body(req), q.filename || "upload.bin");
+      try {
+        return send(res, 200, inspoUpload(t.p, q, by, PUSH));
+      } finally {
+        t.done();
+      }
+    }
     if (u.pathname === "/api/add" || u.pathname === "/api/replace") {
       const t = tempFile(await body(req), q.filename || "upload.bin");
       try {
@@ -214,6 +228,11 @@ const server = createServer(async (req, res) => {
     if (u.pathname === "/api/remove") return send(res, 200, removeAsset(j.id, { force: !!j.force }));
     if (u.pathname === "/api/approve") return send(res, 200, approveAsset(j.id, j.by || by));
     if (u.pathname === "/api/tag") return send(res, 200, tagAsset(j.id, j.add ?? [], j.remove ?? []));
+    // ---- the Prompts and Inspo tabs
+    if (u.pathname.startsWith("/api/prompts/") || u.pathname.startsWith("/api/inspo/")) {
+      const r = boardsPost(u.pathname, j, by, PUSH);
+      if (r !== undefined) return send(res, 200, r);
+    }
 
     // ---- the Voice panel
     const v = j as unknown as { ad: string; mode: VoiceMode; use?: string; part?: string; expectUsd?: number; confirm?: boolean; capUsd?: number; version?: string } & VoiceChange;

@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^inspo\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "video",
+        "image",
+        "link",
+        "audio",
+        "app-screen",
+        "ad",
+        "other"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "asset": {
+      "type": "string",
+      "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+    },
+    "addedBy": {
+      "type": "string",
+      "minLength": 2
+    },
+    "addedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(T[\\d:.]+Z)?$"
+    },
+    "love": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "techniques": {
+      "default": {
+        "transitions": [],
+        "pacing": [],
+        "type": [],
+        "colour": [],
+        "other": []
+      },
+      "type": "object",
+      "properties": {
+        "transitions": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "pacing": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "type": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "colour": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "other": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "useFor": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9:._-]*$"
+      }
+    },
+    "status": {
+      "default": "active",
+      "type": "string",
+      "enum": [
+        "active",
+        "archived"
+      ]
+    },
+    "links": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "label",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "source": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "kind",
+    "addedBy",
+    "addedAt"
+  ],
+  "additionalProperties": false
+}
