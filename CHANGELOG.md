@@ -19,3 +19,8 @@ in the manifests' git history; list only notable ones here.
 - Agent guides: AGENTS.md (canonical), CLAUDE.md, GEMINI.md, .cursor/rules, copilot-instructions.
 - CI (GitHub Action) + pre-commit hook: no media or secrets in git; schemas, licences, ids, index freshness.
 - Not yet: the migration of marketing/videos (ARCHITECTURE.md › 10). The library is empty until then.
+
+## 2026-10-15
+- Migrated the marketing library from marketing/videos: 192 assets, media in S3, validated with 0 errors.
+- Emma's Curate account is live (49 wardrobe pieces); account files under library/people/emma/.
+- Fixed tools/sync for Zee frame folders.
