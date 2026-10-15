@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the tab-switch moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.tab-switch.v1",
+      "title": "Tab taps: Try-ons, Profile, Wardrobe, then a swipe to Chat (glass capsule moves)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/tab-switch/emma-b262.v1.mp4",
+          "sha256": "08ffb24de80345dd0d30435d5bedef21e2bda946918f9c77e417bfaf5880abc6",
+          "bytes": 2155176,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "tab-switch",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:tab-bar",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 11.4,
+      "fps": 60,
+      "moment": "tab-switch",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

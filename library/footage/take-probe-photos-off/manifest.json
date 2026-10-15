@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the take-probe-photos-off moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.take-probe-photos-off.v1",
+      "title": "Full probe take: photos_off_probe flow (ends on the probe phone's own Photos alert)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/take-probe-photos-off/emma-b262.v1.mp4",
+          "sha256": "a8b7cad1aef1d0575346aa9db7c5c9c5bc914526dbe6ca418f1195cd7fcc60b1",
+          "bytes": 23753254,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "take-probe-photos-off",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:take",
+          "appBuild:262",
+          "source:probe",
+          "kind:full-take"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 44.517,
+      "fps": 60,
+      "moment": "take-probe-photos-off",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

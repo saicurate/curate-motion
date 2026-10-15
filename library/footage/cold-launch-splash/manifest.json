@@ -1,0 +1,138 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the cold-launch-splash moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.cold-launch-splash.v1",
+      "title": "Cold launch: the Curate mark pulses, then her Wardrobe",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/cold-launch-splash/emma-b262.v1.mp4",
+          "sha256": "6f8df284214198d47c189058fabe11d28ded7c6f37d4416afa2c0a68222efccb",
+          "bytes": 2724553,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "cold-launch-splash",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:splash",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 3.8,
+      "fps": 60,
+      "moment": "cold-launch-splash",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.cold-launch-splash.v2",
+      "title": "Cold launch (from the photo-scan take)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/cold-launch-splash/emma-b262.v2.mp4",
+          "sha256": "537b951c2ec83fc2d9ef223242712a47c6ae5e646c9a51fba0b900f2bc3e5821",
+          "bytes": 1463325,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "cold-launch-splash",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:splash",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 3.9,
+      "fps": 60,
+      "moment": "cold-launch-splash",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

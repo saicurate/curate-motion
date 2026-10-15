@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the required-update moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.required-update.v1",
+      "title": "Required update screen, 1200 ms entrance",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/required-update/emma-b262.v1.mp4",
+          "sha256": "4af24deeb31a9f9cf5db9a8224bede2fb419b9d9d9a1132a69c90944a2a1f120",
+          "bytes": 483859,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "required-update",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:app-update",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 4,
+      "fps": 60,
+      "moment": "required-update",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

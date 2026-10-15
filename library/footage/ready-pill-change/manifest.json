@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the ready-pill-change moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.ready-pill-change.v1",
+      "title": "\"Curate at work\" becomes \"Your wardrobe is ready ›\"",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/ready-pill-change/emma-b262.v1.mp4",
+          "sha256": "bde03836da4554d979a8e2635ea3c87925f2c37c502c1c7dfa9b0e7765f85d34",
+          "bytes": 730707,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "ready-pill-change",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:wardrobe",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 2.8,
+      "fps": 60,
+      "moment": "ready-pill-change",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

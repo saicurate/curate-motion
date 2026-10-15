@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the scan-roll moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.scan-roll.v1",
+      "title": "The scan roll at real speed: Zee's magnifier, photos of her lift into Picked",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/scan-roll/emma-b262.v1.mp4",
+          "sha256": "57e480b14b4767e927029ca9254735b56bc99d11fc019c9891f31765a921bde1",
+          "bytes": 9816959,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "scan-roll",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:scan",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 6.6,
+      "fps": 60,
+      "moment": "scan-roll",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the take-probe-selfie-flow-2 moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.take-probe-selfie-flow-2.v1",
+      "title": "Full probe take: selfie_b_probe flow, second take",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/take-probe-selfie-flow-2/emma-b262.v1.mp4",
+          "sha256": "c4d1d31f3c393f3912cf7640519dd92f4860df8856823a4100edf7139e7b4eef",
+          "bytes": 24926250,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "take-probe-selfie-flow-2",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:take",
+          "appBuild:262",
+          "source:probe",
+          "kind:full-take"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 54.45,
+      "fps": 60,
+      "moment": "take-probe-selfie-flow-2",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

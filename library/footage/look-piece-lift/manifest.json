@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the look-piece-lift moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.look-piece-lift.v1",
+      "title": "Tap a piece: it lifts, the others dim, swap choices",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/look-piece-lift/emma-b262.v1.mp4",
+          "sha256": "1ac258821aa80b7c74da2a282f05f6debb97a5a98ae075401d1537ff3fc07011",
+          "bytes": 1320574,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "look-piece-lift",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 8.2,
+      "fps": 60,
+      "moment": "look-piece-lift",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

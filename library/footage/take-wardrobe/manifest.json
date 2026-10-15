@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the take-wardrobe moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.take-wardrobe.v1",
+      "title": "Full take: Wardrobe chips, scroll, item page, edit sheet, Add item sheet",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/take-wardrobe/emma-b262.v1.mp4",
+          "sha256": "459bcd5b7e7c59b38f71dd77e166a21d7b2008d5f2eb5a0c8b67458b2189f3f4",
+          "bytes": 42092954,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "take-wardrobe",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:take",
+          "appBuild:262",
+          "source:app",
+          "kind:full-take"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 79.783,
+      "fps": 60,
+      "moment": "take-wardrobe",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

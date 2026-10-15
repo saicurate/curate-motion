@@ -57,3 +57,4 @@ tracker/data/
 *credentials*
 *secret*
 !**/secret-names.md
+!library/footage/INVENTORY.md

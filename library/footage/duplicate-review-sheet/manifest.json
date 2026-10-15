@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the duplicate-review-sheet moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.duplicate-review-sheet.v1",
+      "title": "\"Same piece?\" sheet rises after the extraction",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/duplicate-review-sheet/emma-b262.v1.mp4",
+          "sha256": "42cad298e6676175907579dae1135550a840f691ffd0ba0e80c597d0ddbe8d68",
+          "bytes": 2118662,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "duplicate-review-sheet",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:duplicate-review",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5,
+      "fps": 60,
+      "moment": "duplicate-review-sheet",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

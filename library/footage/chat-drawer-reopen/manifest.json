@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the chat-drawer-reopen moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.chat-drawer-reopen.v1",
+      "title": "Drawer with Today's chats: reopen an earlier chat",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/chat-drawer-reopen/emma-b262.v1.mp4",
+          "sha256": "21f1026d8a6c8088685e9835cbcd50fad7a0b1e03948be2c2ba5d41d5834e33e",
+          "bytes": 907860,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "chat-drawer-reopen",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat-drawer",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 11.6,
+      "fps": 60,
+      "moment": "chat-drawer-reopen",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

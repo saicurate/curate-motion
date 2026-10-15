@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the question-card-arrive moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.question-card-arrive.v1",
+      "title": "Zee asks: \"What's tonight?\" question card arrives",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/question-card-arrive/emma-b262.v1.mp4",
+          "sha256": "3e29ba01e62773edfdf0fe28ff618b096d4594b9a72d9a93602c764b2a1bc819",
+          "bytes": 611420,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "question-card-arrive",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 6.8,
+      "fps": 60,
+      "moment": "question-card-arrive",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

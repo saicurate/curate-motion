@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the scan-stage-rise-deck moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.scan-stage-rise-deck.v1",
+      "title": "Scan stage rises, the deck deals onto the tiles",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/scan-stage-rise-deck/emma-b262.v1.mp4",
+          "sha256": "baba7a1231d1cf49264b2c4540e81ca7b98c2f5e6ae2e04bf09bdebb2fa928ad",
+          "bytes": 2899042,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "scan-stage-rise-deck",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:scan",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 3.7,
+      "fps": 60,
+      "moment": "scan-stage-rise-deck",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

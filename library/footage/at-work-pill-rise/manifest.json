@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the at-work-pill-rise moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.at-work-pill-rise.v1",
+      "title": "The \"Curate at work\" pill rises with Zee's face; the leave snack",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/at-work-pill-rise/emma-b262.v1.mp4",
+          "sha256": "1ac5298f62627201bebf2726b9c91a5bc4216d6db8a316e3740b9ac895a690fe",
+          "bytes": 740753,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "at-work-pill-rise",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:wardrobe",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.1,
+      "fps": 60,
+      "moment": "at-work-pill-rise",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

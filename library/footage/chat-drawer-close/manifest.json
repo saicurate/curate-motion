@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the chat-drawer-close moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.chat-drawer-close.v1",
+      "title": "Drawer closes back to the chat",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/chat-drawer-close/emma-b262.v1.mp4",
+          "sha256": "26b3ece4ff5648bd33c9d8a5095ffc6062ad577eac60a134cfed240dd1319353",
+          "bytes": 1055867,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "chat-drawer-close",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat-drawer",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 4,
+      "fps": 60,
+      "moment": "chat-drawer-close",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

@@ -3,8 +3,8 @@
   "persona": "emma",
   "uid": "IRUp7V2A7WWbXqJlrfTju8NuGHK2",
   "env": "prod",
-  "updatedAt": "2026-10-15T18:45:00Z",
-  "updatedBy": "account agent (Claude), 2026-10-15",
+  "updatedAt": "2026-10-15T21:00:00Z",
+  "updatedBy": "app-footage capture agent (Claude), 2026-10-15: +1 roll photo (navy cap packshot) for the Find-more and Add-item footage; Add item of it ended in the duplicate review keeping her existing cap, so the wardrobe is unchanged at 49",
   "wardrobe": [
     {
       "libraryId": "garment.emma.blazer-black.v1",
@@ -793,11 +793,12 @@
         "photo.emma.r30-walk-to-work.v1",
         "stock.unsplash.sunset-wave.v1",
         "stock.unsplash.beach-empty-highrise.v1",
-        "selfie.emma.selfie.v1"
+        "selfie.emma.selfie.v1",
+        "garment.emma.cap-baseball-navy.v1"
       ],
       "loadedAt": "2026-10-15T18:10:00Z",
       "method": "simctl-addmedia"
     }
   ],
-  "spendUsd": 1.75
+  "spendUsd": 1.83
 }

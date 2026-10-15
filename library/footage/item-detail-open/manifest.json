@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the item-detail-open moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.item-detail-open.v1",
+      "title": "Tap a piece: the item page slides in",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/item-detail-open/emma-b262.v1.mp4",
+          "sha256": "be7be4421919cbc26e51d96ad37f4751bfe13e5c47e9326c57459ca8cff8cb88",
+          "bytes": 727192,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "item-detail-open",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:wardrobe-item",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 3.4,
+      "fps": 60,
+      "moment": "item-detail-open",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

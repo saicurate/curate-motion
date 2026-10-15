@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the ob-body-3d moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.ob-body-3d.v1",
+      "title": "Onboarding 06: the 3D body loads in",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/ob-body-3d/emma-b262.v1.mp4",
+          "sha256": "c77090fbd56ec56f540da5fe4a7e1a7cf8bb33bb9e29d42a65d665fb104af6c2",
+          "bytes": 393603,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "ob-body-3d",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:onboarding-body",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 6,
+      "fps": 60,
+      "moment": "ob-body-3d",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

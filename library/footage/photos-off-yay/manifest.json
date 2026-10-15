@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the photos-off-yay moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.photos-off-yay.v1",
+      "title": "Back with Photos on: her pieces pop up, \"Yay! 🎉\", hand-off to the scan",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/photos-off-yay/emma-b262.v1.mp4",
+          "sha256": "782081a54cc20fd0cf598116bc752f605e8cd61e3f5e8e177d2d53de0e4375db",
+          "bytes": 1225739,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "photos-off-yay",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:photos-off",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.4,
+      "fps": 60,
+      "moment": "photos-off-yay",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

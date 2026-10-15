@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the ob-username-check moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.ob-username-check.v1",
+      "title": "Onboarding 02: handle rows rise, spinners turn to ticks",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/ob-username-check/emma-b262.v1.mp4",
+          "sha256": "77bf584762415e144e9e670d4149adef6f6060736193c7990c4dbd8871484457",
+          "bytes": 518136,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "ob-username-check",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:onboarding-username",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 4.65,
+      "fps": 60,
+      "moment": "ob-username-check",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the dates-card-pick moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.dates-card-pick.v1",
+      "title": "Dates card: pick Fri 23 – Sun 25, Done folds it",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/dates-card-pick/emma-b262.v1.mp4",
+          "sha256": "5969ce4e208739fad06facb7ff85b2fb1086995b2bcae56844cb2ea5fa3e2b29",
+          "bytes": 1313744,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "dates-card-pick",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 12.4,
+      "fps": 60,
+      "moment": "dates-card-pick",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the composer-type-send moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.composer-type-send.v1",
+      "title": "Composer: \"What should I wear tonight?\" typed and sent, her bubble grows in",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/composer-type-send/emma-b262.v1.mp4",
+          "sha256": "7020a4a3ee152ae8627bc93c61f53a3646f4b7d51430047376b4dfbc31cd74c4",
+          "bytes": 1490306,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "composer-type-send",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 9.4,
+      "fps": 60,
+      "moment": "composer-type-send",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.composer-type-send.v2",
+      "title": "Composer: \"What should I wear to work tomorrow?\" sent",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/composer-type-send/emma-b262.v2.mp4",
+          "sha256": "04e6a248b253813161442b914d1409ea34a8dfb24e8b273d1cc1f0cd8d6a25af",
+          "bytes": 990183,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "composer-type-send",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 7,
+      "fps": 60,
+      "moment": "composer-type-send",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the review-count-up moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.review-count-up.v1",
+      "title": "Import review rises: the count climbs to 41 pieces",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/review-count-up/emma-b262.v1.mp4",
+          "sha256": "42b1aa25685e4392ebe9e98ff06aadc4096fda1650e0902b2099f9ceef42b1c5",
+          "bytes": 903751,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "review-count-up",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:import-review",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 3.6,
+      "fps": 60,
+      "moment": "review-count-up",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

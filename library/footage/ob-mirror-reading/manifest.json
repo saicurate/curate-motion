@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the ob-mirror-reading moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.ob-mirror-reading.v1",
+      "title": "Onboarding 05: her selfie flies into the mirror, the reading sweep, Deep Autumn dots",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/ob-mirror-reading/emma-b262.v1.mp4",
+          "sha256": "bde8cfb6ec3aa7882d542ac202249adc2c21e493c93b1b97f74728b1c4c3b3c4",
+          "bytes": 7768166,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "ob-mirror-reading",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:onboarding-mirror",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 22.3,
+      "fps": 60,
+      "moment": "ob-mirror-reading",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

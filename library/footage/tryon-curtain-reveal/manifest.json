@@ -1,0 +1,138 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the tryon-curtain-reveal moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.tryon-curtain-reveal.v1",
+      "title": "Try on: the curtain draws, sways, opens on her wearing it",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/tryon-curtain-reveal/emma-b262.v1.mp4",
+          "sha256": "00bd274d86afbfbc7a63dc3f89c13eb2f2de20c510e8830e60674660babaa111",
+          "bytes": 8304329,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "tryon-curtain-reveal",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:try-ons",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 11.6,
+      "fps": 60,
+      "moment": "tryon-curtain-reveal",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.tryon-curtain-reveal.v2",
+      "title": "Try on 2 items: curtain, reveal (take 2)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/tryon-curtain-reveal/emma-b262.v2.mp4",
+          "sha256": "9df47a74d290480f0198f76e238c893a06097c8968271c27f6f7cedbdea350f8",
+          "bytes": 18768708,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "tryon-curtain-reveal",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:try-ons",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 21.6,
+      "fps": 60,
+      "moment": "tryon-curtain-reveal",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

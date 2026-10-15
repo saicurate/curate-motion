@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the pieces-up-and-tuck moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.pieces-up-and-tuck.v1",
+      "title": "Pieces rise up big, are named, and tuck into the row",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/pieces-up-and-tuck/emma-b262.v1.mp4",
+          "sha256": "2f36536cdfeb08d05f97f33f6de7b93d3b134b85971cce2bd27ae38fb8b8a84e",
+          "bytes": 2237163,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "pieces-up-and-tuck",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:pieces-wait",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.8,
+      "fps": 60,
+      "moment": "pieces-up-and-tuck",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

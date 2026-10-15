@@ -1,0 +1,204 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the look-card-landing moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.look-card-landing.v1",
+      "title": "The look card lands: head words stream, pieces settle, chips",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/look-card-landing/emma-b262.v1.mp4",
+          "sha256": "8fd44fb533c0b61cf764efc71d03bf0e9a46aebf113ae4f621abfc7c00f6a988",
+          "bytes": 2743104,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "look-card-landing",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 8.4,
+      "fps": 60,
+      "moment": "look-card-landing",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.look-card-landing.v2",
+      "title": "Work look lands (take 2)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/look-card-landing/emma-b262.v2.mp4",
+          "sha256": "84e51b80e7fedb2fb600bb1332eb9d43cef0bca02a4c74b78017752beed20106",
+          "bytes": 795104,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "look-card-landing",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 9.4,
+      "fps": 60,
+      "moment": "look-card-landing",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.look-card-landing.v3",
+      "title": "Miami look lands: \"Day 1 is here\" (take 3)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/look-card-landing/emma-b262.v3.mp4",
+          "sha256": "6c10223e6992e39f80d12babaa0cbf18214fba238d17837f90e6cca90fedb0be",
+          "bytes": 2567318,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "look-card-landing",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 8.8,
+      "fps": 60,
+      "moment": "look-card-landing",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

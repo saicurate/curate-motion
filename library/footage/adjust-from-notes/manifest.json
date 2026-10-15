@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the adjust-from-notes moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.adjust-from-notes.v1",
+      "title": "Adjust priorities from Style notes: the priorities sheet",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/adjust-from-notes/emma-b262.v1.mp4",
+          "sha256": "664f2d773618089046cd50f3b37f1a85f2e1f3f556a03c94c3413c93a6158fd4",
+          "bytes": 325331,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "adjust-from-notes",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:adjust",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 6.8,
+      "fps": 60,
+      "moment": "adjust-from-notes",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

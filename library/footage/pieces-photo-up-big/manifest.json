@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the pieces-photo-up-big moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.pieces-photo-up-big.v1",
+      "title": "\"Your pieces\": her photo up big, Zee's lines, Tell me when it's ready rises",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/pieces-photo-up-big/emma-b262.v1.mp4",
+          "sha256": "3adf484e7ba12fbc7fb820ec644239eb6d6cdc657e7e527633bb5c59dfe9901b",
+          "bytes": 4698769,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "pieces-photo-up-big",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:pieces-wait",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 9.3,
+      "fps": 60,
+      "moment": "pieces-photo-up-big",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

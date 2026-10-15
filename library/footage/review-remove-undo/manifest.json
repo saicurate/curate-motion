@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the review-remove-undo moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.review-remove-undo.v1",
+      "title": "Review: a piece removed, the grid closes up, Undo bar",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/review-remove-undo/emma-b262.v1.mp4",
+          "sha256": "7d68785b8a83a27e70ba9ceeae43d0daba46059fa4fdd2337aaa770312a16001",
+          "bytes": 955930,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "review-remove-undo",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:import-review",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.8,
+      "fps": 60,
+      "moment": "review-remove-undo",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

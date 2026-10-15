@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the style-fact-pill moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.style-fact-pill.v1",
+      "title": "Pieces wait: the style-fact pill words, \"Good things take time\"",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/style-fact-pill/emma-b262.v1.mp4",
+          "sha256": "59edb8417380033f44a5dfff2e39e051788bb955d0ea22659bd3c23e97c41bce",
+          "bytes": 3849488,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "style-fact-pill",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:pieces-wait",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.7,
+      "fps": 60,
+      "moment": "style-fact-pill",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

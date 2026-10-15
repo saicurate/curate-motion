@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the take-probe-zee-morning moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.take-probe-zee-morning.v1",
+      "title": "Full probe take: zee_extras_probe morning (b6)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/take-probe-zee-morning/emma-b262.v1.mp4",
+          "sha256": "61772aefea1f6c5c97091c17ec2fd5b0afd5eda85cb1affe6383c115be765a44",
+          "bytes": 10456316,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "take-probe-zee-morning",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:take",
+          "appBuild:262",
+          "source:probe",
+          "kind:full-take"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 24.433,
+      "fps": 60,
+      "moment": "take-probe-zee-morning",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

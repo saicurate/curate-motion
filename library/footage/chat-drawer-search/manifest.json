@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the chat-drawer-search moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.chat-drawer-search.v1",
+      "title": "Drawer search swap",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/chat-drawer-search/emma-b262.v1.mp4",
+          "sha256": "39a41c415567346c64ea514f938a14d0dd9230e9b5b2f96ab2ce760bb77c3508",
+          "bytes": 336165,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "chat-drawer-search",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:chat-drawer",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 4.2,
+      "fps": 60,
+      "moment": "chat-drawer-search",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

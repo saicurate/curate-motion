@@ -1,0 +1,138 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the first-piece-lift moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.first-piece-lift.v1",
+      "title": "The first piece lifts out of her photo: Ballet flats, \"Flats!\"",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/first-piece-lift/emma-b262.v1.mp4",
+          "sha256": "8ff44dc35b9f2a0e8bba3fff2a268ff4f98a13cceb66934bab207fcab2590e45",
+          "bytes": 1460778,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "first-piece-lift",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:pieces-wait",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 4.7,
+      "fps": 60,
+      "moment": "first-piece-lift",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.first-piece-lift.v2",
+      "title": "First piece lifts out (probe take, her photos and pieces)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/first-piece-lift/emma-b262.v2.mp4",
+          "sha256": "9d8d9c1f88e45dffbbadbd1b8b4ca09a174299818ecd5afd4edcb67f16d20ed3",
+          "bytes": 2939597,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "first-piece-lift",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:pieces-wait",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.8,
+      "fps": 60,
+      "moment": "first-piece-lift",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

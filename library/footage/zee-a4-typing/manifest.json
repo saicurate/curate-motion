@@ -1,0 +1,138 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the zee-a4-typing moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.zee-a4-typing.v1",
+      "title": "a4: Zee listens while she types \"Going to the beach\"",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/zee-a4-typing/emma-b262.v1.mp4",
+          "sha256": "6a9d564e36761a7e8b79033c5228cd8682f0bce30c2477864fbf7d9569103d9b",
+          "bytes": 845004,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "zee-a4-typing",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:zee-extras",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 3.2,
+      "fps": 60,
+      "moment": "zee-a4-typing",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.zee-a4-typing.v2",
+      "title": "a4: typing a follow-up (take 2)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/zee-a4-typing/emma-b262.v2.mp4",
+          "sha256": "57af0a2385947b54a4bc732bfd84d927d5aad9d15a2b63b2342b85a8923f7264",
+          "bytes": 507805,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "zee-a4-typing",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:zee-extras",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.1,
+      "fps": 60,
+      "moment": "zee-a4-typing",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

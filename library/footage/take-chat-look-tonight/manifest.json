@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the take-chat-look-tonight moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.take-chat-look-tonight.v1",
+      "title": "Full take: What should I wear tonight: question card, location ask, thinking lines, look lands",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/take-chat-look-tonight/emma-b262.v1.mp4",
+          "sha256": "d9cee11c7bc3c6e1086eb6edb596fd3ba11e7370a45706b997fe2779ea3e5f7a",
+          "bytes": 109178653,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "take-chat-look-tonight",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:take",
+          "appBuild:262",
+          "source:app",
+          "kind:full-take"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 269.5,
+      "fps": 60,
+      "moment": "take-chat-look-tonight",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

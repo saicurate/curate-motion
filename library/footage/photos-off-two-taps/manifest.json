@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the photos-off-two-taps moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.photos-off-two-taps.v1",
+      "title": "Photos off: \"Two taps\", Zee peeks, the two rows light, the tick",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/photos-off-two-taps/emma-b262.v1.mp4",
+          "sha256": "7f13d00454f11088f2843080bb66d86510fbafea128dcbaf182dc5e7a502141f",
+          "bytes": 1403851,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "photos-off-two-taps",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:photos-off",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 13.2,
+      "fps": 60,
+      "moment": "photos-off-two-taps",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

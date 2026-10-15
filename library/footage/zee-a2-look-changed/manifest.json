@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the zee-a2-look-changed moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.zee-a2-look-changed.v1",
+      "title": "a2: Look 2 lands, Zee happy",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/zee-a2-look-changed/emma-b262.v1.mp4",
+          "sha256": "901ba53aabdfb41db1957f116e3b5144fbda8044529cdc4314d87d10a789000e",
+          "bytes": 1117825,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "zee-a2-look-changed",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:zee-extras",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 4,
+      "fps": 60,
+      "moment": "zee-a2-look-changed",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

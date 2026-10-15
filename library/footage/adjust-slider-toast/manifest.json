@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the adjust-slider-toast moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.adjust-slider-toast.v1",
+      "title": "Styling priorities: Weather slider dragged, the hint folds in",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/adjust-slider-toast/emma-b262.v1.mp4",
+          "sha256": "fa28c00b3e2f5e2547cb0da5eff41fdb7799155342ad0ee5067cbf8134b50ed6",
+          "bytes": 1212229,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "adjust-slider-toast",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:adjust",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 12,
+      "fps": 60,
+      "moment": "adjust-slider-toast",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

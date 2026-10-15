@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the style-notes-open moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.style-notes-open.v1",
+      "title": "Style notes: the notebook sheet rises",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/style-notes-open/emma-b262.v1.mp4",
+          "sha256": "b3954043d616a8ad35ee87e99fcb69bd18f34231d8bcd6b55eb6bb61a77cc192",
+          "bytes": 786411,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "style-notes-open",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:style-notes",
+          "appBuild:262",
+          "source:app"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "xcrun simctl io recordVideo + ffmpeg trim (app-footage capture agent)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 7,
+      "fps": 60,
+      "moment": "style-notes-open",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

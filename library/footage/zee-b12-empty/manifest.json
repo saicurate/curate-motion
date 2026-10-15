@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the zee-b12-empty moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.zee-b12-empty.v1",
+      "title": "b12: the empty wardrobe, Zee asks (probe take)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/zee-b12-empty/emma-b262.v1.mp4",
+          "sha256": "efbe9bb8fdc4618f04ba66110d14df0a0020236123c4288e72d30ab9c5cadc56",
+          "bytes": 957793,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "zee-b12-empty",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:zee-extras",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 7.2,
+      "fps": 60,
+      "moment": "zee-b12-empty",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

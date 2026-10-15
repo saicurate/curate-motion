@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the tell-me-notification-ask moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.tell-me-notification-ask.v1",
+      "title": "Tell me when it's ready: Apple's notification ask, Allow, down to the Wardrobe with the at-work pill",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/tell-me-notification-ask/emma-b262.v1.mp4",
+          "sha256": "3bad13a56b460a191bad8796136ca25e3a4aa75de137d6abbe63ced8bd3710af",
+          "bytes": 1877126,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "tell-me-notification-ask",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "screen:pieces-wait",
+          "appBuild:262",
+          "source:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "lib/dev probe with Emma's real assets; xcrun simctl io recordVideo + ffmpeg trim"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-15"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code-capture-agent",
+        "at": "2026-10-15"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 6.4,
+      "fps": 60,
+      "moment": "tell-me-notification-ask",
+      "app": {
+        "build": 262,
+        "version": "1.5.0",
+        "commit": "5aff9592",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "Emma Marketing 17PM (iPhone 17 Pro Max simulator, iOS 26.5)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}
