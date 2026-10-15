@@ -1,0 +1,12 @@
+---
+description: curate-motion repo guide (assets by id, no media in git, Remotion ads)
+globs:
+alwaysApply: true
+---
+
+Read and follow AGENTS.md at the repo root: it is the canonical guide for this repo.
+
+Short version: assets are referenced by id (`<kind>.<scope>.<name>.v<N>`) through `motion/assets.ts`,
+never by path; find them with `tools/catalog search`; media lives in S3 (`tools/sync`), never in git;
+never edit an approved asset (make a new version); licences are required; no prices, no other
+brands' logos, never show the AI pipeline, personas never vouch for products.

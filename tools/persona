@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/persona: make a persona's real Curate account + test phone match the library (see tools/persona.ts).
+exec node "$(dirname "$0")/persona.ts" "$@"

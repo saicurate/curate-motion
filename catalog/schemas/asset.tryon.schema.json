@@ -1,0 +1,319 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2
+    },
+    "description": {
+      "type": "string"
+    },
+    "files": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "default": "original",
+            "type": "string",
+            "enum": [
+              "original",
+              "cutout",
+              "thumb",
+              "frame",
+              "proof",
+              "stem"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "minLength": 3
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "mime": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "bytes"
+        ]
+      }
+    },
+    "tags": {
+      "default": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "type": "object",
+      "properties": {
+        "persona": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "moment": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "mood": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "colour": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "season": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "spring",
+              "summer",
+              "fall",
+              "winter"
+            ]
+          }
+        },
+        "free": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "generated",
+            "stock",
+            "captured",
+            "original",
+            "drawn",
+            "rendered",
+            "derived"
+          ]
+        },
+        "model": {
+          "type": "string"
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "from": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+          }
+        },
+        "tool": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "licence": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 3
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "commercial": {
+          "type": "boolean"
+        },
+        "attributionRequired": {
+          "default": false,
+          "type": "boolean"
+        },
+        "attribution": {
+          "type": "string"
+        },
+        "restrictions": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "proof": {
+          "type": "string"
+        },
+        "checkedAt": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}(T[\\d:.]+Z)?$"
+        }
+      },
+      "required": [
+        "name",
+        "commercial",
+        "checkedAt"
+      ]
+    },
+    "cost": {
+      "default": {
+        "usd": 0,
+        "calls": 0
+      },
+      "type": "object",
+      "properties": {
+        "usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "calls": {
+          "default": 0,
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "usd"
+      ]
+    },
+    "createdBy": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "agent",
+            "human"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}(T[\\d:.]+Z)?$"
+        }
+      },
+      "required": [
+        "type",
+        "name",
+        "at"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "approved",
+        "retired"
+      ]
+    },
+    "approvedBy": {
+      "type": "string"
+    },
+    "approvedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(T[\\d:.]+Z)?$"
+    },
+    "supersedes": {
+      "type": "string",
+      "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+    },
+    "aiGenerated": {
+      "type": "boolean"
+    },
+    "kind": {
+      "type": "string",
+      "const": "tryon"
+    },
+    "dims": {
+      "type": "object",
+      "properties": {
+        "w": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "h": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "w",
+        "h"
+      ]
+    },
+    "wearing": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+      }
+    },
+    "basePhoto": {
+      "type": "string",
+      "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "files",
+    "source",
+    "licence",
+    "createdBy",
+    "status",
+    "aiGenerated",
+    "kind",
+    "dims",
+    "wearing"
+  ]
+}

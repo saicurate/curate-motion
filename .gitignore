@@ -1,0 +1,59 @@
+# ---- media never goes in git: it lives in s3://curate-motion-library-<account>/ (tools/sync) ----
+# library/: only manifests, READMEs, persona sheets and account records (no passwords) are tracked
+library/**
+!library/**/
+!library/README.md
+!library/**/README.md
+!library/**/manifest.json
+!library/**/persona.md
+!library/**/account.json
+!library/**/account-state.json
+!library/music/licences-legacy.json
+
+# renders are outputs: S3 renders/ prefix (tools/sync renders push)
+renders/**
+!renders/README.md
+!renders/.gitkeep
+
+# media by extension, anywhere else too
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.heic
+*.psd
+*.blend
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.zip
+
+# generated / local
+node_modules/
+.stage/
+.cache/
+out/
+build/
+tracker/data/
+*.part
+.DS_Store
+
+# secrets: never in git (they live in AWS SSM Parameter Store; see ARCHITECTURE.md)
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+!**/secret-names.md

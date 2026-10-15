@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "brief": {
+      "type": "string"
+    },
+    "hook": {
+      "type": "string"
+    },
+    "channels": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "tiktok",
+          "reels",
+          "shorts",
+          "meta-feed",
+          "youtube",
+          "appstore",
+          "website",
+          "x"
+        ]
+      }
+    },
+    "formats": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "9x16",
+          "4x5",
+          "1x1",
+          "16x9",
+          "appstore-iphone",
+          "appstore-ipad"
+        ]
+      }
+    },
+    "lengths": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "fps": {
+      "default": 30,
+      "type": "number",
+      "const": 30
+    },
+    "track": {
+      "type": "string",
+      "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^([a-z]+)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.([a-z0-9]+(?:-[a-z0-9]+)*)\\.v([1-9][0-9]*)$"
+      }
+    },
+    "components": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "idea",
+        "draft",
+        "review",
+        "approved",
+        "live",
+        "retired"
+      ]
+    },
+    "approvedBy": {
+      "type": "string"
+    },
+    "approvedAt": {
+      "type": "string"
+    },
+    "disclosures": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdBy": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "agent",
+            "human"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "name",
+        "at"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "brief",
+    "channels",
+    "formats",
+    "lengths",
+    "track",
+    "assets",
+    "status",
+    "createdBy"
+  ]
+}

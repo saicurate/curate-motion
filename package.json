@@ -1,0 +1,41 @@
+{
+  "name": "curate-motion",
+  "version": "0.1.0",
+  "description": "Curate's motion-graphics marketing videos: one library of assets, reusable Remotion components, ads assembled from both.",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "@remotion/fonts": "4.0.535",
+    "@remotion/media": "4.0.535",
+    "@remotion/transitions": "4.0.535",
+    "@remotion/zod-types": "4.0.535",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.535",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.535",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.39.5",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks || true",
+    "dev": "remotion studio",
+    "compositions": "remotion compositions",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint motion ads && tsc --noEmit",
+    "catalog": "node tools/catalog.ts",
+    "validate": "node tools/catalog.ts validate",
+    "sync": "tools/sync"
+  }
+}

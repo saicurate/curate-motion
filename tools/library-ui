@@ -1,0 +1,4 @@
+#!/bin/bash
+# tools/library-ui: the founder's local library page (browse, drag-and-drop add, retire/remove/approve).
+# Opens http://127.0.0.1:4317 (localhost only). See tools/library-ui.ts.
+exec node "$(dirname "$0")/library-ui.ts" "$@"

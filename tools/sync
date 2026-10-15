@@ -1,0 +1,4 @@
+#!/bin/bash
+# tools/sync: pull/push library media to the private S3 bucket by manifest (see tools/sync.ts).
+# Needs the aws cli with credentials for the Curate AWS account (aws sts get-caller-identity).
+exec node "$(dirname "$0")/sync.ts" "$@"

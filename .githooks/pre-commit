@@ -1,0 +1,27 @@
+#!/bin/bash
+# Blocks media files and secrets from git. Installed by `npm install` (git config core.hooksPath .githooks).
+# Media goes to S3 (tools/sync push); secrets go to AWS SSM. See AGENTS.md › What NOT to do.
+set -u
+fail=0
+MEDIA='\.(mp4|mov|m4v|webm|mp3|wav|m4a|aac|flac|jpe?g|png|webp|gif|heic|psd|blend|ttf|otf|woff2?|zip)$'
+while IFS= read -r f; do
+  [ -z "$f" ] && continue
+  if echo "$f" | grep -qiE "$MEDIA"; then echo "BLOCKED media file: $f  (put it in library/ and run tools/sync push)"; fail=1; fi
+  size=$(git cat-file -s ":$f" 2>/dev/null || echo 0)
+  limit=524288; case "$f" in catalog/*) limit=8388608;; esac
+  if [ "$size" -gt "$limit" ]; then echo "BLOCKED large file ($size bytes): $f"; fail=1; fi
+  case "$f" in .env|.env.*|*.pem|*.key) echo "BLOCKED secret-looking file: $f"; fail=1;; esac
+done < <(git diff --cached --name-only --diff-filter=ACMR)
+
+# secret patterns in the staged diff (added lines only)
+PATTERNS='AKIA[0-9A-Z]{16}|ASIA[0-9A-Z]{16}|aws_secret_access_key|-----BEGIN [A-Z ]*PRIVATE KEY-----|"private_key"[[:space:]]*:|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|xox[abp]-[A-Za-z0-9-]{10,}|sk-[A-Za-z0-9_-]{32,}|AIza[0-9A-Za-z_-]{35}|"password"[[:space:]]*:[[:space:]]*"[^"]+"'
+# scan each staged text file; print only the FILE NAME, never the matching text
+while IFS= read -r f; do
+  [ -z "$f" ] && continue
+  [ "$f" = ".githooks/pre-commit" ] && continue
+  if git show ":$f" 2>/dev/null | grep -qE "$PATTERNS"; then
+    echo "BLOCKED: $f looks like it contains a secret (value not shown). Put it in AWS SSM and reference its NAME."
+    fail=1
+  fi
+done < <(git diff --cached --name-only --diff-filter=ACMR)
+[ $fail -eq 0 ] || { echo "Commit blocked by .githooks/pre-commit."; exit 1; }

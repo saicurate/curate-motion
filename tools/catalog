@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/catalog: the asset catalog CLI (list, search, show, build, validate, add, approve, retire).
+exec node "$(dirname "$0")/catalog.ts" "$@"

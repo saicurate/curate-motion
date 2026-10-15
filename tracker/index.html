@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!--UI-TOKEN-->
+<title>Curate Motion Library</title>
+<style>
+:root{--ground:#F6F7F7;--card:#FFFFFF;--ink:#181818;--t2:#6B7078;--t3:#9AA0A8;--line:#E3E5E8;--ok:#3E7F5C;--warn:#9A6B17;--off:#8B8B8B;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--ground:#0E0E0F;--card:#18191B;--ink:#EDEEF0;--t2:#A3A8B0;--t3:#7A7F87;--line:#2A2C30;--ok:#74C095;--warn:#E0B055;--off:#7A7A7A;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:14px/1.45 -apple-system,"SF Pro Text",system-ui,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding:24px 16px 80px}
+header{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;justify-content:space-between}
+h1{font-size:24px;font-weight:600;margin:0;letter-spacing:-.01em}
+h2{font-size:16px;font-weight:600;margin:30px 0 10px}
+.muted{color:var(--t2)}.small{font-size:12px}
+.badge{font-size:12px;padding:3px 10px;border:1px solid var(--line);border-radius:99px;color:var(--t2)}
+.badge.live{color:var(--ok);border-color:currentColor}
+.counts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.counts span{font-size:12px;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:3px 10px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+input,select,button,textarea{font:inherit;color:inherit}
+input[type=search],input[type=text],select{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0}
+input[type=search]{flex:1 1 220px}
+button{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 11px;cursor:pointer}
+button.primary{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+button:disabled{opacity:.5;cursor:default}
+#drop{border:1.5px dashed var(--line);border-radius:16px;padding:22px;text-align:center;color:var(--t2);background:var(--card)}
+#drop.over{border-color:var(--ink);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card.retired{opacity:.55}
+.thumb{aspect-ratio:1/1;background:#EEF0F1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.thumb img,.thumb video{width:100%;height:100%;object-fit:contain}
+.thumb .ph{font-size:12px;color:var(--t3);padding:10px;text-align:center}
+.body{padding:10px 11px 11px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.title{font-weight:600;font-size:13.5px;overflow-wrap:anywhere}
+.id{font:11.5px ui-monospace,Menlo,monospace;color:var(--t2);overflow-wrap:anywhere;cursor:copy}
+.row{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.pill{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.03em;padding:2px 8px;border-radius:99px;border:1px solid currentColor}
+.pill.approved{color:var(--ok)}.pill.draft{color:var(--warn)}.pill.retired{color:var(--off)}
+.tag{font-size:11px;color:var(--t2);background:var(--ground);border-radius:6px;padding:1px 6px}
+.acts{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}.acts button{font-size:12px;padding:4px 8px}
+audio{width:100%}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:13px}
+td,th{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{font-weight:600;color:var(--t2);font-size:12px}
+.tablewrap{overflow-x:auto}
+dialog{border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);width:min(760px,calc(100vw - 32px));padding:18px}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+.addrow{border:1px solid var(--line);border-radius:12px;padding:10px;margin:10px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.addrow label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--t2)}
+.addrow .fname{grid-column:1/-1;font-weight:600;color:var(--ink);overflow-wrap:anywhere}
+.msg{white-space:pre-wrap;font-size:12.5px;color:var(--t2)}
+#toast{position:fixed;left:16px;right:16px;bottom:16px;margin:auto;max-width:560px;background:var(--ink);color:var(--ground);padding:10px 14px;border-radius:12px;font-size:13px;display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1>Curate Motion Library</h1><div class="muted small" id="sub">Loading…</div></div>
+    <span class="badge" id="mode">read-only</span>
+  </header>
+  <div class="counts" id="counts"></div>
+
+  <div id="addzone" hidden>
+    <h2>Add assets</h2>
+    <div id="drop">Drop files here (photos, music, footage, stock, Zee clips, references)<br><span class="small">or <button id="pick" type="button">choose files</button></span><input type="file" id="files" multiple hidden></div>
+  </div>
+
+  <h2>Assets</h2>
+  <div class="bar">
+    <input type="search" id="q" placeholder="Search ids, titles, tags (e.g. black jeans, emotion:happy)">
+    <select id="kind"><option value="">All kinds</option></select>
+    <select id="status"><option value="">Any status</option><option>approved</option><option>draft</option><option>retired</option></select>
+  </div>
+  <div class="grid" id="grid"></div>
+
+  <h2>People and accounts</h2>
+  <div class="tablewrap"><table id="people"><thead><tr><th>Persona</th><th>Account</th><th>Wardrobe in the app</th><th>Phone photos</th></tr></thead><tbody></tbody></table></div>
+
+  <h2>Render queue</h2>
+  <div class="tablewrap"><table id="queue"><thead><tr><th>Status</th><th>Output</th><th>Queued</th></tr></thead><tbody></tbody></table></div>
+  <p class="muted small">Commands: <code>tools/catalog search …</code>, <code>tools/render &lt;ad&gt;</code>, <code>tools/sync pull</code>. Full guide: AGENTS.md.</p>
+</div>
+
+<dialog id="dlg">
+  <h2 style="margin-top:0">Add to the library</h2>
+  <p class="muted small">Each file gets an id like <code>garment.emma.jeans-straight-light-wash.v1</code>, a licence and a sha256, and is uploaded to the private S3 bucket. It lands as a <b>draft</b>.</p>
+  <div id="rows"></div>
+  <div class="msg" id="dmsg"></div>
+  <div class="acts" style="justify-content:flex-end"><button id="cancel" type="button">Cancel</button><button class="primary" id="go" type="button">Add all</button></div>
+</dialog>
+<div id="toast"></div>
+
+<script>
+const TOKEN = document.querySelector('meta[name="ui-token"]')?.content || null;
+const SERVED = location.protocol.startsWith("http") && !!TOKEN;
+const LIBROOT = SERVED ? "/library/" : "../library/";
+const RENDROOT = SERVED ? "/renders/" : "../";
+let CAT = null, QUEUE = null, OPTS = null, PEOPLE = [];
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const toast = (t) => { const el = $("#toast"); el.textContent = t; el.style.display = "block"; clearTimeout(toast.h); toast.h = setTimeout(() => el.style.display = "none", 4200); };
+
+async function load() {
+  if (SERVED) {
+    const [c, q, p] = await Promise.all(["catalog", "queue", "people"].map((n) => fetch(`/data/${n}.json`).then((r) => r.json()).catch(() => null)));
+    CAT = c; QUEUE = q; PEOPLE = p?.people || [];
+    if (!OPTS) OPTS = await fetch("/data/options.json").then((r) => r.json());
+  } else {
+    // file:// mode: tools/catalog build writes tracker/data/catalog.js; tools/render writes data/queue.js
+    await Promise.all(["catalog", "queue"].map((n) => new Promise((ok) => { const s = document.createElement("script"); s.src = `data/${n}.js?t=${Date.now()}`; s.onload = s.onerror = () => { s.remove(); ok(); }; document.head.appendChild(s); })));
+    CAT = window.CURATE_CATALOG || null; QUEUE = window.CURATE_QUEUE || null;
+  }
+  // only redraw when something changed, so a playing preview isn't interrupted
+  const key = `${CAT?.generatedAt}|${QUEUE?.updated}|${JSON.stringify(PEOPLE.map((p) => p.state?.updatedAt))}`;
+  if (key !== load.key) { load.key = key; render(); }
+}
+
+function media(a) {
+  const f = (r) => a.files.find((x) => x.role === r);
+  const fr = a.asset.frames;
+  const img = f("thumb") || f("cutout") || f("original");
+  const m = img?.mime || "";
+  if (a.kind === "zee" && fr) return `<img loading="lazy" src="${LIBROOT}${fr.dir}/${fr.pattern.replace(/%0(\d)d/, (_, w) => "1".padStart(+w, "0"))}" alt="">`;
+  if (m.startsWith("image/")) return `<img loading="lazy" src="${LIBROOT}${img.path}" alt="">`;
+  if (m.startsWith("video/")) return `<video preload="none" controls muted src="${LIBROOT}${img.path}"></video>`;
+  if (m.startsWith("audio/")) return `<div class="ph">${esc(a.asset.bpm ? Math.round(a.asset.bpm) + " bpm" : "audio")}<br><audio preload="none" controls src="${LIBROOT}${img.path}"></audio></div>`;
+  return `<div class="ph">${esc(a.kind)}</div>`;
+}
+
+function render() {
+  if (!CAT || !CAT.assets) { $("#sub").textContent = "No catalog yet: run tools/catalog build (and tools/library-ui to edit)."; return; }
+  $("#mode").textContent = SERVED ? "editing (local server)" : "read-only (file)";
+  $("#mode").className = "badge" + (SERVED ? " live" : "");
+  $("#addzone").hidden = !SERVED;
+  $("#sub").textContent = `${CAT.assets.length} assets · bucket ${CAT.bucket} · updated ${CAT.generatedAt ? new Date(CAT.generatedAt).toLocaleString() : "never"}`;
+  $("#counts").innerHTML = Object.entries(CAT.counts || {}).map(([k, n]) => `<span>${esc(k)} ${n}</span>`).join("");
+  const kinds = [...new Set(CAT.assets.map((a) => a.kind))].sort();
+  const ks = $("#kind"); if (ks.options.length - 1 !== kinds.length) { const v = ks.value; ks.innerHTML = '<option value="">All kinds</option>' + kinds.map((k) => `<option>${k}</option>`).join(""); ks.value = v; }
+  const q = $("#q").value.trim().toLowerCase().split(/\s+/).filter(Boolean), kind = ks.value, st = $("#status").value;
+  const rows = CAT.assets.filter((a) => (!kind || a.kind === kind) && (!st || a.status === st) && q.every((w) => `${a.id} ${a.title} ${a.tags.join(" ")}`.toLowerCase().includes(w)));
+  $("#grid").innerHTML = rows.slice(0, 400).map((a) => `
+    <div class="card ${a.status}">
+      <div class="thumb">${media(a)}</div>
+      <div class="body">
+        <div class="title">${esc(a.title)}</div>
+        <div class="id" title="Click to copy" data-copy="${esc(a.id)}">${esc(a.id)}</div>
+        <div class="row"><span class="pill ${a.status}">${a.status}</span><span class="tag">${esc(a.licence)}</span>${a.aiGenerated ? '<span class="tag">AI</span>' : ""}</div>
+        <div class="row">${a.tags.filter((t) => !/^(kind|status|licence|scope):/.test(t)).slice(0, 5).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+        ${SERVED ? `<div class="acts">
+          ${a.status === "draft" ? `<button data-act="approve" data-id="${esc(a.id)}">Approve</button>` : ""}
+          ${a.status !== "retired" ? `<button data-act="retire" data-id="${esc(a.id)}">Retire</button>` : ""}
+          ${a.status === "draft" ? `<button data-act="remove" data-id="${esc(a.id)}">Delete</button>` : ""}
+          <button data-act="tag" data-id="${esc(a.id)}">Tag</button>
+          ${a.status !== "retired" ? `<button data-act="replace" data-id="${esc(a.id)}">New version</button>` : ""}
+        </div>` : ""}
+      </div>
+    </div>`).join("") + (rows.length > 400 ? `<p class="muted">Showing 400 of ${rows.length}; narrow the search.</p>` : "");
+  const pb = $("#people tbody");
+  pb.innerHTML = PEOPLE.length ? PEOPLE.map((p) => { const s = p.state; const syn = s ? s.wardrobe.filter((w) => w.status === "synced").length : 0; return `<tr><td>${esc(p.account.displayName)}</td><td>${esc(p.account.status)}${p.account.email ? `<br><span class="small muted">${esc(p.account.email)}</span>` : ""}</td><td>${s ? `${syn} pieces synced${s.unmanaged.length ? `, ${s.unmanaged.length} unmanaged` : ""}` : "not synced yet"}<br><span class="small muted">tools/persona sync ${esc(p.persona)} --dry-run</span></td><td>${s && s.cameraRoll.length ? s.cameraRoll.map((c) => `${c.libraryIds.length} on ${esc(c.device.slice(0, 8))}…`).join("<br>") : "none loaded"}<br><span class="small muted">tools/persona roll ${esc(p.persona)} --dry-run</span></td></tr>`; }).join("") : `<tr><td colspan="4" class="muted">${SERVED ? "No personas" : "Open via tools/library-ui to see accounts"}</td></tr>`;
+  const jobs = (QUEUE?.jobs || []).slice().reverse().slice(0, 50);
+  $("#queue tbody").innerHTML = jobs.length ? jobs.map((j) => `<tr><td><span class="pill ${j.status === "done" ? "approved" : j.status === "failed" ? "retired" : "draft"}">${j.status}</span></td><td>${j.status === "done" ? `<a href="${RENDROOT}${SERVED ? j.out.replace(/^renders\//, "") : j.out}">${esc(j.out)}</a>` : esc(j.out)}${j.error ? `<br><span class="small muted">${esc(j.error)}</span>` : ""}</td><td class="small muted">${esc(new Date(j.queuedAt).toLocaleString())}</td></tr>`).join("") : '<tr><td colspan="3" class="muted">Nothing queued. tools/render &lt;ad-id&gt;</td></tr>';
+}
+
+async function post(path, data) {
+  const r = await fetch(path, { method: "POST", headers: { "x-ui-token": TOKEN, "content-type": "application/json" }, body: JSON.stringify(data) });
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || r.statusText); return j;
+}
+async function upload(path, file, params) {
+  const qs = new URLSearchParams({ ...params, filename: file.name });
+  const r = await fetch(`${path}?${qs}`, { method: "POST", headers: { "x-ui-token": TOKEN }, body: file });
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || r.statusText); return j;
+}
+
+document.addEventListener("click", async (e) => {
+  const c = e.target.closest("[data-copy]"); if (c) { navigator.clipboard?.writeText(c.dataset.copy); toast(`Copied ${c.dataset.copy}`); return; }
+  const b = e.target.closest("button[data-act]"); if (!b) return;
+  const id = b.dataset.id, act = b.dataset.act;
+  try {
+    if (act === "approve") { if (!confirm(`Approve ${id}? Approved assets are safe in live ads and can never be edited (only replaced by a new version).`)) return; await post("/api/approve", { id, by: "founder" }); }
+    if (act === "retire") { if (!confirm(`Retire ${id}? It stays in the library but is never used in new ads.`)) return; await post("/api/retire", { id }); }
+    if (act === "remove") { if (!confirm(`Delete draft ${id} for good (files, manifest entry, S3 copy)?`)) return; await post("/api/remove", { id, force: true }); }
+    if (act === "tag") { const add = prompt("Tags to add (comma-separated, e.g. colour=navy, mood=calm, hero)", ""); if (add === null) return; const rem = prompt("Tags to remove (optional)", "") || ""; await post("/api/tag", { id, add: add.split(",").map((s) => s.trim()).filter(Boolean), remove: rem.split(",").map((s) => s.trim()).filter(Boolean) }); }
+    if (act === "replace") { const inp = Object.assign(document.createElement("input"), { type: "file" }); inp.onchange = async () => { try { const r = await upload("/api/replace", inp.files[0], { id }); toast(`Added ${r.id} (draft, replaces ${id})`); load(); } catch (err) { toast(err.message); } }; inp.click(); return; }
+    toast(`${act}: ${id}`); load();
+  } catch (err) { toast(err.message); }
+});
+
+// ---- drag and drop add
+const guessKind = (f) => f.type.startsWith("audio/") ? "music" : f.type.startsWith("video/") ? "footage" : /webp$/i.test(f.name) ? "zee" : "photo";
+const kebab = (s) => s.toLowerCase().replace(/\.[^.]+$/, "").replace(/-v\d+$/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+let PENDING = [];
+function openAdd(files) {
+  PENDING = [...files]; $("#dmsg").textContent = "";
+  const kindOpts = (k) => OPTS.kinds.map((x) => `<option ${x === k ? "selected" : ""}>${x}</option>`).join("");
+  const licOpts = Object.entries(OPTS.licences).map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join("");
+  $("#rows").innerHTML = PENDING.map((f, i) => `<div class="addrow" data-i="${i}">
+    <div class="fname">${esc(f.name)} <span class="muted small">${(f.size / 1e6).toFixed(1)} MB</span></div>
+    <label>Kind<select name="kind">${kindOpts(guessKind(f))}</select></label>
+    <label>Scope (persona / source)<input type="text" name="scope" value="emma"></label>
+    <label>Name (most general word first)<input type="text" name="name" value="${esc(kebab(f.name))}"></label>
+    <label>Licence<select name="licence">${licOpts}</select></label>
+    <label>Tags<input type="text" name="tags" placeholder="colour=black, mood=calm"></label>
+    <span class="extra" style="display:contents"></span>
+  </div>`).join("");
+  document.querySelectorAll(".addrow").forEach((row) => { const ks = row.querySelector('[name=kind]'); const draw = () => { const fs = OPTS.fields[ks.value] || []; row.querySelector(".extra").innerHTML = fs.map((x) => `<label>${esc(x.label)}${x.options ? `<select data-field="${x.key}">${x.options.map((o) => `<option>${o}</option>`).join("")}</select>` : `<input type="text" data-field="${x.key}">`}</label>`).join(""); const lic = row.querySelector("[name=licence]"); lic.value = ks.value === "stock" ? "unsplash" : ks.value === "music" ? "mixkit" : ks.value === "reference" ? "reference" : ["garment","photo","selfie","tryon","face"].includes(ks.value) ? "ai-owned" : "curate"; }; ks.onchange = draw; draw(); });
+  $("#dlg").showModal();
+}
+$("#go").onclick = async () => {
+  $("#go").disabled = true; const out = [];
+  for (const row of document.querySelectorAll(".addrow")) {
+    const f = PENDING[+row.dataset.i], v = (n) => row.querySelector(`[name=${n}]`).value.trim();
+    const fields = {}; row.querySelectorAll("[data-field]").forEach((el) => { if (el.value.trim()) fields[el.dataset.field] = el.value.trim(); });
+    try { const r = await upload("/api/add", f, { kind: v("kind"), scope: v("scope"), name: v("name"), licence: v("licence"), tags: v("tags"), fields: JSON.stringify(fields), by: "founder" }); out.push(`added ${r.id}${r.pushed ? " (uploaded)" : ""}`); row.remove(); }
+    catch (err) { out.push(`${f.name}: ${err.message}`); }
+    $("#dmsg").textContent = out.join("\n");
+  }
+  $("#go").disabled = false; load();
+  if (!document.querySelector(".addrow")) setTimeout(() => $("#dlg").close(), 900);
+};
+$("#cancel").onclick = () => $("#dlg").close();
+const drop = $("#drop");
+["dragenter", "dragover"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", (e) => e.dataTransfer.files.length && openAdd(e.dataTransfer.files));
+$("#pick").onclick = () => $("#files").click();
+$("#files").onchange = (e) => e.target.files.length && openAdd(e.target.files);
+
+["q", "kind", "status"].forEach((id) => $("#" + id).addEventListener("input", render));
+load(); setInterval(() => { if (!$("#dlg").open) load(); }, 3000);
+</script>
+</body>
+</html>

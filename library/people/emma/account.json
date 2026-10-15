@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../catalog/schemas/account.schema.json",
+  "persona": "emma",
+  "displayName": "Emma",
+  "app": "curate-ios",
+  "env": "prod",
+  "email": "emma.nyc@test123.com",
+  "signIn": "email-password",
+  "username": "emma.nyc",
+  "secret": { "store": "aws-ssm", "name": "/curate/marketing/emma-password", "region": "us-east-1" },
+  "flags": { "testAccount": true, "excludeFromAnalytics": true, "origin": "ORGANIC" },
+  "devices": [{ "id": "3AE51A7B-72BD-47C2-A4B9-B3FA40CD06C6", "kind": "simulator", "name": "marketing simulator (tools/sim-udid.txt)" }],
+  "status": "planned",
+  "notes": "The dedicated marketing account (founder, 2026-10-15). Plan: marketing/videos/assets/ACCOUNT-PLAN.md (email from that plan; fallback emma.astoria@test123.com; test123.com bypasses the email OTP). Origin left ORGANIC so push footage works (SEED blocks notifications). When created: set uid and createdAt, status active; the password goes to SSM only: aws ssm put-parameter --type SecureString --name /curate/marketing/emma-password. What is in the account is recorded in account-state.json next to this file."
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "meet-zee",
+  "title": "Meet Zee",
+  "brief": "Introduce Zee, Curate's stylist, to people who have never seen the app. Zee alone on the Mist ground, flipping moods on every beat of a playful track, then one line: Your stylist. No app footage, no product, no people. Built from motion test c2 (marketing/videos, 2026-10-15) as the first library-assembled ad and the template for the rest.",
+  "hook": "A black plush kitten waves hello on the first beat.",
+  "channels": ["tiktok", "reels", "shorts", "meta-feed", "x"],
+  "formats": ["9x16", "4x5", "1x1"],
+  "lengths": [6, 15],
+  "fps": 30,
+  "track": "music.mixkit.gummies-michael-ramir-c.v1",
+  "assets": [
+    "music.mixkit.gummies-michael-ramir-c.v1",
+    "brand.curate.logo-splash.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "zee.hello.intro.v1", "zee.hello.loop.v1",
+    "zee.curious.loop.v1", "zee.focused.loop.v1", "zee.thinking.loop.v1", "zee.idea.loop.v1",
+    "zee.love.loop.v1", "zee.excited.loop.v1", "zee.cheer.loop.v1", "zee.happy.loop.v1"
+  ],
+  "components": ["Ground", "Track", "ZeeActor", "Words", "Star", "Logo", "BeatClock", "planScenes", "useFrameBox"],
+  "status": "draft",
+  "disclosures": [
+    "Zee is an animated character, not AI-generated footage; no AI label needed for this ad.",
+    "Music: Mixkit Stock Music Free License; not for TV/radio broadcast."
+  ],
+  "createdBy": { "type": "agent", "name": "claude-code", "at": "2026-10-15" },
+  "notes": "Assets are not in the catalog until the migration (ARCHITECTURE.md › Migration) runs; until then this ad compiles and lists its compositions but cannot render."
+}
