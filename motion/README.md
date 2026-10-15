@@ -20,6 +20,10 @@ Reusable Remotion components. Ads import from `motion/index.ts`, never from each
 | `Ground`, `Track`, `Star`, `Logo`, `EndCard` | stage, music by id (`duck` dips it under a voice), accents, brand |
 | `Narration`, `narrationPlan` | the voiceover from config: plays the audio, burns in brand captions |
 | `narration-plan.ts` (`sceneOf`, `lineOf`, `phraseFrame`, `duckGain`, `toSrt`, `toVtt`) | the timeline an ad hangs its picture off; pure, shared with tools/ |
+| `Footage` | real app footage by id (OffthreadVideo of the 60 fps master; `from`, `rate`, `zoom` push-in); put it in `<PhoneFrame island={false}>` |
+| `MotionBlur` | directional motion blur (SVG Gaussian, separate x / y) for whips and leaps |
+| `StoreEndCard` | the real-ads end card: optional line, the mark, "Curate", "On the App Store", Zee peeking over a ledge; inside the safe area |
+| `ZeeLeap`, `Fur`, `ZeeWindow` | Zee as a transition: leap at / away from the lens, fur black, a Zee-shaped window onto the next scene |
 | `useFrameBox`, `FORMATS`, `LENGTHS`, `planScenes` | layout per format, length variants |
 | `theme.ts` (`C`, `display`, easings, `useBrandFonts`) | Mist palette + Geist |
 | `assets.ts` (`asset`, `src`, `frameSrc`, `dims`) | the only way to reach media: by id |

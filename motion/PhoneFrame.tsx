@@ -17,8 +17,12 @@ export const PhoneFrame: React.FC<{
   scale?: number;
   opacity?: number;
   screen?: string;
+  /** Draw the Dynamic Island. Turn off for real app footage, which records its own. */
+  island?: boolean;
+  /** Extra CSS filter on the whole phone (e.g. a motion blur). */
+  filter?: string;
   children?: React.ReactNode;
-}> = ({ width, x = 540, y = 960, rx = 0, ry = 0, rz = 0, scale = 1, opacity = 1, screen = C.ground, children }) => {
+}> = ({ width, x = 540, y = 960, rx = 0, ry = 0, rz = 0, scale = 1, opacity = 1, screen = C.ground, island = true, filter, children }) => {
   const h = width * PHONE_RATIO;
   const bezel = width * 0.028;
   const r = width * 0.135;
@@ -31,6 +35,7 @@ export const PhoneFrame: React.FC<{
         width,
         height: h,
         opacity,
+        filter,
         transformStyle: "preserve-3d",
         transform: `perspective(2600px) rotateX(${rx}deg) rotateY(${ry}deg) rotateZ(${rz}deg) scale(${scale})`,
       }}
@@ -55,7 +60,7 @@ export const PhoneFrame: React.FC<{
       >
         {children}
         {/* Dynamic Island */}
-        <div
+        {island ? <div
           style={{
             position: "absolute",
             top: width * 0.024,
@@ -66,7 +71,7 @@ export const PhoneFrame: React.FC<{
             borderRadius: width,
             background: "#000",
           }}
-        />
+        /> : null}
         {/* glass sheen */}
         <div
           style={{

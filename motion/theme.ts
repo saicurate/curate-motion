@@ -15,6 +15,17 @@ export const C = {
   strong: "#3A3D42",
   winterGrey: "#656565",
   night: "#0E0E0F", // kDarkSeed
+  // Real ads (2026-10-15): the app's own screen ground in build 262 (the gallery import / scan),
+  // so a drawn screen can match-cut into the footage; and the grey ramps the scenes stand on.
+  appGround: "#F4F4F4",
+  desk: "#F4F5F6",
+  deskMid: "#E4E7EA",
+  deskEdge: "#D6DADE",
+  rainHi: "#8F979F",
+  rainLo: "#565C64",
+  dusk: "#2F3238",
+  duskLo: "#1B1D21",
+  sunHi: "#FFF7EC", // the faint warmth of a clear sky, used once, as light
 } as const;
 
 // Geist, the brand typeface. Titles are Medium (500), never bold.

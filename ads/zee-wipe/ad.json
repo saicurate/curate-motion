@@ -1,0 +1,77 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "zee-wipe",
+  "title": "Zee wipe",
+  "brief": "Character-led bumpers for people who scroll past app ads (TikTok, Reels, Shorts, YouTube bumpers). The single idea: Zee, a black plush kitten, is the transition. She leaps at the lens and her fur blacks out the frame, her silhouette opens a window onto the next moment, she whips across the screen; behind her is Emma's real app: a look landing, the Wardrobe, the carousel, two try-ons, a trip look, 'Me too.' Three 6 s bumpers (looks, wardrobe, try-ons: prop `bumper`), each a seamless loop that opens on her fur pulling away from the lens and ends with her leaping back into it, plus a 15 s compilation. From concept c7.",
+  "hook": "0–0.6 s: Zee leaps straight at the camera and her fur fills the frame on the track's first hit.",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts",
+    "youtube"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    6,
+    15
+  ],
+  "fps": 30,
+  "track": "music.mixkit.cant-get-you-off-my-mind-michael-ramir-c.v1",
+  "assets": [
+    "music.mixkit.cant-get-you-off-my-mind-michael-ramir-c.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "zee.excited.intro.v1",
+    "zee.excited.loop.v1",
+    "zee.cheer.intro.v1",
+    "zee.cheer.loop.v1",
+    "zee.happy.intro.v1",
+    "zee.happy.loop.v1",
+    "zee.listening.intro.v1",
+    "zee.listening.loop.v1",
+    "zee.love.intro.v1",
+    "zee.love.loop.v1",
+    "zee.curious.intro.v1",
+    "zee.curious.loop.v1",
+    "zee.hello.intro.v1",
+    "zee.hello.loop.v1",
+    "footage.emma.chat-open-starters.v1",
+    "footage.emma.look-card-landing.v1",
+    "footage.emma.wardrobe-scroll-float.v1",
+    "footage.emma.multiple-looks-swipe.v1",
+    "footage.emma.tryon-curtain-reveal.v1",
+    "footage.emma.tryon-curtain-reveal.v2",
+    "footage.emma.look-card-landing.v3",
+    "footage.emma.look-love-it.v1"
+  ],
+  "components": [
+    "ZeeLeap",
+    "Fur",
+    "ZeeWindow",
+    "MotionBlur",
+    "ZeeActor",
+    "PhoneFrame",
+    "Footage",
+    "Slam",
+    "StoreEndCard",
+    "Track",
+    "BeatClock",
+    "useFrameBox"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "The try-on photos of Emma are AI-generated (Emma is an AI persona): turn on the platform AI label for the 15 s compilation and the try-ons bumper (TikTok \"AI-generated content\", Meta \"AI info\", YouTube \"altered or synthetic content\"). The looks and wardrobe bumpers show only the app and Zee.",
+    "Zee is an animated character; the app footage is real (Curate 1.5.0, build 262, Emma's account).",
+    "Music: Mixkit Stock Music Free License (Can't Get You Off My Mind, Michael Ramir C.): online and social ads only; never Content ID."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (real-ads agent)",
+    "at": "2026-10-15"
+  },
+  "notes": "6 s bumpers: render with tools/render zee-wipe --length 6 --props '{\"bumper\":\"wardrobe\"}' --name wardrobe (looks is the default). Music from 24.95 s: the first hit (25.58 s) is the first fur peak; the track's half-second drop-outs before every fourth bar are where she leaps at the lens."
+}

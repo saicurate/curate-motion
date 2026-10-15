@@ -21,3 +21,7 @@ export { Look, Piece, pieceAspect, pieceName, place, type LookPiece, type Role }
 export { EndCard, Ground, Logo, Star, Track } from "./Stage";
 export { Narration, narrationPlan } from "./Narration";
 export { duckGain, lineOf, phraseFrame, sceneOf, speaking, toSrt, toVtt, type NarrationPlan, type PlannedLine, type PlannedScene } from "./narration-plan.ts";
+export { Footage } from "./Footage";
+export { MotionBlur } from "./MotionBlur";
+export { StoreEndCard } from "./StoreEndCard";
+export { Fur, ZEE_CHEST, ZeeLeap, ZeeWindow, ZeeWindowPreload } from "./ZeeLeap";

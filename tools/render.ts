@@ -4,6 +4,7 @@
 //   tools/render <ad-id> [--format 9x16 …] [--length 15 …] [--channel tiktok] [--draft] [--queue-only]
 //                        [--voice captions|human|tts] [--tts <profile>]   per-render voice override (config/voice.json is the default)
 //                        [--props '<json>'] [--name <variant>]          extra composition props (e.g. '{"bumper":"tryons"}'), named in the file: <ad>-<variant>_…
+//                        [--concurrency <n>]                              Chrome tabs at once (default 3; use 1 for heavy 3D/footage scenes, which drop layers above it)
 //   tools/render run          render everything queued
 //   tools/render queue        print the queue
 //
@@ -44,6 +45,8 @@ type Job = {
   props?: Record<string, unknown>;
   /** Variant name (--name), added to the file name: <ad>-<name>_<channel>_… */
   name?: string;
+  /** Chrome tabs rendering at once (--concurrency, default 3). 1 is the safe choice for heavy 3D scenes: above it Chrome can drop layers. */
+  concurrency?: number;
 };
 
 const QUEUE = join(ROOT, "renders", "queue.json");
@@ -129,7 +132,7 @@ const enqueue = (adId: string) => {
       const out = nextVersion(adId, channel, format, length, taken, name);
       taken.add(out);
       const vo = voiceOverride();
-      jobs.push({ id: `${adId}-${format}-${length}-${Date.now().toString(36)}`, ad: adId, composition: compositionId(adId, format, length), format, length, channel, out, draft: !!args.draft, status: "queued", queuedAt: now(), by: String(args.by ?? "agent"), ...(Object.keys(vo).length ? { voiceOverride: vo } : {}), ...(extra ? { props: extra } : {}), ...(name ? { name } : {}) });
+      jobs.push({ id: `${adId}-${format}-${length}-${Date.now().toString(36)}`, ad: adId, composition: compositionId(adId, format, length), format, length, channel, out, draft: !!args.draft, status: "queued", queuedAt: now(), by: String(args.by ?? "agent"), ...(Object.keys(vo).length ? { voiceOverride: vo } : {}), ...(extra ? { props: extra } : {}), ...(name ? { name } : {}), ...(args.concurrency ? { concurrency: Number(args.concurrency) } : {}) });
       console.log(`queued  ${out}`);
     }
   }
@@ -157,7 +160,7 @@ const run = () => {
         writeFileSync(pf, JSON.stringify({ ...(j.props ?? {}), ...(j.voiceOverride ? { voice: j.voiceOverride } : {}) }));
         props.push(`--props=${pf}`);
       }
-      const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", "--concurrency=3", ...q, ...props], { cwd: ROOT, stdio: "inherit" });
+      const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", `--concurrency=${j.concurrency ?? 3}`, ...q, ...props], { cwd: ROOT, stdio: "inherit" });
       if (r.status !== 0) throw new Error(`remotion render exited ${r.status}`);
       // sidecar captions, whatever the mode (captions are always available)
       for (const kind of plan?.voice.captions.sidecar ?? []) writeFileSync(join(ROOT, j.out.replace(/\.mp4$/, `.${kind}`)), kind === "srt" ? toSrt(plan!) : toVtt(plan!));

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "rain-or-shine",
+  "title": "Rain or shine",
+  "brief": "For people who stand at the closet checking the weather app (TikTok, Reels, Shorts). The single idea: the forecast changes, so does the look, and Zee already knows. Rain runs down the glass over Emma's phone while Zee works out tomorrow in the real chat ('Going through your 49 pieces…') and lands a drizzle-proof work look. A windshield-wiper sweep clears the rain exactly as the music comes back, and the app's own four-stroke window wipe answers it ('There's your sky'); the look swaps for the sun, the light drops to dusk and the real carousel swipes to the wool coat for 57° tonight. A second sweep clears to the end card. From concept c9.",
+  "hook": "0–1 s: rain streaks down the screen over a phone where Zee is thinking; 'Rain tomorrow.' rises in big.",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 30,
+  "track": "music.mixkit.better-times-are-coming-alejandro-magana.v1",
+  "assets": [
+    "music.mixkit.better-times-are-coming-alejandro-magana.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "zee.happy.intro.v1",
+    "zee.happy.loop.v1",
+    "footage.emma.chat-thinking-lines.v2",
+    "footage.emma.location-ask-sky-wipe.v1",
+    "footage.emma.look-card-landing.v1",
+    "footage.emma.multiple-looks-swipe.v1"
+  ],
+  "components": [
+    "PhoneFrame",
+    "Footage",
+    "Words",
+    "Slam",
+    "StoreEndCard",
+    "Track",
+    "BeatClock",
+    "useFrameBox"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "The app footage is real (Curate 1.5.0, build 262, Emma's chat with Zee); Emma is an AI-generated persona, but no image of her appears in this cut, so no AI label is needed for the picture.",
+    "The look cards are what Zee actually answered on her account; the app's own text uses °C in two small lines (it follows the phone's region).",
+    "Music: Mixkit Stock Music Free License (Better Times are Coming, Alejandro Magaña): online and social ads only; never Content ID."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (real-ads agent)",
+    "at": "2026-10-15"
+  },
+  "notes": "Music from 33.1 s: the rain plays over the track's breakdown and the first wiper finishes on its return (38.1 s, beat 10). Cuts on beats 7, 10, 14, 18, 22; ends on the 48.1 s bar line."
+}
