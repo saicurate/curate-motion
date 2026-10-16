@@ -52,7 +52,7 @@ export type Props = z.infer<typeof schema>;
 
 export const defaults: Omit<Props, "format" | "length"> = { track: AD.track, fromSec: 29.038, volume: 0.62 };
 
-type Key = "loop" | "pops" | "dive" | "scan" | "picked" | "found" | "pieces" | "piecesLong" | "cheer" | "float" | "floatLong" | "look" | "tryon" | "end";
+type Key = "loop" | "pops" | "dive" | "scan" | "picked" | "found" | "pieces" | "piecesLong" | "cheer" | "float" | "floatLong" | "look" | "loved" | "tryon" | "end";
 const SCENES: Scene<Key>[] = [
   { key: "loop", in: [6], beats: 13 },
   { key: "pops", in: [15, 30], beats: 11 },
@@ -65,7 +65,10 @@ const SCENES: Scene<Key>[] = [
   { key: "cheer", in: [30], beats: 6 }, // sits on Cat Walk's two-second break (track 43.9–46.0 s)
   { key: "float", in: [15], beats: 5 },
   { key: "floatLong", in: [30], beats: 8 }, // the music comes back on its first frame
-  { key: "look", in: [30], beats: 8 },
+  // °F: the landing is 3 beats (4.1–5.5 s of the clip, before Zee's reply says "14° tonight", which the
+  // brain writes in °C), then 5 beats of her real "Love it" tap on that look and "Me too."
+  { key: "look", in: [30], beats: 3 },
+  { key: "loved", in: [30], beats: 5 },
   { key: "tryon", in: [30], beats: 4 },
   { key: "end", in: [15, 30], beats: 8 },
 ];
@@ -81,7 +84,8 @@ const FOOT: Partial<Record<Key, { id: string; from: number; rate: number; enter:
   cheer: { id: "footage.emma.wardrobe-ready-cheer.v1", from: 0.9, rate: 1, enter: "punch" },
   float: { id: "footage.emma.wardrobe-scroll-float.v1", from: 1.8, rate: 1.5, enter: "whip" },
   floatLong: { id: "footage.emma.wardrobe-scroll-float.v1", from: 1.8, rate: 1.6, enter: "drop" },
-  look: { id: "footage.emma.look-card-landing.v1", from: 4.0, rate: 1, enter: "whip" },
+  look: { id: "footage.emma.look-card-landing.v1", from: 4.1, rate: 1, enter: "whip" },
+  loved: { id: "footage.emma.look-love-it.v1", from: 9.5, rate: 1, enter: "punch" },
   tryon: { id: "footage.emma.tryon-curtain-reveal.v1", from: 6.15, rate: 1, enter: "punch" },
 };
 
@@ -314,7 +318,8 @@ export const PopOut: React.FC<Props> = ({ length, track, fromSec, volume }) => {
         {CLOUD.filter((c) => (layer === "back" ? c.z < 0.5 : c.z >= 0.5)).map((c, i) => {
           const s = spring({ frame: f - start - 2 - i * 2, fps, config: { damping: 13, stiffness: 120 } });
           if (s <= 0.01) return null;
-          const ax = (tall ? c.at[0] : c.at[0] < 0.5 ? c.at[0] - 0.03 : c.at[0] + 0.03) * w;
+          // the feed (4:5, 1:1) is wider than the phone needs: pull the cloud in so no piece is cut at the edge
+          const ax = (tall ? c.at[0] : 0.5 + (c.at[0] - 0.5) * 0.86) * w;
           const ay = c.at[1] * h;
           const par = (c.z - 0.5) * u * 6 * Math.sin((f - start) / 40); // parallax against the phone's sway
           const x = lerp(cx, ax + par, s);
@@ -369,9 +374,9 @@ export const PopOut: React.FC<Props> = ({ length, track, fromSec, volume }) => {
               <Piece
                 key={`l${i}`}
                 id={p.id}
-                x={lerp(home.x, cx + p.dx * w, kk)}
-                y={lerp(home.y, h * (tall ? 0.43 : 0.5) + p.dy * h * (tall ? 1 : 0.8), kk)}
-                h={u * p.h * (tall ? 1 : 0.72)}
+                x={lerp(home.x, (tall ? cx : w * 0.4) + p.dx * w, kk)}
+                y={lerp(home.y, h * (tall ? 0.43 : 0.52) + p.dy * h * (tall ? 1 : 0.8), kk)}
+                h={u * p.h * (tall ? 1 : 0.86)}
                 scale={0.15 + 0.85 * kk}
                 rot={p.rot * kk + Math.sin((frame + i * 13) / 14) * 1.5 * kk}
                 outline={interpolate(frame - lookAt, [0, 3, 14], [1, 1, 0], clamp)}
@@ -444,7 +449,7 @@ export const PopOut: React.FC<Props> = ({ length, track, fromSec, volume }) => {
                 const zs = u * (tall ? 34 : 26);
                 return (
                   <div style={{ position: "absolute", left: 0, top: 0, width: w, height: top.y - u * 2, overflow: "hidden" }}>
-                    <ZeeActor cues={[{ at: zeePeekAt, emo: "curious" }]} size={zs} shadow={false} style={{ left: top.x - zs / 2 + u * 6, top: top.y - u * 2 - zs * 0.62 * up + zs * 0.08, transform: "rotate(-8deg)" }} />
+                    <ZeeActor cues={[{ at: zeePeekAt, emo: "curious" }]} size={zs} shadow={false} style={{ left: top.x - zs / 2 + u * (tall ? 6 : 15), top: top.y - u * 2 - zs * 0.62 * up + zs * 0.08, transform: "rotate(-8deg)" }} />
                   </div>
                 );
               })()

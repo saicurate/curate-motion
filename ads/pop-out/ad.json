@@ -12,7 +12,8 @@
   ],
   "formats": [
     "9x16",
-    "4x5"
+    "4x5",
+    "1x1"
   ],
   "lengths": [
     6,
@@ -30,6 +31,7 @@
     "zee.curious.loop.v1",
     "brand.curate.splash-mark.v1",
     "footage.emma.look-card-landing.v1",
+    "footage.emma.look-love-it.v1",
     "footage.emma.pieces-up-and-tuck.v1",
     "footage.emma.scan-found-end.v1",
     "footage.emma.scan-roll.v1",
@@ -117,5 +119,5 @@
     "name": "claude-code (real-ads agent)",
     "at": "2026-10-15"
   },
-  "notes": "Rendered: 9x16 at 6, 15 and 30 s and 4x5 at 15 s (the Instagram feed cut). The 4x5 6 s and 30 s compositions exist but have not been checked. Music from 29.04 s of Cat Walk so the first pop is on the drop; the 15 s and 30 s end as the track drops into its breaks (a natural button ending)."
+  "notes": "Rendered: 9x16 at 6, 15 and 30 s; 4x5 (Instagram feed) at 6, 15 and 30 s; 1x1 at 15 s (meta-feed channel). 2026-10-15: the 30 s look scene keeps Zee's °C words off screen (see README › °F). Music from 29.04 s of Cat Walk so the first pop is on the drop; the 15 s and 30 s end as the track drops into its breaks (a natural button ending)."
 }

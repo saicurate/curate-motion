@@ -1,0 +1,111 @@
+<title>Curate Ads, Phone Size</title>
+<style>
+:root{--g:#F2F3F3;--ink:#17181A;--t2:#6B7078;--t3:#9AA0A8;--bezel:#17181A;--card:#FFFFFF;--line:#E3E5E8;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--g:#0E0F10;--ink:#EDEEF0;--t2:#A3A8B0;--t3:#7A7F87;--bezel:#2A2C30;--card:#18191C;--line:#2A2C30;color-scheme:dark}}
+:root[data-theme="dark"]{--g:#0E0F10;--ink:#EDEEF0;--t2:#A3A8B0;--t3:#7A7F87;--bezel:#2A2C30;--card:#18191C;--line:#2A2C30;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--g);color:var(--ink);font-family:-apple-system,"SF Pro Text",system-ui,sans-serif}
+.w{max-width:1240px;margin:0 auto;padding-block:28px 64px;padding-inline:16px}
+h1{font-size:26px;font-weight:650;margin:0 0 6px;letter-spacing:-.01em}
+.lede{color:var(--t2);font-size:15px;line-height:1.45;margin:0 0 6px;max-width:62ch}
+h2{font-size:18px;font-weight:650;margin:40px 0 4px}
+.track{color:var(--t2);font-size:14px;margin:0 0 16px}
+.row{display:flex;flex-wrap:wrap;gap:28px 24px;align-items:flex-start}
+.ad{width:min(330px,100%);display:flex;flex-direction:column;gap:10px}
+.phone{position:relative;width:100%;border-radius:44px;padding:9px;background:var(--bezel);box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.phone video{display:block;width:100%;border-radius:36px;background:#000;aspect-ratio:9/16;object-fit:cover}
+.phone.feed,.phone.sq{border-radius:28px;padding:7px}.phone.feed video{aspect-ratio:4/5;border-radius:22px}.phone.sq video{aspect-ratio:1/1;border-radius:22px}
+.phone.feed .tap,.phone.sq .tap{inset:7px;border-radius:22px}
+.sub{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);margin:22px 0 10px}
+.tap{position:absolute;inset:9px;border-radius:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;background:transparent;border:0;color:#fff}
+.tap span{width:64px;height:64px;border-radius:50%;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;font-size:24px;padding-left:4px}
+.playing .tap{display:none}
+.meta{display:flex;flex-direction:column;gap:2px;padding-inline:4px}
+.meta b{font-size:15px;font-weight:650}.meta i{font-style:normal;font-size:13px;color:var(--t2);line-height:1.4}
+.len{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.04em;color:var(--t2);border:1px solid var(--line);border-radius:99px;padding:2px 9px;margin-right:6px}
+.pick{color:var(--ink);border-color:var(--ink)}
+.note{margin-top:44px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;max-width:72ch;font-size:14px;line-height:1.5;color:var(--t2)}
+.note b{color:var(--ink)}
+</style>
+<div class="w">
+  <h1>Curate ads, at phone size</h1>
+  <p class="lede">Each video plays in a phone-sized frame, so it looks the way people will see it on TikTok, Reels and the Instagram feed. Tap a video to play it with sound. Only one plays at a time.</p>
+
+  <h2>1 · Pop out</h2>
+  <p class="track">Track: Cat Walk · pieces burst out of her real photos, then a match cut into the real scan</p>
+  <p class="sub">9:16 · TikTok, Reels, Shorts</p>
+  <div class="row">
+    <div class="ad"><div class="phone"><video src="v/real-pop-out-15s-v1.mp4" poster="v/real-pop-out-15s-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len pick">15 s · run first</span>Pop out</b><i>The hero. A real piece bursts out of a real photo in the first half second.</i></div></div>
+    <div class="ad"><div class="phone"><video src="v/real-pop-out-30s-9x16-v2.mp4" poster="v/real-pop-out-30s-9x16-v2.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">30 s · °F</span>Pop out, longer</b><i>Adds "Found 30 photos of you", Zee's cheer, a look, her "Love it" tap and a try-on.</i></div></div>
+    <div class="ad"><div class="phone"><video src="v/real-pop-out-6s-v1.mp4" poster="v/real-pop-out-6s-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">6 s loop</span>Pop out bumper</b><i>Loops seamlessly: the last frame matches the first.</i></div></div>
+  </div>
+  <p class="sub">4:5 · Instagram and Facebook feed</p>
+  <div class="row">
+    <div class="ad"><div class="phone feed"><video src="v/real-pop-out-15s-4x5-v2.mp4" poster="v/real-pop-out-15s-4x5-v2.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · 4:5</span>Pop out, feed</b><i>The Wardrobe pieces now stay inside the frame.</i></div></div>
+    <div class="ad"><div class="phone feed"><video src="v/real-pop-out-30s-4x5-v1.mp4" poster="v/real-pop-out-30s-4x5-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">30 s · 4:5</span>Pop out, longer, feed</b><i>The full story at feed size.</i></div></div>
+    <div class="ad"><div class="phone feed"><video src="v/real-pop-out-6s-4x5-v1.mp4" poster="v/real-pop-out-6s-4x5-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">6 s loop · 4:5</span>Pop out bumper, feed</b><i>The whole look comes out beside the phone; Zee peeks over its edge.</i></div></div>
+  </div>
+  <p class="sub">1:1 · feed and carousel</p>
+  <div class="row">
+    <div class="ad"><div class="phone sq"><video src="v/real-pop-out-15s-1x1-v1.mp4" poster="v/real-pop-out-15s-1x1-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · 1:1</span>Pop out, square</b><i>For a square feed post or a carousel card.</i></div></div>
+  </div>
+
+  <h2>2 · Rain or shine</h2>
+  <p class="track">Track: Better Times are Coming · a wiper sweep clears the rain and the look changes for the weather</p>
+  <div class="row">
+    <div class="ad"><div class="phone"><video src="v/real-rain-or-shine-15s-9x16-v2.mp4" poster="v/real-rain-or-shine-15s-9x16-v2.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · 9:16 · °F</span>Rain or shine</b><i>"Rain tomorrow." → Zee goes through her 49 pieces → "Dressed for the weather." Every temperature on screen is °F.</i></div></div>
+    <div class="ad"><div class="phone feed"><video src="v/real-rain-or-shine-15s-4x5-v1.mp4" poster="v/real-rain-or-shine-15s-4x5-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · 4:5</span>Rain or shine, feed</b><i>The phone stands on the right; the words get the left column.</i></div></div>
+    <div class="ad"><div class="phone sq"><video src="v/real-rain-or-shine-15s-1x1-v1.mp4" poster="v/real-rain-or-shine-15s-1x1-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · 1:1</span>Rain or shine, square</b><i>The same layout, for a square post or carousel.</i></div></div>
+  </div>
+
+  <h2>3 · Zee wipe</h2>
+  <p class="track">Track: Can't Get You Off My Mind · Zee leaps at the camera and her fur wipes to the next moment, on the beat</p>
+  <p class="sub">9:16 · TikTok, Reels, Shorts</p>
+  <div class="row">
+    <div class="ad"><div class="phone"><video src="v/real-zee-wipe-15s-9x16-v2.mp4" poster="v/real-zee-wipe-15s-9x16-v2.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · °F</span>Zee wipe</b><i>The compilation: looks, Wardrobe, Try-ons.</i></div></div>
+    <div class="ad"><div class="phone"><video src="v/real-zee-wipe-looks-6s-9x16-v2.mp4" poster="v/real-zee-wipe-looks-6s-9x16-v2.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len pick">6 s loop · follow-up · °F</span>Zee wipe: looks</b><i>Run after Pop out. The look lands, then her "Love it" tap.</i></div></div>
+    <div class="ad"><div class="phone"><video src="v/real-zee-wipe-wardrobe-6s-v1.mp4" poster="v/real-zee-wipe-wardrobe-6s-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">6 s loop</span>Zee wipe: Wardrobe</b><i>Her floating Wardrobe.</i></div></div>
+    <div class="ad"><div class="phone"><video src="v/real-zee-wipe-tryons-6s-v1.mp4" poster="v/real-zee-wipe-tryons-6s-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">6 s loop</span>Zee wipe: Try-ons</b><i>The try-on curtain reveal.</i></div></div>
+  </div>
+  <p class="sub">4:5 · Instagram and Facebook feed</p>
+  <div class="row">
+    <div class="ad"><div class="phone feed"><video src="v/real-zee-wipe-15s-4x5-v1.mp4" poster="v/real-zee-wipe-15s-4x5-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · 4:5</span>Zee wipe, feed</b><i>The compilation at feed size.</i></div></div>
+    <div class="ad"><div class="phone feed"><video src="v/real-zee-wipe-looks-6s-4x5-v1.mp4" poster="v/real-zee-wipe-looks-6s-4x5-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">6 s loop · 4:5</span>Zee wipe: looks, feed</b><i>Styled by Zee.</i></div></div>
+    <div class="ad"><div class="phone feed"><video src="v/real-zee-wipe-wardrobe-6s-4x5-v1.mp4" poster="v/real-zee-wipe-wardrobe-6s-4x5-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">6 s loop · 4:5</span>Zee wipe: Wardrobe, feed</b><i>Your closet, sorted.</i></div></div>
+    <div class="ad"><div class="phone feed"><video src="v/real-zee-wipe-tryons-6s-4x5-v1.mp4" poster="v/real-zee-wipe-tryons-6s-4x5-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">6 s loop · 4:5</span>Zee wipe: Try-ons, feed</b><i>See it on you.</i></div></div>
+  </div>
+  <p class="sub">1:1 · feed and carousel</p>
+  <div class="row">
+    <div class="ad"><div class="phone sq"><video src="v/real-zee-wipe-15s-1x1-v1.mp4" poster="v/real-zee-wipe-15s-1x1-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play"><span>▶</span></button></div>
+      <div class="meta"><b><span class="len">15 s · 1:1</span>Zee wipe, square</b><i>For a square post or carousel.</i></div></div>
+  </div>
+
+  <div class="note"><b>New on this page:</b> every cut now comes in the Instagram feed size (4:5), and the three 15 s cuts also come square (1:1) for the feed and carousels. They are laid out again for each size rather than cropped, so the type, the phone, Zee and the end card all fit.<br><br><b>°F:</b> the app's own weather lines were already °F. The °C came from Zee's own words (for example "14° tonight"), which the server writes in °C whatever the phone's region. Those moments are now timed out of every cut, so all temperatures on screen are °F. Making Zee speak °F needs a server change.<br><br><b>Before posting:</b> turn on the platform's "AI-generated" label for anything showing Emma's photos or try-ons (every Pop out cut, the Zee wipe 15 s and the Try-ons bumper).</div>
+</div>
+<script>
+const vids=[...document.querySelectorAll(".phone video")];
+document.querySelectorAll(".phone").forEach(p=>{
+  const v=p.querySelector("video"),b=p.querySelector(".tap");
+  const go=()=>{vids.forEach(o=>{if(o!==v){o.pause();o.closest(".phone").classList.remove("playing")}});v.muted=false;v.controls=true;v.play().catch(()=>{v.muted=true;v.play()});p.classList.add("playing")};
+  b.addEventListener("click",go);
+  v.addEventListener("ended",()=>{if(!v.loop){p.classList.remove("playing");v.controls=false}});
+});
+</script>

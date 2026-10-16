@@ -65,7 +65,7 @@ const F = {
 };
 
 const BUMPER: Record<(typeof BUMPERS)[number], { id: string; from: number; rate?: number; line: string }> = {
-  looks: { id: F.look, from: 3.95, line: "Styled by Zee." },
+  looks: { id: F.look, from: 4.0, line: "Styled by Zee." },
   wardrobe: { id: F.wardrobe, from: 2.0, rate: 1.3, line: "Your closet, sorted." },
   tryons: { id: F.tryon1, from: 6.2, line: "See it on you." },
 };
@@ -79,14 +79,17 @@ export const ZeeWipe: React.FC<Props> = ({ length, track, fromSec, volume, bumpe
   const hit = (n: number) => clock.frame(1 + 4 * n); // bar downbeats: the track's big hits
   const compilation = length >= 15;
 
-  const pw = Math.min(w * 0.58, (h * (tall ? 0.74 : 0.78)) / PHONE_RATIO);
-  const phone = (f: number): PhonePose => ({ width: pw, x: cx, y: h * (tall ? 0.535 : 0.555), rx: 4 + Math.sin(f / 47) * 3, ry: Math.sin(f / 37) * 9, rz: Math.sin(f / 59) * 1.5 });
+  // 4:5 and 1:1 (the feed): the phone as tall as the frame allows under the words; 1:1 a touch smaller
+  // so the words above it never touch its top edge.
+  const square = h / w < 1.1;
+  const pw = Math.min(w * 0.58, (h * (tall ? 0.74 : square ? 0.76 : 0.8)) / PHONE_RATIO);
+  const phone = (f: number): PhonePose => ({ width: pw, x: cx, y: h * (tall ? 0.535 : square ? 0.56 : 0.55), rx: 4 + Math.sin(f / 47) * 3, ry: Math.sin(f / 37) * 9, rz: Math.sin(f / 59) * 1.5 });
   const zs = u * (tall ? 30 : 24);
   const L = { x: w * 0.25, y: h * (tall ? 0.76 : 0.8) };
   const R = { x: w * 0.73, y: h * (tall ? 0.76 : 0.8) };
   const M = { x: cx, y: h * (tall ? 0.8 : 0.84) };
-  const wordStyle: React.CSSProperties = { left: safe.side + u, top: h * (tall ? 0.055 : 0.035), width: w * 0.8 };
-  const wordSize = u * (tall ? 10 : 8.5);
+  const wordStyle: React.CSSProperties = { left: safe.side + u, top: h * (tall ? 0.055 : square ? 0.035 : 0.04), width: w * 0.8 };
+  const wordSize = u * (tall ? 10 : 9);
 
   // ── the timeline ──
   let moments: Moment[];
@@ -103,7 +106,9 @@ export const ZeeWipe: React.FC<Props> = ({ length, track, fromSec, volume, bumpe
   if (compilation) {
     moments = [
       { id: F.starters, from: 0.3, start: 0, end: hit(0) + 1, enter: "cut" },
-      { id: F.look, from: 4.0, start: hit(0), end: hit(1) + 1, enter: "fur" },
+      // °F: 4.03 s at 0.95x keeps the landing inside its clean window (4.08–5.58 s: before it, the
+      // thinking line says "17°"; after it, Zee's reply says "14° tonight", both °C from the brain)
+      { id: F.look, from: 4.03, rate: 0.95, start: hit(0), end: hit(1) + 1, enter: "fur" },
       { id: F.wardrobe, from: 2.0, rate: 1.3, start: hit(1) - 12, end: hit(2) + 8, enter: "window", dur: 12 },
       { id: F.swipe, from: 0.75, start: hit(2) - 7, end: hit(3) + 1, enter: "swipe", dur: 14 },
       { id: F.tryon1, from: 6.15, start: hit(3), end: hit(4) + 1, enter: "cut" },
@@ -130,7 +135,8 @@ export const ZeeWipe: React.FC<Props> = ({ length, track, fromSec, volume, bumpe
       { at: 2, dur: hit(0) - 2, dir: 1, p: M },
       { at: hit(0) + 1, dur: 14, dir: -1, p: R, emo: "cheer" },
       { at: hit(4) - 19, dur: 17, dir: 1, p: L },
-      { at: hit(4) + 1, dur: 13, dir: -1, p: R, emo: "happy" },
+      // starts on hit(4), as the fur begins to clear (from hit(4) + 1 one frame showed the dimmed phone between the two)
+      { at: hit(4), dur: 14, dir: -1, p: R, emo: "happy" },
       { at: hit(7) - 15, dur: 17, dir: 1, p: M },
     ];
     furs = [
@@ -145,7 +151,14 @@ export const ZeeWipe: React.FC<Props> = ({ length, track, fromSec, volume, bumpe
   } else {
     // the 6 s bumper: fur → moment → window → end card → leap → fur (loops)
     const b = BUMPER[bumper];
-    moments = [{ id: b.id, from: b.from, rate: b.rate, start: 0, end: hit(2), enter: "cut" }];
+    moments =
+      bumper === "looks"
+        ? // °F: the landing until beat 3 (4.0–5.4 s, inside its clean window), then her real "Love it" tap and "Me too."
+          [
+            { id: b.id, from: b.from, start: 0, end: clock.frame(3), enter: "cut" },
+            { id: F.love, from: 9.5, start: clock.frame(3), end: hit(2), enter: "cut" },
+          ]
+        : [{ id: b.id, from: b.from, rate: b.rate, start: 0, end: hit(2), enter: "cut" }];
     words = [{ text: b.line, at: hit(0) + 2, until: hit(2) - 12 }];
     zees = [{ emo: "happy", at: hit(0) + 1, until: hit(2) - 12, p: R, loopStart: 20 }];
     leaps = [
@@ -196,7 +209,9 @@ export const ZeeWipe: React.FC<Props> = ({ length, track, fromSec, volume, bumpe
 
   return (
     <AbsoluteFill style={{ background: C.night }}>
-      <Track id={track} fromSec={clock.fromSec} total={durationInFrames} fps={fps} volume={volume} fadeOut={compilation ? 10 : 6} />
+      {/* the 15 s mix measured −15.1 LUFS at the bumpers' gain (true peak −1.3 dBTP): +0.17 dB brings it inside
+          −14 ±1 LUFS while the true peak stays under −1 dBTP */}
+      <Track id={track} fromSec={clock.fromSec} total={durationInFrames} fps={fps} volume={compilation ? volume * 1.02 : volume} fadeOut={compilation ? 10 : 6} />
       <ZeeWindowPreload />
 
       {moments.map((m, i) => {

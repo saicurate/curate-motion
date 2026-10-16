@@ -8,10 +8,13 @@
     "tiktok",
     "reels",
     "shorts",
-    "youtube"
+    "youtube",
+    "meta-feed"
   ],
   "formats": [
-    "9x16"
+    "9x16",
+    "4x5",
+    "1x1"
   ],
   "lengths": [
     6,
@@ -73,5 +76,5 @@
     "name": "claude-code (real-ads agent)",
     "at": "2026-10-15"
   },
-  "notes": "6 s bumpers: render with tools/render zee-wipe --length 6 --props '{\"bumper\":\"wardrobe\"}' --name wardrobe (looks is the default). Music from 24.95 s: the first hit (25.58 s) is the first fur peak; the track's half-second drop-outs before every fourth bar are where she leaps at the lens."
+  "notes": "6 s bumpers: render with tools/render zee-wipe --length 6 --props '{\"bumper\":\"wardrobe\"}' --name wardrobe (looks is the default). Music from 24.95 s: the first hit (25.58 s) is the first fur peak; the track's half-second drop-outs before every fourth bar are where she leaps at the lens. Every cut also renders in 4x5 (--format 4x5); the 15 s also in 1x1 (--format 1x1 --channel meta-feed). The 15 s mix is +0.17 dB over the bumpers' to sit inside −14 ±1 LUFS."
 }

@@ -7,10 +7,13 @@
   "channels": [
     "tiktok",
     "reels",
-    "shorts"
+    "shorts",
+    "meta-feed"
   ],
   "formats": [
-    "9x16"
+    "9x16",
+    "4x5",
+    "1x1"
   ],
   "lengths": [
     15
@@ -28,7 +31,8 @@
     "footage.emma.chat-thinking-lines.v2",
     "footage.emma.location-ask-sky-wipe.v1",
     "footage.emma.look-card-landing.v1",
-    "footage.emma.multiple-looks-swipe.v1"
+    "footage.emma.multiple-looks-swipe.v1",
+    "footage.emma.look-love-it.v1"
   ],
   "components": [
     "PhoneFrame",
@@ -43,7 +47,7 @@
   "status": "draft",
   "disclosures": [
     "The app footage is real (Curate 1.5.0, build 262, Emma's chat with Zee); Emma is an AI-generated persona, but no image of her appears in this cut, so no AI label is needed for the picture.",
-    "The look cards are what Zee actually answered on her account; the app's own text uses °C in two small lines (it follows the phone's region).",
+    "The look cards are what Zee actually answered on her account. Temperatures on screen are °F (the app shows the phone's region); the shots are timed so none of Zee's own words, which the brain writes in °C, are on screen.",
     "Music: Mixkit Stock Music Free License (Better Times are Coming, Alejandro Magaña): online and social ads only; never Content ID."
   ],
   "createdBy": {
@@ -51,5 +55,5 @@
     "name": "claude-code (real-ads agent)",
     "at": "2026-10-15"
   },
-  "notes": "Music from 33.1 s: the rain plays over the track's breakdown and the first wiper finishes on its return (38.1 s, beat 10). Cuts on beats 7, 10, 14, 18, 22; ends on the 48.1 s bar line."
+  "notes": "Music from 33.1 s: the rain plays over the track's breakdown and the first wiper finishes on its return (38.1 s, beat 10). Cuts on beats 7, 10, 14, 18, 22; ends on the 48.1 s bar line. Rendered in 9x16, 4x5 and 1x1 (1x1 under renders/…/meta-feed/). 2026-10-15: every on-screen temperature is °F; Zee's °C words are timed off screen (README › °F)."
 }
