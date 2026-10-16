@@ -87,6 +87,8 @@ export const AdSpec = z
     voice: VoiceOverride.optional(),
     createdBy: z.object({ type: z.enum(["agent", "human"]), name: z.string(), at: z.string() }),
     notes: z.string().optional(),
+    /** "explore": a rough concept animatic before G2 (ads/_demos/), to judge an idea fast; never posted. */
+    gate: z.literal("explore").optional(),
     /** Studio-process ads (made with the motion-reel skill): where it stands at each gate. */
     gates: Gates.optional(),
     /** Who moved each gate, when. G2 and G3 need a human (the founder) to approve. */

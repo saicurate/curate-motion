@@ -211,6 +211,10 @@
     "notes": {
       "type": "string"
     },
+    "gate": {
+      "type": "string",
+      "const": "explore"
+    },
     "gates": {
       "type": "object",
       "properties": {

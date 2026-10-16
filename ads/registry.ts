@@ -17,6 +17,19 @@ import * as rainOrShine from "./rain-or-shine";
 import rainOrShineSpec from "./rain-or-shine/ad.json";
 import * as zeeWipe from "./zee-wipe";
 import zeeWipeSpec from "./zee-wipe/ad.json";
+// Concept animatics (gate "explore", ads/_demos/README.md): rough, never posted.
+import * as demo1 from "./_demos/nothing-to-wear";
+import demo1Spec from "./_demos/nothing-to-wear/ad.json";
+import * as demo2 from "./_demos/camera-roll-closet";
+import demo2Spec from "./_demos/camera-roll-closet/ad.json";
+import * as demo3 from "./_demos/zee-critic";
+import demo3Spec from "./_demos/zee-critic/ad.json";
+import * as demo4 from "./_demos/speed-run";
+import demo4Spec from "./_demos/speed-run/ad.json";
+import * as demo5 from "./_demos/outfit-change";
+import demo5Spec from "./_demos/outfit-change/ad.json";
+import * as demo6 from "./_demos/satisfying-sort";
+import demo6Spec from "./_demos/satisfying-sort/ad.json";
 
 export type AdModule = {
   spec: AdSpec;
@@ -37,4 +50,10 @@ export const ADS: AdModule[] = [
   { spec: AdSpec.parse(popOutV3Spec), component: popOutV3.PopOutV3, schema: popOutV3.schema, defaults: popOutV3.defaults },
   { spec: AdSpec.parse(rainOrShineSpec), component: rainOrShine.RainOrShine, schema: rainOrShine.schema, defaults: rainOrShine.defaults },
   { spec: AdSpec.parse(zeeWipeSpec), component: zeeWipe.ZeeWipe, schema: zeeWipe.schema, defaults: zeeWipe.defaults },
+  { spec: AdSpec.parse(demo1Spec), component: demo1.NothingToWear, schema: demo1.schema, defaults: demo1.defaults, metadata: demo1.metadata },
+  { spec: AdSpec.parse(demo2Spec), component: demo2.CameraRollCloset, schema: demo2.schema, defaults: demo2.defaults, metadata: demo2.metadata },
+  { spec: AdSpec.parse(demo3Spec), component: demo3.ZeeCritic, schema: demo3.schema, defaults: demo3.defaults, metadata: demo3.metadata },
+  { spec: AdSpec.parse(demo4Spec), component: demo4.SpeedRun, schema: demo4.schema, defaults: demo4.defaults, metadata: demo4.metadata },
+  { spec: AdSpec.parse(demo5Spec), component: demo5.OutfitChange, schema: demo5.schema, defaults: demo5.defaults, metadata: demo5.metadata },
+  { spec: AdSpec.parse(demo6Spec), component: demo6.SatisfyingSort, schema: demo6.schema, defaults: demo6.defaults, metadata: demo6.metadata },
 ];

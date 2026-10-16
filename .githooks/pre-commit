@@ -8,7 +8,7 @@ while IFS= read -r f; do
   [ -z "$f" ] && continue
   if echo "$f" | grep -qiE "$MEDIA"; then echo "BLOCKED media file: $f  (put it in library/ and run tools/sync push)"; fail=1; fi
   size=$(git cat-file -s ":$f" 2>/dev/null || echo 0)
-  limit=524288; case "$f" in catalog/*) limit=8388608;; esac
+  limit=524288; case "$f" in catalog/*) limit=8388608;; library/*/manifest.json|library/*/*/manifest.json) limit=4194304;; esac  # manifests carry beat maps
   if [ "$size" -gt "$limit" ]; then echo "BLOCKED large file ($size bytes): $f"; fail=1; fi
   case "$f" in .env|.env.*|*.pem|*.key) echo "BLOCKED secret-looking file: $f"; fail=1;; esac
 done < <(git diff --cached --name-only --diff-filter=ACMR)
