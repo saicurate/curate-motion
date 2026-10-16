@@ -5,12 +5,15 @@ Her denim jacket lifts out of her ferry photo → the camera glides back to her 
 into her market photo, the phone forms round it, and the real app lifts her Ballet Flats out of it →
 the real review screen counts to 41 pieces → the Curate lockup, Zee → back to frame 0 (a loop).
 
-**Status:** draft. **G2 approved** by the founder ("Yeah", 2026-10-15; the ferry-photo hook and Cat Walk
-kept). **G3 in review**: stills for every shot, critiqued in 6 rounds (`reviews/pop-out-v3/2026-10-15/`,
-`reviews/pop-out-v3/scores.json`); every applicable score 8+ (sound N/A until G5). The founder's phone
-page (private, the same page as G2): https://claude.ai/artifact/4tnfSDLUbBQTUuo96epwxM. No animatic or
-full pass yet (G4/G5 wait for the founder's G3 OK). v1 (`ads/pop-out`) and v2's picture
-(`ads/pop-out-v2`) are untouched; v2's `sound.ts` now uses `motion/sound` (byte-identical output).
+**Status:** draft. **G2 approved** by the founder ("Yeah", 2026-10-15); **G3 approved** ("not quite up to
+the mark but would like to see the results", 2026-10-16; defaults kept: the flat-lay jacket cut-out, the
+phone position). **G4 done**: the animatic, critic rounds 7–9 in motion. **G5 in review**: the full pass
+at 1080×1920, 60 fps, with the designed sound (`sound.ts` → `sfx.curate.pop-out-v3-sound.v2`, draft) over
+Cat Walk, −14.2 LUFS, true peak −2.3 dBTP, critic rounds 10–12, every score 8
+(`reviews/pop-out-v3/2026-10-16/`, `reviews/pop-out-v3/scores.json`). Render:
+`renders/pop-out-v3/tiktok/15s/pop-out-v3-g5_tiktok_9x16_15s_v3.mp4`. The founder's pages (private):
+storyboard https://claude.ai/artifact/4tnfSDLUbBQTUuo96epwxM, phone review
+https://claude.ai/artifact/EwVYnHsfAWgSiyjdAXVyzy. v1 (`ads/pop-out`) and v2 (`ads/pop-out-v2`) are untouched.
 
 | File | What |
 |---|---|
@@ -20,6 +23,7 @@ full pass yet (G4/G5 wait for the founder's G3 OK). v1 (`ads/pop-out`) and v2's 
 | `beatmap.ts` | generated: `tools/beats clip music.mixkit.cat-walk-arulo.v1 --from 29.536 --length 15 --fps 60` |
 | `timeline.ts` | the moments, footage in-points and sound cues (pure; shared with the sound at G5) |
 | `shots.ts` | the shot list as data; `tools/stills pop-out-v3 --shots` renders one still per shot |
+| `sound.ts` | the designed sound (motion/sound, G5): `node ads/pop-out-v3/sound.ts <out.wav>`; byte-identical every run |
 | `index.tsx` | the composition `pop-out-v3--9x16--15s`: a pure function of t; motion/springs, SubframeBlur, StableImg |
 
 Checks at G3: `tools/motion-check pop-out-v3` clean; determinism EQUAL on frames 0, 83, 264, 336, 396,

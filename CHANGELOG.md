@@ -3,6 +3,23 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-16: Pop out v3 through G4 and G5 (studio rules still PROPOSED)
+- **G3 approved** by the founder ("not quite up to the mark but would like to see the results"); open
+  choices left at the defaults (flat-lay jacket cut-out, phone position). G4 approved (agent, critic
+  rounds 7–9), G5 in review (rounds 10–12, all 8). `reviews/pop-out-v3/2026-10-16/`, `scores.json`.
+- **Motion fixes judged in motion** (`ads/pop-out-v3/index.tsx`, `G4 fix`): the review sheet rises under
+  the phone's status bar on a longer panel response (0.62 s); the phone's exit, the lockup's exit and her
+  photo's return are short moves with exponential fades in sequence (style_guide.md updated).
+- **Sound:** `ads/pop-out-v3/sound.ts` (motion/sound) → `sfx.curate.pop-out-v3-sound.v2` (draft; v1
+  retired); the music sinks 6 dB under the riser into 41 (`timeline.ts › musicGain`). −14.2 LUFS, true
+  peak −2.3 dBTP. The composition now plays the music bed + the designed sound (outside SubframeBlur).
+- **tools/catalog validate:** an ad's own designed sound (an `sfx` tagged `ad:<id>`) may be draft after
+  G1 is approved, until G5 is approved (a warning, not an error).
+- Renders: `renders/pop-out-v3/tiktok/15s/pop-out-v3-g4-animatic_…_v1-3` (540×960) and
+  `pop-out-v3-g5_…_v1-3` (1080×1920, 60 fps; v3 is final), pushed to S3. Phone copy:
+  `../marketing/videos/cuts/real-pop-out-v3-15s-9x16-v1.mp4`. Pages: the phone review page
+  (`tools/review-page/ads-phone.html`, v1 vs v2 vs v3) and the storyboard (`ads/pop-out-v3/review-page/`).
+
 ## 2026-10-15: the motion studio process (`/motion-reel`), PROPOSED (decisions/0011); Pop out v3 at G2
 - **Skill:** `.claude/skills/motion-reel/SKILL.md` (Claude Code project skill, `/motion-reel <ad-or-brief>,
   <length>, <ratio>, reference <id>`), mirrored in AGENTS.md › "Making a motion film: the studio process".

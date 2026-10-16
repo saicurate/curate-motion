@@ -69,12 +69,24 @@ export const CUES = [
   { t: T.pulls, kind: "pop" },
   { t: T.line2, kind: "land" },
   { t: T.screenChange, kind: "swish" },
-  { t: T.count41, kind: "impact", gain: 0.6 },
+  { t: T.count41, kind: "impact", gain: 1 }, // G5 (round 10): 0.6 → 1, so the proof's downbeat shows blindfolded
   { t: 10.855, kind: "whoosh" },
+  { t: T.phoneOut + 0.15, kind: "settle", gain: 0.7 }, // G5: the mark lands as the phone has gone
   { t: T.name, kind: "land" },
   { t: T.cta, kind: "chime" },
   { t: T.zee, kind: "pop" },
-  { t: T.loopOut, kind: "glide" },
+  { t: T.loopOut + 0.18, kind: "glide" }, // G5: peaks as her photo rises back (it starts 0.13 s after the lockup leaves)
 ] as const;
 /** A riser into the proof's downbeat (the big moment). */
 export const RISER = [T.screenChange, T.count41] as const;
+/** G5 (round 10): the riser's gain (0.42 → 0.75: the build must show in the waveform, the blindfold test). */
+export const RISER_GAIN = 0.75;
+/** G5 (rounds 10–11): the music's own gain over time (× the ad's volume), so the build into the
+ * proof has a shape you can see blindfolded: from the review sheet (7.85 s) the music sinks 6 dB in
+ * about 0.3 s (exponential) and the riser climbs alone over it; on the proof's downbeat (9.23 s) the
+ * music is back in full with the impact. Pure function of t (seconds from frame 0). */
+export const musicGain = (t: number) => {
+  if (t >= T.count41 || t < T.screenChange) return 1;
+  const k = 1 - Math.exp(-(t - T.screenChange) / 0.1); // 95% of the way down by 0.3 s
+  return 1 - 0.5 * k;
+};

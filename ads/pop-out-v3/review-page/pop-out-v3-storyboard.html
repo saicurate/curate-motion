@@ -168,41 +168,104 @@ ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 
 .ba .lbl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
 @media (max-width: 560px) { .ba { grid-template-columns: 1fr; } }
 .check td:first-child { color: var(--ink); }
+.film { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 22px; align-items: start; }
+.film .phone { position: relative; width: 100%; max-width: 300px; border-radius: 40px; padding: 8px; background: #181818; box-shadow: 0 30px 80px rgba(16,20,24,.16); }
+.film video { display: block; width: 100%; max-width: 100%; aspect-ratio: 9 / 16; border-radius: 32px; background: #000; object-fit: cover; }
+.film .side { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+@media (max-width: 600px) { .film { grid-template-columns: 1fr; } .film .phone { margin-inline: auto; } }
+.strip { display: flex; flex-direction: column; gap: 6px; }
+.strip img { width: 100%; max-width: 100%; border-radius: 8px; border: 1px solid var(--line); display: block; background: #F6F6F6; }
+.strip .lbl { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
+.motion { display: flex; flex-direction: column; gap: 26px; }
+.motion article { display: flex; flex-direction: column; gap: 10px; }
+.scores tr.sep td { border-top: 1.5px solid var(--ink); }
+.scores td.g { font-family: var(--mono); font-size: 11.5px; color: var(--muted); white-space: nowrap; }
 .pass { font-family: var(--mono); font-size: 11.5px; color: var(--ink); background: var(--wash); border-radius: 6px; padding: 1px 7px; white-space: nowrap; }
 </style>
 
 <main>
   <header style="display:flex;flex-direction:column;gap:14px">
-    <div class="eyebrow">Curate · motion studio · gate G3</div>
+    <div class="eyebrow">Curate · motion studio · gates G4 and G5</div>
     <h1>Pop out v3 storyboard</h1>
     <p class="lede"><span class="key">Your whole closet is already in your camera roll;</span> Curate pulls it out.</p>
-    <span class="status">G3: waiting for your OK</span>
-    <p>You said yes to the storyboard. I built every shot, rendered real frames of it, and ran the critic on them until every score that applies was 8 or more. That took 6 rounds and 13 fixes. Below are the frames of each shot, one frame on every beat, the scores and what each round fixed. Nothing has moved yet: the animatic waits for your OK.</p>
+    <span class="status">G5: the finished film, for your review</span>
+    <p>On the stills you said: “not quite up to the mark but would like to see the results.” So here they are. I made the animatic with Cat Walk under it and judged it in motion (G4, 3 rounds), then the full 1080×1920 pass at 60 fps with its own sound (G5, 3 rounds), until every score was 8 or more. The two things we said to watch in motion, the sheet's smear and the double “Curate”, were real, and both are fixed. You kept the defaults: the flat-lay jacket and the phone where it is.</p>
     <div class="gates" aria-label="Gates">
       <div class="gate done"><b>G1</b><span>Assets approved</span></div>
       <div class="gate done"><b>G2</b><span>Storyboard: you said “Yeah”</span></div>
-      <div class="gate now"><b>G3</b><span>Stills, critiqued</span></div>
-      <div class="gate"><b>G4</b><span>Animatic</span></div>
-      <div class="gate"><b>G5</b><span>Full pass + sound</span></div>
+      <div class="gate done"><b>G3</b><span>Stills: you said “see the results”</span></div>
+      <div class="gate done"><b>G4</b><span>Animatic, judged in motion</span></div>
+      <div class="gate now"><b>G5</b><span>Full pass + sound: done</span></div>
       <div class="gate"><b>G6</b><span>Formats, loop, poster</span></div>
     </div>
     <div class="facts">
-      <span class="fact">71 stills</span><span class="fact">19 per-shot frames + the same at 360 px</span><span class="fact">33 beats</span>
-      <span class="fact">6 critic rounds</span><span class="fact">all 8+</span><span class="fact">frame 899 = frame 0</span><span class="fact">same pixels every render</span>
+      <span class="fact">1080×1920 · 60 fps</span><span class="fact">12 critic rounds</span><span class="fact">all 8+</span><span class="fact">−14.2 LUFS</span><span class="fact">true peak −2.3 dBTP</span>
+      <span class="fact">frame 899 = frame 0</span><span class="fact">same pixels every render</span>
     </div>
   </header>
+
+  <section aria-labelledby="fm">
+    <h2 id="fm">The film</h2>
+    <div class="film">
+      <div class="phone"><video src="vid/pop-out-v3-15s-9x16.mp4" poster="vid/pop-out-v3-poster.jpg" controls playsinline loop preload="metadata"></video></div>
+      <div class="side">
+        <p>Pop out v3, 15 s, 9:16, 60 fps. Tap to play with sound. It loops, the way a Reel replays.</p>
+        <ul>
+          <li>Her denim jacket lifts out of her ferry photo on the drop.</li>
+          <li>The camera glides back: that photo is one of thirty in her camera roll.</li>
+          <li>It glides into her market photo, the phone forms round it, and the real app lifts her Ballet Flats out.</li>
+          <li>The real review screen counts to 41 pieces from her photos.</li>
+          <li>The Curate lockup holds 2.3 s, Zee bounces, and her ferry photo comes back.</li>
+        </ul>
+        <p class="note">This is a 720 px copy for your phone, still 60 fps. The master is 1080×1920: <code>renders/pop-out-v3/tiktok/15s/pop-out-v3-g5_tiktok_9x16_15s_v3.mp4</code>, also in S3.</p>
+      </div>
+    </div>
+  </section>
 
   <section aria-labelledby="ask1">
     <div class="ask">
       <h2 id="ask1">What I need from you</h2>
       <ol>
-        <li><b>OK these stills (G3)</b>, or tell me what to change. Then I make the 540×960 animatic with Cat Walk (G4) and the full pass with the designed sound (G5). You see the full pass before anything ships.</li>
-        <li><b>The jacket in the hook.</b> The cut-out we have is a flat-lay, not the jacket as she wears it. On her photo it read as two jackets, so it now appears only as it lifts out. If you'd rather it peel off her exactly, that needs a new cut-out of her worn jacket, which is a new asset. I won't make it without your OK.</li>
-        <li><b>The app's bottom bar.</b> In the reveal and the proof, the real app's own button (“Tell me when it's ready”, then “Add 41 to wardrobe”) sits where TikTok puts its caption. It's real UI and not the focal point, so I left it as recorded. Say if you want the phone placed higher instead.</li>
+        <li><b>Watch it and tell me if it's up to the mark now (G5).</b> If it is, the next step is G6: the 4:5 and 1:1 sizes from the same timeline, a poster frame and the README. If not, tell me what's still off.</li>
+        <li><b>The sound.</b> It's made in code, with no stock or paid sounds, and it's in the library as a draft (<code>sfx.curate.pop-out-v3-sound.v2</code>). It needs your OK along with the film.</li>
+        <li><b>The studio rules.</b> They're still proposed; you said you'd decide after seeing v3. The v1, v2 and v3 comparison is on the <a href="https://claude.ai/artifact/EwVYnHsfAWgSiyjdAXVyzy" target="_blank" rel="noopener" style="color:var(--ink)">phone page</a>.</li>
       </ol>
-      <p class="note">Same defaults as G2: the ferry photo opens, the music is Cat Walk. The studio rules are still proposed. You decide on them after you've watched v3.</p>
+      <p class="note">Your G3 choices: you didn't pick, so the defaults stayed. The jacket is still the flat-lay cut-out (no new paid image) and the phone is where it was. The app's own bottom bar still sits where TikTok puts its caption.</p>
     </div>
   </section>
+
+  <section aria-labelledby="mo">
+    <h2 id="mo">In motion: what G4 and G5 fixed</h2>
+    <p class="note">Real consecutive frames from the renders, before and after. These moves are too fast for the critic's own strip test, so I cut these strips by hand and judged them.</p>
+    <div class="motion">
+      <article>
+        <h3>The review screen at 7.9–8.1 s</h3>
+        <p>The smear we flagged was worse in motion. The recording of the review screen has its own clock and notch, so a second “9:41” and a second notch slid up the phone and smeared into stripes. It now rises under the phone's own top bar, a little slower (101 px a frame at its fastest, down from 165), and its text stays readable as it rises.</p>
+        <div class="strip"><span class="lbl">Round 7 · 7.80–8.18 s</span><img src="img/g5/sheet-before.jpg" alt="Before: 24 frames of the review sheet rising with a second status bar smeared into stripes" loading="lazy"></div>
+        <div class="strip"><span class="lbl">Now · 7.80–8.18 s</span><img src="img/g5/sheet-after.jpg" alt="Now: the sheet rising under one status bar, its header readable" loading="lazy"></div>
+      </article>
+      <article>
+        <h3>The double “Curate” at 14.3 s</h3>
+        <p>The end card and her photo scrolled the whole screen in 0.4 s (up to 194 px a frame), so the blur came out as two “Curate”s. Now the end card lifts a short way and fades, and once it's gone her photo rises back and fades up. Frame 899 is still exactly frame 0.</p>
+        <div class="strip"><span class="lbl">Round 7 · 14.32–14.43 s, full size</span><img src="img/g5/close-before.jpg" alt="Before: the lockup scrolling up with doubled Curate text" loading="lazy"></div>
+        <div class="strip"><span class="lbl">Now · 14.20–14.57 s</span><img src="img/g5/close-after.jpg" alt="Now: the lockup fades as it lifts, then her photo rises back" loading="lazy"></div>
+      </article>
+      <article>
+        <h3>The phone's exit at 11.06 s</h3>
+        <p>Found in motion: the pushed-in phone dropped 1800 px in 0.4 s, and its top bar smeared into stripes for 6 frames. It now drops 420 px and fades as the logo arrives.</p>
+        <div class="strip"><span class="lbl">Round 8 · 10.90–11.27 s</span><img src="img/g5/exit-before.jpg" alt="Before: the phone leaving with its header smeared into stripes" loading="lazy"></div>
+        <div class="strip"><span class="lbl">Now · 10.90–11.27 s</span><img src="img/g5/exit-after.jpg" alt="Now: the phone drops a little and fades, the mark appears" loading="lazy"></div>
+      </article>
+      <article>
+        <h3>The sound, blindfolded</h3>
+        <p>I judged the audio from its waveform alone before watching. At first the designed hits were buried under the music, so every bar looked the same (sound scored 6). Now the music sinks 6 dB under a riser for the bar before the count, then comes back in full with a hit on the downbeat as “41” lands. You can see the one big moment without the picture. Mixed to −14.2 LUFS, true peak −2.3 dBTP.</p>
+        <div class="strip"><span class="lbl">Round 10 · the full mix</span><img src="img/g5/wave-before.jpg" alt="Before: a waveform with every bar alike" loading="lazy"></div>
+        <div class="strip"><span class="lbl">Now · the full mix: the dip at 7.9–9.2 s, the wall on 9.23 s</span><img src="img/g5/wave-after.jpg" alt="Now: the waveform dips for one bar before 9.23 seconds and comes back full" loading="lazy"></div>
+        <div class="strip"><span class="lbl">The designed layer alone, cues labelled</span><img src="img/g5/sound-stem.jpg" alt="The designed sound alone: kicks on every beat, a riser into an impact at 9.23 seconds" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+
 
   <section aria-labelledby="sb">
     <h2 id="sb">Stills, shot by shot</h2>
@@ -261,17 +324,23 @@ ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 
 
   <section aria-labelledby="cr">
     <h2 id="cr">The critic, round by round</h2>
-    <p class="note">Scored 1 to 10 from the frames alone. Sound is n/a: there's no audio until the full pass (G5). Each round lists its three worst defects; I fixed them and ran the next round.</p>
+    <p class="note">Scored 1 to 10 from the rendered frames alone, never the code. Rounds 1–6 judged the stills (G3), 7–9 the animatic in motion with the music only (G4, so sound is n/a), 10–12 the full pass with its own sound (G5). Each round lists its three worst defects; I fixed them and ran the next round.</p>
     <div class="scroll">
       <table class="scores">
-        <thead><tr><th>Round</th><th class="c">Hook in 2 s</th><th class="c">Phone</th><th class="c">Smooth</th><th class="c">Variety</th><th class="c">Sound</th><th class="c">Brand</th><th>Verdict</th></tr></thead>
+        <thead><tr><th>Round</th><th>Gate</th><th class="c">Hook in 2 s</th><th class="c">Phone</th><th class="c">Smooth</th><th class="c">Variety</th><th class="c">Sound</th><th class="c">Brand</th><th>Verdict</th></tr></thead>
         <tbody>
-<tr><td>Round 1</td><td class="n lo">7</td><td class="n lo">7</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
-<tr><td>Round 2</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
-<tr><td>Round 3</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">7</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
-<tr><td>Round 4</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">7</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
-<tr><td>Round 5</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>pass, then 2 safe-zone fixes</td></tr>
-<tr><td>Round 6</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>pass</td></tr>
+<tr><td>Round 1</td><td class="g">G3</td><td class="n lo">7</td><td class="n lo">7</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 2</td><td class="g">G3</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 3</td><td class="g">G3</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">7</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 4</td><td class="g">G3</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">7</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 5</td><td class="g">G3</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>pass, then 2 safe-zone fixes</td></tr>
+<tr><td>Round 6</td><td class="g">G3</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>pass</td></tr>
+<tr class="sep"><td>Round 7</td><td class="g">G4</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 8</td><td class="g">G4</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">7</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 9</td><td class="g">G4</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>pass</td></tr>
+<tr class="sep"><td>Round 10</td><td class="g">G5</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">6</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 11</td><td class="g">G5</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">6</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 12</td><td class="g">G5</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td>pass: all six 8</td></tr>
         </tbody>
       </table>
     </div>
@@ -297,9 +366,34 @@ ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 
         <li><span class="t">10.3 s</span> The last letter of “41 pieces from your photos” touched the buttons column. <span>Fix: the push-in moved slightly right.</span></li>
         <li><span class="t">7.2–7.9 s</span> A short settle at the end of the push. <span>Kept: it's the time to read “Curate pulls it out.”</span></li></ol></div>
       <div class="round"><h3>Round 6<small>all 8 · pass</small></h3><ol>
-        <li><span class="t">7.9–8.1 s</span> The sheet rises in a quarter second, so its text is one smear for 6 frames. <span>To judge in motion at G4.</span></li>
-        <li><span class="t">4.6–11 s</span> The real app's bottom bar sits in the caption area. <span>Your call, above.</span></li>
-        <li><span class="t">14.35 s</span> A faint double of “Curate” for 2 frames. <span>To check in motion at G4.</span></li></ol></div>
+        <li><span class="t">7.9–8.1 s</span> The sheet rises in a quarter second, so its text is one smear for 6 frames. <span>Judged in motion at G4: fixed in round 7.</span></li>
+        <li><span class="t">4.6–11 s</span> The real app's bottom bar sits in the caption area. <span>Left as recorded (your default).</span></li>
+        <li><span class="t">14.35 s</span> A faint double of “Curate” for 2 frames. <span>Checked in motion at G4: fixed in rounds 7–8.</span></li></ol></div>
+      <div class="round"><h3>Round 7<small>G4 · smooth 6</small></h3><ol>
+        <li><span class="t">7.85–8.15 s</span> The review sheet brings its own clock and notch: two of each slide up and smear into stripes for 6 frames. <span>Fix: it rises under the phone's top bar, on a slower panel spring (165 → 101 px a frame).</span></li>
+        <li><span class="t">14.30–14.40 s</span> The lockup and her photo scroll the whole screen at up to 194 px a frame: two “Curate”s. <span>Fix: the lockup lifts 300 px and fades; her photo rises 480 px and fades up.</span></li>
+        <li><span class="t">4.0, 11.5 s</span> Two thin hand-offs in the contact sheet. <span>Kept: in motion each reads as one move.</span></li></ol></div>
+      <div class="round"><h3>Round 8<small>G4 · smooth 7</small></h3><ol>
+        <li><span class="t">14.37–14.45 s</span> A faint ghost of “Curate” still over her rising photo. <span>Fix: the lockup fades faster (0.16 s) and her photo starts once it has gone.</span></li>
+        <li><span class="t">11.06–11.20 s</span> The phone's exit (173 px a frame) smears its top bar into stripes. <span>Fix: it drops 420 px and fades as the mark arrives.</span></li>
+        <li><span class="t">7.85–8.4 s</span> The sheet: one top bar, readable as it rises. <span>Fixed.</span></li></ol></div>
+      <div class="round"><h3>Round 9<small>G4 · all 8 · pass</small></h3><ol>
+        <li><span class="t">0–0.1 s</span> The photo veils fast as the jacket lifts. <span>Reads as the jacket stepping forward, not a flash. Judged again with the sound at G5.</span></li>
+        <li><span class="t">4.6–11 s</span> The app's bottom bar in the caption area. <span>Left as recorded.</span></li>
+        <li><span class="t">11.06, 14.3 s</span> Both exits are now one clean smear each; nothing doubles. <span>Fixed.</span></li></ol></div>
+      <div class="round"><h3>Round 10<small>G5 · sound 6</small></h3><ol>
+        <li><span class="t">sound</span> Blindfolded, every bar looks the same: the designed hits sit under the music and the build into 41 has no shape. <span>Fix: a louder riser and hit, and the music eases down under the build.</span></li>
+        <li><span class="t">1.9–2.3 s</span> The jacket is half see-through for a third of a second as it goes back in. <span>Kept: the hand-off you approved at G3.</span></li>
+        <li><span class="t">8.0 s</span> One frame of the rising header is blurred at phone size. <span>Kept: it's motion blur and reads as a sheet rising.</span></li></ol></div>
+      <div class="round"><h3>Round 11<small>G5 · sound 6</small></h3><ol>
+        <li><span class="t">7.85–9.23 s</span> Still flat: the louder riser fills exactly the gap the music leaves. <span>Fix: the music sinks 6 dB for the whole bar and comes back on the downbeat.</span></li>
+        <li><span class="t">1.9–2.3 s</span> As round 10. <span>Kept.</span></li>
+        <li><span class="t">picture</span> Unchanged from round 10. <span>Only the mix changed.</span></li></ol></div>
+      <div class="round"><h3>Round 12<small>G5 · all 8 · pass</small></h3><ol>
+        <li><span class="t">sound</span> The one big moment now shows blindfolded. Outside it the bars still look alike, because the music carries them. <span>An 8: more would mean fighting the track.</span></li>
+        <li><span class="t">1.9–2.3 s</span> The jacket's way home. <span>Yours to judge in motion.</span></li>
+        <li><span class="t">4.6–11 s</span> The app's bottom bar under the caption area. <span>Left as recorded.</span></li></ol></div>
+
     </div>
   </section>
 
@@ -327,15 +421,17 @@ ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 
           <tr><td>The loop</td><td><span class="pass">pass</span></td><td>Frame 899 and frame 0 are byte-identical</td></tr>
           <tr><td>Determinism</td><td><span class="pass">pass</span></td><td>11 frames rendered twice in fresh browsers: identical; all 19 shot frames re-rendered: identical</td></tr>
           <tr><td>Motion blur, no echo (v2's problem)</td><td><span class="pass">pass</span></td><td>The critic's strip test reads clean; every fast move has a blur along its direction</td></tr>
-          <tr><td>Sound on the beat</td><td>n/a</td><td>At G5, with the designed sound</td></tr>
+          <tr><td>Sound on the beat</td><td><span class="pass">pass</span></td><td>85% of the strong sound onsets fall on the measured beat grid; the riser cuts dead on the 9.23 s downbeat with the hit</td></tr>
+          <tr><td>Loudness</td><td><span class="pass">pass</span></td><td>−14.2 LUFS integrated (target −14 ± 1), true peak −2.3 dBTP (limit −1), measured on the final render</td></tr>
+          <tr><td>Motion in the finished film</td><td><span class="pass">pass</span></td><td>Strip test clean at full size; the sheet, the phone's exit and the close checked frame by frame (above)</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="note">The critic also needed motion evidence, so it ran on a quick silent 540×960 render each round. That render is internal only. It isn't the animatic, and I haven't shown it.</p>
+    <p class="note">The loop and determinism were checked again on the finished film: frames 0 and 899 are byte-identical, and frames 143, 483, 668, 866 and 899 render the same pixels in fresh browsers.</p>
   </section>
 
   <section aria-labelledby="ch">
-    <h2 id="ch">What changed since G2</h2>
+    <h2 id="ch">What changed at G3 (since G2)</h2>
     <ul>
       <li>Every shot is built, and the frames above come from that build. At G2 there was one still per shot.</li>
       <li>The hook shows one jacket coming out of her photo, not two. Her photo sits a little higher.</li>
@@ -350,9 +446,8 @@ ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 
     <div class="ask">
       <h2 id="ok">Next, after your OK</h2>
       <ol>
-        <li><b>G4:</b> a 540×960 animatic with Cat Walk under it, critiqued for motion. That's where the sheet's speed and the lockup's exit get judged.</li>
-        <li><b>G5:</b> the full pass with the designed sound, mixed to −14 LUFS, critiqued blindfolded first. You review it.</li>
-        <li><b>G6:</b> 4:5 and 1:1 from the same timeline, a poster frame and the loop check.</li>
+        <li><b>G6:</b> the 4:5 and 1:1 sizes from the same timeline, laid out again for each size and never cropped, plus a poster frame, the loop check and the README.</li>
+        <li><b>Then the 6 s and 30 s cut-downs</b> planned in the brief.</li>
       </ol>
     </div>
   </section>

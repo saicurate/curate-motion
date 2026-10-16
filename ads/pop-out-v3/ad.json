@@ -11,6 +11,7 @@
   "track": "music.mixkit.cat-walk-arulo.v1",
   "assets": [
     "music.mixkit.cat-walk-arulo.v1",
+    "sfx.curate.pop-out-v3-sound.v2",
     "font.geist.regular.v1",
     "font.geist.medium.v1",
     "font.geist.semibold.v1",
@@ -59,12 +60,15 @@
     "Music: Mixkit Stock Music Free License (Cat Walk, Arulo): online and social ads are fine; no TV/radio, never register it with Content ID."
   ],
   "createdBy": { "type": "agent", "name": "claude-code (motion studio agent)", "at": "2026-10-15" },
-  "notes": "The first ad made by the motion studio process (decisions/0011, proposed). G2 approved by the founder; stopped at G3 for the founder: stills for every shot, critiqued (6 rounds). 6 s and 30 s cut-downs and the 4:5 / 1:1 formats are planned in brief.md, not built. The designed sound (motion/sound) is made at G5.",
-  "gates": { "G1": "approved", "G2": "approved", "G3": "review", "G4": "pending", "G5": "pending", "G6": "pending" },
+  "notes": "The first ad made by the motion studio process (decisions/0011, proposed). G2 and G3 approved by the founder (G3: \"not quite up to the mark but would like to see the results\"; open choices left at the defaults: the flat-lay jacket cut-out, the phone position as is). G4 animatic (critic rounds 7–9) and G5 full pass with designed sound (rounds 10–12) done; G5 waits for the founder's review. 6 s and 30 s cut-downs and the 4:5 / 1:1 formats are planned in brief.md, not built.",
+  "gates": { "G1": "approved", "G2": "approved", "G3": "approved", "G4": "approved", "G5": "review", "G6": "pending" },
   "gateLog": [
     { "gate": "G1", "status": "approved", "by": "claude-code (motion studio agent)", "byType": "agent", "at": "2026-10-15", "note": "Mechanical gate: every listed asset is approved in the catalog (the founder approved the library, 2026-10-15); tools/catalog validate checks it. Real footage only; no invented screens." },
     { "gate": "G2", "status": "review", "by": "claude-code (motion studio agent)", "byType": "agent", "at": "2026-10-15", "note": "brief.md, style_guide.md, shotlist.md and one still per shot, on the founder's phone page https://claude.ai/artifact/4tnfSDLUbBQTUuo96epwxM (private). Waiting for the founder's OK before G3." },
     { "gate": "G2", "status": "approved", "by": "founder", "byType": "human", "at": "2026-10-15", "note": "said: Yeah, 2026-10-15. Storyboard defaults kept: the hook is the ferry photo with the jacket (r26); the music is Cat Walk, so v2 vs v3 is about motion alone." },
-    { "gate": "G3", "status": "review", "by": "claude-code (motion studio agent)", "byType": "agent", "at": "2026-10-15", "note": "Stills for every shot (19 at 1080 + the same at 360 px, one per beat: 33), real frames of the composition; critiqued in 6 rounds (reviews/pop-out-v3/2026-10-15/round-1…6), every applicable score 8+ (sound N/A until G5). Determinism EQUAL on 11 frames; f899 = f0. On the founder's phone page https://claude.ai/artifact/4tnfSDLUbBQTUuo96epwxM. Waiting for the founder's OK before G4." }
+    { "gate": "G3", "status": "review", "by": "claude-code (motion studio agent)", "byType": "agent", "at": "2026-10-15", "note": "Stills for every shot (19 at 1080 + the same at 360 px, one per beat: 33), real frames of the composition; critiqued in 6 rounds (reviews/pop-out-v3/2026-10-15/round-1…6), every applicable score 8+ (sound N/A until G5). Determinism EQUAL on 11 frames; f899 = f0. On the founder's phone page https://claude.ai/artifact/4tnfSDLUbBQTUuo96epwxM. Waiting for the founder's OK before G4." },
+    { "gate": "G3", "status": "approved", "by": "founder", "byType": "human", "at": "2026-10-16", "note": "founder: \"not quite up to the mark but would like to see the results\" (2026-10-16)" },
+    { "gate": "G4", "status": "approved", "by": "claude-code (motion studio agent)", "byType": "agent", "at": "2026-10-16", "note": "Animatic 540×960, 60 fps, the Cat Walk bed (renders/pop-out-v3/tiktok/15s/pop-out-v3-g4-animatic_tiktok_9x16_15s_v3.mp4). Critic rounds 7–9 in motion (reviews/pop-out-v3/2026-10-16/): fixed the sheet's smear and its second status bar (7.85–8.5 s), the phone exit smearing into bars (11.06 s) and the double of \"Curate\" in the lockup exit (14.33 s). Round 9: every applicable score 8 (sound N/A on the placeholder bed). Determinism EQUAL on frames 143, 483, 668, 866, 899; f899 byte-identical to f0." },
+    { "gate": "G5", "status": "review", "by": "claude-code (motion studio agent)", "byType": "agent", "at": "2026-10-16", "note": "Full pass 1080×1920, 60 fps, --concurrency 1 (renders/pop-out-v3/tiktok/15s/pop-out-v3-g5_tiktok_9x16_15s_v3.mp4), designed sound sfx.curate.pop-out-v3-sound.v2 (ads/pop-out-v3/sound.ts, draft) over Cat Walk with the music sinking 6 dB under the riser into 41. −14.2 LUFS integrated, true peak −2.3 dBTP. Critic rounds 10–12: every score 8 in round 12 (sound 6 → 8 after the blindfold test). Waiting for the founder's review (and their OK on the sfx asset)." }
   ]
 }

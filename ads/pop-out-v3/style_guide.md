@@ -64,6 +64,11 @@ otherwise comes only from her photos and clothes. No accent colour, no gradients
   dissolve); the flats the app lifted are the first tile of the review grid.
 - The only opacity moves: the roll's tiles arriving and leaving (exponential), words arriving, and
   the 4-frame handover from the drawn tile to the identical real card (hidden by identical pixels).
+- G4 (judged in motion): three exits that travelled the whole frame in 0.4 s (165–194 px a frame)
+  smeared into bars or doubled, so they became short moves with an exponential fade, in sequence,
+  never overlapping (not a crossfade): the phone drops 420 px and fades (0.18 s) before the mark
+  arrives; the lockup lifts 300 px and fades (0.16 s); then her photo rises 480 px and fades up (0.3 s).
+- Inside the phone, the review sheet rises UNDER the phone's status bar: one "9:41", one island.
 
 ## Camera
 
@@ -78,6 +83,7 @@ otherwise comes only from her photos and clothes. No accent colour, no gradients
 |---|---|---|---|---|---|
 | `ui` | the mark, the CTA | 0.75 | 0.32 s | 2.8% | 0.34 s |
 | `panel` | the phone forming, the screen push, the phone out, the loop back | 1.00 | 0.40 s | 0% | 0.42 s |
+| `panel` (long) | the review sheet only (G4: its peak 165 → 101 px a frame) | 1.00 | 0.62 s | 0% | 0.65 s |
 | `camera` | every glide and push | 1.00 | 1.60 s | 0% | 1.69 s |
 | `headline` | the two lines, "Curate" | 0.88 | 0.22 s | 0.3% | 0.17 s |
 | `mascot` | Zee only | 0.42 | 0.42 s | 23% | 0.74 s |
@@ -109,7 +115,9 @@ Music −14 LUFS integrated, true peak ≤ −1 dBTP. Designed sound from `motio
 clock: a soft kick on every beat; a pop when the jacket lifts and when the app lifts the flats; a
 dry "land" under each line; a low "glide" under each camera move; a swish for the screen push; a
 riser into 41 and a soft impact on it; a chime on the CTA; Zee's pop. Judged blindfolded first
-(`audio.wav` + `waveform.png`).
+(`audio.wav` + `waveform.png`). G5: the hits alone did not show under the music, so the music sinks 6 dB under
+the riser (7.85–9.23 s, `timeline.ts › musicGain`) and is back in full on the proof's downbeat with
+the impact. Mix: music × 0.64, designed sound × 0.6 → −14.2 LUFS, true peak −2.3 dBTP.
 
 ## Banned defaults
 

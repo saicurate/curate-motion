@@ -90,6 +90,96 @@
    "min": 8.0,
    "pass": true,
    "note": "PASS. Final G3 stills from this composition: 19 shot stills + 19 at 360 px + 33 beat stills; determinism EQUAL on 11 frames; f0 == f899 byte-identical. Sound N/A until G5."
+  },
+  {
+   "round": 7,
+   "date": "2026-10-16",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 6.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "G4 animatic v1 (540x960, 60 fps, Cat Walk bed). Worst: 7.85-8.15 s the sheet brings a second status bar and smears 6 frames (165 px/frame); 14.30-14.40 s the lockup+photo scroll (194/144 px/frame) shows two Curates. Sound N/A (placeholder bed)."
+  },
+  {
+   "round": 8,
+   "date": "2026-10-16",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 7.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "G4 animatic v2. Sheet fixed (one status bar, 101 px/frame). Worst: 11.06-11.2 s the phone exit (173 px/frame) smears into bars; 14.37-14.45 s a 4-10% ghost of Curate over the returning photo. Sound N/A (placeholder bed)."
+  },
+  {
+   "round": 9,
+   "date": "2026-10-16",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "G4 PASS. Animatic v3: sheet, phone exit and lockup exit all one clean smear (peaks 101/40/29 px per frame); no second status bar, no second Curate. Determinism EQUAL on 5 frames, f899 == f0. Sound N/A (placeholder bed)."
+  },
+  {
+   "round": 10,
+   "date": "2026-10-16",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 6.0,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "G5 full pass v1 (1080x1920, 60 fps, designed sound v1). -14.2 LUFS, TP -1.9. Blindfold: flat, the hits are under the music, the build into 41 has no shape. Picture holds at full size."
+  },
+  {
+   "round": 11,
+   "date": "2026-10-16",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 6.0,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "G5 v2: designed sound v2 (riser 0.75, impact 1) + a 2.5 dB music ease and a breath. Still flat blindfolded: the riser fills the breath. -14.0 LUFS, TP -2.3."
+  },
+  {
+   "round": 12,
+   "date": "2026-10-16",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 8.0,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "G5 PASS. Full pass v3: music sinks 6 dB under the riser (7.85-9.23 s) and is back on the downbeat with the impact: the build reads blindfolded. -14.2 LUFS, TP -2.3 dBTP, determinism EQUAL, loop seamless."
   }
  ]
 }

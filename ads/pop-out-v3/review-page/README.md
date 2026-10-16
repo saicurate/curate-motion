@@ -1,3 +1,3 @@
 # Pop out v3 review page
 
-Source of https://claude.ai/artifact/4tnfSDLUbBQTUuo96epwxM (G2 and G3 versions). The images it references live in `reviews/pop-out-v3/` (gitignored media); `files.json` lists them. Republish with the Artifact tool using the same URL.
+Source of https://claude.ai/artifact/4tnfSDLUbBQTUuo96epwxM (G2, G3, and now G4 + G5 versions: `pop-out-v3-storyboard.html`; the G2 version is kept as `pop-out-v3-storyboard-g2.html`). The images and the video it references are gitignored media: the G3 stills came from `reviews/pop-out-v3/2026-10-15/`, the G4/G5 evidence and the 720 px film are in `reviews/pop-out-v3/2026-10-16/page/` (the film is also `marketing/videos/cuts/real-pop-out-v3-15s-9x16-v1.mp4`). `files.json` maps each published path to its source. Republish with the Artifact tool using the same URL; files left out of a publish stay as they are.

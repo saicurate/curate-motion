@@ -299,7 +299,13 @@ export const validate = (o: { sha?: string; immutableAgainst?: string; checkInde
       if (a.status === "retired") errors.push(`${p}: uses retired asset ${id}`);
       if (a.kind === "reference") errors.push(`${p}: lists reference ${id}: references (inspo) are study only and never shipped in an ad (RULES.md › 9)`);
       if ((r.data.status === "approved" || r.data.status === "live") && a.status !== "approved") errors.push(`${p}: ${r.data.status} ad uses ${a.status} asset ${id}`);
-      if (r.data.gates?.G1 === "approved" && a.status !== "approved") errors.push(`${p}: G1 (assets approved) is approved but ${id} is ${a.status}`);
+      // the studio process makes one asset AFTER G1: the ad's own designed sound (G5: motion/sound,
+      // an sfx tagged ad:<this ad>). It may stay draft until the founder reviews G5; G5 approved needs it approved.
+      const g5Sound = a.kind === "sfx" && (a.tags?.free ?? []).includes(`ad:${r.data.id}`) && r.data.gates?.G5 !== "approved";
+      if (r.data.gates?.G1 === "approved" && a.status !== "approved") {
+        if (g5Sound) warnings.push(`${p}: ${id} (the ad's designed sound, G5) is ${a.status}: the founder approves it with G5`);
+        else errors.push(`${p}: G1 (assets approved) is approved but ${id} is ${a.status}`);
+      }
     }
     // the studio process (decisions/0011): each gate's files exist once the gate is in review
     const g = r.data.gates;

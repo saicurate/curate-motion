@@ -1,4 +1,5 @@
 import React from "react";
+import { Audio } from "@remotion/media";
 import { AbsoluteFill, Freeze, Img, OffthreadVideo, useCurrentFrame, useVideoConfig } from "remotion";
 import { z } from "zod";
 import { FormatId } from "../../schemas/ad";
@@ -6,14 +7,15 @@ import { C, frameSrc, GEIST, has, src, useBrandFonts, useFrameBox } from "../../
 import { DirectionalBlur, SubframeBlur, samplesFor } from "../../motion/Blur";
 import { StableImg } from "../../motion/StableImg";
 import { expoOut, progress, spring, springVel, track, trackVel, type Key } from "../../motion/springs";
-import { FOOTAGE, FROM_SEC, LENGTH, T } from "./timeline";
+import { FOOTAGE, FROM_SEC, LENGTH, musicGain, T } from "./timeline";
 
 // Pop out v3: "Your whole closet is already in your camera roll; Curate pulls it out."
 // Built by the studio process (.claude/skills/motion-reel): brief.md → style_guide.md → shotlist.md
 // (G2) → stills per shot (G3) → animatic (G4) → full pass (G5) → formats (G6).
-// STATUS: G3 (in review). Every shot built per the shot list and critiqued over 6 rounds on its stills
-// (reviews/pop-out-v3/2026-10-15/round-1…6; fixes marked `G3 fix (round N, …)`). Silent: the music
-// arrives at G4, the designed sound (motion/sound) at G5.
+// STATUS: G5. Every shot built per the shot list and critiqued on its stills over 6 rounds (G3,
+// reviews/pop-out-v3/2026-10-15/round-1…6; fixes marked `G3 fix (round N, …)`), then in motion
+// (G4/G5, reviews/pop-out-v3/2026-10-16/round-7…; fixes marked `G4 fix` / `G5 fix`). The music bed
+// arrives at G4, the designed sound (sound.ts, motion/sound) at G5.
 //
 // Everything is a pure function of t = frame / fps (springs from motion/springs, no timers, no
 // Math.random), so it renders the same at 60 fps, at 30 (App Store), in any order.
@@ -24,13 +26,15 @@ export const schema = z.object({
   track: z.string(),
   fromSec: z.number().nonnegative(),
   volume: z.number().min(0).max(1),
+  /** Designed sound gain (sfx.curate.pop-out-v3-sound.v2: kicks, riser, hits; motion/sound, G5). */
+  sfxVolume: z.number().min(0).max(1),
   /** Max sub-frame samples on the fastest moves (motion blur that doesn't echo). */
   maxSamples: z.number().int().min(1).max(16),
   /** Floor on the samples (benchmarks only: 16 forces the worst case everywhere). */
   minSamples: z.number().int().min(1).max(16),
 });
 export type Props = z.infer<typeof schema>;
-export const defaults: Omit<Props, "format" | "length"> = { track: "music.mixkit.cat-walk-arulo.v1", fromSec: FROM_SEC, volume: 0.62, maxSamples: 16, minSamples: 1 };
+export const defaults: Omit<Props, "format" | "length"> = { track: "music.mixkit.cat-walk-arulo.v1", fromSec: FROM_SEC, volume: 0.64, sfxVolume: 0.6, maxSamples: 16, minSamples: 1 };
 
 // ── the palette (style_guide.md): the brand ramp around the app; the app keeps its own colours ──
 const INK = "#181818"; // Primary Black: key phrases
@@ -122,10 +126,30 @@ const camera = (t: number, h: number) => {
   return { cx: track(t, k.x0, k.x), cy: track(t, k.y0, k.y), zoom: Math.exp(track(t, k.z0, k.z)), vz: trackVel(t, k.z0, k.z), vx: trackVel(t, k.x0, k.x), vy: trackVel(t, k.y0, k.y) };
 };
 
-// G3 fix (round 3, defects 2–3): the phone's exit and the photo's return travel only as far as
-// they must to clear the frame (v1 of this file: 2400 / 2200 px, peaks of 230 / 212 px a frame)
-const OUT_DIST = 1800;
-const LOOP_DIST = 1500;
+// G3 fix (round 3, defects 2–3): the phone's exit travels only as far as it must to clear the frame
+// (v1 of this file: 2400 px, a peak of 230 px a frame).
+// G4 fix (round 8, defect 2): 1800 px in 0.4 s still peaked at 173 px a frame: in motion the pushed-in
+// screen smeared into bars for 6 frames (the same flaw as the sheet). Now the phone drops 420 px as it
+// fades out (0.18 s, exponential), and the mark arrives as it goes: a peak of 40 px a frame.
+const OUT_DIST = 420;
+const OUT_FADE = 0.18;
+// G4 fix (round 7, defect 2: the faint double of "Curate" at 14.33–14.40 s): the lockup and her
+// photo no longer scroll the whole frame together (2016 px and 1500 px in 0.4 s, peaks of 194 and
+// 144 px a frame: 16 samples sat 6 px apart and the smear's two ends read as two "Curate"s). Now the
+// lockup lifts 300 px as it fades out, and her photo rises 480 px as it fades in, 0.1 s
+// after it: peaks of 29 and 46 px a frame, one clean smear each.
+const LEAVE_DIST = 300;
+const LOOP_DIST = 480;
+// G4 fix (round 8): the lockup's fade 0.28 → 0.16 s and her photo 0.1 → 0.13 s after it, so no
+// trace of "Curate" is left over her photo (round 8's frames 866–869 still showed a 4–10% ghost)
+const LEAVE_FADE = 0.16;
+const LOOP_IN = T.loopOut + 0.13; // her photo starts back once the lockup has gone
+// G4 fix (round 7, defect 1: the sheet's quarter-second smear at 7.9–8.1 s): the review sheet rises
+// on a longer panel response (critically damped, no overshoot: still the panel class) so its peak is
+// 101 px a frame, not 165, and samples sit ≤ 3.4 px apart; and it rises UNDER the phone's own status
+// bar (the recording's status bar is cut off the sheet), so no second "9:41" and island slide up.
+const SHEET: { zeta: number; response: number } = { zeta: 1, response: 0.62 };
+const STATUS = 200; // app px: the recordings' status bar band (9:41 + the island), identical in both clips
 
 /** The fastest screen speed (px per frame) at t: the camera's zoom and pan, the moving objects. */
 const fastest = (t: number, fps: number, h: number) => {
@@ -133,10 +157,11 @@ const fastest = (t: number, fps: number, h: number) => {
   const pan = Math.hypot(c.vx, c.vy) * c.zoom;
   const zoomEdge = Math.abs(c.vz) * h * 0.6; // an edge 0.6 h from the centre
   const phoneOut = Math.abs(trackVel(t, 0, [{ t: T.phoneOut, v: OUT_DIST, spring: "panel" }]));
-  const loopIn = Math.abs(trackVel(t, LOOP_DIST, [{ t: T.loopOut, v: 0, spring: "panel" }]));
-  const sheet = Math.abs(trackVel(t, 0, [{ t: T.screenChange, v: SCREEN.h, spring: "panel" }])) * c.zoom;
+  const loopIn = Math.abs(trackVel(t, LOOP_DIST, [{ t: LOOP_IN, v: 0, spring: "panel" }]));
+  const leave = Math.abs(springVel(t - T.loopOut, "panel")) * LEAVE_DIST;
+  const sheet = Math.abs(springVel(t - T.screenChange, SHEET)) * (SCREEN.h - STATUS * S) * c.zoom;
   const jacket = Math.abs(trackVel(t, 0, [{ t: T.lift, v: 1, spring: "piece" }, { t: T.home, v: 0, spring: "piece" }])) * (FERRY.w * 0.05 + FERRY.h * 0.2) * c.zoom;
-  return (pan + zoomEdge + phoneOut + loopIn + sheet + jacket) / fps;
+  return (pan + zoomEdge + phoneOut + loopIn + leave + sheet + jacket) / fps;
 };
 
 // ── pieces of the picture ──
@@ -228,10 +253,13 @@ const Scene: React.FC = () => {
   // sub-pixel shift of her detailed photo reads as a seam (diff 2.4 vs a 0.8 step); the last
   // quarter second eases that residual to exactly 0, so frame 899 is frame 0
   const loopTail = 1 - expoOut(progress(t, LENGTH - 0.27, 0.25));
-  const loopIn = t >= 12.4 ? track(t, LOOP_DIST, [{ t: T.loopOut, v: 0, spring: "panel" }]) * loopTail : 0;
+  const loopIn = t >= 12.4 ? track(t, LOOP_DIST, [{ t: LOOP_IN, v: 0, spring: "panel" }]) * loopTail : 0;
   const worldY = t >= 12.4 ? loopIn : worldOut;
+  // G4 fix (round 7): her photo fades up as it rises (opacity: exponential), and is fully on (1)
+  // from about 14.7 s, so frame 899 is still frame 0
+  const worldOpacity = t >= 12.4 ? expoOut(progress(t, LOOP_IN, 0.3)) : 1 - expoOut(progress(t, T.phoneOut, OUT_FADE));
   // ...and a blur along that vertical move joins the sub-frame copies (screen px per frame)
-  const worldVy = (t >= 12.4 ? trackVel(t, LOOP_DIST, [{ t: T.loopOut, v: 0, spring: "panel" }]) * loopTail : trackVel(t, 0, [{ t: T.phoneOut, v: OUT_DIST, spring: "panel" }])) / fps;
+  const worldVy = (t >= 12.4 ? trackVel(t, LOOP_DIST, [{ t: LOOP_IN, v: 0, spring: "panel" }]) * loopTail : trackVel(t, 0, [{ t: T.phoneOut, v: OUT_DIST, spring: "panel" }])) / fps;
 
   // the screen's rectangle grows from the tile to the whole phone screen as it forms
   const scr = {
@@ -243,12 +271,14 @@ const Scene: React.FC = () => {
   const bezel = 14 * S * form;
   const scrRadius = 6 + (66 * S * 1.6 - 6) * form;
   // inside the phone: footage 1 → (screen change, panel push) → footage 2
-  const push = spring(t - T.screenChange, "panel");
+  const push = spring(t - T.screenChange, SHEET);
+  const sheetVy = (springVel(t - T.screenChange, SHEET) * (SCREEN.h - STATUS * S)) / fps;
+  const sheetR = 66 * S * 1.6 * Math.min(1, (1 - push) * 4); // the sheet's top corners square up as it lands
   const clipSec = (k: number) => Math.min(FOOTAGE[k].durationSec - 2 / fps, FOOTAGE[k].from + Math.max(0, t - FOOTAGE[k].start));
 
   return (
     <AbsoluteFill style={{ background: ANGORA, overflow: "hidden" }}>
-      <div style={{ position: "absolute", inset: 0, transform: `translateY(${worldY}px)` }}>
+      <div style={{ position: "absolute", inset: 0, transform: `translateY(${worldY}px)`, opacity: worldOpacity }}>
         <DirectionalBlur name="world" vx={0} vy={worldVy} max={40}>
         <div style={toScreen()}>
           {/* her camera roll */}
@@ -291,17 +321,22 @@ const Scene: React.FC = () => {
                     {push < 0.999 ? (
                       <div style={{ position: "absolute", inset: 0 }}>
                         <Clip id={FOOTAGE[0].id} sec={clipSec(0)} />
-                        <div style={{ position: "absolute", inset: 0, background: "#101418", opacity: 0.1 * push }} />
+                        {/* dims below the status bar only, so nothing jumps in brightness when the sheet lands */}
+                        <div style={{ position: "absolute", left: 0, right: 0, top: STATUS * S, bottom: 0, background: "#101418", opacity: 0.1 * push }} />
                       </div>
                     ) : null}
-                    {t >= T.screenChange ? (
-                      <div style={{ position: "absolute", inset: 0, transform: `translateY(${(1 - push) * 100}%)`, borderRadius: `${66 * S * 1.6}px ${66 * S * 1.6}px 0 0`, overflow: "hidden", boxShadow: push < 0.999 ? `0 ${-18 * S}px ${60 * S}px rgba(16,20,24,${0.18 * (1 - push)})` : undefined }}>
+                    {t >= T.screenChange && push < 0.999 ? (
+                      <div style={{ position: "absolute", left: 0, right: 0, top: STATUS * S, bottom: 0, transform: `translateY(${(1 - push) * (SCREEN.h - STATUS * S)}px)`, borderRadius: `${sheetR}px ${sheetR}px 0 0`, overflow: "hidden", boxShadow: `0 ${-18 * S}px ${60 * S}px rgba(16,20,24,${0.18 * (1 - push)})` }}>
                         {/* G3 fix (round 2, defect 2): a blur along the sheet's own velocity joins the sub-frame copies */}
-                        <DirectionalBlur name="sheet" vx={0} vy={(springVel(t - T.screenChange, "panel") * SCREEN.h) / fps} max={40}>
-                          <Clip id={FOOTAGE[1].id} sec={clipSec(1)} />
+                        <DirectionalBlur name="sheet" vx={0} vy={sheetVy} max={40}>
+                          <div style={{ position: "absolute", left: 0, top: -STATUS * S, width: SCREEN.w, height: SCREEN.h }}>
+                            <Clip id={FOOTAGE[1].id} sec={clipSec(1)} />
+                          </div>
                         </DirectionalBlur>
                       </div>
                     ) : null}
+                    {/* landed: the whole recording, status bar and all (the band is the same pixels as before) */}
+                    {push >= 0.999 ? <Clip id={FOOTAGE[1].id} sec={clipSec(1)} /> : null}
                   </div>
                 ) : null}
               </div>
@@ -350,18 +385,20 @@ const EndCard: React.FC<{ t: number }> = ({ t }) => {
   const { w, h, u } = useFrameBox();
   const { fps } = useVideoConfig();
   if (t < T.phoneOut + 0.05) return null;
-  const leave = spring(t - T.loopOut, "panel"); // the lockup lifts away as her photo comes back
-  const mark = spring(t - (T.phoneOut + 0.12), "ui");
+  const leave = spring(t - T.loopOut, "panel"); // the lockup lifts away (G4 fix: 300 px, fading) before her photo comes back
+  const gone = 1 - expoOut(progress(t, T.loopOut, LEAVE_FADE));
+  if (gone <= 0) return null;
+  const mark = spring(t - (T.phoneOut + 0.15), "ui"); // G4 fix (round 8): +0.12 → +0.15 s, as the phone has faded
   const name = spring(t - T.name, "headline");
   const cta = spring(t - T.cta, "ui");
   const zee = spring(t - T.zee, "mascot");
   const markW = u * 30;
-  const y0 = h * 0.36 - leave * h * 1.05;
+  const y0 = h * 0.36 - leave * LEAVE_DIST;
   const zeeN = Math.max(0, Math.floor((t - T.zee) * 30));
   const zeeSrc = has("zee.cheer.intro.v1") ? (zeeN < 15 ? frameSrc("zee.cheer.intro.v1", zeeN) : frameSrc("zee.cheer.loop.v1", zeeN - 15)) : null;
   return (
-    <div style={{ position: "absolute", inset: 0, transform: `translateY(${y0 - h * 0.36}px)` }}>
-      <DirectionalBlur name="lockup" vx={0} vy={(-springVel(t - T.loopOut, "panel") * h * 1.05) / fps} max={40}>
+    <div style={{ position: "absolute", inset: 0, transform: `translateY(${y0 - h * 0.36}px)`, opacity: gone }}>
+      <DirectionalBlur name="lockup" vx={0} vy={(-springVel(t - T.loopOut, "panel") * LEAVE_DIST) / fps} max={40}>
       <StableImg src={src(MARK)} style={{ position: "absolute", left: w / 2 - markW / 2 / (482 / 1152), top: h * 0.36 - markW / 2 / (482 / 1152), width: markW / (482 / 1152), height: markW / (482 / 1152), opacity: expoOut(Math.min(1, mark * 1.3)), transform: `scale(${0.9 + 0.1 * mark})` }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: h * 0.36 + markW * 0.62, textAlign: "center", fontFamily: GEIST, fontWeight: 500, fontSize: u * 11, letterSpacing: "-0.035em", color: INK, opacity: expoOut(Math.min(1, name * 1.3)), transform: `translateY(${(1 - name) * u * 3}px)` }}>
         Curate
@@ -377,16 +414,19 @@ const EndCard: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
-export const PopOutV3: React.FC<Props> = ({ track: music, fromSec, volume, maxSamples, minSamples }) => {
+const SFX = "sfx.curate.pop-out-v3-sound.v2";
+
+export const PopOutV3: React.FC<Props> = ({ track: music, fromSec, volume, sfxVolume, maxSamples, minSamples }) => {
   useBrandFonts();
-  const { fps } = useVideoConfig();
+  const { fps, durationInFrames } = useVideoConfig();
   const { h } = useFrameBox();
-  // Music arrives at G4 (placeholder) and G5 (with the designed sound): the G2 stills are silent.
-  void music;
-  void fromSec;
-  void volume;
+  // G4: the music bed (Cat Walk from the drop); G5: + the designed sound on the same clock (sound.ts).
+  // Both sit outside SubframeBlur (which renders its children once per sub-frame sample).
+  const tail = (fr: number) => Math.min(1, (durationInFrames - fr) / 4); // no click at the loop point
   return (
     <AbsoluteFill style={{ background: ANGORA }}>
+      <Audio src={src(music)} trimBefore={Math.round(fromSec * fps)} volume={(fr) => volume * musicGain(fr / fps) * tail(fr)} />
+      {has(SFX) ? <Audio src={src(SFX)} volume={(fr) => sfxVolume * tail(fr)} /> : null}
       <SubframeBlur samples={(f) => Math.max(minSamples, Math.min(maxSamples, samplesFor(fastest(f / fps, fps, h), 0.5, 3, 16)))} shutter={0.5}>
         <Scene />
       </SubframeBlur>
