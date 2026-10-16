@@ -82,7 +82,7 @@
         "name": "claude-code (device frames)",
         "at": "2026-10-16"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "device",
       "maker": "Apple",
@@ -134,7 +134,9 @@
         "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
         "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
       ],
-      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+      "approvedAt": "2026-10-16"
     },
     {
       "id": "device.apple.iphone-17-pro-max-deep-blue.v1",
@@ -216,7 +218,7 @@
         "name": "claude-code (device frames)",
         "at": "2026-10-16"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "device",
       "maker": "Apple",
@@ -268,7 +270,9 @@
         "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
         "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
       ],
-      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+      "approvedAt": "2026-10-16"
     },
     {
       "id": "device.apple.iphone-17-pro-max-cosmic-orange.v1",
@@ -350,7 +354,7 @@
         "name": "claude-code (device frames)",
         "at": "2026-10-16"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "device",
       "maker": "Apple",
@@ -402,7 +406,9 @@
         "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
         "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
       ],
-      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+      "approvedAt": "2026-10-16"
     },
     {
       "id": "device.apple.iphone-18-pro-max-silver.v1",
@@ -484,7 +490,7 @@
         "name": "claude-code (device frames)",
         "at": "2026-10-16"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "device",
       "maker": "Apple",
@@ -536,7 +542,9 @@
         "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
         "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
       ],
-      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+      "approvedAt": "2026-10-16"
     },
     {
       "id": "device.apple.iphone-18-pro-max-black.v1",
@@ -618,7 +626,7 @@
         "name": "claude-code (device frames)",
         "at": "2026-10-16"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "device",
       "maker": "Apple",
@@ -670,7 +678,9 @@
         "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
         "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
       ],
-      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+      "approvedAt": "2026-10-16"
     },
     {
       "id": "device.apple.iphone-18-pro-max-burgundy.v1",
@@ -752,7 +762,7 @@
         "name": "claude-code (device frames)",
         "at": "2026-10-16"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "device",
       "maker": "Apple",
@@ -804,7 +814,9 @@
         "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
         "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
       ],
-      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+      "approvedAt": "2026-10-16"
     },
     {
       "id": "device.apple.iphone-18-pro-max-glacier.v1",
@@ -886,7 +898,7 @@
         "name": "claude-code (device frames)",
         "at": "2026-10-16"
       },
-      "status": "draft",
+      "status": "approved",
       "aiGenerated": false,
       "kind": "device",
       "maker": "Apple",
@@ -938,7 +950,9 @@
         "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
         "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
       ],
-      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+      "approvedAt": "2026-10-16"
     },
     {
       "id": "device.curate.phone-generic.v1",

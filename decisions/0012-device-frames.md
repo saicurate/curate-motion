@@ -1,8 +1,10 @@
-# 0012: Phones are Apple's real bezels; 3D moves use our own generic phone (PROPOSED)
+# 0012: Phones are Apple's real bezels (ACCEPTED 2026-10-16)
 
 2026-10-16 · founder: "give me the real phone look. The phones that you are showing in the UI are so
-ugly." Status: **proposed**. The founder picks from the demo page
-(https://claude.ai/artifact/AGC9UrR9ucfR7EAp8nJn5z) before any ad switches.
+ugly." Status: **accepted for option B**. On the demo page
+(https://claude.ai/artifact/AGC9UrR9ucfR7EAp8nJn5z) the founder said "i think B is good" (2026-10-16):
+Apple's Product Bezels, as is, for every new phone shot; Silver by default. The 3D generic phone
+(option C) was not picked and stays available only if the founder asks for it.
 
 **Context.** Every ad drew its phone with `motion/PhoneFrame.tsx`: a black rounded rectangle with a
 drawn island, tilted and turned in 3D. Real-looking iPhones come in three forms: Apple's official
@@ -22,7 +24,7 @@ most of it:
   the App Store while we are in the Developer Program; the DMG's Apple Design Resources licence
   (LYL142) forbids redistributing them.
 
-**Decision (proposed).**
+**Decision (accepted: B; C kept, unused).**
 - New asset kind **`device`** (`schemas/asset.ts › DeviceAsset`, `library/devices/`): the measured
   screen box, corner radius, island, the moves the licence allows, plain-language rules and the
   credit line. Apple's bezels may only declare pan/zoom/fade; an Apple 3D device is a schema error.

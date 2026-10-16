@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:16:14.188Z",
+  "generatedAt": "2026-10-16T20:24:35.380Z",
   "bucket": "curate-motion-library-276451918677",
   "counts": {
     "brand": 4,
@@ -323,7 +323,7 @@
       "id": "device.apple.iphone-17-pro-max-cosmic-orange.v1",
       "kind": "device",
       "title": "iPhone 17 Pro Max, Cosmic Orange (Apple bezel, portrait)",
-      "status": "draft",
+      "status": "approved",
       "manifest": "library/devices/manifest.json",
       "files": [
         {
@@ -361,7 +361,7 @@
         "maker:apple",
         "model:iphone-17-pro-max",
         "scope:apple",
-        "status:draft",
+        "status:approved",
         "variant:bezel"
       ],
       "licence": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
@@ -446,7 +446,9 @@
           "name": "claude-code (device frames)",
           "at": "2026-10-16"
         },
-        "status": "draft",
+        "status": "approved",
+        "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+        "approvedAt": "2026-10-16",
         "aiGenerated": false,
         "kind": "device",
         "maker": "Apple",
@@ -505,7 +507,7 @@
       "id": "device.apple.iphone-17-pro-max-deep-blue.v1",
       "kind": "device",
       "title": "iPhone 17 Pro Max, Deep Blue (Apple bezel, portrait)",
-      "status": "draft",
+      "status": "approved",
       "manifest": "library/devices/manifest.json",
       "files": [
         {
@@ -543,7 +545,7 @@
         "maker:apple",
         "model:iphone-17-pro-max",
         "scope:apple",
-        "status:draft",
+        "status:approved",
         "variant:bezel"
       ],
       "licence": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
@@ -628,7 +630,9 @@
           "name": "claude-code (device frames)",
           "at": "2026-10-16"
         },
-        "status": "draft",
+        "status": "approved",
+        "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+        "approvedAt": "2026-10-16",
         "aiGenerated": false,
         "kind": "device",
         "maker": "Apple",
@@ -687,7 +691,7 @@
       "id": "device.apple.iphone-17-pro-max-silver.v1",
       "kind": "device",
       "title": "iPhone 17 Pro Max, Silver (Apple bezel, portrait)",
-      "status": "draft",
+      "status": "approved",
       "manifest": "library/devices/manifest.json",
       "files": [
         {
@@ -725,7 +729,7 @@
         "maker:apple",
         "model:iphone-17-pro-max",
         "scope:apple",
-        "status:draft",
+        "status:approved",
         "variant:bezel"
       ],
       "licence": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
@@ -810,7 +814,9 @@
           "name": "claude-code (device frames)",
           "at": "2026-10-16"
         },
-        "status": "draft",
+        "status": "approved",
+        "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+        "approvedAt": "2026-10-16",
         "aiGenerated": false,
         "kind": "device",
         "maker": "Apple",
@@ -869,7 +875,7 @@
       "id": "device.apple.iphone-18-pro-max-black.v1",
       "kind": "device",
       "title": "iPhone 18 Pro Max, Black (Apple bezel, portrait)",
-      "status": "draft",
+      "status": "approved",
       "manifest": "library/devices/manifest.json",
       "files": [
         {
@@ -907,7 +913,7 @@
         "maker:apple",
         "model:iphone-18-pro-max",
         "scope:apple",
-        "status:draft",
+        "status:approved",
         "variant:bezel"
       ],
       "licence": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
@@ -992,7 +998,9 @@
           "name": "claude-code (device frames)",
           "at": "2026-10-16"
         },
-        "status": "draft",
+        "status": "approved",
+        "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+        "approvedAt": "2026-10-16",
         "aiGenerated": false,
         "kind": "device",
         "maker": "Apple",
@@ -1051,7 +1059,7 @@
       "id": "device.apple.iphone-18-pro-max-burgundy.v1",
       "kind": "device",
       "title": "iPhone 18 Pro Max, Burgundy (Apple bezel, portrait)",
-      "status": "draft",
+      "status": "approved",
       "manifest": "library/devices/manifest.json",
       "files": [
         {
@@ -1089,7 +1097,7 @@
         "maker:apple",
         "model:iphone-18-pro-max",
         "scope:apple",
-        "status:draft",
+        "status:approved",
         "variant:bezel"
       ],
       "licence": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
@@ -1174,7 +1182,9 @@
           "name": "claude-code (device frames)",
           "at": "2026-10-16"
         },
-        "status": "draft",
+        "status": "approved",
+        "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+        "approvedAt": "2026-10-16",
         "aiGenerated": false,
         "kind": "device",
         "maker": "Apple",
@@ -1233,7 +1243,7 @@
       "id": "device.apple.iphone-18-pro-max-glacier.v1",
       "kind": "device",
       "title": "iPhone 18 Pro Max, Glacier (Apple bezel, portrait)",
-      "status": "draft",
+      "status": "approved",
       "manifest": "library/devices/manifest.json",
       "files": [
         {
@@ -1271,7 +1281,7 @@
         "maker:apple",
         "model:iphone-18-pro-max",
         "scope:apple",
-        "status:draft",
+        "status:approved",
         "variant:bezel"
       ],
       "licence": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
@@ -1356,7 +1366,9 @@
           "name": "claude-code (device frames)",
           "at": "2026-10-16"
         },
-        "status": "draft",
+        "status": "approved",
+        "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+        "approvedAt": "2026-10-16",
         "aiGenerated": false,
         "kind": "device",
         "maker": "Apple",
@@ -1415,7 +1427,7 @@
       "id": "device.apple.iphone-18-pro-max-silver.v1",
       "kind": "device",
       "title": "iPhone 18 Pro Max, Silver (Apple bezel, portrait)",
-      "status": "draft",
+      "status": "approved",
       "manifest": "library/devices/manifest.json",
       "files": [
         {
@@ -1453,7 +1465,7 @@
         "maker:apple",
         "model:iphone-18-pro-max",
         "scope:apple",
-        "status:draft",
+        "status:approved",
         "variant:bezel"
       ],
       "licence": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
@@ -1538,7 +1550,9 @@
           "name": "claude-code (device frames)",
           "at": "2026-10-16"
         },
-        "status": "draft",
+        "status": "approved",
+        "approvedBy": "founder (said: i think B is good, 2026-10-16)",
+        "approvedAt": "2026-10-16",
         "aiGenerated": false,
         "kind": "device",
         "maker": "Apple",

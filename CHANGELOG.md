@@ -178,3 +178,6 @@ in the manifests' git history; list only notable ones here.
 - Migrated the marketing library from marketing/videos: 192 assets, media in S3, validated with 0 errors.
 - Emma's Curate account is live (49 wardrobe pieces); account files under library/people/emma/.
 - Fixed tools/sync for Zee frame folders.
+
+## 2026-10-16
+- Phones: the founder picked Apple's real iPhone bezels (option B). The 7 Apple device assets are approved; AGENTS.md and decisions/0012 are accepted. New ads use <Device> (bezel, Silver).

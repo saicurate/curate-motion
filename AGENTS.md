@@ -224,10 +224,13 @@ Removal rules: **retire is the default** and is always safe. Approved assets are
 `--force` deletes a draft's entry, its local files and its S3 objects (S3 keeps the bytes 90 days
 as old versions). An asset an ad lists can't be deleted until the ad stops listing it.
 
-## Phones in ads: `<Device>` (PROPOSED, decisions/0012)
+## Phones in ads: `<Device>` (ACCEPTED 2026-10-16, decisions/0012)
 
-The founder picks first (demo page https://claude.ai/artifact/AGC9UrR9ucfR7EAp8nJn5z); until then old
-ads keep `PhoneFrame`. New phone shots use `motion/Device.tsx`, by catalog id (kind `device`):
+**The founder picked option B, Apple's real iPhone bezels** ("i think B is good", 2026-10-16): every
+NEW phone shot uses `<Device>` with the default `bezel` variant. Default colour: Silver. Don't use
+the drawn `PhoneFrame` in new ads (old ads keep it until they're re-cut). The `3d` generic phone was
+NOT picked: use it only if the founder asks for a shot that tilts or has things leave the screen.
+New phone shots use `motion/Device.tsx`, by catalog id (kind `device`):
 
 ```tsx
 <Device model="iphone-17-pro-max" color="silver" width={560} x={540} y={980} scale={push}>
