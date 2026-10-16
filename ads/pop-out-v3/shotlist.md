@@ -1,6 +1,6 @@
 # Pop out v3: shot list
 
-**Gate:** G2 (in review). Times are seconds from frame 0 on the **measured** beat map
+**Gate:** G2 approved (2026-10-15); G3 in review. Times are seconds from frame 0 on the **measured** beat map
 (`beatmap.ts`, from `tools/beats`: Cat Walk 130.00 BPM, frame 0 = the drop at 29.536 s). 60 fps:
 frame = seconds × 60. The same list as data: `shots.ts` (the stills) and `timeline.ts` (the moments).
 
@@ -40,10 +40,30 @@ on every beat.
 `tools/stills pop-out-v3 --shots` → `ads/pop-out-v3/out/stills/` (local): s1 at 1.38 s, s2 at 3.30 s,
 s3 at 6.60 s, s4 at 10.30 s, s5 at 13.60 s.
 
-## Known for G3/G4 (seen in a silent timing pass, not shown to the founder)
+## G3: stills per shot, critiqued (6 rounds, `reviews/pop-out-v3/2026-10-15/round-1…6/`)
 
-- 4.2–4.6 s: the phone forms faster than the tile grows: the empty screen reads before the card does.
-- 7.85–8.2 s: the screen push shows the old screen's bottom and the new screen's top at once; Zee is
-  clipped at the edge. Try a shorter push, or the new screen rising as a sheet over the old one.
-- 6.1–7.85 s: the real app is still (1.7 s): a slow camera push (camera class) would keep it alive.
-- The jacket's lift reads as "doubled": consider veiling the jacket's area of the photo more.
+Stills (real frames of the composition, `tools/stills`): entry / key moment / exit for every shot,
+plus the moments the critic fixed: s1 0.00 · 1.38 · 1.83 · s2 1.87 · 3.30 · 3.68 · s3 3.72 · 4.40 ·
+5.60 · 6.60 · 7.83 · s4 7.87 · 9.23 · 10.30 · 11.03 · s5 11.08 · 12.50 · 13.60 · 14.98 (19, and the
+same 19 at 360 px wide), plus one at every beat (33, at 360 px). Round 6: `stills/`, `beat-strip.jpg`.
+
+What changed in the picture at G3 (each marked `G3 fix (round N, …)` in index.tsx):
+- S1: the flat-lay cut-out no longer sits on her worn jacket at rest (frame 0 was two jackets); the
+  photo veils first, the cut-out fades up as it lifts, bigger and to the right (her face stays in
+  view). Her photo sits 85 px higher so the jacket's hem clears the caption zone.
+- S2→S3: the rest of the roll clears as the camera starts its glide in (3.78 s), not when the phone
+  forms: the market photo is the one focal point of that beat.
+- S3: the real app is under the forming screen from 4.17 s (its in-point frame held until 4.63 s),
+  so the growing screen reveals the real app round the card instead of an empty phone. A slow camera
+  push (×1.08) from 6.01 s keeps the still real screen alive (was a 1.68 s dead hold).
+- S3→S4: the review screen rises OVER the flats screen as a sheet (it dims 10%), with a blur along its
+  velocity; no two half screens, no cut Zee.
+- S4: the push-in point moved 40 app px right so the header clears the right 15%.
+- S5: the phone's exit 2400 → 1800 px and her photo's return 2200 → 1500 px (just clear the frame),
+  both with a vertical blur; the lockup's exit too. The return's last 0.6 px eases to 0, so frame 899
+  is byte-identical to frame 0.
+- Sub-frame samples up to 16 (was 12).
+
+Notes for G4 (watch in motion): the sheet's 0.25 s smear at 7.87–8.12 s; a faint double of "Curate"
+in the lockup's exit (2 frames, 14.33 s); the real app's bottom bar sits under the platform caption
+4.6–11 s (real UI, left as recorded).

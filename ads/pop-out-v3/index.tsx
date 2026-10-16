@@ -3,16 +3,17 @@ import { AbsoluteFill, Freeze, Img, OffthreadVideo, useCurrentFrame, useVideoCon
 import { z } from "zod";
 import { FormatId } from "../../schemas/ad";
 import { C, frameSrc, GEIST, has, src, useBrandFonts, useFrameBox } from "../../motion";
-import { SubframeBlur, samplesFor } from "../../motion/Blur";
+import { DirectionalBlur, SubframeBlur, samplesFor } from "../../motion/Blur";
 import { StableImg } from "../../motion/StableImg";
-import { expoOut, progress, spring, track, trackVel, type Key } from "../../motion/springs";
-import { FOOTAGE, FROM_SEC, T } from "./timeline";
+import { expoOut, progress, spring, springVel, track, trackVel, type Key } from "../../motion/springs";
+import { FOOTAGE, FROM_SEC, LENGTH, T } from "./timeline";
 
 // Pop out v3: "Your whole closet is already in your camera roll; Curate pulls it out."
 // Built by the studio process (.claude/skills/motion-reel): brief.md → style_guide.md → shotlist.md
 // (G2) → stills per shot (G3) → animatic (G4) → full pass (G5) → formats (G6).
-// STATUS: G2. This file renders every shot's KEY MOMENT correctly (the storyboard stills); the
-// motion between them is laid in with the right springs but is not yet tuned or critiqued (G3/G4).
+// STATUS: G3 (in review). Every shot built per the shot list and critiqued over 6 rounds on its stills
+// (reviews/pop-out-v3/2026-10-15/round-1…6; fixes marked `G3 fix (round N, …)`). Silent: the music
+// arrives at G4, the designed sound (motion/sound) at G5.
 //
 // Everything is a pure function of t = frame / fps (springs from motion/springs, no timers, no
 // Math.random), so it renders the same at 60 fps, at 30 (App Store), in any order.
@@ -29,7 +30,7 @@ export const schema = z.object({
   minSamples: z.number().int().min(1).max(16),
 });
 export type Props = z.infer<typeof schema>;
-export const defaults: Omit<Props, "format" | "length"> = { track: "music.mixkit.cat-walk-arulo.v1", fromSec: FROM_SEC, volume: 0.62, maxSamples: 12, minSamples: 1 };
+export const defaults: Omit<Props, "format" | "length"> = { track: "music.mixkit.cat-walk-arulo.v1", fromSec: FROM_SEC, volume: 0.62, maxSamples: 16, minSamples: 1 };
 
 // ── the palette (style_guide.md): the brand ramp around the app; the app keeps its own colours ──
 const INK = "#181818"; // Primary Black: key phrases
@@ -77,14 +78,23 @@ const [PCX, PCY] = centre(SCREEN);
 // ── the camera: one virtual camera, world centre + zoom (log), stacked springs (camera class) ──
 const HOOK_ZOOM = 720 / TW; // her photo 720 px wide
 const PHONE_ZOOM = 730 / SCREEN.w; // the phone's screen 730 px wide
-const HEADER = { x: 560, y: 520 }; // app px: the middle of "41 pieces from your photos" and the line under it
+// app px: the middle of "41 pieces from your photos" and the line under it. G3 fix (round 5): x 560 → 600
+// so the header's last letters clear the right 15% (TikTok/Reels buttons)
+const HEADER = { x: 600, y: 520 };
 const ROLL_ZOOM = 0.92;
 const ROLL_TOP_ON_SCREEN = 470; // px: clear ground above the roll, where the line sits
 const camKeys = (h: number) => {
-  const hookY = centre(FERRY)[1] - (1095 - h / 2) / HOOK_ZOOM; // her photo sits a little low (room for the line)
+  // her photo sits a little low (room for the line); G3 fix (round 5): centre 1095 → 1010 px so the
+  // lifted jacket's hem stays above the bottom 20% (the platform caption)
+  const hookY = centre(FERRY)[1] - (1010 - h / 2) / HOOK_ZOOM;
   const phoneY = PCY - (1095 - h / 2) / PHONE_ZOOM;
   const head = { x: SCREEN.x + HEADER.x * S, y: SCREEN.y + HEADER.y * S };
   const ZOOM_HEAD = 2.05;
+  // G3 fix (round 1, defect 3): the real app holds still 6.2–7.85 s, so the camera keeps breathing:
+  // a slow push (×1.08) about a point near the phone's top, so the top stays clear of the line
+  const PUSH = 1.08;
+  const pinY = 420; // screen px that stays put
+  const pushY = phoneY + (pinY - h / 2) / PHONE_ZOOM - (pinY - h / 2) / (PHONE_ZOOM * PUSH);
   const x: Key[] = [
     { t: T.home, v: ROLL_X + (COLS * (TW + GAP) - GAP) / 2, spring: "camera" },
     { t: T.intoTile, v: PCX, spring: "camera" },
@@ -94,12 +104,14 @@ const camKeys = (h: number) => {
   const y: Key[] = [
     { t: T.home, v: (h / 2 - ROLL_TOP_ON_SCREEN) / ROLL_ZOOM, spring: "camera" }, // the roll starts below the line
     { t: T.intoTile, v: phoneY, spring: "camera" },
+    { t: T.line2, v: pushY, spring: "camera" },
     { t: T.count41, v: head.y + (h * 0.5 - 760) / ZOOM_HEAD, spring: "camera" },
     { t: 12.4, v: hookY, spring: { zeta: 1, response: 0.0005 } },
   ];
   const z: Key[] = [
     { t: T.home, v: Math.log(ROLL_ZOOM), spring: "camera" },
     { t: T.intoTile, v: Math.log(PHONE_ZOOM), spring: "camera" },
+    { t: T.line2, v: Math.log(PHONE_ZOOM * PUSH), spring: "camera" },
     { t: T.count41, v: Math.log(ZOOM_HEAD), spring: "camera" },
     { t: 12.4, v: Math.log(HOOK_ZOOM), spring: { zeta: 1, response: 0.0005 } },
   ];
@@ -110,14 +122,21 @@ const camera = (t: number, h: number) => {
   return { cx: track(t, k.x0, k.x), cy: track(t, k.y0, k.y), zoom: Math.exp(track(t, k.z0, k.z)), vz: trackVel(t, k.z0, k.z), vx: trackVel(t, k.x0, k.x), vy: trackVel(t, k.y0, k.y) };
 };
 
+// G3 fix (round 3, defects 2–3): the phone's exit and the photo's return travel only as far as
+// they must to clear the frame (v1 of this file: 2400 / 2200 px, peaks of 230 / 212 px a frame)
+const OUT_DIST = 1800;
+const LOOP_DIST = 1500;
+
 /** The fastest screen speed (px per frame) at t: the camera's zoom and pan, the moving objects. */
 const fastest = (t: number, fps: number, h: number) => {
   const c = camera(t, h);
   const pan = Math.hypot(c.vx, c.vy) * c.zoom;
   const zoomEdge = Math.abs(c.vz) * h * 0.6; // an edge 0.6 h from the centre
-  const phoneOut = Math.abs(trackVel(t, 0, [{ t: T.phoneOut, v: 2400, spring: "panel" }]));
-  const loopIn = Math.abs(trackVel(t, 2200, [{ t: T.loopOut, v: 0, spring: "panel" }]));
-  return (pan + zoomEdge + phoneOut + loopIn) / fps;
+  const phoneOut = Math.abs(trackVel(t, 0, [{ t: T.phoneOut, v: OUT_DIST, spring: "panel" }]));
+  const loopIn = Math.abs(trackVel(t, LOOP_DIST, [{ t: T.loopOut, v: 0, spring: "panel" }]));
+  const sheet = Math.abs(trackVel(t, 0, [{ t: T.screenChange, v: SCREEN.h, spring: "panel" }])) * c.zoom;
+  const jacket = Math.abs(trackVel(t, 0, [{ t: T.lift, v: 1, spring: "piece" }, { t: T.home, v: 0, spring: "piece" }])) * (FERRY.w * 0.05 + FERRY.h * 0.2) * c.zoom;
+  return (pan + zoomEdge + phoneOut + loopIn + sheet + jacket) / fps;
 };
 
 // ── pieces of the picture ──
@@ -183,18 +202,36 @@ const Scene: React.FC = () => {
     { t: T.lift, v: 1, spring: "piece" },
     { t: T.home, v: 0, spring: "piece" },
   ]);
-  const veil = Math.max(0, Math.min(1, lift)) * 0.55;
+  // G3 fix (round 2, defect 1): the cut-out is a flat-lay, not her worn jacket, so at rest it is
+  // invisible (frame 0 = frame 899 = just her photo). On the drop it fades up as it lifts (opacity:
+  // exponential), from about her jacket's size (×1.2) to in front of the photo (×1.4, right 10%, up 5%:
+  // her face stays in view),
+  // so it reads as one jacket coming out, not two jackets
+  const lift01 = Math.max(0, Math.min(1, lift));
+  // G3 fix (round 4): the veil leads, the cut-out follows, so no frame shows two full jackets
+  const veil = expoOut(Math.min(1, lift01 / 0.25)) * 0.62;
+  const jacketOn = expoOut(Math.min(1, lift / 0.45));
   // the rest of the roll fades in as the camera leaves her photo (opacity: exponential, not a crossfade of scenes)
   // ...and clears away as the phone forms, so the phone is the one thing on screen
-  const others = expoOut(progress(t, T.home + 0.15, 0.9)) * (1 - expoOut(progress(t, T.phoneForms, 0.45)));
+  // G3 fix (round 2, defect 3): the rest of the roll clears as the camera STARTS its glide in
+  // (3.70 s), not when the phone forms, so the market photo is the one focal point of that beat
+  const others = expoOut(progress(t, T.home + 0.15, 0.9)) * (1 - expoOut(progress(t, T.intoTile + 0.08, 0.6)));
   // S3: the market tile becomes the app's card; the phone settles round it (panel)
   const form = spring(t - T.phoneForms, "panel");
-  const footOn = t >= T.footageIn && t < T.phoneOut + 0.8;
+  // G3 fix (round 1, defect 2): the real app is under the screen as it forms (its in-point frame
+  // held until footageIn), so the growing screen reveals the real app round the card, never an empty phone
+  const footOn = t >= T.phoneForms && t < T.phoneOut + 0.8;
   const tileRot = CARD.rot * form;
   // S5: the phone leaves (panel), the world goes; her ferry photo comes back from below (loop)
-  const worldOut = track(t, 0, [{ t: T.phoneOut, v: 2400, spring: "panel" }]);
-  const loopIn = t >= 12.4 ? track(t, 2200, [{ t: T.loopOut, v: 0, spring: "panel" }]) : 0;
+  const worldOut = track(t, 0, [{ t: T.phoneOut, v: OUT_DIST, spring: "panel" }]);
+  // G3 fix (round 3, the loop seam): the panel spring is 0.6 px short of home at f899, and a
+  // sub-pixel shift of her detailed photo reads as a seam (diff 2.4 vs a 0.8 step); the last
+  // quarter second eases that residual to exactly 0, so frame 899 is frame 0
+  const loopTail = 1 - expoOut(progress(t, LENGTH - 0.27, 0.25));
+  const loopIn = t >= 12.4 ? track(t, LOOP_DIST, [{ t: T.loopOut, v: 0, spring: "panel" }]) * loopTail : 0;
   const worldY = t >= 12.4 ? loopIn : worldOut;
+  // ...and a blur along that vertical move joins the sub-frame copies (screen px per frame)
+  const worldVy = (t >= 12.4 ? trackVel(t, LOOP_DIST, [{ t: T.loopOut, v: 0, spring: "panel" }]) * loopTail : trackVel(t, 0, [{ t: T.phoneOut, v: OUT_DIST, spring: "panel" }])) / fps;
 
   // the screen's rectangle grows from the tile to the whole phone screen as it forms
   const scr = {
@@ -207,11 +244,12 @@ const Scene: React.FC = () => {
   const scrRadius = 6 + (66 * S * 1.6 - 6) * form;
   // inside the phone: footage 1 → (screen change, panel push) → footage 2
   const push = spring(t - T.screenChange, "panel");
-  const clipSec = (k: number) => Math.min(FOOTAGE[k].durationSec - 2 / fps, FOOTAGE[k].from + (t - FOOTAGE[k].start));
+  const clipSec = (k: number) => Math.min(FOOTAGE[k].durationSec - 2 / fps, FOOTAGE[k].from + Math.max(0, t - FOOTAGE[k].start));
 
   return (
     <AbsoluteFill style={{ background: ANGORA, overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, transform: `translateY(${worldY}px)` }}>
+        <DirectionalBlur name="world" vx={0} vy={worldVy} max={40}>
         <div style={toScreen()}>
           {/* her camera roll */}
           {ROLL.map((id, i) => {
@@ -221,7 +259,7 @@ const Scene: React.FC = () => {
             return <Photo key={id} id={id} r={r} radius={6} opacity={others} />;
           })}
           {/* the ferry photo and its jacket */}
-          <Photo id="photo.emma.r26-ferry.v1" r={FERRY} radius={6} opacity={t >= 12.4 ? 1 : 1 - expoOut(progress(t, T.phoneForms, 0.45))}>
+          <Photo id="photo.emma.r26-ferry.v1" r={FERRY} radius={6} opacity={t >= 12.4 ? 1 : 1 - expoOut(progress(t, T.intoTile + 0.08, 0.6))}>
             <div style={{ position: "absolute", inset: 0, background: ANGORA, opacity: veil }} />
           </Photo>
           {t < T.intoTile + 0.5 || t >= 12.4 ? (
@@ -235,7 +273,8 @@ const Scene: React.FC = () => {
                 height: FERRY.h * JK.h,
                 transformOrigin: "50% 60%",
                 // out of the photo and toward us: up, a little right, bigger, a hair of tilt (piece class)
-                transform: `translate(${lift * FERRY.w * 0.16}px, ${-lift * FERRY.h * 0.1}px) scale(${1 + 0.24 * lift}) rotate(${-4 * lift}deg)`,
+                opacity: jacketOn,
+                transform: `translate(${lift * FERRY.w * 0.1}px, ${-lift * FERRY.h * 0.05}px) scale(${1.2 + 0.2 * lift}) rotate(${-4 * lift}deg)`,
                 filter: `drop-shadow(0 ${1 + 5 * lift}px ${2 + 7 * lift}px rgba(16,20,24,${0.08 + 0.14 * lift}))`,
               }}
             />
@@ -245,13 +284,22 @@ const Scene: React.FC = () => {
             <div style={{ position: "absolute", left: scr.x - bezel, top: scr.y - bezel, width: scr.w + 2 * bezel, height: scr.h + 2 * bezel, borderRadius: scrRadius + bezel, background: form > 0.001 ? "#111214" : "transparent", boxShadow: form > 0.001 ? `0 ${30 * S}px ${80 * S}px rgba(16,20,24,${0.16 * form})` : undefined }}>
               <div style={{ position: "absolute", left: bezel, top: bezel, width: scr.w, height: scr.h, borderRadius: scrRadius, overflow: "hidden", background: form > 0.001 ? APP : "transparent" }}>
                 {footOn && has(FOOTAGE[0].id) ? (
-                  <div style={{ position: "absolute", inset: 0 }}>
-                    <div style={{ position: "absolute", inset: 0, transform: `translateY(${-push * 100}%)` }}>
-                      <Clip id={FOOTAGE[0].id} sec={clipSec(0)} />
-                    </div>
+                  <div style={{ position: "absolute", left: SCREEN.x - scr.x, top: SCREEN.y - scr.y, width: SCREEN.w, height: SCREEN.h }}>
+                    {/* G3 fix (round 1, defect 1): the review screen rises OVER the flats screen as a
+                        sheet (the old one stays, eases back 6% and dims a touch), so two half
+                        screens never share the phone and nothing is cut at its edge */}
+                    {push < 0.999 ? (
+                      <div style={{ position: "absolute", inset: 0 }}>
+                        <Clip id={FOOTAGE[0].id} sec={clipSec(0)} />
+                        <div style={{ position: "absolute", inset: 0, background: "#101418", opacity: 0.1 * push }} />
+                      </div>
+                    ) : null}
                     {t >= T.screenChange ? (
-                      <div style={{ position: "absolute", inset: 0, transform: `translateY(${(1 - push) * 100}%)` }}>
-                        <Clip id={FOOTAGE[1].id} sec={clipSec(1)} />
+                      <div style={{ position: "absolute", inset: 0, transform: `translateY(${(1 - push) * 100}%)`, borderRadius: `${66 * S * 1.6}px ${66 * S * 1.6}px 0 0`, overflow: "hidden", boxShadow: push < 0.999 ? `0 ${-18 * S}px ${60 * S}px rgba(16,20,24,${0.18 * (1 - push)})` : undefined }}>
+                        {/* G3 fix (round 2, defect 2): a blur along the sheet's own velocity joins the sub-frame copies */}
+                        <DirectionalBlur name="sheet" vx={0} vy={(springVel(t - T.screenChange, "panel") * SCREEN.h) / fps} max={40}>
+                          <Clip id={FOOTAGE[1].id} sec={clipSec(1)} />
+                        </DirectionalBlur>
                       </div>
                     ) : null}
                   </div>
@@ -276,6 +324,7 @@ const Scene: React.FC = () => {
             </div>
           ) : null}
         </div>
+        </DirectionalBlur>
       </div>
 
       {/* the words (pinned to the screen, never to the camera) */}
@@ -299,6 +348,7 @@ const Scene: React.FC = () => {
 const MARK = "brand.curate.splash-mark.v1"; // 1152 px square; the mark spans 482 px of it
 const EndCard: React.FC<{ t: number }> = ({ t }) => {
   const { w, h, u } = useFrameBox();
+  const { fps } = useVideoConfig();
   if (t < T.phoneOut + 0.05) return null;
   const leave = spring(t - T.loopOut, "panel"); // the lockup lifts away as her photo comes back
   const mark = spring(t - (T.phoneOut + 0.12), "ui");
@@ -311,6 +361,7 @@ const EndCard: React.FC<{ t: number }> = ({ t }) => {
   const zeeSrc = has("zee.cheer.intro.v1") ? (zeeN < 15 ? frameSrc("zee.cheer.intro.v1", zeeN) : frameSrc("zee.cheer.loop.v1", zeeN - 15)) : null;
   return (
     <div style={{ position: "absolute", inset: 0, transform: `translateY(${y0 - h * 0.36}px)` }}>
+      <DirectionalBlur name="lockup" vx={0} vy={(-springVel(t - T.loopOut, "panel") * h * 1.05) / fps} max={40}>
       <StableImg src={src(MARK)} style={{ position: "absolute", left: w / 2 - markW / 2 / (482 / 1152), top: h * 0.36 - markW / 2 / (482 / 1152), width: markW / (482 / 1152), height: markW / (482 / 1152), opacity: expoOut(Math.min(1, mark * 1.3)), transform: `scale(${0.9 + 0.1 * mark})` }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: h * 0.36 + markW * 0.62, textAlign: "center", fontFamily: GEIST, fontWeight: 500, fontSize: u * 11, letterSpacing: "-0.035em", color: INK, opacity: expoOut(Math.min(1, name * 1.3)), transform: `translateY(${(1 - name) * u * 3}px)` }}>
         Curate
@@ -321,6 +372,7 @@ const EndCard: React.FC<{ t: number }> = ({ t }) => {
       {zeeSrc && t >= T.zee ? (
         <Img src={zeeSrc} style={{ position: "absolute", left: w / 2 - u * 17, top: h * 0.36 + markW * 0.62 + u * 24, width: u * 34, height: u * 34, transformOrigin: "50% 90%", transform: `scale(${zee})` }} />
       ) : null}
+      </DirectionalBlur>
     </div>
   );
 };

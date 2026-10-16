@@ -1,0 +1,384 @@
+<title>Pop out v3 storyboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single phone-width column, like a film's call sheet. At G3 the spine is the contact
+   strip: each shot a row of real frames (entry, key, exit) under its state list; brand ramp only. */
+:root {
+  --ground: #F6F6F6;   /* Angora White */
+  --card: #FFFFFF;
+  --ink: #181818;      /* Primary Black */
+  --body: #383838;     /* Strong Grey */
+  --muted: #656565;    /* Winter Gray */
+  --faint: #8B8B8B;    /* Fashion Gray */
+  --line: #DDDDDD;     /* Gainsboro */
+  --wash: #EBEBEB;     /* Pale Silver */
+  --display: "Geist", ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --text: "Geist", ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #121212; --card: #1C1C1C; --ink: #F6F6F6; --body: #DDDDDD; --muted: #B3B3B3;
+    --faint: #8B8B8B; --line: #383838; --wash: #262626; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #121212; --card: #1C1C1C; --ink: #F6F6F6; --body: #DDDDDD; --muted: #B3B3B3;
+  --faint: #8B8B8B; --line: #383838; --wash: #262626; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--ground); color: var(--body); font-family: var(--text); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 64px;
+}
+main { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px; }
+h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 500; letter-spacing: -0.025em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 7vw, 44px); line-height: 1.04; }
+h2 { font-size: 22px; line-height: 1.15; }
+h3 { font-size: 16px; line-height: 1.25; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.key { color: var(--ink); }
+.dim { color: var(--muted); }
+section { display: flex; flex-direction: column; gap: 16px; }
+.lede { font-family: var(--display); font-size: clamp(20px, 4.6vw, 26px); line-height: 1.22; letter-spacing: -0.02em; color: var(--muted); font-weight: 500; max-width: 30ch; }
+
+/* gates */
+.gates { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.gate { border: 1px solid var(--line); border-radius: 10px; padding: 8px 8px 9px; background: var(--card); display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.gate b { font-family: var(--mono); font-weight: 500; font-size: 12px; color: var(--ink); }
+.gate span { font-size: 11.5px; line-height: 1.3; color: var(--muted); }
+.gate.done { background: var(--wash); }
+.gate.now { border-color: var(--ink); border-width: 1.5px; }
+.gate.now b::after { content: " · you"; color: var(--muted); }
+@media (max-width: 520px) { .gates { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.facts { display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.fact { font-family: var(--mono); font-size: 12.5px; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; font-variant-numeric: tabular-nums; }
+
+/* beat ruler */
+.ruler { position: relative; height: 34px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.ruler .tick { position: absolute; bottom: 0; width: 1px; background: var(--line); height: 8px; }
+.ruler .tick.down { background: var(--faint); height: 16px; }
+.ruler .seg { position: absolute; top: 0; height: 12px; border-radius: 3px; background: var(--wash); border: 1px solid var(--line); }
+.ruler .seg.on { background: var(--ink); border-color: var(--ink); }
+.ruler-labels { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; color: var(--faint); margin-top: 4px; }
+
+/* storyboard */
+.shot { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 18px; align-items: start; padding-block: 18px; border-top: 1px solid var(--line); }
+.shot:first-of-type { border-top: 0; padding-top: 4px; }
+.still { width: 168px; max-width: 100%; aspect-ratio: 9 / 16; border-radius: 14px; overflow: hidden; background: var(--wash); border: 1px solid var(--line); }
+.still img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot-body { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.shot-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.time { font-family: var(--mono); font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.states { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 10px; font-size: 14px; }
+.states dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); padding-top: 3px; }
+.states dd { margin: 0; color: var(--body); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip { font-family: var(--mono); font-size: 11.5px; padding: 2px 8px; border-radius: 6px; background: var(--wash); color: var(--ink); }
+.chip i { font-style: normal; color: var(--muted); }
+@media (max-width: 460px) {
+  .shot { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; }
+  .still { width: 112px; border-radius: 10px; }
+}
+
+/* v2 vs v3 */
+.diff { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; border-top: 1px solid var(--line); }
+.row:first-child { border-top: 0; }
+.row > div { padding: 12px 14px; min-width: 0; font-size: 14px; }
+.row > div:first-child { border-right: 1px solid var(--line); color: var(--muted); }
+.row .lab { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); display: block; margin-bottom: 2px; }
+.row.head > div { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink); background: var(--wash); padding-block: 8px; }
+figure { margin: 0; display: flex; flex-direction: column; gap: 6px; }
+figure img { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; }
+figcaption { font-size: 13px; color: var(--muted); max-width: 65ch; }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; max-width: 340px; }
+.pair img { aspect-ratio: 9 / 16; object-fit: cover; }
+
+/* palette */
+.swatches { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.sw { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.sw .chipc { height: 64px; border-radius: 10px; border: 1px solid var(--line); }
+.sw b { font-weight: 500; color: var(--ink); font-size: 13px; line-height: 1.2; }
+.sw code { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.sw span { font-size: 12px; color: var(--muted); line-height: 1.3; }
+@media (max-width: 520px) { .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.typesample { background: #F6F6F6; border: 1px solid var(--line); border-radius: 14px; padding: 22px 20px; }
+.typesample p { font-family: var(--display); font-weight: 500; font-size: clamp(24px, 6vw, 34px); line-height: 1.08; letter-spacing: -0.03em; color: #656565; }
+.typesample p b { color: #181818; font-weight: 500; }
+.typesample small { display: block; margin-top: 10px; font-family: var(--mono); font-size: 11.5px; color: #656565; }
+
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 9px 12px; border-top: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--mono); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); border-top: 0; background: var(--wash); }
+td code, li code, p code { font-family: var(--mono); font-size: 12.5px; color: var(--ink); }
+ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; max-width: 65ch; }
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.cols > div { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+@media (max-width: 560px) { .cols { grid-template-columns: 1fr; } }
+.ask { background: var(--card); border: 1.5px solid var(--ink); border-radius: 16px; padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 12px; }
+.ask ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+.ask li { max-width: 62ch; }
+.ask li b { color: var(--ink); font-weight: 500; }
+.note { font-size: 13px; color: var(--muted); }
+</style>
+
+<style>
+.status { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; font-family: var(--mono); font-size: 12.5px; color: var(--ink); border: 1.5px solid var(--ink); border-radius: 999px; padding: 5px 12px; }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ink); }
+.reel { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x proximity; }
+.frame { flex: 0 0 auto; width: 128px; display: flex; flex-direction: column; gap: 5px; scroll-snap-align: start; }
+.frame img { width: 128px; max-width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); display: block; background: var(--wash); }
+.frame.key img { border: 2px solid var(--ink); }
+.frame b { font-family: var(--mono); font-weight: 500; font-size: 11.5px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.frame span { font-size: 12px; line-height: 1.3; color: var(--muted); }
+.shot3 { display: flex; flex-direction: column; gap: 12px; padding-block: 20px; border-top: 1px solid var(--line); }
+.shot3:first-of-type { border-top: 0; padding-top: 4px; }
+.beats { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; }
+.beat { flex: 0 0 auto; width: 64px; display: flex; flex-direction: column; gap: 4px; }
+.beat img { width: 64px; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); display: block; }
+.beat i { font-style: normal; font-family: var(--mono); font-size: 10.5px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.beat.down i { color: var(--ink); font-weight: 500; }
+.beat.down img { border-color: var(--faint); }
+.scores td.n { font-family: var(--mono); text-align: center; }
+.scores td.lo { color: var(--muted); }
+.scores td.ok { color: var(--ink); font-weight: 500; }
+.scores th.c, .scores td.c { text-align: center; }
+.rounds { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--card); overflow: hidden; }
+.round { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 0 14px; padding: 14px; border-top: 1px solid var(--line); }
+.round:first-child { border-top: 0; }
+.round h3 { font-family: var(--mono); font-size: 12.5px; font-weight: 500; letter-spacing: 0; }
+.round h3 small { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }
+.round ol { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+.round ol li span { color: var(--muted); }
+.round .t { font-family: var(--mono); font-size: 12px; color: var(--ink); font-variant-numeric: tabular-nums; }
+@media (max-width: 460px) { .round { grid-template-columns: 1fr; gap: 8px; } .frame, .frame img { width: 112px; } }
+.ba { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 14px; }
+.ba figure { gap: 8px; }
+.ba .two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.ba .two img { aspect-ratio: 9 / 16; object-fit: cover; border-radius: 8px; }
+.ba .two.sq img { aspect-ratio: 1 / 1; }
+.ba .lbl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
+@media (max-width: 560px) { .ba { grid-template-columns: 1fr; } }
+.check td:first-child { color: var(--ink); }
+.pass { font-family: var(--mono); font-size: 11.5px; color: var(--ink); background: var(--wash); border-radius: 6px; padding: 1px 7px; white-space: nowrap; }
+</style>
+
+<main>
+  <header style="display:flex;flex-direction:column;gap:14px">
+    <div class="eyebrow">Curate · motion studio · gate G3</div>
+    <h1>Pop out v3 storyboard</h1>
+    <p class="lede"><span class="key">Your whole closet is already in your camera roll;</span> Curate pulls it out.</p>
+    <span class="status">G3: waiting for your OK</span>
+    <p>You said yes to the storyboard. I built every shot, rendered real frames of it, and ran the critic on them until every score that applies was 8 or more. That took 6 rounds and 13 fixes. Below are the frames of each shot, one frame on every beat, the scores and what each round fixed. Nothing has moved yet: the animatic waits for your OK.</p>
+    <div class="gates" aria-label="Gates">
+      <div class="gate done"><b>G1</b><span>Assets approved</span></div>
+      <div class="gate done"><b>G2</b><span>Storyboard: you said “Yeah”</span></div>
+      <div class="gate now"><b>G3</b><span>Stills, critiqued</span></div>
+      <div class="gate"><b>G4</b><span>Animatic</span></div>
+      <div class="gate"><b>G5</b><span>Full pass + sound</span></div>
+      <div class="gate"><b>G6</b><span>Formats, loop, poster</span></div>
+    </div>
+    <div class="facts">
+      <span class="fact">71 stills</span><span class="fact">19 per-shot frames + the same at 360 px</span><span class="fact">33 beats</span>
+      <span class="fact">6 critic rounds</span><span class="fact">all 8+</span><span class="fact">frame 899 = frame 0</span><span class="fact">same pixels every render</span>
+    </div>
+  </header>
+
+  <section aria-labelledby="ask1">
+    <div class="ask">
+      <h2 id="ask1">What I need from you</h2>
+      <ol>
+        <li><b>OK these stills (G3)</b>, or tell me what to change. Then I make the 540×960 animatic with Cat Walk (G4) and the full pass with the designed sound (G5). You see the full pass before anything ships.</li>
+        <li><b>The jacket in the hook.</b> The cut-out we have is a flat-lay, not the jacket as she wears it. On her photo it read as two jackets, so it now appears only as it lifts out. If you'd rather it peel off her exactly, that needs a new cut-out of her worn jacket, which is a new asset. I won't make it without your OK.</li>
+        <li><b>The app's bottom bar.</b> In the reveal and the proof, the real app's own button (“Tell me when it's ready”, then “Add 41 to wardrobe”) sits where TikTok puts its caption. It's real UI and not the focal point, so I left it as recorded. Say if you want the phone placed higher instead.</li>
+      </ol>
+      <p class="note">Same defaults as G2: the ferry photo opens, the music is Cat Walk. The studio rules are still proposed. You decide on them after you've watched v3.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="sb">
+    <h2 id="sb">Stills, shot by shot</h2>
+    <p class="note">Real frames of the real composition at 360 px wide, the size a thumb-scroller sees. The outlined frame is each shot's key moment. Scroll a row sideways for more.</p>
+    <div>
+      <div class="ruler" id="ruler" aria-hidden="true"></div>
+      <div class="ruler-labels"><span>0 s</span><span>5 s</span><span>10 s</span><span>15 s</span></div>
+    </div>
+    <article class="shot3">
+      <div class="shot-head"><h3>1 · Hook</h3><span class="time">0.00–1.85 s · focal point: the jacket</span></div>
+      <div class="reel" role="list">
+        <div class="frame"><img src="img/g3/s0000.jpg" alt="Frame at 0.00 s: entry: her ferry photo alone (= the last frame)" loading="lazy"><b>0.00 s</b><span>entry: her ferry photo alone (= the last frame)</span></div><div class="frame key"><img src="img/g3/s0083.jpg" alt="Frame at 1.38 s: key: one jacket out in front, the line read" loading="lazy"><b>1.38 s</b><span>key: one jacket out in front, the line read</span></div><div class="frame"><img src="img/g3/s0110.jpg" alt="Frame at 1.83 s: exit: the jacket starts home" loading="lazy"><b>1.83 s</b><span>exit: the jacket starts home</span></div>
+      </div>
+      <p>Picture first. The photo veils as the jacket comes out toward you, bigger and to the right, so her face stays in view. The words land at 0.92 s.</p>
+      <div class="chips"><span class="chip">piece</span><span class="chip">headline</span></div>
+    </article>
+    <article class="shot3">
+      <div class="shot-head"><h3>2 · Problem</h3><span class="time">1.85–3.70 s · focal point: the line, over the roll</span></div>
+      <div class="reel" role="list">
+        <div class="frame"><img src="img/g3/s0112.jpg" alt="Frame at 1.87 s: entry: the jacket home" loading="lazy"><b>1.87 s</b><span>entry: the jacket home</span></div><div class="frame key"><img src="img/g3/s0198.jpg" alt="Frame at 3.30 s: key: one photo of 30 in her camera roll" loading="lazy"><b>3.30 s</b><span>key: one photo of 30 in her camera roll</span></div><div class="frame"><img src="img/g3/s0221.jpg" alt="Frame at 3.68 s: exit: the line leaves on the downbeat" loading="lazy"><b>3.68 s</b><span>exit: the line leaves on the downbeat</span></div>
+      </div>
+      <p>One long camera glide back: her closet is in there, scattered across her photos.</p>
+      <div class="chips"><span class="chip">camera</span></div>
+    </article>
+    <article class="shot3">
+      <div class="shot-head"><h3>3 · Reveal</h3><span class="time">3.70–7.85 s · focal point: the real app's lift</span></div>
+      <div class="reel" role="list">
+        <div class="frame"><img src="img/g3/s0223.jpg" alt="Frame at 3.72 s: entry: the roll starts to clear" loading="lazy"><b>3.72 s</b><span>entry: the roll starts to clear</span></div><div class="frame"><img src="img/g3/s0264.jpg" alt="Frame at 4.40 s: the phone forms round the real app" loading="lazy"><b>4.40 s</b><span>the phone forms round the real app</span></div><div class="frame"><img src="img/g3/s0336.jpg" alt="Frame at 5.60 s: the real app lifts the flats out" loading="lazy"><b>5.60 s</b><span>the real app lifts the flats out</span></div><div class="frame key"><img src="img/g3/s0396.jpg" alt="Frame at 6.60 s: key: Ballet Flats; “Curate pulls it out.”" loading="lazy"><b>6.60 s</b><span>key: Ballet Flats; “Curate pulls it out.”</span></div><div class="frame"><img src="img/g3/s0470.jpg" alt="Frame at 7.83 s: exit: after a slow push-in" loading="lazy"><b>7.83 s</b><span>exit: after a slow push-in</span></div>
+      </div>
+      <p>The camera glides into her market photo. The phone forms around the real app, already there under it. On the downbeat the real app lifts the flats out.</p>
+      <div class="chips"><span class="chip">camera</span><span class="chip">panel</span><span class="chip">headline</span></div>
+    </article>
+    <article class="shot3">
+      <div class="shot-head"><h3>4 · Proof</h3><span class="time">7.85–11.06 s · focal point: “41 pieces from your photos”</span></div>
+      <div class="reel" role="list">
+        <div class="frame"><img src="img/g3/s0472.jpg" alt="Frame at 7.87 s: entry: the review screen rises over it" loading="lazy"><b>7.87 s</b><span>entry: the review screen rises over it</span></div><div class="frame"><img src="img/g3/s0554.jpg" alt="Frame at 9.23 s: the real count lands on 41" loading="lazy"><b>9.23 s</b><span>the real count lands on 41</span></div><div class="frame key"><img src="img/g3/s0618.jpg" alt="Frame at 10.30 s: key: pushed in on the real header" loading="lazy"><b>10.30 s</b><span>key: pushed in on the real header</span></div><div class="frame"><img src="img/g3/s0662.jpg" alt="Frame at 11.03 s: exit: the phone about to leave" loading="lazy"><b>11.03 s</b><span>exit: the phone about to leave</span></div>
+      </div>
+      <p>One real number on a real screen, counted by the app itself. The camera pushes in so it reads on a phone.</p>
+      <div class="chips"><span class="chip">panel</span><span class="chip">camera</span></div>
+    </article>
+    <article class="shot3">
+      <div class="shot-head"><h3>5 · Close</h3><span class="time">11.06–15.00 s · focal point: the lockup</span></div>
+      <div class="reel" role="list">
+        <div class="frame"><img src="img/g3/s0665.jpg" alt="Frame at 11.08 s: entry: the phone leaves, the mark arrives" loading="lazy"><b>11.08 s</b><span>entry: the phone leaves, the mark arrives</span></div><div class="frame"><img src="img/g3/s0750.jpg" alt="Frame at 12.50 s: “On the App Store” (held 2.29 s)" loading="lazy"><b>12.50 s</b><span>“On the App Store” (held 2.29 s)</span></div><div class="frame key"><img src="img/g3/s0816.jpg" alt="Frame at 13.60 s: key: Zee bounces under the lockup" loading="lazy"><b>13.60 s</b><span>key: Zee bounces under the lockup</span></div><div class="frame"><img src="img/g3/s0899.jpg" alt="Frame at 14.98 s: exit: her ferry photo, frame 899 = frame 0" loading="lazy"><b>14.98 s</b><span>exit: her ferry photo, frame 899 = frame 0</span></div>
+      </div>
+      <p>A clean final state and a CTA you can read. Zee is the only thing that bounces. On the track's break, her photo comes back for the loop.</p>
+      <div class="chips"><span class="chip">ui</span><span class="chip">headline</span><span class="chip">mascot</span><span class="chip">panel</span></div>
+    </article>
+  </section>
+
+  <section aria-labelledby="bt">
+    <h2 id="bt">Every beat</h2>
+    <p class="note">One frame on each of the 33 measured beats of Cat Walk (130.00 BPM). Bold times are downbeats, where the big moments land: the lift (0), the jacket home (1.85), the glide in (3.70), the app's lift (5.53), the count on 41 (9.23), the phone out (11.06), Zee (12.93), the loop (14.76).</p>
+    <div class="beats" role="list"><div class="beat down"><img src="img/g3/b0000.jpg" alt="Beat at 0.00 s" loading="lazy"><i>0.00</i></div><div class="beat"><img src="img/g3/b0028.jpg" alt="Beat at 0.47 s" loading="lazy"><i>0.47</i></div><div class="beat"><img src="img/g3/b0055.jpg" alt="Beat at 0.92 s" loading="lazy"><i>0.92</i></div><div class="beat"><img src="img/g3/b0083.jpg" alt="Beat at 1.38 s" loading="lazy"><i>1.38</i></div><div class="beat down"><img src="img/g3/b0111.jpg" alt="Beat at 1.85 s" loading="lazy"><i>1.85</i></div><div class="beat"><img src="img/g3/b0138.jpg" alt="Beat at 2.30 s" loading="lazy"><i>2.30</i></div><div class="beat"><img src="img/g3/b0165.jpg" alt="Beat at 2.76 s" loading="lazy"><i>2.76</i></div><div class="beat"><img src="img/g3/b0194.jpg" alt="Beat at 3.23 s" loading="lazy"><i>3.23</i></div><div class="beat down"><img src="img/g3/b0222.jpg" alt="Beat at 3.70 s" loading="lazy"><i>3.70</i></div><div class="beat"><img src="img/g3/b0250.jpg" alt="Beat at 4.17 s" loading="lazy"><i>4.17</i></div><div class="beat"><img src="img/g3/b0278.jpg" alt="Beat at 4.63 s" loading="lazy"><i>4.63</i></div><div class="beat"><img src="img/g3/b0305.jpg" alt="Beat at 5.09 s" loading="lazy"><i>5.09</i></div><div class="beat down"><img src="img/g3/b0332.jpg" alt="Beat at 5.53 s" loading="lazy"><i>5.53</i></div><div class="beat"><img src="img/g3/b0361.jpg" alt="Beat at 6.01 s" loading="lazy"><i>6.01</i></div><div class="beat"><img src="img/g3/b0388.jpg" alt="Beat at 6.47 s" loading="lazy"><i>6.47</i></div><div class="beat"><img src="img/g3/b0416.jpg" alt="Beat at 6.93 s" loading="lazy"><i>6.93</i></div><div class="beat down"><img src="img/g3/b0443.jpg" alt="Beat at 7.38 s" loading="lazy"><i>7.38</i></div><div class="beat"><img src="img/g3/b0471.jpg" alt="Beat at 7.85 s" loading="lazy"><i>7.85</i></div><div class="beat"><img src="img/g3/b0499.jpg" alt="Beat at 8.31 s" loading="lazy"><i>8.31</i></div><div class="beat"><img src="img/g3/b0526.jpg" alt="Beat at 8.76 s" loading="lazy"><i>8.76</i></div><div class="beat down"><img src="img/g3/b0554.jpg" alt="Beat at 9.23 s" loading="lazy"><i>9.23</i></div><div class="beat"><img src="img/g3/b0581.jpg" alt="Beat at 9.69 s" loading="lazy"><i>9.69</i></div><div class="beat"><img src="img/g3/b0611.jpg" alt="Beat at 10.18 s" loading="lazy"><i>10.18</i></div><div class="beat"><img src="img/g3/b0637.jpg" alt="Beat at 10.62 s" loading="lazy"><i>10.62</i></div><div class="beat down"><img src="img/g3/b0664.jpg" alt="Beat at 11.06 s" loading="lazy"><i>11.06</i></div><div class="beat"><img src="img/g3/b0693.jpg" alt="Beat at 11.55 s" loading="lazy"><i>11.55</i></div><div class="beat"><img src="img/g3/b0721.jpg" alt="Beat at 12.01 s" loading="lazy"><i>12.01</i></div><div class="beat"><img src="img/g3/b0749.jpg" alt="Beat at 12.47 s" loading="lazy"><i>12.47</i></div><div class="beat down"><img src="img/g3/b0776.jpg" alt="Beat at 12.93 s" loading="lazy"><i>12.93</i></div><div class="beat"><img src="img/g3/b0804.jpg" alt="Beat at 13.40 s" loading="lazy"><i>13.40</i></div><div class="beat"><img src="img/g3/b0831.jpg" alt="Beat at 13.86 s" loading="lazy"><i>13.86</i></div><div class="beat"><img src="img/g3/b0858.jpg" alt="Beat at 14.30 s" loading="lazy"><i>14.30</i></div><div class="beat down"><img src="img/g3/b0886.jpg" alt="Beat at 14.76 s" loading="lazy"><i>14.76</i></div></div>
+  </section>
+
+  <section aria-labelledby="cr">
+    <h2 id="cr">The critic, round by round</h2>
+    <p class="note">Scored 1 to 10 from the frames alone. Sound is n/a: there's no audio until the full pass (G5). Each round lists its three worst defects; I fixed them and ran the next round.</p>
+    <div class="scroll">
+      <table class="scores">
+        <thead><tr><th>Round</th><th class="c">Hook in 2 s</th><th class="c">Phone</th><th class="c">Smooth</th><th class="c">Variety</th><th class="c">Sound</th><th class="c">Brand</th><th>Verdict</th></tr></thead>
+        <tbody>
+<tr><td>Round 1</td><td class="n lo">7</td><td class="n lo">7</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 2</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">6</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 3</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">7</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 4</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">7</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>another round</td></tr>
+<tr><td>Round 5</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>pass, then 2 safe-zone fixes</td></tr>
+<tr><td>Round 6</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n ok">8</td><td class="n lo">n/a</td><td class="n ok">8</td><td>pass</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="rounds">
+      <div class="round"><h3>Round 1<small>7 · 7 · 6 · 8 · 8</small></h3><ol>
+        <li><span class="t">7.85 s</span> The screen change showed half of each screen and cut Zee at the phone's edge. <span>Fix: the review screen now rises over the flats screen as a sheet.</span></li>
+        <li><span class="t">4.2–4.6 s</span> The phone grew round a small photo, so you saw an empty white phone. <span>Fix: the real app is already under the screen as it forms.</span></li>
+        <li><span class="t">6.2–7.85 s</span> 1.7 s with nothing moving. <span>Fix: a slow camera push-in on the real app.</span></li></ol></div>
+      <div class="round"><h3>Round 2<small>6 · 8 · 6 · 8 · 8</small></h3><ol>
+        <li><span class="t">0.00 s</span> At full size, the cut-out sat on her own jacket from the first frame: two jackets. <span>Fix: it's invisible at rest, and the photo veils before the jacket comes out.</span></li>
+        <li><span class="t">7.9–8.1 s</span> The rising sheet showed about 8 copies of its text. <span>Fix: a blur along its motion, and up to 16 sub-frame samples.</span></li>
+        <li><span class="t">3.7–4.2 s</span> All 30 photos and nothing leading. <span>Fix: the roll clears as the glide starts, so the market photo is alone.</span></li></ol></div>
+      <div class="round"><h3>Round 3<small>8 · 8 · 7 · 8 · 8</small></h3><ol>
+        <li><span class="t">loop</span> The last frame was 0.6 px off the first, which showed as a seam. <span>Fix: the return eases to exactly zero. Frame 899 is now byte-identical to frame 0.</span></li>
+        <li><span class="t">11.06 s</span> The phone dropped 230 px a frame and showed copies. <span>Fix: it travels only as far as it must, with a blur along the move.</span></li>
+        <li><span class="t">14.30 s</span> Same on her photo's return. <span>Same fix.</span></li></ol></div>
+      <div class="round"><h3>Round 4<small>8 · 8 · 7 · 8 · 8</small></h3><ol>
+        <li><span class="t">14.35 s</span> “Curate” doubled as the lockup lifted away. <span>Fix: a blur along its exit.</span></li>
+        <li><span class="t">0.05–0.17 s</span> A few frames with both jackets fully visible. <span>Fix: the veil leads, the jacket follows.</span></li>
+        <li><span class="t">5–7 s</span> The app's own labels are small at 360 px. <span>Kept: it's the real app at 70% of the width, and the line carries the read.</span></li></ol></div>
+      <div class="round"><h3>Round 5<small>all 8</small></h3><ol>
+        <li><span class="t">1.38 s</span> The jacket's hem dipped 28 px into TikTok's caption area. <span>Fix: her photo sits 85 px higher.</span></li>
+        <li><span class="t">10.3 s</span> The last letter of “41 pieces from your photos” touched the buttons column. <span>Fix: the push-in moved slightly right.</span></li>
+        <li><span class="t">7.2–7.9 s</span> A short settle at the end of the push. <span>Kept: it's the time to read “Curate pulls it out.”</span></li></ol></div>
+      <div class="round"><h3>Round 6<small>all 8 · pass</small></h3><ol>
+        <li><span class="t">7.9–8.1 s</span> The sheet rises in a quarter second, so its text is one smear for 6 frames. <span>To judge in motion at G4.</span></li>
+        <li><span class="t">4.6–11 s</span> The real app's bottom bar sits in the caption area. <span>Your call, above.</span></li>
+        <li><span class="t">14.35 s</span> A faint double of “Curate” for 2 frames. <span>To check in motion at G4.</span></li></ol></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="ba">
+    <h2 id="ba">Before and after</h2>
+    <div class="ba">
+      <figure><div class="lbl"><span>Round 1</span><span>Now</span></div><div class="two sq"><img src="img/g3/crop_before_f0.jpg" alt="Before: a flat cut-out jacket pasted over the jacket she is wearing"><img src="img/g3/crop_after_f0.jpg" alt="Now: only her photo in the first frame"></div><figcaption>Frame 0, close up. The flat-lay cut-out sat over the jacket she's wearing. Now the first frame is just her photo.</figcaption></figure>
+      <figure><div class="lbl"><span>Round 1</span><span>Now</span></div><div class="two"><img src="img/g3/r1_4.50.jpg" alt="Before: an empty white phone around a small photo"><img src="img/g3/r6_4.50.jpg" alt="Now: the real app around the photo card"></div><figcaption>4.50 s. An empty phone became the real app around her photo card.</figcaption></figure>
+      <figure><div class="lbl"><span>Round 1</span><span>Now</span></div><div class="two"><img src="img/g3/r1_4.00.jpg" alt="Before: all thirty photos at full strength"><img src="img/g3/r6_4.00.jpg" alt="Now: the market photo alone as the others fade"></div><figcaption>4.00 s. One photo leads the glide in, not thirty.</figcaption></figure>
+      <figure><div class="lbl"><span>Round 1</span><span>Now</span></div><div class="two"><img src="img/g3/r1_8.00.jpg" alt="Before: two half screens, Zee cut at the top edge"><img src="img/g3/r6_8.00.jpg" alt="Now: the review screen rising over the flats screen"></div><figcaption>8.00 s. Two half screens became one sheet rising over the other. The streak is its motion blur.</figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="ck">
+    <h2 id="ck">Checked against the brief and v2's problems</h2>
+    <div class="scroll">
+      <table class="check">
+        <thead><tr><th>Check</th><th>Result</th><th>How it was measured</th></tr></thead>
+        <tbody>
+          <tr><td>One focal point per beat</td><td><span class="pass">pass</span></td><td>All 33 beat frames above; the roll now clears before the phone forms</td></tr>
+          <tr><td>Real app big, 3 s or more</td><td><span class="pass">pass</span></td><td>6.4 s, at 68–73% of the frame width; pushed in to 2.05× on the 41</td></tr>
+          <tr><td>End card readable, held 2 s or more</td><td><span class="pass">pass</span></td><td>“On the App Store” fully landed 12.01–14.30 s: 2.29 s</td></tr>
+          <tr><td>No clutter, nothing overlapping</td><td><span class="pass">pass</span></td><td>“Curate pulls it out.” ends 32 px above the phone; no two screens at once</td></tr>
+          <tr><td>TikTok / Reels safe zones</td><td><span class="pass">pass</span></td><td>Everything we place stays out of the top 8%, the bottom 20% and the right 15% (measured in pixels). The app's own bottom bar is the one exception (question 3)</td></tr>
+          <tr><td>The loop</td><td><span class="pass">pass</span></td><td>Frame 899 and frame 0 are byte-identical</td></tr>
+          <tr><td>Determinism</td><td><span class="pass">pass</span></td><td>11 frames rendered twice in fresh browsers: identical; all 19 shot frames re-rendered: identical</td></tr>
+          <tr><td>Motion blur, no echo (v2's problem)</td><td><span class="pass">pass</span></td><td>The critic's strip test reads clean; every fast move has a blur along its direction</td></tr>
+          <tr><td>Sound on the beat</td><td>n/a</td><td>At G5, with the designed sound</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">The critic also needed motion evidence, so it ran on a quick silent 540×960 render each round. That render is internal only. It isn't the animatic, and I haven't shown it.</p>
+  </section>
+
+  <section aria-labelledby="ch">
+    <h2 id="ch">What changed since G2</h2>
+    <ul>
+      <li>Every shot is built, and the frames above come from that build. At G2 there was one still per shot.</li>
+      <li>The hook shows one jacket coming out of her photo, not two. Her photo sits a little higher.</li>
+      <li>The reveal no longer shows an empty phone. The real app is under the phone as it forms, and a slow push keeps the still screen alive.</li>
+      <li>The proof's screen change is a sheet rising over the flats screen. Zee is never cut at the edge.</li>
+      <li>The close moves travel only as far as they need to, with motion blur. The loop is now exact.</li>
+      <li>Same story, same five shots, same timings on the beat, same palette and type. Up to 16 blur samples on the fastest moves, up from 12.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="ok">
+    <div class="ask">
+      <h2 id="ok">Next, after your OK</h2>
+      <ol>
+        <li><b>G4:</b> a 540×960 animatic with Cat Walk under it, critiqued for motion. That's where the sheet's speed and the lockup's exit get judged.</li>
+        <li><b>G5:</b> the full pass with the designed sound, mixed to −14 LUFS, critiqued blindfolded first. You review it.</li>
+        <li><b>G6:</b> 4:5 and 1:1 from the same timeline, a poster frame and the loop check.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var beats = [0, 0.47, 0.923, 1.376, 1.846, 2.304, 2.757, 3.233, 3.703, 4.168, 4.626, 5.091, 5.532, 6.014, 6.467, 6.931, 7.384, 7.854, 8.313, 8.76, 9.23, 9.688, 10.176, 10.617, 11.064, 11.552, 12.01, 12.475, 12.927, 13.398, 13.856, 14.303, 14.762];
+  var down = [0, 1.846, 3.703, 5.532, 7.384, 9.23, 11.064, 12.927, 14.762];
+  var shots = [[0,1.846],[1.846,3.703],[3.703,7.854],[7.854,11.064],[11.064,15]];
+  var r = document.getElementById('ruler');
+  if (!r) return;
+  var pct = function (t) { return (t / 15 * 100) + '%'; };
+  shots.forEach(function (s, i) {
+    var d = document.createElement('div');
+    d.className = 'seg' + (i % 2 ? '' : ' on');
+    d.style.left = 'calc(' + pct(s[0]) + ' + 1px)';
+    d.style.width = 'calc(' + ((s[1] - s[0]) / 15 * 100) + '% - 2px)';
+    d.title = 'Shot ' + (i + 1);
+    r.appendChild(d);
+  });
+  beats.forEach(function (b) {
+    var t = document.createElement('div');
+    t.className = 'tick' + (down.indexOf(b) >= 0 ? ' down' : '');
+    t.style.left = pct(b);
+    r.appendChild(t);
+  });
+})();
+</script>

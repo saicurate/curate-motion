@@ -7,6 +7,7 @@
   tools/critic <ad> [--render <file.mp4>] [--round N] [--samples N --shutter 0.5] [--from <track s>] [--no-determinism] [--det-frame N]
   tools/critic selftest                      the strip test on synthetic clips (sharp / echo / smooth)
   tools/critic score <ad> --round N hook=7 phone=8 smooth=6 variety=7 sound=8 brand=9 [--note "..."]
+                                             (a criterion not applicable yet: sound=na, left out of min/pass)
   tools/critic history <ad>
 
 Writes reviews/<ad>/<YYYY-MM-DD>/round-<N>/ with:
@@ -461,9 +462,10 @@ def score(ad, argv):
     note = argv[argv.index("--note") + 1] if "--note" in argv else ""
     vals = {}
     for a in argv:
-        m = re.fullmatch(r"(\w+)=(\d+(?:\.\d+)?)", a)
+        m = re.fullmatch(r"(\w+)=(\d+(?:\.\d+)?|na)", a)
         if m:
-            vals[m.group(1)] = float(m.group(2))
+            # "na": not applicable yet (e.g. sound=na before G5's designed sound); left out of min/pass
+            vals[m.group(1)] = None if m.group(2) == "na" else float(m.group(2))
     keys = [k for k, _, _ in CRITERIA]
     missing = [k for k in keys if k not in vals]
     if rn is None or missing:
@@ -471,12 +473,14 @@ def score(ad, argv):
     p = ROOT / "reviews" / ad / "scores.json"
     data = json.loads(p.read_text()) if p.exists() else {"ad": ad, "rounds": []}
     data["rounds"] = [r for r in data["rounds"] if r["round"] != rn]
-    entry = {"round": rn, "date": date.today().isoformat(), "scores": {k: vals[k] for k in keys}, "min": min(vals[k] for k in keys), "pass": all(vals[k] >= 8 for k in keys), "note": note}
+    num = [vals[k] for k in keys if vals[k] is not None]
+    entry = {"round": rn, "date": date.today().isoformat(), "scores": {k: vals[k] for k in keys}, "min": min(num), "pass": all(v >= 8 for v in num), "note": note}
     data["rounds"].append(entry)
     data["rounds"].sort(key=lambda r: r["round"])
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(data, indent=1) + "\n")
-    print(f"{ad} round {rn}: " + "  ".join(f"{k} {vals[k]:g}" for k in keys) + f"  → {'PASS (all 8+)' if entry['pass'] else 'another round: fix the worst 3'}")
+    fmt = lambda v: "n/a" if v is None else f"{v:g}"
+    print(f"{ad} round {rn}: " + "  ".join(f"{k} {fmt(vals[k])}" for k in keys) + f"  → {'PASS (all 8+)' if entry['pass'] else 'another round: fix the worst 3'}")
 
 
 def history(ad):
@@ -485,7 +489,7 @@ def history(ad):
         print(f"{ad}: no scored rounds yet")
         return
     for r in json.loads(p.read_text())["rounds"]:
-        print(f"round {r['round']} ({r['date']}): " + "  ".join(f"{k} {v:g}" for k, v in r["scores"].items()) + f"  {'PASS' if r['pass'] else ''} {r.get('note', '')}")
+        print(f"round {r['round']} ({r['date']}): " + "  ".join(f"{k} {'n/a' if v is None else format(v, 'g')}" for k, v in r["scores"].items()) + f"  {'PASS' if r['pass'] else ''} {r.get('note', '')}")
 
 
 def selftest():

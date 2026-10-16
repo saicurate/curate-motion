@@ -1,6 +1,6 @@
 # Pop out v3: brief
 
-**Gate:** G2 (in review: the founder approves this, `style_guide.md` and `shotlist.md` before G3).
+**Gate:** G2 approved by the founder ("Yeah", 2026-10-15; defaults kept: the ferry-photo hook, Cat Walk). G3 in review.
 Made by the motion studio process (`.claude/skills/motion-reel/SKILL.md`; decisions/0011, proposed).
 
 ## FILM (the one sentence)

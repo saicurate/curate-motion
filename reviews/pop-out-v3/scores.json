@@ -1,0 +1,95 @@
+{
+ "ad": "pop-out-v3",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-15",
+   "scores": {
+    "hook": 7.0,
+    "phone": 7.0,
+    "smooth": 6.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "G3 round 1: internal silent 540x960 pass + stills. Worst: 7.85 s two half screens + Zee cut; 4.2-4.6 s empty phone round a small tile; 6.18-7.85 s 1.68 s dead hold. Sound N/A until G5."
+  },
+  {
+   "round": 2,
+   "date": "2026-10-15",
+   "scores": {
+    "hook": 6.0,
+    "phone": 8.0,
+    "smooth": 6.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "Re-judged at 1:1: the flat-lay cut-out sits on her worn jacket from frame 0 (two jackets); the new sheet echoes at 7.9-8.1 s; the roll is everything at 3.7-4.2 s. Sound N/A until G5."
+  },
+  {
+   "round": 3,
+   "date": "2026-10-15",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 7.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "Loop seam soft (f899 0.6 px short); phone exit 230 px/frame shows stacked copies; photo return 212 px/frame. Sound N/A."
+  },
+  {
+   "round": 4,
+   "date": "2026-10-15",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 7.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "Lockup exit shows copies of Curate (f862); the cut-out is fully on before the veil at f3-f10. Sound N/A."
+  },
+  {
+   "round": 5,
+   "date": "2026-10-15",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "All 8+. Brief checks then found: the jacket hem 28 px into the bottom 20% (caption zone); the 41 header's last letter in the right 15%. Fixed for round 6. Sound N/A."
+  },
+  {
+   "round": 6,
+   "date": "2026-10-15",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "PASS. Final G3 stills from this composition: 19 shot stills + 19 at 360 px + 33 beat stills; determinism EQUAL on 11 frames; f0 == f899 byte-identical. Sound N/A until G5."
+  }
+ ]
+}

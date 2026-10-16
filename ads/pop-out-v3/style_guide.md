@@ -1,7 +1,7 @@
 # Pop out v3: style guide
 
 **Status: PROPOSED.** These studio rules are pending the founder's OK after v3. They are not in
-RULES.md; the founder decides after seeing v3. Gate G2 (in review).
+RULES.md; the founder decides after seeing v3. Gate G2 approved by the founder (2026-10-15); G3 in review.
 
 ## Sources (reference → grammar)
 
@@ -91,8 +91,9 @@ position AND velocity stay continuous: no restarts, no hitches.
 
 - A 180° shutter (half a frame) at 60 fps.
 - `SubframeBlur` follows the speed: `samplesFor(speed)` keeps neighbouring samples ≤ 3 px apart
-  (1 sample when still; up to 12 on the fastest moves), from the analytic velocity of the camera
-  and the moving objects. `DirectionalBlur` along the analytic velocity covers the gap (G4/G5).
+  (1 sample when still; up to 16 on the fastest moves: raised from 12 at G3), from the analytic velocity of the camera
+  and the moving objects. `DirectionalBlur` along the analytic velocity covers the gap: on the
+  sheet rising in the phone, the phone's exit, the lockup's exit and her photo's return (G3).
 - The strip test (`tools/critic`) must say **clean**: no copies in the 12 frames of the fastest move.
 - Photos are drawn with `StableImg` (decoded once at full size), so frames are identical whatever
   was rendered before (the determinism check).
