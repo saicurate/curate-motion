@@ -11,6 +11,8 @@ import * as popOut from "./pop-out";
 import popOutSpec from "./pop-out/ad.json";
 import * as popOutV2 from "./pop-out-v2";
 import popOutV2Spec from "./pop-out-v2/ad.json";
+import * as popOutV3 from "./pop-out-v3";
+import popOutV3Spec from "./pop-out-v3/ad.json";
 import * as rainOrShine from "./rain-or-shine";
 import rainOrShineSpec from "./rain-or-shine/ad.json";
 import * as zeeWipe from "./zee-wipe";
@@ -32,6 +34,7 @@ export const ADS: AdModule[] = [
   { spec: AdSpec.parse(meetZeeSpec), component: meetZee.MeetZee, schema: meetZee.schema, defaults: meetZee.defaults },
   { spec: AdSpec.parse(popOutSpec), component: popOut.PopOut, schema: popOut.schema, defaults: popOut.defaults },
   { spec: AdSpec.parse(popOutV2Spec), component: popOutV2.PopOutV2, schema: popOutV2.schema, defaults: popOutV2.defaults },
+  { spec: AdSpec.parse(popOutV3Spec), component: popOutV3.PopOutV3, schema: popOutV3.schema, defaults: popOutV3.defaults },
   { spec: AdSpec.parse(rainOrShineSpec), component: rainOrShine.RainOrShine, schema: rainOrShine.schema, defaults: rainOrShine.defaults },
   { spec: AdSpec.parse(zeeWipeSpec), component: zeeWipe.ZeeWipe, schema: zeeWipe.schema, defaults: zeeWipe.defaults },
 ];

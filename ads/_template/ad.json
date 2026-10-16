@@ -7,11 +7,13 @@
   "channels": ["tiktok", "reels"],
   "formats": ["9x16"],
   "lengths": [15],
-  "fps": 30,
+  "fps": 60,
   "track": "music.mixkit.gummies-michael-ramir-c.v1",
   "assets": ["music.mixkit.gummies-michael-ramir-c.v1", "brand.curate.logo-splash.v1", "font.geist.medium.v1"],
   "components": ["Ground", "Track", "Words", "Logo", "BeatClock"],
   "status": "idea",
   "disclosures": [],
-  "createdBy": { "type": "agent", "name": "your-agent-name", "at": "YYYY-MM-DD" }
+  "createdBy": { "type": "agent", "name": "your-agent-name", "at": "YYYY-MM-DD" },
+  "gates": { "G1": "pending", "G2": "pending", "G3": "pending", "G4": "pending", "G5": "pending", "G6": "pending" },
+  "gateLog": []
 }

@@ -1,6 +1,8 @@
 # ads/_template
 
-Copy this folder to start an ad: `cp -R ads/_template ads/<ad-id>`. Then:
+Copy this folder to start an ad: `cp -R ads/_template ads/<ad-id>`. New ads follow the studio process
+(`/motion-reel`, AGENTS.md › "Making a motion film"): 60 fps, gates G1–G6, brief.md, style_guide.md,
+shotlist.md before any render. Then:
 1. Fill `ad.json` (id = folder name, brief, channels, formats, lengths, track, every asset id, status `draft`).
 2. Rename `TemplateAd` in `index.tsx` and build the ad from `motion/` components; media only by id.
 3. Add one line to `ads/registry.ts`.

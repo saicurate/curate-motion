@@ -62,3 +62,6 @@ tracker/data/
 !library/footage/INVENTORY.md
 !library/brand/BRAND.md
 !library/brand/brand-guideline-2026.txt
+
+# python bytecode (tools/refframes imports tools/critic)
+__pycache__/

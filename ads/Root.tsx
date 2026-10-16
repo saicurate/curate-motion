@@ -1,11 +1,12 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
-import { compositionId, FORMATS } from "../schemas/ad";
+import { compositionId, FORMATS, fpsFor } from "../schemas/ad";
 import { ADS } from "./registry";
 
 // One composition per ad × format × length: <ad-id>--<format>--<length>s (e.g. meet-zee--9x16--15s).
 // Props are validated by each ad's zod schema, so Studio shows them as editable controls.
 // An ad with `metadata` (e.g. a voiced explainer) sets its own length from its props.
+// fps: the ad's (60 for new ads), except App Store previews, which always render at 30.
 export const RemotionRoot: React.FC = () => (
   <>
     {ADS.map(({ spec, component, schema, defaults, metadata }) => (
@@ -18,10 +19,10 @@ export const RemotionRoot: React.FC = () => (
               component={component}
               schema={schema}
               defaultProps={{ ...defaults, format, length }}
-              fps={spec.fps}
+              fps={fpsFor(spec.fps, format)}
               width={FORMATS[format].width}
               height={FORMATS[format].height}
-              durationInFrames={length * spec.fps}
+              durationInFrames={length * fpsFor(spec.fps, format)}
               calculateMetadata={metadata ? ({ props }) => metadata(props) : undefined}
             />
           )),

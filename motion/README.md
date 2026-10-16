@@ -28,6 +28,17 @@ Reusable Remotion components. Ads import from `motion/index.ts`, never from each
 | `theme.ts` (`C`, `display`, easings, `useBrandFonts`) | Mist palette + Geist |
 | `assets.ts` (`asset`, `src`, `frameSrc`, `dims`) | the only way to reach media: by id |
 
+**The studio kit** (decisions/0011, PROPOSED until the founder's OK after Pop out v3; the process: `.claude/skills/motion-reel/SKILL.md`):
+
+| Module | Use |
+|---|---|
+| `springs.ts` (`spring`, `springVel`, `track`, `trackVel`, `trackVec`, `PRESETS`, `readHold`, `expoOut`/`expoIn`/`expoInOut`, `expApproach`) | closed-form springs, pure functions of t (seconds); stacked retargets; one preset per object class: `ui`, `panel`, `camera`, `headline`, `mascot` (Zee only), `piece`. Checked by `tools/motion-check` |
+| `noise.ts` (`hash`, `rand01`, `noise1`, `fbm1`, `stream`) | seeded randomness: no Math.random anywhere |
+| `Blur.tsx` (`SubframeBlur`, `samplesFor`, `DirectionalBlur`, `useBlurId`) | motion blur that doesn't echo: sub-frame accumulation whose sample count follows the speed, plus a Gaussian along the analytic velocity |
+| `StableImg.tsx` | a photo/cut-out decoded once at full size into a canvas: identical pixels whatever was rendered before (fixes Chrome's decode-to-scale cache, caught by the determinism check) |
+| `beatmap.ts` (`beatClockOf`, `AdBeatMap`) | an ad's window onto a track's measured beat map (`tools/beats clip`): `beat(n)`, `bar(b, n)`, `hitNear(t)`, `onBeat(t)` |
+| `sound/` (`createSound`, `scoreFromBeats`, `HIT_KINDS`) | designed sound in code on the picture's clock: kicks, risers, named hits; seeded, byte-identical; Node only (an ad's `sound.ts`) |
+
 - **Goes here:** anything two ads could share. Lay out against `useFrameBox()`, time against a `BeatClock`.
 - **Doesn't:** ad-specific scenes (→ `ads/<id>/`), raw media paths, hex colours outside `theme.ts`.
 - **Example:** `<PopOut at={clock.frame(4)} from={{x:300,y:900}} to={{x:540,y:700}}><Piece id="garment.emma.tee-black.v1" x={0} y={0} h={400}/></PopOut>`

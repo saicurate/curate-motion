@@ -246,11 +246,36 @@ export const ScreenshotAsset = z.object({
   variantOf: AssetId.optional(),
   hero: z.boolean().default(false),
 });
+/**
+ * A track's measured beat map (tools/beats, librosa): the grid, every beat, the bar lines, the
+ * percussive hits and the loudness per bar. State changes go on beats, big moments on downbeats,
+ * clicks and whooshes on hits (the studio process, decisions/0011). Times are seconds in the file.
+ */
+export const BeatMap = z.object({
+  tool: z.string(),
+  measuredAt: z.string(),
+  durationSec: z.number().positive(),
+  /** The constant-tempo grid fitted to the beats: tempo, first beat, and how well it fits (RMS ms). */
+  bpm: z.number().positive(),
+  offsetSec: z.number().nonnegative(),
+  gridResidualMs: z.number().nonnegative(),
+  beatsPerBar: z.number().int().positive(),
+  beats: z.array(z.number().nonnegative()),
+  downbeats: z.array(z.number().nonnegative()),
+  /** Percussive onsets: [seconds, strength 0..1]. */
+  hits: z.array(z.tuple([z.number().nonnegative(), z.number().min(0).max(1)])),
+  /** Loudness (dB RMS) of each bar, one per downbeat. */
+  bars: z.array(z.number()),
+  sections: z.array(z.object({ t: z.number().nonnegative(), kind: z.enum(["drop", "lift", "break", "fall"]), db: z.number() })),
+  note: z.string().optional(),
+});
+export type BeatMap = z.infer<typeof BeatMap>;
+
 export const MusicAsset = z.object({
   ...base,
   kind: z.literal("music"),
   durationSec: z.number().positive(),
-  /** Tempo. Absent until measured (tools/beats.py); BeatClock refuses a track without it. */
+  /** Tempo. Absent until measured (tools/beats); BeatClock refuses a track without it. */
   bpm: z.number().positive().optional(),
   /** First downbeat, seconds from the start of the file. */
   offsetSec: z.number().nonnegative().default(0),
@@ -261,6 +286,8 @@ export const MusicAsset = z.object({
   sections: z.record(z.string(), z.number().nonnegative()).default({}),
   /** Optional explicit beat times (seconds) when the grid drifts; else derived from bpm + offset. */
   beats: z.array(z.number().nonnegative()).optional(),
+  /** The measured beat map (tools/beats --write). bpm/offsetSec above stay what existing ads were cut to. */
+  beatMap: BeatMap.optional(),
   vibe: z.string().optional(),
 });
 export const SfxAsset = z.object({ ...base, kind: z.literal("sfx"), durationSec: z.number().positive() });

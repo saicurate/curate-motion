@@ -1,0 +1,6 @@
+#!/bin/bash
+# tools/beats: measure a music track's beat map with librosa (pinned, through uv). See tools/beats.py.
+#   tools/beats <music-id> [--write] | --all [--write]      measure (and store in the manifest)
+#   tools/beats clip <music-id> --from <s> --length <s> [--fps 60] [--out ads/<ad>/beatmap.ts]
+if [ "$1" = "clip" ]; then shift; exec node "$(dirname "$0")/beats-clip.ts" "$@"; fi
+exec uv run --quiet --script "$(dirname "$0")/beats.py" "$@"

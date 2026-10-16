@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/motion-check: spring presets, stacked tracks, seeded noise, and an ad's frame purity (see tools/motion-check.ts).
+exec node "$(dirname "$0")/motion-check.ts" "$@"

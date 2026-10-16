@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/stills: single frames of an ad (by frame, by second, one per shot) and the determinism check. See tools/stills.ts.
+exec node "$(dirname "$0")/stills.ts" "$@"

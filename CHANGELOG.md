@@ -3,6 +3,32 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-15: the motion studio process (`/motion-reel`), PROPOSED (decisions/0011); Pop out v3 at G2
+- **Skill:** `.claude/skills/motion-reel/SKILL.md` (Claude Code project skill, `/motion-reel <ad-or-brief>,
+  <length>, <ratio>, reference <id>`), mirrored in AGENTS.md › "Making a motion film: the studio process".
+  Rules PROPOSED until the founder's OK after v3; RULES.md unchanged.
+- **Render contract:** `fps` may be 24/30/60 (`schemas/ad.ts`); new ads 60 (template); App Store formats
+  always render at 30 (`fpsFor`, Root.tsx). `tools/stills <ad> --determinism --frame N`.
+- **motion/:** `springs.ts` (closed-form springs, stacked `track`, presets ui/panel/camera/headline/mascot/
+  piece, `readHold`, exponential easings), `noise.ts` (seeded), `Blur.tsx` (`SubframeBlur` with a per-frame
+  sample count, `samplesFor`, `DirectionalBlur`), `StableImg.tsx` (fixes Chrome's decode-to-scale cache,
+  which broke determinism), `beatmap.ts`, `sound/` (v2's DSP as a module; v2's `sound.ts` now uses it,
+  byte-identical output).
+- **tools/:** `beats` (librosa via uv; replaces the rough numpy `beats.py`; `clip` writes an ad's
+  `beatmap.ts`), `stills`, `critic` (+ `score`, `history`, `selftest`), `refframes`, `motion-check`;
+  `render --frames a-b`; staging moved to `tools/lib/stage.ts`.
+- **Beat maps** measured and stored (`beatMap` in `library/music/manifest.json`) for all 8 tracks. Their
+  old `bpm` / `offsetSec` fields are untouched (existing ads were cut to them), but note: Cat Walk's grid
+  is measured at offset 0.003 s, not the estimated 0.423 s (≈ 38 ms off the beat for `clockFor` users);
+  Lo-fi 01 measures 100 BPM, not 75; Sleepy Cat 67.5.
+- **AdSpec:** `gates` (G1–G6: pending / review / approved / skipped) and `gateLog`; validate checks gate
+  order, founder approval (byType human) at G2/G3, 60 fps for studio ads, G1 ⇒ every asset approved,
+  each gate's files.
+- **reviews/** (new folder): `reviews/pop-out-v2/2026-10-15/round-1/` is the strip-test demo: v2's
+  fastest move (13.2 s, 145 px/frame) echoes (4 samples, 24 px gaps).
+- **Pop out v3** (`ads/pop-out-v3/`): G1 approved (mechanical), G2 in review: brief.md, style_guide.md,
+  shotlist.md, one still per shot. Registered (`pop-out-v3--9x16--15s`).
+
 ## 2026-10-15: the prompt library (`prompts/`) and the inspo board (`inspo/`) (decisions/0010)
 - **`prompts/<area>/<name>.v<N>.md`**: one Markdown file per prompt (`schemas/prompt.ts`): author
   (founder | agent:<name> | other), area, target, inputs, outputs, outcome (worked | didn't | mixed |

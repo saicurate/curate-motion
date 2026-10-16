@@ -320,6 +320,124 @@
         "minimum": 0
       }
     },
+    "beatMap": {
+      "type": "object",
+      "properties": {
+        "tool": {
+          "type": "string"
+        },
+        "measuredAt": {
+          "type": "string"
+        },
+        "durationSec": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "bpm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "offsetSec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gridResidualMs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "beatsPerBar": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "beats": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "downbeats": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "hits": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            ],
+            "items": false,
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "bars": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "t": {
+                "type": "number",
+                "minimum": 0
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "drop",
+                  "lift",
+                  "break",
+                  "fall"
+                ]
+              },
+              "db": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "t",
+              "kind",
+              "db"
+            ]
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tool",
+        "measuredAt",
+        "durationSec",
+        "bpm",
+        "offsetSec",
+        "gridResidualMs",
+        "beatsPerBar",
+        "beats",
+        "downbeats",
+        "hits",
+        "bars",
+        "sections"
+      ]
+    },
     "vibe": {
       "type": "string"
     }

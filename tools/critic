@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/critic: the evidence for judging a render by its frames, and the per-round scores. See tools/critic.py.
+exec uv run --quiet --script "$(dirname "$0")/critic.py" "$@"

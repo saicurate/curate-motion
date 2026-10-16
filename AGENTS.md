@@ -29,10 +29,12 @@ library, never regenerated.**
 | `inspo/` | The inspo board: one Markdown file per inspiration, `inspo/<id>.md`; its media is a `reference` asset in `library/references/` (see "Inspo: add and reference") |
 | `schemas/` | The zod source of truth for assets, ads, persona accounts, the voice config, prompts and inspo |
 | `config/` | Project-wide settings as data: `voice.json` (the voiceover's mode and every mode's settings) |
-| `motion/` | Reusable Remotion components (PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…) |
-| `ads/` | One folder per ad: `ad.json` (the ad in data), `README.md`, `index.tsx` |
+| `motion/` | Reusable Remotion components (PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…), plus the studio kit: `springs.ts`, `noise.ts`, `Blur.tsx`, `StableImg.tsx`, `beatmap.ts`, `sound/` |
+| `ads/` | One folder per ad: `ad.json` (the ad in data), `README.md`, `index.tsx`; studio ads also brief.md, style_guide.md, shotlist.md, timeline.ts, shots.ts (see "Making a motion film") |
+| `reviews/` | The critic's evidence per ad and round (`tools/critic`); images/audio are local only, `review.md`, `metrics.json` and `scores.json` are tracked |
+| `.claude/skills/` | Project skills for Claude Code: `motion-reel` (the studio process) |
 | `renders/` | Rendered videos by ad / channel / length (gitignored, synced to S3) |
-| `tools/` | `catalog`, `prompts`, `inspo`, `sync`, `render`, `voice`, `persona`, `library-ui`, `capture.sh`, `migrate/` |
+| `tools/` | `catalog`, `prompts`, `inspo`, `sync`, `render`, `voice`, `persona`, `library-ui`, `capture.sh`, `migrate/`; studio: `beats`, `stills`, `critic`, `refframes`, `motion-check` |
 | `tracker/` | The library page: browse, add, retire, render queue (`tools/library-ui`, or open `tracker/index.html` read-only) |
 | `decisions/` | One short file per decision, numbered. Read them to learn why things are this way |
 | `infra/` | The S3 bucket's settings as files, and `setup.sh` to re-apply them |
@@ -118,6 +120,47 @@ Agents never mark their own work approved.
 7. **Write `ads/<ad-id>/README.md`:** what it is, how it's built, what's reusable.
 8. **Check:** `npx tsc --noEmit`, `tools/catalog validate`, then preview in `npm run dev`.
 9. **Render a draft** (below) and hand it over for review. The founder approves, not the agent.
+
+## Making a motion film: the studio process
+
+**PROPOSED** (decisions/0011): the founder decides after seeing Pop out v3. Until then these are the
+studio's working rules, not RULES.md. Claude Code runs it as the project skill **`/motion-reel`**
+(`.claude/skills/motion-reel/SKILL.md`: the full procedure); every other agent follows the same steps:
+
+1. **Render contract.** Every frame from time alone (`t = frame / fps`): no timers, no `Date`, no
+   `Math.random` (seeded `motion/noise` only). **60 fps** for new ads (`"fps": 60`; App Store formats
+   render at 30 from the same timeline). `tools/stills <ad> --determinism --frame N` must say EQUAL;
+   photos drawn at changing scales use `<StableImg>`. `tools/motion-check <ad>` scans for impurities.
+2. **Motion with mass.** `motion/springs.ts`: closed-form springs and stacked `track()` values, one
+   preset per object class: `ui` (≈3% overshoot), `panel` (0), `camera` (long, critically damped),
+   `headline` (lands hard; hold `readHold(text)`), `mascot` (Zee only: bounces), `piece` (≈1%).
+   Bouncy easing only for Zee; exponential easing for opacity/colour/blur.
+3. **Blur that doesn't echo.** `<SubframeBlur samples={f => samplesFor(speed)}>` (samples ≤ 3 px
+   apart; 1 when still) + `<DirectionalBlur>` from the analytic velocity.
+4. **Measure the music.** `tools/beats <music-id> --write` (librosa) stores the beat map in the
+   manifest; `tools/beats clip … --out ads/<ad>/beatmap.ts` gives the ad its window. State changes on
+   beats, big moments on downbeats, whooshes on hits. Designed sound with `motion/sound` on the same
+   clock; −14 LUFS; the blindfold test (audio only, its waveform).
+5. **State lists.** `brief.md` (FILM sentence, audience, duration, formats, ASSETS, VISUAL, HARD LINE)
+   and `shotlist.md`: HOOK 0–2 s, PROBLEM, REVEAL (a real interaction), PROOF (one real screen or
+   number), CLOSE (a readable CTA held ≥ 2 s); each shot with time range, ENTRY, EXIT, PURPOSE,
+   motion class; last frame = first. A beat that can't justify itself is cut.
+6. **Reference → style guide.** `tools/refframes <reference-id> --ad <ad>` (frames every 0.5 s,
+   palette hex, shot lengths, motion, grain) → `style_guide.md`. Take the grammar, never the
+   subjects, logos or copy. Need another reference? Say what kind and ask.
+7. **The critic.** `tools/critic <ad>` writes `reviews/<ad>/<date>/round-<N>/`: contact sheet,
+   fastest-move strip, phone test, loop, determinism, loudness, blindfold audio, `review.md`. Judge
+   only the frames; score 1–10 (hook, phone, smoothness, variety, sound, brand); fix the 3 worst;
+   re-render those seconds (`tools/render <ad> --frames a-b`); repeat until every score is 8+
+   (`tools/critic score`).
+8. **Gates in ad.json** (`gates`, `gateLog`; validated): G1 assets approved · **G2** style guide +
+   shot list + one still per shot (**founder**) · **G3** stills critiqued (**founder**) · G4 animatic
+   · G5 full pass, polish, sound · G6 formats, loop check, poster frame, README. Stop at G2 and G3
+   with a phone page for the founder.
+
+Studio folder: `ads/<ad>/` brief.md, style_guide.md, shotlist.md, beatmap.ts, timeline.ts, shots.ts,
+index.tsx, sound.ts, README.md, ad.json, out/ (local) + `reviews/<ad>/`. First ad made this way:
+`ads/pop-out-v3/`.
 
 ## Render
 

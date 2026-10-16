@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/refframes: frames every 0.5 s, palette, shot lengths, motion, grain from a reference (for a style guide). See tools/refframes.py.
+exec uv run --quiet --script "$(dirname "$0")/refframes.py" "$@"

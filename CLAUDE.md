@@ -5,6 +5,7 @@ folder map, the catalog CLI, how to make and render an ad, how to add an asset, 
 not to do).
 
 Claude Code specifics:
+- Making a motion film (an ad, a reel): the project skill **`/motion-reel`** (`.claude/skills/motion-reel/SKILL.md`), PROPOSED until the founder's OK after Pop out v3.
 - Use the Remotion skills (`remotion:remotion-best-practices` and friends) for Remotion API questions.
 - Query assets with `tools/catalog search …` (Bash) instead of globbing `library/`.
 - No paid model calls (image, video or audio generation) without the founder's explicit OK.

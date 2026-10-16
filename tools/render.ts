@@ -5,6 +5,7 @@
 //                        [--voice captions|human|tts] [--tts <profile>]   per-render voice override (config/voice.json is the default)
 //                        [--props '<json>'] [--name <variant>]          extra composition props (e.g. '{"bumper":"tryons"}'), named in the file: <ad>-<variant>_…
 //                        [--concurrency <n>]                              Chrome tabs at once (default 3; use 1 for heavy 3D/footage scenes, which drop layers above it)
+//                        [--frames <a-b>]                                 only those frames (a critic round re-rendering the seconds it fixed); named …_f<a>-<b>_vN
 //   tools/render run          render everything queued
 //   tools/render queue        print the queue
 //
@@ -16,12 +17,13 @@
 // staged, its captions are written next to the mp4 as .srt / .vtt, and a voiced render with missing
 // audio, or an approved/live ad with a draft or preview-only voice, is refused.
 import { spawnSync } from "node:child_process";
-import { existsSync, linkSync, mkdirSync, readdirSync, rmSync, writeFileSync, copyFileSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { toSrt, toVtt, type NarrationPlan } from "../motion/narration-plan.ts";
 import { planFor } from "./lib/voice.ts";
 import { dirname, join } from "node:path";
 import { AdSpec, CHANNEL_FORMAT, compositionId, renderPath, type FormatId } from "../schemas/ad.ts";
-import { INDEX_PATH, LIB, list, parseArgs, readJson, ROOT, writeJson } from "./lib/core.ts";
+import { list, parseArgs, readJson, ROOT, writeJson } from "./lib/core.ts";
+import { stage } from "./lib/stage.ts";
 
 type Job = {
   id: string;
@@ -47,6 +49,8 @@ type Job = {
   name?: string;
   /** Chrome tabs rendering at once (--concurrency, default 3). 1 is the safe choice for heavy 3D scenes: above it Chrome can drop layers. */
   concurrency?: number;
+  /** Only these frames (--frames a-b): a critic round's re-render of the seconds it fixed. */
+  frames?: string;
 };
 
 const QUEUE = join(ROOT, "renders", "queue.json");
@@ -66,36 +70,6 @@ const nextVersion = (ad: string, channel: string, format: FormatId, length: numb
     if (name) p = p.replace(`/${ad}_${channel}_`, `/${ad}-${name}_${channel}_`);
     if (!existsSync(join(ROOT, p)) && !taken.has(p)) return p;
   }
-};
-
-const stage = (ad: string, ids: string[]) => {
-  const idx = readJson<{ assets: { id: string; kind: string; files: { path: string }[]; asset: { frames?: { dir: string }; licence?: { restrictions?: string[] } } }[] }>(INDEX_PATH).assets;
-  const dir = join(ROOT, ".stage", ad);
-  rmSync(dir, { recursive: true, force: true });
-  const missing: string[] = [];
-  const put = (rel: string) => {
-    const from = join(LIB, rel);
-    const to = join(dir, rel);
-    if (!existsSync(from)) return missing.push(rel);
-    mkdirSync(dirname(to), { recursive: true });
-    try {
-      linkSync(from, to);
-    } catch {
-      copyFileSync(from, to);
-    }
-  };
-  for (const id of ids) {
-    const e = idx.find((a) => a.id === id);
-    if (!e) throw new Error(`${ad}: asset ${id} is not in the catalog`);
-    // references (the inspo board's media) are study only: never in a render (RULES.md › 9)
-    if (e.kind === "reference" || e.asset.licence?.restrictions?.includes("never-ship")) throw new Error(`${ad}: ${id} is a reference (inspo, study only) and is never shipped in an ad (RULES.md › 9). Remove it from ads/${ad}/ad.json › assets.`);
-    for (const f of e.files) put(f.path);
-    const fr = e.asset.frames;
-    if (fr && existsSync(join(LIB, fr.dir))) for (const n of readdirSync(join(LIB, fr.dir))) put(`${fr.dir.replace(/\/$/, "")}/${n}`);
-    else if (fr) missing.push(fr.dir);
-  }
-  if (missing.length) throw new Error(`${ad}: ${missing.length} files not on disk (first: ${missing[0]}). Run: tools/sync pull --ad ${ad}`);
-  return dir;
 };
 
 const voiceOverride = () => ({
@@ -126,13 +100,15 @@ const enqueue = (adId: string) => {
       if (!spec.lengths.includes(length)) throw new Error(`${adId} does not list length ${length} in ad.json`);
       if (format.startsWith("appstore") && (length < 15 || length > 30)) continue; // App Store: 15–30 s only
       const channel = typeof args.channel === "string" ? args.channel : (spec.channels.find((c) => CHANNEL_FORMAT[c] === format) ?? "master");
-      const name = typeof args.name === "string" ? args.name : undefined;
+      const frames = typeof args.frames === "string" ? args.frames : undefined;
+      if (frames && !/^\d+-\d+$/.test(frames)) throw new Error("--frames must be a-b (frame numbers)");
+      const name = typeof args.name === "string" ? args.name : frames ? `f${frames}` : undefined;
       if (name && !/^[a-z0-9-]+$/.test(name)) throw new Error("--name must be kebab-case");
       const extra = typeof args.props === "string" ? (JSON.parse(args.props) as Record<string, unknown>) : undefined;
       const out = nextVersion(adId, channel, format, length, taken, name);
       taken.add(out);
       const vo = voiceOverride();
-      jobs.push({ id: `${adId}-${format}-${length}-${Date.now().toString(36)}`, ad: adId, composition: compositionId(adId, format, length), format, length, channel, out, draft: !!args.draft, status: "queued", queuedAt: now(), by: String(args.by ?? "agent"), ...(Object.keys(vo).length ? { voiceOverride: vo } : {}), ...(extra ? { props: extra } : {}), ...(name ? { name } : {}), ...(args.concurrency ? { concurrency: Number(args.concurrency) } : {}) });
+      jobs.push({ id: `${adId}-${format}-${length}-${Date.now().toString(36)}`, ad: adId, composition: compositionId(adId, format, length), format, length, channel, out, draft: !!args.draft, status: "queued", queuedAt: now(), by: String(args.by ?? "agent"), ...(Object.keys(vo).length ? { voiceOverride: vo } : {}), ...(extra ? { props: extra } : {}), ...(name ? { name } : {}), ...(args.concurrency ? { concurrency: Number(args.concurrency) } : {}), ...(frames ? { frames } : {}) });
       console.log(`queued  ${out}`);
     }
   }
@@ -160,7 +136,7 @@ const run = () => {
         writeFileSync(pf, JSON.stringify({ ...(j.props ?? {}), ...(j.voiceOverride ? { voice: j.voiceOverride } : {}) }));
         props.push(`--props=${pf}`);
       }
-      const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", `--concurrency=${j.concurrency ?? 3}`, ...q, ...props], { cwd: ROOT, stdio: "inherit" });
+      const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", `--concurrency=${j.concurrency ?? 3}`, ...(j.frames ? [`--frames=${j.frames}`] : []), ...q, ...props], { cwd: ROOT, stdio: "inherit" });
       if (r.status !== 0) throw new Error(`remotion render exited ${r.status}`);
       // sidecar captions, whatever the mode (captions are always available)
       for (const kind of plan?.voice.captions.sidecar ?? []) writeFileSync(join(ROOT, j.out.replace(/\.mp4$/, `.${kind}`)), kind === "srt" ? toSrt(plan!) : toVtt(plan!));

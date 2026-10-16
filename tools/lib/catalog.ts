@@ -299,6 +299,20 @@ export const validate = (o: { sha?: string; immutableAgainst?: string; checkInde
       if (a.status === "retired") errors.push(`${p}: uses retired asset ${id}`);
       if (a.kind === "reference") errors.push(`${p}: lists reference ${id}: references (inspo) are study only and never shipped in an ad (RULES.md › 9)`);
       if ((r.data.status === "approved" || r.data.status === "live") && a.status !== "approved") errors.push(`${p}: ${r.data.status} ad uses ${a.status} asset ${id}`);
+      if (r.data.gates?.G1 === "approved" && a.status !== "approved") errors.push(`${p}: G1 (assets approved) is approved but ${id} is ${a.status}`);
+    }
+    // the studio process (decisions/0011): each gate's files exist once the gate is in review
+    const g = r.data.gates;
+    if (g) {
+      const dir = join(ROOT, "ads", r.data.id);
+      const need: [keyof typeof g, string[]][] = [
+        ["G2", ["brief.md", "style_guide.md", "shotlist.md"]],
+        ["G3", ["shots.ts"]],
+        ["G6", ["README.md"]],
+      ];
+      for (const [gate, files] of need)
+        if (g[gate] !== "pending") for (const f of files) if (!existsSync(join(dir, f))) errors.push(`${p}: ${gate} is ${g[gate]} but ads/${r.data.id}/${f} is missing`);
+      if ((g.G3 === "approved" || g.G5 === "review" || g.G5 === "approved") && !existsSync(join(ROOT, "reviews", r.data.id))) errors.push(`${p}: no reviews/${r.data.id}/ (run tools/critic) for a gate that needs a critiqued render`);
     }
   }
   for (const p of findAccounts()) {
