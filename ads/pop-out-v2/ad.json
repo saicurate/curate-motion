@@ -1,0 +1,67 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "pop-out-v2",
+  "title": "Pop out v2",
+  "brief": "Pop out, remade under the founder's one-thread motion philosophy (prompt.motion-brief.one-thread-showreel.v1) so it can be compared with v1. Same message for people who have never heard of Curate: your closet is already in your photos. One continuous transformation, no cuts and no fades: her pieces outline and pop out of her real photos; the last outline becomes the scan's grid; the words collapse into the line that draws the phone; her photo's tiles flip into the real scan (Zee's magnifier); the scan's tiles fold into the real Wardrobe's tiles; her pieces rise out of the Wardrobe as the camera orbits forward; the denim jacket collapses into Curate's star; the star becomes the end card and opens back into the first frame (a loop). Geist only; black, white and three colours from her wardrobe (denim, camel, sage); one camera that only dollies or orbits forward; something changes on every beat of Cat Walk (130 BPM, beat-mapped); designed sound made in code on top of the music.",
+  "hook": "0–2 s: her photo; on the drop a denim outline draws round her jacket and it pops out; on each beat the next photo floods out of the next piece's own shape (camel coat, sage set).",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 30,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "sfx.curate.pop-out-v2-sound.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "photo.emma.r26-ferry.v1",
+    "photo.emma.r12-dumbo-walk.v1",
+    "photo.emma.r29-gym-mirror.v1",
+    "garment.emma.jacket-denim.v1",
+    "garment.emma.coat-wool-camel.v1",
+    "garment.emma.leggings-sage.v1",
+    "garment.emma.sports-bra-sage.v1",
+    "garment.emma.bag-mini-black.v1",
+    "garment.emma.bag-crossbody-tan.v1",
+    "garment.emma.tee-black.v1",
+    "garment.emma.flats-ballet-black.v1",
+    "garment.emma.bag-tote-leather-black.v1",
+    "garment.emma.sweater-crewneck-navy.v1",
+    "garment.emma.boots-cowboy-tan.v1",
+    "garment.emma.camisole-satin-black.v1",
+    "footage.emma.scan-roll.v1",
+    "footage.emma.wardrobe-scroll-float.v1",
+    "zee.cheer.intro.v1",
+    "zee.cheer.loop.v1"
+  ],
+  "components": [
+    "useBrandFonts",
+    "pieceAspect",
+    "frameSrc",
+    "SubframeBlur (ad-local)",
+    "SpeedBlur (ad-local)",
+    "Clip (ad-local, time-remapped footage)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated: turn on the platform AI label (TikTok \"AI-generated content\", Meta \"AI info\", YouTube \"altered or synthetic content\").",
+    "The app footage is real (Curate 1.5.0, build 262, Emma's account): the scan and the Wardrobe, time-remapped so the app's own moves land on the beat (sped up about 1.2x in places, the still stretches between them skipped).",
+    "Music: Mixkit Stock Music Free License (Cat Walk, Arulo): online and social ads are fine; no TV/radio, never register it with Content ID. The designed sound on top is Curate's own, generated in code."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (pop-out-v2 agent)",
+    "at": "2026-10-15"
+  },
+  "notes": "9x16 15 s only: the brief was written for this one format. A test of the one-thread rules; nothing here is a house rule until the founder says so."
+}

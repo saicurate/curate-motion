@@ -26,10 +26,41 @@ h2{font-size:18px;font-weight:650;margin:40px 0 4px}
 .pick{color:var(--ink);border-color:var(--ink)}
 .note{margin-top:44px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;max-width:72ch;font-size:14px;line-height:1.5;color:var(--t2)}
 .note b{color:var(--ink)}
+.vs h2{margin-top:28px}
+.vsrow{display:flex;flex-wrap:wrap;gap:28px 24px;align-items:flex-start}
+.diff{flex:1 1 300px;min-width:0;max-width:62ch}
+.diff .sub{margin-top:4px}
+.diff ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:9px;font-size:14px;line-height:1.5;color:var(--t2)}
+.diff li b{color:var(--ink);font-weight:650}
 </style>
 <div class="w">
   <h1>Curate ads, at phone size</h1>
   <p class="lede">Each video plays in a phone-sized frame, so it looks the way people will see it on TikTok, Reels and the Instagram feed. Tap a video to play it with sound. Only one plays at a time.</p>
+
+  <section class="vs" aria-labelledby="vs-h">
+    <h2 id="vs-h">Pop out: v1 vs v2</h2>
+    <p class="track">Same message, same track (Cat Walk), same 15 s. v2 follows the one-thread motion brief, so you can decide whether those become the rules for every ad.</p>
+    <div class="vsrow">
+      <div class="ad"><div class="phone"><video src="v/real-pop-out-15s-v1.mp4" poster="v/real-pop-out-15s-v1.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play v1"><span>▶</span></button></div>
+        <div class="meta"><b><span class="len">v1</span>Pop out</b><i>Cuts, whip pans, a flash and springy pops.</i></div></div>
+      <div class="ad"><div class="phone"><video src="v/real-pop-out-v2-15s-9x16-v1.mp4" poster="v/real-pop-out-v2-15s-9x16-v1.jpg" playsinline loop preload="metadata"></video><button class="tap" aria-label="Play v2"><span>▶</span></button></div>
+        <div class="meta"><b><span class="len pick">v2 · loops</span>Pop out v2</b><i>One continuous shot: every scene is made out of the one before.</i></div></div>
+      <div class="diff">
+        <p class="sub">What v2 does differently</p>
+        <ul>
+          <li><b>No cuts, no fades.</b> Each scene grows out of the last: her next photo floods out of a piece's own shape, the outline of her leggings becomes the scan's grid, the words collapse into a line that draws the phone, and her photo's tiles flip over into the real scan.</li>
+          <li><b>The app's own tiles do the moving.</b> The scan's tiles fold into the Wardrobe's tiles, and her pieces lift out of the Wardrobe as the camera swings round the phone.</li>
+          <li><b>The denim jacket becomes the logo.</b> It collapses into Curate's star, the mark draws around it, and the end title builds from there.</li>
+          <li><b>It loops.</b> The last frame is the first frame: the camera goes through the star and lands back on her first photo.</li>
+          <li><b>Stricter look.</b> One typeface (Geist). Black, white and three colours from her own clothes: denim, camel, sage. No flash, no bounce, no glow.</li>
+          <li><b>Something moves on every beat,</b> and nothing holds still longer than half a second. In v1 the end card holds still for about 3½ seconds.</li>
+          <li><b>Its own sound.</b> A soft kick on every beat, a riser into the big moment, and a small hit or whoosh on every change, all made in code, on top of the music.</li>
+          <li><b>Real motion blur</b> on the fast moves, the way a camera would record it.</li>
+          <li><b>Trade-off:</b> the end title is on screen for about 1 second (v1: about 3½ s), and the real app footage is shown smaller and for less time.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <h2>1 · Pop out</h2>
   <p class="track">Track: Cat Walk · pieces burst out of her real photos, then a match cut into the real scan</p>
