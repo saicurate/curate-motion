@@ -38,6 +38,10 @@ renders/**
 *.ttf
 *.otf
 *.woff
+*.glb
+*.gltf
+*.hdr
+*.exr
 *.woff2
 *.zip
 

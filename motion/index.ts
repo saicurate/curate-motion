@@ -7,6 +7,8 @@ export { planScenes, type Planned, type Scene } from "./lengths";
 export { C, clamp, display, GEIST, inOut, out, shadow, snap, useBrandFonts } from "./theme";
 
 export { PhoneFrame, PHONE_RATIO, projectOnPhone, type PhonePose } from "./PhoneFrame";
+export { Device, DeviceScreen, deviceLayout, device, type DeviceProps, type BezelProps, type DeviceRecord, type ScreenSource } from "./Device";
+export { Device3D, type Device3DOwnProps } from "./Device3D";
 export { EMOTIONS, ZeeActor, zeeFrame, zeeId, type Emotion, type ZeeCue } from "./ZeeActor";
 export { Slam, TypeOn, Words } from "./KineticType";
 export { PopOut, popCurve } from "./PopOut";

@@ -4,7 +4,9 @@ Reusable Remotion components. Ads import from `motion/index.ts`, never from each
 
 | Component | Use |
 |---|---|
-| `PhoneFrame`, `projectOnPhone` | floating iPhone; its screen is a slot for footage |
+| `Device`, `DeviceScreen`, `deviceLayout`, `device` | the app's real screen in a real phone, by id (kind `device`): `bezel` = Apple's iPhone Product Bezel as is (pan, zoom, fade only: Apple's rules), `3d` = our generic phone in three.js (rotation, camera, shadow); decisions/0012 |
+| `Device3D` | the `3d` variant itself: GLB + CC0 HDRI + soft contact shadow, the screen a frame-exact video texture; render with `--gl=angle` |
+| `PhoneFrame`, `projectOnPhone` | the OLD drawn phone (black rounded rectangle), kept for ads already cut to it; new ads use `Device` |
 | `ZeeActor`, `zeeId` | Zee by emotion cues (intro/loop/outro), on-beat cuts |
 | `Words`, `Slam`, `TypeOn` (KineticType) | moving type, Geist Medium |
 | `beatClock`, `clockFor` (BeatClock) | BPM → frames from a music asset; `frame(n)`, `bar()`, `section("drop")` |

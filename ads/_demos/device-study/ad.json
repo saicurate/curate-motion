@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../catalog/schemas/ad.schema.json",
+  "id": "demo-device-study",
+  "title": "Device study: the drawn phone vs a real iPhone bezel vs the generic 3D phone",
+  "brief": "Not an ad: a side-by-side test of the phone frames (demo first, the founder picks). The same real screens (Emma's Wardrobe tab, the scan-roll footage) in the old drawn PhoneFrame, Apple's official iPhone Product Bezels (as is: an establishing shot, then a slow push-in, the only kind of move Apple allows) and Curate's generic 3D phone (a slow orbit with reflections moving over the glass). 1080x1920, 60 fps, 6 s, silent.",
+  "channels": ["tiktok"],
+  "formats": ["9x16"],
+  "lengths": [6],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "screenshot.emma.wardrobe-top.v1",
+    "footage.emma.scan-roll.v1",
+    "footage.emma.look-card-landing.v1",
+    "device.apple.iphone-17-pro-max-silver.v1",
+    "device.apple.iphone-17-pro-max-deep-blue.v1",
+    "device.apple.iphone-17-pro-max-cosmic-orange.v1",
+    "device.apple.iphone-18-pro-max-silver.v1",
+    "device.apple.iphone-18-pro-max-black.v1",
+    "device.apple.iphone-18-pro-max-burgundy.v1",
+    "device.apple.iphone-18-pro-max-glacier.v1",
+    "device.curate.phone-generic.v1",
+    "stock.polyhaven.hdri-studio-small-09.v1"
+  ],
+  "components": ["Device", "Device3D", "PhoneFrame", "Footage"],
+  "status": "draft",
+  "gate": "explore",
+  "disclosures": ["Study only, never posted. The track is listed because ad.json needs one; the study is silent."],
+  "createdBy": { "type": "agent", "name": "claude-code (device frames)", "at": "2026-10-16" },
+  "notes": "Render: node ads/_demos/device-study/render.ts (stages the assets, renders every option with --gl=angle into ads/_demos/device-study/out/).",
+  "gateLog": []
+}

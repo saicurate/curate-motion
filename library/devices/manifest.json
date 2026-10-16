@@ -1,0 +1,1037 @@
+{
+  "$schema": "../../catalog/schemas/manifest.schema.json",
+  "about": "Phone frames the app's screen sits in: Apple's official Product Bezels (as is, straight on: pan, zoom and fade only) and Curate's generic 3D phone. See motion/Device.tsx and decisions/0012.",
+  "assets": [
+    {
+      "id": "device.apple.iphone-17-pro-max-silver.v1",
+      "title": "iPhone 17 Pro Max, Silver (Apple bezel, portrait)",
+      "description": "Apple's official Product Bezel, iPhone 17 Pro Max - Silver - Portrait.png, from https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-17.dmg (Last-Modified 2025-09-12, dmg sha256 d82865f755b94576…). A PNG with a transparent display; its own Dynamic Island is drawn on top. Matches our iPhone 17 Pro Max simulator captures pixel for pixel, island included.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/apple/iphone-17-pro-max-silver.v1.png",
+          "sha256": "171f0a393dc89af4b7d72ba13fe0faa210adec904debcb1657abade46d52792a",
+          "bytes": 462510,
+          "mime": "image/png"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-17-pro-max-silver.v1.rtf",
+          "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+          "bytes": 14462,
+          "mime": "application/rtf"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-17-pro-max-silver.v1.txt",
+          "sha256": "9726e408cec9ca54ef2dd44b8f3d94707287b34bbf8cca3d093ae753bb14bc4c",
+          "bytes": 30445,
+          "mime": "text/plain"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "apple",
+          "generation:17"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Apple Inc.",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-17.dmg",
+        "from": [],
+        "tool": "Bezel-iPhone-17.dmg › PNG › iPhone 17 Pro Max"
+      },
+      "licence": {
+        "name": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+        "url": "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+        "commercial": true,
+        "attributionRequired": true,
+        "attribution": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+        "restrictions": [
+          "only-to-market-our-app-on-the-app-store",
+          "only-while-in-the-apple-developer-program",
+          "as-is-no-modification",
+          "no-rotate-tilt-flip-spin-or-animate-the-device",
+          "no-added-shadows-reflections-or-highlights",
+          "nothing-entering-or-leaving-the-screen",
+          "no-crop-or-cover-the-device",
+          "copy-beside-not-on-top",
+          "pan-zoom-only-after-a-full-device-shot",
+          "fade-or-dissolve-transitions-only",
+          "min-200px-tall-onscreen",
+          "latest-generation-device",
+          "no-cases-or-competing-products",
+          "show-the-app-as-it-really-runs",
+          "credit-line-with-legal-copy",
+          "never-redistribute-the-bezel-file"
+        ],
+        "proof": "files with role \"proof\": Apple's DMG licence (LYL142 06/21/2023) and a snapshot of the App Store Marketing Guidelines, 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Apple",
+      "model": "iphone-17-pro-max",
+      "colour": "silver",
+      "variant": "bezel",
+      "orientation": "portrait",
+      "dims": {
+        "w": 1470,
+        "h": 3000
+      },
+      "body": {
+        "x": 21,
+        "y": 20,
+        "w": 1428,
+        "h": 2959
+      },
+      "screen": {
+        "x": 75,
+        "y": 66,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 135,
+        "cornerRadiusRange": [
+          80,
+          190
+        ]
+      },
+      "island": {
+        "x": 473,
+        "y": 43,
+        "w": 374,
+        "h": 108
+      },
+      "fitsCapturesFrom": "iPhone 17 Pro Max",
+      "moves": [
+        "pan",
+        "zoom",
+        "fade"
+      ],
+      "rules": [
+        "Use it as is and straight on: never rotate, tilt, flip, spin or animate the device itself.",
+        "In video, show the whole device first; then you may pan and zoom to the app. Transitions: fades or dissolves.",
+        "Never add shadows, reflections or highlights to it, never crop or cover any part of it, and nothing may appear to come out of (or go into) its screen: no Pop out from this phone.",
+        "Words, badges and stickers go beside it, never on top of it.",
+        "At least 200 px tall on screen; keep the right relative sizes when several devices are shown.",
+        "Show the app exactly as it runs on the latest iOS: a full status bar, fictional account data (Emma), never a blank screen, the Home Screen or another app's content.",
+        "Use the latest-generation device the app is built for; no cases or covers; no competing products in the same picture.",
+        "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
+        "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
+      ],
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+    },
+    {
+      "id": "device.apple.iphone-17-pro-max-deep-blue.v1",
+      "title": "iPhone 17 Pro Max, Deep Blue (Apple bezel, portrait)",
+      "description": "Apple's official Product Bezel, iPhone 17 Pro Max - Deep Blue - Portrait.png, from https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-17.dmg (Last-Modified 2025-09-12, dmg sha256 d82865f755b94576…). A PNG with a transparent display; its own Dynamic Island is drawn on top. Matches our iPhone 17 Pro Max simulator captures pixel for pixel, island included.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/apple/iphone-17-pro-max-deep-blue.v1.png",
+          "sha256": "5201a518fd2d3c6f968ad522a195c24793d7583e1d011d618aa705383bdde4da",
+          "bytes": 526669,
+          "mime": "image/png"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-17-pro-max-deep-blue.v1.rtf",
+          "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+          "bytes": 14462,
+          "mime": "application/rtf"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-17-pro-max-deep-blue.v1.txt",
+          "sha256": "9726e408cec9ca54ef2dd44b8f3d94707287b34bbf8cca3d093ae753bb14bc4c",
+          "bytes": 30445,
+          "mime": "text/plain"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "apple",
+          "generation:17"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Apple Inc.",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-17.dmg",
+        "from": [],
+        "tool": "Bezel-iPhone-17.dmg › PNG › iPhone 17 Pro Max"
+      },
+      "licence": {
+        "name": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+        "url": "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+        "commercial": true,
+        "attributionRequired": true,
+        "attribution": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+        "restrictions": [
+          "only-to-market-our-app-on-the-app-store",
+          "only-while-in-the-apple-developer-program",
+          "as-is-no-modification",
+          "no-rotate-tilt-flip-spin-or-animate-the-device",
+          "no-added-shadows-reflections-or-highlights",
+          "nothing-entering-or-leaving-the-screen",
+          "no-crop-or-cover-the-device",
+          "copy-beside-not-on-top",
+          "pan-zoom-only-after-a-full-device-shot",
+          "fade-or-dissolve-transitions-only",
+          "min-200px-tall-onscreen",
+          "latest-generation-device",
+          "no-cases-or-competing-products",
+          "show-the-app-as-it-really-runs",
+          "credit-line-with-legal-copy",
+          "never-redistribute-the-bezel-file"
+        ],
+        "proof": "files with role \"proof\": Apple's DMG licence (LYL142 06/21/2023) and a snapshot of the App Store Marketing Guidelines, 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Apple",
+      "model": "iphone-17-pro-max",
+      "colour": "deep-blue",
+      "variant": "bezel",
+      "orientation": "portrait",
+      "dims": {
+        "w": 1470,
+        "h": 3000
+      },
+      "body": {
+        "x": 21,
+        "y": 20,
+        "w": 1428,
+        "h": 2959
+      },
+      "screen": {
+        "x": 75,
+        "y": 66,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 135,
+        "cornerRadiusRange": [
+          80,
+          190
+        ]
+      },
+      "island": {
+        "x": 473,
+        "y": 43,
+        "w": 374,
+        "h": 108
+      },
+      "fitsCapturesFrom": "iPhone 17 Pro Max",
+      "moves": [
+        "pan",
+        "zoom",
+        "fade"
+      ],
+      "rules": [
+        "Use it as is and straight on: never rotate, tilt, flip, spin or animate the device itself.",
+        "In video, show the whole device first; then you may pan and zoom to the app. Transitions: fades or dissolves.",
+        "Never add shadows, reflections or highlights to it, never crop or cover any part of it, and nothing may appear to come out of (or go into) its screen: no Pop out from this phone.",
+        "Words, badges and stickers go beside it, never on top of it.",
+        "At least 200 px tall on screen; keep the right relative sizes when several devices are shown.",
+        "Show the app exactly as it runs on the latest iOS: a full status bar, fictional account data (Emma), never a blank screen, the Home Screen or another app's content.",
+        "Use the latest-generation device the app is built for; no cases or covers; no competing products in the same picture.",
+        "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
+        "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
+      ],
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+    },
+    {
+      "id": "device.apple.iphone-17-pro-max-cosmic-orange.v1",
+      "title": "iPhone 17 Pro Max, Cosmic Orange (Apple bezel, portrait)",
+      "description": "Apple's official Product Bezel, iPhone 17 Pro Max - Cosmic Orange - Portrait.png, from https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-17.dmg (Last-Modified 2025-09-12, dmg sha256 d82865f755b94576…). A PNG with a transparent display; its own Dynamic Island is drawn on top. Matches our iPhone 17 Pro Max simulator captures pixel for pixel, island included.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/apple/iphone-17-pro-max-cosmic-orange.v1.png",
+          "sha256": "9adbcbd505c9432249b578028a55807399f45a5d8e56280cffe9d16e9f02aabc",
+          "bytes": 574889,
+          "mime": "image/png"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-17-pro-max-cosmic-orange.v1.rtf",
+          "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+          "bytes": 14462,
+          "mime": "application/rtf"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-17-pro-max-cosmic-orange.v1.txt",
+          "sha256": "9726e408cec9ca54ef2dd44b8f3d94707287b34bbf8cca3d093ae753bb14bc4c",
+          "bytes": 30445,
+          "mime": "text/plain"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "apple",
+          "generation:17"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Apple Inc.",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-17.dmg",
+        "from": [],
+        "tool": "Bezel-iPhone-17.dmg › PNG › iPhone 17 Pro Max"
+      },
+      "licence": {
+        "name": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+        "url": "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+        "commercial": true,
+        "attributionRequired": true,
+        "attribution": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+        "restrictions": [
+          "only-to-market-our-app-on-the-app-store",
+          "only-while-in-the-apple-developer-program",
+          "as-is-no-modification",
+          "no-rotate-tilt-flip-spin-or-animate-the-device",
+          "no-added-shadows-reflections-or-highlights",
+          "nothing-entering-or-leaving-the-screen",
+          "no-crop-or-cover-the-device",
+          "copy-beside-not-on-top",
+          "pan-zoom-only-after-a-full-device-shot",
+          "fade-or-dissolve-transitions-only",
+          "min-200px-tall-onscreen",
+          "latest-generation-device",
+          "no-cases-or-competing-products",
+          "show-the-app-as-it-really-runs",
+          "credit-line-with-legal-copy",
+          "never-redistribute-the-bezel-file"
+        ],
+        "proof": "files with role \"proof\": Apple's DMG licence (LYL142 06/21/2023) and a snapshot of the App Store Marketing Guidelines, 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Apple",
+      "model": "iphone-17-pro-max",
+      "colour": "cosmic-orange",
+      "variant": "bezel",
+      "orientation": "portrait",
+      "dims": {
+        "w": 1470,
+        "h": 3000
+      },
+      "body": {
+        "x": 21,
+        "y": 20,
+        "w": 1428,
+        "h": 2959
+      },
+      "screen": {
+        "x": 75,
+        "y": 66,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 135,
+        "cornerRadiusRange": [
+          80,
+          190
+        ]
+      },
+      "island": {
+        "x": 473,
+        "y": 43,
+        "w": 374,
+        "h": 108
+      },
+      "fitsCapturesFrom": "iPhone 17 Pro Max",
+      "moves": [
+        "pan",
+        "zoom",
+        "fade"
+      ],
+      "rules": [
+        "Use it as is and straight on: never rotate, tilt, flip, spin or animate the device itself.",
+        "In video, show the whole device first; then you may pan and zoom to the app. Transitions: fades or dissolves.",
+        "Never add shadows, reflections or highlights to it, never crop or cover any part of it, and nothing may appear to come out of (or go into) its screen: no Pop out from this phone.",
+        "Words, badges and stickers go beside it, never on top of it.",
+        "At least 200 px tall on screen; keep the right relative sizes when several devices are shown.",
+        "Show the app exactly as it runs on the latest iOS: a full status bar, fictional account data (Emma), never a blank screen, the Home Screen or another app's content.",
+        "Use the latest-generation device the app is built for; no cases or covers; no competing products in the same picture.",
+        "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
+        "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
+      ],
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+    },
+    {
+      "id": "device.apple.iphone-18-pro-max-silver.v1",
+      "title": "iPhone 18 Pro Max, Silver (Apple bezel, portrait)",
+      "description": "Apple's official Product Bezel, iPhone 18 Pro Max - Silver - Portrait.png, from https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg (Last-Modified 2026-09-09, dmg sha256 b27e827d156c9646…). A PNG with a transparent display; its own Dynamic Island is drawn on top. The iPhone 18 Pro Max island is narrower (282 vs 374 px), so captures from the 17 Pro Max simulator show their own island around it: recapture on the iPhone 18 Pro Max simulator to use this one.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/apple/iphone-18-pro-max-silver.v1.png",
+          "sha256": "6cb9e72efb88c172710d0388f63f51fad883c86895ee382fb402559c0315343d",
+          "bytes": 392452,
+          "mime": "image/png"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-silver.v1.rtf",
+          "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+          "bytes": 14462,
+          "mime": "application/rtf"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-silver.v1.txt",
+          "sha256": "9726e408cec9ca54ef2dd44b8f3d94707287b34bbf8cca3d093ae753bb14bc4c",
+          "bytes": 30445,
+          "mime": "text/plain"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "apple",
+          "generation:18"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Apple Inc.",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg",
+        "from": [],
+        "tool": "Bezel-iPhone-18.dmg › PNG › iPhone 18 Pro Max"
+      },
+      "licence": {
+        "name": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+        "url": "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+        "commercial": true,
+        "attributionRequired": true,
+        "attribution": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+        "restrictions": [
+          "only-to-market-our-app-on-the-app-store",
+          "only-while-in-the-apple-developer-program",
+          "as-is-no-modification",
+          "no-rotate-tilt-flip-spin-or-animate-the-device",
+          "no-added-shadows-reflections-or-highlights",
+          "nothing-entering-or-leaving-the-screen",
+          "no-crop-or-cover-the-device",
+          "copy-beside-not-on-top",
+          "pan-zoom-only-after-a-full-device-shot",
+          "fade-or-dissolve-transitions-only",
+          "min-200px-tall-onscreen",
+          "latest-generation-device",
+          "no-cases-or-competing-products",
+          "show-the-app-as-it-really-runs",
+          "credit-line-with-legal-copy",
+          "never-redistribute-the-bezel-file"
+        ],
+        "proof": "files with role \"proof\": Apple's DMG licence (LYL142 06/21/2023) and a snapshot of the App Store Marketing Guidelines, 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Apple",
+      "model": "iphone-18-pro-max",
+      "colour": "silver",
+      "variant": "bezel",
+      "orientation": "portrait",
+      "dims": {
+        "w": 1470,
+        "h": 3000
+      },
+      "body": {
+        "x": 21,
+        "y": 20,
+        "w": 1428,
+        "h": 2959
+      },
+      "screen": {
+        "x": 75,
+        "y": 66,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 135,
+        "cornerRadiusRange": [
+          80,
+          190
+        ]
+      },
+      "island": {
+        "x": 519,
+        "y": 43,
+        "w": 282,
+        "h": 108
+      },
+      "fitsCapturesFrom": "iPhone 18 Pro Max",
+      "moves": [
+        "pan",
+        "zoom",
+        "fade"
+      ],
+      "rules": [
+        "Use it as is and straight on: never rotate, tilt, flip, spin or animate the device itself.",
+        "In video, show the whole device first; then you may pan and zoom to the app. Transitions: fades or dissolves.",
+        "Never add shadows, reflections or highlights to it, never crop or cover any part of it, and nothing may appear to come out of (or go into) its screen: no Pop out from this phone.",
+        "Words, badges and stickers go beside it, never on top of it.",
+        "At least 200 px tall on screen; keep the right relative sizes when several devices are shown.",
+        "Show the app exactly as it runs on the latest iOS: a full status bar, fictional account data (Emma), never a blank screen, the Home Screen or another app's content.",
+        "Use the latest-generation device the app is built for; no cases or covers; no competing products in the same picture.",
+        "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
+        "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
+      ],
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+    },
+    {
+      "id": "device.apple.iphone-18-pro-max-black.v1",
+      "title": "iPhone 18 Pro Max, Black (Apple bezel, portrait)",
+      "description": "Apple's official Product Bezel, iPhone 18 Pro Max - Black - Portrait.png, from https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg (Last-Modified 2026-09-09, dmg sha256 b27e827d156c9646…). A PNG with a transparent display; its own Dynamic Island is drawn on top. The iPhone 18 Pro Max island is narrower (282 vs 374 px), so captures from the 17 Pro Max simulator show their own island around it: recapture on the iPhone 18 Pro Max simulator to use this one.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/apple/iphone-18-pro-max-black.v1.png",
+          "sha256": "13fc8a8f0bc612f50c00d073b12aefa87bce1e4618fbdd3aa882438ae171e2be",
+          "bytes": 489833,
+          "mime": "image/png"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-black.v1.rtf",
+          "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+          "bytes": 14462,
+          "mime": "application/rtf"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-black.v1.txt",
+          "sha256": "9726e408cec9ca54ef2dd44b8f3d94707287b34bbf8cca3d093ae753bb14bc4c",
+          "bytes": 30445,
+          "mime": "text/plain"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "apple",
+          "generation:18"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Apple Inc.",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg",
+        "from": [],
+        "tool": "Bezel-iPhone-18.dmg › PNG › iPhone 18 Pro Max"
+      },
+      "licence": {
+        "name": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+        "url": "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+        "commercial": true,
+        "attributionRequired": true,
+        "attribution": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+        "restrictions": [
+          "only-to-market-our-app-on-the-app-store",
+          "only-while-in-the-apple-developer-program",
+          "as-is-no-modification",
+          "no-rotate-tilt-flip-spin-or-animate-the-device",
+          "no-added-shadows-reflections-or-highlights",
+          "nothing-entering-or-leaving-the-screen",
+          "no-crop-or-cover-the-device",
+          "copy-beside-not-on-top",
+          "pan-zoom-only-after-a-full-device-shot",
+          "fade-or-dissolve-transitions-only",
+          "min-200px-tall-onscreen",
+          "latest-generation-device",
+          "no-cases-or-competing-products",
+          "show-the-app-as-it-really-runs",
+          "credit-line-with-legal-copy",
+          "never-redistribute-the-bezel-file"
+        ],
+        "proof": "files with role \"proof\": Apple's DMG licence (LYL142 06/21/2023) and a snapshot of the App Store Marketing Guidelines, 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Apple",
+      "model": "iphone-18-pro-max",
+      "colour": "black",
+      "variant": "bezel",
+      "orientation": "portrait",
+      "dims": {
+        "w": 1470,
+        "h": 3000
+      },
+      "body": {
+        "x": 21,
+        "y": 20,
+        "w": 1428,
+        "h": 2959
+      },
+      "screen": {
+        "x": 75,
+        "y": 66,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 135,
+        "cornerRadiusRange": [
+          80,
+          190
+        ]
+      },
+      "island": {
+        "x": 519,
+        "y": 43,
+        "w": 282,
+        "h": 108
+      },
+      "fitsCapturesFrom": "iPhone 18 Pro Max",
+      "moves": [
+        "pan",
+        "zoom",
+        "fade"
+      ],
+      "rules": [
+        "Use it as is and straight on: never rotate, tilt, flip, spin or animate the device itself.",
+        "In video, show the whole device first; then you may pan and zoom to the app. Transitions: fades or dissolves.",
+        "Never add shadows, reflections or highlights to it, never crop or cover any part of it, and nothing may appear to come out of (or go into) its screen: no Pop out from this phone.",
+        "Words, badges and stickers go beside it, never on top of it.",
+        "At least 200 px tall on screen; keep the right relative sizes when several devices are shown.",
+        "Show the app exactly as it runs on the latest iOS: a full status bar, fictional account data (Emma), never a blank screen, the Home Screen or another app's content.",
+        "Use the latest-generation device the app is built for; no cases or covers; no competing products in the same picture.",
+        "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
+        "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
+      ],
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+    },
+    {
+      "id": "device.apple.iphone-18-pro-max-burgundy.v1",
+      "title": "iPhone 18 Pro Max, Burgundy (Apple bezel, portrait)",
+      "description": "Apple's official Product Bezel, iPhone 18 Pro Max - Burgundy - Portrait.png, from https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg (Last-Modified 2026-09-09, dmg sha256 b27e827d156c9646…). A PNG with a transparent display; its own Dynamic Island is drawn on top. The iPhone 18 Pro Max island is narrower (282 vs 374 px), so captures from the 17 Pro Max simulator show their own island around it: recapture on the iPhone 18 Pro Max simulator to use this one.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/apple/iphone-18-pro-max-burgundy.v1.png",
+          "sha256": "020a07a5e1b3ab5af80bde60e64192e3af1568576811789dd4d339a0d41f0f69",
+          "bytes": 542121,
+          "mime": "image/png"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-burgundy.v1.rtf",
+          "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+          "bytes": 14462,
+          "mime": "application/rtf"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-burgundy.v1.txt",
+          "sha256": "9726e408cec9ca54ef2dd44b8f3d94707287b34bbf8cca3d093ae753bb14bc4c",
+          "bytes": 30445,
+          "mime": "text/plain"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "apple",
+          "generation:18"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Apple Inc.",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg",
+        "from": [],
+        "tool": "Bezel-iPhone-18.dmg › PNG › iPhone 18 Pro Max"
+      },
+      "licence": {
+        "name": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+        "url": "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+        "commercial": true,
+        "attributionRequired": true,
+        "attribution": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+        "restrictions": [
+          "only-to-market-our-app-on-the-app-store",
+          "only-while-in-the-apple-developer-program",
+          "as-is-no-modification",
+          "no-rotate-tilt-flip-spin-or-animate-the-device",
+          "no-added-shadows-reflections-or-highlights",
+          "nothing-entering-or-leaving-the-screen",
+          "no-crop-or-cover-the-device",
+          "copy-beside-not-on-top",
+          "pan-zoom-only-after-a-full-device-shot",
+          "fade-or-dissolve-transitions-only",
+          "min-200px-tall-onscreen",
+          "latest-generation-device",
+          "no-cases-or-competing-products",
+          "show-the-app-as-it-really-runs",
+          "credit-line-with-legal-copy",
+          "never-redistribute-the-bezel-file"
+        ],
+        "proof": "files with role \"proof\": Apple's DMG licence (LYL142 06/21/2023) and a snapshot of the App Store Marketing Guidelines, 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Apple",
+      "model": "iphone-18-pro-max",
+      "colour": "burgundy",
+      "variant": "bezel",
+      "orientation": "portrait",
+      "dims": {
+        "w": 1470,
+        "h": 3000
+      },
+      "body": {
+        "x": 21,
+        "y": 20,
+        "w": 1428,
+        "h": 2959
+      },
+      "screen": {
+        "x": 75,
+        "y": 66,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 135,
+        "cornerRadiusRange": [
+          80,
+          190
+        ]
+      },
+      "island": {
+        "x": 519,
+        "y": 43,
+        "w": 282,
+        "h": 108
+      },
+      "fitsCapturesFrom": "iPhone 18 Pro Max",
+      "moves": [
+        "pan",
+        "zoom",
+        "fade"
+      ],
+      "rules": [
+        "Use it as is and straight on: never rotate, tilt, flip, spin or animate the device itself.",
+        "In video, show the whole device first; then you may pan and zoom to the app. Transitions: fades or dissolves.",
+        "Never add shadows, reflections or highlights to it, never crop or cover any part of it, and nothing may appear to come out of (or go into) its screen: no Pop out from this phone.",
+        "Words, badges and stickers go beside it, never on top of it.",
+        "At least 200 px tall on screen; keep the right relative sizes when several devices are shown.",
+        "Show the app exactly as it runs on the latest iOS: a full status bar, fictional account data (Emma), never a blank screen, the Home Screen or another app's content.",
+        "Use the latest-generation device the app is built for; no cases or covers; no competing products in the same picture.",
+        "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
+        "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
+      ],
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+    },
+    {
+      "id": "device.apple.iphone-18-pro-max-glacier.v1",
+      "title": "iPhone 18 Pro Max, Glacier (Apple bezel, portrait)",
+      "description": "Apple's official Product Bezel, iPhone 18 Pro Max - Glacier - Portrait.png, from https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg (Last-Modified 2026-09-09, dmg sha256 b27e827d156c9646…). A PNG with a transparent display; its own Dynamic Island is drawn on top. The iPhone 18 Pro Max island is narrower (282 vs 374 px), so captures from the 17 Pro Max simulator show their own island around it: recapture on the iPhone 18 Pro Max simulator to use this one.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/apple/iphone-18-pro-max-glacier.v1.png",
+          "sha256": "f6edfdf4f4b84170d79e34b21df4d4b3ab300e738b64d54bdf8297788e32c6af",
+          "bytes": 523437,
+          "mime": "image/png"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-glacier.v1.rtf",
+          "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+          "bytes": 14462,
+          "mime": "application/rtf"
+        },
+        {
+          "role": "proof",
+          "path": "devices/apple/proof/iphone-18-pro-max-glacier.v1.txt",
+          "sha256": "9726e408cec9ca54ef2dd44b8f3d94707287b34bbf8cca3d093ae753bb14bc4c",
+          "bytes": 30445,
+          "mime": "text/plain"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "apple",
+          "generation:18"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Apple Inc.",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg",
+        "from": [],
+        "tool": "Bezel-iPhone-18.dmg › PNG › iPhone 18 Pro Max"
+      },
+      "licence": {
+        "name": "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+        "url": "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+        "commercial": true,
+        "attributionRequired": true,
+        "attribution": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+        "restrictions": [
+          "only-to-market-our-app-on-the-app-store",
+          "only-while-in-the-apple-developer-program",
+          "as-is-no-modification",
+          "no-rotate-tilt-flip-spin-or-animate-the-device",
+          "no-added-shadows-reflections-or-highlights",
+          "nothing-entering-or-leaving-the-screen",
+          "no-crop-or-cover-the-device",
+          "copy-beside-not-on-top",
+          "pan-zoom-only-after-a-full-device-shot",
+          "fade-or-dissolve-transitions-only",
+          "min-200px-tall-onscreen",
+          "latest-generation-device",
+          "no-cases-or-competing-products",
+          "show-the-app-as-it-really-runs",
+          "credit-line-with-legal-copy",
+          "never-redistribute-the-bezel-file"
+        ],
+        "proof": "files with role \"proof\": Apple's DMG licence (LYL142 06/21/2023) and a snapshot of the App Store Marketing Guidelines, 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Apple",
+      "model": "iphone-18-pro-max",
+      "colour": "glacier",
+      "variant": "bezel",
+      "orientation": "portrait",
+      "dims": {
+        "w": 1470,
+        "h": 3000
+      },
+      "body": {
+        "x": 21,
+        "y": 20,
+        "w": 1428,
+        "h": 2959
+      },
+      "screen": {
+        "x": 75,
+        "y": 66,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 135,
+        "cornerRadiusRange": [
+          80,
+          190
+        ]
+      },
+      "island": {
+        "x": 519,
+        "y": 43,
+        "w": 282,
+        "h": 108
+      },
+      "fitsCapturesFrom": "iPhone 18 Pro Max",
+      "moves": [
+        "pan",
+        "zoom",
+        "fade"
+      ],
+      "rules": [
+        "Use it as is and straight on: never rotate, tilt, flip, spin or animate the device itself.",
+        "In video, show the whole device first; then you may pan and zoom to the app. Transitions: fades or dissolves.",
+        "Never add shadows, reflections or highlights to it, never crop or cover any part of it, and nothing may appear to come out of (or go into) its screen: no Pop out from this phone.",
+        "Words, badges and stickers go beside it, never on top of it.",
+        "At least 200 px tall on screen; keep the right relative sizes when several devices are shown.",
+        "Show the app exactly as it runs on the latest iOS: a full status bar, fictional account data (Emma), never a blank screen, the Home Screen or another app's content.",
+        "Use the latest-generation device the app is built for; no cases or covers; no competing products in the same picture.",
+        "Wherever an ad has legal copy, add the credit line \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\" (US-only body copy: iPhone® on first mention, never in headlines).",
+        "Only to market Curate while it is on the App Store and we are in the Apple Developer Program. Never share, sell or post the bezel file itself; it stays in the private library."
+      ],
+      "creditLine": "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."
+    },
+    {
+      "id": "device.curate.phone-generic.v1",
+      "title": "Generic phone, 3D (Curate's own model)",
+      "description": "Our own generic flat-edged phone, built in Blender by tools/device/phone_generic.py and exported as a GLB (nodes Body [Frame, Back, Border], Screen, Cover, Keys). No Apple-only details: no Dynamic Island hardware, camera plateau, Action button or left-side volume pair; power key and volume rocker on the right. Its screen is 72.0 x 156.4 mm = 1320:2868, so our footage maps onto it 1:1.",
+      "files": [
+        {
+          "role": "original",
+          "path": "devices/curate/phone-generic.v1.glb",
+          "sha256": "c9e7ce6c3ce2e372d213233b507b47c8e7d57491bae1c9978c0807875e1d54ea",
+          "bytes": 876920,
+          "mime": "model/gltf-binary"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "device",
+          "3d"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/device/phone_generic.py (Blender 5.1.1)"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "device",
+      "maker": "Curate",
+      "model": "phone-generic",
+      "colour": "graphite",
+      "variant": "3d",
+      "orientation": "portrait",
+      "screen": {
+        "x": 0,
+        "y": 0,
+        "w": 1320,
+        "h": 2868,
+        "cornerRadius": 193
+      },
+      "sizeMm": {
+        "w": 78.2,
+        "h": 162.6,
+        "d": 8.25
+      },
+      "environment": "stock.polyhaven.hdri-studio-small-09.v1",
+      "colourways": {
+        "graphite": {
+          "frame": "#5a5c61",
+          "back": "#2e2f32",
+          "roughness": 0.3
+        },
+        "silver": {
+          "frame": "#cfd1d5",
+          "back": "#dcdddf",
+          "roughness": 0.22
+        }
+      },
+      "moves": [
+        "pan",
+        "zoom",
+        "fade",
+        "rotate",
+        "tilt",
+        "orbit",
+        "shadow",
+        "reflection",
+        "pop-out"
+      ],
+      "rules": [
+        "It is a generic phone, not an iPhone: never add Apple-only details (a hardware Dynamic Island, the camera plateau, the Action button, the left-side volume pair) and never call it an iPhone.",
+        "Our captures carry the simulator's island pixels at the top of the screen: that is the app's screen content, and fine.",
+        "Any move is allowed: rotate, tilt, orbit, shadows, reflections, things coming out of the screen."
+      ]
+    }
+  ]
+}

@@ -22,7 +22,7 @@ import { toSrt, toVtt, type NarrationPlan } from "../motion/narration-plan.ts";
 import { planFor } from "./lib/voice.ts";
 import { dirname, join } from "node:path";
 import { AdSpec, CHANNEL_FORMAT, compositionId, renderPath, type FormatId } from "../schemas/ad.ts";
-import { list, parseArgs, readJson, ROOT, writeJson } from "./lib/core.ts";
+import { INDEX_PATH, list, parseArgs, readJson, ROOT, writeJson } from "./lib/core.ts";
 import { stage } from "./lib/stage.ts";
 
 type Job = {
@@ -136,7 +136,9 @@ const run = () => {
         writeFileSync(pf, JSON.stringify({ ...(j.props ?? {}), ...(j.voiceOverride ? { voice: j.voiceOverride } : {}) }));
         props.push(`--props=${pf}`);
       }
-      const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", `--concurrency=${j.concurrency ?? 3}`, ...(j.frames ? [`--frames=${j.frames}`] : []), ...q, ...props], { cwd: ROOT, stdio: "inherit" });
+      // a 3D phone (motion/Device3D, three.js) needs WebGL on the GPU: --gl=angle. Other ads keep Chrome's default.
+      const gl = spec.assets.some((id) => id.startsWith("device.") && readJson<{ assets: { id: string; asset: { variant?: string } }[] }>(INDEX_PATH).assets.find((a) => a.id === id)?.asset.variant === "3d") ? ["--gl=angle"] : [];
+      const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", `--concurrency=${j.concurrency ?? 3}`, ...(j.frames ? [`--frames=${j.frames}`] : []), ...q, ...props, ...gl], { cwd: ROOT, stdio: "inherit" });
       if (r.status !== 0) throw new Error(`remotion render exited ${r.status}`);
       // sidecar captions, whatever the mode (captions are always available)
       for (const kind of plan?.voice.captions.sidecar ?? []) writeFileSync(join(ROOT, j.out.replace(/\.mp4$/, `.${kind}`)), kind === "srt" ? toSrt(plan!) : toVtt(plan!));

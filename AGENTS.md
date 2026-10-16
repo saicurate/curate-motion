@@ -23,13 +23,13 @@ library, never regenerated.**
 
 | Folder | What goes there |
 |---|---|
-| `library/` | Media (gitignored, synced with S3) + one `manifest.json` per folder (tracked). `brand/`, `zee/`, `people/<persona>/`, `wardrobe/<persona>/`, `camera-roll/<persona>/`, `stock/`, `footage/<moment>/`, `screenshots/<persona>/`, `music/`, `references/` |
+| `library/` | Media (gitignored, synced with S3) + one `manifest.json` per folder (tracked). `brand/`, `zee/`, `people/<persona>/`, `wardrobe/<persona>/`, `camera-roll/<persona>/`, `stock/`, `footage/<moment>/`, `screenshots/<persona>/`, `music/`, `references/`, `devices/` |
 | `catalog/` | `index.json`: every asset in one machine-readable file (generated). `prompts.json` and `inspo.json`: every prompt and inspo entry (generated). `schemas/`: a JSON Schema per asset kind, prompt and inspo (generated) |
 | `prompts/` | The prompt library: one Markdown file per prompt that worked (or didn't), the founder's and the agents', `prompts/<area>/<name>.v<N>.md` (see "Prompts: find, use, rate, remix") |
 | `inspo/` | The inspo board: one Markdown file per inspiration, `inspo/<id>.md`; its media is a `reference` asset in `library/references/` (see "Inspo: add and reference") |
 | `schemas/` | The zod source of truth for assets, ads, persona accounts, the voice config, prompts and inspo |
 | `config/` | Project-wide settings as data: `voice.json` (the voiceover's mode and every mode's settings) |
-| `motion/` | Reusable Remotion components (PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…), plus the studio kit: `springs.ts`, `noise.ts`, `Blur.tsx`, `StableImg.tsx`, `beatmap.ts`, `sound/` |
+| `motion/` | Reusable Remotion components (Device, PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…), plus the studio kit: `springs.ts`, `noise.ts`, `Blur.tsx`, `StableImg.tsx`, `beatmap.ts`, `sound/` |
 | `ads/` | One folder per ad: `ad.json` (the ad in data), `README.md`, `index.tsx`; studio ads also brief.md, style_guide.md, shotlist.md, timeline.ts, shots.ts (see "Making a motion film") |
 | `reviews/` | The critic's evidence per ad and round (`tools/critic`); images/audio are local only, `review.md`, `metrics.json` and `scores.json` are tracked |
 | `.claude/skills/` | Project skills for Claude Code: `motion-reel` (the studio process) |
@@ -71,7 +71,7 @@ Tags are `key:value`: `kind:`, `status:`, `scope:`, `persona:`, `moment:`, `mood
 
 ```
 id    = <kind>.<scope>.<name>.v<N>
-kind  = brand | font | zee | face | selfie | tryon | garment | photo | stock | footage | screenshot | music | sfx | voice | reference
+kind  = brand | font | zee | face | selfie | tryon | garment | photo | stock | footage | screenshot | music | sfx | voice | reference | device
 scope = the persona (emma), Zee's emotion (excited), the source (mixkit, unsplash, curate), or a group
 name  = kebab-case, most general word first:  jeans-straight-light-wash, coat-trench-khaki
 vN    = version, from v1; never reused, never edited once approved
@@ -79,7 +79,8 @@ vN    = version, from v1; never reused, never edited once approved
 
 Examples: `garment.emma.jeans-straight-light-wash.v1`, `zee.excited.loop.v1`,
 `music.mixkit.cat-walk-arulo.v1`, `face.emma.b.v1`, `footage.emma.two-taps-closet-b262.v1`,
-`screenshot.emma.wardrobe-top.v1`, `stock.unsplash.coffee-in-hand.v1`, `brand.curate.logo-splash.v1`, `font.geist.medium.v1`.
+`screenshot.emma.wardrobe-top.v1`, `stock.unsplash.coffee-in-hand.v1`, `brand.curate.logo-splash.v1`, `font.geist.medium.v1`,
+`device.apple.iphone-17-pro-max-silver.v1`.
 
 File names follow the id: `library/<folder>/<name>.v<N>.<ext>` (e.g.
 `library/wardrobe/emma/jeans-straight-light-wash.v1.jpg`, cutout in `cutouts/`, thumb in `thumbs/`).
@@ -211,7 +212,8 @@ tools/catalog approve garment.emma.skirt-pleated-navy.v2 --by <founder>   # foun
 ```
 
 Licence presets: `ai-owned` (our generated images), `curate` (our own footage, Zee, brand),
-`unsplash`, `pexels`, `mixkit`, `ofl` (fonts), `reference` (study only, never shipped). Or pass a
+`unsplash`, `pexels`, `mixkit`, `ofl` (fonts), `cc0` (public domain, e.g. Poly Haven), `apple-bezel`
+(Apple's Product Bezels: read "Phones in ads" first), `reference` (study only, never shipped). Or pass a
 full licence as JSON. **No licence, no asset.** Kind-specific fields go in `--set` (garment:
 `category`, `name`; zee: `emotion`, `part`, `pack`; footage: `moment`, `app.build`, `app.version`;
 stock: `shows`; try-on: `wearing`; screenshot: `screen`, `state`, `app.build`, `app.version`,
@@ -221,6 +223,40 @@ records and adds it in one go. Then commit the changed manifest(s) and `catalog/
 Removal rules: **retire is the default** and is always safe. Approved assets are never hard-deleted.
 `--force` deletes a draft's entry, its local files and its S3 objects (S3 keeps the bytes 90 days
 as old versions). An asset an ad lists can't be deleted until the ad stops listing it.
+
+## Phones in ads: `<Device>` (PROPOSED, decisions/0012)
+
+The founder picks first (demo page https://claude.ai/artifact/AGC9UrR9ucfR7EAp8nJn5z); until then old
+ads keep `PhoneFrame`. New phone shots use `motion/Device.tsx`, by catalog id (kind `device`):
+
+```tsx
+<Device model="iphone-17-pro-max" color="silver" width={560} x={540} y={980} scale={push}>
+  <Footage id="footage.emma.scan-roll.v1" />
+</Device>
+<Device variant="3d" color="graphite" screen={{ id: "footage.emma.scan-roll.v1" }} rotation={{ x: 6, y: -20 }} />
+```
+
+- **`bezel` (default): Apple's official iPhone Product Bezel, as is.** Apple's rules (licence
+  `apple-bezel`, each asset's `rules`): straight on; after a shot of the whole phone you may pan and
+  zoom; fades between shots; words beside it, never on it; no rotation, tilt, spin, added shadow or
+  reflection, cropping or covering; **nothing may come out of or go into its screen** (no Pop out from
+  it); at least 200 px tall; the newest device; the app as it really runs. Any ad using one adds the
+  credit line to `ad.json › disclosures`: "iPhone is a trademark of Apple Inc., registered in the U.S.
+  and other countries." The component only takes x, y, scale, width, opacity, so it can't break them.
+  Animate x, y and scale (sub-pixel transforms), not width.
+- **Which iPhone:** `iphone-17-pro-max` matches our captures (17 Pro Max simulator) to the pixel,
+  island included. `iphone-18-pro-max` (the latest) has a narrower island, so use it only with footage
+  captured on the iPhone 18 Pro Max simulator. Colours: `tools/catalog search --kind device`.
+- **`3d`: our own generic phone** (`device.curate.phone-generic.v1`, `tools/device/phone_generic.py`)
+  rendered with three.js: `rotation`, `camera.fov`, `shadow`, `environment` (an HDRI id, turn,
+  strength). It is not an iPhone: Apple forbids 3D iPhones in marketing; never add Apple-only details
+  or call it one. Any move is fine, including pieces leaving the screen. Renders need `--gl=angle`
+  (`tools/render` adds it when an ad lists a 3D device; stills: `CURATE_GL=angle tools/stills …`).
+- `deviceLayout(...)` says where a bezel's phone and screen land on the canvas, to place words beside it.
+- Hero stills ray-traced in Blender: `Blender -b -P tools/device/phone_generic.py -- --glb x.glb --hero
+  <screen.png> --hdri <hdr> --out hero.png` (transparent PNG; ~7 s at 1080×1920).
+- New bezels (next iPhone): download from developer.apple.com/design/resources › Product Bezels, mount
+  the DMG read-only, then `node tools/device/register.ts bezels …` (measures and registers them).
 
 ## How to change the voice
 

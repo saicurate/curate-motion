@@ -3,6 +3,25 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-16: real phones: Apple's bezels + our generic 3D phone (PROPOSED, decisions/0012)
+- **New asset kind `device`** (`schemas/asset.ts › DeviceAsset`, `library/devices/manifest.json`): screen
+  box, corner radius, island, allowed `moves`, `rules`, `creditLine`. Apple devices may only pan/zoom/fade
+  and can't be 3D (validated). Licence presets `apple-bezel` and `cc0` (`tools/lib/catalog.ts`).
+- **Assets (draft, in S3):** Apple Product Bezels `device.apple.iphone-17-pro-max-{silver,deep-blue,cosmic-orange}.v1`
+  and `device.apple.iphone-18-pro-max-{silver,black,burgundy,glacier}.v1` (licence proof files attached);
+  `device.curate.phone-generic.v1` (our GLB); `stock.polyhaven.hdri-studio-small-09.v1` (CC0 HDRI).
+- **motion/:** `Device` (bezel: Apple's PNG over the masked screen; pan/zoom/fade props only; sub-pixel
+  transforms), `Device3D` (three.js via `@remotion/three`; `@remotion/media` headless video texture),
+  `devices.ts`, `assets.ts › findAssets`. `PhoneFrame` unchanged. New deps: `@remotion/three` 4.0.535,
+  `three` 0.186.0, `@react-three/fiber` 9.8.1, `@types/three`.
+- **tools/device/** (`register.ts`, `bezel_fit.py`, `phone_generic.py`); `tools/render` adds `--gl=angle`
+  for ads that list a 3D device; `probe` knows glb/hdr/txt/rtf.
+- **Study:** `ads/_demos/device-study` (current vs bezel vs 3D, 6 s, 60 fps), `render.ts`; page
+  https://claude.ai/artifact/AGC9UrR9ucfR7EAp8nJn5z (source: `ads/_demos/device-study/review-page.html`).
+- **Review page template** (`tools/review-page/ads-phone.html`): ads now play inside Apple's iPhone 18 Pro
+  Max bezel (CSS only; needs `b/` next to the page, see its README).
+- No ad switched: the founder picks first.
+
 ## 2026-10-16: Pop out v3 through G4 and G5 (studio rules still PROPOSED)
 - **G3 approved** by the founder ("not quite up to the mark but would like to see the results"); open
   choices left at the defaults (flat-lay jacket cut-out, phone position). G4 approved (agent, critic

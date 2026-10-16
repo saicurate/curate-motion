@@ -46,3 +46,10 @@ export const dims = (id: string): { w: number; h: number } => {
   if (!d) throw new Error(`Asset "${id}" has no dims.`);
   return d;
 };
+
+/** Every catalog record that passes `pred` (retired ones left out), newest version first within an id stem. */
+export const findAssets = <T = Record<string, unknown>>(pred: (e: Entry & { asset: T }) => boolean): (Entry & { asset: T })[] =>
+  [...BY_ID.values()]
+    .filter((e) => e.status !== "retired")
+    .filter((e) => pred(e as Entry & { asset: T }))
+    .sort((a, b) => b.id.localeCompare(a.id, "en", { numeric: true })) as (Entry & { asset: T })[];

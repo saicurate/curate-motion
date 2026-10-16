@@ -13,6 +13,7 @@ Run from the repo root. TypeScript tools run directly on Node 23.6+ (`tools/<nam
 | `tools/persona` | make a persona's real account (`sync`) and simulator Photos (`roll`) match the library |
 | `tools/library-ui` | the founder's local library page (http://127.0.0.1:4317), with tabs Library / Prompts / Inspo (`library-ui-tabs.js`) and the Voice panel (`library-ui-voice.js`): pick the voice, preview the cost, play samples, free Mac preview, guarded paid Generate. `--lan` (off by default) serves it to a phone on the same Wi-Fi, key-protected |
 | `tools/capture.sh` | record an app moment on the simulator → footage asset |
+| `tools/device/` | phone frames: `register.ts` (measure + register Apple's bezels, or our generic 3D phone + its HDRI), `bezel_fit.py` (a bezel's screen box, island and safe corner radius; ffmpeg + numpy + scipy), `phone_generic.py` (Blender: builds the generic 3D phone GLB; `--hero` ray-traces a still) |
 | `tools/beats` | a track's beat map with librosa (pinned, via uv): `<music-id> --write` / `--all --write` stores `beatMap` in the manifest; `clip <id> --from --length --fps 60 --out ads/<ad>/beatmap.ts` (studio) |
 | `tools/stills` | single frames of an ad: `--frames`, `--times`, `--shots` (one per shot from `shots.ts`), `--determinism --frame N` (render twice, compare sha256) (studio) |
 | `tools/critic` | the evidence for judging a render by its frames: contact sheet, fastest-move strip (echo test), phone test, loop, determinism, loudness, blindfold audio, `review.md`; `score`, `history`, `selftest` (studio; Python via uv) |

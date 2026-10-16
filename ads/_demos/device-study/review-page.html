@@ -1,0 +1,383 @@
+<title>Real Phone Frames</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one calm column for the phone, widening to a 3-up comparison; every video sits in Apple's real iPhone frame. */
+:root{
+  --ground:#F6F6F6;      /* Angora White */
+  --paper:#FFFFFF;
+  --ink:#181818;         /* Primary Black */
+  --ink-2:#383838;
+  --mute:#656565;        /* Winter Gray */
+  --faint:#8B8B8B;       /* Fashion Gray */
+  --line:#DDDDDD;        /* Gainsboro */
+  --wash:#EBEBEB;        /* Pale Silver */
+  --stage:radial-gradient(120% 80% at 50% 38%, #FBFBFC 0%, #F1F2F4 55%, #E6E8EB 100%);
+  --pick-bg:#181818; --pick-fg:#FFFFFF;
+  --ok:#2F6B45; --no:#8A3B2E;
+  --sans:"Geist", ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono:"Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ground:#121212; --paper:#1B1B1B; --ink:#F2F2F2; --ink-2:#D6D6D6; --mute:#A3A3A3; --faint:#8B8B8B; --line:#2E2E2E; --wash:#242424;
+  --stage:radial-gradient(120% 80% at 50% 38%, #FBFBFC 0%, #F1F2F4 55%, #E6E8EB 100%);
+  --pick-bg:#F2F2F2; --pick-fg:#121212; --ok:#7FC79A; --no:#E39A8C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#121212; --paper:#1B1B1B; --ink:#F2F2F2; --ink-2:#D6D6D6; --mute:#A3A3A3; --faint:#8B8B8B; --line:#2E2E2E; --wash:#242424;
+  --stage:radial-gradient(120% 80% at 50% 38%, #FBFBFC 0%, #F1F2F4 55%, #E6E8EB 100%);
+  --pick-bg:#F2F2F2; --pick-fg:#121212; --ok:#7FC79A; --no:#E39A8C; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:400 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto;padding-block:40px 72px;display:flex;flex-direction:column;gap:64px}
+h1,h2,h3{font-weight:500;letter-spacing:-.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.08}
+h2{font-size:clamp(22px,3.6vw,28px);line-height:1.15}
+h3{font-size:17px;line-height:1.3}
+p{margin:0;max-width:65ch;color:var(--mute)}
+p b,li b,td b{color:var(--ink);font-weight:500}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+section{display:flex;flex-direction:column;gap:20px;min-width:0}
+.wrap > *,section > *{min-width:0;max-width:100%}
+.head{display:flex;flex-direction:column;gap:10px}
+a{color:var(--ink)}
+code{font:400 .86em/1.4 var(--mono);background:var(--wash);padding:.1em .35em;border-radius:4px;overflow-wrap:anywhere}
+
+/* hero */
+.hero{display:flex;flex-direction:column;gap:16px}
+.hero p{font-size:18px}
+.status{display:flex;flex-wrap:wrap;gap:8px}
+.chip{max-width:100%;overflow-wrap:anywhere;font:500 12px/1.2 var(--mono);letter-spacing:.02em;padding:7px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);background:var(--paper)}
+
+/* option cards */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:820px){.grid3{grid-template-columns:1fr}}
+.opt{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.opt.pick{border-color:var(--ink)}
+.opt .img{border-radius:12px;overflow:hidden;background:var(--stage);aspect-ratio:9/16;max-width:100%}
+.opt .img img{display:block;width:100%;height:100%;object-fit:cover}
+.opt .t{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.badge{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:6px 8px;border-radius:6px;background:var(--pick-bg);color:var(--pick-fg)}
+.badge.ghost{background:transparent;color:var(--faint);border:1px solid var(--line)}
+.opt p{font-size:15px}
+.moves{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.moves li{font:400 12px/1 var(--mono);padding:6px 8px;border-radius:6px;background:var(--wash);color:var(--ink-2)}
+.moves li.no{background:transparent;color:var(--faint);text-decoration:line-through;border:1px dashed var(--line)}
+
+/* phones (Apple's iPhone 18 Pro Max bezel, the screen placed in its display box) */
+.phones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;justify-items:center}
+@media (max-width:820px){.phones{grid-template-columns:1fr}}
+.cell{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;max-width:300px;min-width:0}
+.dev{position:relative;width:100%;max-width:300px;aspect-ratio:1470/3000}
+.dev .scr{position:absolute;left:5.102%;top:2.2%;width:89.796%;height:95.6%;border-radius:10.227%/4.707%;overflow:hidden;background:#000}
+.dev .scr video,.dev .scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.dev .bz{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;background-size:100% 100%;background-repeat:no-repeat}
+.dev[data-c="silver"] .bz{background-image:url(b/iphone-18-pro-max-silver.png)}
+.dev[data-c="black"] .bz{background-image:url(b/iphone-18-pro-max-black.png)}
+.tap{position:absolute;left:5.102%;top:2.2%;width:89.796%;height:95.6%;border-radius:10.227%/4.707%;border:0;background:rgba(0,0,0,.06);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3}
+.tap span{width:58px;height:58px;border-radius:50%;background:rgba(24,24,24,.72);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:4px}
+.tap:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.playing .tap{display:none}
+.cap{text-align:center;display:flex;flex-direction:column;gap:4px}
+.cap b{font-weight:500;color:var(--ink)}
+.cap i{font-style:normal;color:var(--mute);font-size:14px}
+
+/* before / after review frame */
+.ba{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;justify-items:center;max-width:680px}
+@media (max-width:560px){.ba{grid-template-columns:1fr}}
+.old{position:relative;width:100%;max-width:300px;border-radius:44px;padding:9px;background:#1d1d1f;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.old video{display:block;width:100%;border-radius:36px;background:#000;aspect-ratio:9/16;object-fit:cover}
+.old .tap{left:9px;top:9px;width:calc(100% - 18px);height:calc(100% - 18px);border-radius:36px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:3px;background:var(--paper);align-self:flex-start}
+.seg button{font:500 13px/1 var(--sans);border:0;background:transparent;color:var(--mute);padding:8px 14px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--pick-bg);color:var(--pick-fg)}
+.seg button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* colour strip */
+.strip{display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+.strip figure{margin:0;flex:0 0 150px;display:flex;flex-direction:column;gap:8px;scroll-snap-align:start}
+.strip img{width:150px;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:var(--stage);display:block}
+.strip figcaption{font:400 12px/1.35 var(--mono);color:var(--mute)}
+.strip figcaption b{display:block;color:var(--ink);font:500 13px/1.3 var(--sans)}
+.note{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px;align-items:center}
+@media (max-width:640px){.note{grid-template-columns:1fr}}
+.note img{width:100%;border-radius:8px;display:block}
+
+/* 3d up close */
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:820px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.grid4 figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.grid4 .img{border-radius:12px;overflow:hidden;background:var(--stage);aspect-ratio:9/16}
+.grid4 .img img{width:100%;height:100%;object-fit:cover;display:block}
+.grid4 figcaption{font-size:13px;color:var(--mute);line-height:1.4}
+.grid4 figcaption b{display:block;color:var(--ink);font-weight:500;font-size:14px}
+
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:720px){.rules{grid-template-columns:1fr}}
+.rules > div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.rules ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;color:var(--mute)}
+.rules h3 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:1px}
+.y .dot{background:var(--ok)} .n .dot{background:var(--no)}
+.quote{font:400 14px/1.5 var(--mono);color:var(--ink-2);background:var(--wash);border-radius:10px;padding:12px 14px;overflow-wrap:anywhere}
+.impact{display:flex;flex-direction:column;gap:10px;margin:0;padding-left:20px;color:var(--mute);max-width:72ch}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line);color:var(--mute)}
+th{font:500 12px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--faint);background:var(--wash)}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--ink);font-weight:500;min-width:170px}
+
+/* recommendation */
+.rec{background:var(--pick-bg);color:var(--pick-fg);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.rec h2{color:var(--pick-fg)}
+.rec ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px}
+.rec li{max-width:70ch;opacity:.86}
+.rec li b{color:var(--pick-fg);opacity:1}
+.ask{display:flex;flex-direction:column;gap:8px;border-top:1px solid color-mix(in srgb,var(--pick-fg) 22%,transparent);padding-top:14px}
+.ask p{color:var(--pick-fg);opacity:.86}
+
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+details summary{cursor:pointer;font-weight:500}
+details[open] summary{margin-bottom:12px}
+details ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;color:var(--mute)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Curate ads · phone frames · 16 Oct 2026</div>
+    <h1>A real iPhone in every ad</h1>
+    <p>The drawn black phone can go. Below are the real options, each with Emma's real screens inside, shown at phone size. <b>Pick one and the ads switch over.</b> Nothing in the ads has changed yet.</p>
+    <div class="status">
+      <span class="chip">All free: no paid assets</span>
+      <span class="chip">Licences checked and recorded</span>
+      <span class="chip">1080 × 1920 · 60 fps</span>
+    </div>
+  </header>
+
+  <section aria-labelledby="h-opts">
+    <div class="head">
+      <div class="eyebrow">The three options</div>
+      <h2 id="h-opts">Emma's Wardrobe tab in each phone</h2>
+    </div>
+    <div class="grid3">
+      <article class="opt">
+        <div class="img"><img src="s/current.jpg" alt="The current drawn phone: a black rounded rectangle around the Wardrobe screen"></div>
+        <div class="t"><h3>A · Today's drawn phone</h3><span class="badge ghost">current</span></div>
+        <p>A black rounded rectangle with a drawn island. It reads as a drawing, and Apple's rules also say a drawn phone shouldn't copy iPhone-only details like the island.</p>
+        <ul class="moves"><li>tilt</li><li>turn</li><li>pop out</li></ul>
+      </article>
+      <article class="opt pick">
+        <div class="img"><img src="s/bezel-17pm-silver.jpg" alt="Apple's official iPhone 17 Pro Max Silver frame around the Wardrobe screen"></div>
+        <div class="t"><h3>B · Apple's iPhone frame</h3><span class="badge">recommended</span></div>
+        <p>Apple's own picture of the <b>iPhone 17 Pro Max</b>, the phone our footage is recorded on, so it fits to the pixel. Apple lets us use it free, straight on: push in, pan and fade.</p>
+        <ul class="moves"><li>push in</li><li>pan</li><li>fade</li><li class="no">tilt</li><li class="no">turn</li><li class="no">pop out</li></ul>
+      </article>
+      <article class="opt">
+        <div class="img"><img src="s/3d-graphite.jpg" alt="Curate's own 3D phone in graphite, turned slightly, with the Wardrobe screen and a soft shadow"></div>
+        <div class="t"><h3>C · Our own 3D phone</h3><span class="badge ghost">for 3D moves</span></div>
+        <p>A phone we built ourselves, lit like a studio product shot. It can turn, tilt and cast a shadow. Apple forbids 3D iPhones in ads, so it has no iPhone-only parts.</p>
+        <ul class="moves"><li>turn</li><li>tilt</li><li>shadow</li><li>reflections</li><li>pop out</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-motion">
+    <div class="head">
+      <div class="eyebrow">In motion · at phone size</div>
+      <h2 id="h-motion">The scan, playing inside each phone</h2>
+      <p>Each clip is a 6 second ad frame (1080 × 1920, 60 fps) with Emma's real scan-roll footage playing on the screen. They sit in a real iPhone frame at about the width of a phone in your hand, so you see them the way people will on TikTok or Reels. Tap to play.</p>
+    </div>
+    <div class="phones">
+      <div class="cell">
+        <div class="dev" data-c="silver"><div class="scr"><video src="v/current.mp4" poster="v/current.jpg" playsinline muted loop preload="metadata"></video></div><div class="bz"></div><button class="tap" aria-label="Play option A"><span>▶</span></button></div>
+        <div class="cap"><b>A · Drawn phone</b><i>Holds, then a slow push in</i></div>
+      </div>
+      <div class="cell">
+        <div class="dev" data-c="silver"><div class="scr"><video src="v/bezel.mp4" poster="v/bezel.jpg" playsinline muted loop preload="metadata"></video></div><div class="bz"></div><button class="tap" aria-label="Play option B"><span>▶</span></button></div>
+        <div class="cap"><b>B · Apple's iPhone 17 Pro Max</b><i>The whole phone first, then a slow push in: the move Apple allows</i></div>
+      </div>
+      <div class="cell">
+        <div class="dev" data-c="silver"><div class="scr"><video src="v/3d-1080.mp4" poster="v/3d-1080.jpg" playsinline muted loop preload="metadata"></video></div><div class="bz"></div><button class="tap" aria-label="Play option C"><span>▶</span></button></div>
+        <div class="cap"><b>C · Our 3D phone</b><i>A slow turn and tilt; the studio lights slide across the glass</i></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-col">
+    <div class="head">
+      <div class="eyebrow">Apple's colours</div>
+      <h2 id="h-col">Seven finishes, two generations</h2>
+      <p>Apple gives each Pro Max in its own colours. All seven are in the library. Swipe the row.</p>
+    </div>
+    <div class="strip" tabindex="0" aria-label="Bezel colours">
+      <figure><img src="s/bezel-17pm-silver.jpg" alt="iPhone 17 Pro Max Silver"><figcaption><b>Silver</b>iPhone 17 Pro Max</figcaption></figure>
+      <figure><img src="s/bezel-17pm-deep-blue.jpg" alt="iPhone 17 Pro Max Deep Blue"><figcaption><b>Deep Blue</b>iPhone 17 Pro Max</figcaption></figure>
+      <figure><img src="s/bezel-17pm-cosmic-orange.jpg" alt="iPhone 17 Pro Max Cosmic Orange"><figcaption><b>Cosmic Orange</b>iPhone 17 Pro Max</figcaption></figure>
+      <figure><img src="s/bezel-18pm-silver.jpg" alt="iPhone 18 Pro Max Silver"><figcaption><b>Silver</b>iPhone 18 Pro Max</figcaption></figure>
+      <figure><img src="s/bezel-18pm-black.jpg" alt="iPhone 18 Pro Max Black"><figcaption><b>Black</b>iPhone 18 Pro Max</figcaption></figure>
+      <figure><img src="s/bezel-18pm-burgundy.jpg" alt="iPhone 18 Pro Max Burgundy"><figcaption><b>Burgundy</b>iPhone 18 Pro Max</figcaption></figure>
+      <figure><img src="s/bezel-18pm-glacier.jpg" alt="iPhone 18 Pro Max Glacier"><figcaption><b>Glacier</b>iPhone 18 Pro Max</figcaption></figure>
+    </div>
+    <div class="note">
+      <img src="s/islands.jpg" alt="Close-up of the island: on the 17 Pro Max frame it matches; on the 18 Pro Max frame the recorded island is wider than the frame's">
+      <p><b>The iPhone 18 Pro Max is the newest, and Apple asks ads to use the newest.</b> Its island is narrower than the 17's (left: 17, right: 18). Our footage was recorded on a 17 Pro Max simulator, so on the 18 frame the old, wider island shows around the new one and the camera dot sits off-centre. The fix is to re-record the hero moments on the iPhone 18 Pro Max simulator, which is already installed. Until then the 17 Pro Max is the exact match.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-3d">
+    <div class="head">
+      <div class="eyebrow">Option C up close</div>
+      <h2 id="h-3d">Our 3D phone, two finishes and two renderers</h2>
+      <p>The first three are rendered inside our video tool as the ad plays (Remotion with three.js), so footage runs frame by frame on the screen; a 6 second clip renders in under a minute. The last is the same phone ray-traced in Blender (Cycles): truer glass and metal, about 7 seconds a frame, so it suits a single hero still more than a clip.</p>
+    </div>
+    <div class="grid4">
+      <figure><div class="img"><img src="s/3d-graphite.jpg" alt="3D phone, graphite, turned left"></div><figcaption><b>Graphite</b>Remotion, real time</figcaption></figure>
+      <figure><div class="img"><img src="s/3d-silver.jpg" alt="3D phone, silver, turned left"></div><figcaption><b>Silver</b>Remotion, real time</figcaption></figure>
+      <figure><div class="img"><img src="s/3d-front.jpg" alt="3D phone straight on"></div><figcaption><b>Straight on</b>Remotion, real time</figcaption></figure>
+      <figure><div class="img"><img src="s/cycles-hero.png" alt="3D phone ray-traced in Blender Cycles"></div><figcaption><b>Hero still</b>Blender Cycles, ray-traced</figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-rev">
+    <div class="head">
+      <div class="eyebrow">Your ad review page</div>
+      <h2 id="h-rev">The review page now shows ads in a real iPhone</h2>
+      <p>Pop out v3, before and after. The page you review ads on drew its own grey phone; its template now uses Apple's iPhone 18 Pro Max frame with the video placed in the screen, so the next review page you get looks like the right-hand one.</p>
+    </div>
+    <div class="seg" role="group" aria-label="Frame colour">
+      <button type="button" id="c-silver" aria-pressed="true" data-c="silver">Silver</button>
+      <button type="button" id="c-black" aria-pressed="false" data-c="black">Black</button>
+    </div>
+    <div class="ba">
+      <div class="cell">
+        <div class="old"><video src="v/pop-out-v3.mp4" poster="v/pop-out-v3.jpg" playsinline preload="metadata"></video><button class="tap" aria-label="Play Pop out v3 in the old frame"><span>▶</span></button></div>
+        <div class="cap"><b>Before</b><i>The drawn review frame</i></div>
+      </div>
+      <div class="cell">
+        <div class="dev review" data-c="silver"><div class="scr"><video src="v/pop-out-v3.mp4" poster="v/pop-out-v3.jpg" playsinline preload="metadata"></video></div><div class="bz"></div><button class="tap" aria-label="Play Pop out v3 in the iPhone frame"><span>▶</span></button></div>
+        <div class="cap"><b>After</b><i>Apple's iPhone 18 Pro Max frame</i></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-rules">
+    <div class="head">
+      <div class="eyebrow">Apple's rules for its iPhone frames</div>
+      <h2 id="h-rules">What we may and may not do with option B</h2>
+      <p>From Apple's App Store Marketing Guidelines, the Marketing Artwork Licence and the licence inside the download. Option C is our own phone, so these don't apply to it, as long as we never present it as an iPhone.</p>
+    </div>
+    <div class="rules">
+      <div class="y">
+        <h3><span class="dot"></span>Allowed</h3>
+        <ul>
+          <li>Show the phone straight on, exactly as Apple drew it, in its own colours.</li>
+          <li>In video, after one shot of the whole phone, <b>pan and zoom</b> in to the app.</li>
+          <li><b>Fades and dissolves</b> between shots.</li>
+          <li>Words, badges and Zee <b>beside</b> the phone.</li>
+          <li>The app as it really runs, with Emma's made-up account and a full status bar.</li>
+          <li>Free, for marketing an app that's on the App Store, while we're in the Apple Developer Program.</li>
+        </ul>
+      </div>
+      <div class="n">
+        <h3><span class="dot"></span>Not allowed</h3>
+        <ul>
+          <li>Rotating, tilting, flipping, spinning or animating the phone itself.</li>
+          <li>Adding shadows, reflections or highlights to it.</li>
+          <li><b>Anything coming out of (or going into) the screen</b>, so no Pop out from this phone.</li>
+          <li>Cropping or covering any part of it; type on top of it.</li>
+          <li>A 3D or drawn copy of an iPhone, cases, other brands' phones next to it.</li>
+          <li>Smaller than 200 px tall on screen; a blank screen, the Home Screen or other apps.</li>
+          <li>Sharing or selling the frame file itself (it stays in our private library).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="quote">Credit line wherever an ad has legal copy: iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.</div>
+    <ol class="impact">
+      <li><b>Pop out and the tilted-phone shots</b> can't use Apple's frame. They either move to our 3D phone (option C) or change so nothing crosses the phone's edge.</li>
+      <li><b>Every other phone shot</b> can switch to Apple's frame as is: hold the whole phone, then push in or pan; cut between phones with a fade.</li>
+      <li><b>The drawn phone</b> copies the iPhone's island, which Apple's rules ask drawn phones not to do. One more reason to retire it for new ads.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-src">
+    <div class="head">
+      <div class="eyebrow">Sources and licences</div>
+      <h2 id="h-src">Where each part came from</h2>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Part</th><th>Source</th><th>Licence</th><th>Cost</th></tr></thead>
+        <tbody>
+          <tr><td>Apple iPhone frames (7)</td><td>Apple Design Resources › Product Bezels: <code>Bezel-iPhone-17.dmg</code> and <code>Bezel-iPhone-18.dmg</code>, a free download with no login (the disk image asks you to accept Apple's licence). iPhone 17 Pro Max: Silver, Deep Blue, Cosmic Orange. iPhone 18 Pro Max: Silver, Black, Burgundy, Glacier.</td><td>Apple Design Resources licence (LYL142, in the download) plus the App Store Marketing Artwork Licence (EA0861) and Marketing Guidelines. Commercial use to market our App Store app, as is, with the credit line. Proof saved with each file.</td><td>Free</td></tr>
+          <tr><td>Our 3D phone</td><td>Built by us in Blender 5.1 from a script, exported as a 3D file (GLB). A generic flat-edged phone: no island hardware, no camera bump, keys on the right.</td><td>Curate original</td><td>Free</td></tr>
+          <tr><td>Studio lighting (HDRI)</td><td>Poly Haven, "Studio Small 09" by Sergej Majboroda: a 360° photo of a studio with softboxes, used only for reflections and light.</td><td>CC0 (public domain): any use, no credit needed</td><td>Free</td></tr>
+          <tr><td>Not used: ready-made 3D iPhones</td><td>Sketchfab has free iPhone 17 Pro models under CC BY (for example "Iphone 17 pro" by Ibrahim.Bhl, "iPhone 17 Pro" by Ranguel).</td><td>CC BY covers only the modeller's work, not Apple's design, and Apple's guidelines forbid 3D renderings of iPhones in marketing. They also need a Sketchfab login to download.</td><td>Free, but not usable</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="rec" aria-labelledby="h-rec">
+    <div class="eyebrow" style="color:inherit;opacity:.6">Recommendation</div>
+    <h2 id="h-rec">B for every phone shot, C only where a shot must turn</h2>
+    <ol>
+      <li><b>Apple's iPhone 17 Pro Max frame (option B) as the default phone.</b> It is the most real look possible, it's free, and it fits our footage to the pixel. Shots open on the whole phone, then push in or pan; fades between them.</li>
+      <li><b>Re-record the hero moments on the iPhone 18 Pro Max simulator</b>, then move to the 18 frame, since Apple asks for the newest phone. The last full capture used about $0.78 of server time.</li>
+      <li><b>Our 3D phone (option C) for the few shots that need a turn, a tilt or pieces leaving the screen</b>, such as Pop out. Built in Remotion so footage plays frame by frame; Blender only for a single hero still like a poster or the website.</li>
+      <li><b>Keep the drawn phone for old ads only.</b> New ads use the new frame.</li>
+    </ol>
+    <div class="ask">
+      <p><b>Your call:</b> B, C or both (B by default, C for turning shots); which colour (Silver is the default); and whether to re-record on the 18 Pro Max now.</p>
+    </div>
+  </section>
+
+  <details>
+    <summary>For agents: what's built and where</summary>
+    <ul>
+      <li>New library kind <code>device</code> (draft): <code>device.apple.iphone-17-pro-max-silver.v1</code> and six more colours, <code>device.curate.phone-generic.v1</code> (GLB), with the HDRI <code>stock.polyhaven.hdri-studio-small-09.v1</code>. Each records the licence, the screen box, the corner radius, the island and the moves the licence allows. Uploaded to the private S3 library.</li>
+      <li><code>&lt;Device model="iphone-17-pro-max" color="silver"&gt;{screen}&lt;/Device&gt;</code> places the app screen in Apple's display box, masked to its corners, and only takes pan, zoom and fade. <code>&lt;Device variant="3d" rotation={…} camera={…}&gt;</code> renders our phone with three.js. Both are frame-pure.</li>
+      <li>The old <code>PhoneFrame</code> is untouched, so existing ads render as before. No ad was switched.</li>
+      <li>Review page template: <code>tools/review-page/ads-phone.html</code> now draws the iPhone 18 Pro Max frame from <code>b/</code>.</li>
+    </ul>
+  </details>
+</div>
+
+<script>
+(() => {
+  const players = [...document.querySelectorAll(".dev, .old")];
+  const vids = () => players.map(p => p.querySelector("video"));
+  const stopOthers = (keep) => players.forEach(p => {
+    const v = p.querySelector("video");
+    if (p !== keep && v) { v.pause(); p.classList.remove("playing"); }
+  });
+  players.forEach(p => {
+    const v = p.querySelector("video"); const b = p.querySelector(".tap");
+    if (!v || !b) return;
+    b.addEventListener("click", () => {
+      stopOthers(p);
+      if (!v.loop) v.muted = false;
+      v.controls = !v.loop;
+      v.play().catch(() => { v.muted = true; v.play().catch(() => {}); });
+      p.classList.add("playing");
+    });
+    v.addEventListener("click", () => { if (v.loop) { v.paused ? v.play() : v.pause(); } });
+    v.addEventListener("ended", () => { p.classList.remove("playing"); v.controls = false; });
+  });
+  // frame colour for the review frame
+  const segs = [...document.querySelectorAll(".seg button")];
+  const setC = (c) => {
+    document.querySelectorAll(".dev.review").forEach(d => d.dataset.c = c);
+    segs.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.c === c)));
+    try { localStorage.setItem("frameColour", c); } catch (e) {}
+  };
+  segs.forEach(b => b.addEventListener("click", () => setC(b.dataset.c)));
+  try { const c = localStorage.getItem("frameColour"); if (c === "black" || c === "silver") setC(c); } catch (e) {}
+})();
+</script>

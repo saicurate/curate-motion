@@ -2563,6 +2563,64 @@
       "media": "image",
       "approvedBy": "founder (said: approve everything, 2026-10-15)",
       "approvedAt": "2026-10-15"
+    },
+    {
+      "id": "stock.polyhaven.hdri-studio-small-09.v1",
+      "title": "Studio Small 09 (HDRI, 2k): softbox studio light for 3D",
+      "description": "Poly Haven's Studio Small 09 by Sergej Majboroda (2048 x 1024 Radiance .hdr, md5 b056fea247bc84b81d2e0987d44c87d8). Lighting and reflections for 3D scenes only: never shown as a picture.",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/polyhaven/hdri-studio-small-09.v1.hdr",
+          "sha256": "36724313c0fc66dab126ff90f081b85a0b1ef47be65eda1417bd20b033f0573f",
+          "bytes": 6312947,
+          "mime": "image/vnd.radiance"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "hdri",
+          "lighting",
+          "3d"
+        ]
+      },
+      "source": {
+        "type": "stock",
+        "author": "Sergej Majboroda (Poly Haven)",
+        "url": "https://polyhaven.com/a/studio_small_09",
+        "from": [],
+        "tool": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/studio_small_09_2k.hdr"
+      },
+      "licence": {
+        "name": "CC0 1.0 Universal (public domain)",
+        "url": "https://polyhaven.com/license",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "proof": "https://polyhaven.com/license (All assets on Poly Haven are CC0), checked 2026-10-16",
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (device frames)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 2048,
+        "h": 1024
+      },
+      "shows": "an empty photo studio with umbrellas and softboxes (lighting only, never shown)",
+      "media": "image"
     }
   ]
 }

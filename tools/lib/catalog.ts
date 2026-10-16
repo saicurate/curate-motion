@@ -56,6 +56,8 @@ export const home = (kind: string, scope: string, name: string, rec: Rec = {}): 
       return { dir: `voice/${scope}`, manifest: "voice/manifest.json", about: "Voiceover audio, by ad: TTS clips (one per script line) and human takes. Made by tools/voice." };
     case "reference":
       return { dir: `references/${name}`, manifest: "references/manifest.json", about: "Reference reels and breakdowns. Study only: never shipped in an ad." };
+    case "device":
+      return { dir: `devices/${scope}`, manifest: "devices/manifest.json", about: "Phone frames the app's screen sits in: Apple's official Product Bezels (as is, straight on: pan, zoom and fade only) and Curate's generic 3D phone. See motion/Device.tsx and decisions/0012." };
     default:
       throw new Error(`unknown kind ${kind}`);
   }
@@ -70,6 +72,38 @@ export const LICENCES: Record<string, { licence: Rec; aiGenerated?: boolean; sou
   mixkit: { licence: { name: "Mixkit Stock Music Free License", url: "https://mixkit.co/license/#musicFree", commercial: true, restrictions: ["tv-radio-broadcast", "cd-dvd", "video-games", "music-only-remix", "content-id-registration"] }, aiGenerated: false, source: "stock" },
   ofl: { licence: { name: "SIL Open Font License 1.1", url: "https://openfontlicense.org", commercial: true, restrictions: ["do-not-sell-the-font-alone"] }, aiGenerated: false, source: "stock" },
   reference: { licence: { name: "Third-party content, reference only", commercial: false, restrictions: ["never-ship"] }, aiGenerated: false, source: "original" },
+  cc0: { licence: { name: "CC0 1.0 Universal (public domain)", url: "https://creativecommons.org/publicdomain/zero/1.0/", commercial: true, restrictions: [] }, aiGenerated: false, source: "stock" },
+  // Apple's Product Bezels: the Apple Design Resources licence (in the DMG) + the App Store Marketing Artwork
+  // Licence and Marketing Guidelines (developer.apple.com/app-store/marketing/guidelines/). Read decisions/0012.
+  "apple-bezel": {
+    licence: {
+      name: "Apple Product Bezels (Apple Design Resources licence + App Store Marketing Guidelines)",
+      url: "https://developer.apple.com/app-store/marketing/guidelines/#section-products",
+      commercial: true,
+      attributionRequired: true,
+      attribution: "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+      restrictions: [
+        "only-to-market-our-app-on-the-app-store",
+        "only-while-in-the-apple-developer-program",
+        "as-is-no-modification",
+        "no-rotate-tilt-flip-spin-or-animate-the-device",
+        "no-added-shadows-reflections-or-highlights",
+        "nothing-entering-or-leaving-the-screen",
+        "no-crop-or-cover-the-device",
+        "copy-beside-not-on-top",
+        "pan-zoom-only-after-a-full-device-shot",
+        "fade-or-dissolve-transitions-only",
+        "min-200px-tall-onscreen",
+        "latest-generation-device",
+        "no-cases-or-competing-products",
+        "show-the-app-as-it-really-runs",
+        "credit-line-with-legal-copy",
+        "never-redistribute-the-bezel-file",
+      ],
+    },
+    aiGenerated: false,
+    source: "stock",
+  },
 };
 
 /** Extra fields each kind needs, for the UI form and for CLI defaults. */
@@ -104,6 +138,12 @@ export const KIND_FIELDS: Record<string, { key: string; label: string; options?:
     { key: "device", label: "Device" },
   ],
   stock: [{ key: "shows", label: "What it shows", required: true }],
+  device: [
+    { key: "maker", label: "Maker (Apple / Curate)", required: true },
+    { key: "model", label: "Model (kebab-case)", required: true },
+    { key: "colour", label: "Colour (kebab-case)", required: true },
+    { key: "variant", label: "Variant", options: ["bezel", "3d"], required: true },
+  ],
   photo: [{ key: "place", label: "Place / moment" }],
   tryon: [{ key: "wearing", label: "Wearing (garment ids, comma-separated)", required: true }],
   font: [
@@ -148,6 +188,12 @@ export const flatTags = (a: A): string[] => {
   if (a.kind === "footage") {
     t.add(`moment:${x.moment}`);
     t.add(`build:${(x.app as { build: number }).build}`);
+  }
+  if (a.kind === "device") {
+    t.add(`model:${x.model}`);
+    t.add(`colour:${x.colour}`);
+    t.add(`variant:${x.variant}`);
+    t.add(`maker:${String(x.maker).toLowerCase()}`);
   }
   if (a.kind === "screenshot") {
     t.add(`screen:${x.screen}`);

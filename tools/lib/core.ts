@@ -86,6 +86,7 @@ export const probe = (p: string): { mime?: string; w?: number; h?: number; durat
     jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", webp: "image/webp", gif: "image/gif",
     mp4: "video/mp4", mov: "video/quicktime", mp3: "audio/mpeg", wav: "audio/wav", m4a: "audio/mp4",
     ttf: "font/ttf", otf: "font/otf", woff2: "font/woff2", json: "application/json", pdf: "application/pdf",
+    glb: "model/gltf-binary", hdr: "image/vnd.radiance", txt: "text/plain", rtf: "application/rtf",
   };
   const mime = MIME[ext];
   const quiet = { encoding: "utf8" as const, stdio: ["ignore", "pipe", "ignore"] as ["ignore", "pipe", "ignore"] };

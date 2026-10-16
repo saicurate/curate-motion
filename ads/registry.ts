@@ -30,6 +30,9 @@ import * as demo5 from "./_demos/outfit-change";
 import demo5Spec from "./_demos/outfit-change/ad.json";
 import * as demo6 from "./_demos/satisfying-sort";
 import demo6Spec from "./_demos/satisfying-sort/ad.json";
+// The device study (phone frames, ads/_demos/device-study): never posted.
+import * as deviceStudy from "./_demos/device-study";
+import deviceStudySpec from "./_demos/device-study/ad.json";
 
 export type AdModule = {
   spec: AdSpec;
@@ -56,4 +59,5 @@ export const ADS: AdModule[] = [
   { spec: AdSpec.parse(demo4Spec), component: demo4.SpeedRun, schema: demo4.schema, defaults: demo4.defaults, metadata: demo4.metadata },
   { spec: AdSpec.parse(demo5Spec), component: demo5.OutfitChange, schema: demo5.schema, defaults: demo5.defaults, metadata: demo5.metadata },
   { spec: AdSpec.parse(demo6Spec), component: demo6.SatisfyingSort, schema: demo6.schema, defaults: demo6.defaults, metadata: demo6.metadata },
+  { spec: AdSpec.parse(deviceStudySpec), component: deviceStudy.DeviceStudy, schema: deviceStudy.schema, defaults: deviceStudy.defaults },
 ];

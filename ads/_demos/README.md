@@ -21,3 +21,10 @@ the idea, the hook, the story and the transitions fast. Not polished, never post
   roll, screenshots and footage are the real library assets.
 
 Promote a concept by copying its folder to `ads/<new-id>/` and running it through `/motion-reel`.
+
+**Device study** (`device-study/`, 2026-10-16): not a concept but the phone-frame test (decisions/0012):
+the drawn PhoneFrame vs Apple's iPhone bezel (`<Device>`) vs our generic 3D phone (`<Device variant="3d">`),
+the same real screens, 1080×1920 at 60 fps, 6 s. `node ads/_demos/device-study/render.ts [job…|--stills]`
+renders into `device-study/out/` (with `--gl=angle`). The page source is `device-study/review-page.html`
+(media: `out/` scaled to 720 px into `v/` and `s/`, bezels at 960 px into `b/`).
+

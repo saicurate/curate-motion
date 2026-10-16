@@ -37,6 +37,7 @@ export const KINDS = [
   "sfx", // sound effects
   "voice", // voiceover audio: TTS clips (one per script line) and human takes (tools/voice)
   "reference", // reference reels and breakdowns (never shipped in an ad)
+  "device", // phone frames the app's screen sits in: Apple's official bezels (PNG) and our generic 3D phone (GLB)
 ] as const;
 export const Kind = z.enum(KINDS);
 export type Kind = z.infer<typeof Kind>;
@@ -311,6 +312,58 @@ export const VoiceAsset = z.object({
   previewOnly: z.boolean().default(false),
 });
 
+/**
+ * A device the app's screen sits in (motion/Device.tsx). Two variants:
+ *  - bezel: one of Apple's official Product Bezels (a PNG with a transparent screen), used AS IS,
+ *    straight on. Apple's rules (licence.restrictions, `moves`) allow pan, zoom and fades only: no
+ *    rotation, tilt, flip, spin, added shadows/reflections/highlights, no cropping or covering the
+ *    device, and nothing may appear to come out of (or go into) its screen.
+ *  - 3d: Curate's own GENERIC phone (a GLB built by tools/device/phone_generic.py) for 3D moves.
+ *    Apple forbids 3D renderings of its products in marketing, so it has no Apple-only details.
+ * All pixel coordinates are in the asset's own pixels (the PNG's, or the screen texture's for 3d).
+ */
+const Rect = z.object({ x: z.number().int().nonnegative(), y: z.number().int().nonnegative(), w: z.number().int().positive(), h: z.number().int().positive() });
+export const DEVICE_MOVES = ["pan", "zoom", "fade", "rotate", "tilt", "orbit", "shadow", "reflection", "pop-out"] as const;
+export const DeviceAsset = z.object({
+  ...base,
+  kind: z.literal("device"),
+  /** "Apple" (an official bezel) or "Curate" (our generic model). */
+  maker: z.string(),
+  /** kebab-case: iphone-17-pro-max, iphone-18-pro-max, phone-generic. */
+  model: z.string().regex(SEGMENT),
+  /** kebab-case finish, as the maker names it: silver, deep-blue, cosmic-orange, black, graphite… */
+  colour: z.string().regex(SEGMENT),
+  variant: z.enum(["bezel", "3d"]),
+  orientation: z.enum(["portrait", "landscape"]).default("portrait"),
+  /** bezel: the PNG's pixel size. */
+  dims: Dim.optional(),
+  /** bezel: the visible phone inside the PNG (its transparent margin excluded). */
+  body: Rect.optional(),
+  /**
+   * Where the app's screen goes. bezel: the display's box in the PNG. 3d: the screen texture's size
+   * (x = y = 0). cornerRadius: the circular radius (px) whose rounded rect covers the whole display yet
+   * stays hidden under the bezel's opaque frame (Apple's corners are continuous curves; anything in
+   * cornerRadiusRange works), so content masked to it shows exactly the display.
+   */
+  screen: Rect.extend({ cornerRadius: z.number().nonnegative(), cornerRadiusRange: z.tuple([z.number(), z.number()]).optional() }),
+  /** bezel: the Dynamic Island the PNG draws over the screen, px from the screen's top-left. */
+  island: Rect.optional(),
+  /** The device whose screen captures fit this frame pixel for pixel, island included (e.g. "iPhone 17 Pro Max"). */
+  fitsCapturesFrom: z.string().optional(),
+  /** 3d: physical size of the body, mm. */
+  sizeMm: z.object({ w: z.number().positive(), h: z.number().positive(), d: z.number().positive() }).optional(),
+  /** 3d: the lighting environment (an HDRI asset id) the component lights it with by default. */
+  environment: AssetId.optional(),
+  /** 3d: the finishes the component can paint on it: frame and back colours (#rrggbb, sRGB) and frame roughness. */
+  colourways: z.record(z.string().regex(SEGMENT), z.object({ frame: z.string().regex(/^#[0-9a-f]{6}$/), back: z.string().regex(/^#[0-9a-f]{6}$/), roughness: z.number().min(0).max(1) })).optional(),
+  /** What the licence lets an ad do with it. Device.tsx only exposes these. */
+  moves: z.array(z.enum(DEVICE_MOVES)).min(1),
+  /** Plain-language usage rules from the licence, for agents and the founder. */
+  rules: z.array(z.string()).default([]),
+  /** A legal line an ad using it must carry wherever legal copy goes (e.g. the end card's small print). */
+  creditLine: z.string().optional(),
+});
+
 export const KIND_SCHEMAS = {
   brand: BrandAsset,
   font: FontAsset,
@@ -327,6 +380,7 @@ export const KIND_SCHEMAS = {
   sfx: SfxAsset,
   reference: ReferenceAsset,
   voice: VoiceAsset,
+  device: DeviceAsset,
 } as const;
 
 export const Asset = z
@@ -346,6 +400,7 @@ export const Asset = z
     SfxAsset,
     ReferenceAsset,
     VoiceAsset,
+    DeviceAsset,
   ])
   .superRefine((a, ctx) => {
     const p = parseId(a.id);
@@ -356,6 +411,12 @@ export const Asset = z
     if (a.kind === "voice" && a.previewOnly && a.status === "approved") ctx.addIssue({ code: "custom", message: "preview-only voices can never be approved (not for release)", path: ["status"] });
     if (!a.licence.commercial && a.kind !== "reference" && !(a.kind === "voice" && a.previewOnly)) {
       ctx.addIssue({ code: "custom", message: "only references may have a non-commercial licence (they never ship)", path: ["licence", "commercial"] });
+    }
+    if (a.kind === "device") {
+      if (a.variant === "bezel" && (!a.dims || !a.body)) ctx.addIssue({ code: "custom", message: "a bezel needs dims (the PNG) and body (the phone inside it)", path: ["body"] });
+      if (a.maker === "Apple" && a.variant === "3d") ctx.addIssue({ code: "custom", message: "Apple's marketing guidelines forbid 3D renderings or simulations of Apple products: use the official bezel, or our generic 3D phone", path: ["variant"] });
+      const banned = a.maker === "Apple" ? a.moves.filter((m) => !["pan", "zoom", "fade"].includes(m)) : [];
+      if (banned.length) ctx.addIssue({ code: "custom", message: `Apple's bezels may only pan, zoom and fade (not ${banned.join(", ")}): App Store Marketing Guidelines › Image Use`, path: ["moves"] });
     }
     if (!a.aiGenerated && a.source.type === "generated") {
       ctx.addIssue({ code: "custom", message: "generated assets must set aiGenerated: true", path: ["aiGenerated"] });
