@@ -3,6 +3,25 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-16: premium for $0: 2.5D photos, cut-outs, a finishing pass, two hooks (PROPOSED, decisions/0013)
+- **tools/** (free, local, Python via uv, pinned by `*.py.lock`, model revisions pinned): `tools/photo3d`
+  (depth: Depth Anything V2 Small, Apache-2.0; her matte: BiRefNet-portrait + pymatting, MIT; plate: LaMa,
+  Apache-2.0; pieces she wears: SAM 2.1 hiera-small, Apache-2.0; wisps painted out; `under`; `register`),
+  single steps `tools/depth`, `tools/cutout-person [part]`, `tools/inpaint`; `tools/genfill` (SDXL 1.0
+  Inpainting, OpenRAIL++-M, on MPS; prompt by id; `--rows`, `--open`, colour-matched). Excluded on licence:
+  DA V2 Base/Large (CC BY-NC), Apple Depth Pro (research only), FLUX.1 Fill dev (non-commercial).
+- **Schema:** file role `depth` (rg16 PNG: 16-bit disparity packed in R+G); length `8` (a hook on its own).
+- **Assets (derived drafts, in S3):** `photo.emma.{r28-couch-cozy,r10-night-out,r26-ferry}-{depth,cutout,plate}.v1`,
+  `photo.emma.r26-ferry-plate.v2` (LaMa deck + SDXL skyline; v1 retired), `photo.emma.r26-ferry-jacket.v2`
+  (v1 retired), `photo.emma.r26-ferry-under-jacket.v1` (SDXL: her striped sleeves). Prompts:
+  `prompt.image-gen.genfill-under-jacket-striped-tee.v1`, `prompt.image-gen.genfill-plate-ferry-skyline.v1`.
+- **motion/:** `DepthPhoto` (+ `depthRig`, `rigCss`, `EDITORIAL` grade in the shader), `Finish` (`Grain`,
+  `Vignette`, `ContactShadow`, `LightWrap`), `KeyLine`; `StableImg fit` (decode once at the drawn size:
+  deterministic grids under sub-frame blur).
+- **tools/render** adds `--gl=angle` for ads listing an asset with a `depth` file; **tools/persona roll**
+  skips derived layers (they are not photos on her phone).
+- **Ads:** `ads/hook-zee-critic/` and `ads/hook-camera-roll/` (8 s, 9:16, 60 fps; studio folders).
+
 ## 2026-10-16: real phones: Apple's bezels + our generic 3D phone (PROPOSED, decisions/0012)
 - **New asset kind `device`** (`schemas/asset.ts › DeviceAsset`, `library/devices/manifest.json`): screen
   box, corner radius, island, allowed `moves`, `rules`, `creditLine`. Apple devices may only pan/zoom/fade

@@ -1,0 +1,49 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "skit-chopped",
+  "title": "Skit: you're chopped",
+  "brief": "A ~38 s AI story-time skit for US TikTok/Reels, written by the founder. Jake (20, made-up persona) gets a cute girl's number at the grocery store, over-thinks every text, gets ghosted, then gets told \"you're chopped, your outfit looks so bad\". He finds Curate, it pulls his clothes out of his camera roll, Zee styles him for drinks from his own closet, he sends one photo and she says yes. The joke is the outfit, never his looks.",
+  "hook": "0\u20131 s: Jake to camera in a grocery aisle, cringe-proud, phone up; caption \"I finally got a cute girl's number\".",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    60
+  ],
+  "fps": 60,
+  "track": "music.mixkit.gummies-michael-ramir-c.v1",
+  "assets": [
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.logo-mark.v1",
+    "brand.curate.splash-mark.v1",
+    "music.mixkit.gummies-michael-ramir-c.v1",
+    "music.pixabay.in-my-back-kontraa.v1",
+    "zee.cheer.intro.v1",
+    "zee.cheer.loop.v1",
+    "device.apple.iphone-17-pro-max-silver.v1"
+  ],
+  "components": [
+    "TextThread + LaterCard (motion/TextThread)",
+    "SearchScreen (motion/SearchScreen)"
+  ],
+  "status": "draft",
+  "disclosures": [],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (skit-chopped agent)",
+    "at": "2026-10-16"
+  },
+  "voice": {
+    "mode": "tts",
+    "tts": {
+      "use": "eleven-will-v4"
+    }
+  }
+}

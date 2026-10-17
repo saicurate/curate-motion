@@ -1,0 +1,168 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "jake: a marketing persona's face references, selfies and try-ons.",
+  "assets": [
+    {
+      "id": "face.jake.a.v1",
+      "title": "Jake, face candidate A (sandy-brown hair, grey-blue eyes, light skin)",
+      "files": [
+        {
+          "role": "original",
+          "path": "people/jake/a.v1.jpg",
+          "sha256": "cafcdf9ecf205918ab29bb1e7fb8f91e92652e2b71bc476373671309413db489",
+          "bytes": 1125445,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-3-pro-image",
+        "promptId": "prompt.image-gen.face-jake-a.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_faces.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.140114,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "face",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "picked": false
+    },
+    {
+      "id": "face.jake.b.v1",
+      "title": "Jake, face candidate B (Mexican-American, messy black hair, first mustache)",
+      "files": [
+        {
+          "role": "original",
+          "path": "people/jake/b.v1.jpg",
+          "sha256": "935ae98c7a7d01e59f8293a3a2fe4dc6c80c083b5b5ff450bf67a201d84eda6d",
+          "bytes": 1334895,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-3-pro-image",
+        "promptId": "prompt.image-gen.face-jake-b.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_faces.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.139576,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "face",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "picked": false
+    },
+    {
+      "id": "face.jake.c.v1",
+      "title": "Jake, face candidate C (Black American, low-cut fade, wide smile)",
+      "files": [
+        {
+          "role": "original",
+          "path": "people/jake/c.v1.jpg",
+          "sha256": "a399613c4dbe7f7ecf5aa86101e16aa3a4faa9a1964ff921bfebaebd8bd41c18",
+          "bytes": 1265027,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-3-pro-image",
+        "promptId": "prompt.image-gen.face-jake-c.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_faces.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.1397,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "face",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "picked": false
+    }
+  ]
+}

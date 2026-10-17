@@ -1,0 +1,4 @@
+#!/bin/bash
+# tools/inpaint: fill a hole in an image, free and local (LaMa / big-lama, Apache-2.0). See tools/photo3d.py.
+#   tools/inpaint <image> <mask.png> [--out file] [--long 512]
+exec uv run --quiet --script "$(dirname "$0")/photo3d.py" inpaint "$@"

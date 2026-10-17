@@ -66,8 +66,9 @@ const IsoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}(T[\d:.]+Z)?$/, "ISO date (Y
 // ---------------------------------------------------------------- shared parts
 
 export const FileRef = z.object({
-  /** original = the master; cutout = background removed; thumb = small preview; frame = one frame of a sequence; proof = licence proof. */
-  role: z.enum(["original", "cutout", "thumb", "frame", "proof", "stem"]).default("original"),
+  /** original = the master; cutout = background removed; thumb = small preview; frame = one frame of a sequence; proof = licence proof;
+   *  depth = the master's depth map ("rg16": 16-bit disparity packed in an RGB PNG, R = high byte, G = low byte, 65535 = nearest; tools/photo3d). */
+  role: z.enum(["original", "cutout", "thumb", "frame", "proof", "stem", "depth"]).default("original"),
   path: LibPath,
   sha256: Sha256,
   bytes: z.number().int().positive(),

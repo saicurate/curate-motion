@@ -43,8 +43,10 @@ const saveState = (s: State) => {
   writeJson(statePath(), { $schema: "../../../catalog/schemas/account-state.schema.json", ...AccountState.parse(s) });
 };
 
+// Derived layers made from her photos (tools/photo3d: depth maps, cut-outs, plates) share her camera-roll
+// manifest but are not photos on her phone: never load them into the simulator.
 const desired = (kind: string, folder: string): IndexEntry[] =>
-  loadIndex().assets.filter((e) => e.kind === kind && e.manifest === `library/${folder}/${persona}/manifest.json` && (e.status === "approved" || (args["include-drafts"] && e.status === "draft")));
+  loadIndex().assets.filter((e) => e.kind === kind && e.manifest === `library/${folder}/${persona}/manifest.json` && (e.asset as { source?: { type?: string } }).source?.type !== "derived" && (e.status === "approved" || (args["include-drafts"] && e.status === "draft")));
 
 // ---------------------------------------------------------------- auth + API
 

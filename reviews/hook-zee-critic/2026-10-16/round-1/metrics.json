@@ -1,0 +1,170 @@
+{
+ "ad": "hook-zee-critic",
+ "render": "renders/hook-zee-critic/tiktok/8s/hook-zee-critic-pass3_tiktok_9x16_8s_v1.mp4",
+ "round": 1,
+ "date": "2026-10-16",
+ "probe": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60.0,
+  "duration": 8.0,
+  "audio": false
+ },
+ "renderSha256": "6abea78388c0f7c6385b952c9da48a54f3baf4d929d79dce61dac4af295e694b",
+ "motion": {
+  "meanDiff": 2.66,
+  "cuts": [],
+  "fastestWindow": [
+   380,
+   391
+  ],
+  "fastestAtSec": 6.433
+ },
+ "holds": [
+  {
+   "from": 5.67,
+   "to": 6.23,
+   "sec": 0.58
+  }
+ ],
+ "layerDrops": [],
+ "strip": {
+  "crop": [
+   0,
+   0,
+   1080,
+   1920
+  ],
+  "frames": [
+   {
+    "frame": 379,
+    "sec": 6.317,
+    "speedPx": 3.7,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 380,
+    "sec": 6.333,
+    "speedPx": 5.8,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 381,
+    "sec": 6.35,
+    "speedPx": 1.6,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 382,
+    "sec": 6.367,
+    "speedPx": 2.8,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 383,
+    "sec": 6.383,
+    "speedPx": 4.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 384,
+    "sec": 6.4,
+    "speedPx": 4.6,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 385,
+    "sec": 6.417,
+    "speedPx": 4.3,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 386,
+    "sec": 6.433,
+    "speedPx": 4.8,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 387,
+    "sec": 6.45,
+    "speedPx": 5.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 388,
+    "sec": 6.467,
+    "speedPx": 28.8,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 389,
+    "sec": 6.483,
+    "speedPx": 49.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 390,
+    "sec": 6.5,
+    "speedPx": 39.4,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 391,
+    "sec": 6.517,
+    "speedPx": 29.7,
+    "echo": 0.004,
+    "samplesGuess": 2,
+    "gapPx": 14.8
+   }
+  ],
+  "maxEcho": 0.004,
+  "maxSpeedPx": 49.0,
+  "samples": null,
+  "shutter": 0.5,
+  "maxSampleGapPx": null,
+  "verdict": "clean"
+ },
+ "loop": {
+  "seamDiff": 81.08,
+  "typicalStep": 1.65,
+  "fastestStep": 42.3,
+  "verdict": "jump"
+ },
+ "determinism": {
+  "ad": "hook-zee-critic",
+  "frame": 386,
+  "composition": "hook-zee-critic--9x16--8s",
+  "fps": 60,
+  "a": "reviews/hook-zee-critic/2026-10-16/round-1/det/determinism/det_f386_a.png",
+  "b": "reviews/hook-zee-critic/2026-10-16/round-1/det/determinism/det_f386_b.png",
+  "shaA": "c3752b37a1a8490883a3ae2c9cbf3503977899efe3eebb640a93e76b8b91017b",
+  "shaB": "c3752b37a1a8490883a3ae2c9cbf3503977899efe3eebb640a93e76b8b91017b",
+  "equal": true
+ },
+ "loudness": null,
+ "blindfold": null
+}

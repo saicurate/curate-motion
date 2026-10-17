@@ -28,7 +28,8 @@
               "thumb",
               "frame",
               "proof",
-              "stem"
+              "stem",
+              "depth"
             ]
           },
           "path": {

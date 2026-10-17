@@ -17,6 +17,14 @@ import * as rainOrShine from "./rain-or-shine";
 import rainOrShineSpec from "./rain-or-shine/ad.json";
 import * as zeeWipe from "./zee-wipe";
 import zeeWipeSpec from "./zee-wipe/ad.json";
+// Hooks: the first 8 s of an ad, made for $0 with the 2.5D kit (decisions/0013).
+import * as hookZeeCritic from "./hook-zee-critic";
+import hookZeeCriticSpec from "./hook-zee-critic/ad.json";
+import * as hookCameraRoll from "./hook-camera-roll";
+import hookCameraRollSpec from "./hook-camera-roll/ad.json";
+// Skits: story-time ads with a made-up persona (Jake), AI stills/video + the real app.
+import * as skitChopped from "./skit-chopped";
+import skitChoppedSpec from "./skit-chopped/ad.json";
 // Concept animatics (gate "explore", ads/_demos/README.md): rough, never posted.
 import * as demo1 from "./_demos/nothing-to-wear";
 import demo1Spec from "./_demos/nothing-to-wear/ad.json";
@@ -53,6 +61,9 @@ export const ADS: AdModule[] = [
   { spec: AdSpec.parse(popOutV3Spec), component: popOutV3.PopOutV3, schema: popOutV3.schema, defaults: popOutV3.defaults },
   { spec: AdSpec.parse(rainOrShineSpec), component: rainOrShine.RainOrShine, schema: rainOrShine.schema, defaults: rainOrShine.defaults },
   { spec: AdSpec.parse(zeeWipeSpec), component: zeeWipe.ZeeWipe, schema: zeeWipe.schema, defaults: zeeWipe.defaults },
+  { spec: AdSpec.parse(hookZeeCriticSpec), component: hookZeeCritic.HookZeeCritic, schema: hookZeeCritic.schema, defaults: hookZeeCritic.defaults, metadata: hookZeeCritic.metadata },
+  { spec: AdSpec.parse(hookCameraRollSpec), component: hookCameraRoll.HookCameraRoll, schema: hookCameraRoll.schema, defaults: hookCameraRoll.defaults, metadata: hookCameraRoll.metadata },
+  { spec: AdSpec.parse(skitChoppedSpec), component: skitChopped.SkitChopped, schema: skitChopped.schema, defaults: skitChopped.defaults, metadata: skitChopped.metadata },
   { spec: AdSpec.parse(demo1Spec), component: demo1.NothingToWear, schema: demo1.schema, defaults: demo1.defaults, metadata: demo1.metadata },
   { spec: AdSpec.parse(demo2Spec), component: demo2.CameraRollCloset, schema: demo2.schema, defaults: demo2.defaults, metadata: demo2.metadata },
   { spec: AdSpec.parse(demo3Spec), component: demo3.ZeeCritic, schema: demo3.schema, defaults: demo3.defaults, metadata: demo3.metadata },

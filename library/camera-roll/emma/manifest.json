@@ -1963,6 +1963,972 @@
       "framing": "full",
       "approvedBy": "founder (said: approve everything, 2026-10-15)",
       "approvedAt": "2026-10-15"
+    },
+    {
+      "id": "photo.emma.r28-couch-cozy-depth.v1",
+      "title": "Cozy night in: depth map",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r28-couch-cozy-depth.v1.png",
+          "sha256": "936d8e44785d1637ca0b4f91933b9fc9573505a21f114b4d57c61bc23b05e8d1",
+          "bytes": 3279114,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:depth",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "depth-anything/Depth-Anything-V2-Small-hf (Apache-2.0)",
+        "from": [
+          "photo.emma.r28-couch-cozy.v1"
+        ],
+        "tool": "tools/depth (tools/photo3d.py), flip-averaged at 770 px"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Cozy night in",
+      "wearing": [],
+      "framing": "half"
+    },
+    {
+      "id": "photo.emma.r28-couch-cozy-cutout.v1",
+      "title": "Cozy night in: her cut-out",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r28-couch-cozy-cutout.v1.png",
+          "sha256": "9e890e284e8b95e5cd21f1d4da07c7f0a5a3c1723c7287bcf5ac0dea0d1d402e",
+          "bytes": 4003667,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r28-couch-cozy-cutout.v1.png",
+          "sha256": "5e860c99950459e53229b1e4ec431eefe670513303ea96eecb2bb8112e79b09a",
+          "bytes": 2732577,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:cutout",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "ZhengPeng7/BiRefNet-portrait (MIT) + pymatting estimate_foreground_ml (MIT)",
+        "from": [
+          "photo.emma.r28-couch-cozy.v1"
+        ],
+        "tool": "tools/cutout-person (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Cozy night in",
+      "wearing": [
+        "garment.emma.sweater-cable-knit-cream.v1",
+        "garment.emma.sweatpants-grey.v1"
+      ],
+      "framing": "half",
+      "description": "RGBA, edge colours un-mixed from the background; depth = her own, pushed past her edge"
+    },
+    {
+      "id": "photo.emma.r28-couch-cozy-plate.v1",
+      "title": "Cozy night in: the background without her",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r28-couch-cozy-plate.v1.jpg",
+          "sha256": "981e64c8ca3fdf04ae9199b26f53d461c937275a37c543f1d57bb23ce2ae73b3",
+          "bytes": 638185,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r28-couch-cozy-plate.v1.png",
+          "sha256": "a75c1d3bdda684981bacccc0e71b517c03de958dec430510867f4e9db52fe0ae",
+          "bytes": 1713958,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:plate",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r28-couch-cozy.v1"
+        ],
+        "tool": "tools/inpaint at 512 px (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Cozy night in",
+      "wearing": [],
+      "framing": "half"
+    },
+    {
+      "id": "photo.emma.r10-night-out-depth.v1",
+      "title": "Night out downtown: depth map",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r10-night-out-depth.v1.png",
+          "sha256": "aaf4c68df092beab5fc940d464b0b34eeea9c72f4e545ca73e27dca77aefe0b1",
+          "bytes": 2627716,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:depth",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "depth-anything/Depth-Anything-V2-Small-hf (Apache-2.0)",
+        "from": [
+          "photo.emma.r10-night-out.v1"
+        ],
+        "tool": "tools/depth (tools/photo3d.py), flip-averaged at 770 px"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Night out downtown",
+      "wearing": [],
+      "framing": "full"
+    },
+    {
+      "id": "photo.emma.r10-night-out-cutout.v1",
+      "title": "Night out downtown: her cut-out",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r10-night-out-cutout.v1.png",
+          "sha256": "b3096a21ef8642809984b53da6117122016d40f1558556f2c361795d626545f2",
+          "bytes": 1354798,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r10-night-out-cutout.v1.png",
+          "sha256": "61daa663052457cf504c2ca1f47a264b64944759966e1c8184b38dfc80e25df7",
+          "bytes": 1251270,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:cutout",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "ZhengPeng7/BiRefNet-portrait (MIT) + pymatting estimate_foreground_ml (MIT)",
+        "from": [
+          "photo.emma.r10-night-out.v1"
+        ],
+        "tool": "tools/cutout-person (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Night out downtown",
+      "wearing": [
+        "garment.emma.dress-little-black.v1",
+        "garment.emma.heels-black.v1",
+        "garment.emma.bag-mini-black.v1",
+        "garment.emma.earrings-hoops-gold.v1"
+      ],
+      "framing": "full",
+      "description": "RGBA, edge colours un-mixed from the background; depth = her own, pushed past her edge"
+    },
+    {
+      "id": "photo.emma.r10-night-out-plate.v1",
+      "title": "Night out downtown: the background without her",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r10-night-out-plate.v1.jpg",
+          "sha256": "0b37d6b9d976b7bf37b62ed187e1f0f3109ade941dfccd5d3e8b59116dec1de5",
+          "bytes": 1108993,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r10-night-out-plate.v1.png",
+          "sha256": "ddd0cbb9b47c53463b66fd1e582c6fcd542cbc089356e4597a2993ba243fc864",
+          "bytes": 1850853,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:plate",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r10-night-out.v1"
+        ],
+        "tool": "tools/inpaint at 512 px (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Night out downtown",
+      "wearing": [],
+      "framing": "full"
+    },
+    {
+      "id": "photo.emma.r26-ferry-depth.v1",
+      "title": "On the NYC Ferry: depth map",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-depth.v1.png",
+          "sha256": "f998805b436aceaa4be9191a51a397cf3ef973c254f1443a70aa21d679c688d4",
+          "bytes": 2338698,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:depth",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "depth-anything/Depth-Anything-V2-Small-hf (Apache-2.0)",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/depth (tools/photo3d.py), flip-averaged at 770 px"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [],
+      "framing": "half"
+    },
+    {
+      "id": "photo.emma.r26-ferry-cutout.v1",
+      "title": "On the NYC Ferry: her cut-out",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-cutout.v1.png",
+          "sha256": "28130accb82db3422c3ff6314f891200efa9d2945fa45a96ce7b7c8fa7162ce5",
+          "bytes": 3849114,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r26-ferry-cutout.v1.png",
+          "sha256": "6c5efd39786277f26c8e455112aef73c6ee23d877208158109e2ee914d15c505",
+          "bytes": 1883885,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:cutout",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "ZhengPeng7/BiRefNet-portrait (MIT) + pymatting estimate_foreground_ml (MIT)",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/cutout-person (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [
+        "garment.emma.jacket-denim.v1",
+        "garment.emma.tee-long-sleeve-striped.v1",
+        "garment.emma.sunglasses-black.v1"
+      ],
+      "framing": "half",
+      "description": "RGBA, edge colours un-mixed from the background; depth = her own, pushed past her edge"
+    },
+    {
+      "id": "photo.emma.r26-ferry-plate.v1",
+      "title": "On the NYC Ferry: the background without her",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-plate.v1.jpg",
+          "sha256": "8ad2e85be198469cb8e8c657e10c88944df8712a62e9b98d38991cfcf3458873",
+          "bytes": 750436,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r26-ferry-plate.v1.png",
+          "sha256": "e9b816b1a1a14be891f470b130be9b1f0cd9c616c639fa1d840ec75e064aa1ae",
+          "bytes": 1219173,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:plate",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/inpaint at 512 px (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "retired",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [],
+      "framing": "half",
+      "description": "Retired for photo.emma.r26-ferry-plate.v2."
+    },
+    {
+      "id": "photo.emma.r26-ferry-jacket.v1",
+      "title": "On the NYC Ferry: the jacket she wears",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-jacket.v1.png",
+          "sha256": "3b263b88e1135f094538c0a9c808c734806d8742b04ebe1da389c2624a22f86b",
+          "bytes": 5388780,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r26-ferry-jacket.v1.png",
+          "sha256": "ce87d8f0367278ab7575591b74c9d9116858a0a2e5869f277cf8f480d88d43e5",
+          "bytes": 1322225,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:jacket",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "facebook/sam2.1-hiera-small (Apache-2.0) + big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/cutout-person part (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "retired",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [
+        "garment.emma.jacket-denim.v1"
+      ],
+      "framing": "half",
+      "description": "the whole piece: hair notches filled from its own fabric Retired for photo.emma.r26-ferry-jacket.v2."
+    },
+    {
+      "id": "photo.emma.r26-ferry-under-jacket.v1",
+      "title": "On the NYC Ferry: her with the jacket off",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-under-jacket.v1.png",
+          "sha256": "d304ffa1766911df09c7b94f0bf769cece26ab4c6d4c8589d6343af713cc54f0",
+          "bytes": 3595571,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r26-ferry-under-jacket.v1.png",
+          "sha256": "6c5efd39786277f26c8e455112aef73c6ee23d877208158109e2ee914d15c505",
+          "bytes": 1883885,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:under-jacket",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1 (CreativeML OpenRAIL++-M)",
+        "promptId": "prompt.image-gen.genfill-under-jacket-striped-tee.v1",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/genfill (SDXL Inpainting on MPS)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [
+        "garment.emma.tee-long-sleeve-striped.v1",
+        "garment.emma.sunglasses-black.v1"
+      ],
+      "framing": "half",
+      "description": "for a peel: the piece's area painted as what is under it"
+    },
+    {
+      "id": "photo.emma.r26-ferry-jacket.v2",
+      "title": "On the NYC Ferry: the jacket she wears",
+      "description": "the whole piece: hair notches filled from its own fabric Retired for photo.emma.r26-ferry-jacket.v3.",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-jacket.v2.png",
+          "sha256": "6e4a1bd800a2c2a80f1d9cc68ed355827709a3540e6571cd76ee79658bc672b3",
+          "bytes": 5397324,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r26-ferry-jacket.v2.png",
+          "sha256": "30b0083b42068b0ca1b58ce7addeef3462a2b59e60b1bd0730a693a8b898228d",
+          "bytes": 1321164,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:jacket",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "facebook/sam2.1-hiera-small (Apache-2.0) + big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/cutout-person part (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "retired",
+      "supersedes": "photo.emma.r26-ferry-jacket.v1",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [
+        "garment.emma.jacket-denim.v1"
+      ],
+      "framing": "half"
+    },
+    {
+      "id": "photo.emma.r26-ferry-plate.v2",
+      "title": "On the NYC Ferry: the background without her",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-plate.v2.jpg",
+          "sha256": "eff2f43459d92e88c2b71590161aa4aaefa3a0c500d20d946208d1fd40372c32",
+          "bytes": 748722,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r26-ferry-plate.v2.png",
+          "sha256": "e9b816b1a1a14be891f470b130be9b1f0cd9c616c639fa1d840ec75e064aa1ae",
+          "bytes": 1219173,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "derived",
+          "layer:plate",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "big-lama (Apache-2.0) for the deck + diffusers/stable-diffusion-xl-1.0-inpainting-0.1 (CreativeML OpenRAIL++-M) for the sky and skyline above the railing",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/photo3d.py (wisps painted out, LaMa at 512) then tools/genfill --rows 0:1090 --open 30, seed 11",
+        "promptId": "prompt.image-gen.genfill-plate-ferry-skyline.v1"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "supersedes": "photo.emma.r26-ferry-plate.v1",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [],
+      "framing": "half",
+      "description": "LaMa fills a person-sized hole with grey 'smoke' and a ghost skyline; SDXL redraws the sky and skyline above the railing (colour-matched), LaMa keeps the deck"
+    },
+    {
+      "id": "photo.emma.r26-ferry-jacket.v3",
+      "title": "On the NYC Ferry: the jacket she wears",
+      "description": "the whole piece: hair notches filled from its own fabric",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r26-ferry-jacket.v3.png",
+          "sha256": "dd1a684f33800464826572393d479dc01af034b773f81c4665bb8e65553833fd",
+          "bytes": 2572183,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r26-ferry-jacket.v3.png",
+          "sha256": "beac28e39131c462feab9973c072a6456b4e154f20b43488a8097903ad40ccd1",
+          "bytes": 1186084,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:jacket",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "facebook/sam2.1-hiera-small (Apache-2.0) + big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r26-ferry.v1"
+        ],
+        "tool": "tools/cutout-person part (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-16"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hooks agent)",
+        "at": "2026-10-16"
+      },
+      "status": "draft",
+      "supersedes": "photo.emma.r26-ferry-jacket.v2",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "On the NYC Ferry",
+      "wearing": [
+        "garment.emma.jacket-denim.v1"
+      ],
+      "framing": "half"
     }
   ]
 }

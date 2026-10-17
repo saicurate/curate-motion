@@ -1,0 +1,5 @@
+#!/bin/bash
+# tools/genfill: generative fill of a hole LaMa can't fill (e.g. her body under a garment), free and local
+# (SDXL 1.0 Inpainting, OpenRAIL++-M, on the Mac's GPU). The prompt comes from prompts/ by id. See tools/genfill.py.
+#   tools/genfill <photo> <mask.png> --prompt-id <prompt-id> [--seed 7] [--out file]
+exec uv run --quiet --script "$(dirname "$0")/genfill.py" "$@"

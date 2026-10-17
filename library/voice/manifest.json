@@ -8877,6 +8877,1046 @@
         "cacheKey": "46a6caef4fdb814ea8c8bcdc069398a0949ef6dc657fea19f79dc3e55dccd228"
       },
       "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l01-eleven-will-v4.v1",
+      "title": "skit-chopped l01 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l01-eleven-will-v4.v1.mp3",
+          "sha256": "e82e8143f360c988995b1988c2aadc49a28b67b78af8fe38c6c511089a8d494a",
+          "bytes": 89486,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l01",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.0129,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 5.52,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l01",
+          "text": "Hey guys. I finally had the courage to get a cute girl's number. At the grocery store.",
+          "startSec": 0,
+          "endSec": 5.52
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "Hey guys. I finally had the courage to get a cute girl's number. At the grocery store.",
+        "chars": 86,
+        "cacheKey": "17150828da68b18fca26e9bb6b8abe601963521f0a9268a79d174f5638ef9e2a"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l02-eleven-will-v4.v1",
+      "title": "skit-chopped l02 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l02-eleven-will-v4.v1.mp3",
+          "sha256": "2d642b8491ac6cdd7c1795fdd889481806a619c2b7c2cdc59176c8b60c346b11",
+          "bytes": 82798,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l02",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.00945,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 5.12,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l02",
+          "text": "I spent two hours deciding what to text her. And I sent… \"hey.\"",
+          "startSec": 0,
+          "endSec": 5.12
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "I spent two hours deciding what to text her. And I sent... hey.",
+        "chars": 63,
+        "cacheKey": "3533c9a4c340cfa2f36cb92018856b35133925a43ad006a353359c5ac8eb0255"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l03-eleven-will-v4.v1",
+      "title": "skit-chopped l03 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l03-eleven-will-v4.v1.mp3",
+          "sha256": "833c880572ebf093ca479ecdf1fd2eaba8d42bbdb1c1c75b645bbf599f80187c",
+          "bytes": 53541,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l03",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.00405,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 3.28,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l03",
+          "text": "One day. Two days. Nothing.",
+          "startSec": 0,
+          "endSec": 3.28
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "One day. Two days. Nothing.",
+        "chars": 27,
+        "cacheKey": "6597b4ca8913a331279ada3e5440526ed09594898f93f35bc64c8bcd4a594f31"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l04-eleven-will-v4.v1",
+      "title": "skit-chopped l04 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l04-eleven-will-v4.v1.mp3",
+          "sha256": "b13221d6be97a1c66ac0b625996533eb11b83768822f641af525ba1121119683",
+          "bytes": 53541,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l04",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.00495,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 3.28,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l04",
+          "text": "Two more hours. \"Hey, how are you?\"",
+          "startSec": 0,
+          "endSec": 3.28
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "Two more hours. Hey, how are you?",
+        "chars": 33,
+        "cacheKey": "f403675798fd0dd0289d21d5a8a00e591f936901223f3e1c7f14fd3c6db8c987"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l05-eleven-will-v4.v1",
+      "title": "skit-chopped l05 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l05-eleven-will-v4.v1.mp3",
+          "sha256": "cad2c744010b9f8f4acf0c4aa9006f06d0711fbb4553255bc13aa413a835ea28",
+          "bytes": 15089,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l05",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.0012,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 0.88,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l05",
+          "text": "Nothing.",
+          "startSec": 0,
+          "endSec": 0.88
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "Nothing.",
+        "chars": 8,
+        "cacheKey": "e7201c5f0766984df6001aa5248d26b88958a26665422e34323e4e5b511ce18d"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l06-eleven-will-v4.v1",
+      "title": "skit-chopped l06 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l06-eleven-will-v4.v1.mp3",
+          "sha256": "a3bad1572be519216acb6e017dd8047c9ac3f612a5a6dde6d28b178b9a5a7f37",
+          "bytes": 74021,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l06",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.00945,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 4.56,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l06",
+          "text": "So I go, \"hey, you said I was handsome. Why are you ghosting me?\"",
+          "startSec": 0,
+          "endSec": 4.56
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "So I go, hey, you said I was handsome. Why are you ghosting me?",
+        "chars": 63,
+        "cacheKey": "ffa7ba13e0ff2740b8f68b124dad4caf6a8568631f4154338e08cb5f9cb5facb"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l07-eleven-will-v4.v1",
+      "title": "skit-chopped l07 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l07-eleven-will-v4.v1.mp3",
+          "sha256": "e51ce67d8368fa0655e3358953dd85f50504bce533c240397e7294e89773b7e5",
+          "bytes": 44764,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l07",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.0054,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 2.72,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l07",
+          "text": "Two days later, she finally replies.",
+          "startSec": 0,
+          "endSec": 2.72
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "Two days later, she finally replies.",
+        "chars": 36,
+        "cacheKey": "15bdbd4d7ea0abb3ce51263366acb26a3cef41bb1ee499fb36104225b4c71f0f"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l08-eleven-will-v4.v1",
+      "title": "skit-chopped l08 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l08-eleven-will-v4.v1.mp3",
+          "sha256": "ebd3592c5edae874ffff656c0b4f947ec38a3fc836639f50f88de188684cf45d",
+          "bytes": 13835,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l08",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.00135,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 0.8,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l08",
+          "text": "Chopped?!",
+          "startSec": 0,
+          "endSec": 0.8
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "Chopped?!",
+        "chars": 9,
+        "cacheKey": "aaa29546b8e2554e2046b2b843d33e5e841c4269b26abff48a7534414d20e26e"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l09-eleven-will-v4.v1",
+      "title": "skit-chopped l09 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l09-eleven-will-v4.v1.mp3",
+          "sha256": "e0b9f0a19e8c77d90b9712506c97ea786bebb8398c30733f57a6022eb1e6fbab",
+          "bytes": 74021,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l09",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.00855,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 4.56,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l09",
+          "text": "So I got mad. Looked it up. Found this app called Curate.",
+          "startSec": 0,
+          "endSec": 4.56
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "So I got mad. Looked it up. Found this app called Curate.",
+        "chars": 57,
+        "cacheKey": "251a5720f1848e6ebcbc59639e48be02a32370140ac57fbc9c7e99e07c1d7679"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l10-eleven-will-v4.v1",
+      "title": "skit-chopped l10 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l10-eleven-will-v4.v1.mp3",
+          "sha256": "6e09cb7b872ac0735bcf073e144d7e187fa6f26b35df7211af2d9fd56d727dde",
+          "bytes": 44764,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l10",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.0063,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 2.72,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l10",
+          "text": "It found all my clothes in my camera roll.",
+          "startSec": 0,
+          "endSec": 2.72
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "It found all my clothes in my camera roll.",
+        "chars": 42,
+        "cacheKey": "662a6ae18fc8a1eca2932535206dfdf4eee1308c9e3634507b4879fb2c134a81"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l11-eleven-will-v4.v1",
+      "title": "skit-chopped l11 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l11-eleven-will-v4.v1.mp3",
+          "sha256": "432d182db540b4dc6e9efc3d48ece624307116cbb69194c9f0140729d1d4d17a",
+          "bytes": 40585,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l11",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.0057,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 2.48,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l11",
+          "text": "Then I asked Zee for a fit for drinks.",
+          "startSec": 0,
+          "endSec": 2.48
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "Then I asked Zee for a fit for drinks.",
+        "chars": 38,
+        "cacheKey": "9c8157eb9779419a8edc054ea11dd1059133cdce30da0e1d585c0ede082dfb95"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l12-eleven-will-v4.v1",
+      "title": "skit-chopped l12 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l12-eleven-will-v4.v1.mp3",
+          "sha256": "582c0928a492985a57fe3b9a2b28a3e65836fcc17eb79f9bec8324b05e11d532",
+          "bytes": 33061,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l12",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.0033,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 2,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l12",
+          "text": "Took one pic. Sent it.",
+          "startSec": 0,
+          "endSec": 2
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "Took one pic. Sent it.",
+        "chars": 22,
+        "cacheKey": "f4d19bde7cf83ce8ea66b9c631011d3c932bc94b632ddefe44bb2542c6b465ac"
+      },
+      "previewOnly": false
+    },
+    {
+      "id": "voice.skit-chopped.l13-eleven-will-v4.v1",
+      "title": "skit-chopped l13 · eleven-will-v4",
+      "files": [
+        {
+          "role": "original",
+          "path": "voice/skit-chopped/l13-eleven-will-v4.v1.mp3",
+          "sha256": "1640bb2ad412c386d61bd6368a5a960aca459a36123afd40e043d5361282135f",
+          "bytes": 31807,
+          "mime": "audio/mpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "ad:skit-chopped",
+          "line:l13",
+          "profile:eleven-will-v4",
+          "provider:elevenlabs"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "elevenlabs/eleven_v4:bIHbv24MWmeRgasZH58o",
+        "from": [],
+        "tool": "tools/voice generate"
+      },
+      "licence": {
+        "name": "ElevenLabs output (ElevenLabs Terms of Service): commercial use only on a paid plan (Starter or above)",
+        "url": "https://elevenlabs.io/terms-of-use",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "commercial-use-requires-paid-elevenlabs-plan-starter-or-above",
+          "free-plan-output-is-non-commercial-and-must-credit-elevenlabs-never-ship-it",
+          "keep-the-paid-plan-active-when-generating-clips-that-ship",
+          "disclose-ai-generated-voice-to-listeners",
+          "elevenlabs-prohibited-use-policy",
+          "no-impersonation-of-real-people"
+        ],
+        "proof": "https://elevenlabs.io/pricing: \"Commercial License\" is listed from the Starter plan up and not on Free (checked 2026-10-15). Curate's account is on Starter (paid, active; GET /v1/user/subscription, 2026-10-15). The adapter checks the key's plan on every run and refuses a Free-plan key.",
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.00225,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "voice",
+      "durationSec": 1.92,
+      "ad": "skit-chopped",
+      "origin": "tts",
+      "lines": [
+        {
+          "line": "l13",
+          "text": "We are so back.",
+          "startSec": 0,
+          "endSec": 1.92
+        }
+      ],
+      "tts": {
+        "provider": "elevenlabs",
+        "model": "eleven_v4",
+        "voice": "bIHbv24MWmeRgasZH58o",
+        "speed": 1,
+        "format": "mp3",
+        "text": "We are so back.",
+        "chars": 15,
+        "cacheKey": "472e84108783c1c110cfe558b8a93287ba34c76cc2bded4b7c81755efa6d07a4"
+      },
+      "previewOnly": false
     }
   ]
 }

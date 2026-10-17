@@ -1,0 +1,62 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "hook-zee-critic",
+  "title": "Hook A: Zee the critic",
+  "brief": "The first 8 s of a Zee-the-critic ad, made to stop the scroll at premium quality for $0. For US 18–34s who don't know Curate. Her couch photo comes alive in 2.5D with \"POV: your cat has opinions about your outfit.\" sitting behind her; Zee jumps up onto the couch and stares, deadpan; the room looms and on the drop \"girl… no.\"; a fade to the real iPhone with the real look card landing; her night-out photo comes alive with \"SLAY.\" behind her.",
+  "hook": "0–3 s: her couch photo alive in 2.5D, the POV line behind her, Zee jumps up and stares; 3.0 s the drop: \"girl… no.\"",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    8
+  ],
+  "fps": 60,
+  "track": "music.pixabay.in-my-back-kontraa.v1",
+  "assets": [
+    "music.pixabay.in-my-back-kontraa.v1",
+    "sfx.curate.hook-zee-critic-sound.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "photo.emma.r28-couch-cozy.v1",
+    "photo.emma.r28-couch-cozy-plate.v1",
+    "photo.emma.r28-couch-cozy-cutout.v1",
+    "photo.emma.r10-night-out.v1",
+    "photo.emma.r10-night-out-plate.v1",
+    "photo.emma.r10-night-out-cutout.v1",
+    "zee.curious.intro.v1",
+    "zee.curious.loop.v1",
+    "zee.focused.intro.v1",
+    "zee.focused.loop.v1",
+    "zee.cheer.intro.v1",
+    "zee.cheer.loop.v1",
+    "footage.emma.look-card-landing.v1",
+    "device.apple.iphone-17-pro-max-silver.v1"
+  ],
+  "components": [
+    "DepthPhoto + rigCss (motion/DepthPhoto)",
+    "KeyLine (motion/KeyLine)",
+    "Grain, Vignette, ContactShadow, LightWrap (motion/Finish)",
+    "Device bezel (motion/Device)",
+    "springs (motion/springs)",
+    "zeeFrame (motion/ZeeActor)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated: turn on the platform AI label (TikTok \"AI-generated content\", Meta \"AI info\", YouTube \"altered or synthetic content\").",
+    "The 2.5D moves are made from her photos by local models (depth: Depth Anything V2 Small, Apache-2.0; cut-out: BiRefNet-portrait, MIT; background fill: LaMa, Apache-2.0): still AI-altered imagery under the same label.",
+    "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+    "The app footage is real (Curate 1.5.0, build 262, Emma's account) at real speed: the look card landing.",
+    "Music: In My Back by kontraa, Pixabay Content License (commercial use and ads allowed, no attribution required; never distribute the track on its own, never register the ad's audio with Content ID or Meta Rights Manager). No Content ID badge on its page, checked live 2026-10-16 (proof file on the asset)."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (hooks agent)",
+    "at": "2026-10-16"
+  }
+}

@@ -32,3 +32,7 @@ export { fbm1, hash, noise1, rand01, randSigned, stream } from "./noise";
 export { beatClockOf, type AdBeatMap, type AdClock } from "./beatmap";
 export { StoreEndCard } from "./StoreEndCard";
 export { Fur, ZEE_CHEST, ZeeLeap, ZeeWindow, ZeeWindowPreload } from "./ZeeLeap";
+// The $0 premium kit (decisions/0013): 2.5D photos from local depth, cut-outs, the finishing pass, the brand line.
+export { DepthPhoto, depthOf, depthRig, rigCss, EDITORIAL, type DepthCam, type DepthLayer, type DepthRig, type Grade } from "./DepthPhoto";
+export { ContactShadow, Grain, LightWrap, Vignette } from "./Finish";
+export { KeyLine } from "./KeyLine";

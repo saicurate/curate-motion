@@ -1,0 +1,4 @@
+#!/bin/bash
+# tools/depth: a photo's depth map, free and local (Depth Anything V2 Small, Apache-2.0). See tools/photo3d.py.
+#   tools/depth <photo-id|file> [--out dir] [--size 770]
+exec uv run --quiet --script "$(dirname "$0")/photo3d.py" depth "$@"

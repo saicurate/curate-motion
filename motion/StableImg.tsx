@@ -28,12 +28,42 @@ const load = (src: string) => {
   return p;
 };
 
-export const StableImg: React.FC<{ src: string; style?: React.CSSProperties; className?: string }> = ({ src, style, className }) => {
+// `fit` (cover): decode ONCE straight to the drawn size, cropped like object-fit: cover, with high-quality
+// resampling, and cache that small bitmap per photo and size. For many small copies of big photos (a camera-roll
+// grid under sub-frame motion blur: hundreds of tiles a frame), where a full-size canvas each would be far too
+// heavy. Deterministic for the same reason as the full decode: it is made once, never by the compositor.
+const fitCache = new Map<string, Promise<ImageBitmap>>();
+const loadFit = (src: string, w: number, h: number) => {
+  const key = `${src}@${w}x${h}`;
+  let p = fitCache.get(key);
+  if (!p) {
+    p = fetch(src)
+      .then((r) => {
+        if (!r.ok) throw new Error(`StableImg: ${r.status} for ${src}`);
+        return r.blob();
+      })
+      .then(async (b) => {
+        const full = await createImageBitmap(b);
+        const s = Math.max(w / full.width, h / full.height);
+        const sw = w / s;
+        const sh = h / s;
+        const small = await createImageBitmap(full, (full.width - sw) / 2, (full.height - sh) / 2, sw, sh, { resizeWidth: w, resizeHeight: h, resizeQuality: "high", premultiplyAlpha: "premultiply" });
+        full.close();
+        return small;
+      });
+    fitCache.set(key, p);
+  }
+  return p;
+};
+
+export const StableImg: React.FC<{ src: string; style?: React.CSSProperties; className?: string; fit?: { w: number; h: number } }> = ({ src, style, className, fit }) => {
   const ref = useRef<HTMLCanvasElement>(null);
   const [handle] = useState(() => delayRender(`StableImg ${src.slice(-60)}`));
+  const fw = fit ? Math.round(fit.w) : 0;
+  const fh = fit ? Math.round(fit.h) : 0;
   useEffect(() => {
     let done = false;
-    load(src)
+    (fw ? loadFit(src, fw, fh) : load(src))
       .then((bmp) => {
         const c = ref.current;
         if (c && !done) {
@@ -50,6 +80,6 @@ export const StableImg: React.FC<{ src: string; style?: React.CSSProperties; cla
     return () => {
       done = true;
     };
-  }, [src, handle]);
+  }, [src, handle, fw, fh]);
   return <canvas ref={ref} className={className} style={{ display: "block", ...style }} />;
 };

@@ -1,0 +1,6 @@
+#!/bin/bash
+# tools/cutout-person: lift a person (or one piece she wears) off a photo, free and local. See tools/photo3d.py.
+#   tools/cutout-person <photo-id|file> [--out dir]                          her, RGBA (BiRefNet-portrait, MIT)
+#   tools/cutout-person part <photo-id|file> --name jacket --pos x,y … [--neg x,y …]   a piece she wears (SAM 2.1, Apache-2.0)
+if [ "$1" = "part" ]; then shift; exec uv run --quiet --script "$(dirname "$0")/photo3d.py" part "$@"; fi
+exec uv run --quiet --script "$(dirname "$0")/photo3d.py" cutout "$@"

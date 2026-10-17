@@ -1,0 +1,79 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "hook-camera-roll",
+  "title": "Hook B: Your camera roll is secretly a closet",
+  "brief": "The first 8 s of a camera-roll ad, made to stop the scroll at premium quality for $0. For US 18–34s who don't know Curate. Her real camera roll flicks past faster and faster; it stops dead on her ferry photo and the music cuts; the photo grows into the frame and comes alive in 2.5D with \"Your camera roll is secretly a closet.\" behind her; her denim jacket peels off her in slow motion, toward the camera, leaving her in her striped tee.",
+  "hook": "0–1.9 s her real camera roll, faster and faster (true motion blur); 1.9 s a dead stop on her ferry photo and the music cuts; 2.7 s the line rises behind her.",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    8
+  ],
+  "fps": 60,
+  "track": "music.pixabay.red-rabbit-audiopanther.v1",
+  "assets": [
+    "music.pixabay.red-rabbit-audiopanther.v1",
+    "sfx.curate.hook-camera-roll-sound.v2",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "photo.emma.r01-coffee-shop.v1",
+    "photo.emma.r02-subway-platform.v1",
+    "photo.emma.r03-brooklyn-street.v1",
+    "photo.emma.r04-park-autumn.v1",
+    "photo.emma.r05-office.v1",
+    "photo.emma.r06-farmers-market.v1",
+    "photo.emma.r07-rooftop-golden-hour.v1",
+    "photo.emma.r08-beach-day.v1",
+    "photo.emma.r09-mirror-selfie-weekend.v1",
+    "photo.emma.r10-night-out.v1",
+    "photo.emma.r11-mirror-selfie-work.v1",
+    "photo.emma.r12-dumbo-walk.v1",
+    "photo.emma.r13-winter-street.v1",
+    "photo.emma.r14-sunday-errands.v1",
+    "photo.emma.r15-hudson-run.v1",
+    "photo.emma.r16-bookstore.v1",
+    "photo.emma.r17-brunch.v1",
+    "photo.emma.r18-office-lobby.v1",
+    "photo.emma.r19-fall-game-day.v1",
+    "photo.emma.r20-country-night.v1",
+    "photo.emma.r21-museum-steps.v1",
+    "photo.emma.r22-stoop.v1",
+    "photo.emma.r23-rainy-day.v1",
+    "photo.emma.r24-dinner.v1",
+    "photo.emma.r25-cafe-laptop.v1",
+    "photo.emma.r26-ferry.v1",
+    "photo.emma.r27-chelsea-market.v1",
+    "photo.emma.r28-couch-cozy.v1",
+    "photo.emma.r29-gym-mirror.v1",
+    "photo.emma.r30-walk-to-work.v1",
+    "photo.emma.r26-ferry-plate.v2",
+    "photo.emma.r26-ferry-under-jacket.v1",
+    "photo.emma.r26-ferry-jacket.v3"
+  ],
+  "components": [
+    "DepthPhoto + rigCss (motion/DepthPhoto)",
+    "KeyLine (motion/KeyLine)",
+    "Grain, Vignette (motion/Finish)",
+    "SubframeBlur + samplesFor (motion/Blur)",
+    "springs (motion/springs)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated: turn on the platform AI label (TikTok \"AI-generated content\", Meta \"AI info\", YouTube \"altered or synthetic content\").",
+    "The 2.5D move and the peel are made from her ferry photo by local models (depth: Depth Anything V2 Small, Apache-2.0; cut-outs: BiRefNet-portrait, MIT, and SAM 2.1, Apache-2.0; fills: LaMa, Apache-2.0, and SDXL Inpainting, OpenRAIL++-M, for her striped tee under the jacket): AI-altered imagery under the same label.",
+    "No phone in this hook, so no iPhone credit line is needed; the full ad that shows the app in Apple's bezel adds \"iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.\"",
+    "Music: Red Rabbit by Audiopanther, Pixabay Content License (commercial use and ads allowed, no attribution required; never distribute the track on its own, never register the ad's audio with Content ID or Meta Rights Manager). No Content ID badge on its page, checked live 2026-10-16 (proof file on the asset)."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (hooks agent)",
+    "at": "2026-10-16"
+  }
+}

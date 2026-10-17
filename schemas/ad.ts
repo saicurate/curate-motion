@@ -16,8 +16,8 @@ export const FORMATS = {
 export type FormatId = keyof typeof FORMATS;
 export const FormatId = z.enum(Object.keys(FORMATS) as [FormatId, ...FormatId[]]);
 
-/** Length variants, seconds. 90 and 120 are the long explainer. */
-export const LENGTHS = [6, 15, 30, 60, 90, 120] as const;
+/** Length variants, seconds. 8 is a hook tested on its own (the first seconds of a longer ad); 90 and 120 are the long explainer. */
+export const LENGTHS = [6, 8, 15, 30, 60, 90, 120] as const;
 export type LengthSec = (typeof LENGTHS)[number];
 
 export const CHANNELS = ["tiktok", "reels", "shorts", "meta-feed", "youtube", "appstore", "website", "x"] as const;
@@ -69,7 +69,7 @@ export const AdSpec = z
     hook: z.string().optional(),
     channels: z.array(Channel).min(1),
     formats: z.array(FormatId).min(1),
-    lengths: z.array(z.number().refine((n) => (LENGTHS as readonly number[]).includes(n), "length must be one of 6/15/30/60/90/120")).min(1),
+    lengths: z.array(z.number().refine((n) => (LENGTHS as readonly number[]).includes(n), "length must be one of 6/8/15/30/60/90/120")).min(1),
     /** 60 for new ads (decisions/0011); older ads are 30. App Store formats always render at 30 (Root.tsx). */
     fps: z.union([z.literal(24), z.literal(30), z.literal(60)]).default(30),
     /** The music asset id. */

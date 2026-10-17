@@ -30,6 +30,14 @@ Reusable Remotion components. Ads import from `motion/index.ts`, never from each
 | `theme.ts` (`C`, `display`, easings, `useBrandFonts`) | Mist palette + Geist |
 | `assets.ts` (`asset`, `src`, `frameSrc`, `dims`) | the only way to reach media: by id |
 
+**The 2.5D kit** (decisions/0013, PROPOSED: premium for $0 from free local models; AGENTS.md › "2.5D photos"):
+
+| Module | Use |
+|---|---|
+| `DepthPhoto.tsx` (`DepthPhoto`, `depthRig`, `rigCss`, `depthOf`, `EDITORIAL`) | a photo's layers (tools/photo3d) as depth-displaced meshes seen by a real perspective camera (three.js, frame-pure, `--gl=angle`); `rigCss(...).plane(Z)` puts an HTML layer at depth Z between canvases (titles behind her); a layer's `move` lifts it as an object; the grade is in its shader |
+| `Finish.tsx` (`Grain`, `Vignette`, `ContactShadow`, `LightWrap`) | the finishing pass: seeded film grain, an optical vignette, contact shadows and light wrap for anything composited into a photo |
+| `KeyLine.tsx` | the brand's on-screen line: Geist Medium, `*key phrase*` in #181818 over #656565, words rising on the `headline` spring |
+
 **The studio kit** (decisions/0011, PROPOSED until the founder's OK after Pop out v3; the process: `.claude/skills/motion-reel/SKILL.md`):
 
 | Module | Use |

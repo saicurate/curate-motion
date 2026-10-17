@@ -29,12 +29,12 @@ library, never regenerated.**
 | `inspo/` | The inspo board: one Markdown file per inspiration, `inspo/<id>.md`; its media is a `reference` asset in `library/references/` (see "Inspo: add and reference") |
 | `schemas/` | The zod source of truth for assets, ads, persona accounts, the voice config, prompts and inspo |
 | `config/` | Project-wide settings as data: `voice.json` (the voiceover's mode and every mode's settings) |
-| `motion/` | Reusable Remotion components (Device, PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…), plus the studio kit: `springs.ts`, `noise.ts`, `Blur.tsx`, `StableImg.tsx`, `beatmap.ts`, `sound/` |
+| `motion/` | Reusable Remotion components (Device, PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…), plus the studio kit: `springs.ts`, `noise.ts`, `Blur.tsx`, `StableImg.tsx`, `beatmap.ts`, `sound/`, and the 2.5D kit: `DepthPhoto.tsx`, `Finish.tsx`, `KeyLine.tsx` |
 | `ads/` | One folder per ad: `ad.json` (the ad in data), `README.md`, `index.tsx`; studio ads also brief.md, style_guide.md, shotlist.md, timeline.ts, shots.ts (see "Making a motion film") |
 | `reviews/` | The critic's evidence per ad and round (`tools/critic`); images/audio are local only, `review.md`, `metrics.json` and `scores.json` are tracked |
 | `.claude/skills/` | Project skills for Claude Code: `motion-reel` (the studio process) |
 | `renders/` | Rendered videos by ad / channel / length (gitignored, synced to S3) |
-| `tools/` | `catalog`, `prompts`, `inspo`, `sync`, `render`, `voice`, `persona`, `library-ui`, `capture.sh`, `migrate/`; studio: `beats`, `stills`, `critic`, `refframes`, `motion-check` |
+| `tools/` | `catalog`, `prompts`, `inspo`, `sync`, `render`, `voice`, `persona`, `library-ui`, `capture.sh`, `migrate/`; studio: `beats`, `stills`, `critic`, `refframes`, `motion-check`; 2.5D: `photo3d`, `depth`, `cutout-person`, `inpaint`, `genfill` |
 | `tracker/` | The library page: browse, add, retire, render queue (`tools/library-ui`, or open `tracker/index.html` read-only) |
 | `decisions/` | One short file per decision, numbered. Read them to learn why things are this way |
 | `infra/` | The S3 bucket's settings as files, and `setup.sh` to re-apply them |
@@ -177,7 +177,7 @@ tools/sync renders push                                  # upload finished rende
 Output: `renders/<ad>/<channel>/<length>s/<ad>_<channel>_<format>_<length>s_v<N>.mp4`. Renders are
 never overwritten; each run takes the next `vN`. Formats: `9x16` 1080×1920, `4x5` 1080×1350,
 `1x1` 1080×1080, `16x9` 1920×1080, `appstore-iphone` 886×1920, `appstore-ipad` 1200×1600.
-Lengths: 6, 15, 30, 60, 90, 120 s (App Store previews: 15–30 s only).
+Lengths: 6, 8 (a hook on its own), 15, 30, 60, 90, 120 s (App Store previews: 15–30 s only).
 
 ## How to add or remove an asset
 
@@ -260,6 +260,34 @@ New phone shots use `motion/Device.tsx`, by catalog id (kind `device`):
   <screen.png> --hdri <hdr> --out hero.png` (transparent PNG; ~7 s at 1080×1920).
 - New bezels (next iPhone): download from developer.apple.com/design/resources › Product Bezels, mount
   the DMG read-only, then `node tools/device/register.ts bezels …` (measures and registers them).
+
+## 2.5D photos, cut-outs and the finishing pass: premium for $0 (PROPOSED, decisions/0013)
+
+A still photo becomes a place: real parallax from a local depth model, titles BEHIND her, Zee in the
+room, a garment peeling off her. All free and local (no paid calls); models and licences in decisions/0013.
+
+```bash
+tools/photo3d photo.emma.r26-ferry.v1 --part "jacket:566,1614;1202,1614/858,1717"   # depth, her cut-out, the plate, their depths, a piece she wears (+points/−points)
+tools/genfill <photo> <hole.png> --prompt-id <prompt-id> [--rows 0:1090] [--open 30]  # what LaMa can't fill (a body under a garment, a skyline), SDXL Inpainting
+tools/photo3d under photo.emma.r26-ferry.v1 --part jacket --fill <genfill.png>      # her with the piece off
+tools/photo3d register photo.emma.r26-ferry.v1 --part jacket --under jacket=<file> --under-prompt <prompt-id>
+tools/depth | tools/cutout-person [part] | tools/inpaint                             # the single steps
+```
+
+- Layers land in `.cache/photo3d/<photo>/` (look at them before registering), then as **derived** drafts
+  `photo.emma.<photo>-{depth,cutout,plate,<part>,under-<part>}.vN` (`source.from` = the photo, licence
+  `ai-owned`; the layer's depth is its `depth` file, "rg16"). A changed layer is `tools/catalog replace`
+  (vN+1). `tools/persona roll` never loads them into her phone.
+- In an ad: `<DepthPhoto rig camera layers>` per layer group, back to front, with HTML between them at a
+  depth: `transform: rigCss(rig, cam, W, H).plane(Z)` (origin 0 0). Camera moves only: truck `x`, pedestal
+  `y`, `dolly`, lens `fov` (a reverse dolly-zoom keeps one plane still). A layer's `move` lifts it as an
+  object; `grade: EDITORIAL` on every layer of a photo; defocus = CSS `filter: blur()` on a canvas.
+- Finish every photo shot: `<Vignette>`, `<Grain>` (not over Apple's bezel), `<LightWrap>` + `<ContactShadow>`
+  on anything composited in; on-screen words with `<KeyLine>` (`*key phrase*` in #181818, the rest #656565).
+- Keep moves small enough that the plate's fill only shows at her edge (LaMa fills a person-sized hole
+  with "smoke"); check the fringe in stills at the move's extremes. Renders need `--gl=angle`
+  (`tools/render` adds it when an ad lists an asset with a `depth` file; stills: `CURATE_GL=angle`).
+- Examples: `ads/hook-zee-critic/`, `ads/hook-camera-roll/`.
 
 ## How to change the voice
 

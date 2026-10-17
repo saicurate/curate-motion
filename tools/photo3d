@@ -1,0 +1,10 @@
+#!/bin/bash
+# tools/photo3d: every layer a <DepthPhoto> needs from one photo (depth, her cut-out, the plate behind her,
+# their depths, pieces she wears), free and local; then `register` puts them in the catalog as derived assets.
+# See tools/photo3d.py, tools/photo3d-register.ts and AGENTS.md › "2.5D photos".
+#   tools/photo3d <photo-id> [--part name:x,y;x,y/x,y] [--force]
+#   tools/photo3d under <photo-id> --part jacket --fill <tools/genfill output>   her with that piece off
+#   tools/photo3d register <photo-id> [--part name] [--under name=<file> --under-prompt <prompt-id>] [--redo] [--no-push]
+if [ "$1" = "register" ]; then shift; exec node "$(dirname "$0")/photo3d-register.ts" "$@"; fi
+if [ "$1" = "under" ]; then shift; exec uv run --quiet --script "$(dirname "$0")/photo3d.py" under "$@"; fi
+exec uv run --quiet --script "$(dirname "$0")/photo3d.py" all "$@"

@@ -1,0 +1,179 @@
+{
+ "ad": "hook-camera-roll",
+ "render": "renders/hook-camera-roll/tiktok/8s/hook-camera-roll-pass2_tiktok_9x16_8s_v1.mp4",
+ "round": 1,
+ "date": "2026-10-16",
+ "probe": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60.0,
+  "duration": 8.0,
+  "audio": false
+ },
+ "renderSha256": "0f1790d2276f07dad8770d889fcb9ef32e717ea1a13c5c3a327a80794d1276ad",
+ "motion": {
+  "meanDiff": 11.62,
+  "cuts": [
+   2.633
+  ],
+  "fastestWindow": [
+   88,
+   99
+  ],
+  "fastestAtSec": 1.567
+ },
+ "holds": [],
+ "layerDrops": [],
+ "strip": {
+  "crop": [
+   0,
+   0,
+   1080,
+   1920
+  ],
+  "frames": [
+   {
+    "frame": 87,
+    "sec": 1.45,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 88,
+    "sec": 1.467,
+    "speedPx": 101.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 89,
+    "sec": 1.483,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 90,
+    "sec": 1.5,
+    "speedPx": 101.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 91,
+    "sec": 1.517,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 92,
+    "sec": 1.533,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 93,
+    "sec": 1.55,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 94,
+    "sec": 1.567,
+    "speedPx": 101.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 95,
+    "sec": 1.583,
+    "speedPx": 101.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 96,
+    "sec": 1.6,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 97,
+    "sec": 1.617,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 98,
+    "sec": 1.633,
+    "speedPx": 101.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   },
+   {
+    "frame": 99,
+    "sec": 1.65,
+    "speedPx": 101.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0,
+    "sampleGapPx": 3.4
+   }
+  ],
+  "maxEcho": 0.0,
+  "maxSpeedPx": 101.2,
+  "samples": 16,
+  "shutter": 0.5,
+  "maxSampleGapPx": 3.4,
+  "verdict": "ECHO"
+ },
+ "loop": {
+  "seamDiff": 64.36,
+  "typicalStep": 3.73,
+  "fastestStep": 49.93,
+  "verdict": "jump"
+ },
+ "determinism": {
+  "ad": "hook-camera-roll",
+  "frame": 94,
+  "composition": "hook-camera-roll--9x16--8s",
+  "fps": 60,
+  "a": "reviews/hook-camera-roll/2026-10-16/round-1/det/determinism/det_f94_a.png",
+  "b": "reviews/hook-camera-roll/2026-10-16/round-1/det/determinism/det_f94_b.png",
+  "shaA": "27d0f2bddb6e371f8382ef2aa9d40142bb680b855fa247724258866f9ff2a7ea",
+  "shaB": "fc809373721d5588643aa4d27f92fceaa21f1b1224d0d0dc987acc4b09be3864",
+  "equal": false
+ },
+ "loudness": null,
+ "blindfold": null
+}

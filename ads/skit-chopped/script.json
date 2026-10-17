@@ -1,0 +1,32 @@
+{
+  "$schema": "../../catalog/schemas/script.schema.json",
+  "ad": "skit-chopped",
+  "title": "Skit: you're chopped, Jake's voiceover",
+  "source": "The founder's script (2026-10-16), told story-time style by Jake. Her texts are on-screen bubbles only (no voice). Hints are the first plan; the picture follows the measured clips.",
+  "language": "en-US",
+  "scenes": [
+    { "key": "hook", "title": "The number", "startHint": 0, "endHint": 3.8, "picture": "Jake in a grocery aisle, proud, phone up to the camera (AI video)." },
+    { "key": "hey", "title": "Two hours for 'hey'", "startHint": 3.8, "endHint": 10.5, "picture": "On the couch staring at his phone; the thread: 'hey', Delivered, Seen; 1 day later, 2 days later; face-palm." },
+    { "key": "how-are-you", "title": "Hey, how are you?", "startHint": 10.5, "endHint": 13.5, "picture": "Pacing; 'hey, how are you?'; Delivered; nothing." },
+    { "key": "handsome", "title": "You said I was handsome", "startHint": 13.5, "endHint": 17, "picture": "Desperate typing; the long text; Seen." },
+    { "key": "chopped", "title": "You're chopped", "startHint": 17, "endHint": 21.5, "picture": "2 days later; her typing dots; 'you're chopped. your outfit looks so bad'; record scratch; his jaw drops (AI video)." },
+    { "key": "curate", "title": "Finding Curate", "startHint": 21.5, "endHint": 31, "picture": "Angry search; the Curate result; the real app on the real iPhone: the photo scan, pieces arriving, his Wardrobe, asking Zee, the look card." },
+    { "key": "glow-up", "title": "Cleaned up", "startHint": 31, "endHint": 36, "picture": "The styled look at the mirror (AI video); one pic sent; her yes; he beams." },
+    { "key": "end", "title": "End card", "startHint": 36, "endHint": 39, "picture": "Curate. Get un-chopped. On the App Store. Zee." }
+  ],
+  "lines": [
+    { "id": "l01", "scene": "hook", "startHint": 0.1, "endHint": 3.6, "text": "Hey guys. I finally had the courage to get a cute girl's number. At the grocery store.", "keyPhrases": ["a cute girl's number"] },
+    { "id": "l02", "scene": "hey", "startHint": 3.9, "endHint": 7.2, "text": "I spent two hours deciding what to text her. And I sent… \"hey.\"", "spoken": "I spent two hours deciding what to text her. And I sent... hey.", "keyPhrases": ["two hours"] },
+    { "id": "l03", "scene": "hey", "startHint": 7.4, "endHint": 9.6, "text": "One day. Two days. Nothing.", "keyPhrases": ["Nothing."] },
+    { "id": "l04", "scene": "how-are-you", "startHint": 10.5, "endHint": 12.4, "text": "Two more hours. \"Hey, how are you?\"", "spoken": "Two more hours. Hey, how are you?", "keyPhrases": ["Two more hours."] },
+    { "id": "l05", "scene": "how-are-you", "startHint": 12.6, "endHint": 13.3, "text": "Nothing.", "keyPhrases": ["Nothing."] },
+    { "id": "l06", "scene": "handsome", "startHint": 13.6, "endHint": 16.8, "text": "So I go, \"hey, you said I was handsome. Why are you ghosting me?\"", "spoken": "So I go, hey, you said I was handsome. Why are you ghosting me?", "keyPhrases": ["Why are you ghosting me?"] },
+    { "id": "l07", "scene": "chopped", "startHint": 17.0, "endHint": 18.6, "text": "Two days later, she finally replies.", "keyPhrases": ["she finally replies"] },
+    { "id": "l08", "scene": "chopped", "startHint": 20.0, "endHint": 20.9, "text": "Chopped?!", "spoken": "Chopped?!", "keyPhrases": ["Chopped?!"] },
+    { "id": "l09", "scene": "curate", "startHint": 21.4, "endHint": 24.2, "text": "So I got mad. Looked it up. Found this app called Curate.", "keyPhrases": ["Curate"] },
+    { "id": "l10", "scene": "curate", "startHint": 24.6, "endHint": 26.8, "text": "It found all my clothes in my camera roll.", "keyPhrases": ["in my camera roll"] },
+    { "id": "l11", "scene": "curate", "startHint": 27.4, "endHint": 29.4, "text": "Then I asked Zee for a fit for drinks.", "keyPhrases": ["a fit for drinks"] },
+    { "id": "l12", "scene": "glow-up", "startHint": 31.4, "endHint": 33.0, "text": "Took one pic. Sent it.", "keyPhrases": ["Sent it."] },
+    { "id": "l13", "scene": "glow-up", "startHint": 34.6, "endHint": 35.8, "text": "We are so back.", "keyPhrases": ["so back"] }
+  ]
+}

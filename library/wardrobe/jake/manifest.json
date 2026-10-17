@@ -1,0 +1,2317 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "jake's wardrobe: product shots (no logos) with cutouts and thumbs.",
+  "assets": [
+    {
+      "id": "garment.jake.belt-leather-brown.v1",
+      "title": "Brown leather belt",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/belt-leather-brown.v1.jpg",
+          "sha256": "74524c04baacc364e038bc9f52f3b991e1add7962ce80634386e8f9921c5bf3d",
+          "bytes": 148702,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/belt-leather-brown.v1.png",
+          "sha256": "99ac55b1066f7228774731f9b460563a3cedf2aee788f4d20c68d36114ac03e8",
+          "bytes": 331760,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/belt-leather-brown.v1.jpg",
+          "sha256": "eb1f0c3d04b9969a53a9657a86b70bebe69f06d7297cd7a8e9671da6311c1120",
+          "bytes": 18229,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "brown"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-belt-leather-brown.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020386,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "accessory",
+      "name": "Brown leather belt",
+      "cutoutDims": {
+        "w": 490,
+        "h": 513
+      }
+    },
+    {
+      "id": "garment.jake.tee-graphic-flame-faded.v1",
+      "title": "Faded flame graphic tee",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/tee-graphic-flame-faded.v1.jpg",
+          "sha256": "06ddcea23c2c9010a8449a6bbb35bb79fb4736181b17fabe7b8c6ac7820eae42",
+          "bytes": 173615,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/tee-graphic-flame-faded.v1.png",
+          "sha256": "58055f5072a2d62416f72bf436f31bed79c58b490232c489c7a31f27736591aa",
+          "bytes": 460954,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/tee-graphic-flame-faded.v1.jpg",
+          "sha256": "4dfecbcbc524b86f918b67112e753fe8ceab0a4002758727c426b62ea21a74a4",
+          "bytes": 23768,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "black"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-tee-graphic-flame-faded.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.0209,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Faded flame graphic tee",
+      "cutoutDims": {
+        "w": 632,
+        "h": 688
+      }
+    },
+    {
+      "id": "garment.jake.tee-graphic-wolf-moon.v1",
+      "title": "Wolf-and-moon graphic tee",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/tee-graphic-wolf-moon.v1.jpg",
+          "sha256": "87993318b6c482df623daf4e93a97cb26e1b21e06d12445669d99ac98b5cabf4",
+          "bytes": 144776,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/tee-graphic-wolf-moon.v1.png",
+          "sha256": "9768cddb117868be77f533a7b59fb4b54af177f178c8320789c48bead928e73a",
+          "bytes": 493218,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/tee-graphic-wolf-moon.v1.jpg",
+          "sha256": "52eba3d4e0f827a6eda744234ba01b7ac07a8a7fedc59ee0e996bec0275d4e05",
+          "bytes": 21367,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "navy"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-tee-graphic-wolf-moon.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021442,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Wolf-and-moon graphic tee",
+      "cutoutDims": {
+        "w": 628,
+        "h": 703
+      }
+    },
+    {
+      "id": "garment.jake.tee-tie-dye-rainbow.v1",
+      "title": "Rainbow tie-dye tee",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/tee-tie-dye-rainbow.v1.jpg",
+          "sha256": "3dd017612a266b8c89db1072212a60927bfc0aad9aa0f7c4ce6a78422915a3b0",
+          "bytes": 177764,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/tee-tie-dye-rainbow.v1.png",
+          "sha256": "e9839234f45660b5b362eab5231584f065be9e04504e994cf6ac15e6730ab0e0",
+          "bytes": 595603,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/tee-tie-dye-rainbow.v1.jpg",
+          "sha256": "ea333fa6a148296e3a0349ed166d156e381ee18ac40aa0991d74ec6435eb51c6",
+          "bytes": 28863,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "multicolour"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-tee-tie-dye-rainbow.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020551,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Rainbow tie-dye tee",
+      "cutoutDims": {
+        "w": 592,
+        "h": 677
+      }
+    },
+    {
+      "id": "garment.jake.tee-mustard-stretched.v1",
+      "title": "Stretched mustard tee",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/tee-mustard-stretched.v1.jpg",
+          "sha256": "bc231d9edc61be767e6c62306dd495515c4990c07c22389ab6b0e7a43f68f8d9",
+          "bytes": 146563,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/tee-mustard-stretched.v1.png",
+          "sha256": "47bb73e9ab1f18e8cab18ba70e92cacb47e244bf98e79c86614ac03e145a1b96",
+          "bytes": 439563,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/tee-mustard-stretched.v1.jpg",
+          "sha256": "219d735639e636f0b01e95e80ddfecd55082e9c8d86e89381c7ce68e6a7fdb52",
+          "bytes": 18688,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "mustard"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-tee-mustard-stretched.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020962,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Stretched mustard tee",
+      "cutoutDims": {
+        "w": 536,
+        "h": 658
+      }
+    },
+    {
+      "id": "garment.jake.shirt-camp-flamingo-print.v1",
+      "title": "Flamingo print camp shirt",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/shirt-camp-flamingo-print.v1.jpg",
+          "sha256": "1bd6cc4e58c9faa60bc247332104c99b95850edbdfe804b15e4c811d8cd6a076",
+          "bytes": 196113,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/shirt-camp-flamingo-print.v1.png",
+          "sha256": "8580223c078cb0a6fe879af527961452ba3ee91a87bc113e0826992fc2ec904a",
+          "bytes": 606918,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/shirt-camp-flamingo-print.v1.jpg",
+          "sha256": "3a9b5a8c0264d74fd47985c4930ee26ab55854e780fa44a308d16c6993e6c391",
+          "bytes": 30145,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "teal and pink"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-shirt-camp-flamingo-print.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021237,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Flamingo print camp shirt",
+      "cutoutDims": {
+        "w": 613,
+        "h": 681
+      }
+    },
+    {
+      "id": "garment.jake.polo-striped-boxy.v1",
+      "title": "Boxy striped polo",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/polo-striped-boxy.v1.jpg",
+          "sha256": "48c918ba7314f8cd60255c50213b508f884ebbeacba374fbda40ed08599f5fd4",
+          "bytes": 146446,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/polo-striped-boxy.v1.png",
+          "sha256": "cd90ef2dc607ac4bd43b672cdc1e9a3987fdafe2a950f1a8443161088a7fdbb4",
+          "bytes": 466099,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/polo-striped-boxy.v1.jpg",
+          "sha256": "7fdabe747fcdf194141c2c06de35f2ffce5f90ba750265ab5edd94cecc5da145",
+          "bytes": 20885,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "brown and orange"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-polo-striped-boxy.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020683,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Boxy striped polo",
+      "cutoutDims": {
+        "w": 602,
+        "h": 623
+      }
+    },
+    {
+      "id": "garment.jake.hoodie-grey-oversized-pilled.v1",
+      "title": "Giant pilled grey hoodie",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/hoodie-grey-oversized-pilled.v1.jpg",
+          "sha256": "18822a0cb984e9c81db8d2ffab02184cf12f436cfabd0e24f1ef2cacea9b3b4a",
+          "bytes": 236271,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/hoodie-grey-oversized-pilled.v1.png",
+          "sha256": "26767e859c85e38845b6481a95ed36ce2b4b8972ef5a26d0d9cddc691850ece4",
+          "bytes": 531386,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/hoodie-grey-oversized-pilled.v1.jpg",
+          "sha256": "d786b5af87f725285d0c3206197e064e05c210110299e98131dc1b118ac26d84",
+          "bytes": 29491,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "heather grey"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-hoodie-grey-oversized-pilled.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021211,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Giant pilled grey hoodie",
+      "cutoutDims": {
+        "w": 561,
+        "h": 713
+      }
+    },
+    {
+      "id": "garment.jake.windbreaker-colourblock-90s.v1",
+      "title": "90s colour-block windbreaker",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/windbreaker-colourblock-90s.v1.jpg",
+          "sha256": "dd6e18b2e2e15a16473dc9901747c20e49a6f71da2c0139e3ab594b28f8b63ba",
+          "bytes": 167846,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/windbreaker-colourblock-90s.v1.png",
+          "sha256": "44f0323982fa994d282d599bd7cefce1f91acfc30dab4ca148cc1265b6bc7967",
+          "bytes": 562925,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/windbreaker-colourblock-90s.v1.jpg",
+          "sha256": "61dde0ad08134332c26cf7f569ab74e5789ff8f0a3bf5e336c9552a225065a29",
+          "bytes": 26124,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "teal"
+        ],
+        "season": [],
+        "free": [
+          "purple and yellow",
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-windbreaker-colourblock-90s.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021642,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "outerwear",
+      "name": "90s colour-block windbreaker",
+      "cutoutDims": {
+        "w": 565,
+        "h": 689
+      }
+    },
+    {
+      "id": "garment.jake.shorts-cargo-khaki-baggy.v1",
+      "title": "Baggy khaki cargo shorts",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/shorts-cargo-khaki-baggy.v1.jpg",
+          "sha256": "b28c7d256ae5418bfdfe2092b6ec93945a98c0f42b3038d464c2c79849eb9941",
+          "bytes": 163922,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/shorts-cargo-khaki-baggy.v1.png",
+          "sha256": "5ed61520fca7f1409689ea80b859ca4716ef6f238926780b262b75a2bb60ac0d",
+          "bytes": 411998,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/shorts-cargo-khaki-baggy.v1.jpg",
+          "sha256": "a0076b56442513ebb81715aecff25dd54209d824ae9fae60ad24752761873395",
+          "bytes": 20820,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "khaki"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-shorts-cargo-khaki-baggy.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.01977,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "bottom",
+      "name": "Baggy khaki cargo shorts",
+      "cutoutDims": {
+        "w": 471,
+        "h": 631
+      }
+    },
+    {
+      "id": "garment.jake.shorts-basketball-mesh-red.v1",
+      "title": "Red mesh basketball shorts",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/shorts-basketball-mesh-red.v1.jpg",
+          "sha256": "9a6638274232a03832564fe5a44e92976554cb4b59ecce93b36fc6314abd964a",
+          "bytes": 226067,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/shorts-basketball-mesh-red.v1.png",
+          "sha256": "3dc9b146791ce4774d049346f4be9dcfa078c713ce2091ae5eff9d8a2bbfa5bf",
+          "bytes": 622978,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/shorts-basketball-mesh-red.v1.jpg",
+          "sha256": "51e186f9bb23b262f7072960e9d6e70e3f61ee9de30f8e54a62ed7de9d913a8e",
+          "bytes": 24662,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "red"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-shorts-basketball-mesh-red.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020567,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "bottom",
+      "name": "Red mesh basketball shorts",
+      "cutoutDims": {
+        "w": 462,
+        "h": 709
+      }
+    },
+    {
+      "id": "garment.jake.shorts-jorts-baggy-dark.v1",
+      "title": "Long baggy jorts",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/shorts-jorts-baggy-dark.v1.jpg",
+          "sha256": "40740a2a3f8ad313b58a3924da3f7db0d778ebb4ab9f636133a7e6db2be9a2c4",
+          "bytes": 163493,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/shorts-jorts-baggy-dark.v1.png",
+          "sha256": "a9c813835839613a6317c843187c7f3038b9f8f0472ea7c1d3c13c2ccecbb11d",
+          "bytes": 382060,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/shorts-jorts-baggy-dark.v1.jpg",
+          "sha256": "551f5cef80f6485c699ade7c8973613b6bb992c0412c3385dc06d8a67b050706",
+          "bytes": 18608,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "dark blue"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-shorts-jorts-baggy-dark.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.024238,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "bottom",
+      "name": "Long baggy jorts",
+      "cutoutDims": {
+        "w": 430,
+        "h": 623
+      }
+    },
+    {
+      "id": "garment.jake.jeans-baggy-ripped-light.v1",
+      "title": "Ripped baggy light jeans",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/jeans-baggy-ripped-light.v1.jpg",
+          "sha256": "9802f34b179364e1e8929615745da3fc87d01750bba09cb754cae8ce20b9902c",
+          "bytes": 194203,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/jeans-baggy-ripped-light.v1.png",
+          "sha256": "b809d38e2d78ad88fb2b54883d7933423168f59e95cf4ab861671b85008fa652",
+          "bytes": 493334,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/jeans-baggy-ripped-light.v1.jpg",
+          "sha256": "7f73d98e60e85bc77952418f2d9215c6fead0ff164b89918559bd72843aeabdf",
+          "bytes": 23593,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "light blue"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-jeans-baggy-ripped-light.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020826,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "bottom",
+      "name": "Ripped baggy light jeans",
+      "cutoutDims": {
+        "w": 348,
+        "h": 780
+      }
+    },
+    {
+      "id": "garment.jake.trousers-khaki-pleated-long.v1",
+      "title": "Too-long pleated khakis",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/trousers-khaki-pleated-long.v1.jpg",
+          "sha256": "d10137af596a83f68a09fcb473a5d201a45e80baa981d7437bc89d234ef75584",
+          "bytes": 139145,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/trousers-khaki-pleated-long.v1.png",
+          "sha256": "2219feae813abbd702a606dbd2a0c9923f9f60a8e2addbaa2e3f23a45da946b6",
+          "bytes": 375006,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/trousers-khaki-pleated-long.v1.jpg",
+          "sha256": "4e6089d51eb738ba4f6ec214b6d577dd4110d1bc142cb34eda5d087d061bb1b5",
+          "bytes": 20140,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "khaki"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-trousers-khaki-pleated-long.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020263,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "bottom",
+      "name": "Too-long pleated khakis",
+      "cutoutDims": {
+        "w": 355,
+        "h": 793
+      }
+    },
+    {
+      "id": "garment.jake.slides-black-rubber.v1",
+      "title": "Black rubber slides",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/slides-black-rubber.v1.jpg",
+          "sha256": "d2c70fc4294b473fcbe3c36a3f8ea50d21672f0918a8506c59eafedee38658ce",
+          "bytes": 103411,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/slides-black-rubber.v1.png",
+          "sha256": "40a2b369c92445ca6c0156a5071ad6f0a5886ed958c87543d0c2b9f92322dfde",
+          "bytes": 202892,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/slides-black-rubber.v1.jpg",
+          "sha256": "5ccb255daea0847267decad09f9cf413563c9982737513139e7097c48c7a259a",
+          "bytes": 11308,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "black"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-slides-black-rubber.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020941,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "footwear",
+      "name": "Black rubber slides",
+      "cutoutDims": {
+        "w": 617,
+        "h": 325
+      }
+    },
+    {
+      "id": "garment.jake.socks-crew-white.v1",
+      "title": "White crew socks",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/socks-crew-white.v1.jpg",
+          "sha256": "22c026cf671db5a805d25645b68252c00579fe83939c270fe35093cca91c89fa",
+          "bytes": 120643,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/socks-crew-white.v1.png",
+          "sha256": "f02af8d11011ec5ded85e356ee42730e6d9d884ea367277150fb767f22ab0f58",
+          "bytes": 254636,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/socks-crew-white.v1.jpg",
+          "sha256": "54b2707e82e491f0e44f4c8b5bd8d7f2017fc7adade3659fdec59fb7b00ec0f3",
+          "bytes": 10447,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "white"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-socks-crew-white.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.019639,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "accessory",
+      "name": "White crew socks",
+      "cutoutDims": {
+        "w": 421,
+        "h": 581
+      }
+    },
+    {
+      "id": "garment.jake.sneakers-court-scuffed-grey.v1",
+      "title": "Scuffed grey court sneakers",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/sneakers-court-scuffed-grey.v1.jpg",
+          "sha256": "909783af92c5aeede3000dcdb8c585afbbd746d7e5152823bd4c45926881d287",
+          "bytes": 156214,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/sneakers-court-scuffed-grey.v1.png",
+          "sha256": "bdddf7a66ec5d43d57bcbdeb4c69644900215531989533cef3390093de3db857",
+          "bytes": 341438,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/sneakers-court-scuffed-grey.v1.jpg",
+          "sha256": "54181912b55761e4c0f5b3afd64d454a83a5ec4f86e790779414d9b4e9227ce3",
+          "bytes": 18122,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "white and grey"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-sneakers-court-scuffed-grey.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.041572,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "footwear",
+      "name": "Scuffed grey court sneakers",
+      "cutoutDims": {
+        "w": 594,
+        "h": 391
+      }
+    },
+    {
+      "id": "garment.jake.cap-camo-flat-brim.v1",
+      "title": "Camo flat-brim cap",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/cap-camo-flat-brim.v1.jpg",
+          "sha256": "a07e2d718c21503ecf858b17693e710c3b5b20e67327d3b8d9facc88826276a4",
+          "bytes": 181402,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/cap-camo-flat-brim.v1.png",
+          "sha256": "d7f16da6d7b9c6935292163e4a5ffd4149f8b92c8f0781ab1ab1d3845401a485",
+          "bytes": 432428,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/cap-camo-flat-brim.v1.jpg",
+          "sha256": "6e038cd9d79c55a26e474925f56c06f857e8368dd723b065ce39bdc9ef3e39eb",
+          "bytes": 19013,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "camo"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-cap-camo-flat-brim.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021257,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "accessory",
+      "name": "Camo flat-brim cap",
+      "cutoutDims": {
+        "w": 554,
+        "h": 482
+      }
+    },
+    {
+      "id": "garment.jake.sunglasses-wraparound-mirrored.v1",
+      "title": "Mirrored wraparound sunglasses",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/sunglasses-wraparound-mirrored.v1.jpg",
+          "sha256": "3deeb47eb77ac796d0b555573e64479c28d3eaa8470a179bcac1e06a19c1d093",
+          "bytes": 107180,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/sunglasses-wraparound-mirrored.v1.png",
+          "sha256": "acb427a26b154632cef35b4a9ef0e0279d4f20f24c58ca7931b560f34e4688b5",
+          "bytes": 191557,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/sunglasses-wraparound-mirrored.v1.jpg",
+          "sha256": "d4fef20fe70c344ca58bf4e1cf1d6d52fdee42bdd6caa95d1bedad63f18a1451",
+          "bytes": 13050,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "blue"
+        ],
+        "season": [],
+        "free": [
+          "before"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-sunglasses-wraparound-mirrored.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020441,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "accessory",
+      "name": "Mirrored wraparound sunglasses",
+      "cutoutDims": {
+        "w": 538,
+        "h": 285
+      }
+    },
+    {
+      "id": "garment.jake.jeans-slim-dark-indigo.v1",
+      "title": "Slim dark indigo jeans",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/jeans-slim-dark-indigo.v1.jpg",
+          "sha256": "3dae842ce1d5abfd6769f0f02160c2d2993bee5efc759b6c234033ea898941c4",
+          "bytes": 141625,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/jeans-slim-dark-indigo.v1.png",
+          "sha256": "86630fe29dfd16078576ffb742a75b50244e0c9b23b68a6444354cce1388fbcd",
+          "bytes": 314628,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/jeans-slim-dark-indigo.v1.jpg",
+          "sha256": "d4b448841032296073e1ea29647283c9cf83d7ec959d5a25dfd844368bc67741",
+          "bytes": 16324,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "dark indigo"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-jeans-slim-dark-indigo.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021502,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "bottom",
+      "name": "Slim dark indigo jeans",
+      "cutoutDims": {
+        "w": 290,
+        "h": 778
+      }
+    },
+    {
+      "id": "garment.jake.shirt-oxford-white.v1",
+      "title": "White oxford shirt",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/shirt-oxford-white.v1.jpg",
+          "sha256": "f4f68b9a3658405bc84a0a1e2f4daf4e1e039afa7682769eb0cff6e9bde97c52",
+          "bytes": 115032,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/shirt-oxford-white.v1.png",
+          "sha256": "1d10a29108c655f90e8f90428ac1b7a04e3f2fea2da1d1c8a2423318e64956b7",
+          "bytes": 358925,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/shirt-oxford-white.v1.jpg",
+          "sha256": "8b799ef8c918ad3ecf9daf2c280e1e0e9c96db3eadc44ee9e2959a01dd527dd4",
+          "bytes": 16215,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "white"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-shirt-oxford-white.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021907,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "White oxford shirt",
+      "cutoutDims": {
+        "w": 590,
+        "h": 768
+      }
+    },
+    {
+      "id": "garment.jake.jacket-bomber-black.v1",
+      "title": "Black bomber jacket",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/jacket-bomber-black.v1.jpg",
+          "sha256": "d0e87015bea85a7522d5e4773383f04febaf09d80eb28537ee6b23953d645e05",
+          "bytes": 131228,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/jacket-bomber-black.v1.png",
+          "sha256": "28c05d525b9dd2717864cae7e7b327ef62156b9de4b95b65313414934f5dcbbd",
+          "bytes": 329521,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/jacket-bomber-black.v1.jpg",
+          "sha256": "d5a140e06eaefcbdd835eb69d91d2a1e543a69e52800ecf27ee0f48a0a1f74f8",
+          "bytes": 17732,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "black"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-jacket-bomber-black.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020608,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "outerwear",
+      "name": "Black bomber jacket",
+      "cutoutDims": {
+        "w": 558,
+        "h": 674
+      }
+    },
+    {
+      "id": "garment.jake.sneakers-leather-white.v1",
+      "title": "White leather sneakers",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/sneakers-leather-white.v1.jpg",
+          "sha256": "4e01a1c44593f709ee4b679e0824ba517361a512ebdf225476b88963002f3e95",
+          "bytes": 105065,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/sneakers-leather-white.v1.png",
+          "sha256": "145569ff52782b641fa9021ffb9be5a267f32e8535402013c7ea754a1b687182",
+          "bytes": 189189,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/sneakers-leather-white.v1.jpg",
+          "sha256": "08b31d8c06de6fd36ba3197f6eb90540139d59112b43c40e81e7c78f407789f6",
+          "bytes": 11773,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "white"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-sneakers-leather-white.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020275,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "footwear",
+      "name": "White leather sneakers",
+      "cutoutDims": {
+        "w": 570,
+        "h": 300
+      }
+    },
+    {
+      "id": "garment.jake.sweater-crewneck-navy.v1",
+      "title": "Navy crewneck sweater",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/sweater-crewneck-navy.v1.jpg",
+          "sha256": "69dcf607fee7d016cbecf80c5acfc86dececb20269239e9d53a4e5dde7d60299",
+          "bytes": 165892,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/sweater-crewneck-navy.v1.png",
+          "sha256": "978f0dc2500e7046c0143bbee9fb9c1846a99fb751ddd54d043ac2c8cb6e83c1",
+          "bytes": 446692,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/sweater-crewneck-navy.v1.jpg",
+          "sha256": "fa6dada195e379a982836298bcf95f4bc76681dbf4b79bd38719888bf508cf15",
+          "bytes": 18267,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "navy"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-sweater-crewneck-navy.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020354,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Navy crewneck sweater",
+      "cutoutDims": {
+        "w": 548,
+        "h": 661
+      }
+    },
+    {
+      "id": "garment.jake.tee-white-heavyweight.v1",
+      "title": "Heavyweight white tee",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/tee-white-heavyweight.v1.jpg",
+          "sha256": "bcc1a85b1b9442804dfa782a06044bf589e4a3765791760e9c8a7c6ff917b1af",
+          "bytes": 104841,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/tee-white-heavyweight.v1.png",
+          "sha256": "bc19450da2fa0bb9848b97cf78ce6758f44dfb80fc950a3b74c3378e3730fd94",
+          "bytes": 292224,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/tee-white-heavyweight.v1.jpg",
+          "sha256": "ae2679a237bc8157bcd679f1e16f0b61154f015c32dd19fd3a79eb76333cb619",
+          "bytes": 12010,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "white"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-tee-white-heavyweight.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.02034,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Heavyweight white tee",
+      "cutoutDims": {
+        "w": 584,
+        "h": 736
+      }
+    },
+    {
+      "id": "garment.jake.tee-black-fitted.v1",
+      "title": "Fitted black tee",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/tee-black-fitted.v1.jpg",
+          "sha256": "f4b14a9b39ff2ae6dd53e853456f8a0a722be1796806b35183f37f5e402a0f63",
+          "bytes": 97612,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/tee-black-fitted.v1.png",
+          "sha256": "96736c199c35a118633395ea0b88ba7500d68a84220cb9a755eb5304fcaff6f9",
+          "bytes": 257868,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/tee-black-fitted.v1.jpg",
+          "sha256": "ebaae5b0c1d7f1ffc7b121e9d4f26fe16ff868f68a2245de1104894f625c5e1f",
+          "bytes": 12839,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "black"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-tee-black-fitted.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.021318,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "top",
+      "name": "Fitted black tee",
+      "cutoutDims": {
+        "w": 574,
+        "h": 675
+      }
+    },
+    {
+      "id": "garment.jake.overshirt-olive.v1",
+      "title": "Olive overshirt",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/overshirt-olive.v1.jpg",
+          "sha256": "36f0f16485e99c8c607f07325650f803854429fe0d7d973b86f1ed6436904f90",
+          "bytes": 183544,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/overshirt-olive.v1.png",
+          "sha256": "a7702e19c9a974ef5540b8315fe021ca8f83213d672d6ae3aa2f93290eea042d",
+          "bytes": 504478,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/overshirt-olive.v1.jpg",
+          "sha256": "eba2c4e2f35ee1751dbc26b0514599341e293064fc72c51b94f296912a5a19c1",
+          "bytes": 22839,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "olive"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-overshirt-olive.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.019957,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "outerwear",
+      "name": "Olive overshirt",
+      "cutoutDims": {
+        "w": 557,
+        "h": 725
+      }
+    },
+    {
+      "id": "garment.jake.chinos-slim-stone.v1",
+      "title": "Stone slim chinos",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/chinos-slim-stone.v1.jpg",
+          "sha256": "1b921887f08ad4e464f69455b3e2c595d8f8fa7d3ae5cbe0bfe4af64a87be574",
+          "bytes": 105375,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/chinos-slim-stone.v1.png",
+          "sha256": "38498b737aa7c972eef19b01f00e71fd75bc4532134a06265cf2b720d4266b96",
+          "bytes": 257712,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/chinos-slim-stone.v1.jpg",
+          "sha256": "27d8e8b92d87e84298cf932d070e482835896dedaa12377fd9b5a597047b683d",
+          "bytes": 13759,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "stone"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-chinos-slim-stone.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.018977,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "bottom",
+      "name": "Stone slim chinos",
+      "cutoutDims": {
+        "w": 308,
+        "h": 773
+      }
+    },
+    {
+      "id": "garment.jake.jacket-denim-dark.v1",
+      "title": "Dark denim jacket",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/jacket-denim-dark.v1.jpg",
+          "sha256": "708927e533af091d75885533fc8b2e78cdade38aa43ed26c0a96c66ea9bff88e",
+          "bytes": 264822,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/jacket-denim-dark.v1.png",
+          "sha256": "96e4aa90609cfda9ae55536fbcc18593e657a8222915d69f5855bd997d07920e",
+          "bytes": 714058,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/jacket-denim-dark.v1.jpg",
+          "sha256": "3acc3f2e305ab90d77bb29f25eca03b5c918af6bcc0b3fc999f7e67cc41fd1a7",
+          "bytes": 28650,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "dark indigo"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-jacket-denim-dark.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.019839,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "outerwear",
+      "name": "Dark denim jacket",
+      "cutoutDims": {
+        "w": 595,
+        "h": 713
+      }
+    },
+    {
+      "id": "garment.jake.boots-chelsea-brown-suede.v1",
+      "title": "Brown suede Chelsea boots",
+      "files": [
+        {
+          "role": "original",
+          "path": "wardrobe/jake/boots-chelsea-brown-suede.v1.jpg",
+          "sha256": "15a72d9780e05efac73e99611ceea52dc8533c4cec993855aaba69dd2628f6c7",
+          "bytes": 136254,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "cutout",
+          "path": "wardrobe/jake/cutouts/boots-chelsea-brown-suede.v1.png",
+          "sha256": "975fce529af5ec09e75dc4f553661d566648af4e2c2a71513c4007fe3f67bd9a",
+          "bytes": 337638,
+          "mime": "image/png"
+        },
+        {
+          "role": "thumb",
+          "path": "wardrobe/jake/thumbs/boots-chelsea-brown-suede.v1.jpg",
+          "sha256": "edf982ae93cbedc39fa612eba5aa0a4220dd0ca83eeb661da2d1f5058b2ace67",
+          "bytes": 14348,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "jake",
+        "mood": [],
+        "colour": [
+          "brown"
+        ],
+        "season": [],
+        "free": [
+          "after"
+        ]
+      },
+      "source": {
+        "type": "generated",
+        "model": "gemini-nano-banana-2.1",
+        "promptId": "prompt.image-gen.garment-jake-boots-chelsea-brown-suede.v1",
+        "from": [],
+        "tool": "tools/persona-gen/jake_garments.py"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-17"
+      },
+      "cost": {
+        "usd": 0.020922,
+        "calls": 1
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (skit-chopped agent)",
+        "at": "2026-10-17"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "garment",
+      "dims": {
+        "w": 896,
+        "h": 1200
+      },
+      "category": "footwear",
+      "name": "Brown suede Chelsea boots",
+      "cutoutDims": {
+        "w": 578,
+        "h": 462
+      }
+    }
+  ]
+}
