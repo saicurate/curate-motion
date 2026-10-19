@@ -201,6 +201,1180 @@
       "aiGenerated": false,
       "kind": "reference",
       "notes": "24 tiles, one every 1.15 s, left to right, top to bottom (tools/inspo breakdown)."
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-01.v1",
+      "title": "Essembl App Store iPhone 1/7 (v1.0.0 set): 200 clothes / social proof + tilted Today card over a laundry pile",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v1.0.0-01.png",
+          "sha256": "6b60d49603fd6549413bdf6d06a80e066a696c52a254635eef70365db206ac96",
+          "bytes": 3189067,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "screen:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-02.v1",
+      "title": "Essembl App Store iPhone 2/7 (v1.0.0): Studio canvas, real garments around the phone",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v1.0.0-02.png",
+          "sha256": "f4b594bf6a9efe4982799424d0bd338d4db7b1604bb3f8e9937476af71c8f510",
+          "bytes": 2865980,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "screen:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-03.v1",
+      "title": "Essembl App Store iPhone 3/7 (v1.0.0): home-screen outfit widget, coffee cup prop",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v1.0.0-03.png",
+          "sha256": "a557692e5a215b6476f24dab3c6e2d9ba7b66273a79b2a0b7696e26657fac089",
+          "bytes": 2901322,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "screen:widget"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-04.v1",
+      "title": "Essembl App Store iPhone 4/7 (v1.0.0): Ideas sheet with scored idea cards",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v1.0.0-04.png",
+          "sha256": "03571b12fa5c9f18fd20bba4c09d775ded45cf4d50aa2f8f34b7833c6e69ecfe",
+          "bytes": 2709628,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "screen:ideas"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-05.v1",
+      "title": "Essembl App Store iPhone 5/7 (v1.0.0): Rate my look 8/10 on dark green",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v1.0.0-05.png",
+          "sha256": "6d013a0e985f9790f51c16d162ec05530dffd7d7f8aad5385508f092d732b30c",
+          "bytes": 2250260,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "screen:rate"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-06.v1",
+      "title": "Essembl App Store iPhone 6/7 (v1.0.0): Wardrobe grid with piece cards popping out",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v1.0.0-06.png",
+          "sha256": "2cc66cca5ead75de2cb29fd8da03f6fb3eedc2bfe75768999b29372599a372b2",
+          "bytes": 2246803,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "screen:wardrobe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-07.v1",
+      "title": "Essembl App Store iPhone 7/7 (v1.0.0): Today card with occasion stickers",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v1.0.0-07.png",
+          "sha256": "62c33ab1f8482e45813e4f087fd41501279baff57325faa9c7673afdeee4617f",
+          "bytes": 2572551,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "screen:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-ipad-01.v1",
+      "title": "Essembl App Store iPad 1/5 (v1.0.0): flat full screens",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/ipad-v1.0.0-01.png",
+          "sha256": "907b42288e5b6eb23a9cca949cc668f1874ce904f53ddc1315046c2a06eb7291",
+          "bytes": 4665615,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "ipad"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-ipad-02.v1",
+      "title": "Essembl App Store iPad 2/5 (v1.0.0): flat full screens",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/ipad-v1.0.0-02.png",
+          "sha256": "226b817fe9c0c2c7d022e40ef76da6746e2c6c2c5239d62c4317cb0b33049cdf",
+          "bytes": 3823218,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "ipad"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-ipad-03.v1",
+      "title": "Essembl App Store iPad 3/5 (v1.0.0): flat full screens",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/ipad-v1.0.0-03.png",
+          "sha256": "eb6754d4e4287ec8bf3cb78913fce34a92e4933ec3e55202e8bde0950b3423f2",
+          "bytes": 5232417,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "ipad"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-ipad-04.v1",
+      "title": "Essembl App Store iPad 4/5 (v1.0.0): flat full screens",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/ipad-v1.0.0-04.png",
+          "sha256": "f44b557f604feb2030c8cd6d20a81957b0b4d21accb053bc270cfefcb86c8369",
+          "bytes": 4701120,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "ipad"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-ipad-05.v1",
+      "title": "Essembl App Store iPad 5/5 (v1.0.0): flat full screens",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/ipad-v1.0.0-05.png",
+          "sha256": "3cc5516a85443576d73dc5d180ef1209506ef06be7fd5f768429cd26456f8d5a",
+          "bytes": 4632846,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "in-app-ui",
+          "set:v1-0-0",
+          "ipad"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-01.v1",
+      "title": "Essembl App Store iPhone 1/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-01.jpg",
+          "sha256": "b232eb1fee00e021dec89e727340ce71f01fa9edabcdb9b9839c2c16c63c3836",
+          "bytes": 482538,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-02.v1",
+      "title": "Essembl App Store iPhone 2/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-02.jpg",
+          "sha256": "6e98c1f47d8fd3c2c47605a4f0527e1661da6fc3854b42bc748c6ba53211c679",
+          "bytes": 534568,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-03.v1",
+      "title": "Essembl App Store iPhone 3/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-03.jpg",
+          "sha256": "9b1315046c2ccf5024d78b08141dfc4040de6e64396b7c181e8b690a9d86cfab",
+          "bytes": 533551,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-04.v1",
+      "title": "Essembl App Store iPhone 4/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-04.jpg",
+          "sha256": "ba22eb8ddc1ba3a6c2e5eb8131eea075834880db72bcf1d60acfede485ab4cb1",
+          "bytes": 454294,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-05.v1",
+      "title": "Essembl App Store iPhone 5/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-05.jpg",
+          "sha256": "6e10331427400c5534c5e9ae0a103c9df222b971ceb41db770b77f465873add5",
+          "bytes": 566042,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-06.v1",
+      "title": "Essembl App Store iPhone 6/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-06.jpg",
+          "sha256": "03b0c82f7828f423790a0044acfe07ed8745a4711b0e4b2b09955a8bbf6f1bcc",
+          "bytes": 414215,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-07.v1",
+      "title": "Essembl App Store iPhone 7/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-07.jpg",
+          "sha256": "d3625fa14dcda82185471d0b541a4ab8553eb3e5ca972405a8e8456e790993a5",
+          "bytes": 516098,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.appstore-iphone-prev-08.v1",
+      "title": "Essembl App Store iPhone 8/8 (previous v0.2.32 set, serif era)",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/iphone-v0.2.32-08.jpg",
+          "sha256": "ec44de387f3a8e5e37ef5c6ac875169bc3f48933cc73c70a5faf45b0ab2aa889",
+          "bytes": 499115,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "set:v0-2-32"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.founder-frame-200-clothes.v1",
+      "title": "Founder's phone screenshot of the Essembl store frame '200 clothes. Nothing to wear?'",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/founder-frame-1-200-clothes.png",
+          "sha256": "fc4ee675db7ae2e5553ebe58172e71e9fc8914801cd24dd12a8c42981b84326a",
+          "bytes": 5973320,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "from-founder"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.founder-frame-dressed-for-any-plan.v1",
+      "title": "Founder's phone screenshot of the Essembl store frame 'Dressed for any plan'",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/founder-frame-2-dressed-for-any-plan.png",
+          "sha256": "35777a40250d53e1bb9edbd6d26adaf6885b5ec6ea9e2b2df469aff5cf313371",
+          "bytes": 4622613,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "from-founder"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
+    },
+    {
+      "id": "reference.essembl.founder-frame-outfits-you-own.v1",
+      "title": "Founder's phone screenshot of the Essembl store frame 'Outfits from clothes you own'",
+      "files": [
+        {
+          "role": "original",
+          "path": "references/competitors/essembl/founder-frame-3-outfits-from-clothes-you-own.png",
+          "sha256": "0b3da66eae66e324aeabd4e94ef651369d46af50e8a9f422bcda0ecd4c6f800d",
+          "bytes": 5427696,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "competitor",
+          "app-store",
+          "from-founder"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "author": "Essembl SA",
+        "url": "https://apps.apple.com/us/app/essembl-outfit-planner/id6479642952",
+        "from": []
+      },
+      "licence": {
+        "name": "Third-party content, reference only",
+        "commercial": false,
+        "attributionRequired": false,
+        "restrictions": [
+          "never-ship"
+        ],
+        "checkedAt": "2026-10-19"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code",
+        "at": "2026-10-19"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "reference"
     }
   ]
 }
