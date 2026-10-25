@@ -107,14 +107,21 @@ moves, never by taste per shot:
 ## 5. State lists: brief.md and shotlist.md
 
 **brief.md:** the FILM sentence (one line the whole film serves), audience, duration and cut-downs,
-formats (9:16 first), ASSETS (ids, approved), VISUAL, HARD LINE (never invent product screens or
-numbers; no prices or shopping; never show the pipeline).
+formats (9:16 first), ASSETS (ids, approved), VISUAL, HARD LINE (show only what the app really does,
+never a feature it doesn't have; no prices or shopping; never show the pipeline).
+
+**Ads redraw the app** (decisions/0014, the founder 2026-10-24): a social ad needs no exact screen
+recording. Take the real app as reference (`library/footage/INVENTORY-b<build>.md`, `../app-media/b<build>/`)
+and design its screens in motion: redraw, simplify, exaggerate, lift pieces out of them, whatever stops the
+scroll and makes someone install. A redrawn screen never goes in Apple's bezel (its licence: the app as it
+really runs): use our generic phone (`<Device variant="3d">`) or float the UI free. App Store previews are
+the exception: real screen captures only (App Review 2.3.4).
 
 **shotlist.md**, structure:
 - HOOK 0–2 s: one image that makes the promise; words at about 1 s.
 - PROBLEM: the pain, in a picture.
-- REVEAL: the product through a REAL interaction (real footage, big: at least about 3 s).
-- PROOF: one real screen or one real number.
+- REVEAL: the product doing it, big (at least about 3 s): designed from the real app (a recording only in App Store previews).
+- PROOF: one clear payoff the app really delivers (a screen, a number, a before/after).
 - CLOSE: a clean final state and a READABLE CTA held at least 2 s.
 - The final frame matches the first, so it loops.
 
@@ -157,7 +164,7 @@ evidence (file + what you see) and a LOCAL fix. Fix those three, re-render only 
 
 | Gate | What | Who approves |
 |---|---|---|
-| G1 | assets: every id listed, all `approved` in the catalog; real footage only | mechanical (validate checks) |
+| G1 | assets: every id listed, all `approved` in the catalog (app footage only where the format needs it: App Store previews) | mechanical (validate checks) |
 | G2 | brief.md + style_guide.md + shotlist.md, and ONE still per shot (`tools/stills <ad> --shots`) on a phone page | **the founder** |
 | G3 | stills for every shot, critiqued (critic on the stills; fixes) | **the founder** |
 | G4 | a 960×540 animatic (540×960 for 9:16: `--scale 0.5`) with placeholder audio (the music only) | agent, critic round |

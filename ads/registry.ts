@@ -13,6 +13,9 @@ import * as popOutV2 from "./pop-out-v2";
 import popOutV2Spec from "./pop-out-v2/ad.json";
 import * as popOutV3 from "./pop-out-v3";
 import popOutV3Spec from "./pop-out-v3/ad.json";
+// Pop out v4: re-cut the header way with the new-look (284) footage (ads/pop-out-v4/README.md).
+import * as popOutV4 from "./pop-out-v4";
+import popOutV4Spec from "./pop-out-v4/ad.json";
 import * as rainOrShine from "./rain-or-shine";
 import rainOrShineSpec from "./rain-or-shine/ad.json";
 import * as zeeWipe from "./zee-wipe";
@@ -59,6 +62,7 @@ export const ADS: AdModule[] = [
   { spec: AdSpec.parse(popOutSpec), component: popOut.PopOut, schema: popOut.schema, defaults: popOut.defaults },
   { spec: AdSpec.parse(popOutV2Spec), component: popOutV2.PopOutV2, schema: popOutV2.schema, defaults: popOutV2.defaults },
   { spec: AdSpec.parse(popOutV3Spec), component: popOutV3.PopOutV3, schema: popOutV3.schema, defaults: popOutV3.defaults },
+  { spec: AdSpec.parse(popOutV4Spec), component: popOutV4.PopOutV4, schema: popOutV4.schema, defaults: popOutV4.defaults },
   { spec: AdSpec.parse(rainOrShineSpec), component: rainOrShine.RainOrShine, schema: rainOrShine.schema, defaults: rainOrShine.defaults },
   { spec: AdSpec.parse(zeeWipeSpec), component: zeeWipe.ZeeWipe, schema: zeeWipe.schema, defaults: zeeWipe.defaults },
   { spec: AdSpec.parse(hookZeeCriticSpec), component: hookZeeCritic.HookZeeCritic, schema: hookZeeCritic.schema, defaults: hookZeeCritic.defaults, metadata: hookZeeCritic.metadata },

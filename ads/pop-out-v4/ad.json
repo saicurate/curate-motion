@@ -1,0 +1,106 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "pop-out-v4",
+  "title": "Pop out v4",
+  "brief": "Your whole closet is already in your camera roll; Curate pulls it out. For US 18–34s who have never heard of Curate. Pop out re-cut the header way (the founder's approved App Store header film): her three photos on a tonal ground give up her camel coat, denim jacket and scarf, one a beat; the camera glides back and they are three of thirty in her camera roll; the phone fades up with the real build-284 scan, her photos sorted out of her roll, her items found; the camera pushes in on the landing, \"Added 14 wardrobe items from 7 photos\"; the pan through the light to the lockup and \"On the App Store\"; her photos glide back in (a loop).",
+  "hook": "0–2 s: her three photos; on the drop the camel coat lifts out of her DUMBO photo, then the denim jacket and the scarf out of the others, one a beat; at 0.92 s \"Your closet is already in your camera roll.\"",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "device.apple.iphone-17-pro-max-silver.v1",
+    "garment.emma.coat-wool-camel.v3",
+    "garment.emma.jacket-denim.v3",
+    "garment.emma.scarf-plaid-camel.v2",
+    "footage.emma.b284-scan-sort-fan-land.v1",
+    "photo.emma.r01-coffee-shop.v1",
+    "photo.emma.r02-subway-platform.v1",
+    "photo.emma.r03-brooklyn-street.v1",
+    "photo.emma.r04-park-autumn.v1",
+    "photo.emma.r05-office.v1",
+    "photo.emma.r06-farmers-market.v1",
+    "photo.emma.r07-rooftop-golden-hour.v1",
+    "photo.emma.r08-beach-day.v1",
+    "photo.emma.r09-mirror-selfie-weekend.v1",
+    "photo.emma.r10-night-out.v1",
+    "photo.emma.r11-mirror-selfie-work.v1",
+    "photo.emma.r12-dumbo-walk.v1",
+    "photo.emma.r13-winter-street.v1",
+    "photo.emma.r14-sunday-errands.v1",
+    "photo.emma.r15-hudson-run.v1",
+    "photo.emma.r16-bookstore.v1",
+    "photo.emma.r17-brunch.v1",
+    "photo.emma.r18-office-lobby.v1",
+    "photo.emma.r19-fall-game-day.v1",
+    "photo.emma.r20-country-night.v1",
+    "photo.emma.r21-museum-steps.v1",
+    "photo.emma.r22-stoop.v1",
+    "photo.emma.r23-rainy-day.v1",
+    "photo.emma.r24-dinner.v1",
+    "photo.emma.r25-cafe-laptop.v1",
+    "photo.emma.r26-ferry.v1",
+    "photo.emma.r27-chelsea-market.v1",
+    "photo.emma.r28-couch-cozy.v1",
+    "photo.emma.r29-gym-mirror.v1",
+    "photo.emma.r30-walk-to-work.v1"
+  ],
+  "components": [
+    "Device (bezel)",
+    "Footage",
+    "KeyLine",
+    "Line (ads/app-store-header)",
+    "ContactShadow",
+    "Grain",
+    "Vignette",
+    "StableImg",
+    "SubframeBlur + samplesFor (motion/Blur)",
+    "springs (motion/springs)",
+    "useBrandFonts"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated: turn on the platform AI label (TikTok \"AI-generated content\", Meta \"AI info\", YouTube \"altered or synthetic content\").",
+    "The app footage is real Curate 1.5.1 (build 284) at real speed, recorded on a simulator with Emma's photos and wardrobe and the server's answers faked (the scan's \"14 items from 7 photos\" is the test build's count, not a live account's).",
+    "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+    "Music: Mixkit Stock Music Free License (Cat Walk, Arulo): online and social ads are fine; no TV/radio, never register it with Content ID."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (motion studio agent)",
+    "at": "2026-10-24"
+  },
+  "notes": "Pop out re-cut in the header's world (ads/app-store-header-all, approved: \"perfect the header video is soo good\"), with the new-look footage (build 284). v3 stays as it was (build 262 footage). Studio process; G1 waits for the founder to approve the draft assets (the header's three garment cut-outs and the 284 scan recording); the G2 package is on the founder's page with it. Founder 2026-10-24, after seeing it: \"since anyways you made it, just save it. But going forward, it's not necessary for us to record exactly the screen\": kept as made (the real recording in Apple's bezel); new ads redraw the app (decisions/0014). The G2 page's questions are left open.",
+  "gates": {
+    "G1": "review",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": [
+    {
+      "gate": "G1",
+      "status": "review",
+      "by": "claude-code (motion studio agent)",
+      "byType": "agent",
+      "at": "2026-10-24",
+      "note": "Waiting on the founder's approval of four drafts: garment.emma.coat-wool-camel.v3, garment.emma.jacket-denim.v3, garment.emma.scarf-plaid-camel.v2 (the approved header film uses them) and footage.emma.b284-scan-sort-fan-land.v1 (recorded 2026-10-24). Every other asset is approved. The G2 package (brief, style guide, shot list, one still per shot) is on the same page."
+    }
+  ]
+}

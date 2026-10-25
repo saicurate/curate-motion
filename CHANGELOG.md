@@ -3,6 +3,16 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-24: Pop out v4 (the header way, kept as made); ads redraw the app from now on (decisions/0014)
+- **ads/pop-out-v4/**: Pop out re-made in the approved header film's world (tonal grounds, her photos giving up
+  the coat, jacket and scarf, her camera roll, one camera through the light column, the header's lockup) around
+  the real build-284 scan in Apple's bezel. 9:16, 15 s, 60 fps, Cat Walk. Kept as made, at the founder's word.
+- **decisions/0014**: social ads design the app in motion from the real app as reference, never an exact
+  recording; a redrawn screen goes in our generic phone or floats free (Apple's bezel needs the real app);
+  App Store previews stay real captures. motion-reel skill and AGENTS.md updated.
+- **Render traps:** an unfiltered print under a garment's drop-shadow layer repainted blank in a video render
+  (every still was right): every print now carries a filter. `--concurrency 3` dropped layers on heavy frames.
+
 ## 2026-10-24: the library catches up with the new look (build 284)
 - **The gap:** every approved app recording (141) and screenshot (143) was build 262, the old look; 284 is
   the new look (new tabs, Today, Studio for Try-ons, the scan on the Wardrobe tab, a two-screen sign-up).

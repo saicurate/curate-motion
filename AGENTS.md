@@ -144,9 +144,12 @@ studio's working rules, not RULES.md. Claude Code runs it as the project skill *
    beats, big moments on downbeats, whooshes on hits. Designed sound with `motion/sound` on the same
    clock; −14 LUFS; the blindfold test (audio only, its waveform).
 5. **State lists.** `brief.md` (FILM sentence, audience, duration, formats, ASSETS, VISUAL, HARD LINE)
-   and `shotlist.md`: HOOK 0–2 s, PROBLEM, REVEAL (a real interaction), PROOF (one real screen or
-   number), CLOSE (a readable CTA held ≥ 2 s); each shot with time range, ENTRY, EXIT, PURPOSE,
-   motion class; last frame = first. A beat that can't justify itself is cut.
+   and `shotlist.md`: HOOK 0–2 s, PROBLEM, REVEAL (the product doing it), PROOF (one clear payoff the
+   app really delivers), CLOSE (a readable CTA held ≥ 2 s); each shot with time range, ENTRY, EXIT,
+   PURPOSE, motion class; last frame = first. A beat that can't justify itself is cut.
+   **Ads redraw the app** (decisions/0014): design its screens in motion from the real app as reference,
+   never an exact recording unless the format needs one (App Store previews: real captures only). A
+   redrawn screen goes in our generic phone (`<Device variant="3d">`) or floats free, never in Apple's bezel.
 6. **Reference → style guide.** `tools/refframes <reference-id> --ad <ad>` (frames every 0.5 s,
    palette hex, shot lengths, motion, grain) → `style_guide.md`. Take the grammar, never the
    subjects, logos or copy. Need another reference? Say what kind and ask.
