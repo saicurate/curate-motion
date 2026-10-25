@@ -23,7 +23,8 @@
         "free": [
           "screen:adjust",
           "appBuild:262",
-          "source:app"
+          "source:app",
+          "look:v1"
         ]
       },
       "source": {

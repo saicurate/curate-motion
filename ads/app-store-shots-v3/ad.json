@@ -1,0 +1,77 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-shots-v3",
+  "title": "App Store screenshots S-V3: the Essembl theme, product-led",
+  "brief": "Six App Store screenshots (iPhone 6.9\", 1320 × 2868 PNG). The founder picked Essembl's store set on the reference board (\"I liked the theme of this but don't do editorial for me\"): its theme, product-led, no magazine layouts or model photography. A warm cream linen ground, huge tight two-tone headlines, Curate's own 3D phone tilted and running off the edge with the real build-284 screens, Emma's real wardrobe cut-outs in front with soft contact shadows, one idea each. 1 Today's look, already picked · 2 Your closet, from your photos · 3 See it on you, before you wear it · 4 Rain or shine, you're dressed · 5 Your stylist, one message away · 6 Your photos, your call.",
+  "hook": "Screenshot 1, seen small in search: the Today screen on a tilted phone with the look's own blazer, skirt and boots on the linen in front, under 'Today's look, / already picked.'",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-shot"
+  ],
+  "lengths": [
+    6
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "font.geist.regular.v1",
+    "device.curate.phone-generic.v1",
+    "stock.polyhaven.hdri-studio-small-09.v1",
+    "stock.polyhaven.linen-cream-ground.v1",
+    "stock.polyhaven.linen-blue-ground.v1",
+    "screenshot.emma.b284-today-artfair.v1",
+    "screenshot.emma.b284-today-rain.v1",
+    "screenshot.emma.b284-chat-hello.v1",
+    "screenshot.emma.b284-wardrobe-rails.v2",
+    "screenshot.emma.b284-studio-offduty-tryon.v2",
+    "photo.emma.r12-dumbo-walk.v1",
+    "photo.emma.r26-ferry.v1",
+    "photo.emma.r30-walk-to-work-tryon-tee-black.v1",
+    "photo.emma.r04-park-autumn.v1",
+    "photo.emma.r09-mirror-selfie-weekend.v1",
+    "photo.emma.r17-brunch.v1",
+    "garment.emma.blazer-black.v2",
+    "garment.emma.skirt-midi-satin-camel.v2",
+    "garment.emma.boots-ankle-black.v2",
+    "garment.emma.coat-wool-camel.v3",
+    "garment.emma.jacket-denim.v3",
+    "garment.emma.scarf-plaid-camel.v2",
+    "garment.emma.tee-black.v1",
+    "garment.emma.coat-trench-khaki.v1",
+    "garment.emma.camisole-satin-black.v1",
+    "brand.curate.logo-splash.v1",
+    "screenshot.emma.b284-chat-artfair-look.v1",
+    "garment.emma.bag-tote-leather-black.v1",
+    "garment.emma.loafers-black.v1",
+    "garment.emma.jeans-straight-dark-wash.v1"
+  ],
+  "components": [
+    "Device (3d, phone-generic)",
+    "StableImg",
+    "Grain"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated.",
+    "The phone is Curate's own generic 3D model, not an iPhone."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-app-store-shots-v3",
+    "at": "2026-10-24"
+  },
+  "gates": {
+    "G1": "pending",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": []
+}

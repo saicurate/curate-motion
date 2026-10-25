@@ -1,0 +1,20 @@
+{
+ "ad": "app-store-shots-v2",
+ "rounds": [
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "stills: hand-run critic tests (contact, 25% row, 100% crops); see round-2/review.md"
+  }
+ ]
+}

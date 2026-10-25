@@ -1,0 +1,33 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-previews",
+  "title": "App Store previews: three App Previews from real build-284 screen recordings",
+  "brief": "Three App Previews for the screenshot row (iPhone 6.9\"/6.5\", 886 × 1920, 15–30 s, 30 fps), one feature each, cut from real screen recordings of build 284 (the new look) through the dev probes, with S-V3's two-tone Geist headline on its linen ground and Apple's iPhone bezel straight on. 1 Your closet, from your photos (Extract all) · 2 See it on you, before you wear it (Try-ons) · 3 Always know what to wear (Today, then Chat).",
+  "hook": "The first frame: the headline already up and the app already moving in the phone (the scan's photos sorting, her photo whole-screen, Today's look); previews autoplay muted.",
+  "channels": ["appstore"],
+  "formats": ["appstore-iphone"],
+  "lengths": [30],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.medium.v1",
+    "font.geist.regular.v1",
+    "font.geist.semibold.v1",
+    "device.apple.iphone-17-pro-max-silver.v1",
+    "stock.polyhaven.linen-blue-ground.v1",
+    "stock.polyhaven.linen-cream-ground.v1",
+    "brand.curate.logo-splash.v1",
+    "footage.curate.b284-scan-sort-land.v1",
+    "footage.curate.b284-tryons-flow.v1",
+    "footage.emma.b284-today-look-scroll.v1",
+    "footage.emma.b284-chat-art-fair.v1",
+    "footage.emma.b284-studio-swipe.v1"
+  ],
+  "components": ["Device", "Footage", "StableImg", "springs"],
+  "status": "draft",
+  "disclosures": ["iPhone is a trademark of Apple Inc., registered in the U.S. and other countries."],
+  "createdBy": { "type": "agent", "name": "app-store-previews-agent", "at": "2026-10-24" },
+  "gates": { "G1": "pending", "G2": "pending", "G3": "pending", "G4": "pending", "G5": "pending", "G6": "pending" },
+  "gateLog": []
+}

@@ -1,0 +1,217 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-studio-tryon moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-studio-tryon-b284.v1",
+      "title": "Studio: Weekend in black on the board, Try it on, Emma in it, full screen (build 284 probe, new look)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-studio-tryon/emma-b284.v1.mp4",
+          "sha256": "2a7dcaf507addbaf74150adf4a75d4ed623bf109598e4b1ead1e1c8915d99139",
+          "bytes": 19384504,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-studio-tryon",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "build:284",
+          "origin:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 15.588,
+      "fps": 120,
+      "moment": "b284-studio-tryon",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "go-studio": 1.65,
+        "tap-studioTryOn": 4.15,
+        "result-lands": 10.3,
+        "tap-studioTile": 11.66
+      },
+      "notes": "Recorded 2026-10-24 on my own simulator (Previews 17PM): status_bar override 9:41, battery discharging 100% (plain), new look, tips off, PROBE_PREVIEW_LOOK (the board is Weekend in black: tee, trousers, tote, loafers; the try-on is tryon.emma.r30-tee-black, the same pieces). Server calls faked; nothing paid. Marks approximate (read off a 2 fps contact sheet of the variable-frame-rate take, about 1 s early)."
+    },
+    {
+      "id": "footage.emma.b284-studio-tryon-b284.v2",
+      "title": "Studio: Weekend in black on the board, Try it on, Emma in it, full screen (build 284 probe, new look)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-studio-tryon/emma-b284.v2.mp4",
+          "sha256": "24ff5c4717a08052fa8686b7bc09a81496e560384452784116c1a80a9f511d11",
+          "bytes": 21169724,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-studio-tryon",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "build:284",
+          "origin:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "supersedes": "footage.emma.b284-studio-tryon-b284.v1",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 19.205,
+      "fps": 60,
+      "moment": "b284-studio-tryon",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "go-studio": 0.77,
+        "tap-studioTryOn": 6.28,
+        "result-lands": 12.9,
+        "tap-studioTile": 14.48
+      },
+      "notes": "Recorded 2026-10-24 on my own simulator (Previews 17PM): status_bar override 9:41, battery discharging 100% (plain), new look, tips off, PROBE_PREVIEW_LOOK (the board is Weekend in black: tee, trousers, tote, loafers; the try-on is tryon.emma.r30-tee-black, the same pieces). Server calls faked; nothing paid. Marks approximate (read off a 2 fps contact sheet of the variable-frame-rate take, about 1 s early)."
+    },
+    {
+      "id": "footage.emma.b284-studio-tryon-b284.v3",
+      "title": "Studio: Weekend in black on the board, Try it on, Emma in it, full screen (build 284 probe, new look)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-studio-tryon/emma-b284.v3.mp4",
+          "sha256": "82fd1fec95fde2211a08ea450a25740e0cef59b6c5510cdfecec4002126326d0",
+          "bytes": 21168853,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-studio-tryon",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "build:284",
+          "origin:probe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "supersedes": "footage.emma.b284-studio-tryon-b284.v2",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 24.657,
+      "fps": 240,
+      "moment": "b284-studio-tryon",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "go-studio": 0.9,
+        "tap-studioTryOn": 6.65,
+        "shimmer-ends": 13.6,
+        "result-lands": 13.75,
+        "full-screen-opens": 15.4,
+        "full-screen": 16.0
+      },
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+ "ad": "app-store-header-week",
+ "render": "renders/app-store-header-week/master/15s/app-store-header-week-c1-subtle_master_store-header_15s_v3.mp4",
+ "round": 4,
+ "date": "2026-10-24",
+ "probe": {
+  "width": 3840,
+  "height": 1646,
+  "fps": 60.0,
+  "duration": 15.0,
+  "audio": false
+ },
+ "renderSha256": "66850693d87a249bbd120bdcae196436df1e8a0755d7665e5b2e374a6cce76a6",
+ "motion": {
+  "meanDiff": 3.66,
+  "cuts": [],
+  "fastestWindow": [
+   92,
+   103
+  ],
+  "fastestAtSec": 1.633
+ },
+ "holds": [
+  {
+   "from": 0.0,
+   "to": 1.4,
+   "sec": 1.42
+  },
+  {
+   "from": 11.35,
+   "to": 12.73,
+   "sec": 1.4
+  }
+ ],
+ "layerDrops": [],
+ "strip": {
+  "crop": [
+   123,
+   13,
+   3498,
+   1618
+  ],
+  "frames": [
+   {
+    "frame": 91,
+    "sec": 1.517,
+    "speedPx": 74.3,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 92,
+    "sec": 1.533,
+    "speedPx": 80.6,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 93,
+    "sec": 1.55,
+    "speedPx": 85.7,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 94,
+    "sec": 1.567,
+    "speedPx": 89.9,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 95,
+    "sec": 1.583,
+    "speedPx": 93.3,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 96,
+    "sec": 1.6,
+    "speedPx": 96.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 97,
+    "sec": 1.617,
+    "speedPx": 97.6,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 98,
+    "sec": 1.633,
+    "speedPx": 98.9,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 99,
+    "sec": 1.65,
+    "speedPx": 99.6,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 100,
+    "sec": 1.667,
+    "speedPx": 100.0,
+    "echo": 0.021,
+    "samplesGuess": 2,
+    "gapPx": 100.0
+   },
+   {
+    "frame": 101,
+    "sec": 1.683,
+    "speedPx": 99.7,
+    "echo": 0.087,
+    "samplesGuess": 2,
+    "gapPx": 99.7
+   },
+   {
+    "frame": 102,
+    "sec": 1.7,
+    "speedPx": 99.0,
+    "echo": 0.088,
+    "samplesGuess": 2,
+    "gapPx": 99.0
+   },
+   {
+    "frame": 103,
+    "sec": 1.717,
+    "speedPx": 98.1,
+    "echo": 0.088,
+    "samplesGuess": 2,
+    "gapPx": 98.1
+   }
+  ],
+  "maxEcho": 0.088,
+  "maxSpeedPx": 100.0,
+  "samples": null,
+  "shutter": 0.35,
+  "maxSampleGapPx": null,
+  "verdict": "clean"
+ },
+ "loop": {
+  "seamDiff": 0.4,
+  "typicalStep": 3.67,
+  "fastestStep": 12.27,
+  "verdict": "seamless"
+ },
+ "determinism": {
+  "ad": "app-store-header-week",
+  "frame": 98,
+  "composition": "app-store-header-week--store-header--15s",
+  "fps": 60,
+  "a": "reviews/app-store-header-week/2026-10-24/round-4/det/determinism/det_f98_a.png",
+  "b": "reviews/app-store-header-week/2026-10-24/round-4/det/determinism/det_f98_b.png",
+  "shaA": "5a74d5134b2c9b37436d77d0600dfc09f68d93be73ac804a91d1b3b9c87cee34",
+  "shaB": "5a74d5134b2c9b37436d77d0600dfc09f68d93be73ac804a91d1b3b9c87cee34",
+  "equal": true
+ },
+ "loudness": null,
+ "blindfold": null
+}

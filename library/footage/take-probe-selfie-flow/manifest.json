@@ -24,7 +24,8 @@
           "screen:take",
           "appBuild:262",
           "source:probe",
-          "kind:full-take"
+          "kind:full-take",
+          "look:v1"
         ]
       },
       "source": {

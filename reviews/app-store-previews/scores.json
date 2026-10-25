@@ -1,0 +1,110 @@
+{
+ "ad": "app-store-previews",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 6.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 7.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "P1 v1: 1.8 s still empty Wardrobe before anything moves (hook); the found-items fan sits still 4.5 s; contiguous cuts cross-faded. Strip clean, no layer drops. Sound n/a: previews carry a silent track. Brand: S-V3 blue linen (the founder's pick), Geist, Apple bezel straight on, real build-284 screens."
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 6.0,
+    "phone": 8.0,
+    "smooth": 6.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "P2 v1: the opening holds 2.5 s on a still photo; at 9.0 s the wardrobe sheet ghosts over her photo in a cross-fade (mismatched cut); reveal and before/after read well. Strip clean."
+  },
+  {
+   "round": 3,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 7.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "P1 v2: opening 0.9 s, contiguous cuts merged; the found-items fan still ~4 s (trimmed 0.8 s more in round 6). Strip ECHO at 1.6 s is the app's own photo flick jumping ~495 px a frame at Apple's 30 fps cap: strip-zoom frame is crisp, no double image."
+  },
+  {
+   "round": 4,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P2 v2 (final): opening 1.2 s on her photo, then the shop-link sheet by 1 s; the trousers cut ends after the sheet closes, so Try on meets it on the same screen (no ghost). Strip comb 0.14 at 8.7 s is the real sheet dismiss, crisp frames. Reveal, Here you are, wearing both, hold-for-before all read at 360 px."
+  },
+  {
+   "round": 5,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 6.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 7.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "P3 v1: Today held 5 s before the scroll; Looking through your wardrobe near-empty 2.5 s; the look held 5.5 s at the end."
+  },
+  {
+   "round": 6,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P1 v3 (final): headline + Extract all card at frame 0, the sort moving by 1 s, the found-items fan 3 s, the landing into her rails and Added 14 wardrobe items from 7 photos. Strip ECHO = the app's own flick at 30 fps (frames crisp)."
+  },
+  {
+   "round": 7,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P3 v2 (final): Today's look at frame 0, scrolled to For work by 2.5 s, Hey Emma, the question, Zee thinking with her closet orbiting, It drops to 57F after sunset, the look. Strip clean."
+  }
+ ]
+}

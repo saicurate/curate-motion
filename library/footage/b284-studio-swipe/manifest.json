@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-studio-swipe moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-studio-swipe.v1",
+      "title": "Studio: Date night swiped to Weekend in denim with its try-on, and back (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-studio-swipe/emma-b284.v1.mp4",
+          "sha256": "faca047f1324b38df1b21717e583600629733ffc4b924184878fefe382e84e68",
+          "bytes": 9956934,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-studio-swipe",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/take.sh"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews-agent",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 11.24,
+      "fps": 120,
+      "moment": "b284-studio-swipe",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "drag-330-330--240-0-320": 3.3,
+        "drag-110-330-240-0-320": 7.91
+      }
+    }
+  ]
+}

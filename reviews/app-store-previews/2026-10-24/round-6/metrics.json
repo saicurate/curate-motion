@@ -1,0 +1,167 @@
+{
+ "ad": "app-store-previews",
+ "render": "renders/app-store-previews/appstore/30s/app-store-previews-p1-blue_appstore_appstore-iphone_30s_v3.mp4",
+ "round": 6,
+ "date": "2026-10-24",
+ "probe": {
+  "width": 886,
+  "height": 1920,
+  "fps": 30.0,
+  "duration": 15.5,
+  "audio": false
+ },
+ "renderSha256": "3b124f66330776e4e01ce7ffe08e264e95ea92bde2d7132e66b9ef8f967c8e36",
+ "motion": {
+  "meanDiff": 2.43,
+  "cuts": [
+   9.367,
+   9.733
+  ],
+  "fastestWindow": [
+   42,
+   53
+  ],
+  "fastestAtSec": 1.6
+ },
+ "holds": [
+  {
+   "from": 10.73,
+   "to": 13.5,
+   "sec": 2.8
+  },
+  {
+   "from": 13.9,
+   "to": 15.47,
+   "sec": 1.6
+  }
+ ],
+ "layerDrops": [],
+ "strip": {
+  "crop": [
+   143,
+   553,
+   581,
+   945
+  ],
+  "frames": [
+   {
+    "frame": 41,
+    "sec": 1.367,
+    "speedPx": 181.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 42,
+    "sec": 1.4,
+    "speedPx": 265.7,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 43,
+    "sec": 1.433,
+    "speedPx": 566.1,
+    "echo": 0.284,
+    "samplesGuess": 12,
+    "gapPx": 25.7
+   },
+   {
+    "frame": 44,
+    "sec": 1.467,
+    "speedPx": 97.5,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 45,
+    "sec": 1.5,
+    "speedPx": 316.2,
+    "echo": 0.055,
+    "samplesGuess": 8,
+    "gapPx": 45.2
+   },
+   {
+    "frame": 46,
+    "sec": 1.533,
+    "speedPx": 243.1,
+    "echo": 0.178,
+    "samplesGuess": 7,
+    "gapPx": 20.3
+   },
+   {
+    "frame": 47,
+    "sec": 1.567,
+    "speedPx": 74.5,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 48,
+    "sec": 1.6,
+    "speedPx": 48.3,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 49,
+    "sec": 1.633,
+    "speedPx": 106.4,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 50,
+    "sec": 1.667,
+    "speedPx": 111.9,
+    "echo": 0.026,
+    "samplesGuess": 2,
+    "gapPx": 55.9
+   },
+   {
+    "frame": 51,
+    "sec": 1.7,
+    "speedPx": 141.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 52,
+    "sec": 1.733,
+    "speedPx": 182.2,
+    "echo": 0.002,
+    "samplesGuess": 3,
+    "gapPx": 45.6
+   },
+   {
+    "frame": 53,
+    "sec": 1.767,
+    "speedPx": 47.0,
+    "echo": 0.09,
+    "samplesGuess": 2,
+    "gapPx": 23.5
+   }
+  ],
+  "maxEcho": 0.284,
+  "maxSpeedPx": 566.1,
+  "samples": null,
+  "shutter": 0.5,
+  "maxSampleGapPx": null,
+  "verdict": "ECHO"
+ },
+ "loop": {
+  "seamDiff": 26.43,
+  "typicalStep": 0.59,
+  "fastestStep": 15.87,
+  "verdict": "jump"
+ },
+ "loudness": null,
+ "blindfold": null
+}

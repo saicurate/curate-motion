@@ -12,6 +12,11 @@ export const FORMATS = {
   "16x9": { width: 1920, height: 1080, note: "YouTube, website hero" },
   "appstore-iphone": { width: 886, height: 1920, note: "App Store preview, iPhone 6.9\" and 6.5\" (15–30 s)" },
   "appstore-ipad": { width: 1200, height: 1600, note: "App Store preview, iPad 13\" (15–30 s)" },
+  // iOS 27 product page (WWDC26 session 205): the header, 21:9, and the search-results card, 3:2; 5–30 s muted loops, 30 or 60 fps.
+  "store-header": { width: 3840, height: 1646, note: "App Store product page header, iOS 27 (21:9, 5–30 s loop, muted)" },
+  "store-search": { width: 2880, height: 1920, note: "App Store search results card, iOS 27 (3:2, 5–30 s loop, always muted)" },
+  // App Store screenshots (stills), iPhone 6.9": the size App Store Connect asks for first.
+  "store-shot": { width: 1320, height: 2868, note: "App Store screenshot, iPhone 6.9\" (PNG, no alpha)" },
 } as const;
 export type FormatId = keyof typeof FORMATS;
 export const FormatId = z.enum(Object.keys(FORMATS) as [FormatId, ...FormatId[]]);

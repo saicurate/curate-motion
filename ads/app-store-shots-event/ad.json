@@ -1,0 +1,63 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-shots-event",
+  "title": "App Store screenshots: the Event Draw custom product page (O2 look)",
+  "brief": "Four App Store screenshots (iPhone 6.9\", 1320 × 2868 PNG) for the Event Draw custom product page the booth QR points to (founder 2026-10-25: \"yeah do it\"). The submitted O2 set's look exactly (blue linen, two-tone Geist SemiBold, tilted 3D phone, upright tidy garment row). 1 At a Curate event? Win the prize. · 2 Add your clothes to your closet. · 3 Do one try-on, see it on you. · 4 That's it. You're in the draw. (+ 'Official rules in the app. Apple is not a sponsor.'). Prize generic in captions; the prize photo shows only inside the real screen.",
+  "hook": "Screenshot 1, seen small: the draw's real 'Win a … ' screen with the prize photo on a tilted phone, under 'At a Curate event? / Win the prize.'",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-shot"
+  ],
+  "lengths": [
+    6
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "font.geist.regular.v1",
+    "device.curate.phone-generic.v1",
+    "stock.polyhaven.hdri-studio-small-09.v1",
+    "stock.polyhaven.linen-blue-ground.v1",
+    "screenshot.emma.b285-draw-waiting.v2",
+    "screenshot.emma.b285-draw-wardrobe.v2",
+    "screenshot.emma.b284-studio-offduty-tryon.v2",
+    "screenshot.emma.b285-draw-youre-in.v2",
+    "garment.emma.blazer-black.v2",
+    "garment.emma.sweater-crewneck-navy.v2",
+    "garment.emma.jeans-straight-light-wash.v2",
+    "garment.emma.sneakers-leather-white.v1",
+    "garment.emma.tee-black.v1",
+    "garment.emma.bag-tote-leather-black.v1",
+    "garment.emma.loafers-black.v1",
+    "music.mixkit.cat-walk-arulo.v1"
+  ],
+  "components": [
+    "Device (3d, phone-generic)",
+    "StableImg",
+    "Grain"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated.",
+    "The phone is Curate's own generic 3D model, not an iPhone.",
+    "The draw's screens are the app's real Event Draw screens over a faked draw (the Dyson test event's prize photo)."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-app-store-shots-event",
+    "at": "2026-10-25"
+  },
+  "gates": {
+    "G1": "pending",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": []
+}

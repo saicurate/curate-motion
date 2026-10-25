@@ -1,0 +1,142 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b285-draw-youre-in moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b285-draw-youre-in.v1",
+      "title": "Event Draw: You're in! The ticket (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b285-draw-youre-in/emma-b285.v1.mp4",
+          "sha256": "f5baa72bc16ad2a5ec7a003c9c7a4fe4b5e03ac4ded32a82462f76a6c7e9d7cc",
+          "bytes": 962153,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b285-draw-youre-in",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "durationSec": 3.432,
+      "fps": 60,
+      "moment": "b285-draw-youre-in",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Event CPP Shots 17P (simulator)",
+      "cleanStatusBar": true,
+      "marks": {}
+    },
+    {
+      "id": "footage.emma.b285-draw-youre-in.v2",
+      "title": "Event Draw: You're in! The ticket (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b285-draw-youre-in/emma-b285.v2.mp4",
+          "sha256": "dbdcb784aaf22907a8aa58cef429dd0fe5bffaff3908a25365fb8e173f9e2b0a",
+          "bytes": 960551,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b285-draw-youre-in",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "durationSec": 3.48,
+      "fps": 60,
+      "moment": "b285-draw-youre-in",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Event CPP Shots 17P (simulator)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

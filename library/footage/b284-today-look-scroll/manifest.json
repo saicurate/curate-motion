@@ -1,0 +1,143 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-today-look-scroll moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-today-look-scroll.v1",
+      "title": "Today: the art fair look, scrolled to For work and back (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-today-look-scroll/emma-b284.v1.mp4",
+          "sha256": "1aa86813d26d89adb30def424c0155e512e9d2a24f4708e633fe071672201ec3",
+          "bytes": 15751499,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-today-look-scroll",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/take.sh"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews-agent",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 13.063,
+      "fps": 120,
+      "moment": "b284-today-look-scroll",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": false,
+      "marks": {
+        "drag-220-760-0--330-1100": 5.12,
+        "drag-220-420-0-330-1100": 9.62
+      },
+      "notes": "Has the green charging battery in the status bar (override was --batteryState charged): superseded by v2, never use."
+    },
+    {
+      "id": "footage.emma.b284-today-look-scroll.v2",
+      "title": "Today: the art fair look, scrolled to For work and back (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-today-look-scroll/emma-b284.v2.mp4",
+          "sha256": "8350e1907c47899922ba6cc3aa644c12a77d4de433854a3fae043d0d3c1b64d4",
+          "bytes": 15790014,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-today-look-scroll",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/take.sh"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "supersedes": "footage.emma.b284-today-look-scroll.v1",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 12.823,
+      "fps": 120,
+      "moment": "b284-today-look-scroll",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "drag-220-760-0--330-1100": 4.89,
+        "drag-220-420-0-330-1100": 9.39
+      },
+      "notes": "Recorded 2026-10-24 on my own simulator (Previews 17PM) with simctl status_bar override 9:41, battery discharging 100% (plain, never the green charging battery), new look (v2 tab bar), first-time tips off (PROBE_TIPS done)."
+    }
+  ]
+}

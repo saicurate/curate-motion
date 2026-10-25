@@ -1,0 +1,80 @@
+{
+ "ad": "app-store-header-week",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 6.0,
+    "smooth": 6.0,
+    "variety": 7.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "c1 subtle v1: echo on the pushes (100 px/f, 8 samples, 5 px gaps); line + occasion too small at 360 px; the way back at 14 s smears (panel spring) with ghost cards"
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "c1 subtle v2 (Lambda, 4K): speed-aware samples, strip clean (comb 0.092 at 1.63 s, 100 px/f); seam 0.41 vs 3.6; the line and names read at 360 px. Left: at 13.0 s the six leave before Monday grows (a near-empty beat)"
+  },
+  {
+   "round": 3,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "c2 subtle v3 (Lambda, 4K): one hero at a time, neighbours step back; strip clean (comb 0.003 at 13.27 s); seam 0.27 vs 2.39; day names read at 360 px"
+  },
+  {
+   "round": 4,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "c1 subtle FINAL v3 (local, 4K): strip clean (comb 0.088 at 1.63 s, 100 px/f); seam 0.4 vs 3.67; no empty beat at 13 s (the six leave as Monday grows); line words leave no sliver"
+  },
+  {
+   "round": 5,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "c2 subtle FINAL v4 (local, 4K): strip clean (comb 0.003 at 13.27 s); seam 0.25 vs 2.36; one hero at a time"
+  }
+ ]
+}

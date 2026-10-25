@@ -1,0 +1,85 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-shots-v2",
+  "title": "App Store screenshots, set S-V2 (editorial)",
+  "brief": "Six App Store screenshots for iPhone 6.9\" (1320 × 2868 PNG, no alpha) in a bright high-fashion magazine look: oversized two-tone Geist headlines (key phrase Primary Black, the rest grey, like the app's front door), big real photography of Emma, her own garments as cut-outs with real shadows, the real build-284 screens in Apple's iPhone bezel. Colour comes from the photos, never from painted fields. One message per screenshot, the outcome not the feature (Scrnsht Studio's 7 principles, pasted by the founder 2026-10-24): 1 Always know what to wear. 2 Your closet, from your photos. 3 See it on you. 4 A look for every day. 5 Ask your stylist. 6 Your photos stay yours. (the app's own privacy-shield words). No ratings, reviews or claims we can't back.",
+  "hook": "Screenshot 1 is the value prop: a full-width magazine photo of Emma in her camel coat under 'Always know / what to wear.', her look laid out below it. The first three read as a row in search results at 25%.",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-shot"
+  ],
+  "lengths": [
+    6
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.logo-mark.v1",
+    "device.apple.iphone-17-pro-max-silver.v1",
+    "screenshot.emma.b284-wardrobe-rails.v1",
+    "screenshot.emma.b284-studio-offduty-tryon.v1",
+    "photo.emma.r12-dumbo-walk.v1",
+    "photo.emma.r26-ferry.v1",
+    "photo.emma.r04-park-autumn.v1",
+    "photo.emma.r30-walk-to-work.v1",
+    "photo.emma.r30-walk-to-work-tryon-tee-black.v1",
+    "photo.emma.r05-office.v1",
+    "photo.emma.r23-rainy-day.v1",
+    "photo.emma.r16-bookstore.v1",
+    "photo.emma.r10-night-out.v1",
+    "photo.emma.r08-beach-day.v1",
+    "photo.emma.r28-couch-cozy.v1",
+    "photo.emma.r24-dinner.v1",
+    "photo.emma.r01-coffee-shop.v1",
+    "photo.emma.r03-brooklyn-street.v1",
+    "photo.emma.r06-farmers-market.v1",
+    "photo.emma.r07-rooftop-golden-hour.v1",
+    "photo.emma.r13-winter-street.v1",
+    "photo.emma.r17-brunch.v1",
+    "photo.emma.r19-fall-game-day.v1",
+    "photo.emma.r21-museum-steps.v1",
+    "photo.emma.r22-stoop.v1",
+    "garment.emma.coat-wool-camel.v1",
+    "garment.emma.turtleneck-black.v1",
+    "garment.emma.jeans-straight-dark-wash.v1",
+    "garment.emma.boots-ankle-black.v1",
+    "garment.emma.jacket-denim.v1",
+    "garment.emma.scarf-plaid-camel.v1",
+    "garment.emma.tee-black.v1",
+    "garment.emma.camisole-satin-black.v1",
+    "garment.emma.skirt-midi-satin-camel.v1",
+    "garment.emma.heels-black.v1",
+    "zee.happy.still.v1"
+  ],
+  "components": [
+    "Device (bezel)",
+    "Piece",
+    "ContactShadow",
+    "StableImg"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+    "Emma is an AI-generated persona and her photos are AI-generated."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-app-store-shots-v2",
+    "at": "2026-10-24"
+  },
+  "gates": {
+    "G1": "pending",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": []
+}

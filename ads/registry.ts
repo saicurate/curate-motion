@@ -48,6 +48,38 @@ import * as demo5 from "./_demos/outfit-change";
 import demo5Spec from "./_demos/outfit-change/ad.json";
 import * as demo6 from "./_demos/satisfying-sort";
 import demo6Spec from "./_demos/satisfying-sort/ad.json";
+// The iOS 27 App Store header and search card (21:9 and 3:2 muted loops).
+import * as appStoreHeader from "./app-store-header";
+import appStoreHeaderSpec from "./app-store-header/ad.json";
+// Film B of the App Store header, v2 made in parallel (see ads/app-store-header-tryon/README.md).
+import * as appStoreHeaderTryOn from "./app-store-header-tryon";
+import appStoreHeaderTryOnSpec from "./app-store-header-tryon/ad.json";
+// Direction D of the App Store header, "Colour story" (see ads/app-store-header-colour/README.md).
+import * as appStoreHeaderColour from "./app-store-header-colour";
+import appStoreHeaderColourSpec from "./app-store-header-colour/ad.json";
+// Direction C of the App Store header, "A week of looks" (see ads/app-store-header-week/README.md).
+import * as appStoreHeaderWeek from "./app-store-header-week";
+import appStoreHeaderWeekSpec from "./app-store-header-week/ad.json";
+// The App Store header, the one film: A → B → C → the lockup, one 30 s loop (see ads/app-store-header-all/README.md).
+import * as appStoreHeaderAll from "./app-store-header-all";
+import appStoreHeaderAllSpec from "./app-store-header-all/ad.json";
+import * as appStoreShotsV1 from "./app-store-shots-v1";
+import appStoreShotsV1Spec from "./app-store-shots-v1/ad.json";
+// App Store screenshots, set S-V2 (editorial): six stills, iPhone 6.9" (ads/app-store-shots-v2/README.md).
+import * as appStoreShotsV2 from "./app-store-shots-v2";
+import appStoreShotsV2Spec from "./app-store-shots-v2/ad.json";
+// App Store screenshots, set S-V3 (the Essembl theme, product-led): six stills (ads/app-store-shots-v3/README.md).
+import * as appStoreShotsV3 from "./app-store-shots-v3";
+import appStoreShotsV3Spec from "./app-store-shots-v3/ad.json";
+// App Store previews: three App Previews from real build-284 screen recordings (ads/app-store-previews/README.md).
+import * as appStorePreviews from "./app-store-previews";
+import appStorePreviewsSpec from "./app-store-previews/ad.json";
+// App Store previews, hybrid: the header's world around the real build-284 recordings (ads/app-store-previews-hybrid/README.md).
+// App Store screenshots for the Event Draw custom product page, the O2 look (ads/app-store-shots-event/index.tsx).
+import * as appStoreShotsEvent from "./app-store-shots-event";
+import appStoreShotsEventSpec from "./app-store-shots-event/ad.json";
+import * as appStorePreviewsHybrid from "./app-store-previews-hybrid";
+import appStorePreviewsHybridSpec from "./app-store-previews-hybrid/ad.json";
 // The device study (phone frames, ads/_demos/device-study): never posted.
 import * as deviceStudy from "./_demos/device-study";
 import deviceStudySpec from "./_demos/device-study/ad.json";
@@ -84,5 +116,16 @@ export const ADS: AdModule[] = [
   { spec: AdSpec.parse(demo4Spec), component: demo4.SpeedRun, schema: demo4.schema, defaults: demo4.defaults, metadata: demo4.metadata },
   { spec: AdSpec.parse(demo5Spec), component: demo5.OutfitChange, schema: demo5.schema, defaults: demo5.defaults, metadata: demo5.metadata },
   { spec: AdSpec.parse(demo6Spec), component: demo6.SatisfyingSort, schema: demo6.schema, defaults: demo6.defaults, metadata: demo6.metadata },
+  { spec: AdSpec.parse(appStoreHeaderSpec), component: appStoreHeader.AppStoreHeader, schema: appStoreHeader.schema, defaults: appStoreHeader.defaults },
+  { spec: AdSpec.parse(appStoreHeaderTryOnSpec), component: appStoreHeaderTryOn.AppStoreHeaderTryOn, schema: appStoreHeaderTryOn.schema, defaults: appStoreHeaderTryOn.defaults },
+  { spec: AdSpec.parse(appStoreHeaderColourSpec), component: appStoreHeaderColour.AppStoreHeaderColour, schema: appStoreHeaderColour.schema, defaults: appStoreHeaderColour.defaults },
+  { spec: AdSpec.parse(appStoreHeaderWeekSpec), component: appStoreHeaderWeek.AppStoreHeaderWeek, schema: appStoreHeaderWeek.schema, defaults: appStoreHeaderWeek.defaults },
+  { spec: AdSpec.parse(appStoreHeaderAllSpec), component: appStoreHeaderAll.AppStoreHeaderAll, schema: appStoreHeaderAll.schema, defaults: appStoreHeaderAll.defaults },
+  { spec: AdSpec.parse(appStoreShotsV1Spec), component: appStoreShotsV1.AppStoreShotsV1, schema: appStoreShotsV1.schema, defaults: appStoreShotsV1.defaults },
+  { spec: AdSpec.parse(appStoreShotsV2Spec), component: appStoreShotsV2.AppStoreShotsV2, schema: appStoreShotsV2.schema, defaults: appStoreShotsV2.defaults },
+  { spec: AdSpec.parse(appStoreShotsV3Spec), component: appStoreShotsV3.AppStoreShotsV3, schema: appStoreShotsV3.schema, defaults: appStoreShotsV3.defaults },
+  { spec: AdSpec.parse(appStorePreviewsSpec), component: appStorePreviews.AppStorePreviews, schema: appStorePreviews.schema, defaults: appStorePreviews.defaults, metadata: appStorePreviews.metadata },
+  { spec: AdSpec.parse(appStoreShotsEventSpec), component: appStoreShotsEvent.AppStoreShotsEvent, schema: appStoreShotsEvent.schema, defaults: appStoreShotsEvent.defaults },
+  { spec: AdSpec.parse(appStorePreviewsHybridSpec), component: appStorePreviewsHybrid.AppStorePreviewsHybrid, schema: appStorePreviewsHybrid.schema, defaults: appStorePreviewsHybrid.defaults, metadata: appStorePreviewsHybrid.metadata },
   { spec: AdSpec.parse(deviceStudySpec), component: deviceStudy.DeviceStudy, schema: deviceStudy.schema, defaults: deviceStudy.defaults },
 ];

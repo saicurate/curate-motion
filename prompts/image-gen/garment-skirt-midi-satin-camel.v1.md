@@ -8,7 +8,7 @@ outcome: worked
 rating: 4
 why: "Picked first take: logo-free, the whole piece in frame, soft even studio light."
 inputs: []
-outputs: [garment.emma.skirt-midi-satin-camel.v1]
+outputs: [garment.emma.skirt-midi-satin-camel.v1, garment.emma.skirt-midi-satin-camel.v2]
 parents: [prompt.image-gen.garment-product-shot.v1]
 tags:
   - "persona:emma"

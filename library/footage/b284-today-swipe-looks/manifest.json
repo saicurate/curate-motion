@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-today-swipe-looks moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-today-swipe-looks.v1",
+      "title": "Two looks for one occasion, swiped sideways in the band (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-today-swipe-looks/emma-b284.v1.mp4",
+          "sha256": "e753fa5c356cc96200a83888f7331d9c2a8990f6cda976e1e2fa7bd4ab840a79",
+          "bytes": 6045180,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-today-swipe-looks",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 7.06,
+      "fps": 120,
+      "moment": "b284-today-swipe-looks",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "drag-360-440-280-0-300": 2.4,
+        "drag-80-440-280-0-300": 4.8
+      }
+    }
+  ]
+}

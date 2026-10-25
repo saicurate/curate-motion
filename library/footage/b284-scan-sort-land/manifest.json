@@ -1,0 +1,145 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-scan-sort-land moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.curate.b284-scan-sort-land.v1",
+      "title": "Extract all on the empty Wardrobe: the sort, the items found, the landing (new look, build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-scan-sort-land/probe-b284.v1.mp4",
+          "sha256": "dfbc2c81d2793d39fb0b4a55894fb29c93b89a1d12928607baa70a33bc8549c4",
+          "bytes": 46131149,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-scan-sort-land",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/take.sh"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews-agent",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 22.068,
+      "fps": 60,
+      "moment": "b284-scan-sort-land",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "probe",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": false,
+      "marks": {
+        "extract-looking": 2.63,
+        "extract-fan": 9.62,
+        "extract-land": 14.13
+      },
+      "notes": "Has the green charging battery in the status bar (override was --batteryState charged): superseded by v2, never use."
+    },
+    {
+      "id": "footage.curate.b284-scan-sort-land.v2",
+      "title": "Extract all on the empty Wardrobe: the sort, the items found, the landing (new look, build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-scan-sort-land/probe-b284.v2.mp4",
+          "sha256": "c5ffd401d25853f2a88d5027158abc94f3277abf1336a67a0f6f510a50bfd89e",
+          "bytes": 45851373,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-scan-sort-land",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/take.sh"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "supersedes": "footage.curate.b284-scan-sort-land.v1",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 22.142,
+      "fps": 60,
+      "moment": "b284-scan-sort-land",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "probe",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "extract-looking": 2.7,
+        "extract-fan": 9.71,
+        "extract-land": 14.21
+      },
+      "notes": "Recorded 2026-10-24 on my own simulator (Previews 17PM) with simctl status_bar override 9:41, battery discharging 100% (plain, never the green charging battery), new look (v2 tab bar), first-time tips off (PROBE_TIPS done)."
+    }
+  ]
+}

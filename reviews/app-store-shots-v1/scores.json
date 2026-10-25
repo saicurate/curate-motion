@@ -1,0 +1,50 @@
+{
+ "ad": "app-store-shots-v1",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 7.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 7.0,
+    "sound": null,
+    "brand": 6.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "stills set; shot 1 the tote covered the bezel (Apple rule), phones cropped at the right edge, shot 4 grid ran off the bottom, shot 5 no person and Zee invisible"
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "stills set rendered on Lambda; bezels whole and uncovered; every headline readable at 360 px; colour per the founder's ask (store set only); left: no build-284 Today/Chat capture, so shots 4-5 carry no phone"
+  },
+  {
+   "round": 3,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 9.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "S-V1 v2 (the founder: cheap, subtle colours): one quiet palette (oat, dusty blue, stone, sage, blush, sand) from her photos pushed to Mist; one hero each; the phone the same size and place on 1-2, her photo on the same top line on 3/5; props only behind the phone; nothing tilted; bezels whole and uncovered"
+  }
+ ]
+}

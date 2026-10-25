@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-studio-tray-pick moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-studio-tray-pick.v1",
+      "title": "Picking items from the wardrobe tray onto the board (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-studio-tray-pick/emma-b284.v1.mp4",
+          "sha256": "27c9a2f90553c13534b6b29071ef85f5e6671d5b7b7a5ea06cfb92f6b215a9a1",
+          "bytes": 7182389,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-studio-tray-pick",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 9.058,
+      "fps": 60,
+      "moment": "b284-studio-tray-pick",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "tap-boardtrayslot-shirt": 4.41,
+        "tap-boardtrayslot-navy": 6.41
+      }
+    }
+  ]
+}

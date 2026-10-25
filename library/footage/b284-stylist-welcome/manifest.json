@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-stylist-welcome moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-stylist-welcome.v1",
+      "title": "Welcome after sign-up: Zee waves; she renames him on his name tag (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-stylist-welcome/emma-b284.v1.mp4",
+          "sha256": "af3619620a0fc85fab6d001e2922f234cd2101918da4c8d507fa4c4b1e8ec48c",
+          "bytes": 11720609,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-stylist-welcome",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 12.563,
+      "fps": 59.94,
+      "moment": "b284-stylist-welcome",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "welcome-emma": 1.7,
+        "tap-stylistwelcometag": 6,
+        "type-stylistwelcomefield-coco": 7.4,
+        "unfocus": 9.8
+      }
+    }
+  ]
+}

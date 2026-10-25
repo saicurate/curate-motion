@@ -46,7 +46,10 @@
           "1x1",
           "16x9",
           "appstore-iphone",
-          "appstore-ipad"
+          "appstore-ipad",
+          "store-header",
+          "store-search",
+          "store-shot"
         ]
       }
     },

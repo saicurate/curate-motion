@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-scan-sort-fan-land moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-scan-sort-fan-land.v1",
+      "title": "The scan on the Wardrobe tab: her photos sorted into piles, her items drawn in a fan, the landing in her rails (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-scan-sort-fan-land/emma-b284.v1.mp4",
+          "sha256": "3ab3d7de4b2b95e9477705d9ce8b62ce25ccfd0471021646efb85b7f78558836",
+          "bytes": 48275966,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-scan-sort-fan-land",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 20.092,
+      "fps": 60,
+      "moment": "b284-scan-sort-fan-land",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "extract-looking": 1.8,
+        "extract-fan": 8.81,
+        "extract-land": 13.3
+      }
+    }
+  ]
+}

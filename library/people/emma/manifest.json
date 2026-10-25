@@ -363,6 +363,60 @@
       ],
       "approvedBy": "founder (said: approve everything, 2026-10-15)",
       "approvedAt": "2026-10-15"
+    },
+    {
+      "id": "tryon.emma.r30-tee-black.v1",
+      "title": "Try-on: walk to work, in the black tee (the Studio look Off-duty black)",
+      "files": [
+        {
+          "role": "original",
+          "path": "people/emma/tryon/r30-tee-black.v1.jpg",
+          "sha256": "481620f3ac4b4e1eba29e597bf32229784c5c4a195feea7c41aed3ff08c8a928",
+          "bytes": 268823,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "generated",
+        "model": "curate-tryon",
+        "from": []
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "tryon",
+      "dims": {
+        "w": 900,
+        "h": 1125
+      },
+      "wearing": [
+        "garment.emma.tee-black.v1"
+      ]
     }
   ]
 }

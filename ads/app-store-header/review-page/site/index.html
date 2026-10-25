@@ -1,0 +1,333 @@
+<title>App Store Header Films</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+<style>
+:root { --ground:#f6f6f6; --ink:#181818; --t2:#656565; --t3:#8b8b8b; --line:#e2e2e0; color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin:0; background: var(--ground); color: var(--ink); font: 15px/1.5 Geist, -apple-system, "Helvetica Neue", Arial, sans-serif; padding: 28px 16px 72px; }
+main { max-width: 1120px; margin: 0 auto; display: grid; gap: 64px; }
+h1 { font-size: 30px; font-weight: 500; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+.lede { color: var(--t2); margin: 8px 0 0; max-width: 76ch; }
+.notes { margin: 14px 0 0; padding: 14px 18px; background: #fff; border-radius: 14px; border: 1px solid var(--line); color: var(--t2); font-size: 14px; display: grid; gap: 4px; }
+.dh { display: flex; align-items: center; gap: 10px; } .dh h2 { font-size: 24px; font-weight: 500; margin: 0; letter-spacing: -.01em; }
+.dk { width: 32px; height: 32px; border-radius: 16px; background: var(--ink); color: #fff; display: grid; place-items: center; font-size: 15px; font-weight: 500; flex: none; }
+.var { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); }
+.vh { display: flex; align-items: center; gap: 10px; } .vh h3 { font-size: 19px; font-weight: 500; margin: 0; }
+.vk { padding: 3px 10px; border-radius: 12px; background: #fff; border: 1px solid var(--line); font-size: 13px; font-weight: 600; }
+.idea { color: var(--t2); margin: 6px 0 14px; max-width: 78ch; }
+.hero { width: 100%; height: auto; border-radius: 16px; display: block; box-shadow: 0 10px 30px rgba(20,20,20,.08); background: #eee; }
+.cap { font-size: 13px; color: var(--t3); margin: 8px 0 16px; }
+.cap2 { font-size: 13px; color: var(--t2); margin: 0 0 8px; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 12px; }
+.board figure, .detail figure { margin: 0; } .board img { width: 100%; border-radius: 10px; display: block; border: 1px solid var(--line); }
+figcaption { font-size: 12.5px; color: var(--t3); margin-top: 4px; }
+.detail { display: flex; gap: 12px; flex-wrap: wrap; margin: 6px 0 4px; }
+.detail img { width: 220px; height: 220px; display: block; border-radius: 10px; border: 1px solid var(--line); image-rendering: auto; }
+.phones { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 18px; }
+.ppimg { width: 320px; border-radius: 40px; display: block; border: 1px solid var(--line); }
+.verdict { margin-top: 16px; display: flex; gap: 10px; }
+.var.old { opacity: .78; } .var.old .board { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 760px; }
+.var.old .vk { background: transparent; color: var(--t3); }
+.coming { margin-top: 18px; padding: 28px 22px; border: 1.5px dashed #cfcfcc; border-radius: 16px; color: var(--t2); background: #fbfbfb; }
+.ph { width: 393px; height: 852px; zoom: .8142; border-radius: 54px; position: relative; overflow: hidden; background: #fff; border: 1px solid #d8d9d5; box-shadow: 0 14px 40px rgba(20,20,20,.10); }
+.sb { position: absolute; top: 18px; left: 44px; right: 34px; display: flex; justify-content: space-between; font-size: 17px; font-weight: 600; z-index: 2; }
+.sbr { display: flex; gap: 5px; align-items: center; } .sbr i { width: 4px; height: 10px; background: #111; border-radius: 1px; } .sbr b { width: 26px; height: 12px; border: 1.5px solid #111; border-radius: 4px; margin-left: 4px; }
+.hdr { position: absolute; top: 0; left: 0; width: 393px; height: 168px; overflow: hidden; }
+.hdr video, .hdr img { width: 393px; height: 168px; object-fit: cover; display: block; }
+.back { position: absolute; top: 58px; left: 16px; width: 36px; height: 36px; border-radius: 18px; background: rgba(255,255,255,.85); display: grid; place-items: center; font-size: 26px; z-index: 2; }
+.app { position: absolute; top: 188px; left: 20px; right: 20px; display: flex; gap: 14px; align-items: center; }
+.icon { width: 92px; height: 92px; border-radius: 21px; flex: none; }
+.an { font-size: 21px; font-weight: 600; } .as { font-size: 14px; color: var(--t2); }
+.get { margin-top: 10px; width: 74px; height: 30px; border-radius: 15px; background: #0a84ff; color: #fff; display: grid; place-items: center; font-size: 15px; font-weight: 700; }
+.shots { position: absolute; top: 308px; left: 20px; display: flex; gap: 10px; }
+.shots img { width: 200px; height: 434px; border-radius: 20px; border: 1px solid var(--line); object-fit: cover; object-position: top; }
+.sbar { position: absolute; top: 60px; left: 16px; right: 16px; height: 40px; border-radius: 12px; background: #eeeff1; padding: 9px 12px; font-size: 16px; color: #555; }
+.scard { position: absolute; top: 118px; left: 16px; width: 361px; height: 241px; border-radius: 18px; overflow: hidden; }
+.scard img, .scard video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.srow { top: 374px; left: 16px; right: 16px; } .srow .icon { width: 62px; height: 62px; border-radius: 14px; } .srow .get { margin: 0 0 0 auto; }
+.ghost { position: absolute; top: 470px; left: 16px; right: 16px; height: 330px; border-radius: 18px; background: #f2f3f1; }
+
+.pk-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px}
+.pk{font:inherit;font-size:14px;line-height:20px;font-weight:600;padding:7px 16px;border-radius:999px;border:1.5px solid #181818;background:#FFFFFF;color:#181818;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.pk:hover{background:#F6F7F7}
+.pk.on{background:#181818;color:#FFFFFF}
+.pk.on::before{content:'\2713  '}
+.pk-yn{padding:7px 14px}
+.pk-q{font-size:13px;font-weight:600;color:#656565}
+.pk-sum{margin:0 0 22px;padding:14px 16px;border-radius:14px;background:#181818;color:#FFFFFF}
+.pk-sum h3{margin:0 0 4px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#B3B3B3}
+.pk-sum p{margin:0;font-size:17px;line-height:26px;color:#FFFFFF}
+.pk-sum b{color:#FFFFFF}
+#pk-toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom, 0px));transform:translateX(-50%);padding:10px 18px;border-radius:999px;background:#181818;color:#FFFFFF;font-size:14px;line-height:20px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:50;max-width:calc(100% - 32px)}
+#pk-toast.show{opacity:1}
+</style>
+<main>
+  <header>
+    <h1>The App Store header, as films</h1>
+    <p class="lede">Every direction and variant for iOS 27’s product-page header (21:9) and search card (3:2), made in the motion studio: her real photos and wardrobe, the real build-284 screens in Apple’s iPhone bezel, Geist type, real light and shadow. The App Store takes one header video, so the one film (30 s, all three ideas) comes first; the single films (15 s each) follow. Pick one or more; the picks go to G3 and then the final cut.</p>
+    <div class="notes">
+      <div>Sharp: full-size stills, shown at twice their size on this page, with 100% crops under each variant so the detail can be judged.</div>
+      <div>Subtle colour: A2 and B3 are tonal (each set’s colour taken from her photos and pushed close to Mist, one hero at a time). The loud colour-blocked versions sit at the end of their direction, marked superseded, still pickable.</div>
+      <div>Real: every photo, cut-out, try-on and app screen is ours (Emma is our AI persona). The screens are build 284 on her data. Not uploaded to the App Store; it would ship with the new-look App Store release. Zee’s film is parked.</div>
+    </div>
+  </header>
+  <section class="dir">
+  <div class="dh"><span class="dk">1</span><h2>The one film</h2></div>
+  <p class="idea">The App Store takes one header video and one search card, so the directions become one 30 s loop in the subtle palette: A (her photos give up the coat, jacket and scarf; her real Wardrobe) → B (the black tee onto her photo; Studio’s real try-on) → C (a week of looks) → the Curate lockup → back to the first frame. The first 5 s land on their own. Every beat arrives on the same slow camera glide through a soft column of light: one camera through one studio.</p>
+  <div class="var">
+  <div class="vh"><span class="vk">ALL</span><h3>A → B → C → Curate, 30 s</h3></div>
+  <p class="idea">A2 tonal, B3 and C2 subtle, each its own film reused inside this one; the lockup is the mark with “Curate” beside it and the app’s own line, “Try it. Style it. Wear it.”</p>
+  <video class="hero" src="media/7da25607ccfcbaf5.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1920 wide (app-store-header-all-one_master_store-header_30s_v1.mp4). 21:9 header, 30 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/1b01006d5d777e13.jpg" alt=""><figcaption>1.50 s</figcaption></figure><figure><img src="media/1a863dadd5269d74.jpg" alt=""><figcaption>4.50 s</figcaption></figure><figure><img src="media/167bcd185a03ccfa.jpg" alt=""><figcaption>10.00 s</figcaption></figure><figure><img src="media/5652341ce6865a9d.jpg" alt=""><figcaption>16.00 s</figcaption></figure><figure><img src="media/cf7ca6eff8f658fe.jpg" alt=""><figcaption>23.83 s</figcaption></figure><figure><img src="media/b32c34590ded4eb5.jpg" alt=""><figcaption>26.00 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/69d5874d912feaa9.jpg" alt=""><figcaption>3:2 · 4.50 s</figcaption></figure><figure class="s32"><img src="media/446a61cfc678e3b1.jpg" alt=""><figcaption>3:2 · 10.00 s</figcaption></figure><figure class="s32"><img src="media/d3abc1d43147b770.jpg" alt=""><figcaption>3:2 · 23.83 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/6b5d7ea2a7e2e779.jpg" alt=""><figcaption>100% crop · coat · 4.50 s</figcaption></figure><figure class="crop"><img src="media/1a8789f6519f9162.jpg" alt=""><figcaption>100% crop · face · 10.00 s</figcaption></figure><figure class="crop"><img src="media/fdd0ad1c354bce47.jpg" alt=""><figcaption>100% crop · card · 23.83 s</figcaption></figure><figure class="crop"><img src="media/8e202b4f80416725.jpg" alt=""><figcaption>100% crop · mark · 26.00 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page (iOS 27)</p><div class="ph"><div class="hdr"><video src="media/7da25607ccfcbaf5.mp4" autoplay muted loop playsinline></video></div><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="back">‹</div>
+  <div class="app"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div><div class="get">Get</div></div></div>
+  <div class="shots"><img src="media/85791581ec3ef544.jpg" alt=""><img src="media/e2e151efb51821cd.jpg" alt=""></div></div></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><video src="media/cd2911387d6b2445.mp4" autoplay muted loop playsinline></video></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="ALL">Pick ALL</button></span></div>
+</div>
+</section><section class="dir">
+  <div class="dh"><span class="dk">A</span><h2>Pulled from her photos</h2></div>
+  <p class="idea">What she’s wearing lifts out of her real photos (the coat from DUMBO, the denim jacket from the ferry, the scarf from the park); the photos fall away and the pieces become her real Wardrobe (build 284) on the phone.</p>
+  <div class="var">
+  <div class="vh"><span class="vk">A1</span><h3>Studio white</h3></div>
+  <p class="idea">The Mist studio sweep; her photos as lit prints.</p>
+  <video class="hero" src="media/f3b721452c991062.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-roll_master_store-header_15s_v2.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/d8ebddf311f0b680.jpg" alt=""><figcaption>0.60 s</figcaption></figure><figure><img src="media/741b6d6cc7897588.jpg" alt=""><figcaption>2.20 s</figcaption></figure><figure><img src="media/55b306c70640efb2.jpg" alt=""><figcaption>3.60 s</figcaption></figure><figure><img src="media/c28d97b8fc20105d.jpg" alt=""><figcaption>9.00 s</figcaption></figure><figure><img src="media/e3620414d94966a9.jpg" alt=""><figcaption>13.40 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/2bc07e66f07221e6.jpg" alt=""><figcaption>3:2 · 2.20 s</figcaption></figure><figure class="s32"><img src="media/c3df46eed64b63b7.jpg" alt=""><figcaption>3:2 · 9.00 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/8b166ffe83fee4e5.jpg" alt=""><figcaption>100% crop · face · 3.60 s</figcaption></figure><figure class="crop"><img src="media/d312bb85d1be114d.jpg" alt=""><figcaption>100% crop · coat · 3.60 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page (iOS 27)</p><div class="ph"><div class="hdr"><video src="media/f3b721452c991062.mp4" autoplay muted loop playsinline></video></div><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="back">‹</div>
+  <div class="app"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div><div class="get">Get</div></div></div>
+  <div class="shots"><img src="media/85791581ec3ef544.jpg" alt=""><img src="media/e2e151efb51821cd.jpg" alt=""></div></div></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/c3df46eed64b63b7.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="A1">Pick A1</button></span></div>
+</div><div class="var">
+  <div class="vh"><span class="vk">A2</span><h3>Tonal</h3></div>
+  <p class="idea">One soft tonal ground at a time, each photo’s own colour pushed close to Mist: blush stone as the coat lifts from DUMBO, dusty blue for the ferry’s jacket, oat for the park’s scarf, sand under the phone. One hero at a time; the others dim back.</p>
+  <video class="hero" src="media/345c61e72879f58b.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-roll-tonal_master_store-header_15s_v1.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/d14cc5b1b24729a3.jpg" alt=""><figcaption>0.60 s</figcaption></figure><figure><img src="media/8a0f59ef3f30f1e4.jpg" alt=""><figcaption>1.90 s</figcaption></figure><figure><img src="media/bf80d928f1be10e6.jpg" alt=""><figcaption>3.20 s</figcaption></figure><figure><img src="media/55caab29d0087de0.jpg" alt=""><figcaption>4.60 s</figcaption></figure><figure><img src="media/8f2e1dd04f661a9b.jpg" alt=""><figcaption>9.00 s</figcaption></figure><figure><img src="media/5039ff9a90c3015d.jpg" alt=""><figcaption>13.40 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/69498c89b563d810.jpg" alt=""><figcaption>3:2 · 1.90 s</figcaption></figure><figure class="s32"><img src="media/32781a90c5a70f1e.jpg" alt=""><figcaption>3:2 · 9.00 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/4b1f6f546634b8fa.jpg" alt=""><figcaption>100% crop · face · 4.60 s</figcaption></figure><figure class="crop"><img src="media/0135a34b8cecf83e.jpg" alt=""><figcaption>100% crop · coat · 4.60 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page (iOS 27)</p><div class="ph"><div class="hdr"><video src="media/345c61e72879f58b.mp4" autoplay muted loop playsinline></video></div><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="back">‹</div>
+  <div class="app"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div><div class="get">Get</div></div></div>
+  <div class="shots"><img src="media/85791581ec3ef544.jpg" alt=""><img src="media/e2e151efb51821cd.jpg" alt=""></div></div></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/32781a90c5a70f1e.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="A2">Pick A2</button></span></div>
+</div><div class="var old">
+  <div class="vh"><span class="vk">A2-loud</span><h3>Colour-blocked (superseded)</h3></div>
+  <p class="idea">Superseded: saturated blue, brick and orange fields read cheap (the founder, 2026-10-24: “subtle colours”). Kept as a version; A2 is the subtle one.</p>
+  <div class="board"><figure><img src="media/4ad0b82a86429503.jpg" alt=""><figcaption>2.20 s</figcaption></figure><figure><img src="media/7c2ccdcda14fd213.jpg" alt=""><figcaption>3.60 s</figcaption></figure><figure><img src="media/5411d1fda63dba76.jpg" alt=""><figcaption>9.00 s</figcaption></figure></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="A2-loud">Pick A2-loud</button></span></div>
+</div>
+</section><section class="dir">
+  <div class="dh"><span class="dk">B</span><h2>See it on you</h2></div>
+  <p class="idea">Her walk-to-work photo as a big lit print with the black tee hovering beside it; the tee flies onto her and Studio's real try-on runs down over her under a light edge while the camera pushes in and the street moves behind her (her cut-out over the plate, two layers); the print slides aside and the phone rises with build 284's Studio: the Off-duty black board with her black-tee try-on.</p>
+  <div class="var">
+  <div class="vh"><span class="vk">B1</span><h3>Mist studio</h3></div>
+  
+  <video class="hero" src="media/9824395a8600f508.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-tryon_master_store-header_15s_v6.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/a98d449606aebb39.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/7c956d23c3335e7b.jpg" alt=""><figcaption>1.20 s</figcaption></figure><figure><img src="media/2e8c334ac122323c.jpg" alt=""><figcaption>2.00 s</figcaption></figure><figure><img src="media/830f90c6a8f4da72.jpg" alt=""><figcaption>2.75 s</figcaption></figure><figure><img src="media/ec5f885573ea5858.jpg" alt=""><figcaption>4.30 s</figcaption></figure><figure><img src="media/31a6951ed3e08cd0.jpg" alt=""><figcaption>8.00 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/0344ef8f8ac4ba80.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure><figure class="s32"><img src="media/b453ead76ff9b97e.jpg" alt=""><figcaption>3:2 · 2.75 s</figcaption></figure><figure class="s32"><img src="media/f5f58188f3f82cec.jpg" alt=""><figcaption>3:2 · 4.30 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/a19cf4fa06baf301.jpg" alt=""><figcaption>100% crop · face · 2.75 s</figcaption></figure><figure class="crop"><img src="media/e9d5c1e87f346880.jpg" alt=""><figcaption>100% crop · tee · 2.75 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page</p><img class="ppimg" src="media/39b8250b14bfa032.jpg" alt=""></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/b54aa2375e288ab9.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="B1">Pick B1</button></span></div>
+</div><div class="var">
+  <div class="vh"><span class="vk">B3</span><h3>Tonal</h3></div>
+  <p class="idea">The same film on a subtle tonal set: pale dusty blue before the try-on, soft blush oat once she’s wearing the black tee; softer, wider shadows, more air.</p>
+  <video class="hero" src="media/05aea59caee1b9e8.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-tryon-b3_master_store-header_15s_v1.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/bc085bf3e3f36ebf.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/0b5b3b1c186366b1.jpg" alt=""><figcaption>1.20 s</figcaption></figure><figure><img src="media/07a6dc91aadfa41e.jpg" alt=""><figcaption>2.00 s</figcaption></figure><figure><img src="media/d5af6ecb63584ddd.jpg" alt=""><figcaption>2.75 s</figcaption></figure><figure><img src="media/c18dd57e74d45142.jpg" alt=""><figcaption>4.30 s</figcaption></figure><figure><img src="media/794f3442503a3602.jpg" alt=""><figcaption>8.00 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/3270e48476387335.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure><figure class="s32"><img src="media/67ee729c9bf7b994.jpg" alt=""><figcaption>3:2 · 2.75 s</figcaption></figure><figure class="s32"><img src="media/c4049029de769bb9.jpg" alt=""><figcaption>3:2 · 4.30 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/c3f8a81364c82066.jpg" alt=""><figcaption>100% crop · face · 2.75 s</figcaption></figure><figure class="crop"><img src="media/616c1fa063d01718.jpg" alt=""><figcaption>100% crop · tee · 2.75 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page</p><img class="ppimg" src="media/c45bfba701686c98.jpg" alt=""></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/8efa2baab5cd2542.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="B3">Pick B3</button></span></div>
+</div><div class="var old">
+  <div class="vh"><span class="vk">B2</span><h3>Colour-blocked set (superseded)</h3></div>
+  <p class="idea">Superseded: the saturated set read cheap (the founder, 2026-10-24: “subtle colours”). Kept as a version; B3 is the subtle one.</p>
+  <div class="board"><figure><img src="media/13a4e4be030beb21.jpg" alt=""><figcaption>1.20 s</figcaption></figure><figure><img src="media/931dba94ac487c9c.jpg" alt=""><figcaption>2.75 s</figcaption></figure><figure><img src="media/09ecce7c7388a4a9.jpg" alt=""><figcaption>8.00 s</figcaption></figure></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="B2">Pick B2</button></span></div>
+</div>
+</section><section class="dir">
+  <div class="dh"><span class="dk">C</span><h2>A week of looks</h2></div>
+  <p class="idea">Monday to Sunday, a look from Emma's own wardrobe each day, laid flat on its own fashion-campaign colour set; the close is the whole week as seven cards, "A look for every day." and the Curate lockup.</p>
+  <div class="var">
+  <div class="vh"><span class="vk">C1</span><h3>week-c1</h3></div>
+  
+  <video class="hero" src="media/975b44357f4ece72.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-week-c1-subtle_master_store-header_15s_v3.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/307714ac964d2431.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/517f097403d52a84.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/9698551d92eaeead.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/b673f2262b2fd2f5.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/8f4baad2ec22fa8b.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/14e221fba4ece390.jpg" alt=""><figcaption>0.00 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/fc9c7d00b256a598.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure><figure class="s32"><img src="media/51738b1b75e85500.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure><figure class="s32"><img src="media/46ba775041a306be.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/cb6db4a45efef1bf.jpg" alt=""><figcaption>100% crop · detail · 0.00 s</figcaption></figure><figure class="crop"><img src="media/3f9189bacc14f29c.jpg" alt=""><figcaption>100% crop · detail · 0.00 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page (iOS 27)</p><div class="ph"><div class="hdr"><video src="media/975b44357f4ece72.mp4" autoplay muted loop playsinline></video></div><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="back">‹</div>
+  <div class="app"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div><div class="get">Get</div></div></div>
+  <div class="shots"><img src="media/85791581ec3ef544.jpg" alt=""><img src="media/e2e151efb51821cd.jpg" alt=""></div></div></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/7c60a5c648ee4ba8.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="C1">Pick C1</button></span></div>
+</div><div class="var">
+  <div class="vh"><span class="vk">C2</span><h3>week-c2</h3></div>
+  
+  <video class="hero" src="media/05160677b76e0196.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-week-c2-subtle_master_store-header_15s_v4.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/e2cb9eb13348b65b.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/e7eae6bfb0ce627a.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/34596fc77f8f5815.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/5652341ce6865a9d.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/0fe89557c096ee1d.jpg" alt=""><figcaption>0.00 s</figcaption></figure><figure><img src="media/26894182cfeae49d.jpg" alt=""><figcaption>0.00 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/620ffc43b1a33ca8.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure><figure class="s32"><img src="media/973d952056bd35ee.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure><figure class="s32"><img src="media/fbc8a177d8a5c71f.jpg" alt=""><figcaption>3:2 · 0.00 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/48b257d58e62b3f3.jpg" alt=""><figcaption>100% crop · detail · 0.00 s</figcaption></figure><figure class="crop"><img src="media/7f7328ed17c64993.jpg" alt=""><figcaption>100% crop · detail · 0.00 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page (iOS 27)</p><div class="ph"><div class="hdr"><video src="media/05160677b76e0196.mp4" autoplay muted loop playsinline></video></div><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="back">‹</div>
+  <div class="app"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div><div class="get">Get</div></div></div>
+  <div class="shots"><img src="media/85791581ec3ef544.jpg" alt=""><img src="media/e2e151efb51821cd.jpg" alt=""></div></div></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/39a9c0f3090897ce.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="C2">Pick C2</button></span></div>
+</div><div class="var old">
+  <div class="vh"><span class="vk">C1-bold</span><h3>week-c1-bold</h3></div>
+  <p class="idea">Superseded: the loud first cut (the founder, 2026-10-24: “subtle colours”). Kept as a version.</p>
+  <div class="board"><figure><img src="media/e0fe7170db5e0f32.jpg" alt=""><figcaption>12.00 s</figcaption></figure></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="C1-bold">Pick C1-bold</button></span></div>
+</div><div class="var old">
+  <div class="vh"><span class="vk">C2-bold</span><h3>week-c2-bold</h3></div>
+  <p class="idea">Superseded: the loud first cut (the founder, 2026-10-24: “subtle colours”). Kept as a version.</p>
+  <div class="board"><figure><img src="media/c5436b40a177d3d7.jpg" alt=""><figcaption>12.00 s</figcaption></figure></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="C2-bold">Pick C2-bold</button></span></div>
+</div>
+</section><section class="dir">
+  <div class="dh"><span class="dk">D</span><h2>Colour story</h2></div>
+  <p class="idea">Her wardrobe by colour.</p>
+  <div class="var">
+  <div class="vh"><span class="vk">D1</span><h3>colour-d1</h3></div>
+  
+  <video class="hero" src="media/ec447e6684d5e1c8.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-colour-d1-quiet_master_store-header_15s_v2.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/1c9258ac86b9a720.jpg" alt=""><figcaption>1.60 s</figcaption></figure><figure><img src="media/8be5cdc4d4625781.jpg" alt=""><figcaption>3.60 s</figcaption></figure><figure><img src="media/5908b50208fca5b0.jpg" alt=""><figcaption>4.35 s</figcaption></figure><figure><img src="media/382fe3d2101368a7.jpg" alt=""><figcaption>5.20 s</figcaption></figure><figure><img src="media/e842446b1762be88.jpg" alt=""><figcaption>6.80 s</figcaption></figure><figure><img src="media/abcac5e2a89457aa.jpg" alt=""><figcaption>8.40 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/e162c8b27a1eb23f.jpg" alt=""><figcaption>3:2 · 1.60 s</figcaption></figure><figure class="s32"><img src="media/d9b973d6bd9f389e.jpg" alt=""><figcaption>3:2 · 5.20 s</figcaption></figure><figure class="s32"><img src="media/9404ee9452dfdb49.jpg" alt=""><figcaption>3:2 · 8.40 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/e5391014ffc3b9e0.jpg" alt=""><figcaption>100% crop · detail · 6.80 s</figcaption></figure><figure class="crop"><img src="media/83293c29991a95d8.jpg" alt=""><figcaption>100% crop · detail · 6.80 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page (iOS 27)</p><div class="ph"><div class="hdr"><video src="media/ec447e6684d5e1c8.mp4" autoplay muted loop playsinline></video></div><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="back">‹</div>
+  <div class="app"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div><div class="get">Get</div></div></div>
+  <div class="shots"><img src="media/85791581ec3ef544.jpg" alt=""><img src="media/e2e151efb51821cd.jpg" alt=""></div></div></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/afd38a5d10ffe3ff.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="D1">Pick D1</button></span></div>
+</div><div class="var">
+  <div class="vh"><span class="vk">D2</span><h3>colour-d2</h3></div>
+  
+  <video class="hero" src="media/d226e1e3fe82b978.mp4" autoplay muted loop playsinline></video>
+  <p class="cap">Draft loop, rendered full size, shown here at 1600 wide (app-store-header-colour-d2-quiet_master_store-header_15s_v2.mp4). 21:9 header, 15 s, muted, loops. Stills at 3840 × 1646 and 2880 × 1920.</p>
+  <div class="board"><figure><img src="media/aec8bd3a1aa559d1.jpg" alt=""><figcaption>1.60 s</figcaption></figure><figure><img src="media/81ce1aaa6696750c.jpg" alt=""><figcaption>3.40 s</figcaption></figure><figure><img src="media/aa79c3099dfdb64f.jpg" alt=""><figcaption>5.00 s</figcaption></figure><figure><img src="media/2876e1c6ba2e0081.jpg" alt=""><figcaption>6.60 s</figcaption></figure><figure><img src="media/a64ad77b5e9e2013.jpg" alt=""><figcaption>8.20 s</figcaption></figure><figure><img src="media/f3df2b3ba5c02b2f.jpg" alt=""><figcaption>9.60 s</figcaption></figure></div>
+  <div class="board"><figure class="s32"><img src="media/9a108af6a45733e3.jpg" alt=""><figcaption>3:2 · 1.60 s</figcaption></figure><figure class="s32"><img src="media/88c12a02523c2a6f.jpg" alt=""><figcaption>3:2 · 6.60 s</figcaption></figure><figure class="s32"><img src="media/d8219628aee8d2fd.jpg" alt=""><figcaption>3:2 · 9.60 s</figcaption></figure></div>
+  <div class="detail"><figure class="crop"><img src="media/17ac7d45285680f4.jpg" alt=""><figcaption>100% crop · detail · 8.20 s</figcaption></figure><figure class="crop"><img src="media/bb12c414d477ada3.jpg" alt=""><figcaption>100% crop · detail · 8.20 s</figcaption></figure></div>
+  <div class="phones"><div><p class="cap2">On the product page (iOS 27)</p><div class="ph"><div class="hdr"><video src="media/d226e1e3fe82b978.mp4" autoplay muted loop playsinline></video></div><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="back">‹</div>
+  <div class="app"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div><div class="get">Get</div></div></div>
+  <div class="shots"><img src="media/85791581ec3ef544.jpg" alt=""><img src="media/e2e151efb51821cd.jpg" alt=""></div></div></div><div><p class="cap2">As the search card (3:2, always muted)</p><div class="ph"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><b></b></span></div><div class="sbar">Search · curate</div>
+  <div class="scard"><img src="media/fb1d759b675ccd3f.jpg" alt=""></div>
+  <div class="app srow"><img class="icon" src="media/f54358814e9affbc.jpg" alt=""><div><div class="an">Curate</div><div class="as">Your AI stylist</div></div><div class="get">Get</div></div>
+  <div class="ghost"></div></div></div></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="D2">Pick D2</button></span></div>
+</div><div class="var old">
+  <div class="vh"><span class="vk">D1-bold</span><h3>colour-d1-bold</h3></div>
+  <p class="idea">Superseded: the loud first cut (the founder, 2026-10-24: “subtle colours”). Kept as a version.</p>
+  <div class="board"><figure><img src="media/fb94b092996c314b.jpg" alt=""><figcaption>3.60 s</figcaption></figure><figure><img src="media/9bd26cd8e42f4ca7.jpg" alt=""><figcaption>6.60 s</figcaption></figure><figure><img src="media/33c5a2834959d4fb.jpg" alt=""><figcaption>9.60 s</figcaption></figure></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="D1-bold">Pick D1-bold</button></span></div>
+</div><div class="var old">
+  <div class="vh"><span class="vk">D2-bold</span><h3>colour-d2-bold</h3></div>
+  <p class="idea">Superseded: the loud first cut (the founder, 2026-10-24: “subtle colours”). Kept as a version.</p>
+  <div class="board"><figure><img src="media/a658b13ef8602d21.jpg" alt=""><figcaption>4.40 s</figcaption></figure><figure><img src="media/21ebf3080845d0c1.jpg" alt=""><figcaption>6.10 s</figcaption></figure><figure><img src="media/45ac87d38305e3b9.jpg" alt=""><figcaption>9.00 s</figcaption></figure></div>
+  <div class="verdict"><span class="pk-row"><button type="button" class="pk" data-sec="header2" data-choose="D2-bold">Pick D2-bold</button></span></div>
+</div>
+</section>
+  <div class="pk-sum"><h3>Your answers</h3><p id="pk-sum" data-order='[["header2", "Pick"]]'>Tap <b>Pick</b> under a phone, or Yes / No under an extra. Your answers land here, and Claude reads them.</p></div>
+</main>
+<script>
+(function () {
+  const state = {};
+  let db = null;
+  const queue = {};
+  const all = () => document.querySelectorAll('[data-sec]');
+  let toastTimer = 0;
+  function toast(text) {
+    let t = document.getElementById('pk-toast');
+    if (!t) { t = document.createElement('div'); t.id = 'pk-toast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.textContent = text; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 1600);
+  }
+  function summary() {
+    const el = document.getElementById('pk-sum');
+    if (!el) return;
+    let order = [];
+    try { order = JSON.parse(el.dataset.order || '[]'); } catch (_) { order = []; }
+    const parts = [];
+    for (const [sec, n] of order) {
+      const s = state[sec];
+      if (!s) continue;
+      const bits = [];
+      if (s.choice) bits.push(s.choice);
+      for (const [k, v] of Object.entries(s.yes || {})) bits.push(k + (v ? ' yes' : ' no'));
+      if (bits.length) parts.push(n + ' · ' + bits.join(', '));
+    }
+    if (parts.length) el.textContent = parts.join('   ');
+  }
+  function paint() {
+    for (const b of all()) {
+      const s = state[b.dataset.sec] || {};
+      if (b.dataset.choose) b.classList.toggle('on', s.choice === b.dataset.choose);
+      if (b.dataset.yes) {
+        const v = (s.yes || {})[b.dataset.yes];
+        b.classList.toggle('on', b.dataset.val === 'yes' ? v === true : v === false);
+      }
+      b.setAttribute('aria-pressed', b.classList.contains('on') ? 'true' : 'false');
+    }
+    summary();
+  }
+  function save(sec) {
+    const s = state[sec];
+    const body = { choice: s.choice || null, yes: s.yes || {}, at: new Date().toISOString() };
+    queue[sec] = (queue[sec] || Promise.resolve())
+      .then(() => db.doc('picks/' + sec).set(body))
+      .then(() => toast('Saved'), (e) => toast(e && e.code === 'invalid_argument' ? 'Only the owner can answer here' : 'Couldn’t save. Try again.'));
+  }
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-sec]');
+    if (!b) return;
+    if (!db) { toast('Open this page in Claude to answer'); return; }
+    const sec = b.dataset.sec;
+    const was = state[sec] || {};
+    const s = { choice: was.choice || null, yes: Object.assign({}, was.yes || {}) };
+    if (b.dataset.choose) s.choice = s.choice === b.dataset.choose ? null : b.dataset.choose;
+    if (b.dataset.yes) {
+      const val = b.dataset.val === 'yes';
+      if (s.yes[b.dataset.yes] === val) delete s.yes[b.dataset.yes]; else s.yes[b.dataset.yes] = val;
+    }
+    state[sec] = s;
+    paint();
+    save(sec);
+  });
+  (async () => {
+    try { db = window.claude && window.claude.use ? await window.claude.use('db') : null; } catch (_) { db = null; }
+    if (!db) return;
+    db.collection('picks').onSnapshot((q) => {
+      for (const d of q.docs) {
+        const v = d.data() || {};
+        state[d.id] = { choice: v.choice || null, yes: v.yes || {} };
+      }
+      paint();
+    }, () => {});
+  })();
+})();
+</script>

@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-wardrobe-empty-first moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-wardrobe-empty-first.v1",
+      "title": "An empty wardrobe: Nothing here yet, the Extract all card (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-wardrobe-empty-first/emma-b284.v1.mp4",
+          "sha256": "01999d0b754bf56be232d1e350bd9e6573fa0c8347e31c02721bacf3ef8158f6",
+          "bytes": 911887,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-wardrobe-empty-first",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:wardrobe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.233,
+      "fps": 60,
+      "moment": "b284-wardrobe-empty-first",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "wardrobe": 1.7
+      }
+    }
+  ]
+}

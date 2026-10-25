@@ -1,0 +1,98 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-header-week",
+  "title": "App Store header (iOS 27), C: A week of looks",
+  "brief": "Direction C of the iOS 27 App Store product-page header (21:9, 3840 × 1646) and search card (3:2, 2880 × 1920): a 15 s muted loop. Monday to Sunday, a look from Emma's own wardrobe each day, laid flat on its own fashion-campaign colour set; the close is the whole week as seven cards, \"A look for every day.\" and the Curate lockup. Two variants: c1 flip (each day the whole frame, the next set pushes in) and c2 rail (the sets as cards on a rail, the camera gliding a card a step). The founder asked for colour on this header (2026-10-24, \"a bit more colorful\").",
+  "hook": "0–1 s: Monday's look, laid flat on cobalt paper, the day's name big; the line at 0.9 s.",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-header",
+    "store-search"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.medium.v1",
+    "font.geist.regular.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.logo-splash.v1",
+    "garment.emma.bag-crossbody-tan.v1",
+    "garment.emma.bag-mini-black.v1",
+    "garment.emma.bag-tote-leather-black.v1",
+    "garment.emma.blazer-black.v1",
+    "garment.emma.boots-ankle-black.v1",
+    "garment.emma.cap-baseball-navy.v1",
+    "garment.emma.cardigan-oatmeal.v1",
+    "garment.emma.coat-trench-khaki.v1",
+    "garment.emma.dress-slip-champagne.v1",
+    "garment.emma.earrings-hoops-gold.v1",
+    "garment.emma.flats-ballet-black.v1",
+    "garment.emma.heels-black.v1",
+    "garment.emma.jacket-denim.v1",
+    "garment.emma.jacket-leather-black.v1",
+    "garment.emma.jeans-straight-dark-wash.v1",
+    "garment.emma.leggings-sage.v1",
+    "garment.emma.loafers-black.v1",
+    "garment.emma.sandals-tan.v1",
+    "garment.emma.shirt-oxford-blue.v1",
+    "garment.emma.shorts-denim-cutoff.v1",
+    "garment.emma.skirt-midi-satin-camel.v1",
+    "garment.emma.sneakers-leather-white.v1",
+    "garment.emma.sneakers-retro-runner-grey-navy.v1",
+    "garment.emma.sunglasses-black.v1",
+    "garment.emma.sweater-cable-knit-cream.v1",
+    "garment.emma.sweatshirt-crewneck-grey.v1",
+    "garment.emma.tank-ribbed-black.v1",
+    "garment.emma.tee-long-sleeve-striped.v1",
+    "garment.emma.tee-white.v1",
+    "garment.emma.trousers-black.v1"
+  ],
+  "components": [
+    "StableImg",
+    "SubframeBlur",
+    "Grain",
+    "Vignette",
+    "springs (motion/springs)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona; her wardrobe pieces are product cut-outs of her own (AI-generated) clothes."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-app-store-header-week",
+    "at": "2026-10-24"
+  },
+  "gates": {
+    "G1": "approved",
+    "G2": "review",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": [
+    {
+      "gate": "G1",
+      "status": "approved",
+      "by": "claude-fork-app-store-header-week",
+      "byType": "agent",
+      "at": "2026-10-24",
+      "note": "Mechanical gate: every listed asset is approved in the catalog (30 garment cut-outs, the lockup, Geist, the track); no app screens, no generated media."
+    },
+    {
+      "gate": "G2",
+      "status": "review",
+      "by": "claude-fork-app-store-header-week",
+      "byType": "agent",
+      "at": "2026-10-24",
+      "note": "brief, style guide, shot list; full-size stills per shot in out/g2/week-c1|c2[-search]/ (subtle, handed in) and week-c1|c2-bold/ (kept). Critic rounds 1-3: c1 subtle 8/8/8/8/8 (r2), c2 subtle 8/8/8/8/8 (r3), sound n/a (muted)."
+    }
+  ]
+}

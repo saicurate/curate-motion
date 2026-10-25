@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-wardrobe-item moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-wardrobe-item.v1",
+      "title": "A wardrobe item opened and scrolled to its outfit ideas (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-wardrobe-item/emma-b284.v1.mp4",
+          "sha256": "fb622fbcd235fd301cd4e44d6e766c5c6d70484fd8b1960975277932df0a4d47",
+          "bytes": 1283889,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-wardrobe-item",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:wardrobe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 9.088,
+      "fps": 59.94,
+      "moment": "b284-wardrobe-item",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "down-89-327": 2.2,
+        "up": 2.3,
+        "drag-220-760-0-500-900": 5.21
+      }
+    }
+  ]
+}

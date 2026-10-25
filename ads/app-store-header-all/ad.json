@@ -1,0 +1,103 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-header-all",
+  "title": "App Store header (iOS 27), the one film",
+  "brief": "The iOS 27 App Store product-page header (21:9, 3840 × 1646) and search card (3:2, 2880 × 1920) allow ONE muted loop each, so this is the one film: A (her photos give up what she's wearing; it becomes her real Wardrobe, build 284) → B (the black tee flies onto her walk-to-work photo; Studio's real try-on) → C (a week of looks on tonal cards) → the Curate lockup with the app's own line, Try it. Style it. Wear it. → back to frame 0. 30 s, one seamless loop, in the subtle palette (A2 tonal, B3, C2 subtle). The first 5 s land on their own: by 4 s the photos have given up the coat, jacket and scarf and they stand beside her Wardrobe. One camera through one long studio: every beat arrives on the same slow camera glide to the right (C's rail camera), through a soft column of light. Reuses B and C by import (their compositions, retimed by a pure time map); A runs a faster cut of its own picture.",
+  "hook": "0–5 s: three of her photos on Mist; 0.35 s 'Your closet is already in your photos.'; the coat, jacket and scarf lift out one at a time (blush, dusty blue, oat); 3.1 s they gather beside her real Wardrobe on the phone; 3.7 s 'Every item you own, from your photos.'",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-header",
+    "store-search"
+  ],
+  "lengths": [
+    30
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.medium.v1",
+    "font.geist.regular.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "device.apple.iphone-17-pro-max-silver.v1",
+    "photo.emma.r12-dumbo-walk.v1",
+    "photo.emma.r26-ferry.v1",
+    "photo.emma.r04-park-autumn.v1",
+    "garment.emma.coat-wool-camel.v3",
+    "garment.emma.jacket-denim.v3",
+    "garment.emma.scarf-plaid-camel.v2",
+    "screenshot.emma.b284-wardrobe-rails.v1",
+    "photo.emma.r30-walk-to-work.v1",
+    "tryon.emma.r30-tee-black.v1",
+    "photo.emma.r30-walk-to-work-cutout.v1",
+    "photo.emma.r30-walk-to-work-tryon-tee-black.v1",
+    "photo.emma.r30-walk-to-work-tryon-tee-black-cutout.v1",
+    "garment.emma.tee-black.v1",
+    "screenshot.emma.b284-studio-offduty-tryon.v1",
+    "brand.curate.logo-splash.v1",
+    "garment.emma.bag-crossbody-tan.v1",
+    "garment.emma.bag-mini-black.v1",
+    "garment.emma.bag-tote-leather-black.v1",
+    "garment.emma.blazer-black.v1",
+    "garment.emma.boots-ankle-black.v1",
+    "garment.emma.cap-baseball-navy.v1",
+    "garment.emma.cardigan-oatmeal.v1",
+    "garment.emma.coat-trench-khaki.v1",
+    "garment.emma.dress-slip-champagne.v1",
+    "garment.emma.earrings-hoops-gold.v1",
+    "garment.emma.flats-ballet-black.v1",
+    "garment.emma.heels-black.v1",
+    "garment.emma.jacket-denim.v1",
+    "garment.emma.jacket-leather-black.v1",
+    "garment.emma.jeans-straight-dark-wash.v1",
+    "garment.emma.leggings-sage.v1",
+    "garment.emma.loafers-black.v1",
+    "garment.emma.sandals-tan.v1",
+    "garment.emma.shirt-oxford-blue.v1",
+    "garment.emma.shorts-denim-cutoff.v1",
+    "garment.emma.skirt-midi-satin-camel.v1",
+    "garment.emma.sneakers-leather-white.v1",
+    "garment.emma.sneakers-retro-runner-grey-navy.v1",
+    "garment.emma.sunglasses-black.v1",
+    "garment.emma.sweater-cable-knit-cream.v1",
+    "garment.emma.sweatshirt-crewneck-grey.v1",
+    "garment.emma.tank-ribbed-black.v1",
+    "garment.emma.tee-long-sleeve-striped.v1",
+    "garment.emma.tee-white.v1",
+    "garment.emma.trousers-black.v1"
+  ],
+  "components": [
+    "AppStoreHeader RollScene (A)",
+    "AppStoreHeaderTryOn (B3)",
+    "AppStoreHeaderWeek (C2 subtle)",
+    "Freeze (time map)",
+    "SubframeBlur",
+    "Device (bezel)",
+    "Grain",
+    "Vignette",
+    "StableImg",
+    "springs (motion/springs)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+    "Emma is an AI-generated persona and her photos are AI-generated; her wardrobe pieces are product cut-outs of her own (AI-generated) clothes."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-app-store-header",
+    "at": "2026-10-24"
+  },
+  "gates": {
+    "G1": "pending",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": []
+}

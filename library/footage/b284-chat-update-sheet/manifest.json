@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-chat-update-sheet moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-chat-update-sheet.v1",
+      "title": "A new version is ready: the update sheet (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-chat-update-sheet/emma-b284.v1.mp4",
+          "sha256": "c9525d00a82c19f779d3627ba66a51fcd7e052d9eb4549526e686bebea41d542",
+          "bytes": 3235224,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-chat-update-sheet",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 6.095,
+      "fps": 60,
+      "moment": "b284-chat-update-sheet",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "update-sheet": 2.21
+      }
+    }
+  ]
+}

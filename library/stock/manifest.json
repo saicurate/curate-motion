@@ -2621,6 +2621,108 @@
       },
       "shows": "an empty photo studio with umbrellas and softboxes (lighting only, never shown)",
       "media": "image"
+    },
+    {
+      "id": "stock.polyhaven.linen-cream-ground.v1",
+      "title": "linen cream ground",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/polyhaven/linen-cream-ground.v1.png",
+          "sha256": "b89b141481917e6fd7949d117392cefa45c2e73253bb5d4e1d9b782d476562eb",
+          "bytes": 2909635,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Poly Haven",
+        "url": "https://polyhaven.com/a/rough_linen",
+        "from": []
+      },
+      "licence": {
+        "name": "CC0 1.0 Universal (public domain)",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "shows": "warm cream linen ground, 1320 x 2868, weave from Poly Haven Rough Linen (recoloured, soft light)",
+      "media": "image"
+    },
+    {
+      "id": "stock.polyhaven.linen-blue-ground.v1",
+      "title": "linen blue ground",
+      "files": [
+        {
+          "role": "original",
+          "path": "stock/polyhaven/linen-blue-ground.v1.png",
+          "sha256": "5aceffb720d6d0ad7c38a93c1a2c5547a05d605891ed23cfd59cc8e109ecefc1",
+          "bytes": 2812421,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "stock",
+        "author": "Poly Haven",
+        "url": "https://polyhaven.com/a/rough_linen",
+        "from": []
+      },
+      "licence": {
+        "name": "CC0 1.0 Universal (public domain)",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "stock",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "shows": "subtle pale blue linen ground, 1320 x 2868, weave from Poly Haven Rough Linen (recoloured, soft cool light)",
+      "media": "image"
     }
   ]
 }

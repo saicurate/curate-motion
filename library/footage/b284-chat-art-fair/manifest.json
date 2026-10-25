@@ -1,0 +1,141 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-chat-art-fair moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-chat-art-fair.v1",
+      "title": "Chat: Hey Emma, the art fair question, Zee thinking with her closet, the look (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-chat-art-fair/emma-b284.v1.mp4",
+          "sha256": "430463c462c94ef030e579520a66c26e0a545851b4eea6c95198221750371297",
+          "bytes": 12188134,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-chat-art-fair",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/take.sh"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews-agent",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 14.087,
+      "fps": 60,
+      "moment": "b284-chat-art-fair",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": false,
+      "marks": {
+        "say-what-should-i-wear-to-the-art-fair-t": 0.35
+      },
+      "notes": "Has the green charging battery in the status bar (override was --batteryState charged): superseded by v2, never use."
+    },
+    {
+      "id": "footage.emma.b284-chat-art-fair.v2",
+      "title": "Chat: Hey Emma, the art fair question, Zee thinking with her closet, the look (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-chat-art-fair/emma-b284.v2.mp4",
+          "sha256": "3049aa3680927db71d7d617f204eddedef9975887202320662c14c6a8ba96fdc",
+          "bytes": 12216126,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-chat-art-fair",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/take.sh"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "supersedes": "footage.emma.b284-chat-art-fair.v1",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 14.05,
+      "fps": 60,
+      "moment": "b284-chat-art-fair",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "say-what-should-i-wear-to-the-art-fair-t": 2.32
+      },
+      "notes": "Recorded 2026-10-24 on my own simulator (Previews 17PM) with simctl status_bar override 9:41, battery discharging 100% (plain, never the green charging battery), new look (v2 tab bar), first-time tips off (PROBE_TIPS done)."
+    }
+  ]
+}

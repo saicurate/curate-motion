@@ -2929,6 +2929,659 @@
         "garment.emma.jacket-denim.v1"
       ],
       "framing": "half"
+    },
+    {
+      "id": "photo.emma.r30-walk-to-work-depth.v1",
+      "title": "Walk to work: depth map",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r30-walk-to-work-depth.v1.png",
+          "sha256": "65041844aa8584bcaec75927ac6ba4a3f1bc89633a44d77ddffe32d5f9edb00e",
+          "bytes": 2367629,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:depth",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "depth-anything/Depth-Anything-V2-Small-hf (Apache-2.0)",
+        "from": [
+          "photo.emma.r30-walk-to-work.v1"
+        ],
+        "tool": "tools/depth (tools/photo3d.py), flip-averaged at 770 px"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Walk to work",
+      "wearing": [],
+      "framing": "full"
+    },
+    {
+      "id": "photo.emma.r30-walk-to-work-cutout.v1",
+      "title": "Walk to work: her cut-out",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r30-walk-to-work-cutout.v1.png",
+          "sha256": "d3079feefddd71c4f726e6d063b0e45567a42e9211652b9ca6d50d6b97cb4e66",
+          "bytes": 1285223,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r30-walk-to-work-cutout.v1.png",
+          "sha256": "b1e19f39d3d9a4482df241cd30cb099daa8e077ad8ccb44d05ce3ba0d6db4e3d",
+          "bytes": 1373512,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:cutout",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "ZhengPeng7/BiRefNet-portrait (MIT) + pymatting estimate_foreground_ml (MIT)",
+        "from": [
+          "photo.emma.r30-walk-to-work.v1"
+        ],
+        "tool": "tools/cutout-person (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Walk to work",
+      "wearing": [
+        "garment.emma.tee-long-sleeve-striped.v1",
+        "garment.emma.trousers-black.v1",
+        "garment.emma.flats-ballet-black.v1",
+        "garment.emma.bag-tote-leather-black.v1"
+      ],
+      "framing": "full",
+      "description": "RGBA, edge colours un-mixed from the background; depth = her own, pushed past her edge"
+    },
+    {
+      "id": "photo.emma.r30-walk-to-work-plate.v1",
+      "title": "Walk to work: the background without her",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r30-walk-to-work-plate.v1.jpg",
+          "sha256": "e87f46912912885d8e27b99906028f25371176a446d00db2342ae5519b00c495",
+          "bytes": 1738548,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r30-walk-to-work-plate.v1.png",
+          "sha256": "17a4cccd97cf8304250476016edee8cb5b4d3eaa660934ff42aacc8dbd28e908",
+          "bytes": 1654226,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:plate",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r30-walk-to-work.v1"
+        ],
+        "tool": "tools/inpaint at 512 px (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Walk to work",
+      "wearing": [],
+      "framing": "full"
+    },
+    {
+      "id": "photo.emma.r30-walk-to-work-tryon-tee-black.v1",
+      "title": "Walk to work, wearing the black tee (Studio's try-on pasted into the photo)",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r30-walk-to-work-tryon-tee-black.v1.jpg",
+          "sha256": "101209a392eb0cc0f21ee724b247212f75766528472e2ce287583f61bf6b39e6",
+          "bytes": 1372306,
+          "mime": "image/jpeg"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "derived"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "from": [
+          "tryon.emma.r30-tee-black.v1",
+          "photo.emma.r30-walk-to-work.v1"
+        ]
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "unknown-agent",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "wearing": []
+    },
+    {
+      "id": "photo.emma.r30-walk-to-work-tryon-tee-black-depth.v1",
+      "title": "Walk to work, wearing the black tee (Studio's try-on pasted into the photo): depth map",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r30-walk-to-work-tryon-tee-black-depth.v1.png",
+          "sha256": "9131a86be5c5a9bf888332f01fb1f6225e26d937875fc1b9b9e3b332ca24e7a7",
+          "bytes": 2360776,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:depth",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "depth-anything/Depth-Anything-V2-Small-hf (Apache-2.0)",
+        "from": [
+          "photo.emma.r30-walk-to-work-tryon-tee-black.v1"
+        ],
+        "tool": "tools/depth (tools/photo3d.py), flip-averaged at 770 px"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "wearing": []
+    },
+    {
+      "id": "photo.emma.r30-walk-to-work-tryon-tee-black-cutout.v1",
+      "title": "Walk to work, wearing the black tee (Studio's try-on pasted into the photo): her cut-out",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r30-walk-to-work-tryon-tee-black-cutout.v1.png",
+          "sha256": "87fa4b5f87f370ae4c2a93419db1ada5e33913de132dc465742c16f0f55f2f05",
+          "bytes": 949246,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r30-walk-to-work-tryon-tee-black-cutout.v1.png",
+          "sha256": "decfd5c29f2f80b2bbe1a84d125ce55ee5db171b288e9208bdb9c940898a9312",
+          "bytes": 1365053,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:cutout",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "ZhengPeng7/BiRefNet-portrait (MIT) + pymatting estimate_foreground_ml (MIT)",
+        "from": [
+          "photo.emma.r30-walk-to-work-tryon-tee-black.v1"
+        ],
+        "tool": "tools/cutout-person (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "wearing": []
+    },
+    {
+      "id": "photo.emma.r30-walk-to-work-tryon-tee-black-plate.v1",
+      "title": "Walk to work, wearing the black tee (Studio's try-on pasted into the photo): the background without her",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r30-walk-to-work-tryon-tee-black-plate.v1.jpg",
+          "sha256": "4850bbda4d1f69c2060c604510f0d6ae5c82c6f511ed96e7a0bfc8b4e1b51100",
+          "bytes": 1339708,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r30-walk-to-work-tryon-tee-black-plate.v1.png",
+          "sha256": "006be23ddf412b4c5260b592f83a5c12006cafdc0eff08a179387d8dfc4bb569",
+          "bytes": 1652691,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:plate",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r30-walk-to-work-tryon-tee-black.v1"
+        ],
+        "tool": "tools/inpaint at 512 px (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "wearing": []
+    },
+    {
+      "id": "photo.emma.r12-dumbo-walk-depth.v1",
+      "title": "Walking in DUMBO: depth map",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r12-dumbo-walk-depth.v1.png",
+          "sha256": "e342234ff3e3950b8aa37190a48d136839b1b435bf2e1dc3518c04fc8d290a14",
+          "bytes": 2567854,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:depth",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "depth-anything/Depth-Anything-V2-Small-hf (Apache-2.0)",
+        "from": [
+          "photo.emma.r12-dumbo-walk.v1"
+        ],
+        "tool": "tools/depth (tools/photo3d.py), flip-averaged at 770 px"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Walking in DUMBO",
+      "wearing": [],
+      "framing": "full"
+    },
+    {
+      "id": "photo.emma.r12-dumbo-walk-cutout.v1",
+      "title": "Walking in DUMBO: her cut-out",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r12-dumbo-walk-cutout.v1.png",
+          "sha256": "79a023c3c9e4961a3bb85a9bf08121303c45f55eef4dfeb6ab89bedeb9747320",
+          "bytes": 1508837,
+          "mime": "image/png"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r12-dumbo-walk-cutout.v1.png",
+          "sha256": "dfd38b1ea27eea846521eaafed85e52b87ec480f2cd2e08620db1dc914e37067",
+          "bytes": 1369378,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:cutout",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "ZhengPeng7/BiRefNet-portrait (MIT) + pymatting estimate_foreground_ml (MIT)",
+        "from": [
+          "photo.emma.r12-dumbo-walk.v1"
+        ],
+        "tool": "tools/cutout-person (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Walking in DUMBO",
+      "wearing": [
+        "garment.emma.coat-wool-camel.v1",
+        "garment.emma.turtleneck-black.v1",
+        "garment.emma.jeans-straight-dark-wash.v1",
+        "garment.emma.boots-ankle-black.v1"
+      ],
+      "framing": "full",
+      "description": "RGBA, edge colours un-mixed from the background; depth = her own, pushed past her edge"
+    },
+    {
+      "id": "photo.emma.r12-dumbo-walk-plate.v1",
+      "title": "Walking in DUMBO: the background without her",
+      "files": [
+        {
+          "role": "original",
+          "path": "camera-roll/emma/r12-dumbo-walk-plate.v1.jpg",
+          "sha256": "80dd7c2c4e667b9dd307f8a26049fb2babd4c1f6d9d534bd902366006825fa62",
+          "bytes": 998910,
+          "mime": "image/jpeg"
+        },
+        {
+          "role": "depth",
+          "path": "camera-roll/emma/depth/r12-dumbo-walk-plate.v1.png",
+          "sha256": "4884cfee4ebae1c6601756b70c0feb3937dcf0d01bcdf4b7a293e06e6d294f87",
+          "bytes": 1706397,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "layer:plate",
+          "derived",
+          "photo3d"
+        ]
+      },
+      "source": {
+        "type": "derived",
+        "model": "big-lama (advimman/lama), TorchScript export by enesmsahin/simple-lama-inpainting (Apache-2.0)",
+        "from": [
+          "photo.emma.r12-dumbo-walk.v1"
+        ],
+        "tool": "tools/inpaint at 512 px (tools/photo3d.py)"
+      },
+      "licence": {
+        "name": "AI-generated, Curate-owned output",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [
+          "no-real-person-likeness",
+          "persona-never-vouches-for-products"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (photo3d)",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": true,
+      "kind": "photo",
+      "dims": {
+        "w": 1792,
+        "h": 2400
+      },
+      "place": "Walking in DUMBO",
+      "wearing": [],
+      "framing": "full"
     }
   ]
 }

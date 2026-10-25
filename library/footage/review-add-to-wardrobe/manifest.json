@@ -23,7 +23,8 @@
         "free": [
           "screen:import-review",
           "appBuild:262",
-          "source:app"
+          "source:app",
+          "look:v1"
         ]
       },
       "source": {

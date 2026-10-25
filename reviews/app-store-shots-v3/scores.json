@@ -1,0 +1,95 @@
+{
+ "ad": "app-store-shots-v3",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 7.0,
+    "phone": 7.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 7.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "stills r1-r2: S1 garments covered Today's look title and Try it on; phones sat low with dead linen under the headline; Medium headlines lighter than the Essembl bar at 25%"
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 7.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "stills r3: phones raised and larger; S5 'one message away.' wrapped to 3 lines at SemiBold; S1 skirt cut to an unreadable sliver; S6 dead space; S2/S3 captures showed a green charging battery"
+  },
+  {
+   "round": 3,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "stills r4-r5 finals (final-w500, final-w600): every headline two lines and readable at 360 px and 25%; clean status bars (v2 captures); items clear of the key UI; S6 tightened. Brand: Geist, cream linen, ink + one deep warm tone; SemiBold variant departs from RULES 8 'titles Medium' and is offered only for comparison"
+  },
+  {
+   "round": 4,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "S-V3 blue (founder: 'subtle blue'): pale blue linen (Poly Haven CC0 recoloured, ~#E6EDF5), ink + slate-navy #33475E second line, cool-tinted shadows, garments untouched; both weights; every still checked at 100%, first three at 25%"
+  },
+  {
+   "round": 5,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "stills O2 calm layout (final-o2-w600/w500): tilted phone + upright garment row on one baseline, even columns, cool soft shadows, nothing thrown/rotated; 25% search row reads; 100% crops crisp; S6 phone-less calm privacy card (no privacy screen to capture). Evidence round-5/"
+  },
+  {
+   "round": 6,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": null,
+    "variety": 7.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "stills O5 calm layout (final-o5-w600/w500): biggest real screen of the six at 25%, no garments outside the phone; variety 7 because shots 1-5 are the same phone in the same place and only the screen changes, so the product-page row reads repetitive. Evidence round-5/"
+  }
+ ]
+}

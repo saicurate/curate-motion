@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/render-lambda: render an ad on AWS Lambda (see tools/render-lambda.ts and infra/remotion-lambda/).
+exec node "$(dirname "$0")/render-lambda.ts" "$@"

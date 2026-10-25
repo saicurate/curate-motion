@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-chat-tryon moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-chat-tryon.v1",
+      "title": "Try it on from the chat: the ring, it lands, the sheet (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-chat-tryon/emma-b284.v1.mp4",
+          "sha256": "5ab51c1c2f92f3fa84abdc82fe864c5ca58e291c638d2e4a555047d8623f0506",
+          "bytes": 11759797,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-chat-tryon",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 14.087,
+      "fps": 60,
+      "moment": "b284-chat-tryon",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "tryon-run": 2.2,
+        "tryon-land": 6.71,
+        "tryon-sheet": 10.21
+      }
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "build": 285,
+  "version": "1.7.0",
+  "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+  "appDir": "/Users/saikumar/Desktop/Curate/curate-app/.worktrees/shots-event-draw",
+  "bundle": "com.curatefashions.curateApp",
+  "persona": "emma",
+  "apps": {
+    "draw": {
+      "target": "lib/dev/event_draw_probe.dart",
+      "control": "draw",
+      "defines": {
+        "PROBE_V2": "true",
+        "PROBE_PRIZE": "Dyson Supersonic hair dryer",
+        "PROBE_PRIZE_IMAGE": "/Users/saikumar/Desktop/Curate/research/event-draw/cpp/dyson-prize-live.png"
+      },
+      "setup": []
+    }
+  },
+  "shots": [
+    {
+      "id": "draw-door",
+      "app": "draw",
+      "area": "first-run",
+      "title": "Event Draw: The event's front door: win the prize, join",
+      "setup": [
+        "door"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-door",
+          "title": "Event Draw: The event's front door: win the prize, join"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-door-welcome-saved",
+      "app": "draw",
+      "area": "first-run",
+      "title": "Event Draw: The front door, the event code saved",
+      "setup": [
+        "door-welcome-saved"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-door-welcome-saved",
+          "title": "Event Draw: The front door, the event code saved"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-list-join",
+      "app": "draw",
+      "area": "first-run",
+      "title": "Event Draw: The live draws, Join",
+      "setup": [
+        "list-join"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-list-join",
+          "title": "Event Draw: The live draws, Join"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-waiting",
+      "app": "draw",
+      "area": "wardrobe",
+      "title": "Event Draw: Your ticket is waiting: the two steps",
+      "setup": [
+        "waiting"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-waiting",
+          "title": "Event Draw: Your ticket is waiting: the two steps"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-wardrobe",
+      "app": "draw",
+      "area": "wardrobe",
+      "title": "Event Draw: The Closet tab with the draw's ticket card, nothing done",
+      "setup": [
+        "wardrobe"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-wardrobe",
+          "title": "Event Draw: The Closet tab with the draw's ticket card, nothing done"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-wardrobe-ticket",
+      "app": "draw",
+      "area": "wardrobe",
+      "title": "Event Draw: The Closet tab, the ticket card with clothes added",
+      "setup": [
+        "wardrobe-ticket"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-wardrobe-ticket",
+          "title": "Event Draw: The Closet tab, the ticket card with clothes added"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-youre-in",
+      "app": "draw",
+      "area": "wardrobe",
+      "title": "Event Draw: You're in! The ticket",
+      "setup": [
+        "youre-in"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-youre-in",
+          "title": "Event Draw: You're in! The ticket"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-draw",
+      "app": "draw",
+      "area": "wardrobe",
+      "title": "Event Draw: The draw page: prize, steps",
+      "setup": [
+        "draw"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-draw",
+          "title": "Event Draw: The draw page: prize, steps"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-draw-ticket",
+      "app": "draw",
+      "area": "wardrobe",
+      "title": "Event Draw: The draw page with her ticket",
+      "setup": [
+        "draw-ticket"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-draw-ticket",
+          "title": "Event Draw: The draw page with her ticket"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-today-before",
+      "app": "draw",
+      "area": "today",
+      "title": "Event Draw: Today with the draw's ticket",
+      "setup": [
+        "today-before"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-today-before",
+          "title": "Event Draw: Today with the draw's ticket"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    },
+    {
+      "id": "draw-today-after",
+      "app": "draw",
+      "area": "today",
+      "title": "Event Draw: Today after",
+      "setup": [
+        "today-after"
+      ],
+      "steps": [],
+      "end": 2.4,
+      "stills": [
+        {
+          "at": 1.6,
+          "id": "draw-today-after",
+          "title": "Event Draw: Today after"
+        }
+      ],
+      "tags": [
+        "event-draw",
+        "closet-copy"
+      ]
+    }
+  ]
+}

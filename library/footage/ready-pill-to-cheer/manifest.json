@@ -23,7 +23,8 @@
         "free": [
           "screen:wardrobe",
           "appBuild:262",
-          "source:probe"
+          "source:probe",
+          "look:v1"
         ]
       },
       "source": {

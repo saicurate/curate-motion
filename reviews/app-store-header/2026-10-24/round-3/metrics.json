@@ -1,0 +1,164 @@
+{
+ "ad": "app-store-header",
+ "render": "renders/app-store-header/master/15s/app-store-header-zee_master_store-header_15s_v2.mp4",
+ "round": 3,
+ "date": "2026-10-24",
+ "probe": {
+  "width": 1920,
+  "height": 822,
+  "fps": 60.0,
+  "duration": 15.0,
+  "audio": false
+ },
+ "renderSha256": "b79cc641c3ab0ce50900d3c865e65b676587f1f70538cede098abc862bb09ea5",
+ "motion": {
+  "meanDiff": 0.57,
+  "cuts": [],
+  "fastestWindow": [
+   765,
+   776
+  ],
+  "fastestAtSec": 12.85
+ },
+ "holds": [
+  {
+   "from": 3.97,
+   "to": 5.52,
+   "sec": 1.57
+  },
+  {
+   "from": 5.65,
+   "to": 7.12,
+   "sec": 1.48
+  }
+ ],
+ "layerDrops": [],
+ "strip": {
+  "crop": [
+   381,
+   222,
+   435,
+   497
+  ],
+  "frames": [
+   {
+    "frame": 764,
+    "sec": 12.733,
+    "speedPx": 0.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 765,
+    "sec": 12.75,
+    "speedPx": 40.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 766,
+    "sec": 12.767,
+    "speedPx": 35.7,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 767,
+    "sec": 12.783,
+    "speedPx": 0.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 768,
+    "sec": 12.8,
+    "speedPx": 26.8,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 769,
+    "sec": 12.817,
+    "speedPx": 0.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 770,
+    "sec": 12.833,
+    "speedPx": 19.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 771,
+    "sec": 12.85,
+    "speedPx": 0.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 772,
+    "sec": 12.867,
+    "speedPx": 14.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 773,
+    "sec": 12.883,
+    "speedPx": 0.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 774,
+    "sec": 12.9,
+    "speedPx": 17.2,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 775,
+    "sec": 12.917,
+    "speedPx": 0.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 776,
+    "sec": 12.933,
+    "speedPx": 45.6,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   }
+  ],
+  "maxEcho": 0.0,
+  "maxSpeedPx": 45.6,
+  "samples": null,
+  "shutter": 0.5,
+  "maxSampleGapPx": null,
+  "verdict": "clean"
+ },
+ "loop": {
+  "seamDiff": 0.29,
+  "typicalStep": 0.21,
+  "fastestStep": 8.83,
+  "verdict": "seamless"
+ },
+ "loudness": null,
+ "blindfold": null
+}

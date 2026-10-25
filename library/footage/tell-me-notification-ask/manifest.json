@@ -23,7 +23,8 @@
         "free": [
           "screen:pieces-wait",
           "appBuild:262",
-          "source:probe"
+          "source:probe",
+          "look:v1"
         ]
       },
       "source": {

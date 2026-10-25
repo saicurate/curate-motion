@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-tryons-flow moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.curate.b284-tryons-flow.v1",
+      "title": "Try-ons tab: her photo, a knit from a shop link, navy trousers from her wardrobe, Try on 2 items, the curtain, the result, hold for the before (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-tryons-flow/probe-b284.v1.mp4",
+          "sha256": "1150e2c525f90b43c4cf11c3865f634925c3743cf0250939738be10e81337765",
+          "bytes": 89980970,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "moment": "b284-tryons-flow",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "look:v1"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "research/app-store-previews/pace.py"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "app-store-previews-agent",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 58.488,
+      "fps": 60,
+      "moment": "b284-tryons-flow",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "probe",
+      "device": "iPhone 17 Pro Max (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "a1-first-visit": 1.3,
+        "e4-nothing-tried-on-yet": 4.43,
+        "a2b-looks-good": 6.74,
+        "a2-your-photo": 9.37,
+        "a3-add-an-item": 12.56,
+        "e2a-reading-the-link": 14.4,
+        "e2-which-one-is-the-piece": 16.42,
+        "e2b-in-and-still-open": 18.32,
+        "a4-zee-once-add-another": 19.73,
+        "a5-from-your-wardrobe": 25.1,
+        "a5b-two-in-the-sheet": 27.25,
+        "a6-two-items": 28.7,
+        "a6b-just-you": 31.61,
+        "a7-a-filled-spot-add-an-item": 33.79,
+        "a8-swapped-undo": 35.38,
+        "a9-trying-on-2-items": 38.08,
+        "a9b-landed-zee-excited": 44.1,
+        "a10-both-items-on-your-photo": 47.52,
+        "a10b-just-you-wearing-them": 51.73,
+        "a11-hold-for-the-before": 54.89
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { staticFile } from "remotion";
+import { getInputProps, staticFile } from "remotion";
 import INDEX from "../catalog/index.json";
 
 // The ONLY way motion/ and ads/ reach media: by asset id, through catalog/index.json.
@@ -8,6 +8,19 @@ type FileEntry = { role: string; path: string; sha256: string; bytes: number; s3
 type Entry = { id: string; kind: string; title: string; status: string; files: FileEntry[]; asset: Record<string, unknown> };
 
 const BY_ID = new Map<string, Entry>((INDEX.assets as unknown as Entry[]).map((a) => [a.id, a]));
+
+// On Lambda (tools/render-lambda) the site is a public URL, so media never goes in it: the render's
+// props carry `__media`, each staged file's short-lived presigned URL by library path, from a private
+// prefix of the same bucket (same origin, so fonts and WebGL textures load). Locally there's no map
+// and staticFile serves the staged public dir as before.
+const MEDIA: Record<string, string> | null = (() => {
+  try {
+    return (getInputProps() as { __media?: Record<string, string> }).__media ?? null;
+  } catch {
+    return null;
+  }
+})();
+const url = (path: string): string => MEDIA?.[path] ?? staticFile(path);
 
 /** The catalog record for an id. Throws on an unknown or retired id, so a typo fails the render, not the ad. */
 export const asset = <T = Record<string, unknown>>(id: string): Entry & { asset: T } => {
@@ -24,7 +37,7 @@ export const src = (id: string, role: string = "original"): string => {
   const e = asset(id);
   const f = e.files.find((x) => x.role === role) ?? (role === "original" ? e.files[0] : undefined);
   if (!f) throw new Error(`Asset "${id}" has no "${role}" file.`);
-  return staticFile(f.path);
+  return url(f.path);
 };
 
 type Seq = { dir: string; pattern: string; count: number; fps: number };
@@ -35,7 +48,7 @@ export const frameSrc = (id: string, n: number): string => {
   if (!f) throw new Error(`Asset "${id}" is not a frame sequence.`);
   const i = (((n % f.count) + f.count) % f.count) + 1;
   const name = f.pattern.replace(/%0(\d)d/, (_, w) => String(i).padStart(Number(w), "0"));
-  return staticFile(`${f.dir.replace(/\/$/, "")}/${name}`);
+  return url(`${f.dir.replace(/\/$/, "")}/${name}`);
 };
 
 export const frameCount = (id: string): number => asset<{ frames?: Seq }>(id).asset.frames?.count ?? 1;

@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-extract-photos-continue moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-extract-photos-continue.v1",
+      "title": "Now, your photos: Continue, and the scan starts on the Wardrobe tab (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-extract-photos-continue/emma-b284.v1.mp4",
+          "sha256": "08076ec8fab7e905a37877736f5a9d2c4b3a493665ecd2c8323b5b28e2e6f1ae",
+          "bytes": 30714408,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-extract-photos-continue",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 10.075,
+      "fps": 60,
+      "moment": "b284-extract-photos-continue",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "tap-photossheetcontinue": 2.4
+      }
+    }
+  ]
+}

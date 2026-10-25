@@ -23,7 +23,8 @@
         "free": [
           "screen:try-ons",
           "appBuild:262",
-          "source:app"
+          "source:app",
+          "look:v1"
         ]
       },
       "source": {
@@ -91,7 +92,8 @@
         "free": [
           "screen:try-ons",
           "appBuild:262",
-          "source:app"
+          "source:app",
+          "look:v1"
         ]
       },
       "source": {

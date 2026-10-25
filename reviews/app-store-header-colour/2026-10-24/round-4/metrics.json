@@ -1,0 +1,201 @@
+{
+ "ad": "app-store-header-colour",
+ "render": "renders/app-store-header-colour/master/15s/app-store-header-colour-d2-quiet_master_store-header_15s_v1.mp4",
+ "round": 4,
+ "date": "2026-10-24",
+ "probe": {
+  "width": 3840,
+  "height": 1646,
+  "fps": 60.0,
+  "duration": 15.04,
+  "audio": true
+ },
+ "renderSha256": "5b72a1f01159f1efbe5eae3bb700883c7bf25f813754cde7d1a4b001074b2de6",
+ "motion": {
+  "meanDiff": 0.94,
+  "cuts": [],
+  "fastestWindow": [
+   536,
+   547
+  ],
+  "fastestAtSec": 9.033
+ },
+ "holds": [
+  {
+   "from": 0.0,
+   "to": 2.1,
+   "sec": 2.12
+  },
+  {
+   "from": 3.22,
+   "to": 4.0,
+   "sec": 0.8
+  },
+  {
+   "from": 4.73,
+   "to": 5.62,
+   "sec": 0.9
+  },
+  {
+   "from": 6.42,
+   "to": 7.2,
+   "sec": 0.8
+  },
+  {
+   "from": 8.13,
+   "to": 8.78,
+   "sec": 0.67
+  },
+  {
+   "from": 9.73,
+   "to": 10.22,
+   "sec": 0.5
+  },
+  {
+   "from": 10.95,
+   "to": 13.25,
+   "sec": 2.32
+  },
+  {
+   "from": 14.28,
+   "to": 14.98,
+   "sec": 0.72
+  }
+ ],
+ "layerDrops": [],
+ "strip": {
+  "crop": [
+   1400,
+   330,
+   2440,
+   1026
+  ],
+  "frames": [
+   {
+    "frame": 535,
+    "sec": 8.917,
+    "speedPx": 187.1,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 536,
+    "sec": 8.933,
+    "speedPx": 114.4,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 537,
+    "sec": 8.95,
+    "speedPx": 114.5,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 538,
+    "sec": 8.967,
+    "speedPx": 112.7,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 539,
+    "sec": 8.983,
+    "speedPx": 109.7,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 540,
+    "sec": 9.0,
+    "speedPx": 105.9,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 541,
+    "sec": 9.017,
+    "speedPx": 102.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 542,
+    "sec": 9.033,
+    "speedPx": 96.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 543,
+    "sec": 9.05,
+    "speedPx": 90.9,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 544,
+    "sec": 9.067,
+    "speedPx": 84.9,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 545,
+    "sec": 9.083,
+    "speedPx": 80.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 546,
+    "sec": 9.1,
+    "speedPx": 73.0,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   },
+   {
+    "frame": 547,
+    "sec": 9.117,
+    "speedPx": 68.9,
+    "echo": 0.0,
+    "samplesGuess": 0,
+    "gapPx": 0.0
+   }
+  ],
+  "maxEcho": 0.0,
+  "maxSpeedPx": 187.1,
+  "samples": null,
+  "shutter": 0.5,
+  "maxSampleGapPx": null,
+  "verdict": "clean"
+ },
+ "loop": {
+  "seamDiff": 0.15,
+  "typicalStep": 0.18,
+  "fastestStep": 8.09,
+  "verdict": "seamless"
+ },
+ "loudness": {
+  "integratedLufs": -70.0,
+  "truePeakDbtp": null,
+  "lraLu": 0.0
+ },
+ "blindfold": {
+  "onsetsOnGrid": null,
+  "beatmap": false
+ }
+}

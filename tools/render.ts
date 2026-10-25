@@ -143,7 +143,9 @@ const run = () => {
         const a = idx.find((x) => x.id === id);
         return (id.startsWith("device.") && a?.asset.variant === "3d") || !!a?.files.some((f) => f.role === "depth");
       });
-      const gl = needsGl ? ["--gl=angle"] : [];
+      // CURATE_GL (as tools/stills reads it) forces a backend: heavy 2D scenes (big blurred photos + many word
+      // layers) drop layers on Chrome's default and are frame-pure on angle (app-store-header, 2026-10-24).
+      const gl = process.env.CURATE_GL ? [`--gl=${process.env.CURATE_GL}`] : needsGl ? ["--gl=angle"] : [];
       const r = spawnSync("npx", ["remotion", "render", j.composition, j.out, `--public-dir=${pub}`, "--codec=h264", `--concurrency=${j.concurrency ?? 3}`, ...(j.frames ? [`--frames=${j.frames}`] : []), ...q, ...props, ...gl], { cwd: ROOT, stdio: "inherit" });
       if (r.status !== 0) throw new Error(`remotion render exited ${r.status}`);
       // sidecar captions, whatever the mode (captions are always available)

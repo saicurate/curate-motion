@@ -1,0 +1,230 @@
+{
+ "ad": "app-store-previews-hybrid",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 7.0,
+    "smooth": 8.0,
+    "variety": 6.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "P1 h1: hook lands (coat lifts 0.55, glides beside the phone by 2.1, app moving from frame 0). Defects: 3.0-3.7 no words mid-push (line 2 late); 8-11 s the found-photos deck holds ~3 s with little change (variety); lockup holds 1.87 s (<2). Strip clean (comb 0.031). Sound n/a: App Previews silent by spec."
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 7.0,
+    "smooth": 8.0,
+    "variety": 7.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "P2 h2: tee hover + glide beside the phone reads; Studio Try it on, shimmer, she's in it, the set warms, full screen. Defects: frame 0 the board's scene not yet settled (in-point 2.1 -> 2.4); 3.0-3.6 no words mid-push; lockup holds <2 s. Strip clean (comb 0.039). Sound n/a (silent by spec)."
+  },
+  {
+   "round": 3,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 7.0,
+    "smooth": 8.0,
+    "variety": 6.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "P3 h3: rail of day cards lands on Today's look, push into the real Today, then Chat. Defects: 7.0-8.5 the chat starters hold ~2 s before her question (chat in-point 1.6 -> 3.2); 10-14 Zee's ring holds ~3.5 s (8.4 in-point, his line in); 3.0 no words mid-push. Strip clean (comb 0.065, the pan's 386 px/frame is one smear). Sound n/a."
+  },
+  {
+   "round": 4,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P1 h1-r2 (16.9 s): round-1 fixes in: line 2 at glide+0.95 (words back by 3.5), the deck trimmed to ~1 s (cut 2 from 14.0), rails land 9.5-10.7 and hold 2.2 s, lockup holds 2.07 s. Checked at 100%: crisp, plain full battery, new-look tab bar, coat rests beside the phone (never over the screen). Strip clean (comb 0.077). Sound n/a (silent by spec). PASS."
+  },
+  {
+   "round": 5,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P2 h2-r2 (16.5 s): board settled at frame 0 (in-point 2.4), Try it on 4.25 visible after the push, shimmer, she's in it 7.15 with the set warming, full screen 9.4-12.6 (the payoff, a read), lockup 2.04 s. Strip clean (comb 0.023). Next round adds a slow 2.5% camera breath on the phone so the long reads stay alive. Sound n/a. PASS."
+  },
+  {
+   "round": 6,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 7.0,
+    "variety": 7.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "P3 h3-r2 (17.8 s): the starters hold gone (question by 7.3). Defects: the pan at 14.1 combs on the chat's dense text (comb 0.175 at 2x: 6 samples, ~3 px gaps; the estimator's 453 px/frame is spurious on the white UI); 7.1-8.9 'Looking through your wardrobe' near-still 1.7 s; 9.9-12.6 Zee's ring 2.7 s. Fix: samples at 1.5 px gaps; chat cuts 3.2-5.6 and 9.0-14.04; out 12.6."
+  },
+  {
+   "round": 7,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P1 h1-r3 (16.9 s): with the 2.5% camera breath on the phone and samples at 1.5 px gaps; strip clean (comb 0.057), no layer drops, holds only the rails read (2.2 s) and the lockup (2.07 s). PASS."
+  },
+  {
+   "round": 8,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 6.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "P2 h2-r3: a dropped-layer frame at 2.733 (a garbage frame: the print tiled, the phone gone) during the push: Chrome dropping layers at concurrency 3 with 11 sub-frame samples. Re-render at --concurrency 1 with ANGLE (the header's rule)."
+  },
+  {
+   "round": 9,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 6.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "P3 h3-r3 (16.5 s): the chat holds trimmed (7.5-8.1, 9.2-10.7 reads), the pan is one smear now (comb 0.127 is the text inside the smear). Defect: a dropped-layer frame at 1.933 (the stage and the phone's screen white). Re-render at --concurrency 1."
+  },
+  {
+   "round": 10,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P2 h2-r4 (16.5 s, --concurrency 1 + ANGLE): no layer drops (glitch.py: none), strip clean (comb 0.0). Checked at 100%: the tee rests beside the phone, never over it; her print sharp; plain battery; new-look tab bar; her real try-on on the tile at 7.8 with the set warming. Holds are reads (Try it on, the result + Zee, the full-screen payoff, the lockup 2.04 s). PASS."
+  },
+  {
+   "round": 11,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P3 h3-r4 (16.5 s, --concurrency 1): no layer drops (glitch.py: none), the pan one smear (comb 0.025). Rail Thu > Fri > Today lands on the art fair look, push into the real Today (same look), For work, then Chat: question 7.5, ring + Zee's line 9.3-10.7, the look 11.3-12.6, lockup 2.04 s. PASS."
+  },
+  {
+   "round": 12,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P1 h1-r5 (16.9 s): the copy rule fix, 'Every item, *found and sorted.*' (two tones kept; ink x 68-702 of 886, clear of the phone). Rendered --concurrency 1 + ANGLE: no layer drops; glitch.py flags only 5.9 s, the app's own scan (a photo lands, the next appears; same in every render). Strip: frame 395 comb 0.19 at an estimated 107 px/frame (the real pan peaks ~42): at 100% it is the same single smear as round 7's frame 395 (comb 0.057); the metric reacts to the vertical strokes of 'item'. PASS."
+  },
+  {
+   "round": 13,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P1 blue (b1, 16.9 s): S-V3 subtle blue only (the founder): blue linen ground, ink first line, slate-navy second, cool slate shadows; no warm tone. Same cut as round 12. glitch.py: only 5.9 s, the app's own scan; no layer drops (concurrency 1, ANGLE). Strip: frame 395 comb 0.1 = the single smear of the pan over the headline text (checked at 100%). PASS."
+  },
+  {
+   "round": 14,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P2 blue (b2, 16.5 s): blue linen throughout, the reveal no longer warms the set; ink / slate-navy lines; cool slate shadows. glitch.py none, no layer drops, strip clean (comb 0.031). PASS."
+  },
+  {
+   "round": 15,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "P3 blue (b3, 16.5 s): day cards on pale blue-grey paper, blue linen, no warm tone. glitch.py none, no layer drops. Strip: frames 385/389 comb 0.18/0.11 at an estimated 317-323 px/frame (impossible for the pan, ~42): at 100% one clean smear of the headline and phone; the detector reads the linen's regular weave, now moving with the set. PASS."
+  }
+ ]
+}

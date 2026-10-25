@@ -9,6 +9,7 @@
 //                                                      record each shot → .cache/takes/b284/<id>.mp4 (+ stills),
 //                                                      then add it to the catalog (footage / screenshot, draft)
 //   --sim <udid>      default: .cache/motion-sim-udid.txt. Never a "… Marketing" simulator (kept for real accounts).
+//   --battery discharging   the plain full battery instead of iOS 26's green charging one
 //   --no-register     record only          --register-only   add the takes an earlier --no-register run made
 //   --dry-run         say what it would do
 //
@@ -36,6 +37,9 @@ const dry = Boolean(args["dry-run"]);
 const appPath = (name: string) => join(CACHE, "apps", `b${L.build}-${name}.app`);
 const control = (a: App) => join(CACHE, "ctl", a.control);
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+// The status bar's battery: "charged" (the default) draws iOS 26's green battery with a bolt; "discharging" at
+// 100 draws the plain full one, as on a phone off its charger.
+const battery = String(args.battery ?? "charged");
 
 // ---------------------------------------------------------------- build
 
@@ -115,7 +119,7 @@ const record = async (shot: Shot): Promise<Take> => {
   install(shot.app);
   const ctl = control(a);
   mkdirSync(join(CACHE, "ctl"), { recursive: true });
-  simctl("status_bar", sim, "override", "--time", "9:41", "--dataNetwork", "wifi", "--wifiMode", "active", "--wifiBars", "3", "--cellularMode", "active", "--cellularBars", "4", "--batteryState", "charged", "--batteryLevel", "100");
+  simctl("status_bar", sim, "override", "--time", "9:41", "--dataNetwork", "wifi", "--wifiMode", "active", "--wifiBars", "3", "--cellularMode", "active", "--cellularBars", "4", "--batteryState", battery, "--batteryLevel", "100");
   try {
     simctl("terminate", sim, L.bundle);
   } catch {

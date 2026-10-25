@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-wardrobe-rails moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-wardrobe-rails.v1",
+      "title": "Her wardrobe in rails: count chips, a rail swiped, the page scrolled (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-wardrobe-rails/emma-b284.v1.mp4",
+          "sha256": "69856f41400ea0728487b411e70b9579985425a527c0838193137a4c54d1301f",
+          "bytes": 19357471,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-wardrobe-rails",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:wardrobe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 11.57,
+      "fps": 600,
+      "moment": "b284-wardrobe-rails",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "wardrobe": 1.7,
+        "drag-300-330-140-0-500": 4.2,
+        "drag-220-640-0-420-900": 6.7,
+        "drag-220-300-0-420-900": 9.2
+      }
+    }
+  ]
+}

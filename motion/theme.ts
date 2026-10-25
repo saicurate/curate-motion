@@ -41,7 +41,8 @@ export const useBrandFonts = () => {
   if (fontsRequested) return;
   fontsRequested = true;
   for (const [weight, id] of Object.entries(FONT_IDS)) {
-    loadFont({ family: GEIST, url: src(id), weight });
+    // format given, not guessed from the URL: on Lambda the URL is presigned (a query after .ttf)
+    loadFont({ family: GEIST, url: src(id), weight, format: "truetype" });
   }
 };
 

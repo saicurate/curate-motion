@@ -23,7 +23,8 @@
         "free": [
           "screen:selfie-camera",
           "appBuild:262",
-          "source:probe"
+          "source:probe",
+          "look:v1"
         ]
       },
       "source": {
@@ -91,7 +92,8 @@
         "free": [
           "screen:selfie-camera",
           "appBuild:262",
-          "source:probe"
+          "source:probe",
+          "look:v1"
         ]
       },
       "source": {

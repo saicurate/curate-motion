@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-extract-selfie moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-extract-selfie.v1",
+      "title": "Extract all: First, a selfie; the camera; That's you; Use this (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-extract-selfie/emma-b284.v1.mp4",
+          "sha256": "78d08339bcf275127d71a57c9f5d7f5bf313cca1721a8bea01af7d1b02722d8c",
+          "bytes": 13355103,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-extract-selfie",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 15.483,
+      "fps": 60,
+      "moment": "b284-extract-selfie",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "tap-wardrobev2extract": 2.2,
+        "tap-selfiesheettake": 4.7,
+        "tap-selfieshutter": 8.21,
+        "tap-selfieuse": 12.21
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-studio-try-it-on moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-studio-try-it-on.v1",
+      "title": "Try it on: the mesh over her photo, her try-on lands, the result opens (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-studio-try-it-on/emma-b284.v1.mp4",
+          "sha256": "9f5e9b6e9cb2836cf34f20d1a9c52a535bf1cb1a8b9163e4b7b87a24c33f6338",
+          "bytes": 19488352,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-studio-try-it-on",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 13.978,
+      "fps": 60,
+      "moment": "b284-studio-try-it-on",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "tap-studiotryon": 2.21,
+        "tap-studiotile": 10.2
+      }
+    }
+  ]
+}

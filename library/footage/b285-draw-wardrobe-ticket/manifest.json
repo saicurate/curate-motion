@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b285-draw-wardrobe-ticket moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b285-draw-wardrobe-ticket.v1",
+      "title": "Event Draw: The Closet tab, the ticket card with clothes added (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b285-draw-wardrobe-ticket/emma-b285.v1.mp4",
+          "sha256": "74b0191be197e72ba0a10673a825da25f915b4b22a580df5a829c74dbfd1f04d",
+          "bytes": 99024,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b285-draw-wardrobe-ticket",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "durationSec": 3.202,
+      "fps": 27.58,
+      "moment": "b285-draw-wardrobe-ticket",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Event CPP Shots 17P (simulator)",
+      "cleanStatusBar": true,
+      "marks": {}
+    }
+  ]
+}

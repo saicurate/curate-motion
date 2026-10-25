@@ -24,7 +24,8 @@
           "screen:splash",
           "state:mark",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -98,7 +99,8 @@
           "state:reel",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -172,7 +174,8 @@
           "state:reel",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -246,7 +249,8 @@
           "screen:front-door",
           "state:sign-in",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -319,7 +323,8 @@
           "screen:email-signup",
           "state:empty",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -392,7 +397,8 @@
           "screen:onboarding-about",
           "state:filled",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -465,7 +471,8 @@
           "screen:onboarding-username",
           "state:available",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -539,7 +546,8 @@
           "state:pair",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -613,7 +621,8 @@
           "state:pair",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -687,7 +696,8 @@
           "screen:onboarding-style",
           "state:ranked",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -761,7 +771,8 @@
           "state:reading",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -835,7 +846,8 @@
           "state:reading",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -909,7 +921,8 @@
           "screen:onboarding-mirror",
           "state:payoff",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -982,7 +995,8 @@
           "screen:onboarding-body",
           "state:height",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1055,7 +1069,8 @@
           "screen:onboarding-body",
           "state:tapes",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1128,7 +1143,8 @@
           "screen:wardrobe",
           "state:empty",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1201,7 +1217,8 @@
           "screen:wardrobe",
           "state:empty-on-it",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1275,7 +1292,8 @@
           "state:consent",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -1349,7 +1367,8 @@
           "state:consent",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -1423,7 +1442,8 @@
           "screen:selfie-step",
           "state:ring",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1496,7 +1516,8 @@
           "screen:selfie-camera",
           "state:hint-circle",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1569,7 +1590,8 @@
           "screen:selfie-camera",
           "state:hint-light",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1642,7 +1664,8 @@
           "screen:selfie-camera",
           "state:hint-perfect",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1716,7 +1739,8 @@
           "state:thats-you",
           "source:probe",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -1790,7 +1814,8 @@
           "state:thats-you",
           "source:probe",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -1864,7 +1889,8 @@
           "screen:selfie-step",
           "state:there-you-are",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -1937,7 +1963,8 @@
           "screen:photos-access",
           "state:system-prompt",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -2011,7 +2038,8 @@
           "state:two-taps",
           "source:probe",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2085,7 +2113,8 @@
           "state:two-taps",
           "source:probe",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2159,7 +2188,8 @@
           "screen:photos-off",
           "state:yay",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -2232,7 +2262,8 @@
           "screen:scan",
           "state:deck",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -2306,7 +2337,8 @@
           "state:mid-scan",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2380,7 +2412,8 @@
           "state:mid-scan",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2454,7 +2487,8 @@
           "screen:scan",
           "state:found",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -2528,7 +2562,8 @@
           "state:up-big",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2602,7 +2637,8 @@
           "state:up-big",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2676,7 +2712,8 @@
           "screen:pieces-wait",
           "state:style-fact",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -2749,7 +2786,8 @@
           "screen:pieces-wait",
           "state:first-piece",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -2823,7 +2861,8 @@
           "state:arriving",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2897,7 +2936,8 @@
           "state:arriving",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -2971,7 +3011,8 @@
           "screen:pieces-wait",
           "state:notification-prompt",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3045,7 +3086,8 @@
           "state:cheer",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -3119,7 +3161,8 @@
           "state:cheer",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -3194,7 +3237,8 @@
           "state:grid",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -3268,7 +3312,8 @@
           "state:grid",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -3342,7 +3387,8 @@
           "screen:import-review",
           "state:removed-undo",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3415,7 +3461,8 @@
           "screen:wardrobe",
           "state:new-pieces",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3488,7 +3535,8 @@
           "screen:wardrobe",
           "state:at-work",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3561,7 +3609,8 @@
           "screen:wardrobe",
           "state:at-work-longer",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3634,7 +3683,8 @@
           "screen:wardrobe",
           "state:ready-pill",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3708,7 +3758,8 @@
           "state:top",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -3780,7 +3831,8 @@
           "state:top",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -3852,7 +3904,8 @@
           "screen:wardrobe",
           "state:scrolled-1",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3923,7 +3976,8 @@
           "screen:wardrobe",
           "state:scrolled-2",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -3994,7 +4048,8 @@
           "screen:wardrobe",
           "state:scrolled-3",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4065,7 +4120,8 @@
           "screen:wardrobe",
           "state:chip-tops",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4136,7 +4192,8 @@
           "screen:wardrobe",
           "state:chip-bottoms",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4207,7 +4264,8 @@
           "screen:wardrobe",
           "state:chip-dresses",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4278,7 +4336,8 @@
           "screen:wardrobe",
           "state:chip-shoes",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4349,7 +4408,8 @@
           "screen:wardrobe",
           "state:chip-outerwear",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4420,7 +4480,8 @@
           "screen:wardrobe",
           "state:chip-accessories",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4491,7 +4552,8 @@
           "screen:wardrobe",
           "state:chip-bags",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4562,7 +4624,8 @@
           "screen:calendar",
           "state:month",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4633,7 +4696,8 @@
           "screen:notifications",
           "state:people",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4704,7 +4768,8 @@
           "screen:notifications",
           "state:tryons",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4775,7 +4840,8 @@
           "screen:create-outfit",
           "state:sheet",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -4847,7 +4913,8 @@
           "state:top",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -4919,7 +4986,8 @@
           "state:top",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -4991,7 +5059,8 @@
           "screen:piece-detail",
           "state:edit",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5062,7 +5131,8 @@
           "screen:add-item",
           "state:sheet",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5133,7 +5203,8 @@
           "screen:extraction",
           "state:looking",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5206,7 +5277,8 @@
           "screen:extraction",
           "state:found",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5279,7 +5351,8 @@
           "screen:duplicate-review",
           "state:sheet",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5352,7 +5425,8 @@
           "screen:duplicate-review",
           "state:picked",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5426,7 +5500,8 @@
           "state:empty",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -5498,7 +5573,8 @@
           "state:empty",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -5570,7 +5646,8 @@
           "screen:chat",
           "state:typing",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5644,7 +5721,8 @@
           "state:question-card",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -5718,7 +5796,8 @@
           "state:question-card",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -5792,7 +5871,8 @@
           "screen:chat",
           "state:location-ask",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -5866,7 +5946,8 @@
           "state:sky-and-thinking",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -5940,7 +6021,8 @@
           "state:sky-and-thinking",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -6015,7 +6097,8 @@
           "state:thinking",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -6089,7 +6172,8 @@
           "state:thinking",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -6163,7 +6247,8 @@
           "screen:chat",
           "state:thinking-weather",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -6236,7 +6321,8 @@
           "screen:chat",
           "state:look-landing",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -6310,7 +6396,8 @@
           "state:look-card",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -6382,7 +6469,8 @@
           "state:look-card",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -6454,7 +6542,8 @@
           "screen:chat",
           "state:thread-top",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -6525,7 +6614,8 @@
           "screen:chat",
           "state:thread-reply",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -6597,7 +6687,8 @@
           "state:multiple-looks",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -6671,7 +6762,8 @@
           "state:multiple-looks",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -6745,7 +6837,8 @@
           "screen:chat",
           "state:multiple-looks-alt",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -6818,7 +6911,8 @@
           "screen:chat",
           "state:work-look",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -6889,7 +6983,8 @@
           "screen:chat",
           "state:dates-card",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -6962,7 +7057,8 @@
           "screen:chat",
           "state:dates-picked",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7035,7 +7131,8 @@
           "screen:chat",
           "state:trip-thread",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7106,7 +7203,8 @@
           "screen:chat",
           "state:trip-look",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7178,7 +7276,8 @@
           "state:sheet",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -7250,7 +7349,8 @@
           "state:sheet",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -7323,7 +7423,8 @@
           "state:top",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -7395,7 +7496,8 @@
           "state:top",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -7467,7 +7569,8 @@
           "screen:style-notes",
           "state:scrolled",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7538,7 +7641,8 @@
           "screen:chat-drawer",
           "state:open",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7609,7 +7713,8 @@
           "screen:chat-drawer",
           "state:search",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7680,7 +7785,8 @@
           "screen:notebook",
           "state:sheet",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7751,7 +7857,8 @@
           "screen:outfits",
           "state:saved-empty",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7822,7 +7929,8 @@
           "screen:outfits",
           "state:recent",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7893,7 +8001,8 @@
           "screen:outfits",
           "state:planned-empty",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -7964,7 +8073,8 @@
           "screen:outfits",
           "state:tried-empty",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8035,7 +8145,8 @@
           "screen:try-ons",
           "state:start",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8108,7 +8219,8 @@
           "screen:try-ons",
           "state:ready",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8179,7 +8291,8 @@
           "screen:try-ons",
           "state:add-item",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8250,7 +8363,8 @@
           "screen:try-ons",
           "state:item-placed",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8322,7 +8436,8 @@
           "state:curtain",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -8396,7 +8511,8 @@
           "state:curtain",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -8470,7 +8586,8 @@
           "screen:try-ons",
           "state:reveal",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8544,7 +8661,8 @@
           "state:result-dress",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -8616,7 +8734,8 @@
           "state:result-dress",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -8688,7 +8807,8 @@
           "screen:try-ons",
           "state:result-tee",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8759,7 +8879,8 @@
           "screen:try-ons",
           "state:history",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -8831,7 +8952,8 @@
           "state:try-ons",
           "source:app",
           "size:1320x2868",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -8903,7 +9025,8 @@
           "state:try-ons",
           "source:app",
           "size:1290x2796",
-          "hero"
+          "hero",
+          "look:v1"
         ]
       },
       "source": {
@@ -8975,7 +9098,8 @@
           "screen:profile",
           "state:gallery",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9046,7 +9170,8 @@
           "screen:profile",
           "state:edit",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9117,7 +9242,8 @@
           "screen:settings",
           "state:top",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9188,7 +9314,8 @@
           "screen:settings",
           "state:scrolled",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9259,7 +9386,8 @@
           "screen:settings",
           "state:skin-tone",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9330,7 +9458,8 @@
           "screen:settings",
           "state:body",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9401,7 +9530,8 @@
           "screen:settings",
           "state:notifications",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9472,7 +9602,8 @@
           "screen:settings",
           "state:appearance",
           "source:app",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9543,7 +9674,8 @@
           "screen:required-update",
           "state:screen",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9616,7 +9748,8 @@
           "screen:chat",
           "state:zee-a1-refine",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9689,7 +9822,8 @@
           "screen:chat",
           "state:zee-a2-look-changed",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9762,7 +9896,8 @@
           "screen:chat",
           "state:zee-a3-loved",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9835,7 +9970,8 @@
           "screen:chat",
           "state:zee-a4-typing",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9908,7 +10044,8 @@
           "screen:chat",
           "state:zee-b5-night",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -9981,7 +10118,8 @@
           "screen:chat",
           "state:zee-b6-morning",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -10054,7 +10192,8 @@
           "screen:chat",
           "state:zee-b7-pet",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -10127,7 +10266,8 @@
           "screen:chat",
           "state:zee-b8-saved",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -10200,7 +10340,8 @@
           "screen:chat",
           "state:zee-b9-idea",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -10273,7 +10414,8 @@
           "screen:chat",
           "state:zee-b10-long-wait",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -10346,7 +10488,8 @@
           "screen:chat",
           "state:zee-b13-welcome-back",
           "source:probe",
-          "size:1320x2868"
+          "size:1320x2868",
+          "look:v1"
         ]
       },
       "source": {
@@ -10396,6 +10539,4504 @@
       "hero": false,
       "approvedBy": "founder (said: approve everything, 2026-10-15)",
       "approvedAt": "2026-10-15"
+    },
+    {
+      "id": "screenshot.emma.nl-wardrobe-grid.v1",
+      "title": "New look: Wardrobe, your wardrobe grid (build 264)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/nl-wardrobe-grid.v1.png",
+          "sha256": "f1fc575b710fe0e642859f6014cc67b571613027a22519c8aaac88bdf7c5139a",
+          "bytes": 664551,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:264"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "your-wardrobe",
+      "app": {
+        "build": 264,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.nl-studio-tryon.v1",
+      "title": "New look: Studio, Off-duty black tried on (build 264)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/nl-studio-tryon.v1.png",
+          "sha256": "5fff457e8c1915bd7fb029ab725b769bb2ffdc935342669b94e2f67e5f9c29ff",
+          "bytes": 2565431,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:264"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "studio",
+      "state": "tried-on",
+      "app": {
+        "build": 264,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.nl-chat-monday.v1",
+      "title": "New look: Zee plans Monday (build 264)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/nl-chat-monday.v1.png",
+          "sha256": "ba66bc06baaf32ea7b44149d961ca5f7607f90603c8fc996f092f0e97cab0216",
+          "bytes": 307744,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:264"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "chat",
+      "state": "answer",
+      "app": {
+        "build": 264,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.nl-chat-hey.v1",
+      "title": "New look: Hey Emma, chat start (build 264)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/nl-chat-hey.v1.png",
+          "sha256": "48d8bd5780d8a6e5acc09b8d57d22bcaf0281c227afb36968fd1fd2835d4226e",
+          "bytes": 342170,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:264"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "chat",
+      "state": "start",
+      "app": {
+        "build": 264,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.nl-today-look.v1",
+      "title": "New look: Today, The art fair tonight (build 264)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/nl-today-look.v1.png",
+          "sha256": "403d9f8589faa054683ea5b079a4ac54da2ddbed565d94dda9d2f1cdafede0aa",
+          "bytes": 641091,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:264"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "today",
+      "state": "look",
+      "app": {
+        "build": 264,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-wardrobe-rails.v1",
+      "title": "Build 284: Wardrobe, all items in rails by category (Tan Wool Coat, Denim Jacket first)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-wardrobe-rails.v1.png",
+          "sha256": "7a45308b5e909a1ce72dc0b9c26c2b3933d97606fe23143ae947e99e971f1514",
+          "bytes": 951637,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "all-rails",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-offduty-tryon.v1",
+      "title": "Build 284: Studio, Off-duty black board with her black-tee try-on",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-offduty-tryon.v1.png",
+          "sha256": "3bb2d9fe00415248f86794a7493137a77345d30c759a3ef2620534fa7aa2c3c0",
+          "bytes": 1083673,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-header",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "studio",
+      "state": "look-tried-on",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-artfair.v1",
+      "title": "b284 today artfair",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-artfair.v1.png",
+          "sha256": "549c95667802cb064d65c05b9004c990d27f058e53be12ad0409d8601c04bd2c",
+          "bytes": 691468,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "today",
+      "state": "art-fair-look",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-rain.v1",
+      "title": "b284 today rain",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-rain.v1.png",
+          "sha256": "49644fc16145f8f2a2dd6c629f1db481942d060a319b76595780a4cd0e2233a6",
+          "bytes": 1002742,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "today",
+      "state": "rain-till-4pm",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-hello.v1",
+      "title": "b284 chat hello",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-hello.v1.png",
+          "sha256": "525bcba06b49f2d70c31682150c9bbc9e7e368888edd2e3bcc1adfcb2eeaac18",
+          "bytes": 318127,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "chat",
+      "state": "hey-emma-starters",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-artfair-look.v1",
+      "title": "b284 chat artfair look",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-artfair-look.v1.png",
+          "sha256": "cebda47be1baad181e4e29a847c2c3e3985d14812ab1c3bc4928aa371da57a4c",
+          "bytes": 528773,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "chat",
+      "state": "art-fair-answer",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-wardrobe-rails.v2",
+      "title": "Build 284: Wardrobe, all items in rails by category (Tan Wool Coat, Denim Jacket first)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-wardrobe-rails.v2.png",
+          "sha256": "8d84cb27a00c4829dc4c8361388b5a6f0a965d0dd5eec729e55c23e6b19b252f",
+          "bytes": 716203,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "supersedes": "screenshot.emma.b284-wardrobe-rails.v1",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "all-rails",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-offduty-tryon.v2",
+      "title": "Build 284: Studio, Off-duty black board with her black-tee try-on",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-offduty-tryon.v2.png",
+          "sha256": "031cee01df0794433ab8ad3010cebc6a63a2757a5a4248fb6c26b621e0e6303a",
+          "bytes": 778422,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "look:new",
+          "appBuild:284"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-fork-app-store-shots-v3",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "supersedes": "screenshot.emma.b284-studio-offduty-tryon.v1",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "studio",
+      "state": "look-tried-on",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "env": "prod"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-art-fair.v1",
+      "title": "Today: Good morning, the art fair look for tonight (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-art-fair.v1.png",
+          "sha256": "cf1cef86188877963326a6126b4c9935702d607f1c766565bbf471c79b034d2e",
+          "bytes": 739280,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-today-landing.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "today",
+      "state": "today-art-fair",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-for-work.v1",
+      "title": "Today: For work (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-for-work.v1.png",
+          "sha256": "f6a4c45f12db3c33d34aead60c69533212a8ad7ef2a97cbc25ed577f11fda6e7",
+          "bytes": 1154357,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-today-scroll-day.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "today",
+      "state": "today-for-work",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-date-night.v1",
+      "title": "Today: Date night (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-date-night.v1.png",
+          "sha256": "8cdc31407a293c4ce3eaea1f5477b224edf943439b0ea5a379f51d9f380a0199",
+          "bytes": 1159659,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-today-scroll-day.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "today",
+      "state": "today-date-night",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-second-look.v1",
+      "title": "Today: the second look for the occasion (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-second-look.v1.png",
+          "sha256": "3903c939b0f1a71ab489fca30263b31187a31cfb5009955a591e125f426aed2d",
+          "bytes": 1139458,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-today-swipe-looks.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "today",
+      "state": "today-second-look",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-rain.v2",
+      "title": "Today: Rain till 4 pm, the covered look (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-rain.v2.png",
+          "sha256": "670fc93bce4f1d73451f538c35f32a4ce1289f52dabaeee6b9498f2e247f9f89",
+          "bytes": 1065074,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-today-rain.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "today",
+      "state": "today-rain",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-today-not-for-me.v1",
+      "title": "Today: Not for me, the reasons (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-today-not-for-me.v1.png",
+          "sha256": "714a074c3ec604cb3b6c0dfd9f9f2f673a5cc8354188e39e107816185bd54af0",
+          "bytes": 523928,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-today-save-not-for-me.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "today",
+      "state": "today-not-for-me",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-wardrobe-rails.v3",
+      "title": "Wardrobe: 21 items in rails by shelf (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-wardrobe-rails.v3.png",
+          "sha256": "97e13edc289bd2944ed494929707a834a1960254a2660b79253f94c4a918da96",
+          "bytes": 1056367,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:wardrobe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-wardrobe-rails.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "wardrobe",
+      "state": "wardrobe-rails",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-wardrobe-item.v1",
+      "title": "Wardrobe item: the black blazer, Style this piece (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-wardrobe-item.v1.png",
+          "sha256": "8c6a9e2afb5fbd4b7560daafab52c554fd209174502b39a94e6274269fc24799",
+          "bytes": 332196,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:wardrobe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-wardrobe-item.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "wardrobe",
+      "state": "wardrobe-item",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-board.v1",
+      "title": "Studio: Weekend in black on the board (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-board.v1.png",
+          "sha256": "4674f0850e0c5bdbde61cceaa20d7a37d02b206733876265f337c0987ad72bd3",
+          "bytes": 1280474,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-board-open.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-board",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-weekend-denim.v1",
+      "title": "Studio: Weekend in denim, with its try-on (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-weekend-denim.v1.png",
+          "sha256": "85b9d3f55e0bb1747f8b0d091208bf2a16ced75c955ad091301dfa07d684dfa0",
+          "bytes": 1591975,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-swipe-looks.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-weekend-denim",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-tray-picked.v1",
+      "title": "Studio: items picked from the tray (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-tray-picked.v1.png",
+          "sha256": "08d5336930f79f6bdbabfcbc7aa73683cca7b5d337d9e80ca62aca316de6e660",
+          "bytes": 1457219,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-tray-pick.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-tray-picked",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-piece-lifted.v1",
+      "title": "Studio: the tee lifted, swaps beside it (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-piece-lifted.v1.png",
+          "sha256": "e4855e6a01697a61f5e84e16f017162def315ffa82c94e73cd595d972a9660e6",
+          "bytes": 1263385,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-piece-lift.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-piece-lifted",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-piece-swapped.v1",
+      "title": "Studio: the tee swapped for the white shirt (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-piece-swapped.v1.png",
+          "sha256": "47042e269458ee8e23f80e8cc2577ed54ea7914a6526e9d458b5fa26ef565435",
+          "bytes": 1321750,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-piece-lift.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-piece-swapped",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-new-look.v1",
+      "title": "Studio: a new look (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-new-look.v1.png",
+          "sha256": "cc00befe5e0d1eca3c76e57d38f5ae209430b8f9e5945f81287d74e0a61a9b5e",
+          "bytes": 991836,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-new-look.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-new-look",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-trying-on.v1",
+      "title": "Studio: trying it on (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-trying-on.v1.png",
+          "sha256": "12f1f1974ad33bbbdf21254c61bff19426eab6dabd0a9979794162b4224a7f92",
+          "bytes": 1176238,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-try-it-on.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-trying-on",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-studio-tryon-result.v1",
+      "title": "Studio: her try-on on the board (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-studio-tryon-result.v1.png",
+          "sha256": "28c82597c17531a997340265291f2a63287fd59ad86c828bd838285ad8df4315",
+          "bytes": 1260761,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-try-it-on.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "studio-tryon-result",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-tryon-result-card.v1",
+      "title": "Try-on result: her in Weekend in black (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-tryon-result-card.v1.png",
+          "sha256": "b6a27de457600a7e5b9a6b726c3e929cd36ae75b3d6a1c343e987e201ac9e1ed",
+          "bytes": 3007144,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-studio-try-it-on.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "tryon-result-card",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-zee-on-bar.v1",
+      "title": "Zee on the tab bar: a line about the look (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-zee-on-bar.v1.png",
+          "sha256": "7b3eb9ab5259dd36fd4ac4886c80d03010172ec906bd0a2a3faad60ceedcf3a1",
+          "bytes": 1251570,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-zee-on-bar.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "studio",
+      "state": "zee-on-bar",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-profile.v1",
+      "title": "Profile: Emma, her looks, try-ons and gallery (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-profile.v1.png",
+          "sha256": "3aa5e961644f2dd7d71b11866806a23721e9ea0c7819dd34c083bc15102d985f",
+          "bytes": 711770,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:profile"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-settings-profile.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "profile",
+      "state": "profile",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-stylist-welcome.v1",
+      "title": "Welcome, Emma: Zee and his name tag (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-stylist-welcome.v1.png",
+          "sha256": "962dd6dbafd0aa81f30a0309802df2cd0ca9b904118f91e28b223cda56968e04",
+          "bytes": 687081,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-stylist-welcome.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "stylist-welcome",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-stylist-renamed.v1",
+      "title": "Welcome: Zee renamed Coco (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-stylist-renamed.v1.png",
+          "sha256": "694ddec894090be34a55570576536ce542264086c9c4413e49beed27fb0006f7",
+          "bytes": 680589,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-stylist-welcome.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "stylist-renamed",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-wardrobe-empty.v1",
+      "title": "Wardrobe, empty: Extract all wardrobe items (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-wardrobe-empty.v1.png",
+          "sha256": "dbd2e45dcd8ee15bf4008dc330fcf2093e72bd34a31ac9179df4d9c2a59535fa",
+          "bytes": 656966,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:wardrobe"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-wardrobe-empty-first.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "wardrobe",
+      "state": "wardrobe-empty",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-extract-selfie-sheet.v1",
+      "title": "Extract all: First, a selfie (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-extract-selfie-sheet.v1.png",
+          "sha256": "102b4af15be89bd16e63423b5670b6d3fd079acd81dcb547ce841c4e7ce6bc8d",
+          "bytes": 627194,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-extract-selfie.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "extract-selfie-sheet",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-extract-selfie-camera.v1",
+      "title": "The selfie camera: Look straight at the camera (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-extract-selfie-camera.v1.png",
+          "sha256": "098bcfc550ea9e6d04dcf160b676619cf63d856c285c9d6177645384e422ebd1",
+          "bytes": 1144017,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-extract-selfie.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "extract-selfie-camera",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-extract-selfie-taken.v1",
+      "title": "Her selfie: That's you (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-extract-selfie-taken.v1.png",
+          "sha256": "30f10e26f3c7baa42c24018adb495bc2b34c2db47dab4348e2c74392d191e90f",
+          "bytes": 1160711,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-extract-selfie.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "extract-selfie-taken",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-extract-photos-sheet.v1",
+      "title": "Extract all: Now, your photos (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-extract-photos-sheet.v1.png",
+          "sha256": "5ea5a927cf3706b984c48e413ac4c8e542d5b1a4e8be942e8c5e3f7f5f5423ea",
+          "bytes": 928338,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-extract-selfie.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "extract-photos-sheet",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-extract-scan-starts.v1",
+      "title": "The scan starts: looking for photos of you (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-extract-scan-starts.v1.png",
+          "sha256": "1c171d01b49476cafd77158bbbbb1af5a29a821267e69406e7a48b413f094394",
+          "bytes": 1334017,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-extract-photos-continue.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "extract-scan-starts",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-scan-sort.v1",
+      "title": "The scan: photos of you, sorted from the rest (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-scan-sort.v1.png",
+          "sha256": "6ac29869f8949499327937d2aafc7da235a7abf74d3035a9e7cc6ee23def6d85",
+          "bytes": 1492152,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-scan-sort-fan-land.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "scan-sort",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-scan-fan.v1",
+      "title": "The scan: her photos in a fan, her items being drawn (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-scan-fan.v1.png",
+          "sha256": "bd3b9e3777aa29fbd415eedfe7f2ee4f01c743cc8c7c844ac5d98ecd2a307b80",
+          "bytes": 887100,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-scan-sort-fan-land.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "scan-fan",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-scan-landed.v1",
+      "title": "The scan landed: her wardrobe items in rails (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-scan-landed.v1.png",
+          "sha256": "8fc7fc216cae259700ae7dd8dd25dbd9f5858ebd521653dc2e553b0213a1e71a",
+          "bytes": 980876,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-scan-sort-fan-land.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "scan-landed",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-scan-done.v1",
+      "title": "Added 14 wardrobe items (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-scan-done.v1.png",
+          "sha256": "efc753aa9b0b63e2b09b2006afd64b1892826ed2b778dc550ba8bfcbea09468e",
+          "bytes": 979985,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-scan-done-band.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "scan-done",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-hello.v2",
+      "title": "Chat: Hey Emma, the starters (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-hello.v2.png",
+          "sha256": "36ab8f4299359f23a9fb77c3d3f0e7fdd629fb453e2a5d12984f75ea06b33168",
+          "bytes": 335811,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-chat-hello.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "chat",
+      "state": "chat-hello",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-thinking.v1",
+      "title": "Chat: Zee thinking with her wardrobe (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-thinking.v1.png",
+          "sha256": "f182abc8c1d3916a36b9a556fe4411aa2f7a597859ff22359206387ee9f2b96b",
+          "bytes": 393129,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-chat-ask-art-fair.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "chat",
+      "state": "chat-thinking",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-art-fair-look.v1",
+      "title": "Chat: the art fair look, from her wardrobe (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-art-fair-look.v1.png",
+          "sha256": "1fbabfdd5f46f89aa090d8b36a23b39e0612bf88b3f819c5aa2e9f3e468f9570",
+          "bytes": 559910,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-chat-ask-art-fair.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "chat",
+      "state": "chat-art-fair-look",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-trying-on.v1",
+      "title": "Chat: trying the look on (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-trying-on.v1.png",
+          "sha256": "8ceed0398df70ddf5f0c5e39d4201f7c622abc40d134b80ee8e0b8e62183ce69",
+          "bytes": 568708,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-chat-tryon.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "chat",
+      "state": "chat-trying-on",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-tryon-landed.v1",
+      "title": "Chat: her try-on landed (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-tryon-landed.v1.png",
+          "sha256": "a0a72725eaf50c24548859d85b7d9f3fe14935a6acfce91bdc4b56176edafed3",
+          "bytes": 591609,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-chat-tryon.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "chat",
+      "state": "chat-tryon-landed",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-chat-tryon-sheet.v1",
+      "title": "Chat: her try-on, full sheet (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-chat-tryon-sheet.v1.png",
+          "sha256": "b032365b33a40480c404273d66f6ab81400e08ef5cc88186a24b0ed7500fc719",
+          "bytes": 885098,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-chat-tryon.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "chat",
+      "state": "chat-tryon-sheet",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-update-sheet.v1",
+      "title": "Update: a new version of Curate (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-update-sheet.v1.png",
+          "sha256": "bd45bfd58595a9eb03bb3e87166af254101bb5650dbddb62fa16565129a29b25",
+          "bytes": 330499,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-chat-update-sheet.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "chat",
+      "state": "update-sheet",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-front-door.v1",
+      "title": "Front door: Try it. Style it. Wear it. (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-front-door.v1.png",
+          "sha256": "283a25f41561070898502901296befecca96d6429eab804e1e3ad24b4b4dd34b",
+          "bytes": 171875,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-front-door-reel.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "front-door",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-sign-up-doors.v1",
+      "title": "Sign up: Continue with Apple, Google or email (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-sign-up-doors.v1.png",
+          "sha256": "7d0cf4ecf5d79dde1de38d02591e98612ba0cde3fc0c0f5bb6e886b721cfe9a5",
+          "bytes": 216857,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run",
+          "third-party-marks"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-sign-up-doors.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "sign-up-doors",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-sign-up-email.v1",
+      "title": "Create your account (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-sign-up-email.v1.png",
+          "sha256": "affda00c220be3410737317b3c63c3248e8f5d40427631b747c098eaad0eb27a",
+          "bytes": 224648,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run",
+          "third-party-marks"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-sign-up-doors.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "sign-up-email",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-signup-about.v1",
+      "title": "Sign-up 1 of 2: Nice to meet you (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-signup-about.v1.png",
+          "sha256": "7307952d5ad23b1765a8accac22633582bd2da9ee798517003f37d822a5774aa",
+          "bytes": 193037,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-short-signup.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "signup-about",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-signup-username.v1",
+      "title": "Sign-up 2 of 2: Pick your username (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-signup-username.v1.png",
+          "sha256": "ab59e65c8033d5d4232d35912bb160c743cd050634fb79a9bc40739a89a9dfc7",
+          "bytes": 238122,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-short-signup.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "signup-username",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b284-signup-username-typed.v1",
+      "title": "Sign-up: @emma.nyc available (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b284-signup-username-typed.v1.png",
+          "sha256": "bf1b6c76f8da94d481e8c0b44b955dce1567785438223d6d78eb00ffb54974b6",
+          "bytes": 340066,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b284-short-signup.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "screen": "first-run",
+      "state": "signup-username-typed",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-waiting.v1",
+      "title": "Event Draw: Your ticket is waiting: the two steps (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-waiting.v1.png",
+          "sha256": "4603ef4c65753e3772f1deea6cbada7e3f4b8328f733ec89c95c964131af60fc",
+          "bytes": 287374,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-waiting.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-waiting",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-wardrobe.v1",
+      "title": "Event Draw: The Closet tab with the draw's ticket card, nothing done (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-wardrobe.v1.png",
+          "sha256": "e3b69ec93447c8734e14d4a67eca53bd334fd5f6b7963193427388e88ccee81a",
+          "bytes": 564678,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-wardrobe.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-wardrobe",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-wardrobe-ticket.v1",
+      "title": "Event Draw: The Closet tab, the ticket card with clothes added (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-wardrobe-ticket.v1.png",
+          "sha256": "b3b851520a59d6cf88f6c360ebc37a9a42507a468d943b79af53b7f807d05a6d",
+          "bytes": 565651,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-wardrobe-ticket.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-wardrobe-ticket",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-youre-in.v1",
+      "title": "Event Draw: You're in! The ticket (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-youre-in.v1.png",
+          "sha256": "72fe4c2bb4046ede928d7ddc9accf3fd5d0609b3c1f843d66e1cfdf0e39489c7",
+          "bytes": 267781,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-youre-in.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-youre-in",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-draw-ticket.v1",
+      "title": "Event Draw: The draw page with her ticket (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-draw-ticket.v1.png",
+          "sha256": "a7b3ec7b6a6328428b4d9ce34975af67af0e4f69553a52a0bdb29a8f16fcda62",
+          "bytes": 399321,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-draw-ticket.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-draw-ticket",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-today-before.v1",
+      "title": "Event Draw: Today with the draw's ticket (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-today-before.v1.png",
+          "sha256": "8c2d828cf4a8ed79b39547e752d6efebbe7ffcabfe7fa745fa0b53c268e2fe73",
+          "bytes": 745947,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:today",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-today-before.v1"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "today",
+      "state": "draw-today-before",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-waiting.v2",
+      "title": "Event Draw: Your ticket is waiting: the two steps (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-waiting.v2.png",
+          "sha256": "82d098dfcc09f32566b0c75c1ca0759950f2752fb6555ffedf4f08e4ed8de6c0",
+          "bytes": 283905,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-waiting.v2"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-waiting",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-wardrobe.v2",
+      "title": "Event Draw: The Closet tab with the draw's ticket card, nothing done (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-wardrobe.v2.png",
+          "sha256": "e3b69ec93447c8734e14d4a67eca53bd334fd5f6b7963193427388e88ccee81a",
+          "bytes": 564678,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-wardrobe.v2"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-wardrobe",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
+    },
+    {
+      "id": "screenshot.emma.b285-draw-youre-in.v2",
+      "title": "Event Draw: You're in! The ticket (build 285 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "screenshots/emma/b285-draw-youre-in.v2.png",
+          "sha256": "0cdd33165e08d268766aa9056adff5b43fab8e5d692ef7b5e06fcfb29eda801a",
+          "bytes": 266876,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:285",
+          "area:wardrobe",
+          "event-draw",
+          "closet-copy"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [
+          "footage.emma.b285-draw-youre-in.v2"
+        ],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "screenshot",
+      "dims": {
+        "w": 1206,
+        "h": 2622
+      },
+      "screen": "wardrobe",
+      "state": "draw-youre-in",
+      "app": {
+        "build": 285,
+        "version": "1.7.0",
+        "commit": "2503a425 (fix/170-closet wip) + closet fakes, shots/event-draw-cpp",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "unknown",
+      "cleanStatusBar": false,
+      "capture": "screenshot",
+      "origin": "probe",
+      "variant": "native",
+      "hero": false
     }
   ]
 }

@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-today-rain moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-today-rain.v1",
+      "title": "Rain on the way: Today dresses her for it (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-today-rain/emma-b284.v1.mp4",
+          "sha256": "6fe9b2e0684c898d620d2411b5860a81a8720ceaf71c7ce17f6ebea2b8e9f1f4",
+          "bytes": 2858717,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-today-rain",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:today"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 5.9,
+      "fps": 60,
+      "moment": "b284-today-rain",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "today-rain": 1.71
+      }
+    }
+  ]
+}

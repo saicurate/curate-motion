@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-studio-swipe-looks moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-studio-swipe-looks.v1",
+      "title": "Swiping between her saved looks on the board (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-studio-swipe-looks/emma-b284.v1.mp4",
+          "sha256": "4c9e4fa8cf19119974de5515b5b5d6525009c2ad6d9f92e16c3feca2cf86228c",
+          "bytes": 11949268,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-studio-swipe-looks",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:studio"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 8.552,
+      "fps": 60,
+      "moment": "b284-studio-swipe-looks",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "drag-400-250-280-0-320": 2.21,
+        "drag-60-250-280-0-320": 5.8
+      }
+    }
+  ]
+}

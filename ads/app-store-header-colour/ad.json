@@ -1,0 +1,76 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-header-colour",
+  "title": "App Store header (iOS 27), D: Colour story",
+  "brief": "Direction D of the iOS 27 App Store header (21:9, 3840 \u00d7 1646) and search card (3:2): her wardrobe by colour. The founder 2026-10-24 asked for 'a bit more colorful', then on the colourful cut: 'feeling cheap\u2026 the colours please subtle colours'. So the hand-in is quiet and tonal (oat, sand, blush, sage, dusty blue, stone, pushed toward Mist), one hero at a time, a lot of air, soft real shadows: d1 dollies through six tonal rooms and ends on a palette of six tiles beside her real Wardrobe (build 284, silver iPhone); d2 brings one hero at a time onto a tonal sweep, each stepping aside into a row, then the six stand on their colour chips beside her real Wardrobe. The loud first cut is kept as versions: d1-bold (rich colour rooms) and d2-bold (the colour carousel). 15 s muted loops.",
+  "hook": "0\u20132 s: the cream room (or the carousel) lit and full of her own clothes; 'Your wardrobe, in every colour.' at 0.55 s.",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-header",
+    "store-search"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.medium.v1",
+    "font.geist.regular.v1",
+    "font.geist.semibold.v1",
+    "device.apple.iphone-17-pro-max-deep-blue.v1",
+    "device.apple.iphone-17-pro-max-cosmic-orange.v1",
+    "screenshot.emma.b284-wardrobe-rails.v1",
+    "garment.emma.sweater-cable-knit-cream.v2",
+    "garment.emma.cardigan-oatmeal.v2",
+    "garment.emma.beanie-cream.v2",
+    "garment.emma.coat-wool-camel.v2",
+    "garment.emma.skirt-midi-satin-camel.v2",
+    "garment.emma.boots-cowboy-tan.v2",
+    "garment.emma.shirt-flannel-plaid.v2",
+    "garment.emma.leggings-sage.v2",
+    "garment.emma.sports-bra-sage.v2",
+    "garment.emma.jacket-denim.v2",
+    "garment.emma.jeans-straight-light-wash.v2",
+    "garment.emma.shirt-oxford-blue.v2",
+    "garment.emma.sweater-crewneck-navy.v2",
+    "garment.emma.hoodie-navy.v2",
+    "garment.emma.cap-baseball-navy.v2",
+    "garment.emma.blazer-black.v2",
+    "garment.emma.boots-ankle-black.v2",
+    "garment.emma.bag-mini-black.v2",
+    "garment.emma.dress-slip-champagne.v2",
+    "device.apple.iphone-17-pro-max-silver.v1"
+  ],
+  "components": [
+    "Device (bezel)",
+    "ContactShadow",
+    "Grain",
+    "Vignette",
+    "StableImg",
+    "SubframeBlur",
+    "springs (motion/springs)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+    "Her clothes are AI-generated product images (Curate-owned)."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-colour",
+    "at": "2026-10-24"
+  },
+  "gates": {
+    "G1": "pending",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": []
+}

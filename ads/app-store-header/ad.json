@@ -1,0 +1,78 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-header",
+  "title": "App Store header (iOS 27)",
+  "brief": "The iOS 27 App Store product-page header (21:9, 3840 × 1646) and search-results card (3:2): a 15 s muted loop that says what Curate does before anyone reads a word. Three directions on one Mist stage, picked by the founder at G2: roll (her photos give up what she's wearing and it becomes her real wardrobe), tryon (the black tee flies onto her walk-to-work photo and Studio's real try-on wipes over her), zee (Zee waves, his real chat plans her Monday, the look rises beside him). Real new-look screens (build 264), Emma's real photos and wardrobe cut-outs, Apple's iPhone bezel. Redo of studies/ob172 (rejected: 'cheap quality').",
+  "hook": "0–2 s: one real thing, big and lit, on a calm stage (her photos / her photo and the tee / Zee in a pool of light); the first words at 0.9 s.",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-header",
+    "store-search"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "music.mixkit.cat-walk-arulo.v1",
+    "font.geist.medium.v1",
+    "brand.curate.splash-mark.v1",
+    "font.geist.semibold.v1",
+    "font.geist.regular.v1",
+    "device.apple.iphone-17-pro-max-silver.v1",
+    "photo.emma.r12-dumbo-walk.v1",
+    "photo.emma.r26-ferry.v1",
+    "photo.emma.r04-park-autumn.v1",
+    "photo.emma.r30-walk-to-work.v1",
+    "tryon.emma.r30-tee-black.v1",
+    "garment.emma.coat-wool-camel.v1",
+    "garment.emma.jacket-denim.v1",
+    "garment.emma.scarf-plaid-camel.v1",
+    "garment.emma.tee-black.v1",
+    "garment.emma.trousers-black.v1",
+    "screenshot.emma.nl-wardrobe-grid.v1",
+    "screenshot.emma.nl-studio-tryon.v1",
+    "screenshot.emma.nl-chat-monday.v1",
+    "zee.hello.intro.v1",
+    "zee.hello.loop.v1",
+    "zee.hello.outro.v1",
+    "zee.listening.loop.v1",
+    "zee.happy.loop.v1",
+    "screenshot.emma.b284-wardrobe-rails.v1",
+    "screenshot.emma.b284-studio-offduty-tryon.v1",
+    "garment.emma.coat-wool-camel.v3",
+    "garment.emma.jacket-denim.v3",
+    "garment.emma.scarf-plaid-camel.v2"
+  ],
+  "components": [
+    "Device (bezel)",
+    "KeyLine",
+    "ContactShadow",
+    "Grain",
+    "Vignette",
+    "StableImg",
+    "springs (motion/springs)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+    "Emma is an AI-generated persona and her photos are AI-generated."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-app-store-header",
+    "at": "2026-10-24"
+  },
+  "gates": {
+    "G1": "pending",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": []
+}

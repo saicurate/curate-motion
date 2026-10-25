@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-short-signup moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-short-signup.v1",
+      "title": "The short sign-up: Nice to meet you, then Pick your username, its checks, emma.nyc available, Done (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-short-signup/emma-b284.v1.mp4",
+          "sha256": "2b4605315a381203917dbedbceae23c773c673d54bbcf6b7cac5359ac4ee73e5",
+          "bytes": 3919708,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-short-signup",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:first-run"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 14.587,
+      "fps": 60,
+      "moment": "b284-short-signup",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "text-next": 2.8,
+        "type-emma-nyc": 7.8,
+        "text-done": 11
+      }
+    }
+  ]
+}

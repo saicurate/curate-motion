@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../catalog/schemas/manifest.schema.json",
+  "about": "App footage of the b284-chat-hello moment, by persona and build.",
+  "assets": [
+    {
+      "id": "footage.emma.b284-chat-hello.v1",
+      "title": "Chat opens: Zee's hello, the greeting, the starters dealt in (build 284 probe)",
+      "files": [
+        {
+          "role": "original",
+          "path": "footage/b284-chat-hello/emma-b284.v1.mp4",
+          "sha256": "b778c6ec0ef743b880ee709889dc6c00e9f999887a59401ffed6e72ac1e86117",
+          "bytes": 5150259,
+          "mime": "video/mp4"
+        }
+      ],
+      "tags": {
+        "persona": "emma",
+        "moment": "b284-chat-hello",
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": [
+          "origin:probe",
+          "build:284",
+          "area:chat"
+        ]
+      },
+      "source": {
+        "type": "original",
+        "from": [],
+        "tool": "tools/take"
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-24"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "agent:tools/take",
+        "at": "2026-10-24"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "footage",
+      "dims": {
+        "w": 1320,
+        "h": 2868
+      },
+      "durationSec": 8.098,
+      "fps": 60,
+      "moment": "b284-chat-hello",
+      "app": {
+        "build": 284,
+        "version": "1.5.1",
+        "commit": "8ef12d4a",
+        "env": "local"
+      },
+      "account": "emma",
+      "device": "Motion 284 17PM (simulator)",
+      "cleanStatusBar": true,
+      "marks": {
+        "go-messages": 1.7
+      }
+    }
+  ]
+}

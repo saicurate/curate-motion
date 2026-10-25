@@ -1,0 +1,62 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "app-store-header-tryon",
+  "title": "App Store header (iOS 27): See it on you",
+  "brief": "Film B of the iOS 27 App Store header (21:9, 3840 × 1646) and search card (3:2, 2880 × 1920), v2 of ads/app-store-header's tryon, made in parallel with it (2026-10-24): her walk-to-work photo as a big lit print with the black tee hovering beside it; the tee flies onto her and Studio's real try-on runs down over her under a light edge while the camera pushes in and the street moves behind her (her cut-out over the plate, two layers); the print slides aside and the phone rises with build 284's Studio: the Off-duty black board with her black-tee try-on. A seamless, muted 15 s loop. Redo of studies/ob172 (rejected: 'cheap quality'). B1 (look: mist) is the Mist studio; B2 (look: colour) is the same film on a colour-blocked campaign set that turns from cobalt to rust with the try-on (the founder: 'a bit more colorful'). B3 (look: tonal) is the same film on a subtle low-saturation set, pale dusty blue → soft blush oat (the founder on the colourful set: 'feeling cheap… subtle colours').",
+  "hook": "0–2 s: her photo big and lit beside the black tee; “See it on you.” lands at 0.9 s.",
+  "channels": [
+    "appstore"
+  ],
+  "formats": [
+    "store-header",
+    "store-search"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cat-walk-arulo.v1",
+  "assets": [
+    "font.geist.medium.v1",
+    "font.geist.regular.v1",
+    "font.geist.semibold.v1",
+    "device.apple.iphone-17-pro-max-silver.v1",
+    "photo.emma.r30-walk-to-work.v1",
+    "tryon.emma.r30-tee-black.v1",
+    "photo.emma.r30-walk-to-work-cutout.v1",
+    "photo.emma.r30-walk-to-work-tryon-tee-black.v1",
+    "photo.emma.r30-walk-to-work-tryon-tee-black-cutout.v1",
+    "garment.emma.tee-black.v1",
+    "screenshot.emma.b284-studio-offduty-tryon.v1",
+    "music.mixkit.cat-walk-arulo.v1"
+  ],
+  "components": [
+    "Device (bezel)",
+    "KeyLine",
+    "ContactShadow",
+    "Grain",
+    "Vignette",
+    "StableImg",
+    "SubframeBlur",
+    "springs (motion/springs)"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.",
+    "Emma is an AI-generated persona and her photos are AI-generated."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-fork-app-store-header-tryon",
+    "at": "2026-10-24"
+  },
+  "gates": {
+    "G1": "pending",
+    "G2": "pending",
+    "G3": "pending",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending"
+  },
+  "gateLog": []
+}

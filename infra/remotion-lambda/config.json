@@ -1,0 +1,8 @@
+{
+  "region": "us-east-1",
+  "functionName": "remotion-render-4-0-535-mem6144mb-disk10240mb-900sec",
+  "bucketName": "remotionlambda-useast1-hh2gu2n01z",
+  "siteBase": "curate-motion-b67a5bb56ff0b7e86ae2",
+  "roleArn": "arn:aws:iam::276451918677:role/remotion-lambda-role",
+  "policyArn": "arn:aws:iam::276451918677:policy/remotion-lambda-policy"
+}

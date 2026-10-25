@@ -1,0 +1,35 @@
+{
+ "ad": "app-store-header-all",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "the one film (header, Mac render v1, 30 s): A lands by 4 s (photos give up coat/jacket/scarf \u2192 Wardrobe + line), B3 try-on, C2 week (settled row, its own lockup covered), lockup mark + Curate + 'Try it. Style it. Wear it.', back to frame 0; 4 glides on the camera spring through a light column; fastest move (glide, 39 px/frame) one smear, comb 0.0; loop seamless 0.09 vs 1.22; 0 layer drops; holds are reads (A's Wardrobe 2.6 s, B 1.5 s + 1.3 s, end card 2 s). Weakest: C's line still rising as its glide lands (14 s); text smears in the glides (as it should)"
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": null,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "the one film, 3:2 search card (Mac render v1, 2880x1920, 30 s): same beats re-laid out by each film (C's week as two rows, no C lockup to cover); glide 44.5 px/frame one smear, comb 0.0; loop seamless 0.15 vs 1.63; 0 layer drops. Weakest: A's side photos cropped by the 3:2 frame at 0-3 s (as A2's card); A's line sits 0.03 H from the left edge"
+  }
+ ]
+}

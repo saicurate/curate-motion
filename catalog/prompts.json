@@ -2983,7 +2983,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.bag-mini-black.v1"
+        "garment.emma.bag-mini-black.v1",
+        "garment.emma.bag-mini-black.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3051,7 +3052,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.beanie-cream.v1"
+        "garment.emma.beanie-cream.v1",
+        "garment.emma.beanie-cream.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3119,7 +3121,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.blazer-black.v1"
+        "garment.emma.blazer-black.v1",
+        "garment.emma.blazer-black.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3153,7 +3156,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.boots-ankle-black.v1"
+        "garment.emma.boots-ankle-black.v1",
+        "garment.emma.boots-ankle-black.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3187,7 +3191,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.boots-cowboy-tan.v1"
+        "garment.emma.boots-cowboy-tan.v1",
+        "garment.emma.boots-cowboy-tan.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3255,7 +3260,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.cap-baseball-navy.v1"
+        "garment.emma.cap-baseball-navy.v1",
+        "garment.emma.cap-baseball-navy.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3289,7 +3295,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.cardigan-oatmeal.v1"
+        "garment.emma.cardigan-oatmeal.v1",
+        "garment.emma.cardigan-oatmeal.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3357,7 +3364,9 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.coat-wool-camel.v1"
+        "garment.emma.coat-wool-camel.v1",
+        "garment.emma.coat-wool-camel.v2",
+        "garment.emma.coat-wool-camel.v3"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3425,7 +3434,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.dress-slip-champagne.v1"
+        "garment.emma.dress-slip-champagne.v1",
+        "garment.emma.dress-slip-champagne.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3561,7 +3571,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.hoodie-navy.v1"
+        "garment.emma.hoodie-navy.v1",
+        "garment.emma.hoodie-navy.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -3595,7 +3606,9 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.jacket-denim.v1"
+        "garment.emma.jacket-denim.v1",
+        "garment.emma.jacket-denim.v2",
+        "garment.emma.jacket-denim.v3"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -4815,7 +4828,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.jeans-straight-light-wash.v1"
+        "garment.emma.jeans-straight-light-wash.v1",
+        "garment.emma.jeans-straight-light-wash.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -4849,7 +4863,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.leggings-sage.v1"
+        "garment.emma.leggings-sage.v1",
+        "garment.emma.leggings-sage.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -5096,7 +5111,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.scarf-plaid-camel.v1"
+        "garment.emma.scarf-plaid-camel.v1",
+        "garment.emma.scarf-plaid-camel.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -5130,7 +5146,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.shirt-flannel-plaid.v1"
+        "garment.emma.shirt-flannel-plaid.v1",
+        "garment.emma.shirt-flannel-plaid.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -5198,7 +5215,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.shirt-oxford-blue.v1"
+        "garment.emma.shirt-oxford-blue.v1",
+        "garment.emma.shirt-oxford-blue.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -5266,7 +5284,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.skirt-midi-satin-camel.v1"
+        "garment.emma.skirt-midi-satin-camel.v1",
+        "garment.emma.skirt-midi-satin-camel.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -5368,7 +5387,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.sports-bra-sage.v1"
+        "garment.emma.sports-bra-sage.v1",
+        "garment.emma.sports-bra-sage.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -5436,7 +5456,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.sweater-cable-knit-cream.v1"
+        "garment.emma.sweater-cable-knit-cream.v1",
+        "garment.emma.sweater-cable-knit-cream.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"
@@ -5470,7 +5491,8 @@
       ],
       "inputs": [],
       "outputs": [
-        "garment.emma.sweater-crewneck-navy.v1"
+        "garment.emma.sweater-crewneck-navy.v1",
+        "garment.emma.sweater-crewneck-navy.v2"
       ],
       "parents": [
         "prompt.image-gen.garment-product-shot.v1"

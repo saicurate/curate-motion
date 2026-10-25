@@ -1,0 +1,110 @@
+{
+ "ad": "app-store-header-tryon",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 7.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 6.0,
+    "sound": 8.0,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "muted placement (sound n/a). Defects: 5.9-6.6 s empty beat between lines; 11.3-13.5 s lone print; 2.7 s opening hold"
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 6.0,
+    "variety": 8.0,
+    "sound": 8.0,
+    "brand": 8.0
+   },
+   "min": 6.0,
+   "pass": false,
+   "note": "layer drop at 10.7 s (Chrome tiled the words, print+phone vanished): fixed by drawing only the visible photo version, shutter 0.35, concurrency 1"
+  },
+  {
+   "round": 3,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 8.0,
+    "brand": 7.0
+   },
+   "min": 7.0,
+   "pass": false,
+   "note": "inpainted plate smeared the taxi behind her hair (full-size check): background is now the real photo, her cut-out grows about her own middle; determinism: 8 px differ by <=3/255 in rising text (anti-aliasing)"
+  },
+  {
+   "round": 4,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 8.0,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "the clipped cut-out tee read as a pasted block on the way back: hidden during the unsweep, floats in from the right after; phone screen is still build 264 (old design) until the 284 Studio capture lands"
+  },
+  {
+   "round": 5,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 8.0,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "B2 (look: colour), final layout, build 284 Studio; muted placement (sound n/a). Minor: a 0.45 s quiet beat at 10.6-11.05 s while the lines hand over"
+  },
+  {
+   "round": 6,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 8.0,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "B1 (look: mist), final layout (headline clear of the App Store back button), build 284 Studio; muted placement (sound n/a)"
+  },
+  {
+   "round": 7,
+   "date": "2026-10-24",
+   "scores": {
+    "hook": 8.0,
+    "phone": 8.0,
+    "smooth": 8.0,
+    "variety": 8.0,
+    "sound": 8.0,
+    "brand": 8.0
+   },
+   "min": 8.0,
+   "pass": true,
+   "note": "B3 (look: tonal), full-size Lambda film; muted placement (sound n/a). Round-1 stills had a drawn linen weave that read as a screen-door grid at full size: removed, grain carries texture"
+  }
+ ]
+}
