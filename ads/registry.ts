@@ -18,6 +18,13 @@ import * as popOutV4 from "./pop-out-v4";
 import popOutV4Spec from "./pop-out-v4/ad.json";
 import * as rainOrShine from "./rain-or-shine";
 import rainOrShineSpec from "./rain-or-shine/ad.json";
+// Designed ads: the app redrawn as motion, in the header's world (decisions/0014, motion/Designed.tsx).
+import * as rainOrShineV2 from "./rain-or-shine-v2";
+import rainOrShineV2Spec from "./rain-or-shine-v2/ad.json";
+import * as askZee from "./ask-zee";
+import askZeeSpec from "./ask-zee/ad.json";
+import * as seeItOnYou from "./see-it-on-you";
+import seeItOnYouSpec from "./see-it-on-you/ad.json";
 import * as zeeWipe from "./zee-wipe";
 import zeeWipeSpec from "./zee-wipe/ad.json";
 // Hooks: the first 8 s of an ad, made for $0 with the 2.5D kit (decisions/0013).
@@ -64,6 +71,9 @@ export const ADS: AdModule[] = [
   { spec: AdSpec.parse(popOutV3Spec), component: popOutV3.PopOutV3, schema: popOutV3.schema, defaults: popOutV3.defaults },
   { spec: AdSpec.parse(popOutV4Spec), component: popOutV4.PopOutV4, schema: popOutV4.schema, defaults: popOutV4.defaults },
   { spec: AdSpec.parse(rainOrShineSpec), component: rainOrShine.RainOrShine, schema: rainOrShine.schema, defaults: rainOrShine.defaults },
+  { spec: AdSpec.parse(rainOrShineV2Spec), component: rainOrShineV2.RainOrShineV2, schema: rainOrShineV2.schema, defaults: rainOrShineV2.defaults },
+  { spec: AdSpec.parse(askZeeSpec), component: askZee.AskZee, schema: askZee.schema, defaults: askZee.defaults },
+  { spec: AdSpec.parse(seeItOnYouSpec), component: seeItOnYou.SeeItOnYou, schema: seeItOnYou.schema, defaults: seeItOnYou.defaults },
   { spec: AdSpec.parse(zeeWipeSpec), component: zeeWipe.ZeeWipe, schema: zeeWipe.schema, defaults: zeeWipe.defaults },
   { spec: AdSpec.parse(hookZeeCriticSpec), component: hookZeeCritic.HookZeeCritic, schema: hookZeeCritic.schema, defaults: hookZeeCritic.defaults, metadata: hookZeeCritic.metadata },
   { spec: AdSpec.parse(hookCameraRollSpec), component: hookCameraRoll.HookCameraRoll, schema: hookCameraRoll.schema, defaults: hookCameraRoll.defaults, metadata: hookCameraRoll.metadata },

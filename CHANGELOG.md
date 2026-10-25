@@ -3,6 +3,18 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-24: three designed ads (the app redrawn, decisions/0014) and their kit, motion/Designed.tsx
+- **motion/Designed.tsx**: the header film's world as parts any ad can use: Ground, Print (her photos), Wipe (a
+  photo sweeping to another: a try-on), Garment, slotOf (flat-lay roles), and the app redrawn: Card, Pill, Bubble,
+  WeatherChip, Rain, Pan (the glide through the light), MarkWord (the lockup).
+- **ads/rain-or-shine-v2** (Deep Urban), **ads/ask-zee** (Gummies), **ads/see-it-on-you** (Can't Get You Off My
+  Mind): 9:16, 15 s, 60 fps rough cuts, music only. Founder, after seeing them: "these are just fine, just save
+  it." On screen, Ask Zee's "her wardrobe" and See it on you's "Your wardrobe" predate the Closet rename: change
+  them before either runs.
+- **Render traps:** a StableImg holds the frame only for the photo it mounted with, so a print whose photo changes
+  is remounted (`key`); its `fit` decodes once per size, so a print that changes size gets a fixed `decode`.
+  Render at `--concurrency 1`. `tools/stills --out` is relative to the repo, not absolute.
+
 ## 2026-10-24: Pop out v4 (the header way, kept as made); ads redraw the app from now on (decisions/0014)
 - **ads/pop-out-v4/**: Pop out re-made in the approved header film's world (tonal grounds, her photos giving up
   the coat, jacket and scarf, her camera roll, one camera through the light column, the header's lockup) around

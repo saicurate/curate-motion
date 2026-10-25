@@ -1,0 +1,63 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "ask-zee",
+  "title": "Ask Zee",
+  "brief": "Ask Curate what to wear and it styles you from your own wardrobe. For US 18–34s who stand at the closet before going out. Zee's chat redrawn as motion (decisions/0014) in the header's world: her question types into a big bubble, \"What should I wear tonight?\"; Zee pops up, \"On it.\"; Zee thinks at the hub of a turning ring of her own clothes; four pieces fly out of the ring onto the look card, one a beat (the little black dress, the heels, the mini bag, the gold hoops); Zee's answer and Try it on; her night-out photo in that dress; the lockup, \"Your stylist, one message away.\"",
+  "hook": "0–2 s: \"What should I wear tonight?\" types into a big chat bubble word by word; Zee pops up waving at 1 s and answers \"On it.\"",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.gummies-michael-ramir-c.v1",
+  "assets": [
+    "music.mixkit.gummies-michael-ramir-c.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "garment.emma.dress-little-black.v1",
+    "garment.emma.heels-black.v1",
+    "garment.emma.bag-mini-black.v1",
+    "garment.emma.earrings-hoops-gold.v1",
+    "garment.emma.jeans-straight-light-wash.v1",
+    "garment.emma.blazer-black.v1",
+    "garment.emma.sweater-cable-knit-cream.v1",
+    "garment.emma.coat-wool-camel.v1",
+    "garment.emma.sneakers-leather-white.v1",
+    "garment.emma.skirt-midi-satin-camel.v1",
+    "photo.emma.r10-night-out.v1",
+    "zee.hello.intro.v1",
+    "zee.hello.loop.v1",
+    "zee.thinking.intro.v1",
+    "zee.thinking.loop.v1",
+    "zee.happy.intro.v1",
+    "zee.happy.loop.v1"
+  ],
+  "components": [
+    "motion/Designed (Ground, Card, Garment, slotOf, Bubble, Pill, Print, Pan, MarkWord)",
+    "KeyLine",
+    "Line (ads/app-store-header)",
+    "SubframeBlur",
+    "springs"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated: turn on the platform AI label.",
+    "The app is redrawn for the ad (decisions/0014): the chat, Zee's answer, the look card and Try it on as the app shows them, stylised. Zee's answer is written for the ad, in the voice the stylist answers in.",
+    "Music: Mixkit Stock Music Free License (Gummies, Michael Ramir C.): online and social ads are fine; no TV/radio, never register it with Content ID."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (motion studio agent)",
+    "at": "2026-10-24"
+  },
+  "notes": "A rough cut, built for the founder to see (\"just build few ads i wanna see\"): music only, no designed sound or critic rounds. Founder 2026-10-24, after seeing all three (https://claude.ai/artifact/YTuQyBKswbZYxmcZv8y2q2): \"these are just fine, just save it.\" Saved as made. On screen, the line \"Zee looks through her wardrobe.\" says \"wardrobe\" where the app now says Closet (renamed 2026-10-24, branch fix/170-closet): change the words before any of these runs."
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "rain-or-shine-v2",
+  "title": "Rain or shine v2",
+  "brief": "The forecast turns and Curate re-dresses her for it. For US 18–34s who check the weather app at the closet. The app redrawn as motion (decisions/0014) in the header's world: a big weather chip flips from 68° Sunny to Rain at 4 pm and rain starts; her sunny look on Today's card gets rained on; Curate swaps it one piece a beat into the covered look (trench, navy knit, dark jeans, boots, tote); Zee's line and Try it on; her rainy-day photo in that trench; the lockup, \"Rain or shine, you're dressed.\"",
+  "hook": "0–2 s: a big weather chip, 68° Sunny, flips to 54° Rain at 4 pm on the second beat; rain starts falling; \"It's going to rain at 4.\"",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.deep-urban-eugenio-mininni.v1",
+  "assets": [
+    "music.mixkit.deep-urban-eugenio-mininni.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "garment.emma.jacket-denim.v1",
+    "garment.emma.tee-white.v1",
+    "garment.emma.jeans-straight-light-wash.v1",
+    "garment.emma.sneakers-leather-white.v1",
+    "garment.emma.coat-trench-khaki.v1",
+    "garment.emma.sweater-crewneck-navy.v1",
+    "garment.emma.jeans-straight-dark-wash.v1",
+    "garment.emma.boots-ankle-black.v1",
+    "garment.emma.bag-tote-leather-black.v1",
+    "photo.emma.r23-rainy-day.v1",
+    "zee.curious.loop.v1"
+  ],
+  "components": [
+    "motion/Designed (Ground, Card, Garment, slotOf, WeatherChip, Rain, Bubble, Pill, Print, Pan, MarkWord)",
+    "KeyLine",
+    "Line (ads/app-store-header)",
+    "SubframeBlur",
+    "springs"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated: turn on the platform AI label.",
+    "The app is redrawn for the ad (decisions/0014): Today's card, Zee's line and Try it on as the app shows them, stylised.",
+    "Music: Mixkit Stock Music Free License (Deep Urban, Eugenio Mininni): online and social ads are fine; no TV/radio, never register it with Content ID."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (motion studio agent)",
+    "at": "2026-10-24"
+  },
+  "notes": "A rough cut, built for the founder to see (\"just build few ads i wanna see\"): music only, no designed sound or critic rounds. Founder 2026-10-24, after seeing all three (https://claude.ai/artifact/YTuQyBKswbZYxmcZv8y2q2): \"these are just fine, just save it.\" Saved as made."
+}

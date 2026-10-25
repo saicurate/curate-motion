@@ -1,0 +1,57 @@
+{
+  "$schema": "../../catalog/schemas/ad.schema.json",
+  "id": "see-it-on-you",
+  "title": "See it on you",
+  "brief": "Try your own clothes on before you wear them. For US 18–34s who plan outfits in their head. Studio's try-on redrawn as motion (decisions/0014) in the header's world: on the drop a black tee falls onto her walk-to-work photo and the photo changes, she's wearing it; the pan to Studio, her photo over her wardrobe tray; tap the tee, tap the jeans, each flies onto her; Try it on; the photo sweeps to her in them; both try-ons side by side, \"Every look, on you.\"; the lockup, \"Try on your own closet.\"",
+  "hook": "0–1.6 s: her walk-to-work photo; on the drop a black tee falls onto her and the photo sweeps to her wearing it; \"See it on you.\"",
+  "channels": [
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "formats": [
+    "9x16"
+  ],
+  "lengths": [
+    15
+  ],
+  "fps": 60,
+  "track": "music.mixkit.cant-get-you-off-my-mind-michael-ramir-c.v1",
+  "assets": [
+    "music.mixkit.cant-get-you-off-my-mind-michael-ramir-c.v1",
+    "font.geist.regular.v1",
+    "font.geist.medium.v1",
+    "font.geist.semibold.v1",
+    "brand.curate.splash-mark.v1",
+    "photo.emma.r30-walk-to-work.v1",
+    "photo.emma.r30-walk-to-work-tryon-tee-black.v1",
+    "tryon.emma.tryon-base-1.v1",
+    "tryon.emma.tryon-base-2.v1",
+    "garment.emma.tee-black.v1",
+    "garment.emma.jeans-straight-dark-wash.v1",
+    "garment.emma.blazer-black.v1",
+    "garment.emma.sweater-cable-knit-cream.v1",
+    "garment.emma.loafers-black.v1",
+    "garment.emma.bag-tote-leather-black.v1"
+  ],
+  "components": [
+    "motion/Designed (Ground, Card, Garment, Pill, Print, Wipe, Pan, MarkWord)",
+    "KeyLine",
+    "Line (ads/app-store-header)",
+    "SubframeBlur",
+    "springs"
+  ],
+  "status": "draft",
+  "disclosures": [
+    "Emma is an AI-generated persona and her photos are AI-generated: turn on the platform AI label.",
+    "The try-ons are AI-generated (Studio's try-on: her photo with the pieces on); the walk-to-work try-on is a draft asset that waits on the founder's approval.",
+    "The app is redrawn for the ad (decisions/0014): Studio's wardrobe tray and Try it on as the app shows them, stylised.",
+    "Music: Mixkit Stock Music Free License (Can't Get You Off My Mind, Michael Ramir C.): online and social ads are fine; no TV/radio, never register it with Content ID."
+  ],
+  "createdBy": {
+    "type": "agent",
+    "name": "claude-code (motion studio agent)",
+    "at": "2026-10-24"
+  },
+  "notes": "A rough cut, built for the founder to see (\"just build few ads i wanna see\"): music only, no designed sound or critic rounds. Founder 2026-10-24, after seeing all three (https://claude.ai/artifact/YTuQyBKswbZYxmcZv8y2q2): \"these are just fine, just save it.\" Saved as made. On screen, the tray title \"Your wardrobe\" says \"wardrobe\" where the app now says Closet (renamed 2026-10-24, branch fix/170-closet): change the words before any of these runs."
+}
