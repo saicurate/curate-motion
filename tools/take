@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/take: record the app on a simulator from a shot list, into the library (see tools/take.ts).
+exec node "$(dirname "$0")/take.ts" "$@"

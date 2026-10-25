@@ -3,6 +3,21 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-24: the library catches up with the new look (build 284)
+- **The gap:** every approved app recording (141) and screenshot (143) was build 262, the old look; 284 is
+  the new look (new tabs, Today, Studio for Try-ons, the scan on the Wardrobe tab, a two-screen sign-up).
+  The map, moment by moment (SAME / CHANGED / NEW / GONE, how to capture, ad value):
+  `library/footage/INVENTORY-b284.md`.
+- **Old look tagged:** the 284 build-262 recordings and screenshots carry `look:v1` (nothing retired: old ads
+  still render); so does `footage.curate.b284-tryons-flow.v1` (284's code, but the old Try-ons tab).
+- **Recorded from 284 (drafts):** 29 recordings + 44 screenshots of Emma's account in the new look
+  (`footage.emma.b284-*`, `screenshot.emma.b284-*`, tags `area:` and `origin:probe`), from `captures/b284.json`.
+- **Tools:** `tools/take` (shot lists → simulator → library), `tools/probe-photos` (a persona's things for the
+  probes), `tools/export-media` (a plain copy per build in `../app-media/b<build>/`, the founder's raw
+  material; no Google Drive). curate-app probe changes: branch `chore/motion-capture-284` (lib/dev only).
+- **Not yet:** Event Draw (its probe's prize is an iPhone: a third-party brand), the selfie camera's live
+  hints, and real-account results (paid).
+
 ## 2026-10-16: premium for $0: 2.5D photos, cut-outs, a finishing pass, two hooks (PROPOSED, decisions/0013)
 - **tools/** (free, local, Python via uv, pinned by `*.py.lock`, model revisions pinned): `tools/photo3d`
   (depth: Depth Anything V2 Small, Apache-2.0; her matte: BiRefNet-portrait + pymatting, MIT; plate: LaMa,

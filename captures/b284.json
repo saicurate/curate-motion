@@ -1,0 +1,957 @@
+{
+  "build": 284,
+  "version": "1.5.1",
+  "commit": "8ef12d4a",
+  "appDir": "/Users/saikumar/Desktop/Curate/curate-app/.worktrees/motion-284",
+  "bundle": "com.curatefashions.curateApp",
+  "persona": "emma",
+  "apps": {
+    "tabs": {
+      "target": "lib/dev/new_look_probe.dart",
+      "control": "tabs",
+      "defines": {
+        "CURATE_LAYOUT": "v2",
+        "PROBE_TODAY": "true",
+        "PROBE_STUDIO": "true",
+        "PROBE_TIPS": "true",
+        "PROBE_PREVIEW_LOOK": "true",
+        "PROBE_ZEE": "live",
+        "PROBE_PHOTOS": "$CACHE/probe-photos/emma"
+      },
+      "setup": [
+        "tips:firstStart=done,firstWardrobe=done,firstLookReady=done,firstTryOn=done,firstAsk=done,todaySwipe=done,todaySave=done,todayNotForMe=done,studioTray=done,studioMove=done,studioSwipe=done,studioNew=done,studioLink=done,studioPaste=done,chatPhoto=done,chatCreate=done,itemOpen=done,itemEdit=done"
+      ]
+    },
+    "extract": {
+      "target": "lib/dev/new_look_probe.dart",
+      "control": "extract",
+      "defines": {
+        "CURATE_LAYOUT": "v2",
+        "PROBE_TODAY": "true",
+        "PROBE_EXTRACT": "true",
+        "PROBE_TIPS": "true",
+        "PROBE_ZEE": "live",
+        "PROBE_PHOTOS": "$CACHE/probe-photos/emma"
+      },
+      "setup": [
+        "tips:firstStart=done,firstWardrobe=done,firstLookReady=done,firstTryOn=done,firstAsk=done,todaySwipe=done,todaySave=done,todayNotForMe=done,studioTray=done,studioMove=done,studioSwipe=done,studioNew=done,studioLink=done,studioPaste=done,chatPhoto=done,chatCreate=done,itemOpen=done,itemEdit=done"
+      ]
+    },
+    "chat": {
+      "target": "lib/dev/new_look_chat_probe.dart",
+      "control": "chat",
+      "defines": {
+        "CURATE_LAYOUT": "v2",
+        "PROBE_TIPS": "true"
+      },
+      "setup": [
+        "tips:firstStart=done,firstWardrobe=done,firstLookReady=done,firstTryOn=done,firstAsk=done,todaySwipe=done,todaySave=done,todayNotForMe=done,studioTray=done,studioMove=done,studioSwipe=done,studioNew=done,studioLink=done,studioPaste=done,chatPhoto=done,chatCreate=done,itemOpen=done,itemEdit=done"
+      ]
+    },
+    "door": {
+      "target": "lib/dev/onboarding_mist_probe.dart",
+      "control": "door",
+      "defines": {
+        "CURATE_LAYOUT": "v2",
+        "PROBE_START": "/splash"
+      },
+      "setup": []
+    },
+    "signup": {
+      "target": "lib/dev/short_signup_probe.dart",
+      "control": "signup",
+      "defines": {
+        "CURATE_LAYOUT": "v2",
+        "PROBE_NAME": "Emma"
+      },
+      "setup": []
+    }
+  },
+  "shots": [
+    {
+      "id": "today-landing",
+      "app": "tabs",
+      "area": "today",
+      "title": "Today opens: the greeting, the weather, Ask Zee and the art fair look landing",
+      "setup": [
+        "/wardrobe"
+      ],
+      "steps": [
+        [
+          0.5,
+          "today:ready"
+        ]
+      ],
+      "end": 5.5,
+      "stills": [
+        {
+          "at": 4.6,
+          "id": "today-art-fair",
+          "title": "Today: Good morning, the art fair look for tonight"
+        }
+      ]
+    },
+    {
+      "id": "today-scroll-day",
+      "app": "tabs",
+      "area": "today",
+      "title": "Today scrolled through her day: the art fair, Zee's line, For work, Date night",
+      "setup": [
+        "today:ready"
+      ],
+      "steps": [
+        [
+          1.0,
+          "drag:220,760,0,-520,900"
+        ],
+        [
+          4.5,
+          "drag:220,760,0,-520,900"
+        ],
+        [
+          8.0,
+          "drag:220,300,0,1040,1200"
+        ]
+      ],
+      "end": 11,
+      "stills": [
+        {
+          "at": 3.6,
+          "id": "today-for-work",
+          "title": "Today: For work"
+        },
+        {
+          "at": 7.2,
+          "id": "today-date-night",
+          "title": "Today: Date night"
+        }
+      ]
+    },
+    {
+      "id": "today-swipe-looks",
+      "app": "tabs",
+      "area": "today",
+      "title": "Two looks for one occasion, swiped sideways in the band",
+      "setup": [
+        "today:second"
+      ],
+      "steps": [
+        [
+          1.2,
+          "drag:360,440,-280,0,300"
+        ],
+        [
+          3.6,
+          "drag:80,440,280,0,300"
+        ]
+      ],
+      "end": 6,
+      "stills": [
+        {
+          "at": 2.6,
+          "id": "today-second-look",
+          "title": "Today: the second look for the occasion"
+        }
+      ]
+    },
+    {
+      "id": "today-rain",
+      "app": "tabs",
+      "area": "today",
+      "title": "Rain on the way: Today dresses her for it",
+      "setup": [
+        "/wardrobe"
+      ],
+      "steps": [
+        [
+          0.5,
+          "today:rain"
+        ]
+      ],
+      "end": 5.5,
+      "stills": [
+        {
+          "at": 4.4,
+          "id": "today-rain",
+          "title": "Today: Rain till 4 pm, the covered look"
+        }
+      ]
+    },
+    {
+      "id": "today-save-not-for-me",
+      "app": "tabs",
+      "area": "today",
+      "title": "Save a look, then Not for me",
+      "setup": [
+        "today:ready"
+      ],
+      "steps": [
+        [
+          1.0,
+          "tap:todaySave"
+        ],
+        [
+          3.0,
+          "tap:todayNotForMe"
+        ]
+      ],
+      "end": 6.5,
+      "stills": [
+        {
+          "at": 5.2,
+          "id": "today-not-for-me",
+          "title": "Today: Not for me, the reasons"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe-rails",
+      "app": "tabs",
+      "area": "wardrobe",
+      "title": "Her wardrobe in rails: count chips, a rail swiped, the page scrolled",
+      "setup": [
+        "today:ready"
+      ],
+      "steps": [
+        [
+          0.5,
+          "/wardrobe"
+        ],
+        [
+          3.0,
+          "drag:300,330,-140,0,500"
+        ],
+        [
+          5.5,
+          "drag:220,640,0,-420,900"
+        ],
+        [
+          8.0,
+          "drag:220,300,0,420,900"
+        ]
+      ],
+      "end": 10.5,
+      "stills": [
+        {
+          "at": 2.4,
+          "id": "wardrobe-rails",
+          "title": "Wardrobe: 21 items in rails by shelf"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe-item",
+      "app": "tabs",
+      "area": "wardrobe",
+      "title": "A wardrobe item opened and scrolled to its outfit ideas",
+      "setup": [
+        "/wardrobe"
+      ],
+      "steps": [
+        [
+          1.0,
+          "down:89,327"
+        ],
+        [
+          1.1,
+          "up:"
+        ],
+        [
+          4.0,
+          "drag:220,760,0,-500,900"
+        ]
+      ],
+      "end": 8,
+      "stills": [
+        {
+          "at": 3.2,
+          "id": "wardrobe-item",
+          "title": "Wardrobe item: the black blazer, Style this piece"
+        }
+      ]
+    },
+    {
+      "id": "studio-board-open",
+      "app": "tabs",
+      "area": "studio",
+      "title": "Studio opens on her saved look, Weekend in black",
+      "setup": [
+        "today:ready"
+      ],
+      "steps": [
+        [
+          0.5,
+          "/studio"
+        ]
+      ],
+      "end": 5,
+      "stills": [
+        {
+          "at": 4.0,
+          "id": "studio-board",
+          "title": "Studio: Weekend in black on the board"
+        }
+      ]
+    },
+    {
+      "id": "studio-swipe-looks",
+      "app": "tabs",
+      "area": "studio",
+      "title": "Swiping between her saved looks on the board",
+      "setup": [
+        "/studio"
+      ],
+      "steps": [
+        [
+          1.0,
+          "drag:400,250,-280,0,320"
+        ],
+        [
+          4.6,
+          "drag:60,250,280,0,320"
+        ]
+      ],
+      "end": 7.5,
+      "stills": [
+        {
+          "at": 3.4,
+          "id": "studio-weekend-denim",
+          "title": "Studio: Weekend in denim, with its try-on"
+        }
+      ]
+    },
+    {
+      "id": "studio-tray-pick",
+      "app": "tabs",
+      "area": "studio",
+      "title": "Picking items from the wardrobe tray onto the board",
+      "setup": [
+        "/studio"
+      ],
+      "steps": [
+        [
+          3.2,
+          "tap:boardTraySlot-shirt"
+        ],
+        [
+          5.2,
+          "tap:boardTraySlot-navy"
+        ]
+      ],
+      "end": 8,
+      "stills": [
+        {
+          "at": 7.2,
+          "id": "studio-tray-picked",
+          "title": "Studio: items picked from the tray"
+        }
+      ]
+    },
+    {
+      "id": "studio-piece-lift",
+      "app": "tabs",
+      "area": "studio",
+      "title": "A piece lifted on the board, then swapped for another",
+      "setup": [
+        "/studio"
+      ],
+      "steps": [
+        [
+          1.0,
+          "tap:boardPiece-teeb"
+        ],
+        [
+          3.2,
+          "tap:studioChip-alt-shirt"
+        ]
+      ],
+      "end": 7,
+      "stills": [
+        {
+          "at": 2.6,
+          "id": "studio-piece-lifted",
+          "title": "Studio: the tee lifted, swaps beside it"
+        },
+        {
+          "at": 6.2,
+          "id": "studio-piece-swapped",
+          "title": "Studio: the tee swapped for the white shirt"
+        }
+      ]
+    },
+    {
+      "id": "studio-new-look",
+      "app": "tabs",
+      "area": "studio",
+      "title": "New look from the more menu",
+      "setup": [
+        "/studio"
+      ],
+      "steps": [
+        [
+          1.0,
+          "tap:studioMore"
+        ],
+        [
+          2.6,
+          "tap:studioChip-New look"
+        ]
+      ],
+      "end": 7,
+      "stills": [
+        {
+          "at": 5.8,
+          "id": "studio-new-look",
+          "title": "Studio: a new look"
+        }
+      ]
+    },
+    {
+      "id": "studio-try-it-on",
+      "app": "tabs",
+      "area": "studio",
+      "title": "Try it on: the mesh over her photo, her try-on lands, the result opens",
+      "setup": [
+        "/studio"
+      ],
+      "steps": [
+        [
+          1.0,
+          "tap:studioTryOn"
+        ],
+        [
+          9.0,
+          "tap:studioTile"
+        ]
+      ],
+      "end": 15,
+      "stills": [
+        {
+          "at": 3.0,
+          "id": "studio-trying-on",
+          "title": "Studio: trying it on"
+        },
+        {
+          "at": 7.5,
+          "id": "studio-tryon-result",
+          "title": "Studio: her try-on on the board"
+        },
+        {
+          "at": 12.5,
+          "id": "tryon-result-card",
+          "title": "Try-on result: her in Weekend in black"
+        }
+      ]
+    },
+    {
+      "id": "zee-on-bar",
+      "app": "tabs",
+      "area": "studio",
+      "title": "Zee on the tab bar speaks up in Studio",
+      "setup": [
+        "/studio"
+      ],
+      "steps": [
+        [
+          1.0,
+          "zee:happy|Black and black, done right. The loafers keep it easy."
+        ],
+        [
+          5.0,
+          "zee:idea|A camel coat would warm this up."
+        ]
+      ],
+      "end": 8.5,
+      "stills": [
+        {
+          "at": 2.5,
+          "id": "zee-on-bar",
+          "title": "Zee on the tab bar: a line about the look"
+        }
+      ]
+    },
+    {
+      "id": "settings-profile",
+      "app": "tabs",
+      "area": "profile",
+      "title": "Settings tab: her profile, colours, body, city and saved looks",
+      "setup": [
+        "today:ready"
+      ],
+      "steps": [
+        [
+          0.5,
+          "/profile"
+        ],
+        [
+          3.2,
+          "drag:220,760,0,-300,700"
+        ]
+      ],
+      "end": 5.5,
+      "stills": [
+        {
+          "at": 2.6,
+          "id": "profile",
+          "title": "Profile: Emma, her looks, try-ons and gallery"
+        }
+      ]
+    },
+    {
+      "id": "shell-tabs-tour",
+      "app": "tabs",
+      "area": "today",
+      "title": "The tab bar: Today, Wardrobe, Chat, Studio, Settings",
+      "setup": [
+        "today:ready"
+      ],
+      "steps": [
+        [
+          1.5,
+          "/wardrobe"
+        ],
+        [
+          3.5,
+          "/messages"
+        ],
+        [
+          5.5,
+          "/studio"
+        ],
+        [
+          7.5,
+          "/profile"
+        ],
+        [
+          9.5,
+          "/today"
+        ]
+      ],
+      "end": 11.5,
+      "stills": []
+    },
+    {
+      "id": "stylist-welcome",
+      "app": "tabs",
+      "area": "first-run",
+      "title": "Welcome after sign-up: Zee waves; she renames him on his name tag",
+      "setup": [
+        "today:ready"
+      ],
+      "steps": [
+        [
+          0.5,
+          "welcome:Emma"
+        ],
+        [
+          4.8,
+          "tap:stylistWelcomeTag"
+        ],
+        [
+          6.2,
+          "type:stylistWelcomeField|Coco"
+        ],
+        [
+          8.6,
+          "unfocus:"
+        ]
+      ],
+      "end": 11.5,
+      "stills": [
+        {
+          "at": 4.2,
+          "id": "stylist-welcome",
+          "title": "Welcome, Emma: Zee and his name tag"
+        },
+        {
+          "at": 10.6,
+          "id": "stylist-renamed",
+          "title": "Welcome: Zee renamed Coco"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe-empty-first",
+      "app": "extract",
+      "area": "wardrobe",
+      "title": "An empty wardrobe: Nothing here yet, the Extract all card",
+      "setup": [
+        "today:empty"
+      ],
+      "steps": [
+        [
+          0.5,
+          "/wardrobe"
+        ]
+      ],
+      "end": 4.5,
+      "stills": [
+        {
+          "at": 3.6,
+          "id": "wardrobe-empty",
+          "title": "Wardrobe, empty: Extract all wardrobe items"
+        }
+      ]
+    },
+    {
+      "id": "extract-selfie",
+      "app": "extract",
+      "area": "first-run",
+      "title": "Extract all: First, a selfie; the camera; That's you; Use this",
+      "setup": [
+        "today:empty",
+        "/wardrobe"
+      ],
+      "steps": [
+        [
+          1.0,
+          "tap:wardrobeV2Extract"
+        ],
+        [
+          3.5,
+          "tap:selfieSheetTake"
+        ],
+        [
+          7.0,
+          "tap:selfieShutter"
+        ],
+        [
+          11.0,
+          "tap:selfieUse"
+        ]
+      ],
+      "end": 15,
+      "stills": [
+        {
+          "at": 2.8,
+          "id": "extract-selfie-sheet",
+          "title": "Extract all: First, a selfie"
+        },
+        {
+          "at": 6.0,
+          "id": "extract-selfie-camera",
+          "title": "The selfie camera: Look straight at the camera"
+        },
+        {
+          "at": 9.6,
+          "id": "extract-selfie-taken",
+          "title": "Her selfie: That's you"
+        },
+        {
+          "at": 14.0,
+          "id": "extract-photos-sheet",
+          "title": "Extract all: Now, your photos"
+        }
+      ]
+    },
+    {
+      "id": "extract-photos-continue",
+      "app": "extract",
+      "area": "first-run",
+      "title": "Now, your photos: Continue, and the scan starts on the Wardrobe tab",
+      "setup": [
+        "today:empty",
+        "/wardrobe",
+        "tap:wardrobeV2Extract",
+        "tap:selfieSheetPick",
+        "tap:selfieUse"
+      ],
+      "steps": [
+        [
+          1.2,
+          "tap:photosSheetContinue"
+        ]
+      ],
+      "end": 9,
+      "stills": [
+        {
+          "at": 7.5,
+          "id": "extract-scan-starts",
+          "title": "The scan starts: looking for photos of you"
+        }
+      ]
+    },
+    {
+      "id": "scan-sort-fan-land",
+      "app": "extract",
+      "area": "first-run",
+      "title": "The scan on the Wardrobe tab: her photos sorted into piles, her items drawn in a fan, the landing in her rails",
+      "setup": [
+        "today:empty",
+        "/wardrobe"
+      ],
+      "steps": [
+        [
+          0.6,
+          "extract:looking"
+        ],
+        [
+          7.6,
+          "extract:fan"
+        ],
+        [
+          12.1,
+          "extract:land"
+        ]
+      ],
+      "end": 19,
+      "stills": [
+        {
+          "at": 5.5,
+          "id": "scan-sort",
+          "title": "The scan: photos of you, sorted from the rest"
+        },
+        {
+          "at": 10.8,
+          "id": "scan-fan",
+          "title": "The scan: her photos in a fan, her items being drawn"
+        },
+        {
+          "at": 17.8,
+          "id": "scan-landed",
+          "title": "The scan landed: her wardrobe items in rails"
+        }
+      ]
+    },
+    {
+      "id": "scan-done-band",
+      "app": "extract",
+      "area": "first-run",
+      "title": "After the scan: Added 14 wardrobe items from 7 photos",
+      "setup": [
+        "today:scanned",
+        "/wardrobe"
+      ],
+      "steps": [
+        [
+          0.6,
+          "extract:done"
+        ]
+      ],
+      "end": 4.5,
+      "stills": [
+        {
+          "at": 3.5,
+          "id": "scan-done",
+          "title": "Added 14 wardrobe items"
+        }
+      ]
+    },
+    {
+      "id": "chat-hello",
+      "app": "chat",
+      "area": "chat",
+      "title": "Chat opens: Zee's hello, the greeting, the starters dealt in",
+      "setup": [
+        "go:/wardrobe"
+      ],
+      "steps": [
+        [
+          0.5,
+          "go:/messages"
+        ]
+      ],
+      "end": 7,
+      "stills": [
+        {
+          "at": 6.0,
+          "id": "chat-hello",
+          "title": "Chat: Hey Emma, the starters"
+        }
+      ]
+    },
+    {
+      "id": "chat-ask-art-fair",
+      "app": "chat",
+      "area": "chat",
+      "title": "Asking Zee: what to wear to the art fair; Zee thinks with her closet; the look lands",
+      "setup": [
+        "go:/messages"
+      ],
+      "steps": [
+        [
+          1.0,
+          "say:What should I wear to the art fair tonight?"
+        ]
+      ],
+      "end": 16,
+      "stills": [
+        {
+          "at": 5.0,
+          "id": "chat-thinking",
+          "title": "Chat: Zee thinking with her wardrobe"
+        },
+        {
+          "at": 14.0,
+          "id": "chat-art-fair-look",
+          "title": "Chat: the art fair look, from her wardrobe"
+        }
+      ]
+    },
+    {
+      "id": "chat-tryon",
+      "app": "chat",
+      "area": "chat",
+      "title": "Try it on from the chat: the ring, it lands, the sheet",
+      "setup": [
+        "go:/messages",
+        "say:What should I wear to the art fair tonight?"
+      ],
+      "steps": [
+        [
+          1.0,
+          "tryon:run"
+        ],
+        [
+          5.5,
+          "tryon:land"
+        ],
+        [
+          9.0,
+          "tryon:sheet"
+        ]
+      ],
+      "end": 13,
+      "stills": [
+        {
+          "at": 4.0,
+          "id": "chat-trying-on",
+          "title": "Chat: trying the look on"
+        },
+        {
+          "at": 8.0,
+          "id": "chat-tryon-landed",
+          "title": "Chat: her try-on landed"
+        },
+        {
+          "at": 12.0,
+          "id": "chat-tryon-sheet",
+          "title": "Chat: her try-on, full sheet"
+        }
+      ]
+    },
+    {
+      "id": "chat-update-sheet",
+      "app": "chat",
+      "area": "chat",
+      "title": "A new version is ready: the update sheet",
+      "setup": [
+        "go:/messages"
+      ],
+      "steps": [
+        [
+          1.0,
+          "update:sheet"
+        ]
+      ],
+      "end": 5,
+      "stills": [
+        {
+          "at": 4.0,
+          "id": "update-sheet",
+          "title": "Update: a new version of Curate"
+        }
+      ]
+    },
+    {
+      "id": "front-door-reel",
+      "app": "door",
+      "area": "first-run",
+      "title": "The splash, then the front door: Try it. Style it. Wear it.",
+      "setup": [
+        "/sign-up",
+        "/splash"
+      ],
+      "steps": [
+        [
+          1.6,
+          "/welcome"
+        ]
+      ],
+      "end": 9.5,
+      "stills": [
+        {
+          "at": 8.6,
+          "id": "front-door",
+          "title": "Front door: Try it. Style it. Wear it."
+        }
+      ]
+    },
+    {
+      "id": "sign-up-doors",
+      "app": "door",
+      "area": "first-run",
+      "title": "Sign up: Continue with Apple, Google or email; the email form",
+      "setup": [
+        "/welcome"
+      ],
+      "steps": [
+        [
+          0.5,
+          "/sign-up"
+        ],
+        [
+          3.5,
+          "/sign-in/email?mode=signup"
+        ]
+      ],
+      "end": 6.5,
+      "stills": [
+        {
+          "at": 2.6,
+          "id": "sign-up-doors",
+          "title": "Sign up: Continue with Apple, Google or email"
+        },
+        {
+          "at": 6.0,
+          "id": "sign-up-email",
+          "title": "Create your account"
+        }
+      ],
+      "tags": [
+        "third-party-marks"
+      ]
+    },
+    {
+      "id": "short-signup",
+      "app": "signup",
+      "area": "first-run",
+      "title": "The short sign-up: Nice to meet you, then Pick your username, its checks, emma.nyc available, Done",
+      "setup": [
+        "run:ready"
+      ],
+      "steps": [
+        [
+          1.6,
+          "text:Next"
+        ],
+        [
+          6.6,
+          "type:emma.nyc"
+        ],
+        [
+          9.8,
+          "text:Done"
+        ]
+      ],
+      "end": 13.5,
+      "stills": [
+        {
+          "at": 1.0,
+          "id": "signup-about",
+          "title": "Sign-up 1 of 2: Nice to meet you"
+        },
+        {
+          "at": 5.6,
+          "id": "signup-username",
+          "title": "Sign-up 2 of 2: Pick your username"
+        },
+        {
+          "at": 9.0,
+          "id": "signup-username-typed",
+          "title": "Sign-up: @emma.nyc available"
+        }
+      ]
+    }
+  ]
+}

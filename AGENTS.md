@@ -29,6 +29,7 @@ library, never regenerated.**
 | `inspo/` | The inspo board: one Markdown file per inspiration, `inspo/<id>.md`; its media is a `reference` asset in `library/references/` (see "Inspo: add and reference") |
 | `schemas/` | The zod source of truth for assets, ads, persona accounts, the voice config, prompts and inspo |
 | `config/` | Project-wide settings as data: `voice.json` (the voiceover's mode and every mode's settings) |
+| `captures/` | Shot lists for recording the app, one per build (`b284.json`), run by `tools/take` (see "Record the app") |
 | `motion/` | Reusable Remotion components (Device, PhoneFrame, ZeeActor, KineticType, BeatClock, PopOut…), plus the studio kit: `springs.ts`, `noise.ts`, `Blur.tsx`, `StableImg.tsx`, `beatmap.ts`, `sound/`, and the 2.5D kit: `DepthPhoto.tsx`, `Finish.tsx`, `KeyLine.tsx` |
 | `ads/` | One folder per ad: `ad.json` (the ad in data), `README.md`, `index.tsx`; studio ads also brief.md, style_guide.md, shotlist.md, timeline.ts, shots.ts (see "Making a motion film") |
 | `reviews/` | The critic's evidence per ad and round (`tools/critic`); images/audio are local only, `review.md`, `metrics.json` and `scores.json` are tracked |
@@ -178,6 +179,35 @@ Output: `renders/<ad>/<channel>/<length>s/<ad>_<channel>_<format>_<length>s_v<N>
 never overwritten; each run takes the next `vN`. Formats: `9x16` 1080×1920, `4x5` 1080×1350,
 `1x1` 1080×1080, `16x9` 1920×1080, `appstore-iphone` 886×1920, `appstore-ipad` 1200×1600.
 Lengths: 6, 8 (a hook on its own), 15, 30, 60, 90, 120 s (App Store previews: 15–30 s only).
+
+## Record the app (the new look): `tools/take`
+
+App footage and screenshots come from curate-app's `lib/dev` probes on our own simulator, every server call
+faked (nothing paid), from a shot list per build: `captures/b<build>.json` (see `captures/README.md`).
+
+```bash
+tools/probe-photos emma                                  # her photos, selfie, avatar and persona.json for the probes
+tools/take build captures/b284.json --app tabs           # each probe app once (flutter run; `build ios --simulator` fails here)
+tools/take captures/b284.json --only today-landing --no-register    # record, then look at the take
+tools/take captures/b284.json --only today-landing --register-only  # add the reviewed take (draft) to the library
+tools/export-media --build 284
+```
+
+- Read `library/footage/INVENTORY-b<build>.md` first: only probes that draw the new look are valid. For 284:
+  `new_look_probe` (+ `PROBE_ZEE=live PROBE_PHOTOS=…`), `new_look_chat_probe` (+ `PROBE_TIPS=true`),
+  `onboarding_mist_probe`, `short_signup_probe` (+ `PROBE_NAME=Emma`); the probe changes are on curate-app
+  branch `chore/motion-capture-284`. Footage from an old probe is tagged `look:v1`.
+- Never use the "… Marketing 17PM" simulators (real accounts); `tools/take` refuses them.
+- `tools/capture.sh` runs `../curate-app` unless `CURATE_APP_DIR` says otherwise, and that checkout is far
+  behind the app: point it at the build's worktree, or use `tools/take`.
+
+## The app's raw media, outside this repo
+
+The founder uses the app's recordings and screenshots for more than ads (decks, Canva, the website),
+never through Google Drive. After you capture app footage or screenshots, run
+`tools/export-media --build <N>`: it writes a plain copy to `../app-media/b<N>/<area>/` (today,
+wardrobe, studio, try-ons, chat, profile, first-run) with readable names and a `CONTENTS.md`. The
+library stays the master copy; never edit the export, re-run the tool.
 
 ## How to add or remove an asset
 

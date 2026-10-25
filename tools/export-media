@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/export-media: a plain, readable copy of one build's app recordings and screenshots (see tools/export-media.ts).
+exec node "$(dirname "$0")/export-media.ts" "$@"

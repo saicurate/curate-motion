@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/probe-photos: a persona's photos as curate-app's new-look probes read them (see tools/probe-photos.ts).
+exec node "$(dirname "$0")/probe-photos.ts" "$@"
