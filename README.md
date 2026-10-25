@@ -4,7 +4,7 @@ Curate's motion-graphics marketing videos. One library of assets (Zee, the perso
 wardrobe and camera roll, app footage, music, brand), reusable Remotion components, and ads
 assembled from both. Nothing is regenerated.
 
-- **Agents and people: read [AGENTS.md](AGENTS.md) first.**
+- **New here to make videos? [START-HERE.md](START-HERE.md).** Agents and people: then [AGENTS.md](AGENTS.md).
 - The design: [ARCHITECTURE.md](ARCHITECTURE.md). The rules: [RULES.md](RULES.md).
 - Why things are this way: [decisions/](decisions/). What changed: [CHANGELOG.md](CHANGELOG.md).
 

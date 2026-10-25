@@ -3,7 +3,8 @@
 This is the canonical guide for every AI agent and every person working in this repo (Claude Code,
 Cursor, Codex, Copilot, Gemini and others). CLAUDE.md, GEMINI.md, `.cursor/rules/` and
 `.github/copilot-instructions.md` all point here. If anything elsewhere disagrees with this file,
-this file wins; fix the other one.
+this file wins; fix the other one. New to Curate? [START-HERE.md](START-HERE.md) is the front door: read it
+first, then this.
 
 ## What this repo is
 
@@ -182,6 +183,21 @@ Output: `renders/<ad>/<channel>/<length>s/<ad>_<channel>_<format>_<length>s_v<N>
 never overwritten; each run takes the next `vN`. Formats: `9x16` 1080×1920, `4x5` 1080×1350,
 `1x1` 1080×1080, `16x9` 1920×1080, `appstore-iphone` 886×1920, `appstore-ipad` 1200×1600.
 Lengths: 6, 8 (a hook on its own), 15, 30, 60, 90, 120 s (App Store previews: 15–30 s only).
+
+### Render in the cloud (AWS Lambda)
+
+Same ads, rendered on Remotion Lambda in us-east-1 instead of this Mac (founder OK 2026-10-24). Use it
+when the Mac is busy (several agents rendering) or for many renders at once; an idle Mac is about as
+fast for one film. Paid per render: about $0.0005 a 4K still, about $0.15–$0.20 a 15 s 4K film at 60 fps.
+
+```bash
+tools/render-lambda <ad-id> --format store-header --length 15 --stills 36,132,540 --props '{"film":"roll"}'  # stills, full size
+tools/render-lambda <ad-id> --format store-header --length 15 --props '{"film":"roll"}' --name roll           # the full film
+```
+
+Stills land in `ads/<ad>/out/stills/` (as `tools/stills`; `--out` to change), films in `renders/` (as
+`tools/render`). It redeploys the ad's code each run (`--no-deploy` to skip), keeps media private, and
+logs time and cost to `infra/remotion-lambda/costs.jsonl`. Details and teardown: `infra/remotion-lambda/README.md`.
 
 ## Record the app (the new look): `tools/take`
 

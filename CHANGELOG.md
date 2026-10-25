@@ -3,6 +3,18 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-24: START-HERE.md, the front door for an outside video maker; everything committed
+- **START-HERE.md**: for a new person or agent making Curate videos: what to read in what order, setup (an AWS key
+  for the bucket), where every asset lives (the catalog in git, the files in S3, fetched per ad with
+  `tools/sync pull --ad`), how to make, render and hand back a video, what needs the founder, what's true now.
+  CLAUDE.md, GEMINI.md, README.md and AGENTS.md point to it.
+- **Committed at the founder's word** ("yes, commit all"): the work that was sitting uncommitted so a fresh clone
+  sees everything: the App Store films (`ads/app-store-header*`, `ads/app-store-previews*`, `ads/app-store-shots-*`,
+  their reviews), the Remotion Lambda tooling (`tools/render-lambda`, `infra/remotion-lambda/`), the 284 recordings
+  and the Event Draw (285) recordings in the catalog, the `look:v1` tags, newer garment versions, photo layers and
+  stock, with the three garment prompts linked to their outputs. Not committed: the generated review pages over
+  512 KB (`review-page/site/*.html`; rebuild with their `build.py`).
+
 ## 2026-10-24: the hand-off kit for video makers outside this repo (tools/export-kit)
 - **tools/export-kit** writes `../app-media/README.md` (the brief, master in `handoff/README.md`: what Curate
   really does, the app's words, the header look, the rules) and `../app-media/kit/` (brand, people, closet

@@ -1,5 +1,8 @@
 # GEMINI.md
 
+New here to make Curate videos? Read **[START-HERE.md](START-HERE.md)** first: where every asset is, how to
+make and hand back a video, and what needs the founder.
+
 Read and follow **[AGENTS.md](AGENTS.md)**: it is the canonical guide for this repo (what it is, the
 folder map, the catalog CLI, how to make and render an ad, how to add an asset, the rules, and what
 not to do).
