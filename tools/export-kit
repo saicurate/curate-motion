@@ -1,0 +1,3 @@
+#!/bin/bash
+# tools/export-kit: the hand-off kit for video makers outside this repo (see tools/export-kit.ts).
+exec node "$(dirname "$0")/export-kit.ts" "$@"

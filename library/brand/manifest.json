@@ -357,6 +357,147 @@
       "kind": "brand",
       "approvedBy": "founder (said: upload our brand guidelines, 2026-10-15)",
       "approvedAt": "2026-10-15"
+    },
+    {
+      "id": "brand.curate.mark-2048.v1",
+      "title": "The mark, 2048 px, transparent (drawn from the vector mark)",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/curate/mark-2048.v1.png",
+          "sha256": "8f2e0c686af97c58669ef0b1a5a10f1532810d99d9f047ed5097c29c39ac6d2d",
+          "bytes": 131521,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "original",
+        "url": "curate-admin/public/logo.svg",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hand-off kit)",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "brand",
+      "dims": {
+        "w": 2048,
+        "h": 2048
+      }
+    },
+    {
+      "id": "brand.curate.lockup.v1",
+      "title": "The lockup: the mark and Curate in Geist Medium, transparent (as the films close)",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/curate/lockup.v1.png",
+          "sha256": "b2dc1bff0032fbbbfe563836a2616d738ce7f65efb7b0fc1a844ed1e8deeb7a4",
+          "bytes": 79423,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "original",
+        "url": "motion/Designed.tsx MarkWord, drawn by headless Chrome",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hand-off kit)",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "brand",
+      "dims": {
+        "w": 2571,
+        "h": 686
+      }
+    },
+    {
+      "id": "brand.curate.app-icon.v1",
+      "title": "The app icon, 1024 px (as it ships in the app)",
+      "files": [
+        {
+          "role": "original",
+          "path": "brand/curate/app-icon.v1.png",
+          "sha256": "09a960b596aca2cef90f8f6f9e21f944b63d61b80a6d83cce610ac058ac037a9",
+          "bytes": 65882,
+          "mime": "image/png"
+        }
+      ],
+      "tags": {
+        "mood": [],
+        "colour": [],
+        "season": [],
+        "free": []
+      },
+      "source": {
+        "type": "original",
+        "url": "curate-app ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+        "from": []
+      },
+      "licence": {
+        "name": "Curate original",
+        "commercial": true,
+        "attributionRequired": false,
+        "restrictions": [],
+        "checkedAt": "2026-10-25"
+      },
+      "cost": {
+        "usd": 0,
+        "calls": 0
+      },
+      "createdBy": {
+        "type": "agent",
+        "name": "claude-code (hand-off kit)",
+        "at": "2026-10-25"
+      },
+      "status": "draft",
+      "aiGenerated": false,
+      "kind": "brand",
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      }
     }
   ]
 }

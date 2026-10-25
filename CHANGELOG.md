@@ -3,6 +3,18 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-24: the hand-off kit for video makers outside this repo (tools/export-kit)
+- **tools/export-kit** writes `../app-media/README.md` (the brief, master in `handoff/README.md`: what Curate
+  really does, the app's words, the header look, the rules) and `../app-media/kit/` (brand, people, closet
+  cut-outs one per item, Zee, music with BPM and credit lines, stock, devices, look = the films to match) with
+  `kit/CONTENTS.md`. Beside `../app-media/b<build>/` from tools/export-media, the whole `app-media/` folder is
+  what another video agent gets.
+- **Zee** comes from the Blender renders in research/zee-pack (ProRes 4444 with alpha, PNG frames, a still), at
+  the largest size whose take is complete: 1080 px (`zee-v2/sharp/run_f18cL_1080.sh`, rendering) else 720.
+- **New library assets (drafts):** `brand.curate.mark-2048.v1`, `brand.curate.lockup.v1`, `brand.curate.app-icon.v1`.
+  The vector mark and Apple's App Store badge are SVGs in `handoff/` (sources: `handoff/SOURCES.md`).
+- **Never in the kit:** Apple's Product Bezels (their licence forbids redistributing the file).
+
 ## 2026-10-24: three designed ads (the app redrawn, decisions/0014) and their kit, motion/Designed.tsx
 - **motion/Designed.tsx**: the header film's world as parts any ad can use: Ground, Print (her photos), Wipe (a
   photo sweeping to another: a try-on), Garment, slotOf (flat-lay roles), and the app redrawn: Card, Pill, Bubble,
