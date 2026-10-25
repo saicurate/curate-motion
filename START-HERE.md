@@ -25,6 +25,8 @@ The founder approves everything that runs. You make drafts and hand them back (s
 - **The repo:** `git clone https://github.com/saicurate/curate-motion.git && cd curate-motion && npm install`
   (this also turns on the pre-commit hook that keeps media and secrets out of git).
 - **Your own branch** for all work: `git checkout -b <your-name>/<what-you-make>`. Never push to `main`.
+- **No GitHub account?** The founder gives you a folder with a read-only repo key, the AWS key and
+  `FOR-YOUR-AGENT.txt`, which has the exact clone and setup commands. Follow that instead of the clone line above.
 
 ## 3. Where everything is
 
@@ -89,6 +91,8 @@ the bottom, 6% from the sides.
 
 - `tools/sync renders push` uploads your renders to the bucket's `renders/`.
 - Push your branch (`git push -u origin <your-branch>`) and open a pull request. CI validates the catalog.
+  With the read-only repo key you can't push: upload your code instead, as `git bundle create /tmp/<date>-<what>.bundle
+  main..HEAD`, then `aws s3 cp` it to `s3://curate-motion-library-276451918677/renders/handback/`.
 - Send the founder the video and, for a new idea, stills of each shot first (G2/G3 in the studio process).
   The founder approves; nothing is posted or run without that.
 
