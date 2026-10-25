@@ -56,7 +56,7 @@ What's in it (ids are `<kind>.<scope>.<name>.v<N>`):
 | Emma's photos | `photo.emma.r01…r30-*` | 30 photos of her life in New York (AI-generated). Some have 2.5D layers: `…-cutout`, `…-plate` (without her), `…-depth`. Who she is: `library/people/emma/persona.md`. |
 | Her face, selfie, try-ons | `face.emma.b.v1`, `selfie.emma.selfie.v1`, `tryon.emma.*`, `photo.emma.r30-walk-to-work-tryon-tee-black.v1` | Try-ons = her photo wearing other clothes. |
 | Her clothes | `garment.emma.*` (Jake's: `garment.jake.*`) | Every item has a transparent cut-out (`files[].role: "cutout"`) and the product shot on white. |
-| Zee, the mascot | `zee.<mood>.{intro,loop,outro,still}.v1` | 12 moods, the app's 384 px pack. Larger 1080 px renders are being added. |
+| Zee, the mascot | `zee.<mood>.{intro,loop,outro,still}.v2` (1080 px) · `….v1` (720 px) | 12 moods: cheer, curious, excited, focused, happy, hello, idea, idle, listening, love, sleepy, thinking. Each part is WebP frames with transparency for the ads (`frameSrc`), and v2's main file is a ProRes 4444 `.mov` with alpha for editors. 30 fps: play the intro, repeat the loop, end on the outro. v2 is a draft; v1 is approved. |
 | Music | `music.*` | Each with BPM, a measured beat map, its licence and any credit line. |
 | Stock | `stock.unsplash.*`, `stock.polyhaven.*` | New York, food, coffee, flowers, beaches, dogs, grounds, a studio HDRI. |
 | Brand | `brand.curate.*`, `font.geist.*` | The mark, the lockup, the app icon, the brand book (PDF), Geist. The vector mark and Apple's App Store badge are SVGs in `handoff/`. |

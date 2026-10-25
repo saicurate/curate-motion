@@ -3,6 +3,13 @@
 Newest first. One entry per change that another agent should know about. Asset additions are
 in the manifests' git history; list only notable ones here.
 
+## 2026-10-25: Zee at 1080 px in the library (zee.<mood>.<part>.v2, drafts)
+- The 12 moods re-rendered at 1080 px from the approved rig (research/zee-pack, `zee-v2/sharp/run_f18cL_1080.sh`, same
+  takes, motion and settings as the sharp pack): 36 parts, each a ProRes 4444 `.mov` with alpha (the original, for
+  editors) and WebP frames (for `frameSrc`, encoded as the v1 frames), plus 12 stills. v1 (720 px) stays as it is:
+  today's ads use it, and v2 doesn't supersede it, so approving v2 retires nothing.
+- The hand-off kit's Zee is now 1080 px for every mood (`tools/export-kit`).
+
 ## 2026-10-24: START-HERE.md, the front door for an outside video maker; everything committed
 - **START-HERE.md**: for a new person or agent making Curate videos: what to read in what order, setup (an AWS key
   for the bucket), where every asset lives (the catalog in git, the files in S3, fetched per ad with

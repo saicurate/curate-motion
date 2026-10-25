@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T03:43:41.147Z",
+  "generatedAt": "2026-10-25T06:00:17.517Z",
   "bucket": "curate-motion-library-276451918677",
   "counts": {
     "brand": 7,
@@ -17,7 +17,7 @@
     "stock": 45,
     "tryon": 3,
     "voice": 125,
-    "zee": 48
+    "zee": 96
   },
   "assets": [
     {
@@ -134298,6 +134298,91 @@
       }
     },
     {
+      "id": "zee.cheer.intro.v2",
+      "kind": "zee",
+      "title": "Zee cheer, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/intro.v2.mov",
+          "sha256": "b03b23edb9464741479a6b543458ebb3b23df0c73b41d36115fa58df69dc8392",
+          "bytes": 6342377,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/cheer/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:cheer",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:cheer",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.cheer.intro.v2",
+        "title": "Zee cheer, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/cheer/intro.v2.mov",
+            "sha256": "b03b23edb9464741479a6b543458ebb3b23df0c73b41d36115fa58df69dc8392",
+            "bytes": 6342377,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "cheer",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/cheer/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 15,
+          "fps": 30,
+          "treeSha256": "74f82738832267227cf3b8347f93a5c0977f205d5efd31119cdb319a3ec4ae6b",
+          "bytes": 922186
+        }
+      }
+    },
+    {
       "id": "zee.cheer.loop.v1",
       "kind": "zee",
       "title": "Zee cheer, loop",
@@ -134386,6 +134471,91 @@
           "fps": 30,
           "treeSha256": "a58356a729e03489cedb6cd1fbebfb2572464800821ab49a47c40408882ad8d3",
           "bytes": 2278824
+        }
+      }
+    },
+    {
+      "id": "zee.cheer.loop.v2",
+      "kind": "zee",
+      "title": "Zee cheer, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/loop.v2.mov",
+          "sha256": "489ae49f0c072ff0f580d3a399d4032d1b16e9d8eaaa49318405e86fc575cbe9",
+          "bytes": 33434422,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/cheer/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:cheer",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:cheer",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.cheer.loop.v2",
+        "title": "Zee cheer, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/cheer/loop.v2.mov",
+            "sha256": "489ae49f0c072ff0f580d3a399d4032d1b16e9d8eaaa49318405e86fc575cbe9",
+            "bytes": 33434422,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "cheer",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/cheer/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 86,
+          "fps": 30,
+          "treeSha256": "96ef910381f82dc7273e779bf11594c61dd0a88a39f2c469a2bfe7261a8bcf7b",
+          "bytes": 4656658
         }
       }
     },
@@ -134482,6 +134652,91 @@
       }
     },
     {
+      "id": "zee.cheer.outro.v2",
+      "kind": "zee",
+      "title": "Zee cheer, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/outro.v2.mov",
+          "sha256": "58b745406204eee2199090b49edff46831d01725f61ced607537b75bcb21f3a4",
+          "bytes": 7564537,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/cheer/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:cheer",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:cheer",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.cheer.outro.v2",
+        "title": "Zee cheer, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/cheer/outro.v2.mov",
+            "sha256": "58b745406204eee2199090b49edff46831d01725f61ced607537b75bcb21f3a4",
+            "bytes": 7564537,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "cheer",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/cheer/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 18,
+          "fps": 30,
+          "treeSha256": "e4aa8d9a4ce6cde2e21fa97e7c8362cf697ba5e59c38bc9fcd279114d39c5e38",
+          "bytes": 1101076
+        }
+      }
+    },
+    {
       "id": "zee.cheer.still.v1",
       "kind": "zee",
       "title": "Zee cheer, still",
@@ -134561,6 +134816,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.cheer.still.v2",
+      "kind": "zee",
+      "title": "Zee cheer, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/cheer/still.v2.png",
+          "sha256": "7ec6a8f102d498358d1d4033dc13a5b29d9bf4845a1e925757101964079bb3ab",
+          "bytes": 2109404,
+          "mime": "image/png",
+          "s3Key": "library/zee/cheer/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:cheer",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:cheer",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.cheer.still.v2",
+        "title": "Zee cheer, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/cheer/still.v2.png",
+            "sha256": "7ec6a8f102d498358d1d4033dc13a5b29d9bf4845a1e925757101964079bb3ab",
+            "bytes": 2109404,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "cheer",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -134657,6 +134989,91 @@
       }
     },
     {
+      "id": "zee.curious.intro.v2",
+      "kind": "zee",
+      "title": "Zee curious, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/intro.v2.mov",
+          "sha256": "a8a53b0f0fe55819bafac8aa45b9651a4276426aa33f324bb061a25594c1903e",
+          "bytes": 6825858,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/curious/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:curious",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:curious",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.curious.intro.v2",
+        "title": "Zee curious, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/curious/intro.v2.mov",
+            "sha256": "a8a53b0f0fe55819bafac8aa45b9651a4276426aa33f324bb061a25594c1903e",
+            "bytes": 6825858,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "curious",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/curious/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 15,
+          "fps": 30,
+          "treeSha256": "f73e31ef0916c0badb270287dd45435adb5477add2d042680db1f0147cbfa592",
+          "bytes": 1033930
+        }
+      }
+    },
+    {
       "id": "zee.curious.loop.v1",
       "kind": "zee",
       "title": "Zee curious, loop",
@@ -134745,6 +135162,91 @@
           "fps": 30,
           "treeSha256": "02baa1a255fda768ff86e741182490b3f172a59ed4c8a2ddf9b3ec8563fdde17",
           "bytes": 2141056
+        }
+      }
+    },
+    {
+      "id": "zee.curious.loop.v2",
+      "kind": "zee",
+      "title": "Zee curious, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/loop.v2.mov",
+          "sha256": "21fc73051ec9bef1d6c27df3b08f572f3e896dbce6d74166bb59831794ae72f2",
+          "bytes": 28985097,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/curious/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:curious",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:curious",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.curious.loop.v2",
+        "title": "Zee curious, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/curious/loop.v2.mov",
+            "sha256": "21fc73051ec9bef1d6c27df3b08f572f3e896dbce6d74166bb59831794ae72f2",
+            "bytes": 28985097,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "curious",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/curious/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 64,
+          "fps": 30,
+          "treeSha256": "d3a1362996e047ac12567ad8f59ddaee1cb2852aab7eecb76089da0e6b77265c",
+          "bytes": 4348176
         }
       }
     },
@@ -134841,6 +135343,91 @@
       }
     },
     {
+      "id": "zee.curious.outro.v2",
+      "kind": "zee",
+      "title": "Zee curious, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/outro.v2.mov",
+          "sha256": "fdeee05480b9a53c00f70e53b94db4d3c876a49746022467ef52c3ccd33586d9",
+          "bytes": 7239196,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/curious/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:curious",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:curious",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.curious.outro.v2",
+        "title": "Zee curious, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/curious/outro.v2.mov",
+            "sha256": "fdeee05480b9a53c00f70e53b94db4d3c876a49746022467ef52c3ccd33586d9",
+            "bytes": 7239196,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "curious",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/curious/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 16,
+          "fps": 30,
+          "treeSha256": "5eb7baa1bcfdd9ce1c2e25b1ba483d616e42ef42fa35a3459462bf06e13f3837",
+          "bytes": 1089004
+        }
+      }
+    },
+    {
       "id": "zee.curious.still.v1",
       "kind": "zee",
       "title": "Zee curious, still",
@@ -134920,6 +135507,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.curious.still.v2",
+      "kind": "zee",
+      "title": "Zee curious, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/curious/still.v2.png",
+          "sha256": "0c2103e3bf4ff448612fb4301de5cf1611be1ac2ea07f627be99a938cdaf6e46",
+          "bytes": 2182768,
+          "mime": "image/png",
+          "s3Key": "library/zee/curious/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:curious",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:curious",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.curious.still.v2",
+        "title": "Zee curious, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/curious/still.v2.png",
+            "sha256": "0c2103e3bf4ff448612fb4301de5cf1611be1ac2ea07f627be99a938cdaf6e46",
+            "bytes": 2182768,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "curious",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -135016,6 +135680,91 @@
       }
     },
     {
+      "id": "zee.excited.intro.v2",
+      "kind": "zee",
+      "title": "Zee excited, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/intro.v2.mov",
+          "sha256": "37a06b7df7864a316fd50a785aba489076bbb977a2e1a63ea2cb485273518db8",
+          "bytes": 5588660,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/excited/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:excited",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:excited",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.excited.intro.v2",
+        "title": "Zee excited, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/excited/intro.v2.mov",
+            "sha256": "37a06b7df7864a316fd50a785aba489076bbb977a2e1a63ea2cb485273518db8",
+            "bytes": 5588660,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "excited",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/excited/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 13,
+          "fps": 30,
+          "treeSha256": "82dd211196063a5c550f35768d86e8136175a095cb1eb879daabead1271bc9d5",
+          "bytes": 819616
+        }
+      }
+    },
+    {
       "id": "zee.excited.loop.v1",
       "kind": "zee",
       "title": "Zee excited, loop",
@@ -135104,6 +135853,91 @@
           "fps": 30,
           "treeSha256": "c23a62c7a17d8adb0ed6eacb8b84f08cb3f6560e80d7cbe6eff58f75542721d8",
           "bytes": 2226250
+        }
+      }
+    },
+    {
+      "id": "zee.excited.loop.v2",
+      "kind": "zee",
+      "title": "Zee excited, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/loop.v2.mov",
+          "sha256": "20278ea7268fcde373f70ce861690674e9bed6de3070267d0565e0fda009aa9f",
+          "bytes": 31107777,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/excited/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:excited",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:excited",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.excited.loop.v2",
+        "title": "Zee excited, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/excited/loop.v2.mov",
+            "sha256": "20278ea7268fcde373f70ce861690674e9bed6de3070267d0565e0fda009aa9f",
+            "bytes": 31107777,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "excited",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/excited/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 77,
+          "fps": 30,
+          "treeSha256": "24dafd766385328cd55d9a5367a910106af8d8378630576395e30a855170d29d",
+          "bytes": 4473906
         }
       }
     },
@@ -135200,6 +136034,91 @@
       }
     },
     {
+      "id": "zee.excited.outro.v2",
+      "kind": "zee",
+      "title": "Zee excited, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/outro.v2.mov",
+          "sha256": "419a2623af583daa1d1468b5155787409bb98a4b9b0ab571174fe967174ae468",
+          "bytes": 6796986,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/excited/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:excited",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:excited",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.excited.outro.v2",
+        "title": "Zee excited, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/excited/outro.v2.mov",
+            "sha256": "419a2623af583daa1d1468b5155787409bb98a4b9b0ab571174fe967174ae468",
+            "bytes": 6796986,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "excited",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/excited/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 16,
+          "fps": 30,
+          "treeSha256": "a082a0386a633297844fd462fde77265efa03a3f8e9aea51d41184544c5ee9f4",
+          "bytes": 998828
+        }
+      }
+    },
+    {
       "id": "zee.excited.still.v1",
       "kind": "zee",
       "title": "Zee excited, still",
@@ -135279,6 +136198,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.excited.still.v2",
+      "kind": "zee",
+      "title": "Zee excited, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/excited/still.v2.png",
+          "sha256": "44c051b7c1e6be4c115cd70ab24cfdf634a01564b4250960e016e011608ac3b2",
+          "bytes": 1978969,
+          "mime": "image/png",
+          "s3Key": "library/zee/excited/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:excited",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:excited",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.excited.still.v2",
+        "title": "Zee excited, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/excited/still.v2.png",
+            "sha256": "44c051b7c1e6be4c115cd70ab24cfdf634a01564b4250960e016e011608ac3b2",
+            "bytes": 1978969,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "excited",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -135375,6 +136371,91 @@
       }
     },
     {
+      "id": "zee.focused.intro.v2",
+      "kind": "zee",
+      "title": "Zee focused, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/intro.v2.mov",
+          "sha256": "2abb11fe4d4a957eaae827900b6dcacd21977e04f6ccbbd370df5836b559e26d",
+          "bytes": 7579482,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/focused/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:focused",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:focused",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.focused.intro.v2",
+        "title": "Zee focused, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/focused/intro.v2.mov",
+            "sha256": "2abb11fe4d4a957eaae827900b6dcacd21977e04f6ccbbd370df5836b559e26d",
+            "bytes": 7579482,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "focused",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/focused/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 17,
+          "fps": 30,
+          "treeSha256": "30c3ae72daae8021c998dd2f4f645c743a2cd534df15cbc4bc43b62ee35c3464",
+          "bytes": 1124142
+        }
+      }
+    },
+    {
       "id": "zee.focused.loop.v1",
       "kind": "zee",
       "title": "Zee focused, loop",
@@ -135463,6 +136544,91 @@
           "fps": 30,
           "treeSha256": "2ef2873fc49bd06e2a2db3b8d31e54a46fa09003e69588f68338779e37c5dc39",
           "bytes": 2726476
+        }
+      }
+    },
+    {
+      "id": "zee.focused.loop.v2",
+      "kind": "zee",
+      "title": "Zee focused, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/loop.v2.mov",
+          "sha256": "d8724692d9b6e652a3eba6f8331eaf69dbbee8baffe3ce8933b74fc2982610b0",
+          "bytes": 38106370,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/focused/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:focused",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:focused",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.focused.loop.v2",
+        "title": "Zee focused, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/focused/loop.v2.mov",
+            "sha256": "d8724692d9b6e652a3eba6f8331eaf69dbbee8baffe3ce8933b74fc2982610b0",
+            "bytes": 38106370,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "focused",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/focused/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 86,
+          "fps": 30,
+          "treeSha256": "016c790f46de8633bc37d3e4a28df9553bdd82d4335cb58cc9c4fc872beab313",
+          "bytes": 5600928
         }
       }
     },
@@ -135559,6 +136725,91 @@
       }
     },
     {
+      "id": "zee.focused.outro.v2",
+      "kind": "zee",
+      "title": "Zee focused, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/outro.v2.mov",
+          "sha256": "b00c9d77b7731f092d9603356da5e0498c8d8e520a3cab5bac88b621967b955a",
+          "bytes": 8036742,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/focused/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:focused",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:focused",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.focused.outro.v2",
+        "title": "Zee focused, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/focused/outro.v2.mov",
+            "sha256": "b00c9d77b7731f092d9603356da5e0498c8d8e520a3cab5bac88b621967b955a",
+            "bytes": 8036742,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "focused",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/focused/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 18,
+          "fps": 30,
+          "treeSha256": "61ac05504121c1109db33884558ec0766a93f1883ac1138e4cb81fe9cfd58f82",
+          "bytes": 1191142
+        }
+      }
+    },
+    {
       "id": "zee.focused.still.v1",
       "kind": "zee",
       "title": "Zee focused, still",
@@ -135638,6 +136889,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.focused.still.v2",
+      "kind": "zee",
+      "title": "Zee focused, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/focused/still.v2.png",
+          "sha256": "58c50081fb2b75d10e8c6c844f3ae4a509986839b70c184cd0d7b0a66195be2f",
+          "bytes": 2276916,
+          "mime": "image/png",
+          "s3Key": "library/zee/focused/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:focused",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:focused",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.focused.still.v2",
+        "title": "Zee focused, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/focused/still.v2.png",
+            "sha256": "58c50081fb2b75d10e8c6c844f3ae4a509986839b70c184cd0d7b0a66195be2f",
+            "bytes": 2276916,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "focused",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -135734,6 +137062,91 @@
       }
     },
     {
+      "id": "zee.happy.intro.v2",
+      "kind": "zee",
+      "title": "Zee happy, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/intro.v2.mov",
+          "sha256": "4f87564838d3ca1a755561872d3388089fc3bd1646b5342efe4932938d4fdd1e",
+          "bytes": 7350960,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/happy/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:happy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:happy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.happy.intro.v2",
+        "title": "Zee happy, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/happy/intro.v2.mov",
+            "sha256": "4f87564838d3ca1a755561872d3388089fc3bd1646b5342efe4932938d4fdd1e",
+            "bytes": 7350960,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "happy",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/happy/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 17,
+          "fps": 30,
+          "treeSha256": "28e2c805bbbd8d35189a4738e9d8277aa98bbfb0e3fe13840a972b9f9ca1eedb",
+          "bytes": 1086894
+        }
+      }
+    },
+    {
       "id": "zee.happy.loop.v1",
       "kind": "zee",
       "title": "Zee happy, loop",
@@ -135822,6 +137235,91 @@
           "fps": 30,
           "treeSha256": "411dbaf44874db419f1842fb5a2231f3a6e70ba57fc4154b41bc4919cf34082f",
           "bytes": 3157816
+        }
+      }
+    },
+    {
+      "id": "zee.happy.loop.v2",
+      "kind": "zee",
+      "title": "Zee happy, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/loop.v2.mov",
+          "sha256": "647919df60d7c2492724bca98408a09fdc5d88bc719d60d988eba60d92ab0139",
+          "bytes": 44235711,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/happy/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:happy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:happy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.happy.loop.v2",
+        "title": "Zee happy, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/happy/loop.v2.mov",
+            "sha256": "647919df60d7c2492724bca98408a09fdc5d88bc719d60d988eba60d92ab0139",
+            "bytes": 44235711,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "happy",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/happy/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 103,
+          "fps": 30,
+          "treeSha256": "2f57bd58e40311237e3f48e0b5c86b485d945e876ec8b08bed57a49955dac591",
+          "bytes": 6485512
         }
       }
     },
@@ -135918,6 +137416,91 @@
       }
     },
     {
+      "id": "zee.happy.outro.v2",
+      "kind": "zee",
+      "title": "Zee happy, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/outro.v2.mov",
+          "sha256": "0b7bad3c5bafdd8f5020d11c58fc692045987b00e37516947f4cc80909a7e4cc",
+          "bytes": 7811875,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/happy/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:happy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:happy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.happy.outro.v2",
+        "title": "Zee happy, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/happy/outro.v2.mov",
+            "sha256": "0b7bad3c5bafdd8f5020d11c58fc692045987b00e37516947f4cc80909a7e4cc",
+            "bytes": 7811875,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "happy",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/happy/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 18,
+          "fps": 30,
+          "treeSha256": "b864ad8adcd5aa0c992d94a023bc041adb873ffc612dc303ab631475d5f7e0a6",
+          "bytes": 1159048
+        }
+      }
+    },
+    {
       "id": "zee.happy.still.v1",
       "kind": "zee",
       "title": "Zee happy, still",
@@ -135997,6 +137580,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.happy.still.v2",
+      "kind": "zee",
+      "title": "Zee happy, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/happy/still.v2.png",
+          "sha256": "51000972d2cf686c26299e55fbde8721e7e47df95369d13ffcf65a91c834c84c",
+          "bytes": 2189913,
+          "mime": "image/png",
+          "s3Key": "library/zee/happy/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:happy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:happy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.happy.still.v2",
+        "title": "Zee happy, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/happy/still.v2.png",
+            "sha256": "51000972d2cf686c26299e55fbde8721e7e47df95369d13ffcf65a91c834c84c",
+            "bytes": 2189913,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "happy",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -136093,6 +137753,91 @@
       }
     },
     {
+      "id": "zee.hello.intro.v2",
+      "kind": "zee",
+      "title": "Zee hello, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/intro.v2.mov",
+          "sha256": "79f1179ede9b5083db529578c7549b75aff7d83c2ef2fdd43ecffa9e4034b097",
+          "bytes": 7522661,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/hello/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:hello",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:hello",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.hello.intro.v2",
+        "title": "Zee hello, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/hello/intro.v2.mov",
+            "sha256": "79f1179ede9b5083db529578c7549b75aff7d83c2ef2fdd43ecffa9e4034b097",
+            "bytes": 7522661,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "hello",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/hello/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 17,
+          "fps": 30,
+          "treeSha256": "6633ac9d98323873199e80ba25a22cb077627674be4237cb03a8882c590505e3",
+          "bytes": 1101734
+        }
+      }
+    },
+    {
       "id": "zee.hello.loop.v1",
       "kind": "zee",
       "title": "Zee hello, loop",
@@ -136181,6 +137926,91 @@
           "fps": 30,
           "treeSha256": "c3832eb95cbd76d4d8c38d66d71e641be65ae806670acc93b941570722d69f6e",
           "bytes": 2460778
+        }
+      }
+    },
+    {
+      "id": "zee.hello.loop.v2",
+      "kind": "zee",
+      "title": "Zee hello, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/loop.v2.mov",
+          "sha256": "93288bd1ed17cdb1cda7dda3aa13a2fe0589564cef864bf31c633a41e3c28745",
+          "bytes": 35551020,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/hello/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:hello",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:hello",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.hello.loop.v2",
+        "title": "Zee hello, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/hello/loop.v2.mov",
+            "sha256": "93288bd1ed17cdb1cda7dda3aa13a2fe0589564cef864bf31c633a41e3c28745",
+            "bytes": 35551020,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "hello",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/hello/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 86,
+          "fps": 30,
+          "treeSha256": "7e2010916c0263111026337321bead0d95567127586167b0834fa28069cf00d9",
+          "bytes": 4948308
         }
       }
     },
@@ -136277,6 +138107,91 @@
       }
     },
     {
+      "id": "zee.hello.outro.v2",
+      "kind": "zee",
+      "title": "Zee hello, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/outro.v2.mov",
+          "sha256": "b5a6681583e53a141dfaa7e093b31e6d02d87fa2d745c3eab55ed172412a806d",
+          "bytes": 6981474,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/hello/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:hello",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:hello",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.hello.outro.v2",
+        "title": "Zee hello, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/hello/outro.v2.mov",
+            "sha256": "b5a6681583e53a141dfaa7e093b31e6d02d87fa2d745c3eab55ed172412a806d",
+            "bytes": 6981474,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "hello",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/hello/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 16,
+          "fps": 30,
+          "treeSha256": "7eccc3f967a5742ede8abbe9063b0f04ba5b70bc1874dd6e5c024a42369d0076",
+          "bytes": 1017724
+        }
+      }
+    },
+    {
       "id": "zee.hello.still.v1",
       "kind": "zee",
       "title": "Zee hello, still",
@@ -136356,6 +138271,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.hello.still.v2",
+      "kind": "zee",
+      "title": "Zee hello, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/hello/still.v2.png",
+          "sha256": "88a0d4750c4307360c17a1c814dda391bc3737688d917f11eb010d756adb62b1",
+          "bytes": 2119425,
+          "mime": "image/png",
+          "s3Key": "library/zee/hello/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:hello",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:hello",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.hello.still.v2",
+        "title": "Zee hello, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/hello/still.v2.png",
+            "sha256": "88a0d4750c4307360c17a1c814dda391bc3737688d917f11eb010d756adb62b1",
+            "bytes": 2119425,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "hello",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -136452,6 +138444,91 @@
       }
     },
     {
+      "id": "zee.idea.intro.v2",
+      "kind": "zee",
+      "title": "Zee idea, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/intro.v2.mov",
+          "sha256": "fe5db27ce1ef127d2faf73f2ce6f733cf964396c09f15d856a945f64ccbcb3d7",
+          "bytes": 8196785,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/idea/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:idea",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:idea",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idea.intro.v2",
+        "title": "Zee idea, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idea/intro.v2.mov",
+            "sha256": "fe5db27ce1ef127d2faf73f2ce6f733cf964396c09f15d856a945f64ccbcb3d7",
+            "bytes": 8196785,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idea",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/idea/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 19,
+          "fps": 30,
+          "treeSha256": "ad76b88b1e9d44298a5453b2f59db9c987fd415470a7f6f5c3afb616f7346edb",
+          "bytes": 1199278
+        }
+      }
+    },
+    {
       "id": "zee.idea.loop.v1",
       "kind": "zee",
       "title": "Zee idea, loop",
@@ -136540,6 +138617,91 @@
           "fps": 30,
           "treeSha256": "b3f4a8ac45f6264c4a6e4d2cbbfd9a84d887362a0d154665cf6353613e16b277",
           "bytes": 2535972
+        }
+      }
+    },
+    {
+      "id": "zee.idea.loop.v2",
+      "kind": "zee",
+      "title": "Zee idea, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/loop.v2.mov",
+          "sha256": "e97c80baf8d61b08fb34d2150b133ba447649a3a34adafa6629ed0ef97ed3b30",
+          "bytes": 35420179,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/idea/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:idea",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:idea",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idea.loop.v2",
+        "title": "Zee idea, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idea/loop.v2.mov",
+            "sha256": "e97c80baf8d61b08fb34d2150b133ba447649a3a34adafa6629ed0ef97ed3b30",
+            "bytes": 35420179,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idea",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/idea/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 86,
+          "fps": 30,
+          "treeSha256": "a299440c5cf6493e8006fc3ef0c8c232930fbcbb282b8fd4ee67b87d443c71da",
+          "bytes": 5102698
         }
       }
     },
@@ -136636,6 +138798,91 @@
       }
     },
     {
+      "id": "zee.idea.outro.v2",
+      "kind": "zee",
+      "title": "Zee idea, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/outro.v2.mov",
+          "sha256": "89f8382464bac9ddd9c5c7a821f5e4378e1009cebcbadfbe0c8bb301e552931b",
+          "bytes": 6864464,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/idea/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:idea",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:idea",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idea.outro.v2",
+        "title": "Zee idea, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idea/outro.v2.mov",
+            "sha256": "89f8382464bac9ddd9c5c7a821f5e4378e1009cebcbadfbe0c8bb301e552931b",
+            "bytes": 6864464,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idea",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/idea/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 16,
+          "fps": 30,
+          "treeSha256": "47d3e0b1bf8423a6b4e0cc83ab7aaad6472b3c013d03477b6c673cb8924c7555",
+          "bytes": 1009348
+        }
+      }
+    },
+    {
       "id": "zee.idea.still.v1",
       "kind": "zee",
       "title": "Zee idea, still",
@@ -136715,6 +138962,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.idea.still.v2",
+      "kind": "zee",
+      "title": "Zee idea, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idea/still.v2.png",
+          "sha256": "248b00917ea86a6ba3254b29a8463b5a78e49555c4f016d454bd23e8d9514421",
+          "bytes": 2048138,
+          "mime": "image/png",
+          "s3Key": "library/zee/idea/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:idea",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:idea",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idea.still.v2",
+        "title": "Zee idea, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idea/still.v2.png",
+            "sha256": "248b00917ea86a6ba3254b29a8463b5a78e49555c4f016d454bd23e8d9514421",
+            "bytes": 2048138,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idea",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -136811,6 +139135,91 @@
       }
     },
     {
+      "id": "zee.idle.intro.v2",
+      "kind": "zee",
+      "title": "Zee idle, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/intro.v2.mov",
+          "sha256": "50429b05fa03280154dbcc8a21f3a54a3eea1851a1173b6f0995ef4255cbe76d",
+          "bytes": 7614637,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/idle/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:idle",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:idle",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idle.intro.v2",
+        "title": "Zee idle, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idle/intro.v2.mov",
+            "sha256": "50429b05fa03280154dbcc8a21f3a54a3eea1851a1173b6f0995ef4255cbe76d",
+            "bytes": 7614637,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idle",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/idle/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 17,
+          "fps": 30,
+          "treeSha256": "3b2d5d063c1691fdf783da3fad4292293286747777bc58d1e18cee0746f30120",
+          "bytes": 1146300
+        }
+      }
+    },
+    {
       "id": "zee.idle.loop.v1",
       "kind": "zee",
       "title": "Zee idle, loop",
@@ -136899,6 +139308,91 @@
           "fps": 30,
           "treeSha256": "1d5e67e8650315e17ee23d2ddd6c9d9d4e5e7444faf067019a9d29510160d693",
           "bytes": 2909032
+        }
+      }
+    },
+    {
+      "id": "zee.idle.loop.v2",
+      "kind": "zee",
+      "title": "Zee idle, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/loop.v2.mov",
+          "sha256": "7714d210912b98f99de65a4469e3b7a551f454a158ea6f4ec5624c61d58522ee",
+          "bytes": 39064422,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/idle/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:idle",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:idle",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idle.loop.v2",
+        "title": "Zee idle, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idle/loop.v2.mov",
+            "sha256": "7714d210912b98f99de65a4469e3b7a551f454a158ea6f4ec5624c61d58522ee",
+            "bytes": 39064422,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idle",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/idle/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 86,
+          "fps": 30,
+          "treeSha256": "ed9faf2f84b3ffff8f6e26fc8303f95bc624c76e24133dcaf014d8a2f9e0b0a2",
+          "bytes": 5869196
         }
       }
     },
@@ -136995,6 +139489,91 @@
       }
     },
     {
+      "id": "zee.idle.outro.v2",
+      "kind": "zee",
+      "title": "Zee idle, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/outro.v2.mov",
+          "sha256": "2cdf93bdad435df54cc31783188ef3c8a84598b0176ddbdf0128e12b5ae60037",
+          "bytes": 8053478,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/idle/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:idle",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:idle",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idle.outro.v2",
+        "title": "Zee idle, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idle/outro.v2.mov",
+            "sha256": "2cdf93bdad435df54cc31783188ef3c8a84598b0176ddbdf0128e12b5ae60037",
+            "bytes": 8053478,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idle",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/idle/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 18,
+          "fps": 30,
+          "treeSha256": "7ccf36ecfb62a3b67a7d44b6aa86e1bd546b69608885e40a8215af5e187dbefa",
+          "bytes": 1212054
+        }
+      }
+    },
+    {
       "id": "zee.idle.still.v1",
       "kind": "zee",
       "title": "Zee idle, still",
@@ -137074,6 +139653,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.idle.still.v2",
+      "kind": "zee",
+      "title": "Zee idle, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/idle/still.v2.png",
+          "sha256": "97c24d31b137879645caec4faa3ab6ac6137dc9dabd74ffdfa0749d570893b8b",
+          "bytes": 2176020,
+          "mime": "image/png",
+          "s3Key": "library/zee/idle/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:idle",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:idle",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.idle.still.v2",
+        "title": "Zee idle, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/idle/still.v2.png",
+            "sha256": "97c24d31b137879645caec4faa3ab6ac6137dc9dabd74ffdfa0749d570893b8b",
+            "bytes": 2176020,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "idle",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -137170,6 +139826,91 @@
       }
     },
     {
+      "id": "zee.listening.intro.v2",
+      "kind": "zee",
+      "title": "Zee listening, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/intro.v2.mov",
+          "sha256": "8ce4376c769490f4c5c6b230f9f6ce2f052629ccf907a80cc92d5fac18f47743",
+          "bytes": 7666870,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/listening/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:listening",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:listening",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.listening.intro.v2",
+        "title": "Zee listening, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/listening/intro.v2.mov",
+            "sha256": "8ce4376c769490f4c5c6b230f9f6ce2f052629ccf907a80cc92d5fac18f47743",
+            "bytes": 7666870,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "listening",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/listening/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 17,
+          "fps": 30,
+          "treeSha256": "4cf37d97e13dd9e865757cb15df666f72820ecf5251002dbccbfcaabcd2e3916",
+          "bytes": 1152672
+        }
+      }
+    },
+    {
       "id": "zee.listening.loop.v1",
       "kind": "zee",
       "title": "Zee listening, loop",
@@ -137258,6 +139999,91 @@
           "fps": 30,
           "treeSha256": "f616908bd9e8c277a8ea43bc79c28e7935f27976a21923660f963a36f9756e1b",
           "bytes": 2126154
+        }
+      }
+    },
+    {
+      "id": "zee.listening.loop.v2",
+      "kind": "zee",
+      "title": "Zee listening, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/loop.v2.mov",
+          "sha256": "a96bc9fbd83d3cfb9f18a873765645f225930bf6221e1b131a1ef0e5e9d60267",
+          "bytes": 28877470,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/listening/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:listening",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:listening",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.listening.loop.v2",
+        "title": "Zee listening, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/listening/loop.v2.mov",
+            "sha256": "a96bc9fbd83d3cfb9f18a873765645f225930bf6221e1b131a1ef0e5e9d60267",
+            "bytes": 28877470,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "listening",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/listening/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 64,
+          "fps": 30,
+          "treeSha256": "aff6e43eecd12d599aa4ed5adcd0fdfc18f73cbbe71e73da739534f945f4ed20",
+          "bytes": 4270706
         }
       }
     },
@@ -137354,6 +140180,91 @@
       }
     },
     {
+      "id": "zee.listening.outro.v2",
+      "kind": "zee",
+      "title": "Zee listening, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/outro.v2.mov",
+          "sha256": "1158d16a348d6b6236f32dfeeeb2e3f4c69245837fae5480cb34ca86152c7479",
+          "bytes": 8111800,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/listening/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:listening",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:listening",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.listening.outro.v2",
+        "title": "Zee listening, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/listening/outro.v2.mov",
+            "sha256": "1158d16a348d6b6236f32dfeeeb2e3f4c69245837fae5480cb34ca86152c7479",
+            "bytes": 8111800,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "listening",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/listening/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 18,
+          "fps": 30,
+          "treeSha256": "3c11ef77a8345b7e7cf0c05eb597f6785f045bc91f1225ea85a740680c2639e1",
+          "bytes": 1207024
+        }
+      }
+    },
+    {
       "id": "zee.listening.still.v1",
       "kind": "zee",
       "title": "Zee listening, still",
@@ -137433,6 +140344,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.listening.still.v2",
+      "kind": "zee",
+      "title": "Zee listening, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/listening/still.v2.png",
+          "sha256": "3483fd53d13431d4fa5281bb3dfe4d17a71f462ba6dd113ed0d9bfbbe30f7f79",
+          "bytes": 2236817,
+          "mime": "image/png",
+          "s3Key": "library/zee/listening/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:listening",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:listening",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.listening.still.v2",
+        "title": "Zee listening, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/listening/still.v2.png",
+            "sha256": "3483fd53d13431d4fa5281bb3dfe4d17a71f462ba6dd113ed0d9bfbbe30f7f79",
+            "bytes": 2236817,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "listening",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -137529,6 +140517,91 @@
       }
     },
     {
+      "id": "zee.love.intro.v2",
+      "kind": "zee",
+      "title": "Zee love, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/intro.v2.mov",
+          "sha256": "baf6635795880a41acac08fe083051fbf4fea13035778b56be74fabe2422ffa9",
+          "bytes": 8423296,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/love/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:love",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:love",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.love.intro.v2",
+        "title": "Zee love, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/love/intro.v2.mov",
+            "sha256": "baf6635795880a41acac08fe083051fbf4fea13035778b56be74fabe2422ffa9",
+            "bytes": 8423296,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "love",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/love/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 19,
+          "fps": 30,
+          "treeSha256": "c13f1de40f4c6045c488670baa0ffc475ba8711f9fce8992025ba4020fc7e818",
+          "bytes": 1255580
+        }
+      }
+    },
+    {
       "id": "zee.love.loop.v1",
       "kind": "zee",
       "title": "Zee love, loop",
@@ -137617,6 +140690,91 @@
           "fps": 30,
           "treeSha256": "ea1a7b6803641958a27be0dd4f7b50b34cafd3b8b68aaf21d65c494accd0ea23",
           "bytes": 2065976
+        }
+      }
+    },
+    {
+      "id": "zee.love.loop.v2",
+      "kind": "zee",
+      "title": "Zee love, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/loop.v2.mov",
+          "sha256": "aeb4aa6c4ddcea52f6195b1113475ac3548333dae53463c57bdb1fa68a182b3f",
+          "bytes": 28549731,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/love/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:love",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:love",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.love.loop.v2",
+        "title": "Zee love, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/love/loop.v2.mov",
+            "sha256": "aeb4aa6c4ddcea52f6195b1113475ac3548333dae53463c57bdb1fa68a182b3f",
+            "bytes": 28549731,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "love",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/love/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 64,
+          "fps": 30,
+          "treeSha256": "9513ca29b10f60b1d31dc7cbedba0954c95cf1b19e66086d242d4675f5e9dbc4",
+          "bytes": 4246300
         }
       }
     },
@@ -137713,6 +140871,91 @@
       }
     },
     {
+      "id": "zee.love.outro.v2",
+      "kind": "zee",
+      "title": "Zee love, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/outro.v2.mov",
+          "sha256": "867c26aef0c45eb84bdfd11f7eb4f487cc40800f2a3c61849c2e8b73d73f3007",
+          "bytes": 8853147,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/love/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:love",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:love",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.love.outro.v2",
+        "title": "Zee love, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/love/outro.v2.mov",
+            "sha256": "867c26aef0c45eb84bdfd11f7eb4f487cc40800f2a3c61849c2e8b73d73f3007",
+            "bytes": 8853147,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "love",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/love/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 20,
+          "fps": 30,
+          "treeSha256": "bd43dc17dcbdf959b7b99da5e8b5141e9a86d40201de59f0d847331752f0d58f",
+          "bytes": 1335740
+        }
+      }
+    },
+    {
       "id": "zee.love.still.v1",
       "kind": "zee",
       "title": "Zee love, still",
@@ -137792,6 +141035,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.love.still.v2",
+      "kind": "zee",
+      "title": "Zee love, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/love/still.v2.png",
+          "sha256": "cb1e2e234f7e668a18e1ef60cb9e26f41a5feb8177e2d6876c6cd53c1083c53c",
+          "bytes": 2232419,
+          "mime": "image/png",
+          "s3Key": "library/zee/love/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:love",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:love",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.love.still.v2",
+        "title": "Zee love, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/love/still.v2.png",
+            "sha256": "cb1e2e234f7e668a18e1ef60cb9e26f41a5feb8177e2d6876c6cd53c1083c53c",
+            "bytes": 2232419,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "love",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -137888,6 +141208,91 @@
       }
     },
     {
+      "id": "zee.sleepy.intro.v2",
+      "kind": "zee",
+      "title": "Zee sleepy, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/intro.v2.mov",
+          "sha256": "05006fb4724a4eb6ea631c4acc3e8b3e93202712a2ff97ad7c7cf6edfbeccc7d",
+          "bytes": 9129445,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/sleepy/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:sleepy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:sleepy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.sleepy.intro.v2",
+        "title": "Zee sleepy, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/sleepy/intro.v2.mov",
+            "sha256": "05006fb4724a4eb6ea631c4acc3e8b3e93202712a2ff97ad7c7cf6edfbeccc7d",
+            "bytes": 9129445,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "sleepy",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/sleepy/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 21,
+          "fps": 30,
+          "treeSha256": "bf0a73aad9613870ad7305f92035b1d808d65b46b182361b8765a2bd3c2c502d",
+          "bytes": 1357688
+        }
+      }
+    },
+    {
       "id": "zee.sleepy.loop.v1",
       "kind": "zee",
       "title": "Zee sleepy, loop",
@@ -137976,6 +141381,91 @@
           "fps": 30,
           "treeSha256": "ccc1b1716417075db8a2b8af325ef55f36a8cb213dd3902de8472a5292b6d944",
           "bytes": 2572690
+        }
+      }
+    },
+    {
+      "id": "zee.sleepy.loop.v2",
+      "kind": "zee",
+      "title": "Zee sleepy, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/loop.v2.mov",
+          "sha256": "fcf113ee14de0ff052cda4ff6e43add54de767238679c1991b957c17eae91a40",
+          "bytes": 36438324,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/sleepy/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:sleepy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:sleepy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.sleepy.loop.v2",
+        "title": "Zee sleepy, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/sleepy/loop.v2.mov",
+            "sha256": "fcf113ee14de0ff052cda4ff6e43add54de767238679c1991b957c17eae91a40",
+            "bytes": 36438324,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "sleepy",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/sleepy/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 86,
+          "fps": 30,
+          "treeSha256": "57999576b54f8774ad0467d7876736970abf60495957d1dab163e75e562f6c27",
+          "bytes": 5276676
         }
       }
     },
@@ -138072,6 +141562,91 @@
       }
     },
     {
+      "id": "zee.sleepy.outro.v2",
+      "kind": "zee",
+      "title": "Zee sleepy, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/outro.v2.mov",
+          "sha256": "2709d86d9a44bb4e8af540e792290ed24916120c95f6c7a4bf600f24ccc3a696",
+          "bytes": 9575836,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/sleepy/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:sleepy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:sleepy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.sleepy.outro.v2",
+        "title": "Zee sleepy, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/sleepy/outro.v2.mov",
+            "sha256": "2709d86d9a44bb4e8af540e792290ed24916120c95f6c7a4bf600f24ccc3a696",
+            "bytes": 9575836,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "sleepy",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/sleepy/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 22,
+          "fps": 30,
+          "treeSha256": "6c67961cdfd55feaadc39ee3bae4e994e62ecf870c40a4a6d8f8f25e815d1f33",
+          "bytes": 1414198
+        }
+      }
+    },
+    {
       "id": "zee.sleepy.still.v1",
       "kind": "zee",
       "title": "Zee sleepy, still",
@@ -138151,6 +141726,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.sleepy.still.v2",
+      "kind": "zee",
+      "title": "Zee sleepy, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/sleepy/still.v2.png",
+          "sha256": "6a192292c8df009f72a588656bab88e7b491ff3767f5da1fe03aa06865558d1e",
+          "bytes": 2269266,
+          "mime": "image/png",
+          "s3Key": "library/zee/sleepy/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:sleepy",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:sleepy",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.sleepy.still.v2",
+        "title": "Zee sleepy, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/sleepy/still.v2.png",
+            "sha256": "6a192292c8df009f72a588656bab88e7b491ff3767f5da1fe03aa06865558d1e",
+            "bytes": 2269266,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "sleepy",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     },
@@ -138247,6 +141899,91 @@
       }
     },
     {
+      "id": "zee.thinking.intro.v2",
+      "kind": "zee",
+      "title": "Zee thinking, intro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/intro.v2.mov",
+          "sha256": "e1b02c4f34eefef7e2d489feb3983ff8d3feaa4cb965c136991bffdeace79777",
+          "bytes": 7751226,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/thinking/intro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:thinking",
+        "kind:zee",
+        "licence:Curate original",
+        "part:intro",
+        "scope:thinking",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.thinking.intro.v2",
+        "title": "Zee thinking, intro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/thinking/intro.v2.mov",
+            "sha256": "e1b02c4f34eefef7e2d489feb3983ff8d3feaa4cb965c136991bffdeace79777",
+            "bytes": 7751226,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "thinking",
+        "part": "intro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/thinking/intro.v2",
+          "pattern": "%04d.webp",
+          "count": 17,
+          "fps": 30,
+          "treeSha256": "76b1ce1093afe9a7ccb578f64a04d08024bf770ed7ad1b3f77fc89a76ea62db7",
+          "bytes": 1172990
+        }
+      }
+    },
+    {
       "id": "zee.thinking.loop.v1",
       "kind": "zee",
       "title": "Zee thinking, loop",
@@ -138335,6 +142072,91 @@
           "fps": 30,
           "treeSha256": "8b39d0ce1a3dd362f0088e098d14cff23fecbf4cd5cf2293c529caa67a454f13",
           "bytes": 2157296
+        }
+      }
+    },
+    {
+      "id": "zee.thinking.loop.v2",
+      "kind": "zee",
+      "title": "Zee thinking, loop (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/loop.v2.mov",
+          "sha256": "c058846a7e1429907d199161b7c9a8b4b7688ab5c3bbb6fac0c9a82c7251a950",
+          "bytes": 28786028,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/thinking/loop.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:thinking",
+        "kind:zee",
+        "licence:Curate original",
+        "part:loop",
+        "scope:thinking",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.thinking.loop.v2",
+        "title": "Zee thinking, loop (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/thinking/loop.v2.mov",
+            "sha256": "c058846a7e1429907d199161b7c9a8b4b7688ab5c3bbb6fac0c9a82c7251a950",
+            "bytes": 28786028,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "thinking",
+        "part": "loop",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/thinking/loop.v2",
+          "pattern": "%04d.webp",
+          "count": 64,
+          "fps": 30,
+          "treeSha256": "fff536a344ea694e5aff2ec977bbf3c040dbd25bd03fac24cd7ba2f268842068",
+          "bytes": 4327812
         }
       }
     },
@@ -138431,6 +142253,91 @@
       }
     },
     {
+      "id": "zee.thinking.outro.v2",
+      "kind": "zee",
+      "title": "Zee thinking, outro (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/outro.v2.mov",
+          "sha256": "7845c62c34c4b6dd461621a0dd8ef356c0dface2b941d28b637d6a9d19eba105",
+          "bytes": 8243626,
+          "mime": "video/quicktime",
+          "s3Key": "library/zee/thinking/outro.v2.mov"
+        }
+      ],
+      "tags": [
+        "emotion:thinking",
+        "kind:zee",
+        "licence:Curate original",
+        "part:outro",
+        "scope:thinking",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.thinking.outro.v2",
+        "title": "Zee thinking, outro (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/thinking/outro.v2.mov",
+            "sha256": "7845c62c34c4b6dd461621a0dd8ef356c0dface2b941d28b637d6a9d19eba105",
+            "bytes": 8243626,
+            "mime": "video/quicktime"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "thinking",
+        "part": "outro",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
+        },
+        "frames": {
+          "dir": "zee/thinking/outro.v2",
+          "pattern": "%04d.webp",
+          "count": 18,
+          "fps": 30,
+          "treeSha256": "3333a47430e2fffb79d20329cf0003b3d4c5baf6709ae087c60901ef4e9b3936",
+          "bytes": 1248678
+        }
+      }
+    },
+    {
       "id": "zee.thinking.still.v1",
       "kind": "zee",
       "title": "Zee thinking, still",
@@ -138510,6 +142417,83 @@
         "dims": {
           "w": 384,
           "h": 384
+        }
+      }
+    },
+    {
+      "id": "zee.thinking.still.v2",
+      "kind": "zee",
+      "title": "Zee thinking, still (1080 px)",
+      "status": "draft",
+      "manifest": "library/zee/manifest.json",
+      "files": [
+        {
+          "role": "original",
+          "path": "zee/thinking/still.v2.png",
+          "sha256": "e98e2594d3b09ef40cdaae4cc4135e99d65699f4f2a1a47575267cda1caf0a58",
+          "bytes": 2123789,
+          "mime": "image/png",
+          "s3Key": "library/zee/thinking/still.v2.png"
+        }
+      ],
+      "tags": [
+        "emotion:thinking",
+        "kind:zee",
+        "licence:Curate original",
+        "part:still",
+        "scope:thinking",
+        "status:draft"
+      ],
+      "licence": "Curate original",
+      "aiGenerated": false,
+      "asset": {
+        "id": "zee.thinking.still.v2",
+        "title": "Zee thinking, still (1080 px)",
+        "files": [
+          {
+            "role": "original",
+            "path": "zee/thinking/still.v2.png",
+            "sha256": "e98e2594d3b09ef40cdaae4cc4135e99d65699f4f2a1a47575267cda1caf0a58",
+            "bytes": 2123789,
+            "mime": "image/png"
+          }
+        ],
+        "tags": {
+          "mood": [],
+          "colour": [],
+          "season": [],
+          "free": []
+        },
+        "source": {
+          "type": "original",
+          "url": "research/zee-pack/zee-v2/sharp/frames-1080-f18cL-v2",
+          "from": []
+        },
+        "licence": {
+          "name": "Curate original",
+          "commercial": true,
+          "attributionRequired": false,
+          "restrictions": [],
+          "checkedAt": "2026-10-25"
+        },
+        "cost": {
+          "usd": 0,
+          "calls": 0
+        },
+        "createdBy": {
+          "type": "agent",
+          "name": "claude-code (hand-off kit)",
+          "at": "2026-10-25"
+        },
+        "status": "draft",
+        "aiGenerated": false,
+        "kind": "zee",
+        "emotion": "thinking",
+        "part": "still",
+        "pack": "zee-sharp-1080",
+        "dims": {
+          "w": 1080,
+          "h": 1080
         }
       }
     }
