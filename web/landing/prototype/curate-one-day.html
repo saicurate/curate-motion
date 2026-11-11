@@ -316,6 +316,24 @@ html{overflow-x:clip}
 .thread .rthumb{width:72px}
 .thread .tph{aspect-ratio:1/1}
 
+/* real pictures (web/landing/media, built from the library) */
+.it img{display:block;width:100%;height:auto;pointer-events:none;-webkit-user-select:none;user-select:none}
+.pic{display:block;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-select:none;user-select:none}
+.lay{grid-template-rows:repeat(2,minmax(0,1fr))}
+.lay .slot{height:100%;min-height:0;position:relative}
+.lay .it{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.lay .it img{width:auto;height:auto;max-width:100%;max-height:100%}
+#hlay .pic{object-fit:contain}
+.real .floor{display:none}
+.mfig.real .tl8{border-radius:16px;overflow:hidden;box-shadow:0 2px 6px rgba(20,16,12,.12),0 30px 70px rgba(20,16,12,.22)}
+.pstage.real{background:#fff}.pstage.real .pic{object-fit:contain}
+#pv0 .pic{object-position:50% 22%}
+.look .it img{max-height:110px;width:auto;margin:0 auto}
+.reelground{position:absolute;inset:0;background:linear-gradient(180deg,#ECE9E4,#DAD5CD)}
+.reel .rcap{text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.reel .rscrim{position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.45))}
+.tile .pic,.pipcard .pic,.lk .pic{position:absolute;inset:0}
+
 /* the mirror: she stands in the page itself, and her look changes */
 .hphoto{left:41vw;top:8vh;height:84vh;border-radius:0;overflow:visible;box-shadow:none}
 #hp .ph,.mfig .ph{background:none}
@@ -325,7 +343,8 @@ html{overflow-x:clip}
 #hp .fig path:first-child,.mfig .fig path:first-child{fill:#DADDE1}
 .hcap{left:auto;right:6%;top:6%}
 .mfig{aspect-ratio:3/4;will-change:transform,opacity}
-#s3 .mfig{right:var(--gx);bottom:12vh;height:72vh}
+#s3 .mfig{right:var(--gx);bottom:12vh;height:64vh}
+#s3 .card{z-index:3}
 #s3 .hl{font-size:clamp(36px,4.4vw,68px);max-width:7.6em}
 #s3 .card{margin-left:calc(clamp(260px,24vw,350px) * -.45)}
 #s4 .mfig{right:calc(var(--gx) + 2vw);bottom:11vh;height:76vh}
@@ -413,8 +432,8 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   #s3 .hl{max-width:none}
   #s3 .awx,#s3 .avb,#s3 .acts .ib:nth-child(3){display:none}
   #s3 .agt{font-size:14px}
-  #s3 .mfig{right:-14vw;bottom:19vh;height:46vh}
-  #s4 .mfig{right:auto;left:50%;margin-left:-24vh;bottom:15vh;height:64vh}
+  #s3 .mfig{right:var(--gx);bottom:19vh;height:40vh}
+  #s4 .mfig{right:auto;left:50%;margin-left:-21vh;bottom:15vh;height:56vh}
   .hcap{display:block;right:16%;top:2%}
   #s1 .hl{max-width:9em}
   #s1 .hl{top:calc(9vh + 86vw + 8px);font-size:32px}
@@ -489,7 +508,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
 
 <nav class="tl" id="tl" aria-label="The day"><div class="rail" id="rail"></div><div class="fill" id="fill"></div><span class="knob" id="knob"></span>
   <div class="marks"><button type="button" data-m="469">7:00</button><button type="button" data-m="501">Try-ons</button><button type="button" data-m="701">12:30</button><button type="button" data-m="861">Rain</button><button type="button" data-m="1021">19:00</button><button type="button" data-m="1301">Reels</button></div></nav>
-<div class="pip" id="pip" aria-hidden="true"><div class="pipcard"><div class="ph"></div><svg class="fig" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M112 120 Q150 104 188 120 L202 250 L194 400 L106 400 L98 250 Z" fill="rgba(40,44,50,.10)"/><rect x="141" y="92" width="18" height="20" fill="#C3A28B"/><ellipse cx="150" cy="70" rx="24" ry="29" fill="#CDAE98"/><path d="M125 70 Q122 36 150 34 Q178 36 175 70 Q168 50 150 49 Q132 50 125 70 Z" fill="#3B2F2A"/><circle cx="150" cy="34" r="11" fill="#3B2F2A"/></svg><div id="looks"></div></div><span class="kick piplab" id="piplab">On you · For work</span><div class="zg" id="zg"><img class="" src="zee/hello.webp" alt="" aria-hidden="true"><svg hidden viewBox="0 0 120 120" aria-hidden="true"><path d="M24 50 L30 12 L54 34 Z" fill="#0E0E0F"/><path d="M96 50 L90 12 L66 34 Z" fill="#0E0E0F"/><ellipse cx="60" cy="72" rx="46" ry="40" fill="#0E0E0F"/><ellipse cx="45" cy="68" rx="6" ry="8" fill="#fff"/><ellipse cx="75" cy="68" rx="6" ry="8" fill="#fff"/><ellipse cx="46" cy="66" rx="2" ry="2.6" fill="#0E0E0F"/><ellipse cx="76" cy="66" rx="2" ry="2.6" fill="#0E0E0F"/><path d="M57 80 L63 80 L60 84 Z" fill="#E7B9B0"/></svg></div><div class="zb" id="zb"></div></div>
+<div class="pip" id="pip" aria-hidden="true"><div class="pipcard"><div class="ph"></div><svg class="fig" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M112 120 Q150 104 188 120 L202 250 L194 400 L106 400 L98 250 Z" fill="rgba(40,44,50,.10)"/><rect x="141" y="92" width="18" height="20" fill="#C3A28B"/><ellipse cx="150" cy="70" rx="24" ry="29" fill="#CDAE98"/><path d="M125 70 Q122 36 150 34 Q178 36 175 70 Q168 50 150 49 Q132 50 125 70 Z" fill="#3B2F2A"/><circle cx="150" cy="34" r="11" fill="#3B2F2A"/></svg><div id="looks"></div></div><span class="kick piplab" id="piplab">On you · For work</span><div class="zg" id="zg"><img class="" src="media/zee/hello.webp" alt="" aria-hidden="true"><svg hidden viewBox="0 0 120 120" aria-hidden="true"><path d="M24 50 L30 12 L54 34 Z" fill="#0E0E0F"/><path d="M96 50 L90 12 L66 34 Z" fill="#0E0E0F"/><ellipse cx="60" cy="72" rx="46" ry="40" fill="#0E0E0F"/><ellipse cx="45" cy="68" rx="6" ry="8" fill="#fff"/><ellipse cx="75" cy="68" rx="6" ry="8" fill="#fff"/><ellipse cx="46" cy="66" rx="2" ry="2.6" fill="#0E0E0F"/><ellipse cx="76" cy="66" rx="2" ry="2.6" fill="#0E0E0F"/><path d="M57 80 L63 80 L60 84 Z" fill="#E7B9B0"/></svg></div><div class="zb" id="zb"></div></div>
 
 
 
@@ -507,10 +526,10 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
     <div class="ag"><span class="agt">Good morning, Emma</span><span class="awx"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14V16M12 20V22M8 18V20M16 18V20M20 17.6073C21.4937 17.0221 23 15.6889 23 13C23 9 19.6667 8 18 8C18 6 18 2 12 2C6 2 6 6 6 8C4.33333 8 1 9 1 13C1 15.6889 2.50628 17.0221 4 17.6073" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>52°</b><em>Rain at 3</em></span></span></div>
     <div class="ash"><span class="ast" id="nm1">For work</span><span class="avb" id="vb1">Smart casual</span></div>
     <div class="lay">
-      <div class="slot"><span class="sh"></span><div class="it" data-it="trench" data-fly="1"></div></div>
-      <div class="slot"><span class="sh"></span><div class="it" data-it="oxford" data-fly="1"></div></div>
+      <div class="slot"><span class="sh"></span><div class="it" data-it="teeb" data-fly="1"></div></div>
+      <div class="slot"><span class="sh"></span><div class="it" data-it="tote" data-fly="1"></div></div>
       <div class="slot"><span class="sh"></span><div class="it" data-it="trousers" data-fly="1"></div></div>
-      <div class="slot"><span class="sh"></span><div class="it" data-it="loafer" data-fly="1"></div></div>
+      <div class="slot"><span class="sh"></span><div class="it" data-it="flats" data-fly="1"></div></div>
     </div>
     <div class="pager"><button type="button" class="on" id="chW" aria-label="Look 1 of 2, For work"></button><button type="button" id="chD" aria-label="Look 2 of 2, Date night"></button></div>
     <div class="arow"><div class="acts"><span class="ib" id="save1"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5V21L13.0815 17.1953C12.4227 16.7717 11.5773 16.7717 10.9185 17.1953L5 21Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ib"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 8.5H19C20.1046 8.5 21 9.39543 21 10.5V19C21 20.1046 20.1046 21 19 21H10.5C9.39543 21 8.5 20.1046 8.5 19V8.5ZM15.5 8.5V5C15.5 3.89543 14.6046 3 13.5 3H5C3.89543 3 3 3.89543 3 5V13.5C3 14.6046 3.89543 15.5 5 15.5H8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ib"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4724 3.5H4.1C3.76863 3.5 3.5 3.76863 3.5 4.1V13.9C3.5 14.2314 3.76863 14.5 4.1 14.5H6.86762C7.57015 14.5 8.22116 14.8686 8.5826 15.471L11.293 19.9884C11.8779 20.9631 13.2554 21.0558 13.9655 20.1681C14.3002 19.7497 14.4081 19.1937 14.2541 18.6804L13.2317 15.2724C13.1162 14.8874 13.4045 14.5 13.8064 14.5H18.3815C19.7002 14.5 20.658 13.246 20.311 11.9738L18.4019 4.97376C18.1646 4.10364 17.3743 3.5 16.4724 3.5ZM7 14.5V3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><span class="trybtn"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15ZM2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Try on</b></span></div>
@@ -522,8 +541,8 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
 <section class="scene" id="s8" style="height:420vh"><div class="stage" id="st8">
   <div class="abs copy" id="cp8">
     <span class="kick kk" id="k8">8:20 · Getting dressed</span>
-    <h2 class="hl" id="h8">One photo of you. <b>Every look you own.</b></h2>
-    <p class="sub" id="sub8">Try it on puts any look on a photo of you. Swap a piece, try again. No mirror, no pile on the bed.</p>
+    <h2 class="hl" id="h8">Every look you own. <b>All on you.</b></h2>
+    <p class="sub" id="sub8">Try it on puts any look on a photo of you before you get dressed. No mirror, no pile on the bed.</p>
   </div>
   <h2 class="abs hl" id="h8b">16 looks. <b>Zero changing rooms.</b></h2>
   <div class="abs cnt" id="cnt"><span class="kick">Look</span><div class="cntn" id="cntn"></div><span class="cntof">/ 16</span><span class="kick cntname" id="cntname">For work</span></div>
@@ -574,20 +593,20 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
 </div></section>
 <!-- 15:00 rain -->
 <section class="scene" id="s3" style="height:230vh"><div class="stage">
-  <h2 class="abs hl" id="h3">Rain at 3. <b>Boots, not loafers.</b></h2>
+  <h2 class="abs hl" id="h3">Rain at 3. <b>Boots, not flats.</b></h2>
   <div class="abs card app" id="c3">
     <div class="ag"><span class="agt">Good afternoon, Emma</span><span class="awx"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14V16M12 20V22M8 18V20M16 18V20M20 17.6073C21.4937 17.0221 23 15.6889 23 13C23 9 19.6667 8 18 8C18 6 18 2 12 2C6 2 6 6 6 8C4.33333 8 1 9 1 13C1 15.6889 2.50628 17.0221 4 17.6073" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>54°</b><em>Rain now</em></span></span></div>
-    <div class="ash"><span class="ast">Rain at 3 · now</span><span class="avb nmx"><span id="n3a">Still for work</span><span id="n3b" style="opacity:0">Boots, not loafers</span></span></div>
+    <div class="ash"><span class="ast">Rain at 3 · now</span><span class="avb nmx"><span id="n3a">Still for work</span><span id="n3b" style="opacity:0">Boots, not flats</span></span></div>
     <div class="lay">
       <div class="slot"><div class="it" data-it="trench"></div></div>
-      <div class="slot"><div class="it" data-it="oxford"></div></div>
-      <div class="slot"><div class="it" data-it="trousers"></div></div>
-      <div class="slot"><div class="it abs" id="loafer3" data-it="loafer" style="position:absolute;width:100%"></div><div class="it abs" id="boot3" data-it="boot" style="position:absolute;width:76%"></div><div style="width:100%;aspect-ratio:2/1"></div></div>
+      <div class="slot"><div class="it" data-it="tote"></div></div>
+      <div class="slot"><div class="it" data-it="jeans"></div></div>
+      <div class="slot"><div class="it abs" id="loafer3" data-it="flats" style="position:absolute;width:100%"></div><div class="it abs" id="boot3" data-it="boot" style="position:absolute;width:76%"></div><div style="width:100%;aspect-ratio:2/1"></div></div>
     </div>
     <div class="arow"><div class="acts"><span class="ib" id="save3"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5V21L13.0815 17.1953C12.4227 16.7717 11.5773 16.7717 10.9185 17.1953L5 21Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ib"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 8.5H19C20.1046 8.5 21 9.39543 21 10.5V19C21 20.1046 20.1046 21 19 21H10.5C9.39543 21 8.5 20.1046 8.5 19V8.5ZM15.5 8.5V5C15.5 3.89543 14.6046 3 13.5 3H5C3.89543 3 3 3.89543 3 5V13.5C3 14.6046 3.89543 15.5 5 15.5H8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ib"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4724 3.5H4.1C3.76863 3.5 3.5 3.76863 3.5 4.1V13.9C3.5 14.2314 3.76863 14.5 4.1 14.5H6.86762C7.57015 14.5 8.22116 14.8686 8.5826 15.471L11.293 19.9884C11.8779 20.9631 13.2554 21.0558 13.9655 20.1681C14.3002 19.7497 14.4081 19.1937 14.2541 18.6804L13.2317 15.2724C13.1162 14.8874 13.4045 14.5 13.8064 14.5H18.3815C19.7002 14.5 20.658 13.246 20.311 11.9738L18.4019 4.97376C18.1646 4.10364 17.3743 3.5 16.4724 3.5ZM7 14.5V3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><span class="trybtn"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15ZM2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Try on</b></span></div>
   </div>
   <div class="abs mfig" id="m3"><div class="floor"></div><div class="tl8" id="m3a"></div><div class="tl8" id="m3b"></div><div class="scan" id="scan3"></div></div>
-  <div class="abs toast" id="toast"><img class="zee" src="zee/happy.webp" alt="" aria-hidden="true"><span>Rain's early. I swapped your loafers for boots.</span></div>
+  <div class="abs toast" id="toast"><img class="zee" src="media/zee/happy.webp" alt="" aria-hidden="true"><span>Rain's early. I swapped your flats for boots.</span></div>
 </div></section>
 
 <!-- 19:12 night -->
@@ -595,7 +614,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   <h2 class="abs hl" id="h4">Ask Zee. <b>Then see it on you.</b></h2>
   <div class="abs chat" id="chat">
     <div class="bub me" id="b1">What should I wear tonight?</div>
-    <div class="zrow" id="ty"><img class="zee" src="zee/happy.webp" alt="" aria-hidden="true"><div class="typing" id="typing"><i></i><i></i><i></i></div><div class="bub z" id="b2" style="display:none">The black slip dress with your heels. It drops to 48° later, so bring the trench.</div></div>
+    <div class="zrow" id="ty"><img class="zee" src="media/zee/happy.webp" alt="" aria-hidden="true"><div class="typing" id="typing"><i></i><i></i><i></i></div><div class="bub z" id="b2" style="display:none">The little black dress with your heels and the mini bag. It drops to 48° later, so bring the trench.</div></div>
     <div class="look" id="look"><span class="lkt">Date night</span><div class="it" data-it="slip"></div><div class="it" data-it="trench"></div><div class="it" data-it="heel"></div></div>
     <div class="lacts"><span><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5V21L13.0815 17.1953C12.4227 16.7717 11.5773 16.7717 10.9185 17.1953L5 21Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Save</span><span><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 8.5H19C20.1046 8.5 21 9.39543 21 10.5V19C21 20.1046 20.1046 21 19 21H10.5C9.39543 21 8.5 20.1046 8.5 19V8.5ZM15.5 8.5V5C15.5 3.89543 14.6046 3 13.5 3H5C3.89543 3 3 3.89543 3 5V13.5C3 14.6046 3.89543 15.5 5 15.5H8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Adjust</span><span><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4724 3.5H4.1C3.76863 3.5 3.5 3.76863 3.5 4.1V13.9C3.5 14.2314 3.76863 14.5 4.1 14.5H6.86762C7.57015 14.5 8.22116 14.8686 8.5826 15.471L11.293 19.9884C11.8779 20.9631 13.2554 21.0558 13.9655 20.1681C14.3002 19.7497 14.4081 19.1937 14.2541 18.6804L13.2317 15.2724C13.1162 14.8874 13.4045 14.5 13.8064 14.5H18.3815C19.7002 14.5 20.658 13.246 20.311 11.9738L18.4019 4.97376C18.1646 4.10364 17.3743 3.5 16.4724 3.5ZM7 14.5V3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Not quite</span><span class="tryon" id="try"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15ZM2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Try on</span></div>
     <div class="tryrow"><span id="zq"></span></div>
@@ -615,7 +634,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   </ol></div>
 
   <div class="abs reel" id="reel"><div id="reelfig"></div>
-    <div class="rcap"><b>@a.creator</b><span>fall outfit, three pieces</span></div>
+    <div class="rcap"><b>@a.creator</b><span>fall fit check, three pieces</span></div>
     <div class="rside"><i></i><i></i><svg class="send" id="send" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 L21 3 L14 21 L11 13 Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
     <div class="rprog"><span id="rprog"></span></div>
     <div class="shs" id="shs"><span class="shh">Send to</span>
@@ -631,8 +650,8 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
     <div class="typing dark" id="typing7"><i></i><i></i><i></i></div>
     <div class="treply" id="treply">
       <div class="tph" id="tph"><div id="tphfig"></div><span class="kick tlab">On you</span></div>
-      <p>Here it is on you. <b>The jeans and boots are already in your closet.</b></p>
-      <div class="tmatch"><span class="kick">From your closet</span><div class="it" data-it="jeans"></div><div class="it" data-it="boot"></div></div>
+      <p>Here it is on you. <b>The jacket and jeans are already in your closet.</b></p>
+      <div class="tmatch"><span class="kick">From your closet</span><div class="it" data-it="varsity"></div><div class="it" data-it="jeansL"></div></div>
     </div>
   </div>
 </div></section>
@@ -646,6 +665,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
 </section>
 </main>
 
+<script src="media/media.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 (function(){
@@ -666,12 +686,20 @@ var IT = {
   bag:'<svg viewBox="0 0 100 80"><path d="M32 28 Q32 6 50 6 Q68 6 68 28" fill="none" stroke="#141414" stroke-width="4"/><rect x="16" y="26" width="68" height="48" rx="9" fill="#141414"/></svg>',
   heel:'<svg viewBox="0 0 120 70"><path d="M8 50 Q10 30 30 34 L70 40 Q96 18 110 22 L112 60 L104 60 L100 44 L74 60 L10 60 Z" fill="#141414"/></svg>'
 };
+IT.teeb = IT.tee.replace('#FCFCFB','#1C1C1E').replace('#E2E4E7','#1C1C1E'); IT.tote = IT.bag; IT.flats = IT.loafer;
+IT.jeansL = IT.jeans; IT.runner = IT.sneaker; IT.varsity = IT.bomber;
+/* the real pictures, when web/landing/media is built: window.CURATE_MEDIA (media/media.js) */
+var M = window.CURATE_MEDIA || null;
+if (M) Object.keys(M.items).forEach(function(k){ IT[k] = '<img src="'+M.items[k]+'" alt="" draggable="false" decoding="async">'; });
+function pic(src){ return '<img class="pic" src="'+src+'" alt="" draggable="false" decoding="async">'; }
 document.querySelectorAll('[data-it]').forEach(function(el){ el.innerHTML = IT[el.dataset.it]; el.classList.add('cut'); });
 
 /* where each item sits on her (fractions of the photo: x, y, width) */
-var POS = { oxford:[.5,.37,.3], tee:[.5,.38,.36], knit:[.5,.4,.42], bomber:[.5,.41,.44], trench:[.5,.47,.44], slip:[.5,.53,.32],
+var POS = { teeb:[.5,.38,.36], tote:[.66,.62,.14], flats:[.5,.94,.2], jeansL:[.5,.74,.2], runner:[.5,.94,.2], varsity:[.5,.41,.44], oxford:[.5,.37,.3], tee:[.5,.38,.36], knit:[.5,.4,.42], bomber:[.5,.41,.44], trench:[.5,.47,.44], slip:[.5,.53,.32],
   trousers:[.5,.74,.2], jeans:[.5,.74,.2], loafer:[.5,.94,.2], boot:[.5,.93,.15], sneaker:[.5,.94,.2], heel:[.5,.94,.2], bag:[.66,.62,.14] };
-var ZORD = { trench:5, bomber:5, slip:4, oxford:3, tee:3, knit:3, trousers:2, jeans:2, bag:6, loafer:1, boot:1, sneaker:1, heel:1 };
+var ZORD = { teeb:3, tote:6, flats:1, jeansL:2, runner:1, varsity:5, trench:5, bomber:5, slip:4, oxford:3, tee:3, knit:3, trousers:2, jeans:2, bag:6, loafer:1, boot:1, sneaker:1, heel:1 };
+/* where each item sits on her real photo (walk to work), for the hero's lift-off */
+var HPOS = { teeb:[.47,.486,.21], tote:[.42,.546,.19], trousers:[.44,.72,.3], flats:[.47,.87,.4], trench:[.46,.55,.4], slip:[.46,.55,.25], bag:[.42,.55,.15], heel:[.47,.88,.35] };
 function setIt(el, k){ el.dataset.it = k; el.innerHTML = IT[k]; el.style.zIndex = ZORD[k]||1; }
 
 /* the On-you picture: one photo of her, a new look every chapter */
@@ -688,6 +716,7 @@ var lookEls = LOOKS.map(function(L){
   L[1].forEach(function(k){ var q=POS[k], e=document.createElement('div'); e.className='it cut'; e.innerHTML=IT[k];
     e.style.left=(q[0]*100)+'%'; e.style.top=(q[1]*100)+'%'; e.style.width=(q[2]*100)+'%'; e.style.zIndex=ZORD[k]||1; d.appendChild(e); });
   $('looks').appendChild(d); return d; });
+if (M) [M.photos.heroTryon, M.photos.rooftop, M.photos.rain, M.photos.night, M.photos.gameDay].forEach(function(ph,i){ lookEls[i].innerHTML = pic(ph.src); });
 var curLook=-1, lookZ=1;
 function showLook(i){ if (i===curLook) return; var prev=lookEls[curLook]; curLook=i; var el=lookEls[i];
   el.style.zIndex=++lookZ; el.classList.remove('on'); void el.offsetWidth; el.classList.add('on');
@@ -704,6 +733,7 @@ function zeeSay(i){ var z=$('zg'); z.classList.remove('hop'); void z.offsetWidth
 var prints = document.getElementById('prints'), PR = [];
 [[-2.3,-.12,-9,0],[-1.55,-.04,-5,1],[-.78,.02,-2,0],[0,0,0,0],[.78,.02,3,1],[1.55,-.04,6,0],[2.3,-.12,9,0],[0,-.3,1,1]].forEach(function(f,i){
   var d = document.createElement('div'); d.className='print'; d.innerHTML='<div class="ph"></div>';
+  if (M && M.cameraRoll[i]) d.innerHTML = '<div class="ph">'+pic(M.cameraRoll[i])+'</div>';
   prints.appendChild(d); PR.push({el:d,f:f,np:false});
 });
 /* ---------- palettes: the colour of the light at each minute of the day ---------- */
@@ -783,8 +813,8 @@ function words(list,p,a,b){
 }
 /* Zee answers word by word, like the app streams it */
 var ZQ = [
-  ['What should I wear tonight?', 'The black slip dress with your heels. It drops to 48° later, so bring the trench.', ['slip','trench','heel']],
-  ['Will it rain on my walk?', 'After 3, yes. The trench, your black trousers and the boots.', ['trench','trousers','boot']],
+  ['What should I wear tonight?', 'The little black dress with your heels and the mini bag. It drops to 48° later, so bring the trench.', ['slip','heel','bag']],
+  ['Will it rain on my walk?', 'After 3, yes. The trench, your dark jeans and the ankle boots.', ['trench','jeans','boot']],
   ['What goes with my jeans?', 'Your grey crewneck and the white sneakers. Easy.', ['knit','jeans','sneaker']]
 ];
 var zCur = 0, zClick = 0;
@@ -793,7 +823,7 @@ function zAsk(i){
   $('b1').textContent=ZQ[i][0];
   var b=$('b2'); b.textContent=''; zW = ZQ[i][1].split(' ').map(function(x,j){ var s=document.createElement('span'); s.className='zw'; s.textContent=(j?' ':'')+x; b.appendChild(s); return s; });
   lookIts.forEach(function(el,j){ if (ZQ[i][2][j]) setIt(el, ZQ[i][2][j]); });
-  $('m4b').innerHTML=dress(ZQ[i][2]);
+  $('m4b').innerHTML = M ? pic(ZQP()[i]) : dress(ZQ[i][2]);
   zChips();
 }
 function zChips(){ var z=$('zq'); z.innerHTML='';
@@ -821,7 +851,7 @@ function setClock(str){ if (str===lastClock) return; lastClock=str; var ds=str.r
 var ptx=0, pty=0, spx=0, spy=0;
 addEventListener('pointermove', function(e){ if (e.pointerType!=='mouse') return; ptx=e.clientX/innerWidth*2-1; pty=e.clientY/innerHeight*2-1; });
 var shadows = Array.prototype.slice.call(document.querySelectorAll('#c1 .sh'));
-var HERO = { W:[['trench','oxford','trousers','loafer'],'For work','Smart casual'], D:[['trench','slip','bag','heel'],'Date night','Dressy'] };
+var HERO = { W:[['teeb','tote','trousers','flats'],'For work','Smart casual'], D:[['trench','bag','slip','heel'],'Date night','Dressy'] };
 function heroLook(key){
   var lay=document.querySelector('#c1 .lay'); lay.classList.add('swap');
   $('chW').classList.toggle('on', key==='W'); $('chD').classList.toggle('on', key==='D');
@@ -836,8 +866,16 @@ function wipe(a,b,sc,k,box){
   b.style.visibility = k<=0?'hidden':'visible'; b.style.clipPath = k>=1?'none':'inset(0 0 '+((1-k)*100).toFixed(2)+'% 0)';
   if (sc){ sc.style.opacity = (k>0&&k<1)?1:0; sc.style.transform='translate3d(0,'+(k*box.offsetHeight).toFixed(1)+'px,0)'; }
 }
-var HL = [], HNAMES = ['Saturday','Date night','For work'], hcapAt = -1;
+var HL = [], HNAMES = ['Saturday','Date night','For work'], HNR = ['Her photo · 7:48','Try on · For work'], hcapAt = -1;
+function ZQP(){ return [M.photos.night.src, M.photos.rain.src, M.photos.street.src]; }
 function initMirror(){
+  if (M){
+    $('hp').classList.add('real');
+    [M.photos.hero0, M.photos.hero1].forEach(function(ph){ var d=document.createElement('div'); d.className='tl8'; d.innerHTML=pic(ph.src); $('hlay').appendChild(d); HL.push(d); });
+    $('m3').classList.add('real'); $('m3a').innerHTML=''; $('m3b').innerHTML=pic(M.photos.rain.src);
+    $('p4').classList.add('real'); $('m4a').innerHTML=''; $('m4b').innerHTML=pic(ZQP()[0]);
+    return;
+  }
   [['jeans','sneaker','tee'],['heel','slip','bag'],['trousers','loafer','oxford','trench']].forEach(function(items){
     var d=document.createElement('div'); d.className='tl8'; d.innerHTML=dress(items); $('hlay').appendChild(d); HL.push(d); });
   $('m3a').innerHTML=dress(['trousers','loafer','oxford','trench']); $('m3b').innerHTML=dress(['trousers','boot','oxford','trench']);
@@ -845,14 +883,14 @@ function initMirror(){
 }
 function r1(pm){
   /* the mirror first: two changes of clothes on her, then the day's look lifts off into Today */
-  var k1 = io(seg(pm,.05,.15)), k2 = io(seg(pm,.2,.32)), took = pm>=.34, p = seg(pm,.36,1);
+  var k1 = io(seg(pm,M?.08:.05,M?.24:.15)), k2 = M ? 0 : io(seg(pm,.2,.32)), took = pm>=.34, p = seg(pm,.36,1);
   var kk=[1,k1,k2,0];
   HL.forEach(function(L,i){ var rv=kk[i], cv=kk[i+1]; L.style.visibility=(rv>0&&cv<1)?'visible':'hidden';
     L.style.clipPath=(rv>=1&&cv<=0)?'none':'inset('+(cv*100).toFixed(2)+'% 0 '+((1-rv)*100).toFixed(2)+'% 0)'; });
   if (HL[2]) HL[2].querySelectorAll('.it').forEach(function(e){ e.style.visibility = took?'hidden':'visible'; });
   var ka = (k1>0&&k1<1)?k1:(k2>0&&k2<1)?k2:-1, sc1=$('scan1');
   sc1.style.opacity = ka>=0?1:0; if (ka>=0) sc1.style.transform='translate3d(0,'+(ka*$('hp').offsetHeight).toFixed(1)+'px,0)';
-  var hi = k2>.5?2:k1>.5?1:0; if (hi!==hcapAt){ hcapAt=hi; $('hcap').textContent='On you · '+HNAMES[hi]; }
+  var hi = k2>.5?2:k1>.5?1:0; if (hi!==hcapAt){ hcapAt=hi; $('hcap').textContent= M ? HNR[hi] : 'On you · '+HNAMES[hi]; }
   $('hcap').style.opacity = took?0:1;
   var k = out(seg(p,0,.5)), heroOut = seg(p,.84,.95);
   T($('clock'), -spx*14, -H*.03*k - spy*8, 1-.1*k, 0, 1-heroOut);
@@ -871,7 +909,7 @@ function r1(pm){
   var c1=$('c1'), cw=c1.offsetWidth, ch=c1.offsetHeight, cl0=c1.offsetLeft, ct0=c1.offsetTop;
   var hw=hp.offsetWidth, hh=hp.offsetHeight, hl0=hp.offsetLeft+hx, ht0=hp.offsetTop+hy;
   flyers.forEach(function(f,i){
-    var q = POS[f.el.dataset.it] || [.5,.5,.3];
+    var q = (M && HPOS[f.el.dataset.it]) || POS[f.el.dataset.it] || [.5,.5,.3];
     /* the point on her, in the card's own (unscaled) space */
     var px = hl0 + q[0]*hw, py = ht0 + q[1]*hh;
     var lx = cw/2 + (px - cl0 - cw/2)/csc, ly = ch/2 + (py - ct0 - cty - ch/2)/csc;
@@ -927,7 +965,7 @@ function r4(p){
   var w = io(seg(p,.6,.84));
   wipe($('m4a'),$('m4b'),$('scan4'),w,$('p4'));
   T($('p4'), 0, -20*hout, 1, 0, out(seg(p,.04,.2))*(mob?seg(p,.56,.66):1)*(1-io(hout)));
-  T($('chat'), 0, -20*hout, 1, 0, (mob ? 1-.85*w : 1)*(1-io(hout)));
+  T($('chat'), 0, -20*hout, 1, 0, (mob ? 1-w : 1)*(1-io(hout)));
 }
 function fade(el,p,a,b,dy){ var k=out(seg(p,a,b)); T(el,0,(dy||14)*(1-k),1,0,k); return k; }
 
@@ -959,6 +997,7 @@ function r5(p){
 }
 
 /* 12:30 the Chrome extension */
+if (M){ var ps=document.querySelector('.pstage'); ps.classList.add('real'); ps.innerHTML=pic(M.photos.chromeProduct.src); $('pv0').innerHTML=pic(M.photos.rooftop.src); }
 var POPS=[$('pr0'),$('pr1'),$('pr2')], PANES=[$('pv0'),$('pv1'),$('pv2')];
 function pt(el, root){ var x=0,y=0; while(el && el!==root){ x+=el.offsetLeft; y+=el.offsetTop; el=el.offsetParent; } return [x,y]; }
 function r6(p){
@@ -988,8 +1027,15 @@ function r6(p){
 }
 
 /* 23:10 a reel, sent to Curate */
-var CREATOR = ['jeans','boot','tee','bomber'];
+var CREATOR = ['varsity','jeansL','runner'];
 function initReels(){
+  if (M){
+    var lay = [['varsity',.5,.3,.62],['jeansL',.34,.7,.3],['runner',.68,.76,.44]], h='<div class="reelground"></div>';
+    lay.forEach(function(q){ h+='<div class="it cut" style="left:'+(q[1]*100)+'%;top:'+(q[2]*100)+'%;width:'+(q[3]*100)+'%">'+IT[q[0]]+'</div>'; });
+    $('reelfig').innerHTML = h+'<div class="rscrim"></div>';
+    $('tphfig').innerHTML = pic(M.photos.gameDay.src);
+    return;
+  }
   var fig = FIGHTML.replace('#3B2F2A','#C9A36B').replace('#3B2F2A','#C9A36B').replace('#CDAE98','#E2C2A8').replace('#C3A28B','#D8B79C');
   var h='<div class="ph"></div>'+fig; CREATOR.forEach(function(k){ var q=POS[k]; h+='<div class="it cut" style="left:'+(q[0]*100)+'%;top:'+(q[1]*100)+'%;width:'+(q[2]*100)+'%;z-index:'+(ZORD[k]||1)+'">'+IT[k]+'</div>'; });
   $('reelfig').innerHTML=h;
@@ -1042,12 +1088,14 @@ var TRY = [
   ['Bookshop',['trousers','boot','knit','bag']], ['Studio day',['jeans','sneaker','oxford','bomber']], ['Opening night',['heel','slip','trench']],
   ['Sunday',['jeans','loafer','tee','trench']]
 ];
+if (M) TRY = M.looks.map(function(L){ return [L[1], [], L[0]]; });
+if (M) $('tp').querySelector('.tcap').textContent='';
 var FIGHTML = document.querySelector('.pipcard .fig').outerHTML;
 function dress(items){ var h='<div class="ph"></div>'+FIGHTML;
   items.forEach(function(k){ var q=POS[k]; h+='<div class="it cut" style="left:'+(q[0]*100)+'%;top:'+(q[1]*100)+'%;width:'+(q[2]*100)+'%;z-index:'+(ZORD[k]||1)+'">'+IT[k]+'</div>'; });
   return h; }
-var TL = TRY.map(function(L,i){ var d=document.createElement('div'); d.className='tl8'; d.innerHTML=dress(L[1]); d.style.zIndex=i+1; $('tlayers').appendChild(d); return d; });
-var TILES = TRY.map(function(L,i){ var d=document.createElement('div'); d.className='tile'; d.innerHTML='<div class="tl8">'+dress(L[1])+'</div><span class="kick">'+L[0]+'</span>'; $('tgrid').appendChild(d); return d; });
+var TL = TRY.map(function(L,i){ var d=document.createElement('div'); d.className='tl8'; d.innerHTML=L[2] ? pic(L[2]) : dress(L[1]); d.style.zIndex=i+1; $('tlayers').appendChild(d); return d; });
+var TILES = TRY.map(function(L,i){ var d=document.createElement('div'); d.className='tile'; d.innerHTML='<div class="tl8">'+(L[2] ? pic(L[2]) : dress(L[1]))+'</div><span class="kick">'+L[0]+'</span>'; $('tgrid').appendChild(d); return d; });
 WD.h8 = splitWords($('h8')); WD.h8b = splitWords($('h8b'));
 var CN = (function(){ var el=$('cntn'), st=[]; for (var k=0;k<2;k++){ var d=document.createElement('span'); d.className='dg'; var s=document.createElement('span');
   for (var n=0;n<10;n++){ var i=document.createElement('i'); i.textContent=n; s.appendChild(i); } d.appendChild(s); el.appendChild(d); st.push(s); } return st; })();

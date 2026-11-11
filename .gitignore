@@ -70,3 +70,6 @@ tracker/data/
 
 # python bytecode (tools/refframes imports tools/critic)
 __pycache__/
+
+# landing page images, built from the library by web/landing/build_media.py
+web/landing/media/

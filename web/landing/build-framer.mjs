@@ -59,9 +59,9 @@ const scopedCss = scopeCss(css) + `
 // ---------- markup: everything between the style and the scripts ----------
 const afterStyle = html.slice(html.indexOf("</style>") + "</style>".length)
 let markup = afterStyle.slice(0, afterStyle.indexOf("<script")).trim()
-// Zee's stills: inlined so the component carries them (from the app's own files; set CURATE_ZEE_DIR to override)
-const zeeDir = process.env.CURATE_ZEE_DIR || join(here, "../../../curate-website/public/zee")
-markup = markup.replace(/src="zee\/([a-z]+)\.webp"/g, (m, mood) => {
+// Zee's stills: inlined so the component carries them (built from the library by build_media.py; CURATE_ZEE_DIR overrides)
+const zeeDir = process.env.CURATE_ZEE_DIR || join(here, "media/zee")
+markup = markup.replace(/src="media\/zee\/([a-z]+)\.webp"/g, (m, mood) => {
   try { return `src="data:image/webp;base64,${readFileSync(join(zeeDir, mood + ".webp")).toString("base64")}"` }
   catch { console.warn(`zee/${mood}.webp not found in ${zeeDir}: left as a relative path`); return m }
 })
