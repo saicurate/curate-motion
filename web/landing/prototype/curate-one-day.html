@@ -21,7 +21,7 @@ button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--fg);outline-offset:3px;border-radius:999px}
 
 /* HUD */
-.hud{position:fixed;left:0;right:0;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(env(safe-area-inset-top, 0px) + 14px) var(--gx) 14px}
+.hud{position:fixed;left:0;right:0;top:0;z-index:20;background:var(--bg);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(env(safe-area-inset-top, 0px) + 14px) var(--gx) 14px}
 .brand{display:flex;align-items:center;gap:9px;font-size:19px;font-weight:500;letter-spacing:-.02em}
 .brand svg{width:21px;height:21px}
 .now{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg2);font-variant-numeric:tabular-nums}
@@ -316,6 +316,58 @@ html{overflow-x:clip}
 .thread .rthumb{width:72px}
 .thread .tph{aspect-ratio:1/1}
 
+/* the first screen */
+.hero{position:relative;z-index:2;min-height:100vh;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:5vw;padding:calc(env(safe-area-inset-top, 0px) + 96px) var(--gx) 72px}
+.hcol{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hh{margin:0;font-weight:500;font-size:clamp(40px,5.4vw,88px);line-height:1;letter-spacing:-.05em;color:var(--fg2);text-wrap:balance}
+.hh b{font-weight:500;color:var(--fg)}
+.hsub{margin:0;font-size:clamp(17px,1.35vw,20px);line-height:1.5;color:var(--fg2);max-width:32em}
+.hero .stores{justify-content:flex-start}
+.hvis{display:flex;flex-direction:column;align-items:center;gap:16px;min-width:0}
+.hb{position:relative;height:min(70vh,680px);aspect-ratio:3/4;max-width:100%;border-radius:20px;overflow:hidden;background:#DADDE1;box-shadow:0 2px 6px rgba(20,24,30,.08),0 40px 90px rgba(20,24,30,.18);cursor:pointer}
+.hbl{position:absolute;inset:0}
+.hbB{clip-path:inset(0 0 100% 0);transition:clip-path 1s cubic-bezier(.65,0,.35,1)}
+.hb.on .hbB{clip-path:inset(0 0 0 0)}
+.hb .scan{top:0;transition:top 1s cubic-bezier(.65,0,.35,1),opacity .25s}
+.hb.on .scan{top:100%}
+.hb.moving .scan{opacity:1}
+.hbtag{position:absolute;left:14px;top:14px;z-index:30;background:rgba(255,255,255,.94);color:#181818;font-size:13px;padding:7px 12px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.seg{display:inline-flex;padding:4px;border-radius:999px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+.seg button{border:0;background:transparent;padding:9px 16px;border-radius:999px;font:inherit;font-size:14px;color:#656565;cursor:pointer;transition:background .3s,color .3s}
+.seg button[aria-pressed="true"]{background:#181818;color:#fff}
+
+/* how it works */
+.how{position:relative;z-index:2;padding:12vh var(--gx) 14vh;display:flex;flex-direction:column;gap:20px}
+.howh{margin:0 0 3vh;font-weight:500;font-size:clamp(34px,4vw,64px);line-height:1;letter-spacing:-.045em;color:var(--fg2);max-width:12em}
+.howh b{font-weight:500;color:var(--fg)}
+.hsteps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4vw}
+.hsteps li{display:flex;flex-direction:column;gap:10px;min-width:0}
+.hsteps .sn{font-size:clamp(44px,4vw,64px);font-weight:300;letter-spacing:-.05em;line-height:1;color:var(--fg)}
+.hsteps h3{margin:0;font-size:22px;font-weight:500;letter-spacing:-.02em}
+.hsteps p{margin:0;font-size:16px;line-height:1.5;color:var(--fg2);max-width:30em}
+.hv{position:relative;aspect-ratio:5/4;margin-bottom:10px}
+.hnext{margin-top:6vh}
+.js .hsteps li{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.js .hsteps li:nth-child(2){transition-delay:.12s}.js .hsteps li:nth-child(3){transition-delay:.24s}
+.js .hsteps li.in{opacity:1;transform:none}
+.hv .pr{position:absolute;border-radius:12px;overflow:hidden;box-shadow:0 2px 4px rgba(20,24,30,.08),0 20px 44px rgba(20,24,30,.16)}
+.hv .it{position:absolute}
+.hv .lbl{position:absolute;left:8px;top:8px;background:rgba(255,255,255,.94);color:#181818;font-size:11px;padding:4px 9px;border-radius:999px;z-index:3}
+.hv .tcard{position:absolute;left:8%;right:8%;top:0;bottom:0;background:#fff;color:#181818;border-radius:24px;box-shadow:0 2px 6px rgba(20,24,30,.06),0 24px 50px rgba(20,24,30,.14);padding:14px;display:flex;flex-direction:column;gap:8px}
+.hv .tcard .tr{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;font-weight:500}.hv .tcard .tr em{font-style:normal;font-size:12px;font-weight:400;color:#8b8b8b}
+.hv .tcard .tl2{flex:1;border-radius:16px;background:linear-gradient(180deg,#efefee,#e2e2e1);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));padding:8px;gap:2px}
+.hv .tcard .tl2 span{position:relative;min-height:0}.hv .tcard .tl2 img{position:absolute;inset:6%;width:88%;height:88%;object-fit:contain}
+.hv .arw{position:absolute;color:var(--fg2);font-size:22px}
+
+/* which feature you're looking at */
+.chap{position:fixed;left:var(--gx);top:calc(env(safe-area-inset-top, 0px) + 66px);z-index:21;display:flex;align-items:center;gap:10px;font-size:14px;opacity:0;transform:translateY(-6px);transition:opacity .45s,transform .45s cubic-bezier(.16,1,.3,1);pointer-events:none;max-width:calc(100vw - 2 * var(--gx))}
+.cpn{background:var(--fg);color:var(--bg);padding:6px 12px;border-radius:999px;font-weight:500;white-space:nowrap}
+.cpt{color:var(--fg2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.story .chap{opacity:1;transform:none}
+.tl,.now{transition:opacity .4s}
+body:not(.story) .tl,body:not(.story) .now{opacity:0;pointer-events:none}
+.fine{margin:0;font-size:12px;color:var(--fg2)}
+
 /* real pictures (web/landing/media, built from the library) */
 .it img{display:block;width:100%;height:auto;pointer-events:none;-webkit-user-select:none;user-select:none}
 .pic{display:block;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-select:none;user-select:none}
@@ -428,7 +480,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   .lacts{gap:10px;font-size:12px}#s4 .chat{padding:12px;top:calc(12vh + 92px)}
   .cin{padding:4px 4px 4px 12px;font-size:13px}.cin b{width:28px;height:28px}
   .chip{font-size:11px;padding:5px 10px}
-  .hphoto{left:auto;right:-2vw;top:9vh;height:auto;width:64vw}
+  .hphoto{left:auto;right:-2vw;top:12vh;height:auto;width:64vw}
   #s3 .hl{max-width:none}
   #s3 .awx,#s3 .avb,#s3 .acts .ib:nth-child(3){display:none}
   #s3 .agt{font-size:14px}
@@ -436,7 +488,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   #s4 .mfig{right:auto;left:50%;margin-left:-21vh;bottom:15vh;height:56vh}
   .hcap{display:block;right:16%;top:2%}
   #s1 .hl{max-width:9em}
-  #s1 .hl{top:calc(9vh + 86vw + 8px);font-size:32px}
+  #s1 .hl{top:calc(12vh + 86vw + 8px);font-size:32px}
   .pipcard{width:58px}
   .zg{left:40px;top:-24px;width:34px;height:34px}
   .zb{font-size:12px;max-width:190px;margin-left:16px}
@@ -462,6 +514,16 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   .pal{bottom:calc(env(safe-area-inset-bottom, 0px) + 56px)}
 }
 @media (max-width: 760px){
+  .hero{grid-template-columns:1fr;gap:20px;min-height:0;padding-top:calc(env(safe-area-inset-top, 0px) + 78px);padding-bottom:48px}
+  .hh{font-size:38px}.hsub{font-size:15px}.hcol{gap:14px}
+  .hero .stores .get{padding:10px 14px;font-size:13px}
+  .hb{height:auto;width:min(72vw,340px)}
+  .seg button{padding:8px 13px;font-size:13px}
+  .how{padding:8vh var(--gx) 10vh}
+  .hsteps{grid-template-columns:1fr;gap:44px}
+  .chap{top:calc(env(safe-area-inset-top, 0px) + 60px);font-size:12px}.cpt{display:none}
+  #s1 .clock{top:14vh}
+  #s1 .wx{top:calc(14vh + 27vw)}
   #cp8{width:auto}
   #h8{font-size:34px}
   .tphoto{left:50%;top:calc(13vh + 150px);height:auto;width:62vw;margin-left:-31vw}
@@ -506,8 +568,9 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   <a class="get" href="#get">Get the app</a>
 </header>
 
+<div class="chap" id="chap" aria-live="polite"><span class="cpn" id="cpn">Today</span><span class="cpt" id="cpt"></span></div>
 <nav class="tl" id="tl" aria-label="The day"><div class="rail" id="rail"></div><div class="fill" id="fill"></div><span class="knob" id="knob"></span>
-  <div class="marks"><button type="button" data-m="469">7:00</button><button type="button" data-m="501">Try-ons</button><button type="button" data-m="701">12:30</button><button type="button" data-m="861">Rain</button><button type="button" data-m="1021">19:00</button><button type="button" data-m="1301">Reels</button></div></nav>
+  <div class="marks"><button type="button" data-m="469">Today</button><button type="button" data-m="501">Try it on</button><button type="button" data-m="541">Closet</button><button type="button" data-m="701">Chrome</button><button type="button" data-m="861">Rain</button><button type="button" data-m="1021">Zee</button><button type="button" data-m="1301">Instagram</button></div></nav>
 <div class="pip" id="pip" aria-hidden="true"><div class="pipcard"><div class="ph"></div><svg class="fig" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M112 120 Q150 104 188 120 L202 250 L194 400 L106 400 L98 250 Z" fill="rgba(40,44,50,.10)"/><rect x="141" y="92" width="18" height="20" fill="#C3A28B"/><ellipse cx="150" cy="70" rx="24" ry="29" fill="#CDAE98"/><path d="M125 70 Q122 36 150 34 Q178 36 175 70 Q168 50 150 49 Q132 50 125 70 Z" fill="#3B2F2A"/><circle cx="150" cy="34" r="11" fill="#3B2F2A"/></svg><div id="looks"></div></div><span class="kick piplab" id="piplab">On you · For work</span><div class="zg" id="zg"><img class="" src="media/zee/hello.webp" alt="" aria-hidden="true"><svg hidden viewBox="0 0 120 120" aria-hidden="true"><path d="M24 50 L30 12 L54 34 Z" fill="#0E0E0F"/><path d="M96 50 L90 12 L66 34 Z" fill="#0E0E0F"/><ellipse cx="60" cy="72" rx="46" ry="40" fill="#0E0E0F"/><ellipse cx="45" cy="68" rx="6" ry="8" fill="#fff"/><ellipse cx="75" cy="68" rx="6" ry="8" fill="#fff"/><ellipse cx="46" cy="66" rx="2" ry="2.6" fill="#0E0E0F"/><ellipse cx="76" cy="66" rx="2" ry="2.6" fill="#0E0E0F"/><path d="M57 80 L63 80 L60 84 Z" fill="#E7B9B0"/></svg></div><div class="zb" id="zb"></div></div>
 
 
@@ -516,8 +579,33 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
 <div class="sweep" id="sweep" aria-hidden="true"></div>
 
 <main id="top">
+<!-- the first screen: what Curate is, in five seconds -->
+<section class="hero" id="hero">
+  <div class="hcol">
+    <span class="kick">Try it. Style it. Wear it.</span>
+    <h1 class="hh" id="hh">Your AI stylist for <b>the clothes you already own.</b></h1>
+    <p class="hsub">Curate turns your closet into outfits for your day, and lets you try anything on a photo of you.</p>
+    <div class="stores"><a class="get" href="#top">App Store</a><a class="get alt" href="#top">Google Play</a><a class="get alt" href="#top">Chrome extension</a></div>
+  </div>
+  <div class="hvis">
+    <div class="hb" id="hb"><div class="hbl hbA" id="hbA"></div><div class="hbl hbB" id="hbB"></div><div class="scan" id="hbs"></div><span class="hbtag" id="hbtag">Your photo</span></div>
+    <div class="seg" role="group" aria-label="Before and after"><button type="button" id="hbt0" aria-pressed="true">Your photo</button><button type="button" id="hbt1" aria-pressed="false">Tried on</button></div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <span class="kick">How it works</span>
+  <h2 class="howh">Three steps. <b>Then just get dressed.</b></h2>
+  <ol class="hsteps">
+    <li><div class="hv" id="hv1"></div><span class="sn">1</span><h3>Add your closet</h3><p>Whole closet scan finds you in your camera roll and pulls out every item you wear. Or add one item at a time.</p></li>
+    <li><div class="hv" id="hv2"></div><span class="sn">2</span><h3>Get looks for your day</h3><p>Today puts outfits together from your closet, for the weather and your plans.</p></li>
+    <li><div class="hv" id="hv3"></div><span class="sn">3</span><h3>Try it on</h3><p>See any look on a photo of you before you get dressed.</p></li>
+  </ol>
+  <span class="kick hnext">Now follow Emma through a day with Curate ↓</span>
+</section>
+
 <!-- 7:48 -->
-<section class="scene" id="s1" style="height:360vh"><div class="stage">
+<section class="scene" id="s1" style="height:280vh"><div class="stage">
   <div class="abs hphoto enter" id="hp"><div class="ph"></div><svg class="fig" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M112 120 Q150 104 188 120 L202 250 L194 400 L106 400 L98 250 Z" fill="rgba(40,44,50,.10)"/><rect x="141" y="92" width="18" height="20" fill="#C3A28B"/><ellipse cx="150" cy="70" rx="24" ry="29" fill="#CDAE98"/><path d="M125 70 Q122 36 150 34 Q178 36 175 70 Q168 50 150 49 Q132 50 125 70 Z" fill="#3B2F2A"/><circle cx="150" cy="34" r="11" fill="#3B2F2A"/></svg><div id="hlay"></div><div class="floor"></div><div class="scan" id="scan1"></div><span class="kick hcap" id="hcap">On you · Saturday</span></div>
   <div class="abs clock enter" id="clock">7:48</div>
   <div class="abs wx kick enter d1">Tuesday · Astoria · 52° · Rain after 3</div>
@@ -538,7 +626,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
 </div></section>
 
 <!-- 8:20 try-ons: one photo, every look -->
-<section class="scene" id="s8" style="height:420vh"><div class="stage" id="st8">
+<section class="scene" id="s8" style="height:340vh"><div class="stage" id="st8">
   <div class="abs copy" id="cp8">
     <span class="kick kk" id="k8">8:20 · Getting dressed</span>
     <h2 class="hl" id="h8">Every look you own. <b>All on you.</b></h2>
@@ -661,6 +749,7 @@ img.zee{width:40px;height:40px;object-fit:contain;flex:none}
   <div class="stores"><a class="get" href="#top">App Store</a><a class="get alt" href="#top">Google Play</a><a class="get alt" href="#top">Chrome extension</a></div>
   <div class="qr" id="qrw"><div id="qr"></div><span class="kick">Scan to get Curate</span></div>
   <span class="kick">Wednesday, 7:00. Already dressed.</span>
+  <p class="fine">Emma is a demo account. Her photos and try-ons are AI-generated.</p>
   <a class="again" href="#top" id="again">Start the day again ↑</a>
 </section>
 </main>
@@ -724,7 +813,7 @@ function showLook(i){ if (i===curLook) return; var prev=lookEls[curLook]; curLoo
   if (prev) setTimeout(function(){ if (lookEls[curLook]!==prev) prev.classList.remove('on'); }, 950); }
 
 /* Zee, the guide: a hop and a line at each chapter */
-var ZL = ['', '', 'Your closet, sorted.', "Found something? Let's see it on you.", 'Boots. Trust me.', "Tonight? I've got you.", 'Send me any reel.'];
+var ZL = ['', '', "I'm Zee, your stylist. Your closet's sorted.", "Found something? Let's see it on you.", 'Boots. Trust me.', "Tonight? I've got you.", 'Send me any reel.'];
 var zbT=0;
 function zeeSay(i){ var z=$('zg'); z.classList.remove('hop'); void z.offsetWidth; z.classList.add('hop');
   if (!ZL[i]) return; $('zb').textContent=ZL[i]; $('zb').classList.add('on'); clearTimeout(zbT); zbT=setTimeout(function(){ $('zb').classList.remove('on'); }, 2800); }
@@ -883,8 +972,8 @@ function initMirror(){
 }
 function r1(pm){
   /* the mirror first: two changes of clothes on her, then the day's look lifts off into Today */
-  var k1 = io(seg(pm,M?.08:.05,M?.24:.15)), k2 = M ? 0 : io(seg(pm,.2,.32)), took = pm>=.34, p = seg(pm,.36,1);
-  var kk=[1,k1,k2,0];
+  var k1 = 1, k2 = 1, took = true, p = pm;
+  var kk = HL.map(function(){ return 1; }).concat([0]);
   HL.forEach(function(L,i){ var rv=kk[i], cv=kk[i+1]; L.style.visibility=(rv>0&&cv<1)?'visible':'hidden';
     L.style.clipPath=(rv>=1&&cv<=0)?'none':'inset('+(cv*100).toFixed(2)+'% 0 '+((1-rv)*100).toFixed(2)+'% 0)'; });
   if (HL[2]) HL[2].querySelectorAll('.it').forEach(function(e){ e.style.visibility = took?'hidden':'visible'; });
@@ -1138,8 +1227,38 @@ function r8(p){
   var hb = seg(p,.84,.92); $('h8b').style.opacity=(seg(p,.83,.85)*(1-hout)).toFixed(3); words(WD.h8b, p, .84, .94);
 }
 var R = [r1,r8,r5,r6,r3,r4,r7];
+
+/* the first screen: her photo, then the try-on; it plays once, then it's yours to flip */
+var CHAP = [['Today','Outfits from your closet, for the weather and your plans'],['Try it on','Any look, on a photo of you'],['Closet scan','Your camera roll becomes your closet'],['Chrome extension','Try on clothes from any site'],['Today','Your look changes when the weather does'],['Ask Zee','Your stylist, in chat'],['Instagram','DM a reel to @askcurate and get the look on you']];
+var chapAt = -1;
+function initHero(){
+  var A=$('hbA'), B=$('hbB');
+  if (M){ A.innerHTML = pic(M.photos.heroPhoto.src); B.innerHTML = pic(M.photos.heroTryon.src); }
+  else { A.innerHTML = dress(['stripe','trousers','flats','tote'].map(function(k){ return IT[k]?k:'tee'; })); B.innerHTML = dress(['teeb','trousers','flats','tote']); }
+  var hb=$('hb'), on=false, mt=0, auto=!reduce, at=0;
+  function set(v, user){ if (user) auto=false; if (v===on) return; on=v; hb.classList.toggle('on', on); hb.classList.add('moving'); clearTimeout(mt); mt=setTimeout(function(){ hb.classList.remove('moving'); }, 1000);
+    $('hbtag').textContent = on ? 'Tried on · the black tee' : 'Your photo';
+    $('hbt0').setAttribute('aria-pressed', on?'false':'true'); $('hbt1').setAttribute('aria-pressed', on?'true':'false'); }
+  $('hbt0').addEventListener('click', function(){ set(false, true); });
+  $('hbt1').addEventListener('click', function(){ set(true, true); });
+  hb.addEventListener('click', function(){ set(!on, true); });
+  (function loop(){ if (!auto) return; if (at>0) set(at%2===1); at++; setTimeout(loop, at===1 ? 1800 : 3200); })();
+  WD.hh = splitWords($('hh')); $('hh').classList.add('wload'); WD.hh.forEach(function(w,i){ w.style.animationDelay=(0.1+i*0.05)+'s'; });
+  /* how it works */
+  var it = function(k){ return IT[k] || ''; };
+  if (M){
+    $('hv1').innerHTML = '<div class="pr" style="left:0;top:4%;width:48%;aspect-ratio:3/4">'+pic(M.photos.heroPhoto.src)+'</div><span class="arw" style="left:52%;top:40%">→</span>'
+      + '<div class="it cut" style="left:62%;top:2%;width:22%">'+it('tote')+'</div><div class="it cut" style="left:64%;top:34%;width:14%">'+it('trousers')+'</div><div class="it cut" style="left:82%;top:40%;width:17%">'+it('flats')+'</div>';
+    $('hv3').innerHTML = '<div class="pr" style="left:2%;top:0;width:46%;aspect-ratio:3/4"><span class="lbl">Your photo</span>'+pic(M.photos.heroPhoto.src)+'</div><div class="pr" style="left:52%;top:0;width:46%;aspect-ratio:3/4"><span class="lbl">Tried on</span>'+pic(M.photos.heroTryon.src)+'</div>';
+  }
+  $('hv2').innerHTML = '<div class="tcard"><div class="tr">Today<em>54° · rain at 3</em></div><div class="tl2"><span>'+it('trench')+'</span><span>'+it('tote')+'</span><span>'+it('jeans')+'</span><span>'+it('boot')+'</span></div></div>';
+  document.documentElement.classList.add('js');
+  var io2 = ('IntersectionObserver' in window) ? new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io2.unobserve(e.target); } }); }, { threshold: .2 }) : null;
+  document.querySelectorAll('.hsteps li').forEach(function(li){ if (io2) io2.observe(li); else li.classList.add('in'); });
+}
 initReels();
 initMirror();
+initHero();
 zChips();
 
 /* the day bar: tap a moment, or drag through the day */
@@ -1206,6 +1325,8 @@ function frame(now){
   $('knob').style.transform = 'translate3d('+(dayF*$('rail').offsetWidth).toFixed(1)+'px,0,0)';
   /* the On-you picture and Zee follow the chapter */
   var LMAP = [0,0,0,1,2,3,4], inFin = fp > .35;
+  var inStory = y > SC[0].top - H*.5 && !inFin; document.body.classList.toggle('story', inStory);
+  if (inStory && active!==chapAt){ chapAt=active; $('cpn').textContent=CHAP[active][0]; $('cpt').textContent=CHAP[active][1]; }
   var showPip = (active===2 || active===3) && !inFin;
   $('pip').classList.toggle('show', showPip);
   if (showPip){ showLook(LMAP[active]); if (active!==lastActive){ lastActive=active; zeeSay(active); } }

@@ -22,6 +22,9 @@
     "varsity": "garment.emma.jacket-varsity-navy-cream.v1"
   },
   "photos": {
+    "heroPhoto": {
+      "id": "photo.emma.r30-walk-to-work.v1"
+    },
     "hero0": {
       "id": "photo.emma.r30-walk-to-work-cutout.v1",
       "max": 1500
